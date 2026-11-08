@@ -217,11 +217,210 @@ window.LESSONS_MEDIA = {
         resposta: 'Para IDENTIFICAR as causas: DIAGRAMA DE ISHIKAWA (espinha de peixe — 6M). Para PRIORIZAR: DIAGRAMA DE PARETO (80/20). Ishikawa investiga; Pareto prioriza.'
       }
     }
-  }
+  },
 
   /* ============================================================
      PRÓXIMO SUB-LOTE (5.2):
      ADM-12, DA-22, DA-24
   ============================================================ */
+  /* ============================================================
+     ADM-12 — Atendimento ao público e relações interpessoais
+  ============================================================ */
+  'ADM-12': {
+    id: 'L-ADM-12',
+    moduloId: 'ADM-12',
+    objetivo: 'Compreender o atendimento ao público como prática profissional no serviço público: qualidade no atendimento, o cidadão como usuário de direitos, ética e postura profissional, comunicação, gestão de conflitos, atendimento presencial, telefônico e digital, acessibilidade e relacionamento interpessoal.',
+    prerequisitos: ['ADM-01', 'ADM-05', 'ADM-08'],
+    introducao: 'Atendimento ao público é a "porta de entrada" do Estado: é pelo atendimento que o cidadão percebe (ou não) a qualidade da Administração. Para o servidor, é uma das competências mais cobradas em prova e mais exigidas no dia a dia. Envolve técnica, ética e empatia.',
+    explicacaoSimples: 'Atender bem é mais do que responder a uma pergunta: é ouvir com atenção, tratar com respeito, resolver o que é possível, encaminhar o que não é, e explicar com clareza. No serviço público, o cidadão não é "cliente" — é titular de direitos. Por isso, o atendimento exige ética, impessoalidade e acessibilidade.',
+    explicacaoTecnica: 'ATENDIMENTO AO PÚBLICO é o conjunto de práticas de interação entre o servidor e o cidadão/usuário, com foco na satisfação da necessidade e no respeito aos direitos. QUALIDADE NO ATENDIMENTO: clareza, cordialidade, tempestividade, resolutividade, empatia. O CIDADÃO é usuário de direitos — não é favor que se presta, mas dever que se cumpre. ÉTICA PROFISSIONAL: agir com integridade, sigilo, impessoalidade e respeito. POSTURA PROFISSIONAL: apresentação adequada, pontualidade, responsabilidade, urbanidade. COMUNICAÇÃO NO ATENDIMENTO: escuta ativa, linguagem clara (sem jargões), confirmação de entendimento, feedback. CONFLITOS: podem surgir por ruído de comunicação, expectativas divergentes ou situações de estresse; devem ser geridos com empatia, escuta ativa e foco na solução — não no embate. ATENDIMENTO PRESENCIAL: contato direto — exige atenção, contato visual, cordialidade, ambiente adequado. ATENDIMENTO TELEFÔNICO: exige clareza vocal, identificação, escuta ativa, registro. ATENDIMENTO DIGITAL: exige resposta ágil, linguagem acessível, registro, segurança da informação. ACESSIBILIDADE: atendimento adaptado a pessoas com deficiência, idosos, gestantes, lactantes e outros públicos vulneráveis — eliminando barreiras físicas, comunicacionais e atitudinais. RELACIONAMENTO INTERPESSOAL: convivência harmoniosa com colegas e chefias — cooperação, respeito, comunicação e gestão de conflitos.',
+    exemplos: [
+      'Qualidade no atendimento: responder ao cidadão em até 24h, com clareza e cordialidade.',
+      'Cidadão como usuário de direitos: o serviço é dever do Estado, não favor.',
+      'Ética profissional: manter sigilo sobre dados pessoais do cidadão.',
+      'Postura profissional: apresentar-se com uniforme, pontualidade e urbanidade.',
+      'Escuta ativa: repetir a demanda do cidadão para confirmar entendimento.',
+      'Linguagem clara: evitar jargões técnicos.',
+      'Conflito: cidadão insatisfeito — ouvir, acolher, informar e resolver.',
+      'Atendimento presencial: contato visual e cordialidade.',
+      'Atendimento telefônico: identificação e clareza vocal.',
+      'Atendimento digital: resposta ágil e linguagem acessível.',
+      'Acessibilidade: atendimento adaptado a pessoa com deficiência auditiva (intérprete de Libras, por exemplo).',
+      'Relacionamento interpessoal: cooperação com colegas de setor.'
+    ],
+    comparacoes: [
+      { termoA: 'Atendimento ao público', termoB: 'Atendimento ao cliente (privado)', diferenca: 'PÚBLICO: o cidadão é usuário de DIREITOS — o serviço é dever do Estado, regido por princípios como legalidade, impessoalidade, moralidade, publicidade e eficiência. PRIVADO: o cliente é consumidor — a relação é contratual e regida pelo CDC. A lógica é diferente: no público, o foco é o interesse coletivo; no privado, a satisfação individual é o negócio.' },
+      { termoA: 'Atendimento presencial', termoB: 'Atendimento digital', diferenca: 'PRESENCIAL: contato direto — linguagem corporal, contato visual e ambiente fazem parte da comunicação. DIGITAL: contato remoto — linguagem escrita, respostas ágeis e registro são cruciais. Ambos exigem clareza, cordialidade e ética; a diferença está no canal e nas competências exigidas.' },
+      { termoA: 'Conflito no atendimento', termoB: 'Agressividade', diferenca: 'CONFLITO: divergência entre partes — pode ser gerido com empatia, escuta ativa e foco na solução. AGRESSIVIDADE: conduta hostil — não é conflito, é violação de postura profissional. O servidor deve gerir o conflito (não fugir dele), mas jamais responder com agressividade.' },
+      { termoA: 'Acessibilidade', termoB: 'Atendimento preferencial', diferenca: 'ACESSIBILIDADE: eliminação de barreiras (físicas, comunicacionais, atitudinais) para que todos tenham acesso ao serviço. ATENDIMENTO PREFERENCIAL: prioridade no atendimento a determinados públicos (idosos, gestantes, pessoas com deficiência). A acessibilidade é a garantia de acesso; o preferencial é a prioridade no atendimento.' }
+    ],
+    aplicacaoEmConcurso: 'Cobrança: qualidade no atendimento, ética, postura, comunicação, conflitos, acessibilidade. A banca costuma apresentar casos concretos (cidadão insatisfeito, colega desrespeitoso, atendimento a pessoa com deficiência) e pedir a postura adequada. Também cai a diferenciação entre atendimento público e privado, e a noção de cidadão como usuário de direitos.',
+    pegadinhas: [
+      'Dizer que o cidadão é "cliente" do Estado. NÃO — é usuário de DIREITOS.',
+      'Achar que acessibilidade é só rampa. Envolve barreiras comunicacionais (Libras, braile) e atitudinais (capacitação).',
+      'Confundir atendimento preferencial com acessibilidade. São coisas distintas: um dá prioridade; a outra garante acesso.',
+      'Dizer que o servidor pode responder à agressão com agressão. NÃO — deve manter a postura profissional e adotar as medidas cabíveis.',
+      'Achar que ética no atendimento é opcional. É dever funcional.',
+      'Ignorar a importância do sigilo. Dados do cidadão são protegidos pela LGPD e pelo dever de sigilo funcional.'
+    ],
+    errosComuns: [
+      'Decorar princípios sem exemplos de aplicação.',
+      'Não diferenciar o atendimento público do privado.',
+      'Reduzir acessibilidade a adaptações físicas.',
+      'Não saber como agir diante de conflitos.'
+    ],
+    resumo: [
+      'Atendimento ao público: interação com o cidadão para satisfazer a necessidade e respeitar direitos.',
+      'Cidadão: usuário de direitos, não cliente.',
+      'Qualidade: clareza, cordialidade, tempestividade, resolutividade, empatia.',
+      'Ética: integridade, sigilo, impessoalidade, respeito.',
+      'Comunicação: escuta ativa, linguagem clara, feedback.',
+      'Conflitos: gerir com empatia e foco na solução.',
+      'Canais: presencial, telefônico, digital.',
+      'Acessibilidade: eliminar barreiras físicas, comunicacionais e atitudinais.'
+    ],
+    modoProfessor: {
+      explicarMaisSimples: 'Atender bem é ouvir com atenção, tratar com respeito, resolver o que é possível e encaminhar o que não é. O cidadão não é "cliente": é titular de direitos. Por isso, o atendimento exige ética e impessoalidade.',
+      outroExemplo: 'Uma pessoa com deficiência auditiva chega ao guichê. O servidor deve oferecer atendimento acessível (intérprete de Libras, comunicação escrita, ou outra forma adequada), garantindo a acessibilidade — não apenas "atender rapidamente". Acolhimento, clareza e solução são as chaves.',
+      compararConceitos: 'Público x privado = direito x consumo. Presencial x digital = contato direto x remoto. Acessibilidade x preferencial = acesso x prioridade. Conflito x agressividade = divergência gerível x conduta hostil.',
+      mostrarPegadinha: 'Cuidado: "Cidadão é cliente do Estado". ERRADO. O cidadão é USUÁRIO DE DIREITOS — o serviço público é dever do Estado, não mercadoria.',
+      comoApareceEmConcurso: 'Casos concretos pedindo a postura adequada do servidor em atendimento; diferenciação público x privado; acessibilidade.',
+      fazerPergunta: {
+        pergunta: 'Um cidadão chega exaltado ao guichê, gritando que "o serviço público não funciona". Qual a postura adequada do servidor?',
+        resposta: 'Ouvir com empatia (escuta ativa), manter a calma, não responder com agressividade, identificar a demanda real, informar com clareza e resolver o que estiver ao seu alcance — encaminhando o que não estiver. Se a agressão se tornar ameaça, adotar as medidas cabíveis, preservando a segurança e a dignidade de todos.'
+      }
+    }
+  },
 
+  /* ============================================================
+     DA-22 — Responsabilidade Civil do Estado
+  ============================================================ */
+  'DA-22': {
+    id: 'L-DA-22',
+    moduloId: 'DA-22',
+    objetivo: 'Compreender a responsabilidade civil do Estado: teorias (subjetiva, objetiva e risco administrativo), requisitos, excludentes, a ação regressiva contra o agente público e a responsabilidade por atos comissivos e omissivos.',
+    prerequisitos: ['DA-15', 'DA-16'],
+    introducao: 'Quando o Estado causa dano a alguém, ele deve reparar? Em regra, sim. A responsabilidade civil do Estado é um dos temas mais cobrados de Direito Administrativo — porque combina teoria geral (teorias da responsabilidade), texto constitucional (art. 37, §6º) e jurisprudência.',
+    explicacaoSimples: 'Pense assim: se o Estado causa um dano a um particular por causa de sua atuação (uma obra mal feita, um servidor que age com negligência), ele deve indenizar. A grande questão é: essa responsabilidade exige culpa ou não? A Constituição adotou a tese da responsabilidade OBJETIVA em atos comissivos — basta provar o dano e o nexo causal. Para o agente público, no entanto, a ação regressiva exige dolo ou culpa.',
+    explicacaoTecnica: 'RESPONSABILIDADE CIVIL DO ESTADO é o dever de reparar danos causados a terceiros em razão de sua atuação administrativa. TEORIAS: (a) SUBJETIVA (ou da culpa administrativa): exige prova de culpa (falta do serviço, culpa do agente); (b) OBJETIVA (ou do risco administrativo): dispensa a prova de culpa — basta dano + nexo causal + conduta; (c) RISCO INTEGRAL: responsabilidade absoluta, sem excludentes — não adotada no Brasil. O Brasil adota a RESPONSABILIDADE OBJETIVA (art. 37, §6º, CF) para atos COMISSIVOS. REQUISITOS: conduta (ação ou omissão), dano e nexo causal. EXCLUDENTES: culpa exclusiva da vítima, caso fortuito ou força maior, fato de terceiro (não há nexo). AÇÃO REGRESSIVA: o Estado, após indenizar a vítima, pode cobrar do AGENTE PÚBLICO responsável — mas só se houver DOLO ou CULPA do agente (responsabilidade subjetiva do agente perante o Estado). ATOS OMISSIVOS: há divergência doutrinária e jurisprudencial — o STF admite, em regra, responsabilidade objetiva, mas exige, em casos de omissão genérica do Estado, a demonstração de culpa (falha do serviço). A responsabilidade do Estado é, em regra, objetiva em atos comissivos e, conforme o caso, subjetiva em omissões genéricas.',
+    exemplos: [
+      'Responsabilidade objetiva: carro oficial atropela pedestre — Estado indeniza independentemente de culpa do motorista.',
+      'Responsabilidade subjetiva do agente: o Estado, após indenizar, cobra do motorista que agiu com imprudência.',
+      'Excludente — culpa exclusiva da vítima: pedestre atravessa em local proibido e é atingido.',
+      'Excludente — caso fortuito: raio destrói imóvel público e atinge vizinho.',
+      'Excludente — fato de terceiro: terceiro invade carro oficial e causa dano.',
+      'Omissão genérica: enchente causa dano por falta de drenagem — STF analisa caso a caso (culpa do serviço).',
+      'Ação regressiva: Estado cobra do agente que agiu com dolo (ex.: desvio de recursos).'
+    ],
+    comparacoes: [
+      { termoA: 'Responsabilidade subjetiva', termoB: 'Responsabilidade objetiva', diferenca: 'SUBJETIVA: exige prova de CULPA (falta do serviço ou do agente). OBJETIVA: dispensa a prova de culpa — basta dano + nexo causal + conduta. O Brasil adota a OBJETIVA para atos comissivos do Estado (art. 37, §6º, CF).' },
+      { termoA: 'Teoria do risco administrativo', termoB: 'Teoria do risco integral', diferenca: 'RISCO ADMINISTRATIVO: responsabilidade objetiva, com EXCLUDENTES (culpa exclusiva da vítima, caso fortuito, fato de terceiro). É a adotada no Brasil. RISCO INTEGRAL: responsabilidade objetiva ABSOLUTA, sem excludentes — não adotada no Brasil (salvo situações excepcionais previstas em lei, como dano ambiental).' },
+      { termoA: 'Responsabilidade do Estado', termoB: 'Responsabilidade do agente', diferenca: 'ESTADO → VÍTIMA: responsabilidade OBJETIVA (independe de culpa). AGENTE → ESTADO (ação regressiva): responsabilidade SUBJETIVA — exige DOLO ou CULPA do agente. Duas etapas distintas: primeiro o Estado indeniza; depois, se cabível, cobra do agente.' },
+      { termoA: 'Atos comissivos', termoB: 'Atos omissivos', diferenca: 'COMISSIVOS: o Estado AGE — responsabilidade objetiva (regra). OMISSIVOS: o Estado DEIXA DE AGIR — jurisprudência majoritária exige, na omissão genérica, prova de culpa (falha do serviço). Em omissões específicas (dever legal direto), pode haver responsabilidade objetiva.' }
+    ],
+    aplicacaoEmConcurso: 'Altíssima frequência: responsabilidade objetiva (art. 37, §6º); requisitos; excludentes; ação regressiva (dolo/culpa); atos comissivos x omissivos. A banca ama: dizer que a ação regressiva independe de dolo/culpa; confundir risco administrativo com risco integral; dizer que o Brasil adotou a teoria subjetiva em atos comissivos; dizer que caso fortuito não exclui responsabilidade.',
+    pegadinhas: [
+      'Dizer que a ação regressiva dispensa dolo/culpa. NÃO — exige.',
+      'Dizer que o Brasil adotou a teoria do risco integral. NÃO — adotou a do risco administrativo (com excludentes).',
+      'Dizer que a responsabilidade é subjetiva em atos comissivos. NÃO — objetiva (art. 37, §6º).',
+      'Achar que caso fortuito e força maior não excluem responsabilidade. EXCLUEM — quebram o nexo causal.',
+      'Confundir culpa exclusiva da vítima com culpa concorrente. A primeira exclui; a segunda pode reduzir proporcionalmente.',
+      'Dizer que a responsabilidade por omissão é sempre objetiva. Depende — em omissão genérica, exige-se culpa (falha do serviço).',
+      'Achar que a vítima precisa acionar o agente diretamente. NÃO — aciona o Estado; o Estado, depois, cobra do agente.'
+    ],
+    errosComuns: [
+      'Decorar as teorias sem exemplos.',
+      'Confundir responsabilidade do Estado com a do agente.',
+      'Ignorar as excludentes.',
+      'Não distinguir atos comissivos e omissivos.'
+    ],
+    resumo: [
+      'Responsabilidade civil do Estado: dever de reparar dano causado a terceiros.',
+      'Brasil: responsabilidade OBJETIVA (art. 37, §6º) para atos comissivos.',
+      'Requisitos: conduta + dano + nexo causal.',
+      'Excludentes: culpa exclusiva da vítima, caso fortuito/força maior, fato de terceiro.',
+      'Teoria adotada: risco administrativo (com excludentes).',
+      'Ação regressiva: agente — exige dolo ou culpa.',
+      'Atos omissivos: em regra, exige culpa (falha do serviço) em omissão genérica.'
+    ],
+    modoProfessor: {
+      explicarMaisSimples: 'Se o Estado causa um dano, deve indenizar. A Constituição adotou a responsabilidade OBJETIVA: basta o dano e o nexo causal. Mas, se quiser cobrar do agente, precisa provar DOLO ou CULPA. Duas etapas: primeiro o Estado paga; depois, se cabível, cobra do agente.',
+      outroExemplo: 'Um carro oficial atropela um pedestre. O Estado indeniza a vítima independentemente de culpa do motorista (responsabilidade objetiva). Se ficar comprovado que o motorista agiu com imprudência (culpa), o Estado pode ajuizar ação regressiva contra ele. Se o pedestre atravessou em local proibido, há culpa exclusiva da vítima — exclui a responsabilidade.',
+      compararConceitos: 'Subjetiva x objetiva = exige culpa x dispensa culpa. Risco administrativo x risco integral = com excludentes x sem excludentes. Estado → vítima (objetiva) x agente → Estado (subjetiva). Comissivo x omissivo = age x deixa de agir.',
+      mostrarPegadinha: 'Cuidado: "A ação regressiva contra o agente independe de dolo ou culpa". ERRADO. A ação regressiva exige DOLO ou CULPA do agente — é a responsabilidade subjetiva do agente perante o Estado.',
+      comoApareceEmConcurso: 'Questões pedem o regime de responsabilidade (objetiva/subjetiva), as excludentes, a ação regressiva e o tratamento das omissões.',
+      fazerPergunta: {
+        pergunta: 'Um servidor, no exercício da função, causa dano a um particular por negligência. A vítima pode ajuizar ação diretamente contra o servidor?',
+        resposta: 'A vítima ajuíza ação contra o ESTADO (responsabilidade objetiva). O Estado, se condenado, pode ajuizar AÇÃO REGRESSIVA contra o servidor, comprovando dolo ou culpa. O servidor responde perante o Estado, não diretamente perante a vítima (salvo hipóteses específicas de responsabilidade pessoal).'
+      }
+    }
+  },
+
+  /* ============================================================
+     DA-24 — Improbidade Administrativa
+  ============================================================ */
+  'DA-24': {
+    id: 'L-DA-24',
+    moduloId: 'DA-24',
+    objetivo: 'Compreender o conceito e o regime da improbidade administrativa (Lei 8.429/1992, com as alterações da Lei 14.230/2021): atos de improbidade, requisitos (dolo), categorias (enriquecimento ilícito, prejuízo ao erário e atentado a princípios), sanções e responsabilização.',
+    prerequisitos: ['DA-15', 'DA-17', 'DA-22'],
+    introducao: 'Improbidade administrativa é uma das matérias mais sensíveis do Direito Administrativo — porque pune o agente ímprobo, protege o patrimônio público e sofreu alterações legislativas profundas em 2021. A Lei 14.230/2021 reformulou o regime, especialmente ao exigir DOLO para todas as modalidades. É tema de alta incidência e de pegadinhas finas.',
+    explicacaoSimples: 'Improbidade é a conduta desonesta do agente público que viola os deveres de honestidade, imparcialidade e legalidade. Não é qualquer irregularidade — é uma conduta grave, que atenta contra a Administração. A Lei 8.429/92 define três grandes grupos de atos: os que geram enriquecimento ilícito, os que causam prejuízo ao erário e os que atentam contra os princípios da Administração. Após a Lei 14.230/2021, exige-se DOLO em todas as modalidades.',
+    explicacaoTecnica: 'IMPROBIDADE ADMINISTRATIVA é a conduta dolosa do agente público (ou de terceiro) que viola os deveres de honestidade, imparcialidade, legalidade e lealdade às instituições, causando enriquecimento ilícito, prejuízo ao erário ou atentado a princípios administrativos. REGIME: Lei 8.429/1992, alterada pela Lei 14.230/2021. MODALIDADES (após a Lei 14.230/2021): (a) ENRIQUECIMENTO ILÍCITO (art. 9º): auferir vantagem patrimonial indevida em razão do cargo; (b) PREJUÍZO AO ERÁRIO (art. 10): causar dano ao patrimônio público; (c) ATENTADO A PRINCÍPIOS (art. 11): violar os deveres de honestidade, imparcialidade, legalidade e lealdade às instituições (rol taxativo — não admite interpretação ampliativa). REQUISITO SUBJETIVO: DOLO (vontade livre e consciente) em TODAS as modalidades — a Lei 14.230/2021 eliminou a modalidade culposa. SANÇÕES (art. 12): (a) enriquecimento ilícito: perda dos bens, perda da função pública, suspensão dos direitos políticos de 8 a 14 anos, multa civil; (b) prejuízo ao erário: ressarcimento, perda da função, suspensão de 4 a 8 anos, multa; (c) atentado a princípios: perda da função, suspensão de 4 a 8 anos, multa (não há ressarcimento porque não há dano patrimonial). AÇÃO: ação civil pública por improbidade administrativa, ajuizada pelo MP. LEGITIMIDADE PASSIVA: agentes públicos e terceiros que induzam ou concorram para a prática do ato. PRESCRIÇÃO: 8 anos (regra geral).',
+    exemplos: [
+      'Enriquecimento ilícito: receber propina para favorecer empresa em licitação.',
+      'Prejuízo ao erário: superfaturar obra pública.',
+      'Atentado a princípios: nomear parente para cargo em comissão (nepotismo).',
+      'Dolo: o agente sabia e quis a conduta ilícita.',
+      'Sanção — enriquecimento: perda dos bens, perda da função, suspensão 8 a 14 anos, multa.',
+      'Sanção — prejuízo ao erário: ressarcimento, perda da função, suspensão 4 a 8 anos, multa.',
+      'Sanção — atentado a princípios: perda da função, suspensão 4 a 8 anos, multa.',
+      'Ação: proposta pelo MP.',
+      'Terceiro: também pode ser responsabilizado se concorrer para o ato.'
+    ],
+    comparacoes: [
+      { termoA: 'Improbidade', termoB: 'Irregularidade administrativa', diferenca: 'IMPROBIDADE: conduta DOLOSA e GRAVE, que viola os deveres de honestidade e atenta contra a Administração — sujeita às sanções da Lei 8.429/92. IRREGULARIDADE: falha formal ou procedimental, que pode gerar sanções administrativas, mas não necessariamente improbidade. Nem toda irregularidade é improbidade; a improbidade exige DOLO e gravidade.' },
+      { termoA: 'Enriquecimento ilícito', termoB: 'Prejuízo ao erário', diferenca: 'ENRIQUECIMENTO: o agente aufere vantagem patrimonial indevida (há enriquecimento pessoal). PREJUÍZO AO ERÁRIO: o patrimônio público é lesado (há dano ao Estado), independentemente de enriquecimento do agente. As sanções são distintas: no enriquecimento, há perda dos bens; no prejuízo, há ressarcimento.' },
+      { termoA: 'Atentado a princípios', termoB: 'Enriquecimento ilícito', diferenca: 'ATENTADO A PRINCÍPIOS: viola deveres de honestidade, imparcialidade, legalidade e lealdade — NÃO exige dano patrimonial nem enriquecimento. ENRIQUECIMENTO: exige vantagem patrimonial indevida. As sanções do atentado a princípios são mais brandas do que as do enriquecimento.' },
+      { termoA: 'Regime anterior (culpa/dolo)', termoB: 'Regime atual (só dolo)', diferenca: 'ANTES da Lei 14.230/2021: admitia-se improbidade por culpa (nas modalidades de prejuízo ao erário e atentado a princípios). DEPOIS: exige-se DOLO em TODODAS as modalidades. A mudança é uma das mais cobradas em prova — e é pegadinha clássica.' },
+      { termoA: 'Sanções da improbidade', termoB: 'Sanções penais', diferenca: 'IMPROBIDADE: sanções civis e políticas (perda de bens, perda da função, suspensão de direitos políticos, multa), aplicadas pela Justiça Civil. PENAIS: sanções criminais (prisão, multa), aplicadas pela Justiça Penal. São regimes distintos — um ato pode gerar as duas responsabilizações, mas elas não se confundem.' }
+    ],
+    aplicacaoEmConcurso: 'Altíssima frequência: modalidades (enriquecimento, prejuízo, atentado a princípios); exigência de dolo (após a Lei 14.230/2021); sanções; legitimidade do MP; prescrição. A banca ama: dizer que a improbidade admite culpa (não admite mais); confundir enriquecimento com prejuízo; trocar sanções; dizer que o particular não pode ser responsabilizado.',
+    pegadinhas: [
+      'Dizer que a improbidade admite culpa. NÃO — desde a Lei 14.230/2021, exige-se DOLO em todas as modalidades.',
+      'Confundir enriquecimento ilícito com prejuízo ao erário. Um exige vantagem pessoal; o outro, dano ao patrimônio público.',
+      'Dizer que o atentado a princípios exige dano patrimonial. NÃO exige.',
+      'Trocar as sanções de cada modalidade (ex.: suspensão de 8 a 14 anos é do enriquecimento).',
+      'Dizer que o terceiro não pode ser responsabilizado. PODE — se concorrer para o ato.',
+      'Achar que improbidade e crime são a mesma coisa. São regimes distintos (civil x penal).',
+      'Dizer que a ação de improbidade pode ser proposta por qualquer cidadão. NÃO — é do MP (ação civil pública).'
+    ],
+    errosComuns: [
+      'Decorar as modalidades sem exemplos.',
+      'Não saber da mudança da Lei 14.230/2021 (dolo em todas as modalidades).',
+      'Confundir improbidade com irregularidade administrativa.',
+      'Trocar as sanções de cada modalidade.'
+    ],
+    resumo: [
+      'Improbidade: conduta DOLOSA e GRAVE, que viola deveres de honestidade e atenta contra a Administração.',
+      'Lei 8.429/1992, alterada pela Lei 14.230/2021.',
+      'Modalidades: enriquecimento ilícito, prejuízo ao erário e atentado a princípios.',
+      'DOLO exigido em todas as modalidades (Lei 14.230/2021).',
+      'Sanções: perda de bens/função, suspensão de direitos políticos, multa.',
+      'Ação: civil pública, proposta pelo MP.',
+      'Terceiro também pode ser responsabilizado.',
+      'Prescrição: 8 anos (regra geral).'
+    ],
+    modoProfessor: {
+      explicarMaisSimples: 'Improbidade é a conduta DESONESTA do agente público — não é qualquer irregularidade. A Lei 8.429/92 divide em três grupos: enriquecimento ilícito, prejuízo ao erário e atentado a princípios. Depois da Lei 14.230/2021, só há improbidade se houver DOLO.',
+      outroExemplo: 'Um servidor recebe propina para favorecer empresa em licitação: ENRIQUECIMENTO ILÍCITO (vantagem pessoal). Um gestor superfatura obra pública: PREJUÍZO AO ERÁRIO (dano ao patrimônio público). Um prefeito nomeia parente para cargo em comissão: ATENTADO A PRINCÍPIOS (nepotismo, sem dano patrimonial direto).',
+      compararConceitos: 'Improbidade x irregularidade = dolo/gravidade x falha formal. Enriquecimento x prejuízo = vantagem pessoal x dano ao erário. Atentado a princípios x enriquecimento = sem dano patrimonial x com vantagem pessoal. Antes x depois da Lei 14.230/2021 = culpa/dolo x só dolo. Civil x penal = regimes distintos.',
+      mostrarPegadinha: 'Cuidado: "A improbidade admite culpa". ERRADO. Desde a Lei 14.230/2021, exige-se DOLO em todas as modalidades. A modalidade culposa foi extinta.',
+      comoApareceEmConcurso: 'Questões pedem modalidade, sanção, exigência de dolo e legitimidade do MP.',
+      fazerPergunta: {
+        pergunta: 'Um servidor, por negligência, causa dano ao erário. Ele pode ser responsabilizado por improbidade administrativa?',
+        resposta: 'NÃO, pela Lei 14.230/2021. A improbidade exige DOLO em todas as modalidades. A negligência (culpa) pode gerar outras responsabilizações (civil, administrativa), mas não improbidade. Antes de 2021, admitia-se culpa nas modalidades de prejuízo ao erário e atentado a princípios — o que foi alterado.'
+      }
+    }
+  }
 };
