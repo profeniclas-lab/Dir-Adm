@@ -1,515 +1,607 @@
 /* ============================================================
-   MÓDULOS — Direito Constitucional
+   MÓDULOS — Administração + Direito Administrativo
+   Total: 28 módulos
    Áreas:
-     CF = Constituição Federal (DC-01 a DC-20)
-     CE = Constituição Estadual (DC-RN)
-   Prioridades (conforme currículo):
-     alta       = DC-02, 03, 04, 05, 06, 07, 08, 09, 11, 12, 13, DC-RN
-     media      = DC-10, 14, 15, 16, 17, 18
-     baixa      = DC-01, 19, 20   (complementar)
+     ADM = Administração (Parte I — módulos 1 a 12)
+     AP  = Administração Pública (Parte II — módulos 13 e 14)
+     DA  = Direito Administrativo (Parte III — módulos 15 a 27)
+     REV = Revisão Integrada (módulo 28)
+   Prioridades:
+     alta  = 🔴 Muito alta
+     media = 🟠 Alta
+     baixa = 🟡 Média/Alta ou Média
    ============================================================ */
 
 window.MODULES = [
 
-  /* ============ PRIORIDADE COMPLEMENTAR ============ */
+  /* ============================================================
+     PARTE I — ADMINISTRAÇÃO
+  ============================================================ */
   {
-    id: 'DC-01',
-    area: 'CF',
-    titulo: 'Teoria da Constituição',
-    prioridade: 'baixa',
+    id: 'ADM-01',
+    area: 'ADM',
+    titulo: 'Fundamentos de Administração',
+    prioridade: 'alta',
     subtopicos: [
-      'Conceito de Constituição',
+      'Conceito de Administração',
+      'Organizações',
+      'Recursos organizacionais',
+      'Eficiência',
+      'Eficácia',
+      'Efetividade',
+      'Produtividade',
+      'Diferença entre eficiência, eficácia e efetividade',
+      'Funções administrativas (PODC)',
+      'Planejamento, Organização, Direção e Controle',
+      'Administrador',
+      'Níveis organizacionais',
+      'Nível estratégico',
+      'Nível tático',
+      'Nível operacional',
+      'Habilidades do administrador',
+      'Habilidades técnicas',
+      'Habilidades humanas',
+      'Habilidades conceituais'
+    ]
+  },
+  {
+    id: 'ADM-02',
+    area: 'ADM',
+    titulo: 'Processo Administrativo',
+    prioridade: 'alta',
+    subtopicos: [
+      'Conceito',
       'Finalidade',
-      'Constitucionalismo',
-      'Constituição Federal de 1988',
-      'Classificações',
-      'Escrita e não escrita',
-      'Promulgada e outorgada',
-      'Rígida, flexível e semirrígida',
-      'Formal e material',
-      'Supremacia constitucional',
-      'Poder constituinte',
-      'Poder constituinte originário',
-      'Poder constituinte derivado',
-      'Poder constituinte reformador',
-      'Poder constituinte decorrente',
-      'Limitações ao poder de reforma',
-      'Cláusulas pétreas',
-      'Emendas constitucionais',
-      'Recepção',
-      'Eficácia e aplicabilidade das normas constitucionais'
+      'Características',
+      'Relação entre as quatro funções',
+      'Planejar',
+      'Organizar',
+      'Dirigir',
+      'Controlar',
+      'Aplicação na Administração Pública',
+      'Exemplos práticos'
+    ]
+  },
+  {
+    id: 'ADM-03',
+    area: 'ADM',
+    titulo: 'Planejamento',
+    prioridade: 'alta',
+    subtopicos: [
+      'Conceito e características',
+      'Níveis de planejamento',
+      'Planejamento estratégico',
+      'Planejamento tático',
+      'Planejamento operacional',
+      'Missão',
+      'Visão',
+      'Valores',
+      'Objetivos',
+      'Metas',
+      'Estratégias',
+      'Planos',
+      'Análise SWOT',
+      'Forças',
+      'Fraquezas',
+      'Oportunidades',
+      'Ameaças',
+      'Gestão estratégica',
+      'Balanced Scorecard (BSC)',
+      'Perspectivas do BSC',
+      'Objetivos, indicadores e metas',
+      'Mapa estratégico'
+    ]
+  },
+  {
+    id: 'ADM-04',
+    area: 'ADM',
+    titulo: 'Organização',
+    prioridade: 'alta',
+    subtopicos: [
+      'Estrutura organizacional',
+      'Divisão do trabalho',
+      'Especialização',
+      'Hierarquia',
+      'Autoridade',
+      'Responsabilidade',
+      'Delegação',
+      'Centralização',
+      'Descentralização',
+      'Amplitude de controle',
+      'Departamentalização',
+      'Departamentalização funcional',
+      'Departamentalização por produto',
+      'Departamentalização por cliente',
+      'Departamentalização geográfica',
+      'Departamentalização por processos',
+      'Departamentalização por projetos',
+      'Estruturas organizacionais'
+    ]
+  },
+  {
+    id: 'ADM-05',
+    area: 'ADM',
+    titulo: 'Direção, liderança e motivação',
+    prioridade: 'media',
+    subtopicos: [
+      'Liderança',
+      'Autoridade',
+      'Poder',
+      'Liderança formal e informal',
+      'Liderança autocrática',
+      'Liderança democrática',
+      'Liderança liberal',
+      'Teoria dos traços',
+      'Teorias comportamentais',
+      'Liderança situacional',
+      'Motivação',
+      'Teoria de Maslow',
+      'Teoria de Herzberg',
+      'Teoria de McGregor',
+      'Outras teorias motivacionais'
+    ]
+  },
+  {
+    id: 'ADM-06',
+    area: 'ADM',
+    titulo: 'Controle e avaliação',
+    prioridade: 'alta',
+    subtopicos: [
+      'Conceito de controle',
+      'Finalidade',
+      'Etapas do controle',
+      'Padrões',
+      'Indicadores',
+      'Avaliação de desempenho',
+      'Ação corretiva',
+      'Controle preventivo',
+      'Controle simultâneo',
+      'Controle posterior',
+      'Controle administrativo e controle da Administração Pública'
+    ]
+  },
+  {
+    id: 'ADM-07',
+    area: 'ADM',
+    titulo: 'Gestão de Pessoas',
+    prioridade: 'alta',
+    subtopicos: [
+      'Conceito de gestão de pessoas',
+      'Recursos humanos',
+      'Pessoas como recursos',
+      'Pessoas como parceiras da organização',
+      'Processos de gestão de pessoas',
+      'Agregar pessoas',
+      'Aplicar pessoas',
+      'Recompensar pessoas',
+      'Desenvolver pessoas',
+      'Manter pessoas',
+      'Monitorar pessoas',
+      'Recrutamento e seleção',
+      'Treinamento e desenvolvimento',
+      'Avaliação de desempenho',
+      'Gestão por competências',
+      'Clima organizacional',
+      'Cultura organizacional',
+      'Qualidade de vida no trabalho'
+    ]
+  },
+  {
+    id: 'ADM-08',
+    area: 'ADM',
+    titulo: 'Comunicação e comportamento organizacional',
+    prioridade: 'media',
+    subtopicos: [
+      'Comunicação',
+      'Processo de comunicação',
+      'Emissor',
+      'Receptor',
+      'Mensagem',
+      'Canal',
+      'Ruído',
+      'Feedback',
+      'Comunicação formal',
+      'Comunicação informal',
+      'Comunicação vertical',
+      'Comunicação horizontal',
+      'Conflitos',
+      'Negociação',
+      'Trabalho em equipe'
+    ]
+  },
+  {
+    id: 'ADM-09',
+    area: 'ADM',
+    titulo: 'Gestão da Qualidade',
+    prioridade: 'media',
+    subtopicos: [
+      'Conceito de qualidade',
+      'Qualidade total',
+      'Melhoria contínua',
+      'Satisfação do usuário',
+      'PDCA',
+      'Ferramentas da qualidade',
+      '5W2H',
+      'Diagrama de Ishikawa',
+      'Diagrama de Pareto',
+      'Indicadores de qualidade'
+    ]
+  },
+  {
+    id: 'ADM-10',
+    area: 'ADM',
+    titulo: 'Administração de Materiais e Patrimônio',
+    prioridade: 'alta',
+    subtopicos: [
+      'Classificação de materiais',
+      'Especificação',
+      'Codificação',
+      'Cadastramento',
+      'Estoque',
+      'Armazenagem',
+      'Movimentação',
+      'Inventário',
+      'Compras',
+      'Almoxarifado',
+      'Gestão de estoques',
+      'Estoque mínimo',
+      'Estoque de segurança',
+      'Ponto de pedido',
+      'Giro de estoque',
+      'Custos de estoque',
+      'Patrimônio',
+      'Bens permanentes',
+      'Bens de consumo',
+      'Tombamento',
+      'Registro',
+      'Movimentação patrimonial',
+      'Inventário patrimonial',
+      'Baixa patrimonial'
+    ]
+  },
+  {
+    id: 'ADM-11',
+    area: 'ADM',
+    titulo: 'Gestão de Processos',
+    prioridade: 'alta',
+    subtopicos: [
+      'Processo',
+      'Atividade',
+      'Tarefa',
+      'Procedimento',
+      'Processos finalísticos',
+      'Processos de apoio',
+      'Gestão por processos',
+      'Mapeamento de processos',
+      'Fluxograma',
+      'Melhoria de processos',
+      'Gargalos'
+    ]
+  },
+  {
+    id: 'ADM-12',
+    area: 'ADM',
+    titulo: 'Atendimento ao público e relações interpessoais',
+    prioridade: 'media',
+    subtopicos: [
+      'Atendimento',
+      'Qualidade no atendimento',
+      'Usuário/cidadão',
+      'Ética profissional',
+      'Postura profissional',
+      'Comunicação',
+      'Conflitos',
+      'Atendimento presencial',
+      'Atendimento telefônico',
+      'Atendimento digital',
+      'Acessibilidade',
+      'Relacionamento interpessoal'
     ]
   },
 
-  /* ============ PRIORIDADE ALTA ============ */
+  /* ============================================================
+     PARTE II — ADMINISTRAÇÃO PÚBLICA
+  ============================================================ */
   {
-    id: 'DC-02',
-    area: 'CF',
-    titulo: 'Princípios Fundamentais',
+    id: 'AP-13',
+    area: 'AP',
+    titulo: 'Conceitos fundamentais de Administração Pública',
     prioridade: 'alta',
     subtopicos: [
-      'República',
-      'Federação',
-      'Estado Democrático de Direito',
-      'Soberania',
-      'Cidadania',
-      'Dignidade da pessoa humana',
-      'Valores sociais do trabalho',
-      'Livre iniciativa',
-      'Pluralismo político',
-      'Separação dos Poderes',
-      'Objetivos fundamentais',
-      'Princípios das relações internacionais',
-      'Independência nacional',
-      'Prevalência dos direitos humanos',
-      'Autodeterminação',
-      'Não intervenção',
-      'Defesa da paz',
-      'Solução pacífica dos conflitos',
-      'Repúdio ao terrorismo e ao racismo',
-      'Cooperação entre os povos',
-      'Asilo político'
+      'Administração Pública',
+      'Sentido amplo e restrito',
+      'Sentido objetivo e subjetivo',
+      'Administração Pública direta',
+      'Administração Pública indireta',
+      'Interesse público',
+      'Finalidade pública'
     ]
   },
   {
-    id: 'DC-03',
-    area: 'CF',
-    titulo: 'Direitos e Deveres Individuais e Coletivos',
+    id: 'AP-14',
+    area: 'AP',
+    titulo: 'Modelos de Administração Pública',
     prioridade: 'alta',
     subtopicos: [
-      'Direito à vida',
-      'Liberdade',
-      'Igualdade',
-      'Segurança',
-      'Propriedade',
-      'Princípio da legalidade',
-      'Liberdade de manifestação',
-      'Liberdade de expressão',
-      'Liberdade de consciência',
-      'Liberdade de crença',
-      'Inviolabilidade da intimidade',
-      'Vida privada',
-      'Honra',
-      'Imagem',
-      'Domicílio',
-      'Sigilo das comunicações',
-      'Liberdade profissional',
-      'Liberdade de reunião',
-      'Liberdade de associação',
-      'Propriedade e função social',
-      'Direito de informação',
-      'Direito de petição',
-      'Certidões',
-      'Acesso à Justiça',
-      'Devido processo legal',
-      'Contraditório',
-      'Ampla defesa',
-      'Juiz natural',
-      'Tribunal do Júri',
-      'Provas ilícitas',
-      'Presunção de inocência',
-      'Prisão',
-      'Direitos do preso',
-      'Extradição',
-      'Racismo',
-      'Tortura',
-      'Crimes hediondos',
-      'Assistência jurídica',
-      'Gratuidade',
-      'Duração razoável do processo'
+      'Patrimonialismo',
+      'Burocracia',
+      'Administração gerencial',
+      'Comparação entre os modelos',
+      'Reforma Administrativa',
+      'Administração gerencial brasileira',
+      'Princípios relacionados à gestão pública'
     ]
   },
+
+  /* ============================================================
+     PARTE III — DIREITO ADMINISTRATIVO
+  ============================================================ */
   {
-    id: 'DC-04',
-    area: 'CF',
-    titulo: 'Direitos Sociais',
+    id: 'DA-15',
+    area: 'DA',
+    titulo: 'Princípios da Administração Pública',
     prioridade: 'alta',
     subtopicos: [
-      'Educação',
-      'Saúde',
-      'Alimentação',
-      'Trabalho',
-      'Moradia',
-      'Transporte',
-      'Lazer',
-      'Segurança',
-      'Previdência social',
-      'Proteção à maternidade',
-      'Proteção à infância',
-      'Assistência aos desamparados',
-      'Direitos dos trabalhadores',
-      'Salário',
-      'Jornada',
-      'Repouso',
-      'Férias',
-      'Greve',
-      'Sindicalização'
-    ]
-  },
-  {
-    id: 'DC-05',
-    area: 'CF',
-    titulo: 'Nacionalidade',
-    prioridade: 'alta',
-    subtopicos: [
-      'Brasileiro nato',
-      'Brasileiro naturalizado',
-      'Aquisição da nacionalidade',
-      'Critérios de nacionalidade',
-      'Cargos privativos de brasileiro nato',
-      'Perda da nacionalidade',
-      'Extradição',
-      'Diferenças entre nato e naturalizado'
-    ]
-  },
-  {
-    id: 'DC-06',
-    area: 'CF',
-    titulo: 'Direitos Políticos e Partidos Políticos',
-    prioridade: 'alta',
-    subtopicos: [
-      'Soberania popular',
-      'Sufrágio',
-      'Voto',
-      'Plebiscito',
-      'Referendo',
-      'Iniciativa popular',
-      'Alistamento eleitoral',
-      'Voto obrigatório',
-      'Voto facultativo',
-      'Condições de elegibilidade',
-      'Inelegibilidades',
-      'Perda dos direitos políticos',
-      'Suspensão dos direitos políticos',
-      'Partidos políticos',
-      'Autonomia partidária',
-      'Regras constitucionais sobre partidos'
-    ]
-  },
-  {
-    id: 'DC-07',
-    area: 'CF',
-    titulo: 'Remédios Constitucionais',
-    prioridade: 'alta',
-    subtopicos: [
-      'Habeas corpus',
-      'Habeas data',
-      'Mandado de segurança',
-      'Mandado de segurança coletivo',
-      'Mandado de injunção',
-      'Ação popular',
-      'Finalidade',
-      'Cabimento',
-      'Legitimidade',
-      'Características',
-      'Diferenças entre os instrumentos'
-    ]
-  },
-  {
-    id: 'DC-08',
-    area: 'CF',
-    titulo: 'Organização Político-Administrativa',
-    prioridade: 'alta',
-    subtopicos: [
-      'Federação',
-      'União',
-      'Estados',
-      'Distrito Federal',
-      'Municípios',
-      'Territórios',
-      'Autonomia',
-      'Soberania',
-      'Criação de Estados',
-      'Criação de Municípios',
-      'Regiões metropolitanas',
-      'Organização político-administrativa',
-      'Competências constitucionais'
-    ]
-  },
-  {
-    id: 'DC-09',
-    area: 'CF',
-    titulo: 'Repartição de Competências',
-    prioridade: 'alta',
-    subtopicos: [
-      'Competência material',
-      'Competência legislativa',
-      'Competência exclusiva',
-      'Competência privativa',
-      'Competência comum',
-      'Competência concorrente',
-      'Competência suplementar',
-      'Competências da União',
-      'Competências dos Estados',
-      'Competências dos Municípios',
-      'Competências do Distrito Federal',
-      'Interesse local',
-      'Regras de competência legislativa'
-    ]
-  },
-  {
-    id: 'DC-11',
-    area: 'CF',
-    titulo: 'Administração Pública na Constituição',
-    prioridade: 'alta',
-    subtopicos: [
-      'Art. 37',
       'Legalidade',
       'Impessoalidade',
       'Moralidade',
       'Publicidade',
       'Eficiência',
-      'Concurso público',
-      'Cargos',
-      'Empregos',
-      'Funções públicas',
-      'Cargos em comissão',
-      'Funções de confiança',
-      'Acumulação',
-      'Remuneração',
-      'Teto constitucional',
-      'Servidores',
-      'Empregados públicos',
-      'Contratação temporária',
-      'Administração Direta',
-      'Administração Indireta',
+      'LIMPE',
+      'Supremacia do interesse público',
+      'Indisponibilidade do interesse público',
+      'Razoabilidade',
+      'Proporcionalidade',
+      'Continuidade do serviço público',
+      'Autotutela',
+      'Segurança jurídica',
+      'Motivação'
+    ]
+  },
+  {
+    id: 'DA-16',
+    area: 'DA',
+    titulo: 'Organização da Administração Pública',
+    prioridade: 'alta',
+    subtopicos: [
+      'Administração direta',
+      'União, Estados, Distrito Federal e Municípios',
+      'Órgãos públicos',
+      'Administração indireta',
       'Autarquias',
+      'Fundações públicas',
       'Empresas públicas',
       'Sociedades de economia mista',
-      'Fundações públicas',
-      'Licitação',
-      'Serviços públicos',
-      'Responsabilidade civil do Estado',
-      'Improbidade'
+      'Centralização × descentralização',
+      'Concentração × desconcentração'
     ]
   },
   {
-    id: 'DC-12',
-    area: 'CF',
-    titulo: 'Poder Legislativo',
+    id: 'DA-17',
+    area: 'DA',
+    titulo: 'Agentes públicos',
     prioridade: 'alta',
     subtopicos: [
-      'Congresso Nacional',
-      'Câmara dos Deputados',
-      'Senado Federal',
-      'Deputados',
-      'Senadores',
-      'Legislatura',
-      'Sessões',
-      'Comissões',
-      'Competências',
-      'Imunidades parlamentares',
-      'Fiscalização',
-      'Tribunal de Contas',
-      'Fiscalização contábil',
-      'Financeira',
-      'Orçamentária',
-      'Patrimonial'
-    ]
-  },
-  {
-    id: 'DC-13',
-    area: 'CF',
-    titulo: 'Processo Legislativo',
-    prioridade: 'alta',
-    subtopicos: [
-      'Emenda constitucional',
-      'Lei complementar',
-      'Lei ordinária',
-      'Lei delegada',
-      'Medida provisória',
-      'Decreto legislativo',
-      'Resolução',
-      'Iniciativa',
-      'Discussão',
-      'Votação',
-      'Aprovação',
-      'Sanção',
-      'Veto',
-      'Promulgação',
-      'Publicação',
-      'Maioria simples',
-      'Maioria absoluta',
-      'Maioria qualificada',
-      'Quóruns'
-    ]
-  },
-
-  /* ============ PRIORIDADE MÉDIA ============ */
-  {
-    id: 'DC-10',
-    area: 'CF',
-    titulo: 'Intervenção',
-    prioridade: 'media',
-    subtopicos: [
-      'Intervenção federal',
-      'Intervenção estadual',
-      'Intervenção nos Municípios',
-      'Hipóteses',
-      'Finalidade',
-      'Procedimento',
-      'Decreto',
-      'Controle pelo Congresso',
-      'Relação com autonomia federativa'
-    ]
-  },
-  {
-    id: 'DC-14',
-    area: 'CF',
-    titulo: 'Poder Executivo',
-    prioridade: 'media',
-    subtopicos: [
-      'Presidente',
-      'Vice-Presidente',
-      'Eleição',
-      'Mandato',
-      'Requisitos',
-      'Impedimentos',
-      'Sucessão',
-      'Substituição',
-      'Competências',
-      'Ministros',
-      'Responsabilidade',
-      'Crimes de responsabilidade'
-    ]
-  },
-  {
-    id: 'DC-15',
-    area: 'CF',
-    titulo: 'Poder Judiciário',
-    prioridade: 'media',
-    subtopicos: [
-      'Órgãos do Judiciário',
-      'STF',
-      'STJ',
-      'Justiça Federal',
-      'Justiça Estadual',
-      'Justiça do Trabalho',
-      'Justiça Eleitoral',
-      'Justiça Militar',
-      'CNJ',
-      'Competências básicas',
-      'Garantias dos magistrados',
-      'Organização'
-    ]
-  },
-  {
-    id: 'DC-16',
-    area: 'CF',
-    titulo: 'Funções Essenciais à Justiça',
-    prioridade: 'media',
-    subtopicos: [
-      'Ministério Público',
-      'Advocacia Pública',
-      'Advocacia',
-      'Defensoria Pública',
-      'Funções',
-      'Atribuições',
-      'Princípios',
-      'Autonomia',
-      'Organização constitucional'
-    ]
-  },
-  {
-    id: 'DC-17',
-    area: 'CF',
-    titulo: 'Defesa do Estado e Instituições Democráticas',
-    prioridade: 'media',
-    subtopicos: [
-      'Estado de Defesa',
-      'Estado de Sítio',
-      'Forças Armadas',
-      'Segurança pública',
-      'Órgãos de segurança pública',
-      'Diferenças entre Estado de Defesa e Estado de Sítio'
-    ]
-  },
-  {
-    id: 'DC-18',
-    area: 'CF',
-    titulo: 'Controle de Constitucionalidade',
-    prioridade: 'media',
-    subtopicos: [
-      'Constitucionalidade',
-      'Inconstitucionalidade',
-      'Controle preventivo',
-      'Controle repressivo',
-      'Controle difuso',
-      'Controle concentrado',
-      'Controle político',
-      'Controle judicial',
-      'STF',
-      'ADI',
-      'ADC',
-      'ADPF',
-      'ADO',
-      'Efeitos das decisões',
-      'Conceitos fundamentais'
-    ]
-  },
-
-  /* ============ PRIORIDADE COMPLEMENTAR ============ */
-  {
-    id: 'DC-19',
-    area: 'CF',
-    titulo: 'Ordem Econômica e Social',
-    prioridade: 'baixa',
-    subtopicos: [
-      'Ordem econômica — princípios',
-      'Livre iniciativa',
-      'Valorização do trabalho',
-      'Função social',
-      'Atuação do Estado',
-      'Seguridade',
-      'Saúde',
-      'Previdência',
-      'Assistência',
-      'Educação',
-      'Cultura',
-      'Desporto',
-      'Ciência e tecnologia',
-      'Meio ambiente',
-      'Família',
-      'Criança',
-      'Adolescente',
-      'Jovem',
-      'Idoso',
-      'Indígenas'
-    ]
-  },
-  {
-    id: 'DC-20',
-    area: 'CF',
-    titulo: 'ADCT e Atualizações Constitucionais',
-    prioridade: 'baixa',
-    subtopicos: [
-      'ADCT',
-      'Dispositivos relevantes',
-      'Emendas constitucionais',
-      'Alterações recentes',
-      'Assuntos constitucionais atualizados'
-    ]
-  },
-
-  /* ============ CONSTITUIÇÃO ESTADUAL ============ */
-  {
-    id: 'DC-RN',
-    area: 'CE',
-    titulo: 'Constituição do Estado do Rio Grande do Norte',
-    prioridade: 'alta',
-    subtopicos: [
-      'Princípios fundamentais',
-      'Organização estadual',
-      'Municípios',
-      'Poder Legislativo',
-      'Poder Executivo',
-      'Poder Judiciário',
-      'Ministério Público',
-      'Defensoria Pública',
-      'Tribunal de Contas',
-      'Administração Pública',
+      'Conceito',
+      'Classificação',
+      'Agentes políticos',
       'Servidores públicos',
-      'Competências estaduais'
+      'Empregados públicos',
+      'Particulares em colaboração',
+      'Cargo',
+      'Emprego',
+      'Função',
+      'Provimento',
+      'Vacância',
+      'Direitos',
+      'Deveres',
+      'Responsabilidades',
+      'Acumulação'
+    ]
+  },
+  {
+    id: 'DA-18',
+    area: 'DA',
+    titulo: 'Poderes da Administração Pública',
+    prioridade: 'alta',
+    subtopicos: [
+      'Poder hierárquico',
+      'Poder disciplinar',
+      'Poder regulamentar/normativo',
+      'Poder de polícia',
+      'Abuso de poder',
+      'Excesso de poder',
+      'Desvio de poder/finalidade'
+    ]
+  },
+  {
+    id: 'DA-19',
+    area: 'DA',
+    titulo: 'Atos Administrativos',
+    prioridade: 'alta',
+    subtopicos: [
+      'Conceito',
+      'Requisitos/elementos',
+      'Competência',
+      'Finalidade',
+      'Forma',
+      'Motivo',
+      'Objeto',
+      'Atributos',
+      'Presunção de legitimidade',
+      'Imperatividade',
+      'Autoexecutoriedade',
+      'Tipicidade',
+      'Classificação',
+      'Espécies',
+      'Extinção dos atos',
+      'Anulação',
+      'Revogação',
+      'Cassação',
+      'Caducidade',
+      'Contraposição',
+      'Convalidação'
+    ]
+  },
+  {
+    id: 'DA-20',
+    area: 'DA',
+    titulo: 'Serviços Públicos',
+    prioridade: 'alta',
+    subtopicos: [
+      'Conceito',
+      'Princípios',
+      'Classificação',
+      'Formas de prestação',
+      'Prestação direta',
+      'Delegação',
+      'Concessão',
+      'Permissão',
+      'Autorização',
+      'Usuários',
+      'Continuidade',
+      'Adequação',
+      'Regularidade'
+    ]
+  },
+  {
+    id: 'DA-21',
+    area: 'DA',
+    titulo: 'Licitações e contratos administrativos',
+    prioridade: 'alta',
+    subtopicos: [
+      'Fundamentos',
+      'Princípios',
+      'Lei 14.133/2021',
+      'Fases da licitação',
+      'Modalidades',
+      'Critérios de julgamento',
+      'Contratação direta',
+      'Dispensa',
+      'Inexigibilidade',
+      'Agentes públicos envolvidos',
+      'Contratos administrativos',
+      'Alterações contratuais',
+      'Fiscalização',
+      'Sanções',
+      'Responsabilidades'
+    ]
+  },
+  {
+    id: 'DA-22',
+    area: 'DA',
+    titulo: 'Responsabilidade Civil do Estado',
+    prioridade: 'media',
+    subtopicos: [
+      'Responsabilidade estatal',
+      'Responsabilidade objetiva',
+      'Responsabilidade subjetiva',
+      'Teoria do risco administrativo',
+      'Excludentes',
+      'Ação regressiva',
+      'Responsabilidade por atos de agentes públicos'
+    ]
+  },
+  {
+    id: 'DA-23',
+    area: 'DA',
+    titulo: 'Controle da Administração Pública',
+    prioridade: 'alta',
+    subtopicos: [
+      'Controle administrativo',
+      'Autotutela',
+      'Recursos administrativos',
+      'Controle legislativo',
+      'Controle judicial',
+      'Controle externo',
+      'Tribunais de Contas',
+      'Controle interno'
+    ]
+  },
+  {
+    id: 'DA-24',
+    area: 'DA',
+    titulo: 'Improbidade Administrativa',
+    prioridade: 'media',
+    subtopicos: [
+      'Conceito',
+      'Atos de improbidade',
+      'Alterações legislativas',
+      'Requisitos',
+      'Sanções',
+      'Responsabilização',
+      'Lei 8.429/1992'
+    ]
+  },
+  {
+    id: 'DA-25',
+    area: 'DA',
+    titulo: 'Processo Administrativo',
+    prioridade: 'alta',
+    subtopicos: [
+      'Processo administrativo',
+      'Princípios',
+      'Direitos do administrado',
+      'Deveres',
+      'Competência',
+      'Impedimento',
+      'Suspeição',
+      'Fases',
+      'Decisão',
+      'Recursos',
+      'Lei 9.784/1999'
+    ]
+  },
+  {
+    id: 'DA-26',
+    area: 'DA',
+    titulo: 'Bens Públicos',
+    prioridade: 'baixa',
+    subtopicos: [
+      'Conceito',
+      'Classificação',
+      'Bens de uso comum do povo',
+      'Bens de uso especial',
+      'Bens dominicais',
+      'Características',
+      'Alienação',
+      'Utilização'
+    ]
+  },
+  {
+    id: 'DA-27',
+    area: 'DA',
+    titulo: 'Intervenção do Estado e restrições administrativas',
+    prioridade: 'baixa',
+    subtopicos: [
+      'Desapropriação',
+      'Servidão administrativa',
+      'Requisição',
+      'Ocupação temporária',
+      'Limitações administrativas',
+      'Tombamento'
+    ]
+  },
+
+  /* ============================================================
+     REVISÃO INTEGRADA
+  ============================================================ */
+  {
+    id: 'REV-28',
+    area: 'REV',
+    titulo: 'Revisão integrada e domínio por questões',
+    prioridade: 'alta',
+    subtopicos: [
+      'Revisão por ciclos',
+      'Teoria → questões → erros → revisão → novas questões',
+      'Banco de erros',
+      'Classificação de erros',
+      'Falta de conhecimento',
+      'Confusão entre conceitos',
+      'Interpretação',
+      'Pegadinha da banca',
+      'Esquecimento',
+      'Erro por pressa'
     ]
   }
 
