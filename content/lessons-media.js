@@ -1,687 +1,227 @@
 /* ============================================================
    AULAS — Módulos de prioridade MÉDIA
-   Preenchidos neste lote: DC-10, DC-14, DC-15
-   Próximo lote: DC-16, DC-17, DC-18
+   Administração + Direito Administrativo
+   Entregues: ADM-05, ADM-08, ADM-09
+   Próximo sub-lote: 5.2 (ADM-12, DA-22, DA-24)
    ============================================================ */
 
 window.LESSONS_MEDIA = {
 
   /* ============================================================
-     DC-10 — Intervenção
+     ADM-05 — Direção, liderança e motivação
   ============================================================ */
-  'DC-10': {
-    id: 'L-DC-10',
-    moduloId: 'DC-10',
-    objetivo: 'Dominar o instituto da intervenção (arts. 34 a 36 da CF/88): hipóteses de intervenção federal, estadual e em Municípios, procedimento, decreto, controle pelo Congresso e relação com a autonomia federativa.',
-    prerequisitos: ['DC-08'],
-
-    introducao: 'A intervenção é medida excepcional: o ente federativo quebra temporariamente a autonomia de outro, para restabelecer a normalidade constitucional. É o oposto do princípio federativo — por isso, é taxativa, temporária e sujeita a controle.',
-
-    explicacaoSimples: 'Pense na Federação como um condomínio. Se um morador descumpre regras gravíssimas, o síndico (União ou Estado) pode, temporariamente, assumir o controle do apartamento dele — mas só nas hipóteses previstas no regimento e depois de seguir o procedimento. Isso é intervenção.',
-
-    explicacaoTecnica: 'Art. 34: hipóteses de intervenção FEDERAL nos Estados e no DF — (I) manter a integridade nacional; (II) repelir invasão estrangeira ou de uma unidade da Federação em outra; (III) pôr termo a grave comprometimento da ordem pública; (IV) garantir o livre exercício de qualquer dos Poderes nas unidades da Federação; (V) reorganizar as finanças da unidade (que suspender pagamento da dívida fundada por mais de 2 anos, ou deixar de entregar receitas); (VI) prover a execução de lei federal, ordem ou decisão judicial; (VII) assegurar a observância dos princípios constitucionais sensíveis (forma republicana, sistema representativo, regime democrático, direitos da pessoa humana, autonomia municipal, prestação de contas da Administração Pública direta e indireta). Art. 35: hipóteses de intervenção ESTADUAL nos Municípios — (I) deixar de ser paga, sem motivo, por 2 anos, a dívida fundada; (II) não forem prestadas contas devidas; (III) não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde; (IV) o Tribunal de Justiça der provimento a representação para assegurar a observância de princípios indicados na Constituição Estadual ou para prover a execução de lei, de ordem ou de decisão judicial. Art. 36: procedimento — decreto do Presidente (intervenção federal espontânea) ou requisição (nos casos do art. 34, IV, VI e VII); ouvidoria prévia do Conselho da República e do Conselho de Defesa; controle político pelo Congresso (aprovação por maioria simples em 24h, se em recesso convocação extraordinária); decreto especifica amplitude, prazo e condições. §1º: nomeação de interventor. §2º: cessação da intervenção — retorno à normalidade. §3º: se cessada a causa, as autoridades afastadas retornam aos cargos.',
-
+  'ADM-05': {
+    id: 'L-ADM-05',
+    moduloId: 'ADM-05',
+    objetivo: 'Compreender a função Direção: liderança (conceito, autoridade, poder, liderança formal e informal), as principais teorias de liderança (autocrática, democrática, liberal, teoria dos traços, teorias comportamentais e liderança situacional) e as principais teorias motivacionais (Maslow, Herzberg, McGregor).',
+    prerequisitos: ['ADM-01', 'ADM-02'],
+    introducao: 'Depois de planejar (o que fazer) e organizar (quem faz o quê), é preciso DIRIGIR: liderar pessoas, motivar equipes, comunicar e resolver conflitos. A função Direção é a que coloca a organização em movimento — e depende de liderança e motivação para funcionar.',
+    explicacaoSimples: 'Dirigir é animar a equipe. Imagine um técnico de futebol: ele não joga, mas orienta, motiva, ajusta a tática e mantém o time unido. Na Administração, o diretor, o coordenador ou o chefe faz o mesmo: lidera pessoas, distribui tarefas, resolve conflitos e mantém o time engajado.',
+    explicacaoTecnica: 'DIREÇÃO é a função administrativa que coloca as pessoas em ação, no sentido dos objetivos organizacionais. Envolve LIDERANÇA, MOTIVAÇÃO e COMUNICAÇÃO. LIDERANÇA é a capacidade de influenciar pessoas para o alcance de objetivos. AUTORIDADE é o direito formal de dar ordens (decorre do cargo). PODER é a capacidade de influenciar (pode decorrer do cargo, do conhecimento, da personalidade, etc.). LIDERANÇA FORMAL: investida pelo cargo — chefe designado. LIDERANÇA INFORMAL: emerge naturalmente no grupo — influência sem cargo. TEORIAS DE LIDERANÇA: (a) ESTILOS CLÁSSICOS (Lewin): AUTOCRÁTICA (decisões centralizadas no líder, pouca participação), DEMOCRÁTICA (decisões compartilhadas, participação do grupo), LIBERAL (laissez-faire — o grupo decide, o líder pouco interfere). (b) TEORIA DOS TRAÇOS: o líder nasce com características inatas (carisma, inteligência, iniciativa). (c) TEORIAS COMPORTAMENTAIS: o líder se faz — foco nos comportamentos (Ohio State: estrutura de iniciação x consideração; Michigan: orientação para tarefa x orientação para pessoas). (d) LIDERANÇA SITUACIONAL (Hersey & Blanchard): o estilo ideal depende da maturidade da equipe — DIRIGIR (baixa maturidade), PERSUADIR, PARTICIPAR e DELEGAR (alta maturidade). MOTIVAÇÃO: MASLOW — hierarquia das necessidades (fisiológicas, segurança, sociais, estima, autorrealização), que devem ser satisfeitas em ordem ascendente. HERZBERG — teoria dos dois fatores: HIGIÊNICOS (salário, condições de trabalho, políticas) evitam insatisfação, mas não motivam; MOTIVADORES (reconhecimento, responsabilidade, realização, crescimento) é que motivam. McGREGOR — teoria X (visão negativa do ser humano — precisa ser controlado) e teoria Y (visão positiva — o trabalho é natural e o ser humano busca responsabilidade).',
     exemplos: [
-      'Intervenção federal para garantir ordem pública: grave crise de segurança em Estado.',
-      'Intervenção federal para garantir execução de decisão judicial: descumprimento de ordem federal.',
-      'Intervenção federal para assegurar princípios sensíveis: descumprimento da autonomia municipal.',
-      'Intervenção estadual em Município: não aplicação do mínimo na educação ou saúde.',
-      'Intervenção estadual por não pagamento de dívida fundada por 2 anos.',
-      'Reorganização de finanças: Estado que não paga dívida fundada por mais de 2 anos.'
+      'Liderança autocrática: chefe decide sozinho, sem consultar a equipe.',
+      'Liderança democrática: chefe ouve a equipe antes de decidir.',
+      'Liderança liberal: chefe dá autonomia total, com pouca interferência.',
+      'Liderança formal: diretor designado por portaria.',
+      'Liderança informal: servidor experiente que a equipe procura por orientação.',
+      'Liderança situacional — dirigir: equipe nova, com pouca experiência.',
+      'Liderança situacional — delegar: equipe experiente e motivada.',
+      'Maslow: segurança — estabilidade no emprego.',
+      'Maslow: autorrealização — desenvolvimento profissional.',
+      'Herzberg: salário — fator higiênico (evita insatisfação, não motiva).',
+      'Herzberg: reconhecimento — fator motivador.',
+      'McGregor X: "o servidor precisa de supervisão constante".',
+      'McGregor Y: "o servidor busca responsabilidade e autonomia".'
     ],
-
     comparacoes: [
-      { termoA: 'Intervenção federal', termoB: 'Intervenção estadual', diferenca: 'FEDERAL: decreto do Presidente da República; atinge Estados e DF; hipóteses do art. 34. ESTADUAL: decreto do Governador; atinge Municípios; hipóteses do art. 35. São institutos paralelos, mas com titulares e destinatários diferentes.' },
-      { termoA: 'Intervenção espontânea', termoB: 'Intervenção provocada', diferenca: 'ESPONTÂNEA: decreto do Presidente, sem provocação de outro Poder (hipóteses dos incisos I, II, III e V do art. 34). PROVOCADA: depende de requisição do STF (inciso VI), do STJ (inciso VI, lei federal) ou do TSE (inciso VII, princípios sensíveis), ou de solicitação do Poder coacto (inciso IV).' },
-      { termoA: 'Intervenção federal', termoB: 'Estado de Sítio', diferenca: 'INTERVENÇÃO: medida excepcional para restabelecer a ordem federativa — atinge o ente, não os direitos fundamentais diretamente. ESTADO DE SÍTIO: medida excepcional para restabelecer a ordem constitucional em caso de comoção grave ou guerra — atinge diretamente os direitos fundamentais, suspendendo garantias.' },
-      { termoA: 'Controle político', termoB: 'Controle judicial', diferenca: 'POLÍTICO: feito pelo Congresso Nacional — aprovação do decreto de intervenção em 24h. JUDICIAL: feito pelo STF, STJ ou TSE — conforme a hipótese, o Tribunal competente pode requisitar a intervenção.' }
+      { termoA: 'Autoridade', termoB: 'Poder', diferenca: 'AUTORIDADE: direito formal de dar ordens, decorrente do cargo (legitimidade formal). PODER: capacidade de influenciar, independentemente do cargo — pode vir do conhecimento, da personalidade, do relacionamento. Todo chefe tem autoridade; nem todo chefe tem poder (influência). O líder informal tem poder, mas não autoridade formal.' },
+      { termoA: 'Liderança formal', termoB: 'Liderança informal', diferenca: 'FORMAL: decorre do cargo — chefe designado, com autoridade institucional. INFORMAL: emerge naturalmente do grupo — influência sem cargo, baseada em confiança e respeito. Nem sempre coincidem: um chefe formal pode não ser o líder real da equipe.' },
+      { termoA: 'Liderança autocrática', termoB: 'Liderança democrática', diferenca: 'AUTOCRÁTICA: decisões centralizadas no líder, comunicação vertical descendente, pouca participação. DEMOCRÁTICA: decisões compartilhadas, comunicação em várias direções, participação do grupo. A autocrática é mais rápida (em emergências); a democrática tende a gerar mais engajamento.' },
+      { termoA: 'Fatores higiênicos', termoB: 'Fatores motivadores (Herzberg)', diferenca: 'HIGIÊNICOS (extrínsecos): salário, condições de trabalho, políticas, segurança. Quando ausentes, geram INSATISFAÇÃO; quando presentes, NÃO motivam (apenas evitam insatisfação). MOTIVADORES (intrínsecos): reconhecimento, responsabilidade, realização, crescimento. São esses que efetivamente MOTIVAM. É uma das distinções mais cobradas em prova.' },
+      { termoA: 'Teoria X', termoB: 'Teoria Y (McGregor)', diferenca: 'TEORIA X: visão negativa do ser humano — o trabalhador é preguiçoso, evita responsabilidade, precisa ser controlado e coagido. TEORIA Y: visão positiva — o trabalho é natural, o ser humano busca responsabilidade e autorrealização. O estilo de gestão decorre da visão adotada pelo gestor.' },
+      { termoA: 'Liderança situacional', termoB: 'Teoria dos traços', diferenca: 'SITUACIONAL (Hersey & Blanchard): não há estilo único — o líder ajusta o estilo (dirigir, persuadir, participar, delegar) à MATURIDADE da equipe. TEORIA DOS TRAÇOS: o líder já nasce com características inatas (carisma, inteligência, iniciativa). A situacional é contingencial; a dos traços é inatista.' }
     ],
-
-    aplicacaoEmConcurso: 'Cobrança das hipóteses de intervenção federal (art. 34) x estadual (art. 35), do procedimento (decreto, ouvidoria dos Conselhos, controle pelo Congresso em 24h) e das regras específicas (prazo, nomeação de interventor, retorno das autoridades). Questões costumam misturar as hipóteses dos dois artigos.',
-
+    aplicacaoEmConcurso: 'Cobrança: diferença entre autoridade e poder; liderança formal x informal; os três estilos clássicos; teoria dos traços x comportamental x situacional; Maslow, Herzberg e McGregor. A banca ama: dizer que Herzberg considera o salário como fator motivador (é higiênico); classificar um estilo em autocrático/democrático/liberal; pedir a correspondência entre necessidade e nível em Maslow.',
     pegadinhas: [
-      'Confundir intervenção federal (arts. 34) com estadual (arts. 35).',
-      'Achar que o decreto de intervenção é do Congresso. É do Presidente (federal) ou do Governador (estadual).',
-      'Dizer que a intervenção depende de autorização prévia do Congresso. O decreto é expedido e depois submetido ao Congresso em 24h.',
-      'Esquecer a ouvidoria prévia do Conselho da República e do Conselho de Defesa (intervenção federal).',
-      'Confundir intervenção com estado de sítio ou estado de defesa.',
-      'Achar que a intervenção é permanente. É temporária — cessada a causa, as autoridades retornam.'
+      'Dizer que o salário é fator motivador em Herzberg. NÃO — é HIGIÊNICO (evita insatisfação, não motiva).',
+      'Confundir autoridade com poder. Autoridade = cargo; poder = influência.',
+      'Achar que liderança formal e informal sempre coincidem. NÃO — o chefe formal pode não ser o líder real.',
+      'Dizer que Maslow deve ser satisfeito em qualquer ordem. NÃO — a satisfação é ascendente: primeiro as fisiológicas, depois as demais.',
+      'Confundir liderança liberal (laissez-faire) com ausência de liderança. Há liderança, mas com pouca interferência.',
+      'Achar que teoria X e teoria Y são modelos de liderança. NÃO — são visões sobre a natureza humana (pressupostos sobre o trabalhador).',
+      'Dizer que liderança situacional usa sempre o mesmo estilo. NÃO — o estilo varia conforme a maturidade da equipe.'
     ],
-
     errosComuns: [
-      'Decorar hipóteses sem associar ao titular do decreto.',
-      'Ignorar que a intervenção em Município (art. 35, I a IV) pode ser decreto do Governador, mas a hipótese do inciso IV depende de provimento pelo TJ.',
-      'Não distinguir intervenção espontânea de provocada.'
+      'Decorar teorias sem exemplos práticos.',
+      'Confundir fatores higiênicos com motivadores.',
+      'Não diferenciar liderança formal de informal.',
+      'Não saber associar cada estilo de liderança a uma situação.'
     ],
-
     resumo: [
-      'Intervenção é medida excepcional e temporária.',
-      'Art. 34: hipóteses de intervenção FEDERAL nos Estados e DF.',
-      'Art. 35: hipóteses de intervenção ESTADUAL nos Municípios.',
-      'Decreto: Presidente (federal) ou Governador (estadual).',
-      'Controle: Congresso aprova o decreto em 24h.',
-      'Ouvidoria prévia do Conselho da República e Conselho de Defesa (federal).',
-      'Decreto especifica amplitude, prazo e condições.',
-      'Cessada a causa, retornam as autoridades afastadas.'
+      'Direção: colocar as pessoas em ação — liderança, motivação e comunicação.',
+      'Autoridade = cargo. Poder = influência.',
+      'Liderança formal = cargo. Informal = emerge do grupo.',
+      'Estilos clássicos: autocrática, democrática, liberal (laissez-faire).',
+      'Teorias: traços (inata), comportamentais (comportamento), situacional (maturidade da equipe).',
+      'Maslow: fisiológicas → segurança → sociais → estima → autorrealização.',
+      'Herzberg: higiênicos (evitam insatisfação) x motivadores (motivam).',
+      'McGregor: teoria X (negativa) x teoria Y (positiva).'
     ],
-
     modoProfessor: {
-      explicarMaisSimples: 'Intervenção é como o "juiz" do condomínio assumindo temporariamente o apartamento de um morador que quebrou regras gravíssimas — só nas hipóteses do regimento, por prazo determinado, com o condomínio aprovando depois.',
-      outroExemplo: 'Se um Estado deixa de pagar precatórios por mais de 2 anos, cabe intervenção federal por reorganização de finanças (art. 34, V). Se um Município não aplica o mínimo em saúde, cabe intervenção estadual (art. 35, III).',
-      compararConceitos: 'Federal (Presidente, atinge Estados) x Estadual (Governador, atinge Municípios). Espontânea (sem provocação) x Provocada (requisição ou solicitação). Intervenção x Estado de Sítio: uma atinge o ente, o outro atinge direitos.',
-      mostrarPegadinha: 'Cuidado: "A intervenção federal só pode ser decretada pelo Congresso Nacional". ERRADO. O DECRETO é do Presidente; o Congresso apenas APROVA depois, em 24 horas.',
-      comoApareceEmConcurso: 'Cobrança das hipóteses (arts. 34 e 35) e do procedimento (decreto + controle do Congresso).',
+      explicarMaisSimples: 'Dirigir é animar a equipe. O líder pode ser o chefe formal ou aquela pessoa que o grupo procura naturalmente. Para motivar, é preciso ir além do salário — reconhecimento e responsabilidade motivam mais.',
+      outroExemplo: 'Um setor público tem um diretor formal (autoridade) mas a equipe recorre a um servidor experiente (liderança informal). Se o diretor quiser engajar a equipe, não basta aumentar salário (fator higiênico) — precisa reconhecer o trabalho e dar autonomia (fatores motivadores).',
+      compararConceitos: 'Autoridade x poder = cargo x influência. Formal x informal = designação x emergência. Autocrática x democrática x liberal = centralização x participação x autonomia. Higiênicos x motivadores = evitam insatisfação x motivam.',
+      mostrarPegadinha: 'Cuidado: "Em Herzberg, o salário é fator motivador". ERRADO. O salário é fator HIGIÊNICO — evita insatisfação, mas não motiva. Quem motiva são reconhecimento, responsabilidade e realização.',
+      comoApareceEmConcurso: 'Questões pedem classificação de estilo, diferenciação de teorias e associação em Maslow/Herzberg.',
       fazerPergunta: {
-        pergunta: 'Um Estado deixa de aplicar o mínimo constitucional em educação. Cabe intervenção federal?',
-        resposta: 'NÃO — a não aplicação do mínimo em educação é hipótese de intervenção ESTADUAL em MUNICÍPIO (art. 35, III). Em relação ao Estado, a não aplicação do mínimo não é hipótese de intervenção federal, e sim de responsabilização política (crime de responsabilidade do Governador) e rejeição de contas.'
+        pergunta: 'Um chefe decide tudo sozinho, sem consultar a equipe. Que estilo de liderança é esse e qual sua principal vantagem?',
+        resposta: 'É LIDERANÇA AUTOCRÁTICA. A principal vantagem é a RAPIDEZ na decisão — útil em situações de emergência, quando não há tempo para consulta. A desvantagem é o baixo engajamento e a dependência do líder.'
       }
     }
   },
 
   /* ============================================================
-     DC-14 — Poder Executivo
+     ADM-08 — Comunicação e comportamento organizacional
   ============================================================ */
-  'DC-14': {
-    id: 'L-DC-14',
-    moduloId: 'DC-14',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Executivo federal (arts. 76 a 91 da CF/88): Presidente, Vice, eleição, mandato, requisitos, sucessão, substituição, competências, ministros, responsabilidade e crimes de responsabilidade.',
-    prerequisitos: ['DC-12'],
-
-    introducao: 'O Poder Executivo exerce a função típica de administrar o Estado. Na esfera federal, é chefiado pelo Presidente da República, auxiliado pelos Ministros de Estado. As bancas cobram as regras de eleição, as hipóteses de sucessão/substituição e os crimes de responsabilidade.',
-
-    explicacaoSimples: 'O Presidente é o "chefe" do Executivo federal: administra o país, representa o Brasil no exterior, sanciona e veta leis, edita medidas provisórias. Se ele sai do cargo por algum motivo, há regras específicas sobre quem assume — o Vice, o Presidente da Câmara, o do Senado ou o do STF.',
-
-    explicacaoTecnica: 'Art. 76: o Poder Executivo é exercido pelo Presidente da República, auxiliado pelos Ministros de Estado. Art. 77: eleição pelo sufrágio universal e voto direto e secreto, maioria absoluta; 2º turno se necessário; posse em 1º de janeiro do ano seguinte; mandato de 4 anos. Art. 14, §3º, VI, "a": idade mínima de 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento eleitoral, domicílio eleitoral e filiação partidária. Art. 78: posse em sessão conjunta do Congresso. Art. 79: o Vice substitui o Presidente em caso de impedimento e sucede em caso de vaga. Art. 80: em caso de impedimento do Presidente e do Vice, ou vacância dos cargos, assumem sucessivamente: Presidente da Câmara, do Senado e do STF. Art. 81: se a vacância ocorrer nos 2 primeiros anos, eleição direta em 90 dias; se nos 2 últimos, eleição indireta pelo Congresso em 30 dias. Art. 82: mandato de 4 anos. Art. 83: 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento, domicílio, filiação. Art. 84: competências privativas do Presidente (sancionar, vetar, editar MP, nomear Ministros do STF, etc.). Art. 85: crimes de responsabilidade — atos que atentem contra a CF e especialmente contra: existência da União, livre exercício dos Poderes, exercício dos direitos políticos, segurança interna, probidade na Administração, lei orçamentária, guarda e uso do dinheiro público. Art. 86: imunidade formal — o Presidente não pode ser responsabilizado por atos estranhos ao exercício de suas funções. Art. 87: Ministros de Estado auxiliam o Presidente. Art. 88: lei disporá sobre criação e extinção de Ministérios. Art. 89: Conselho da República. Art. 90: Conselho de Defesa Nacional. Art. 91: regras sobre esses Conselhos.',
-
+  'ADM-08': {
+    id: 'L-ADM-08',
+    moduloId: 'ADM-08',
+    objetivo: 'Compreender a comunicação organizacional: conceito, processo (emissor, receptor, mensagem, canal, ruído, feedback), comunicação formal x informal, vertical x horizontal, conflitos, negociação e trabalho em equipe.',
+    prerequisitos: ['ADM-01', 'ADM-05'],
+    introducao: 'Comunicação é a base de toda organização: sem ela, ordens não chegam, informações se perdem, conflitos se ampliam. Este módulo conecta a função Direção (ADM-05) com a prática da gestão: como as pessoas se comunicam, como surgem os conflitos e como resolvê-los.',
+    explicacaoSimples: 'Comunicar é transmitir uma mensagem. Se o emissor fala, mas o receptor não entende, a comunicação falhou. O caminho pode ter ruídos — barulho, preconceito, distração, linguagem inadequada. A comunicação eficaz exige clareza, escuta ativa e feedback. E nas organizações há dois grandes canais: o formal (hierarquia, documentos) e o informal (conversas, boatos, redes de relacionamento).',
+    explicacaoTecnica: 'COMUNICAÇÃO é o processo de transmissão e compreensão de uma mensagem. ELEMENTOS: EMISSOR (quem envia), CODIFICAÇÃO (transformar a ideia em mensagem), MENSAGEM (conteúdo), CANAL (meio), DECODIFICAÇÃO (interpretação), RECEPTOR (quem recebe), FEEDBACK (retorno), RUÍDO (interferência que distorce a mensagem). COMUNICAÇÃO FORMAL: flui pelos canais oficiais — hierarquia, documentos, ordens. Divide-se em VERTICAL (descendente — ordens; ascendente — relatos) e HORIZONTAL (entre pares). COMUNICAÇÃO INFORMAL: flui pelas relações interpessoais — conversas, redes sociais, "rádio-peão". Pode ser útil ou gerar boatos. CONFLITOS: podem ser funcionais (estimulam mudança e inovação) ou disfuncionais (destroem relações e reduzem desempenho). Estratégias: EVITAR, ACOMODAR, COMPETIR, COMPROMETER, COLABORAR (solução ganha-ganha). NEGOCIAÇÃO: pode ser distributiva (ganha-perde) ou integrativa (ganha-ganha). TRABALHO EM EQUIPE: grupo com objetivo comum, complementaridade de habilidades, comunicação aberta e cooperação.',
     exemplos: [
-      'Eleição: 1º turno no primeiro domingo de outubro; 2º turno no último domingo de outubro.',
-      'Posse: 1º de janeiro do ano seguinte.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Sucessão: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.',
-      'Ministro do STF: nomeação pelo Presidente, após aprovação por maioria absoluta do Senado.',
-      'Crimes de responsabilidade: atos contra a existência da União, livre exercício dos Poderes, probidade na Administração etc.'
+      'Emissor: chefe que envia um e-mail.',
+      'Receptor: servidor que recebe a mensagem.',
+      'Canal: e-mail, telefone, reunião, memorando.',
+      'Ruído: barulho na sala, mensagem ambígua, preconceito.',
+      'Feedback: resposta do servidor confirmando o entendimento.',
+      'Comunicação formal descendente: ordem do chefe ao subordinado.',
+      'Comunicação formal ascendente: relatório do subordinado ao chefe.',
+      'Comunicação formal horizontal: comunicação entre setores.',
+      'Comunicação informal: conversas no corredor, "rádio-peão".',
+      'Conflito funcional: debate sobre melhores práticas.',
+      'Conflito disfuncional: disputa pessoal que prejudica o time.',
+      'Negociação integrativa: servidor e chefe encontram solução que atende a ambos.'
     ],
-
     comparacoes: [
-      { termoA: 'Sucessão', termoB: 'Substituição', diferenca: 'SUBSTITUIÇÃO: assume temporariamente, em caso de IMPEDIMENTO (doença, viagem). SUCESSÃO: assume definitivamente, em caso de VAGA (morte, renúncia, cassação). A ordem é: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.' },
-      { termoA: 'Vacância nos 2 primeiros anos', termoB: 'Vacância nos 2 últimos anos', diferenca: 'PRIMEIROS 2 ANOS: eleição DIRETA em 90 dias (o povo vota). ÚLTIMOS 2 ANOS: eleição INDIRETA pelo Congresso em 30 dias (o Congresso vota).' },
-      { termoA: 'Crime comum', termoB: 'Crime de responsabilidade', diferenca: 'CRIME COMUM: julgado pelo STF (Presidente) após autorização da Câmara por 2/3. CRIME DE RESPONSABILIDADE: julgado pelo SENADO (Presidente) após autorização da Câmara por 2/3. A Câmara AUTORIZA; o Senado JULGA.' },
-      { termoA: 'Imunidade formal do Presidente', termoB: 'Imunidade do parlamentar', diferenca: 'PRESIDENTE (art. 86): não pode ser responsabilizado por atos estranhos ao exercício da função; durante o mandato, não pode ser preso por crime comum sem sentença condenatória. PARLAMENTAR (art. 53): imunidade material (opiniões, palavras, votos) e formal (prisão só em flagrante de crime inafiançável; processo criminal sem licença prévia após EC 35/2001).' }
+      { termoA: 'Comunicação formal', termoB: 'Comunicação informal', diferenca: 'FORMAL: canais oficiais, hierarquia, documentos. Previsível, controlada, com registro. INFORMAL: canais de relacionamento, conversas, redes. Rápida, flexível, mas pode gerar boatos. Ambas coexistem na organização — e a informal pode reforçar ou minar a formal.' },
+      { termoA: 'Comunicação vertical', termoB: 'Comunicação horizontal', diferenca: 'VERTICAL: entre níveis hierárquicos — descendente (ordens, diretrizes) ou ascendente (relatórios, sugestões). HORIZONTAL: entre pares — coordenação, troca de informações, integração entre áreas. A horizontal tende a ser mais ágil; a vertical carrega mais formalidade.' },
+      { termoA: 'Conflito funcional', termoB: 'Conflito disfuncional', diferenca: 'FUNCIONAL: construtivo — estimula debate, inovação, melhoria. DISFUNCIONAL: destrutivo — gera hostilidade, reduz desempenho, fragmenta o grupo. Nem todo conflito é ruim: o gestor deve estimular o funcional e mediar o disfuncional.' },
+      { termoA: 'Negociação distributiva', termoB: 'Negociação integrativa', diferenca: 'DISTRIBUTIVA: ganha-perde — o ganho de um lado é a perda do outro (recursos limitados). INTEGRATIVA: ganha-ganha — busca soluções criativas que atendam aos interesses de ambos. A integrativa exige mais diálogo, mas tende a gerar soluções mais duradouras.' },
+      { termoA: 'Grupo', termoB: 'Equipe', diferenca: 'GRUPO: pessoas que compartilham um objetivo, mas com responsabilidades individuais e sinergia neutra (ou negativa). EQUIPE: pessoas com objetivo comum, habilidades complementares, responsabilidade mútua e sinergia positiva. A equipe é uma evolução do grupo — o resultado conjunto supera a soma das partes.' }
     ],
-
-    aplicacaoEmConcurso: 'Cobrança de arts. 77 a 84 (eleição, mandato, requisitos, competências), das hipóteses de sucessão/substituição, e da distinção entre crime comum e de responsabilidade. Alta frequência em concursos federais e de Tribunais.',
-
+    aplicacaoEmConcurso: 'Cobrança: elementos do processo de comunicação (emissor, receptor, mensagem, canal, ruído, feedback); diferença formal x informal; vertical x horizontal; conflito funcional x disfuncional; grupo x equipe; estilos de negociação. A banca costuma pedir a identificação do elemento (ruído, feedback) em situações concretas.',
     pegadinhas: [
-      'Confundir sucessão com substituição.',
-      'Trocar os prazos de eleição direta (90 dias, 2 primeiros anos) com eleição indireta (30 dias, 2 últimos anos).',
-      'Dizer que o Senado processa e julga o Presidente por crime COMUM. É o STF. O Senado julga CRIME DE RESPONSABILIDADE.',
-      'Achar que o Vice é sempre o substituto. Se ambos os cargos estiverem vagos, assume o Presidente da Câmara.',
-      'Dizer que o Presidente pode ser preso por crime comum durante o mandato sem sentença condenatória (não pode).',
-      'Confundir os Conselhos (Conselho da República x Conselho de Defesa Nacional).'
+      'Dizer que todo conflito é ruim. NÃO — o conflito funcional pode ser positivo.',
+      'Confundir comunicação formal com vertical. A formal inclui a vertical (ascendente e descendente) e a horizontal.',
+      'Achar que feedback é opcional. É essencial para confirmar a compreensão — sem feedback, não se sabe se a mensagem foi compreendida.',
+      'Dizer que comunicação informal é sempre prejudicial. Pode ser útil — o "rádio-peão" às vezes transmite informações mais rápidas que a via formal.',
+      'Confundir grupo com equipe. Equipe exige complementaridade, sinergia e responsabilidade mútua.',
+      'Achar que negociação é sempre ganha-perde. Pode ser integrativa (ganha-ganha).'
     ],
-
     errosComuns: [
-      'Decorar a linha sucessória sem entender as hipóteses.',
-      'Confundir crimes de responsabilidade do Presidente (Senado) com os de Governador (Tribunal Especial).',
-      'Ignorar que o Vice pode exercer funções por delegação do Presidente.'
+      'Decorar os elementos sem exemplos.',
+      'Não diferenciar comunicação formal de informal.',
+      'Tratar todo conflito como disfuncional.',
+      'Confundir grupo com equipe.'
     ],
-
     resumo: [
-      'Presidente: eleição direta por maioria absoluta; mandato de 4 anos; posse em 1º de janeiro.',
-      'Requisitos: brasileiro nato, 35 anos, pleno exercício dos direitos políticos, alistamento, domicílio, filiação.',
-      'Linha sucessória: Vice → Pres. Câmara → Pres. Senado → Pres. STF.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Crime comum: julgado pelo STF. Crime de responsabilidade: julgado pelo Senado.',
-      'A Câmara AUTORIZA (2/3) nos dois casos.',
-      'Conselho da República: opina em situações graves.',
-      'Conselho de Defesa Nacional: opina em temas de segurança nacional.'
+      'Comunicação: processo de transmissão e compreensão de mensagem.',
+      'Elementos: emissor, codificação, mensagem, canal, decodificação, receptor, feedback, ruído.',
+      'Formal (canais oficiais) x informal (relações).',
+      'Vertical (hierarquia) x horizontal (pares).',
+      'Conflito funcional (construtivo) x disfuncional (destrutivo).',
+      'Negociação distributiva (ganha-perde) x integrativa (ganha-ganha).',
+      'Grupo (responsabilidade individual) x equipe (responsabilidade mútua, sinergia positiva).'
     ],
-
     modoProfessor: {
-      explicarMaisSimples: 'O Presidente é o chefe do Executivo federal. Se ele sai do cargo, assume o Vice; se o Vice também sair, assume o Presidente da Câmara, depois o do Senado e, por último, o do STF. Dependendo de quando ocorre a vacância, o povo vota (primeiros 2 anos) ou o Congresso vota (últimos 2).',
-      outroExemplo: 'Se o Presidente renunciar no segundo mês do mandato, há eleição DIRETA em 90 dias. Se renunciar faltando 6 meses, há eleição INDIRETA pelo Congresso em 30 dias.',
-      compararConceitos: 'Sucessão = definitiva (vaga). Substituição = temporária (impedimento). Crime comum = STF. Crime de responsabilidade = Senado. Primeiros 2 anos = direta. Últimos 2 anos = indireta.',
-      mostrarPegadinha: 'Cuidado: "O Vice-Presidente é sempre o substituto do Presidente". Em caso de VAGA do Presidente, ele SUCEDE (definitivo). Em caso de IMPEDIMENTO, ele SUBSTITUI (temporário).',
-      comoApareceEmConcurso: 'Cobrança de arts. 77 a 84 e das hipóteses de sucessão.',
+      explicarMaisSimples: 'Comunicar é transmitir e ser compreendido. Se o outro não entende, não houve comunicação — houve apenas transmissão. Por isso o feedback é essencial: ele confirma a compreensão.',
+      outroExemplo: 'Um chefe envia um e-mail confuso (ruído na codificação); o servidor entende errado (ruído na decodificação); o chefe não pede feedback e o problema passa. Já em uma boa comunicação, o chefe explica, o servidor confirma, e o feedback fecha o ciclo.',
+      compararConceitos: 'Formal x informal = canais oficiais x relacionamento. Vertical x horizontal = hierarquia x pares. Funcional x disfuncional = construtivo x destrutivo. Distributiva x integrativa = ganha-perde x ganha-ganha. Grupo x equipe = individual x mútua.',
+      mostrarPegadinha: 'Cuidado: "Todo conflito é ruim e deve ser eliminado". ERRADO. O conflito FUNCIONAL pode estimular debate, inovação e melhoria. O que se deve combater é o DISFUNCIONAL — destrutivo.',
+      comoApareceEmConcurso: 'Questões pedem identificação de elementos (ruído, feedback) e classificação (formal/informal, vertical/horizontal, funcional/disfuncional).',
       fazerPergunta: {
-        pergunta: 'Um Presidente é acusado de crime comum durante o mandato. Quem processa e julga?',
-        resposta: 'A Câmara dos Deputados AUTORIZA (2/3) e o SUPREMO TRIBUNAL FEDERAL julga (crime comum). Se fosse CRIME DE RESPONSABILIDADE, a Câmara autorizaria e o SENADO FEDERAL julgaria.'
+        pergunta: 'Um memorando enviado do diretor ao coordenador é comunicação formal vertical descendente ou horizontal?',
+        resposta: 'É FORMAL VERTICAL DESCENDENTE — vem de um nível superior (diretor) para um nível inferior (coordenador), por canal oficial (memorando).'
       }
     }
   },
 
   /* ============================================================
-     DC-15 — Poder Judiciário
+     ADM-09 — Gestão da Qualidade
   ============================================================ */
-  'DC-15': {
-    id: 'L-DC-15',
-    moduloId: 'DC-15',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Judiciário brasileiro (arts. 92 a 126 da CF/88): órgãos, STF, STJ, Justiça Federal, Estadual, do Trabalho, Eleitoral, Militar, CNJ, competências, garantias dos magistrados e organização.',
-    prerequisitos: ['DC-12'],
-
-    introducao: 'O Poder Judiciário é o responsável pela função jurisdicional — dizer o direito no caso concreto. A CF organiza os órgãos, distribui competências e garante aos magistrados as condições para julgar com independência.',
-
-    explicacaoSimples: 'Pense na Justiça como uma grande estrutura com vários níveis. No topo está o STF (guarda da Constituição) e, logo abaixo, o STJ (guarda da lei federal). Depois vêm a Justiça Federal, Estadual, do Trabalho, Eleitoral e Militar. Cada uma tem sua área. Há ainda o CNJ, que cuida da administração do Judiciário.',
-
-    explicacaoTecnica: 'Art. 92: são órgãos do Poder Judiciário — STF, CNJ, STJ, TST, TREs, Tribunais de Justiça dos Estados e DF, TRFs, TRTs, Tribunais Militares e juízes dos respectivos órgãos. Art. 93: Estatuto da Magistratura (LC). Art. 94: regras de ingresso (quinto constitucional). Art. 95: garantias dos magistrados — vitaliciedade, inamovibilidade e irredutibilidade de subsídio. Art. 96: competências dos tribunais. Art. 97: reserva de plenário (cláusula de reserva de plenário — somente pelo voto da maioria absoluta dos membros do Tribunal ou do órgão especial). Art. 98: Justiça de Paz. Art. 99: autonomia administrativa e financeira do Judiciário. Art. 100: precatórios. Art. 101 a 103: STF — composição (11 ministros, brasileiros natos, 35 a 65 anos, nomeados pelo Presidente após aprovação por maioria absoluta do Senado), competências, ADI/ADC/ADPF/ADO. Art. 104 a 105: STJ — 33 ministros, 35 a 65 anos, competências. Art. 106 a 110: Justiça Federal — TRFs (mínimo 7 juízes). Art. 111 a 117: Justiça do Trabalho. Art. 118 a 121: Justiça Eleitoral. Art. 122 a 124: Justiça Militar. Art. 125 a 126: Justiça Estadual. Art. 127 a 130: funções essenciais à Justiça (MP, Advocacia Pública, Advocacia, Defensoria). Art. 92, §1º: o STF tem 11 ministros. Art. 103-B: CNJ — 15 membros, presidido pelo Presidente do STF.',
-
+  'ADM-09': {
+    id: 'L-ADM-09',
+    moduloId: 'ADM-09',
+    objetivo: 'Compreender o conceito de qualidade, a qualidade total, a melhoria contínua, a satisfação do usuário, o ciclo PDCA, as ferramentas da qualidade (5W2H, Diagrama de Ishikawa, Diagrama de Pareto) e os indicadores de qualidade.',
+    prerequisitos: ['ADM-01', 'ADM-06', 'ADM-11'],
+    introducao: 'Gestão da qualidade é a área que busca atender às necessidades do usuário com excelência, de forma contínua. Não é "fazer bonito" — é medir, corrigir e melhorar sempre. No setor público, a qualidade se traduz em serviços prestados com eficiência, eficácia e efetividade ao cidadão. Este módulo conecta o controle (ADM-06) e a gestão por processos (ADM-11) com a busca da excelência.',
+    explicacaoSimples: 'Qualidade é o grau em que um produto ou serviço atende às necessidades e expectativas do usuário. Pense numa UBS: qualidade não é só ter equipamentos novos — é atender no tempo adequado, com humanidade, com acerto, de forma contínua. A qualidade total envolve todos os setores e todos os servidores. E o PDCA é o motor da melhoria: planeja, executa, verifica e corrige, num ciclo contínuo.',
+    explicacaoTecnica: 'QUALIDADE é a totalidade de características de um produto ou serviço que satisfazem as necessidades do cliente/usuário. QUALIDADE TOTAL (TQM): abordagem que envolve todos os setores e todos os servidores, com foco no usuário, melhoria contínua e comprometimento da alta direção. MELHORIA CONTÍNUA (kaizen): busca permanente por pequenos avanços, sem ruptura. SATISFAÇÃO DO USUÁRIO: o cidadão como centro das decisões. CICLO PDCA (Deming): PLAN (planejar — definir metas e métodos), DO (executar — implementar o plano), CHECK (verificar — avaliar os resultados), ACT (agir — corrigir desvios e padronizar o que deu certo). PDCA é cíclico: ao final do ACT, reinicia-se o PLAN com novas metas. FERRAMENTAS: 5W2H (What, Why, Where, When, Who, How, How much — plano de ação completo); DIAGRAMA DE ISHIKAWA (espinha de peixe — identifica CAUSAS de um problema, agrupadas em 6M: mão de obra, método, máquina, material, medida e meio ambiente); DIAGRAMA DE PARETO (princípio 80/20 — 80% dos problemas decorrem de 20% das causas — prioriza o que resolver primeiro); FLUXOGRAMA (mapeamento do processo); FOLHA DE VERIFICAÇÃO; HISTOGRAMA; DIAGRAMA DE DISPERSÃO; GRÁFICO DE CONTROLE. INDICADORES DE QUALIDADE: métricas que medem o desempenho — ex.: tempo de espera, taxa de erro, índice de satisfação, taxa de retrabalho.',
     exemplos: [
-      'STF: guarda da CF; julga ADI, ADPF, HC de autoridades específicas, extradição.',
-      'STJ: guarda da lei federal; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade for desembargador.',
-      'Justiça Federal: causas em que a União, autarquias federais ou empresas públicas federais forem partes.',
-      'Justiça do Trabalho: conflitos entre empregado e empregador.',
-      'Justiça Eleitoral: eleições, partidos políticos, registro de candidatos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: causas residuais — o que não for das outras.',
-      'CNJ: controle administrativo, financeiro e disciplinar do Judiciário.'
+      'Qualidade: atendimento humanizado + tempo de espera adequado + acerto na informação.',
+      'Qualidade total: todos os setores da UBS envolvidos com a satisfação do paciente.',
+      'Melhoria contínua: pequenas correções mensais no fluxo de atendimento.',
+      'PDCA — Planejar: definir a meta de reduzir tempo de espera em 20%.',
+      'PDCA — Executar: implementar novo fluxo de triagem.',
+      'PDCA — Verificar: medir o tempo médio de espera após a mudança.',
+      'PDCA — Agir: padronizar o novo fluxo; se não funcionou, ajustar.',
+      '5W2H: plano de ação com o quê, por quê, onde, quando, quem, como e quanto custa.',
+      'Ishikawa: identificar as causas da demora — mão de obra (poucos atendentes), método (triagem confusa), máquina (sistema lento).',
+      'Pareto: 80% das reclamações vêm de 20% dos problemas — priorizar esses.',
+      'Indicador: tempo médio de espera; taxa de reclamações.'
     ],
-
     comparacoes: [
-      { termoA: 'STF', termoB: 'STJ', diferenca: 'STF: guarda da CONSTITUIÇÃO; 11 ministros; julga ADI, ADPF, ADO, ADC, extradição, HC de autoridades. STJ: guarda da LEI FEDERAL; 33 ministros; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade é desembargador.' },
-      { termoA: 'Vitaliciedade', termoB: 'Inamovibilidade', diferenca: 'VITALICIEDADE: o juiz não perde o cargo (após 2 anos de exercício no 1º grau; imediata nos tribunais superiores), salvo por sentença judicial transitada em julgado. INAMOVIBILIDADE: o juiz não pode ser removido de sua comarca ou seção sem sua vontade, salvo por interesse público (voto de 2/3 do tribunal).' },
-      { termoA: 'Justiça Federal', termoB: 'Justiça Estadual', diferenca: 'FEDERAL: julga causas em que a União, autarquias federais ou empresas públicas federais forem partes; crimes políticos; crimes contra bens da União; estrangeiros. ESTADUAL: residual — o que não for das outras Justiças.' },
-      { termoA: 'CNJ', termoB: 'STF', diferenca: 'CNJ: órgão de CONTROLE administrativo, financeiro e disciplinar do Judiciário — não julga causas. STF: órgão de CÚPULA do Judiciário, com competência para julgar ADI, HC, extradição e outras causas constitucionais.' }
+      { termoA: 'Qualidade total', termoB: 'Melhoria contínua', diferenca: 'QUALIDADE TOTAL (TQM): abordagem ampla — envolve todos os setores, foco no usuário e comprometimento da alta direção. MELHORIA CONTÍNUA (kaizen): metodologia de avanços incrementais e permanentes, dentro da qualidade total. A qualidade total é o "programa"; a melhoria contínua é o "método".' },
+      { termoA: 'PDCA', termoB: 'Melhoria contínua', diferenca: 'PDCA: ferramenta cíclica (plan, do, check, act) de melhoria. MELHORIA CONTÍNUA: filosofia mais ampla — busca permanente por avanços, que se materializa no PDCA. O PDCA é o "motor"; a melhoria contínua é o "caminho".' },
+      { termoA: 'Diagrama de Ishikawa', termoB: 'Diagrama de Pareto', diferenca: 'ISHIKAWA (espinha de peixe): identifica as CAUSAS de um problema, agrupando-as em 6M (mão de obra, método, máquina, material, medida, meio ambiente). PARETO: prioriza as causas — 80% dos problemas decorrem de 20% das causas. Ishikawa investiga; Pareto prioriza.' },
+      { termoA: '5W2H', termoB: 'PDCA', diferenca: '5W2H: ferramenta de PLANEJAMENTO de uma ação — o quê, por quê, onde, quando, quem, como, quanto custa. PDCA: ciclo de melhoria — planejar, executar, verificar, agir. O 5W2H é usado dentro do "P" do PDCA — para estruturar o plano de ação.' },
+      { termoA: 'Indicador', termoB: 'Meta', diferenca: 'INDICADOR: métrica que mede o desempenho real (ex.: tempo médio de espera). META: valor desejado do indicador (ex.: reduzir o tempo médio para 10 minutos). O indicador mede; a meta orienta.' }
     ],
-
-    aplicacaoEmConcurso: 'Cobrança de arts. 92 a 105 (órgãos, composição, competências), das garantias dos magistrados (vitaliciedade, inamovibilidade, irredutibilidade) e da distinção entre STF e STJ. Comum em concursos de Tribunais.',
-
+    aplicacaoEmConcurso: 'Cobrança: PDCA (as quatro fases), Ishikawa (causas), Pareto (priorização), 5W2H (plano de ação), qualidade total, melhoria contínua. A banca costuma pedir a identificação da ferramenta adequada a uma situação (ex.: "para identificar causas, usa-se Ishikawa").',
     pegadinhas: [
-      'Confundir STF (Constituição) com STJ (lei federal).',
-      'Trocar o número de ministros do STF (11) com o do STJ (33).',
-      'Achar que o CNJ julga causas. O CNJ faz controle administrativo, financeiro e disciplinar.',
-      'Dizer que o juiz pode ser removido sem processo. A inamovibilidade garante proteção, salvo por interesse público e voto de 2/3 do tribunal.',
-      'Confundir as garantias: vitaliciedade (não perde o cargo), inamovibilidade (não é removido), irredutibilidade (não tem subsídio reduzido).',
-      'Dizer que o STF pode julgar qualquer causa. Tem competência taxativa na CF.'
+      'Confundir Ishikawa (causas) com Pareto (priorização).',
+      'Dizer que qualidade é apenas "ausência de defeitos". É mais: satisfação do usuário, melhoria contínua, todos os setores envolvidos.',
+      'Achar que PDCA é uma sigla para planejamento apenas. É um ciclo completo (4 fases).',
+      'Dizer que o PDCA é linear. É cíclico — ao final do ACT, reinicia-se com novo PLAN.',
+      'Confundir 5W2H (plano de ação) com PDCA (ciclo de melhoria).',
+      'Achar que melhoria contínua é sinônimo de reengenharia. A contínua é incremental; a reengenharia é radical.',
+      'Dizer que qualidade total é responsabilidade exclusiva da alta direção. Envolve todos os setores e servidores.'
     ],
-
     errosComuns: [
-      'Decorar os órgãos sem entender a lógica (STF = Constituição; STJ = lei federal; Justiça Federal = causas federais; Justiça Estadual = residual).',
-      'Confundir as composições dos tribunais superiores.',
-      'Ignorar a EC 45/2004, que criou o CNJ.'
+      'Decorar ferramentas sem exemplos.',
+      'Não diferenciar Ishikawa de Pareto.',
+      'Não associar PDCA a melhoria contínua.',
+      'Ignorar o caráter cíclico do PDCA.'
     ],
-
     resumo: [
-      'Órgãos: STF, CNJ, STJ, TST, TREs, TJs, TRFs, TRTs, Tribunais Militares e juízes.',
-      'STF: 11 ministros; guarda da Constituição; julga ADI, ADPF, ADO, ADC, extradição.',
-      'STJ: 33 ministros; guarda da lei federal; julga recurso especial.',
-      'Justiça Federal: causas com a União/autarquias/empresas públicas federais.',
-      'Justiça do Trabalho: relações de trabalho.',
-      'Justiça Eleitoral: eleições e partidos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: residual.',
-      'CNJ: controle administrativo, financeiro e disciplinar (EC 45/2004).',
-      'Garantias do magistrado: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
+      'Qualidade: atender às necessidades do usuário com excelência.',
+      'Qualidade total: todos os setores e servidores envolvidos.',
+      'Melhoria contínua: avanços incrementais permanentes.',
+      'PDCA: Planejar → Executar → Verificar → Agir (cíclico).',
+      '5W2H: plano de ação completo.',
+      'Ishikawa: causas do problema (6M).',
+      'Pareto: priorização (80/20).',
+      'Indicadores: métricas de desempenho.'
     ],
-
     modoProfessor: {
-      explicarMaisSimples: 'O Judiciário é uma escada: no topo o STF (Constituição), depois o STJ (lei federal), depois as Justiças especializadas (Federal, Trabalho, Eleitoral, Militar) e a Estadual (residual). Cada uma cuida de uma área.',
-      outroExemplo: 'Uma causa sobre FGTS entre empregado e empresa vai para a Justiça do Trabalho. Uma causa em que a União é ré vai para a Justiça Federal. Uma causa entre dois particulares sobre contrato vai para a Justiça Estadual (residual).',
-      compararConceitos: 'STF = Constituição. STJ = lei federal. Justiça Federal = causas federais. Justiça Estadual = residual. CNJ = administração. Vitaliciedade ≠ inamovibilidade ≠ irredutibilidade.',
-      mostrarPegadinha: 'Cuidado: "O CNJ julga causas judiciais". ERRADO. O CNJ faz controle ADMINISTRATIVO, FINANCEIRO e DISCIPLINAR do Judiciário — não julga causas.',
-      comoApareceEmConcurso: 'Cobrança de competências e composições.',
+      explicarMaisSimples: 'Qualidade não é "fazer bonito" — é atender bem o usuário, de forma contínua. O PDCA é o motor: planeja, executa, verifica e corrige. E cada ferramenta tem sua função: Ishikawa investiga causas; Pareto prioriza; 5W2H monta o plano.',
+      outroExemplo: 'Uma UBS quer reduzir o tempo de espera. Planeja (meta de 10 min, novo fluxo); executa; verifica (tempo caiu para 15 min); age (ajusta o fluxo, treina mais servidores). Depois, reinicia o ciclo. Para identificar as causas da demora, usa Ishikawa; para priorizar as principais causas, usa Pareto; para montar o plano de ação, usa 5W2H.',
+      compararConceitos: 'Qualidade total x melhoria contínua = programa x método. Ishikawa x Pareto = causa x priorização. 5W2H x PDCA = plano x ciclo. Indicador x meta = medição x alvo.',
+      mostrarPegadinha: 'Cuidado: "Qualidade significa apenas ausência de defeitos". ERRADO. Qualidade é a totalidade de características que satisfazem o usuário — inclui satisfação, melhoria contínua e envolvimento de todos.',
+      comoApareceEmConcurso: 'Questões pedem a ferramenta adequada a uma situação, as fases do PDCA e a diferença Ishikawa/Pareto.',
       fazerPergunta: {
-        pergunta: 'Um Governador de Estado é acusado de crime comum. Quem julga?',
-        resposta: 'O SUPERIOR TRIBUNAL DE JUSTIÇA (STJ) — art. 105, I, "a". Se fosse crime de responsabilidade, o julgamento seria pelo Tribunal Especial (composto por desembargadores do TJ + deputados estaduais), conforme a Constituição Estadual.'
+        pergunta: 'Para identificar as causas de um problema de qualidade, qual ferramenta usar? E para priorizar as causas?',
+        resposta: 'Para IDENTIFICAR as causas: DIAGRAMA DE ISHIKAWA (espinha de peixe — 6M). Para PRIORIZAR: DIAGRAMA DE PARETO (80/20). Ishikawa investiga; Pareto prioriza.'
       }
     }
   }
 
   /* ============================================================
-     Próximo lote — adicionar em edição futura:
-     'DC-16': { ... }
-     'DC-17': { ... }
-     'DC-18': { ... }
+     PRÓXIMO SUB-LOTE (5.2):
+     ADM-12, DA-22, DA-24
   ============================================================ */
-
-};/* ============================================================
-   AULAS — Módulos de prioridade MÉDIA
-   Preenchidos neste lote: DC-10, DC-14, DC-15
-   Próximo lote: DC-16, DC-17, DC-18
-   ============================================================ */
-
-window.LESSONS_MEDIA = {
-
-  /* ============================================================
-     DC-10 — Intervenção
-  ============================================================ */
-  'DC-10': {
-    id: 'L-DC-10',
-    moduloId: 'DC-10',
-    objetivo: 'Dominar o instituto da intervenção (arts. 34 a 36 da CF/88): hipóteses de intervenção federal, estadual e em Municípios, procedimento, decreto, controle pelo Congresso e relação com a autonomia federativa.',
-    prerequisitos: ['DC-08'],
-
-    introducao: 'A intervenção é medida excepcional: o ente federativo quebra temporariamente a autonomia de outro, para restabelecer a normalidade constitucional. É o oposto do princípio federativo — por isso, é taxativa, temporária e sujeita a controle.',
-
-    explicacaoSimples: 'Pense na Federação como um condomínio. Se um morador descumpre regras gravíssimas, o síndico (União ou Estado) pode, temporariamente, assumir o controle do apartamento dele — mas só nas hipóteses previstas no regimento e depois de seguir o procedimento. Isso é intervenção.',
-
-    explicacaoTecnica: 'Art. 34: hipóteses de intervenção FEDERAL nos Estados e no DF — (I) manter a integridade nacional; (II) repelir invasão estrangeira ou de uma unidade da Federação em outra; (III) pôr termo a grave comprometimento da ordem pública; (IV) garantir o livre exercício de qualquer dos Poderes nas unidades da Federação; (V) reorganizar as finanças da unidade (que suspender pagamento da dívida fundada por mais de 2 anos, ou deixar de entregar receitas); (VI) prover a execução de lei federal, ordem ou decisão judicial; (VII) assegurar a observância dos princípios constitucionais sensíveis (forma republicana, sistema representativo, regime democrático, direitos da pessoa humana, autonomia municipal, prestação de contas da Administração Pública direta e indireta). Art. 35: hipóteses de intervenção ESTADUAL nos Municípios — (I) deixar de ser paga, sem motivo, por 2 anos, a dívida fundada; (II) não forem prestadas contas devidas; (III) não tiver sido aplicado o mínimo exigido da receita municipal na manutenção e desenvolvimento do ensino e nas ações e serviços públicos de saúde; (IV) o Tribunal de Justiça der provimento a representação para assegurar a observância de princípios indicados na Constituição Estadual ou para prover a execução de lei, de ordem ou de decisão judicial. Art. 36: procedimento — decreto do Presidente (intervenção federal espontânea) ou requisição (nos casos do art. 34, IV, VI e VII); ouvidoria prévia do Conselho da República e do Conselho de Defesa; controle político pelo Congresso (aprovação por maioria simples em 24h, se em recesso convocação extraordinária); decreto especifica amplitude, prazo e condições. §1º: nomeação de interventor. §2º: cessação da intervenção — retorno à normalidade. §3º: se cessada a causa, as autoridades afastadas retornam aos cargos.',
-
-    exemplos: [
-      'Intervenção federal para garantir ordem pública: grave crise de segurança em Estado.',
-      'Intervenção federal para garantir execução de decisão judicial: descumprimento de ordem federal.',
-      'Intervenção federal para assegurar princípios sensíveis: descumprimento da autonomia municipal.',
-      'Intervenção estadual em Município: não aplicação do mínimo na educação ou saúde.',
-      'Intervenção estadual por não pagamento de dívida fundada por 2 anos.',
-      'Reorganização de finanças: Estado que não paga dívida fundada por mais de 2 anos.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Intervenção federal', termoB: 'Intervenção estadual', diferenca: 'FEDERAL: decreto do Presidente da República; atinge Estados e DF; hipóteses do art. 34. ESTADUAL: decreto do Governador; atinge Municípios; hipóteses do art. 35. São institutos paralelos, mas com titulares e destinatários diferentes.' },
-      { termoA: 'Intervenção espontânea', termoB: 'Intervenção provocada', diferenca: 'ESPONTÂNEA: decreto do Presidente, sem provocação de outro Poder (hipóteses dos incisos I, II, III e V do art. 34). PROVOCADA: depende de requisição do STF (inciso VI), do STJ (inciso VI, lei federal) ou do TSE (inciso VII, princípios sensíveis), ou de solicitação do Poder coacto (inciso IV).' },
-      { termoA: 'Intervenção federal', termoB: 'Estado de Sítio', diferenca: 'INTERVENÇÃO: medida excepcional para restabelecer a ordem federativa — atinge o ente, não os direitos fundamentais diretamente. ESTADO DE SÍTIO: medida excepcional para restabelecer a ordem constitucional em caso de comoção grave ou guerra — atinge diretamente os direitos fundamentais, suspendendo garantias.' },
-      { termoA: 'Controle político', termoB: 'Controle judicial', diferenca: 'POLÍTICO: feito pelo Congresso Nacional — aprovação do decreto de intervenção em 24h. JUDICIAL: feito pelo STF, STJ ou TSE — conforme a hipótese, o Tribunal competente pode requisitar a intervenção.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança das hipóteses de intervenção federal (art. 34) x estadual (art. 35), do procedimento (decreto, ouvidoria dos Conselhos, controle pelo Congresso em 24h) e das regras específicas (prazo, nomeação de interventor, retorno das autoridades). Questões costumam misturar as hipóteses dos dois artigos.',
-
-    pegadinhas: [
-      'Confundir intervenção federal (arts. 34) com estadual (arts. 35).',
-      'Achar que o decreto de intervenção é do Congresso. É do Presidente (federal) ou do Governador (estadual).',
-      'Dizer que a intervenção depende de autorização prévia do Congresso. O decreto é expedido e depois submetido ao Congresso em 24h.',
-      'Esquecer a ouvidoria prévia do Conselho da República e do Conselho de Defesa (intervenção federal).',
-      'Confundir intervenção com estado de sítio ou estado de defesa.',
-      'Achar que a intervenção é permanente. É temporária — cessada a causa, as autoridades retornam.'
-    ],
-
-    errosComuns: [
-      'Decorar hipóteses sem associar ao titular do decreto.',
-      'Ignorar que a intervenção em Município (art. 35, I a IV) pode ser decreto do Governador, mas a hipótese do inciso IV depende de provimento pelo TJ.',
-      'Não distinguir intervenção espontânea de provocada.'
-    ],
-
-    resumo: [
-      'Intervenção é medida excepcional e temporária.',
-      'Art. 34: hipóteses de intervenção FEDERAL nos Estados e DF.',
-      'Art. 35: hipóteses de intervenção ESTADUAL nos Municípios.',
-      'Decreto: Presidente (federal) ou Governador (estadual).',
-      'Controle: Congresso aprova o decreto em 24h.',
-      'Ouvidoria prévia do Conselho da República e Conselho de Defesa (federal).',
-      'Decreto especifica amplitude, prazo e condições.',
-      'Cessada a causa, retornam as autoridades afastadas.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Intervenção é como o "juiz" do condomínio assumindo temporariamente o apartamento de um morador que quebrou regras gravíssimas — só nas hipóteses do regimento, por prazo determinado, com o condomínio aprovando depois.',
-      outroExemplo: 'Se um Estado deixa de pagar precatórios por mais de 2 anos, cabe intervenção federal por reorganização de finanças (art. 34, V). Se um Município não aplica o mínimo em saúde, cabe intervenção estadual (art. 35, III).',
-      compararConceitos: 'Federal (Presidente, atinge Estados) x Estadual (Governador, atinge Municípios). Espontânea (sem provocação) x Provocada (requisição ou solicitação). Intervenção x Estado de Sítio: uma atinge o ente, o outro atinge direitos.',
-      mostrarPegadinha: 'Cuidado: "A intervenção federal só pode ser decretada pelo Congresso Nacional". ERRADO. O DECRETO é do Presidente; o Congresso apenas APROVA depois, em 24 horas.',
-      comoApareceEmConcurso: 'Cobrança das hipóteses (arts. 34 e 35) e do procedimento (decreto + controle do Congresso).',
-      fazerPergunta: {
-        pergunta: 'Um Estado deixa de aplicar o mínimo constitucional em educação. Cabe intervenção federal?',
-        resposta: 'NÃO — a não aplicação do mínimo em educação é hipótese de intervenção ESTADUAL em MUNICÍPIO (art. 35, III). Em relação ao Estado, a não aplicação do mínimo não é hipótese de intervenção federal, e sim de responsabilização política (crime de responsabilidade do Governador) e rejeição de contas.'
-      }
-    }
-  },
-
-  /* ============================================================
-     DC-14 — Poder Executivo
-  ============================================================ */
-  'DC-14': {
-    id: 'L-DC-14',
-    moduloId: 'DC-14',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Executivo federal (arts. 76 a 91 da CF/88): Presidente, Vice, eleição, mandato, requisitos, sucessão, substituição, competências, ministros, responsabilidade e crimes de responsabilidade.',
-    prerequisitos: ['DC-12'],
-
-    introducao: 'O Poder Executivo exerce a função típica de administrar o Estado. Na esfera federal, é chefiado pelo Presidente da República, auxiliado pelos Ministros de Estado. As bancas cobram as regras de eleição, as hipóteses de sucessão/substituição e os crimes de responsabilidade.',
-
-    explicacaoSimples: 'O Presidente é o "chefe" do Executivo federal: administra o país, representa o Brasil no exterior, sanciona e veta leis, edita medidas provisórias. Se ele sai do cargo por algum motivo, há regras específicas sobre quem assume — o Vice, o Presidente da Câmara, o do Senado ou o do STF.',
-
-    explicacaoTecnica: 'Art. 76: o Poder Executivo é exercido pelo Presidente da República, auxiliado pelos Ministros de Estado. Art. 77: eleição pelo sufrágio universal e voto direto e secreto, maioria absoluta; 2º turno se necessário; posse em 1º de janeiro do ano seguinte; mandato de 4 anos. Art. 14, §3º, VI, "a": idade mínima de 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento eleitoral, domicílio eleitoral e filiação partidária. Art. 78: posse em sessão conjunta do Congresso. Art. 79: o Vice substitui o Presidente em caso de impedimento e sucede em caso de vaga. Art. 80: em caso de impedimento do Presidente e do Vice, ou vacância dos cargos, assumem sucessivamente: Presidente da Câmara, do Senado e do STF. Art. 81: se a vacância ocorrer nos 2 primeiros anos, eleição direta em 90 dias; se nos 2 últimos, eleição indireta pelo Congresso em 30 dias. Art. 82: mandato de 4 anos. Art. 83: 35 anos, brasileiro nato, pleno exercício dos direitos políticos, alistamento, domicílio, filiação. Art. 84: competências privativas do Presidente (sancionar, vetar, editar MP, nomear Ministros do STF, etc.). Art. 85: crimes de responsabilidade — atos que atentem contra a CF e especialmente contra: existência da União, livre exercício dos Poderes, exercício dos direitos políticos, segurança interna, probidade na Administração, lei orçamentária, guarda e uso do dinheiro público. Art. 86: imunidade formal — o Presidente não pode ser responsabilizado por atos estranhos ao exercício de suas funções. Art. 87: Ministros de Estado auxiliam o Presidente. Art. 88: lei disporá sobre criação e extinção de Ministérios. Art. 89: Conselho da República. Art. 90: Conselho de Defesa Nacional. Art. 91: regras sobre esses Conselhos.',
-
-    exemplos: [
-      'Eleição: 1º turno no primeiro domingo de outubro; 2º turno no último domingo de outubro.',
-      'Posse: 1º de janeiro do ano seguinte.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Sucessão: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.',
-      'Ministro do STF: nomeação pelo Presidente, após aprovação por maioria absoluta do Senado.',
-      'Crimes de responsabilidade: atos contra a existência da União, livre exercício dos Poderes, probidade na Administração etc.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Sucessão', termoB: 'Substituição', diferenca: 'SUBSTITUIÇÃO: assume temporariamente, em caso de IMPEDIMENTO (doença, viagem). SUCESSÃO: assume definitivamente, em caso de VAGA (morte, renúncia, cassação). A ordem é: Vice → Presidente da Câmara → Presidente do Senado → Presidente do STF.' },
-      { termoA: 'Vacância nos 2 primeiros anos', termoB: 'Vacância nos 2 últimos anos', diferenca: 'PRIMEIROS 2 ANOS: eleição DIRETA em 90 dias (o povo vota). ÚLTIMOS 2 ANOS: eleição INDIRETA pelo Congresso em 30 dias (o Congresso vota).' },
-      { termoA: 'Crime comum', termoB: 'Crime de responsabilidade', diferenca: 'CRIME COMUM: julgado pelo STF (Presidente) após autorização da Câmara por 2/3. CRIME DE RESPONSABILIDADE: julgado pelo SENADO (Presidente) após autorização da Câmara por 2/3. A Câmara AUTORIZA; o Senado JULGA.' },
-      { termoA: 'Imunidade formal do Presidente', termoB: 'Imunidade do parlamentar', diferenca: 'PRESIDENTE (art. 86): não pode ser responsabilizado por atos estranhos ao exercício da função; durante o mandato, não pode ser preso por crime comum sem sentença condenatória. PARLAMENTAR (art. 53): imunidade material (opiniões, palavras, votos) e formal (prisão só em flagrante de crime inafiançável; processo criminal sem licença prévia após EC 35/2001).' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança de arts. 77 a 84 (eleição, mandato, requisitos, competências), das hipóteses de sucessão/substituição, e da distinção entre crime comum e de responsabilidade. Alta frequência em concursos federais e de Tribunais.',
-
-    pegadinhas: [
-      'Confundir sucessão com substituição.',
-      'Trocar os prazos de eleição direta (90 dias, 2 primeiros anos) com eleição indireta (30 dias, 2 últimos anos).',
-      'Dizer que o Senado processa e julga o Presidente por crime COMUM. É o STF. O Senado julga CRIME DE RESPONSABILIDADE.',
-      'Achar que o Vice é sempre o substituto. Se ambos os cargos estiverem vagos, assume o Presidente da Câmara.',
-      'Dizer que o Presidente pode ser preso por crime comum durante o mandato sem sentença condenatória (não pode).',
-      'Confundir os Conselhos (Conselho da República x Conselho de Defesa Nacional).'
-    ],
-
-    errosComuns: [
-      'Decorar a linha sucessória sem entender as hipóteses.',
-      'Confundir crimes de responsabilidade do Presidente (Senado) com os de Governador (Tribunal Especial).',
-      'Ignorar que o Vice pode exercer funções por delegação do Presidente.'
-    ],
-
-    resumo: [
-      'Presidente: eleição direta por maioria absoluta; mandato de 4 anos; posse em 1º de janeiro.',
-      'Requisitos: brasileiro nato, 35 anos, pleno exercício dos direitos políticos, alistamento, domicílio, filiação.',
-      'Linha sucessória: Vice → Pres. Câmara → Pres. Senado → Pres. STF.',
-      'Vacância nos 2 primeiros anos: eleição direta em 90 dias.',
-      'Vacância nos 2 últimos anos: eleição indireta pelo Congresso em 30 dias.',
-      'Crime comum: julgado pelo STF. Crime de responsabilidade: julgado pelo Senado.',
-      'A Câmara AUTORIZA (2/3) nos dois casos.',
-      'Conselho da República: opina em situações graves.',
-      'Conselho de Defesa Nacional: opina em temas de segurança nacional.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'O Presidente é o chefe do Executivo federal. Se ele sai do cargo, assume o Vice; se o Vice também sair, assume o Presidente da Câmara, depois o do Senado e, por último, o do STF. Dependendo de quando ocorre a vacância, o povo vota (primeiros 2 anos) ou o Congresso vota (últimos 2).',
-      outroExemplo: 'Se o Presidente renunciar no segundo mês do mandato, há eleição DIRETA em 90 dias. Se renunciar faltando 6 meses, há eleição INDIRETA pelo Congresso em 30 dias.',
-      compararConceitos: 'Sucessão = definitiva (vaga). Substituição = temporária (impedimento). Crime comum = STF. Crime de responsabilidade = Senado. Primeiros 2 anos = direta. Últimos 2 anos = indireta.',
-      mostrarPegadinha: 'Cuidado: "O Vice-Presidente é sempre o substituto do Presidente". Em caso de VAGA do Presidente, ele SUCEDE (definitivo). Em caso de IMPEDIMENTO, ele SUBSTITUI (temporário).',
-      comoApareceEmConcurso: 'Cobrança de arts. 77 a 84 e das hipóteses de sucessão.',
-      fazerPergunta: {
-        pergunta: 'Um Presidente é acusado de crime comum durante o mandato. Quem processa e julga?',
-        resposta: 'A Câmara dos Deputados AUTORIZA (2/3) e o SUPREMO TRIBUNAL FEDERAL julga (crime comum). Se fosse CRIME DE RESPONSABILIDADE, a Câmara autorizaria e o SENADO FEDERAL julgaria.'
-      }
-    }
-  },
-
-  /* ============================================================
-     DC-15 — Poder Judiciário
-  ============================================================ */
-  'DC-15': {
-    id: 'L-DC-15',
-    moduloId: 'DC-15',
-    objetivo: 'Dominar a estrutura e o funcionamento do Poder Judiciário brasileiro (arts. 92 a 126 da CF/88): órgãos, STF, STJ, Justiça Federal, Estadual, do Trabalho, Eleitoral, Militar, CNJ, competências, garantias dos magistrados e organização.',
-    prerequisitos: ['DC-12'],
-
-    introducao: 'O Poder Judiciário é o responsável pela função jurisdicional — dizer o direito no caso concreto. A CF organiza os órgãos, distribui competências e garante aos magistrados as condições para julgar com independência.',
-
-    explicacaoSimples: 'Pense na Justiça como uma grande estrutura com vários níveis. No topo está o STF (guarda da Constituição) e, logo abaixo, o STJ (guarda da lei federal). Depois vêm a Justiça Federal, Estadual, do Trabalho, Eleitoral e Militar. Cada uma tem sua área. Há ainda o CNJ, que cuida da administração do Judiciário.',
-
-    explicacaoTecnica: 'Art. 92: são órgãos do Poder Judiciário — STF, CNJ, STJ, TST, TREs, Tribunais de Justiça dos Estados e DF, TRFs, TRTs, Tribunais Militares e juízes dos respectivos órgãos. Art. 93: Estatuto da Magistratura (LC). Art. 94: regras de ingresso (quinto constitucional). Art. 95: garantias dos magistrados — vitaliciedade, inamovibilidade e irredutibilidade de subsídio. Art. 96: competências dos tribunais. Art. 97: reserva de plenário (cláusula de reserva de plenário — somente pelo voto da maioria absoluta dos membros do Tribunal ou do órgão especial). Art. 98: Justiça de Paz. Art. 99: autonomia administrativa e financeira do Judiciário. Art. 100: precatórios. Art. 101 a 103: STF — composição (11 ministros, brasileiros natos, 35 a 65 anos, nomeados pelo Presidente após aprovação por maioria absoluta do Senado), competências, ADI/ADC/ADPF/ADO. Art. 104 a 105: STJ — 33 ministros, 35 a 65 anos, competências. Art. 106 a 110: Justiça Federal — TRFs (mínimo 7 juízes). Art. 111 a 117: Justiça do Trabalho. Art. 118 a 121: Justiça Eleitoral. Art. 122 a 124: Justiça Militar. Art. 125 a 126: Justiça Estadual. Art. 127 a 130: funções essenciais à Justiça (MP, Advocacia Pública, Advocacia, Defensoria). Art. 92, §1º: o STF tem 11 ministros. Art. 103-B: CNJ — 15 membros, presidido pelo Presidente do STF.',
-
-    exemplos: [
-      'STF: guarda da CF; julga ADI, ADPF, HC de autoridades específicas, extradição.',
-      'STJ: guarda da lei federal; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade for desembargador.',
-      'Justiça Federal: causas em que a União, autarquias federais ou empresas públicas federais forem partes.',
-      'Justiça do Trabalho: conflitos entre empregado e empregador.',
-      'Justiça Eleitoral: eleições, partidos políticos, registro de candidatos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: causas residuais — o que não for das outras.',
-      'CNJ: controle administrativo, financeiro e disciplinar do Judiciário.'
-    ],
-
-    comparacoes: [
-      { termoA: 'STF', termoB: 'STJ', diferenca: 'STF: guarda da CONSTITUIÇÃO; 11 ministros; julga ADI, ADPF, ADO, ADC, extradição, HC de autoridades. STJ: guarda da LEI FEDERAL; 33 ministros; julga recurso especial, MS contra Ministro de Estado, HC quando a autoridade é desembargador.' },
-      { termoA: 'Vitaliciedade', termoB: 'Inamovibilidade', diferenca: 'VITALICIEDADE: o juiz não perde o cargo (após 2 anos de exercício no 1º grau; imediata nos tribunais superiores), salvo por sentença judicial transitada em julgado. INAMOVIBILIDADE: o juiz não pode ser removido de sua comarca ou seção sem sua vontade, salvo por interesse público (voto de 2/3 do tribunal).' },
-      { termoA: 'Justiça Federal', termoB: 'Justiça Estadual', diferenca: 'FEDERAL: julga causas em que a União, autarquias federais ou empresas públicas federais forem partes; crimes políticos; crimes contra bens da União; estrangeiros. ESTADUAL: residual — o que não for das outras Justiças.' },
-      { termoA: 'CNJ', termoB: 'STF', diferenca: 'CNJ: órgão de CONTROLE administrativo, financeiro e disciplinar do Judiciário — não julga causas. STF: órgão de CÚPULA do Judiciário, com competência para julgar ADI, HC, extradição e outras causas constitucionais.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança de arts. 92 a 105 (órgãos, composição, competências), das garantias dos magistrados (vitaliciedade, inamovibilidade, irredutibilidade) e da distinção entre STF e STJ. Comum em concursos de Tribunais.',
-
-    pegadinhas: [
-      'Confundir STF (Constituição) com STJ (lei federal).',
-      'Trocar o número de ministros do STF (11) com o do STJ (33).',
-      'Achar que o CNJ julga causas. O CNJ faz controle administrativo, financeiro e disciplinar.',
-      'Dizer que o juiz pode ser removido sem processo. A inamovibilidade garante proteção, salvo por interesse público e voto de 2/3 do tribunal.',
-      'Confundir as garantias: vitaliciedade (não perde o cargo), inamovibilidade (não é removido), irredutibilidade (não tem subsídio reduzido).',
-      'Dizer que o STF pode julgar qualquer causa. Tem competência taxativa na CF.'
-    ],
-
-    errosComuns: [
-      'Decorar os órgãos sem entender a lógica (STF = Constituição; STJ = lei federal; Justiça Federal = causas federais; Justiça Estadual = residual).',
-      'Confundir as composições dos tribunais superiores.',
-      'Ignorar a EC 45/2004, que criou o CNJ.'
-    ],
-
-    resumo: [
-      'Órgãos: STF, CNJ, STJ, TST, TREs, TJs, TRFs, TRTs, Tribunais Militares e juízes.',
-      'STF: 11 ministros; guarda da Constituição; julga ADI, ADPF, ADO, ADC, extradição.',
-      'STJ: 33 ministros; guarda da lei federal; julga recurso especial.',
-      'Justiça Federal: causas com a União/autarquias/empresas públicas federais.',
-      'Justiça do Trabalho: relações de trabalho.',
-      'Justiça Eleitoral: eleições e partidos.',
-      'Justiça Militar: crimes militares.',
-      'Justiça Estadual: residual.',
-      'CNJ: controle administrativo, financeiro e disciplinar (EC 45/2004).',
-      'Garantias do magistrado: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'O Judiciário é uma escada: no topo o STF (Constituição), depois o STJ (lei federal), depois as Justiças especializadas (Federal, Trabalho, Eleitoral, Militar) e a Estadual (residual). Cada uma cuida de uma área.',
-      outroExemplo: 'Uma causa sobre FGTS entre empregado e empresa vai para a Justiça do Trabalho. Uma causa em que a União é ré vai para a Justiça Federal. Uma causa entre dois particulares sobre contrato vai para a Justiça Estadual (residual).',
-      compararConceitos: 'STF = Constituição. STJ = lei federal. Justiça Federal = causas federais. Justiça Estadual = residual. CNJ = administração. Vitaliciedade ≠ inamovibilidade ≠ irredutibilidade.',
-      mostrarPegadinha: 'Cuidado: "O CNJ julga causas judiciais". ERRADO. O CNJ faz controle ADMINISTRATIVO, FINANCEIRO e DISCIPLINAR do Judiciário — não julga causas.',
-      comoApareceEmConcurso: 'Cobrança de competências e composições.',
-      fazerPergunta: {
-        pergunta: 'Um Governador de Estado é acusado de crime comum. Quem julga?',
-        resposta: 'O SUPERIOR TRIBUNAL DE JUSTIÇA (STJ) — art. 105, I, "a". Se fosse crime de responsabilidade, o julgamento seria pelo Tribunal Especial (composto por desembargadores do TJ + deputados estaduais), conforme a Constituição Estadual.'
-      }
-    }
-  }  ,
-
-  /* ============================================================
-     DC-16 — Funções Essenciais à Justiça
-  ============================================================ */
-  'DC-16': {
-    id: 'L-DC-16',
-    moduloId: 'DC-16',
-    objetivo: 'Dominar as funções essenciais à Justiça (arts. 127 a 135 da CF/88): Ministério Público, Advocacia Pública, Advocacia e Defensoria Pública — funções, princípios, autonomia, garantias e organização constitucional. Foco especial no MP e na Defensoria.',
-    prerequisitos: ['DC-15'],
-
-    introducao: 'As funções essenciais à Justiça não integram nenhum dos três Poderes — são instituições autônomas que servem ao Estado e à sociedade. Cada uma tem missão própria: o MP fiscaliza a lei; a Advocacia Pública defende o Estado; a Advocacia defende o cidadão; a Defensoria defende os necessitados.',
-
-    explicacaoSimples: 'Pense numa partida de futebol: o juiz é o Judiciário, mas há também o fiscal (MP, que cuida do cumprimento das regras), o advogado do time (Advocacia), o advogado do Estado (Advocacia Pública) e o advogado gratuito para quem não pode pagar (Defensoria). Todos essenciais ao jogo.',
-
-    explicacaoTecnica: 'Art. 127: o Ministério Público é instituição permanente, essencial à função jurisdicional do Estado, incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos interesses sociais e individuais indisponíveis. Princípios: unidade, indivisibilidade e independência funcional. Art. 128: MP abrange MP da União (MPF, MP do Trabalho, MP Militar, MP do DF e Territórios) e MPs dos Estados. Art. 129: funções institucionais (promover ação penal pública, inquérito civil, ação civil pública, defesa do patrimônio público, etc.). Art. 130: legitimidade para interpor recursos. Art. 130-A: Conselho Nacional do Ministério Público (CNMP). Art. 131: Advocacia-Geral da União (AGU) — representa a União, judicial e extrajudicialmente, e presta consultoria e assessoramento ao Executivo. Art. 132: Procuradores dos Estados e do DF — representação judicial e consultoria. Art. 133: o advogado é indispensável à administração da justiça, sendo inviolável por seus atos e manifestações no exercício da profissão. Art. 134: Defensoria Pública — instituição permanente, essencial à função jurisdicional, incumbindo-lhe a orientação jurídica, promoção dos direitos humanos e defesa dos direitos individuais e coletivos, de forma integral e gratuita, aos necessitados. Art. 135: princípios e garantias dos servidores das carreiras.',
-
-    exemplos: [
-      'MP: promotor de justiça que atua em ação penal e em ação civil pública.',
-      'MPF: atua em causas federais, ambientais e de direitos humanos.',
-      'AGU: defende a União em juízo e presta consultoria ao Executivo federal.',
-      'Advocacia: advogado particular que defende o cidadão em juízo.',
-      'Defensoria Pública: defensor que atende gratuitamente quem não pode pagar advogado.',
-      'CNMP: controle externo do MP.',
-      'Garantias do MP: vitaliciedade, inamovibilidade e irredutibilidade de subsídio.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Ministério Público', termoB: 'Defensoria Pública', diferenca: 'MP: defende a ORDEM JURÍDICA, o REGIME DEMOCRÁTICO e os INTERESSES SOCIAIS E INDIVIDUAIS INDISPONÍVEIS. Defensoria: orienta e defende os NECESSITADOS, de forma integral e gratuita, sem representar o Estado.' },
-      { termoA: 'Advocacia Pública (AGU/PGE)', termoB: 'Advocacia privada', diferenca: 'ADVOCACIA PÚBLICA: representa o ESTADO (União, Estados, DF) judicial e extrajudicialmente; presta consultoria ao Executivo. ADVOCACIA PRIVADA: representa o CIDADÃO; atividade essencial à administração da justiça.' },
-      { termoA: 'MP', termoB: 'Judiciário', diferenca: 'MP: NÃO julga — atua como parte (fiscal da lei), promovendo ação penal, ação civil pública, inquérito civil. JUDICIÁRIO: julga as causas.' },
-      { termoA: 'Garantias do MP', termoB: 'Garantias dos magistrados', diferenca: 'MP: vitaliciedade, inamovibilidade e irredutibilidade de subsídio. MAGISTRADOS: vitaliciedade, inamovibilidade e irredutibilidade de subsídio. São iguais em nome, mas aplicáveis a carreiras distintas.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança de arts. 127 a 135: natureza do MP (instituição permanente e essencial), princípios do MP (unidade, indivisibilidade, independência funcional), funções do MP, Advocacia-Geral da União, Defensoria Pública e a garantia do advogado. Alta frequência em concursos de MP, Defensoria e Tribunais.',
-
-    pegadinhas: [
-      'Dizer que o MP integra o Judiciário. NÃO — é instituição AUTÔNOMA, fora dos três Poderes.',
-      'Confundir os princípios do MP (unidade, indivisibilidade, independência funcional) com os princípios da Administração (LIMPE).',
-      'Achar que a Defensoria Pública é subordinada ao Executivo. Tem autonomia funcional e administrativa.',
-      'Dizer que o advogado é obrigatório em qualquer causa. A CF diz que é indispensável à administração da justiça, mas há exceções (habeas corpus, por exemplo).',
-      'Confundir AGU (representa a União) com PGE (representa os Estados) e PGM (representa os Municípios).',
-      'Achar que o CNMP julga causas. Faz controle administrativo, financeiro e disciplinar.'
-    ],
-
-    errosComuns: [
-      'Decorar órgãos sem entender a natureza de cada um.',
-      'Confundir MP com Defensoria — funções são distintas.',
-      'Ignorar que a Defensoria Pública foi reconhecida como expressão do regime democrático (EC 80/2014).'
-    ],
-
-    resumo: [
-      'MP: instituição permanente e essencial; defende ordem jurídica, regime democrático e interesses indisponíveis.',
-      'Princípios do MP: unidade, indivisibilidade e independência funcional.',
-      'MP da União: MPF, MPT, MPM, MPDFT. MPs estaduais: organizados por lei estadual.',
-      'AGU: representa a União e presta consultoria ao Executivo federal.',
-      'PGE: representa os Estados. PGM: representa os Municípios.',
-      'Advocacia: indispensável à administração da justiça.',
-      'Defensoria Pública: atende necessitados, gratuita e integralmente, com autonomia.',
-      'Garantias do MP e dos magistrados: vitaliciedade, inamovibilidade e irredutibilidade.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Cada instituição tem seu papel: MP fiscaliza a lei; AGU defende o Estado; advogado defende o cidadão; Defensoria defende quem não pode pagar advogado. Todas são essenciais à Justiça.',
-      outroExemplo: 'Em uma ação civil pública sobre danos ambientais, quem ajuíza é o MP (art. 129, III). Em uma ação penal, quem denuncia é o MP. Em uma causa em que o cidadão não pode pagar advogado, atua a Defensoria Pública.',
-      compararConceitos: 'MP = fiscal da lei. AGU/PGE/PGM = defensor do Estado. Advogado = defensor do cidadão. Defensoria = defensor do necessitado. Todos com garantias próprias.',
-      mostrarPegadinha: 'Cuidado: "O MP é subordinado ao Poder Judiciário". ERRADO. O MP é instituição AUTÔNOMA, sem subordinação a nenhum dos três Poderes.',
-      comoApareceEmConcurso: 'Cobrança de arts. 127 a 135 e das garantias.',
-      fazerPergunta: {
-        pergunta: 'Quem representa a União judicialmente em uma ação em que ela é ré?',
-        resposta: 'A ADVOCACIA-GERAL DA UNIÃO (AGU) — art. 131, CF/88. A AGU representa a União, judicial e extrajudicialmente, e presta consultoria e assessoramento ao Poder Executivo federal.'
-      }
-    }
-  },
-
-  /* ============================================================
-     DC-17 — Defesa do Estado e Instituições Democráticas
-  ============================================================ */
-  'DC-17': {
-    id: 'L-DC-17',
-    moduloId: 'DC-17',
-    objetivo: 'Dominar os institutos de defesa do Estado e das instituições democráticas (arts. 136 a 144 da CF/88): Estado de Defesa, Estado de Sítio, Forças Armadas e Segurança Pública — hipóteses, procedimento, limites e diferenças.',
-    prerequisitos: ['DC-10'],
-
-    introducao: 'Em situações extremas (grave instabilidade institucional, calamidade, guerra), a CF prevê mecanismos excepcionais para preservar o Estado Democrático de Direito: o Estado de Defesa e o Estado de Sítio. Ambos suspendem temporariamente garantias fundamentais, sob rígido controle.',
-
-    explicacaoSimples: 'Pense no Estado como uma casa com alarme. Normalmente, o alarme está desligado. Em situações de perigo (invasão iminente ou incêndio), o alarme dispara — é o Estado de Defesa. Em situações gravíssimas (guerra, comoção nacional), o alarme soa com mais força — é o Estado de Sítio. Em ambos os casos, é medida temporária.',
-
-    explicacaoTecnica: 'Art. 136: ESTADO DE DEFESA — decreto do Presidente, ouvidos o Conselho da República e o Conselho de Defesa Nacional, para preservar ou prontamente restabelecer, em locais restritos e determinados, a ordem pública ou a paz social ameaçadas por grave e iminente instabilidade institucional ou atingidas por calamidades de grandes proporções na natureza. Prazo: 30 dias, prorrogável uma única vez por igual período. Medidas coercitivas: restrições a reunião, sigilo de correspondência, sigilo de comunicação telegráfica e telefônica, ocupação temporária de bens. Controle: o decreto é submetido ao Congresso em 24h; se em recesso, convocação extraordinária em 5 dias. Art. 137: ESTADO DE SÍTIO — decreto do Presidente, ouvidos os Conselhos, para comoção grave de repercussão nacional, fatos que comprovem a ineficácia de medida tomada durante o Estado de Defesa, ou declaração de estado de guerra ou resposta a agressão armada estrangeira. Prazo: 30 dias, prorrogável por iguais períodos (sem limite). Medidas: obrigação de permanência em localidade determinada, detenção em edifício não destinado a acusados de crimes comuns, restrições a correspondência, liberdade de imprensa, radiodifusão, reunião, etc. Art. 138: durante o Estado de Sítio, o Congresso NÃO pode ser dissolvido. Art. 139: restrições específicas. Art. 140: comissão do Congresso para acompanhar. Art. 141: cessado o Estado de Defesa ou Sítio, cessam os efeitos. Art. 142: Forças Armadas — defesa da Pátria, garantia dos Poderes constituídos e da lei e da ordem. Art. 143: serviço militar obrigatório. Art. 144: segurança pública — órgãos: polícia federal, polícia rodoviária federal, polícia ferroviária federal, polícias civis, polícias militares e corpos de bombeiros militares. Municípios podem constituir guardas municipais.',
-
-    exemplos: [
-      'Estado de Defesa: calamidade natural de grandes proporções em região específica.',
-      'Estado de Defesa: grave e iminente instabilidade institucional em local restrito.',
-      'Estado de Sítio: comoção grave de repercussão nacional.',
-      'Estado de Sítio: declaração de estado de guerra ou resposta a agressão armada estrangeira.',
-      'Polícia Federal: apura crimes contra a ordem política e social, faz polícia marítima, aeroportuária e de fronteiras.',
-      'Polícia Militar: policiamento ostensivo e preservação da ordem pública.',
-      'Guarda Municipal: proteção de bens, serviços e instalações do Município.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Estado de Defesa', termoB: 'Estado de Sítio', diferenca: 'DEFESA (art. 136): situações mais brandas — instabilidade institucional grave e iminente ou calamidades naturais em locais restritos. Prazo de 30 dias prorrogável uma vez. SÍTIO (art. 137): situações mais graves — comoção nacional, ineficácia do Estado de Defesa ou guerra/agressão estrangeira. Prazo de 30 dias prorrogável por iguais períodos sem limite.' },
-      { termoA: 'Estado de Defesa', termoB: 'Intervenção', diferenca: 'ESTADO DE DEFESA: medida excepcional que suspende direitos fundamentais em locais restritos, sem quebra da autonomia federativa. INTERVENÇÃO: quebra temporária da autonomia de um ente federativo (Estado ou Município). São institutos distintos.' },
-      { termoA: 'Forças Armadas', termoB: 'Segurança Pública', diferenca: 'FFAA (art. 142): Marinha, Exército e Aeronáutica — defesa da Pátria, garantia dos Poderes e da lei e da ordem. SEGURANÇA PÚBLICA (art. 144): dever do Estado, direito e responsabilidade de todos — exercida por polícias federal, rodoviária, ferroviária, civis, militares e bombeiros.' },
-      { termoA: 'Polícia Federal', termoB: 'Polícia Civil', diferenca: 'PF: polícia judiciária da UNIÃO — apura crimes contra a ordem política, faz polícia marítima/aeroportuária/de fronteiras, exerce polícia judiciária da União. PC: polícia judiciária dos ESTADOS — apura crimes comuns, exceto militares.' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança das hipóteses e prazos do Estado de Defesa e do Estado de Sítio, das atribuições das Forças Armadas e dos órgãos de segurança pública. Alta frequência em concursos de Polícia, Tribunais e área militar.',
-
-    pegadinhas: [
-      'Confundir hipóteses do Estado de Defesa com as do Estado de Sítio.',
-      'Achar que o Estado de Defesa pode ser decretado sem ouvir os Conselhos. Os dois Conselhos devem ser ouvidos.',
-      'Dizer que o Congresso pode ser dissolvido durante o Estado de Sítio (não pode — art. 138).',
-      'Trocar os prazos: Defesa = 30 dias prorrogável UMA vez; Sítio = 30 dias prorrogável por iguais períodos.',
-      'Confundir as atribuições da Polícia Federal com as da Polícia Civil.',
-      'Achar que a Guarda Municipal tem as mesmas atribuições da Polícia Militar.'
-    ],
-
-    errosComuns: [
-      'Decorar hipóteses sem diferenciar Defesa x Sítio.',
-      'Confundir Forças Armadas com órgãos de segurança pública.',
-      'Ignorar que o Congresso deve acompanhar as medidas por comissão.'
-    ],
-
-    resumo: [
-      'Estado de Defesa (art. 136): instabilidade institucional ou calamidade em locais restritos; prazo de 30 dias prorrogável uma vez.',
-      'Estado de Sítio (art. 137): comoção nacional, ineficácia do Defesa ou guerra; prazo de 30 dias prorrogável.',
-      'Ambos: decreto do Presidente + ouvidoria dos Conselhos da República e de Defesa + controle pelo Congresso.',
-      'Durante o Estado de Sítio, o Congresso NÃO pode ser dissolvido.',
-      'Forças Armadas (art. 142): Marinha, Exército e Aeronáutica.',
-      'Segurança Pública (art. 144): PF, PRF, PFF, polícias civis, militares e bombeiros; guardas municipais.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Estado de Defesa é o alarme para perigos em locais restritos. Estado de Sítio é o alarme para perigos gravíssimos em todo o país. Nos dois casos, o Presidente decreta, ouve os Conselhos e submete ao Congresso.',
-      outroExemplo: 'Uma calamidade natural de grandes proporções em um Estado pode justificar Estado de Defesa (art. 136, caput). Uma comoção grave de repercussão nacional ou uma guerra justifica Estado de Sítio (art. 137).',
-      compararConceitos: 'Defesa = brando. Sítio = grave. Defesa = 30 dias prorrogável uma vez. Sítio = 30 dias prorrogável sem limite. FFAA = defesa da Pátria. Segurança Pública = dever do Estado.',
-      mostrarPegadinha: 'Cuidado: "Durante o Estado de Sítio, o Congresso pode ser dissolvido". ERRADO. Art. 138: o Congresso NÃO pode ser dissolvido durante o Estado de Sítio.',
-      comoApareceEmConcurso: 'Cobrança de arts. 136 a 144.',
-      fazerPergunta: {
-        pergunta: 'Uma calamidade natural de grandes proporções em uma região específica pode justificar qual medida?',
-        resposta: 'ESTADO DE DEFESA (art. 136) — desde que a medida seja restrita e determinada, com prazo de 30 dias prorrogável uma vez. Se o problema for nacional e gravíssimo, aí sim caberia Estado de Sítio.'
-      }
-    }
-  },
-
-  /* ============================================================
-     DC-18 — Controle de Constitucionalidade
-  ============================================================ */
-  'DC-18': {
-    id: 'L-DC-18',
-    moduloId: 'DC-18',
-    objetivo: 'Compreender o sistema de controle de constitucionalidade brasileiro: controle preventivo e repressivo, difuso e concentrado, político e judicial; ADI, ADC, ADPF, ADO; efeitos das decisões e conceitos fundamentais.',
-    prerequisitos: ['DC-15'],
-
-    introducao: 'O controle de constitucionalidade é o mecanismo que garante a supremacia da Constituição: leis e atos normativos que contrariem a CF são declarados inconstitucionais. O Brasil adota um sistema MISTO — combina controle difuso (via incidental) e concentrado (via ação direta).',
-
-    explicacaoSimples: 'A Constituição é a lei maior. Se uma lei comum a contraria, ela é inconstitucional. Existem dois jeitos de verificar isso: quando um juiz, ao julgar um caso concreto, percebe a inconstitucionalidade (controle difuso) — ou quando o STF é provocado diretamente a analisar a lei (controle concentrado).',
-
-    explicacaoTecnica: 'CONTROLE PREVENTIVO: antes de a lei entrar em vigor — feito pelo Legislativo (Comissão de Constituição e Justiça) e pelo Executivo (veto jurídico). CONTROLE REPRESSIVO: depois de a lei entrar em vigor — pode ser DIFUSO (incidental, por qualquer juiz, no caso concreto) ou CONCENTRADO (via ADI, ADC, ADPF, ADO, no STF). CONTROLE POLÍTICO: feito por órgãos não judiciais. CONTROLE JUDICIAL: feito pelo Judiciário. DIFUSO: qualquer juiz ou tribunal, ao julgar caso concreto; efeitos INTER PARTES. CONCENTRADO: STF, em ação própria; efeitos ERGA OMNES. ADI (ação direta de inconstitucionalidade): declara a inconstitucionalidade de lei ou ato normativo federal ou estadual. ADC (ação declaratória de constitucionalidade): declara a constitucionalidade de lei ou ato normativo federal. ADPF (arguição de descumprimento de preceito fundamental): cabe quando não houver outro meio eficaz; evita o descumprimento de preceito fundamental. ADO (ação direta de inconstitucionalidade por omissão): cabe para tornar efetiva norma constitucional em caso de omissão legislativa. Legitimados (art. 103): Presidente, Mesa do Senado, Mesa da Câmara, Mesa de Assembleia Legislativa, Governador, Procurador-Geral da República, Conselho Federal da OAB, partido político com representação no Congresso, confederação sindical ou entidade de classe de âmbito nacional. Efeitos: em regra, ERGA OMNES e VINCULANTE; a ADI pode ter efeito EX TUNC (retroativo) ou EX NUNC (não retroativo), conforme modulação de efeitos (art. 27 da Lei 9.868/1999).',
-
-    exemplos: [
-      'Controle preventivo: CCJ da Câmara rejeita projeto por inconstitucionalidade.',
-      'Controle preventivo: Presidente veta projeto por inconstitucionalidade (veto jurídico).',
-      'Controle difuso: juiz de primeira instância afasta lei inconstitucional no caso concreto.',
-      'Controle concentrado: STF julga ADI sobre lei estadual.',
-      'ADC: STF declara a constitucionalidade de lei federal.',
-      'ADPF: cabe quando não há outro meio eficaz.',
-      'ADO: STF reconhece omissão legislativa.'
-    ],
-
-    comparacoes: [
-      { termoA: 'Controle difuso', termoB: 'Controle concentrado', diferenca: 'DIFUSO (incidental): qualquer juiz ou tribunal, em caso concreto; efeitos INTER PARTES; a decisão vale para as partes. CONCENTRADO (abstrato): só o STF, em ação própria; efeitos ERGA OMNES e VINCULANTE.' },
-      { termoA: 'ADI', termoB: 'ADC', diferenca: 'ADI: declara a INCONSTITUCIONALIDADE de lei ou ato normativo. ADC: declara a CONSTITUCIONALIDADE de lei ou ato normativo FEDERAL. Ambas têm efeito vinculante e erga omnes.' },
-      { termoA: 'ADI', termoB: 'ADPF', diferenca: 'ADI: cabe contra lei ou ato normativo federal ou estadual, independentemente de haver outro meio. ADPF: cabe quando NÃO houver outro meio eficaz; protege PRECEITOS FUNDAMENTAIS (não apenas a lei).' },
-      { termoA: 'ADI', termoB: 'ADO', diferenca: 'ADI: cabe contra ato COMISSIVO (lei inconstitucional). ADO: cabe contra ato OMISSIVO (falta de lei que regulamente norma constitucional).' }
-    ],
-
-    aplicacaoEmConcurso: 'Cobrança das modalidades (preventivo/repressivo, difuso/concentrado), dos legitimados (art. 103), do cabimento de cada ação (ADI, ADC, ADPF, ADO) e dos efeitos das decisões. Frequente em concursos de Tribunais, MP e área jurídica.',
-
-    pegadinhas: [
-      'Confundir controle difuso (incidental, qualquer juiz) com concentrado (STF, ação própria).',
-      'Achar que a ADI cabe apenas contra lei federal (cabe também contra lei estadual).',
-      'Dizer que a ADC cabe contra lei estadual (só lei ou ato normativo FEDERAL).',
-      'Confundir ADPF com ADI (ADPF é residual — só quando não houver outro meio eficaz).',
-      'Achar que a ADO cabe contra lei existente (é para omissão).',
-      'Dizer que a decisão em ADI é sempre EX TUNC. Pode ser modulada (art. 27 da Lei 9.868/1999).',
-      'Esquecer que a decisão de mérito em ADI e ADC tem efeito VINCULANTE.'
-    ],
-
-    errosComuns: [
-      'Decorar ações sem entender o cabimento de cada uma.',
-      'Confundir efeitos da decisão em controle difuso (inter partes) com concentrado (erga omnes).',
-      'Achar que todo legitimado do art. 103 tem pertinência temática (nem todos).'
-    ],
-
-    resumo: [
-      'Controle preventivo: Legislativo (CCJ) e Executivo (veto jurídico).',
-      'Controle repressivo: difuso (qualquer juiz, incidental, inter partes) ou concentrado (STF, ação própria, erga omnes).',
-      'ADI: declara inconstitucionalidade de lei federal ou estadual.',
-      'ADC: declara constitucionalidade de lei federal.',
-      'ADPF: preceito fundamental, quando não houver outro meio eficaz.',
-      'ADO: omissão legislativa.',
-      'Legitimados (art. 103): Presidente, Mesas, Governador, PGR, OAB, partido, confederação, entidade de classe.',
-      'Efeitos: erga omnes e vinculante (concentrado); inter partes (difuso).',
-      'Modulação de efeitos: art. 27 da Lei 9.868/1999.'
-    ],
-
-    modoProfessor: {
-      explicarMaisSimples: 'Há dois jeitos de verificar se uma lei contraria a Constituição: um juiz qualquer, ao julgar um caso, percebe a inconstitucionalidade (difuso); ou o STF é provocado diretamente a analisar a lei (concentrado). Cada caminho tem ferramentas próprias.',
-      outroExemplo: 'Se o STF declara inconstitucional uma lei em ADI, a decisão vale para TODOS (erga omnes). Se um juiz de 1ª instância afasta uma lei no caso concreto, a decisão vale só para aquele processo (inter partes) — até que o STF se pronuncie.',
-      compararConceitos: 'ADI = inconstitucionalidade. ADC = constitucionalidade. ADPF = preceito fundamental, residual. ADO = omissão. Difuso = inter partes. Concentrado = erga omnes.',
-      mostrarPegadinha: 'Cuidado: "A ADI cabe apenas contra lei federal". ERRADO. A ADI cabe contra lei ou ato normativo FEDERAL ou ESTADUAL. Quem só admite lei federal é a ADC.',
-      comoApareceEmConcurso: 'Cobrança de arts. 102 e 103, do cabimento das ações e dos efeitos.',
-      fazerPergunta: {
-        pergunta: 'Cabe ADPF para questionar lei municipal?',
-        resposta: 'SIM. A ADPF (art. 102, §1º) cabe quando não houver outro meio eficaz de sanar lesão a preceito fundamental — abrange lei ou ato normativo municipal, estadual ou federal. É residual.'
-      }
-    }
-  }
 
 };
