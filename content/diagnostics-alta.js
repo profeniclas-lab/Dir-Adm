@@ -804,14 +804,392 @@ window.DIAGNOSTICS_ALTA = {
         resposta: 'CENTRALIZAÇÃO x DESCENTRALIZAÇÃO: onde a decisão fica — cúpula x distribuída. DELEGAÇÃO x DESCENTRALIZAÇÃO: ato pontual de transferir autoridade (delegação) x transferência estrutural e permanente (descentralização). CONCENTRAÇÃO x DESCONCENTRAÇÃO: um único órgão executa (concentração) x divisão entre órgãos da MESMA pessoa jurídica (desconcentração — sem nova personalidade). AMPLITUDE ESTREITA x AMPLA: poucos subordinados por gestor → mais níveis hierárquicos (verticalizada) x muitos subordinados → menos níveis (achatada).'
       }
     ]
-  }
+  },
+  /* ============================================================
+     ADM-06 — Controle e avaliação
+  ============================================================ */
+  'ADM-06': {
+    id: 'D-ADM-06',
+    moduloId: 'ADM-06',
+    itens: [
+      {
+        id: 'D-ADM-06-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Conceito, finalidade e etapas do controle',
+        pergunta: 'Sobre a função administrativa de controle, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'O controle é a função que estabelece os objetivos organizacionais, antecedendo o planejamento.' },
+          { id: 'B', texto: 'O controle visa assegurar que os resultados obtidos estejam em conformidade com os padrões previamente estabelecidos, seguindo as etapas: padrões → medição → comparação → ação corretiva.' },
+          { id: 'C', texto: 'O controle limita-se a punir servidores que cometem irregularidades, não tendo relação com desempenho ou metas.' },
+          { id: 'D', texto: 'O controle é uma função estanque: uma vez definidos os padrões, não se admite revisão nem correção de desvios.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O controle é a função que mede o desempenho, compara com os padrões definidos no planejamento e adota ações corretivas. As etapas são: estabelecer padrões → medir o desempenho real → comparar com o padrão → agir corretivamente. A alternativa A confunde controle com planejamento; C reduz o controle à punição; D nega a natureza dinâmica e cíclica do controle.'
+      },
+      {
+        id: 'D-ADM-06-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Tipos de controle (preventivo, simultâneo e posterior)',
+        pergunta: 'Sobre os três tipos de controle (preventivo, simultâneo e posterior), assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'O controle preventivo age depois da execução; o posterior, antes; o simultâneo, no intervalo entre os dois.' },
+          { id: 'B', texto: 'O controle preventivo age antes da execução (ex.: treinamento, seleção criteriosa); o simultâneo, durante a execução (ex.: supervisão direta, painel em tempo real); o posterior, após a execução (ex.: auditoria, balanço).' },
+          { id: 'C', texto: 'O controle simultâneo é mais eficiente que o preventivo, pois permite corrigir com base em dados completos.' },
+          { id: 'D', texto: 'O controle posterior é o único que permite ação corretiva efetiva; os demais são meramente ilustrativos.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Preventivo = antes (evita o desvio); simultâneo = durante (corrige em tempo real); posterior = depois (identifica o desvio e alimenta o próximo ciclo). A alternativa A inverte; C apresenta juízo de valor que não corresponde à classificação; D desqualifica os demais tipos. Cada tipo tem seu papel, e o ideal é combinar os três.'
+      },
+      {
+        id: 'D-ADM-06-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Padrão, indicador e ação corretiva (nível difícil)',
+        pergunta: 'Um órgão público define a meta de atender 100% dos pedidos de informação em até 20 dias. Mensalmente, mede o percentual de pedidos atendidos no prazo. Quando o percentual cai abaixo de 95%, o gestor reforça a equipe e revisa o fluxo de resposta. Nesse cenário, a meta, o percentual medido e o reforço de equipe correspondem, respectivamente, a:',
+        alternativas: [
+          { id: 'A', texto: 'Indicador, padrão e ação corretiva.' },
+          { id: 'B', texto: 'Padrão, indicador e ação corretiva.' },
+          { id: 'C', texto: 'Ação corretiva, padrão e indicador.' },
+          { id: 'D', texto: 'Padrão, ação corretiva e indicador.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'A meta (atender 100% em 20 dias) é o PADRÃO — a referência do que se espera. O percentual medido (quantos pedidos foram atendidos no prazo) é o INDICADOR — a métrica do desempenho real. O reforço de equipe e a revisão do fluxo são a AÇÃO CORRETIVA — a intervenção para alinhar o desempenho ao padrão. É a aplicação mais fina das etapas do controle — e a que separa quem decorou de quem entendeu a lógica de feedback.'
+      },
+      {
+        id: 'D-ADM-06-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Controle preventivo, simultâneo e posterior',
+        pergunta: 'O controle preventivo age antes da execução; o simultâneo, durante; o posterior, depois. Os três podem coexistir numa mesma organização e se complementam.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. Preventivo (antes — evita o desvio), simultâneo (durante — corrige em tempo real) e posterior (depois — identifica o desvio e alimenta o próximo ciclo). Não são excludentes: coexistem e se complementam.'
+      },
+      {
+        id: 'D-ADM-06-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Finalidade do controle',
+        pergunta: 'O controle é uma função exclusivamente punitiva: sua única finalidade é aplicar sanções a servidores que cometem irregularidades.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. O controle é função diagnóstica: mede desempenho, compara com padrões e corrige desvios para melhorar resultados. A punição é apenas uma das possíveis ações corretivas — e não a principal. O controle existe para melhorar, não apenas para punir.'
+      },
+      {
+        id: 'D-ADM-06-06',
+        tipo: 'situacao',
+        subtopico: 'Controle interno x externo e tipos de controle',
+        pergunta: 'O Tribunal de Contas da União realiza auditoria sobre a execução de um contrato de obra pública firmado por um ministério. A obra já foi concluída, e a auditoria identifica sobrepreço. Simultaneamente, a Controladoria-Geral da União revisa os controles internos do ministério para evitar que o problema se repita. Considerando os tipos de controle (quanto ao órgão e ao momento), é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Ambos são controle interno e preventivo.' },
+          { id: 'B', texto: 'O TCU exerce controle externo e posterior; a CGU exerce controle interno, também de natureza predominantemente posterior, com foco em prevenção futura.' },
+          { id: 'C', texto: 'O TCU exerce controle interno e simultâneo; a CGU exerce controle externo e preventivo.' },
+          { id: 'D', texto: 'Ambos são controle externo e simultâneo, pois ocorrem durante a execução do contrato.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O TCU é órgão de controle EXTERNO (auxilia o Legislativo) e atua, no caso, de forma POSTERIOR (a obra já foi concluída). A CGU é órgão de controle INTERNO do Executivo Federal e, ao revisar controles, atua com foco PREVENTIVO para o futuro — embora a análise do caso concreto seja posterior. A chave é distinguir o órgão (interno x externo) e a função (preventivo, simultâneo ou posterior).'
+      },
+      {
+        id: 'D-ADM-06-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Etapas, tipos e natureza do controle',
+        pergunta: 'Você consegue, sem consultar, explicar as etapas do controle, os três tipos (preventivo, simultâneo e posterior) e a diferença entre controle interno e externo?',
+        resposta: 'ETAPAS: estabelecer padrões → medir desempenho real → comparar com o padrão → agir corretivamente. TIPOS: preventivo (antes — treinamento, seleção), simultâneo (durante — supervisão, painel em tempo real) e posterior (depois — auditoria, balanço). CONTROLE INTERNO: autocontrole de cada Poder/órgão (ex.: CGU, Controladorias). CONTROLE EXTERNO: exercido por outro órgão (Congresso + Tribunais de Contas; Judiciário no controle de legalidade). A lógica é sempre: medir → comparar → corrigir.'
+      }
+    ]
+  },
 
   /* ============================================================
-     PRÓXIMOS SUB-LOTES (a preencher):
-     ADM-06, ADM-07, ADM-10, ADM-11  → sub-lote 4.2
-     AP-13, AP-14, DA-15 a DA-18     → sub-lote 4.3
-     DA-19, DA-20, DA-21, DA-23,
-     DA-25, REV-28                   → sub-lote 4.4
+     ADM-07 — Gestão de Pessoas
   ============================================================ */
+  'ADM-07': {
+    id: 'D-ADM-07',
+    moduloId: 'ADM-07',
+    itens: [
+      {
+        id: 'D-ADM-07-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Os seis processos de gestão de pessoas',
+        pergunta: 'Sobre o modelo dos seis processos de gestão de pessoas (agregar, aplicar, recompensar, desenvolver, manter e monitorar), assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'O processo de "agregar" corresponde à remuneração e aos benefícios; o de "recompensar", ao recrutamento e à seleção.' },
+          { id: 'B', texto: 'Agregar = recrutamento e seleção; aplicar = desenho de cargos e avaliação de desempenho; recompensar = remuneração e benefícios; desenvolver = treinamento e carreiras; manter = higiene, segurança e QVT; monitorar = sistemas de informação.' },
+          { id: 'C', texto: 'O processo de "desenvolver" corresponde ao treinamento operacional de curto prazo, e o de "manter" corresponde à atração de candidatos.' },
+          { id: 'D', texto: 'Os seis processos são independentes e não se relacionam com os objetivos organizacionais.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O modelo clássico dos seis processos é: AGREGAR (recrutamento e seleção), APLICAR (desenho de cargos, avaliação, movimentação), RECOMPENSAR (remuneração, benefícios, incentivos), DESENVOLVER (treinamento, carreiras), MANTER (higiene e segurança, QVT, clima) e MONITORAR (sistemas de informação). A alternativa A inverte agregar e recompensar; C confunde manter com agregar; D nega a natureza sistêmica do modelo.'
+      },
+      {
+        id: 'D-ADM-07-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Treinamento x desenvolvimento',
+        pergunta: 'Sobre treinamento e desenvolvimento, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Treinamento e desenvolvimento são sinônimos: ambos preparam o empregado para a tarefa atual.' },
+          { id: 'B', texto: 'Treinamento prepara para a tarefa atual (curto prazo, operacional); desenvolvimento prepara para o futuro (longo prazo, estratégico).' },
+          { id: 'C', texto: 'Treinamento prepara para o futuro; desenvolvimento, para a tarefa atual.' },
+          { id: 'D', texto: 'Desenvolvimento é exclusivo de cargos de chefia; treinamento é exclusivo de cargos operacionais.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'TREINAMENTO: prepara para a TAREFA ATUAL — curto prazo, foco operacional (ex.: curso do novo sistema). DESENVOLVIMENTO: prepara para o FUTURO — longo prazo, foco estratégico (ex.: formação de lideranças). A alternativa C inverte; A confunde; D restringe indevidamente — ambos podem ser aplicados a qualquer nível, conforme a necessidade.'
+      },
+      {
+        id: 'D-ADM-07-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Recrutamento interno x externo (nível difícil)',
+        pergunta: 'Uma organização de médio porte promove há 15 anos todos os seus gerentes por recrutamento interno. A prática gerou motivação inicial, mas, nos últimos anos, a empresa vem perdendo competitividade por falta de novas ideias, e a rotatividade entre os gerentes tem aumentado. O diagnóstico mais adequado e a recomendação correspondente são:',
+        alternativas: [
+          { id: 'A', texto: 'O problema é de clima organizacional; a recomendação é fazer uma pesquisa de satisfação.' },
+          { id: 'B', texto: 'O problema é de endogenia (viés interno excessivo); a recomendação é equilibrar o recrutamento, combinando o interno com o externo em posições estratégicas, para trazer renovação de ideias.' },
+          { id: 'C', texto: 'O problema é de seleção; a recomendação é substituir o recrutamento interno por externo em todos os cargos.' },
+          { id: 'D', texto: 'O problema é de treinamento; a recomendação é investir em cursos operacionais para os gerentes.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O recrutamento interno tem vantagens (motivação, mobilidade, menor custo), mas, quando exclusivo, tende a gerar ENDOGENIA (manutenção dos mesmos vícios e falta de novas ideias). O diagnóstico correto é o viés interno excessivo, e a recomendação é EQUILIBRAR, combinando interno e externo — especialmente em posições estratégicas, onde a renovação de perspectivas é mais crítica. A alternativa C é excessiva (substituir tudo); A e D não enfrentam a causa do problema.'
+      },
+      {
+        id: 'D-ADM-07-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Recrutamento x seleção',
+        pergunta: 'Recrutamento e seleção são sinônimos: ambos consistem na escolha do candidato que melhor atende ao perfil da vaga.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. RECRUTAMENTO é a ATRAÇÃO de candidatos (busca ativa). SELEÇÃO é a ESCOLHA, entre os candidatos atraídos, do que melhor atende ao perfil. Recrutamento é a "vitrine"; seleção é a "peneira". São etapas distintas e sequenciais.'
+      },
+      {
+        id: 'D-ADM-07-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Clima x cultura organizacional',
+        pergunta: 'Clima organizacional é a percepção coletiva momentânea sobre o ambiente de trabalho (pode flutuar com eventos), enquanto cultura organizacional é o conjunto de valores e crenças enraizados (duradouros, difíceis de mudar).',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. CLIMA é a "temperatura" (percepção momentânea, flutua com eventos). CULTURA é o "DNA" (valores e crenças enraizados, duradouros). A analogia ajuda a fixar a diferença — e essa é a distinção mais cobrada em prova.'
+      },
+      {
+        id: 'D-ADM-07-06',
+        tipo: 'situacao',
+        subtopico: 'Classificação de práticas de gestão de pessoas',
+        pergunta: 'Um órgão público está reestruturando suas práticas de gestão de pessoas. Foram propostas cinco ações: (1) realizar concurso público para novos analistas; (2) aplicar prova prática, entrevista e análise curricular; (3) oferecer curso de 40h sobre o novo sistema de protocolo; (4) implementar programa de formação de lideranças para os próximos 3 anos; (5) revisar o plano de cargos e salários. Essas ações correspondem, respectivamente, a:',
+        alternativas: [
+          { id: 'A', texto: 'Recrutamento, seleção, treinamento, desenvolvimento e recompensa.' },
+          { id: 'B', texto: 'Seleção, recrutamento, desenvolvimento, treinamento e manter.' },
+          { id: 'C', texto: 'Recrutamento, seleção, desenvolvimento, treinamento e recompensa.' },
+          { id: 'D', texto: 'Seleção, treinamento, recrutamento, manter e monitorar.' }
+        ],
+        gabarito: 'A',
+        explicacao: '(1) Concurso público = RECRUTAMENTO (atração de candidatos). (2) Prova + entrevista + análise = SELEÇÃO (escolha). (3) Curso de 40h sobre o sistema = TREINAMENTO (preparação para a tarefa atual, curto prazo). (4) Formação de lideranças para os próximos 3 anos = DESENVOLVIMENTO (preparação para o futuro, longo prazo). (5) Plano de cargos e salários = RECOMPENSA (remuneração e benefícios). A chave é identificar o processo correspondente a cada prática.'
+      },
+      {
+        id: 'D-ADM-07-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Distinções fundamentais da gestão de pessoas',
+        pergunta: 'Você consegue, sem consultar, diferenciar recrutamento x seleção, treinamento x desenvolvimento, clima x cultura e as visões de pessoas como recursos x parceiras?',
+        resposta: 'RECRUTAMENTO x SELEÇÃO: atração (vitrine) x escolha (peneira). TREINAMENTO x DESENVOLVIMENTO: tarefa atual (curto prazo, operacional) x futuro (longo prazo, estratégico). CLIMA x CULTURA: percepção momentânea (temperatura) x valores enraizados (DNA). PESSOAS COMO RECURSOS x PARCEIRAS: visão tradicional (custo, padronização) x visão moderna (capital humano, engajamento, autonomia). Também é essencial distinguir os seis processos: agregar, aplicar, recompensar, desenvolver, manter e monitorar.'
+      }
+    ]
+  },
 
+  /* ============================================================
+     ADM-10 — Administração de Materiais e Patrimônio
+  ============================================================ */
+  'ADM-10': {
+    id: 'D-ADM-10',
+    moduloId: 'ADM-10',
+    itens: [
+      {
+        id: 'D-ADM-10-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Bem de consumo x bem permanente',
+        pergunta: 'Sobre a classificação de bens na Administração de Materiais e Patrimônio, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'Bens de consumo são duráveis e tombados; bens permanentes são consumidos com o uso.' },
+          { id: 'B', texto: 'Bens de consumo são consumidos com o uso ou têm vida útil curta (papel, caneta); bens permanentes são duráveis e, em regra, tombados (móveis, equipamentos, veículos).' },
+          { id: 'C', texto: 'Computadores, mesas e impressoras são bens de consumo, pois perdem valor com o tempo.' },
+          { id: 'D', texto: 'Papel, caneta e cartucho de tinta são bens permanentes, pois duram algumas semanas.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'BENS DE CONSUMO: consumidos com o uso ou de vida útil curta (papel, caneta, combustível). BENS PERMANENTES: duráveis, não se extinguem com o uso (móveis, equipamentos, veículos) — em regra, são TOMBADOS. A alternativa A inverte; C classifica bens permanentes como de consumo; D classifica materiais de consumo como permanentes.'
+      },
+      {
+        id: 'D-ADM-10-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Estoque mínimo x estoque de segurança',
+        pergunta: 'Sobre o estoque mínimo e o estoque de segurança, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'São sinônimos: ambos representam a quantidade mínima para evitar desabastecimento.' },
+          { id: 'B', texto: 'Estoque mínimo é a quantidade-limite abaixo da qual não se deve operar; estoque de segurança é uma parcela adicional para cobrir imprevistos (demanda maior que a prevista ou atraso do fornecedor).' },
+          { id: 'C', texto: 'Estoque de segurança é a quantidade máxima que a organização pode estocar.' },
+          { id: 'D', texto: 'Estoque mínimo é calculado com base no giro de estoque, e o de segurança, no ponto de pedido.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O ESTOQUE MÍNIMO é um limite operacional — abaixo dele, a operação fica vulnerável. O ESTOQUE DE SEGURANÇA é uma proteção ADICIONAL contra IMPREVISTOS (demanda acima do previsto, atraso de fornecedor). São conceitos relacionados, mas NÃO sinônimos. A alternativa A iguala indevidamente; C confunde com estoque máximo; D apresenta fórmulas inexistentes.'
+      },
+      {
+        id: 'D-ADM-10-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Ponto de pedido — cálculo (nível difícil)',
+        pergunta: 'Um órgão público consome, em média, 20 unidades de um item por dia. O tempo de reposição do fornecedor é de 8 dias. O estoque de segurança definido é de 60 unidades. Com base na fórmula do ponto de pedido (consumo médio × tempo de reposição + estoque de segurança), assinale a alternativa que indica o ponto de pedido:',
+        alternativas: [
+          { id: 'A', texto: '160 unidades.' },
+          { id: 'B', texto: '220 unidades.' },
+          { id: 'C', texto: '160 unidades, desconsiderando o estoque de segurança — o que seria um erro.' },
+          { id: 'D', texto: '80 unidades.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'A fórmula do ponto de pedido é: PP = (consumo médio × tempo de reposição) + estoque de segurança. Substituindo: PP = (20 × 8) + 60 = 160 + 60 = 220 unidades. A alternativa A (160) considera apenas o consumo durante o tempo de reposição, esquecendo o estoque de segurança; C e D apresentam valores intermediários. Esta é a principal aplicação quantitativa do módulo e costuma cair em prova.'
+      },
+      {
+        id: 'D-ADM-10-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Tombamento e inventário',
+        pergunta: 'O tombamento atribui número patrimonial único ao bem no momento de sua incorporação; o inventário é a conferência física periódica para conciliar o que está registrado com o que efetivamente existe.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. O TOMBAMENTO identifica o bem (número patrimonial). O INVENTÁRIO confere o acervo (contagem física e conciliação com os registros). São funções distintas e complementares: o tombamento individualiza; o inventário audita o conjunto.'
+      },
+      {
+        id: 'D-ADM-10-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Estoque mínimo e estoque de segurança',
+        pergunta: 'Estoque mínimo e estoque de segurança são sinônimos: ambos representam exatamente a mesma quantidade de itens.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. Embora relacionados, NÃO são sinônimos. O ESTOQUE MÍNIMO é um limite operacional (quantidade mínima para não comprometer a operação); o ESTOQUE DE SEGURANÇA é uma proteção ADICIONAL contra imprevistos (demanda acima do previsto ou atraso do fornecedor). A confusão entre os dois é uma das pegadinhas mais comuns do tema.'
+      },
+      {
+        id: 'D-ADM-10-06',
+        tipo: 'situacao',
+        subtopico: 'Classificação de bens e identificação de processo',
+        pergunta: 'Um órgão público está organizando seu setor de patrimônio. Recebeu quatro demandas: (1) cadastrar os computadores adquiridos, atribuindo número de patrimônio; (2) conferir fisicamente os bens em uso, comparando com os registros; (3) dar baixa em um veículo sinistrado; (4) transferir 10 cadeiras do setor A para o setor B. Essas demandas correspondem, respectivamente, a:',
+        alternativas: [
+          { id: 'A', texto: 'Tombamento, inventário, baixa patrimonial e movimentação.' },
+          { id: 'B', texto: 'Inventário, tombamento, movimentação e baixa patrimonial.' },
+          { id: 'C', texto: 'Tombamento, baixa patrimonial, inventário e movimentação.' },
+          { id: 'D', texto: 'Movimentação, inventário, tombamento e baixa patrimonial.' }
+        ],
+        gabarito: 'A',
+        explicacao: '(1) Atribuir número de patrimônio = TOMBAMENTO. (2) Conferir fisicamente os bens = INVENTÁRIO. (3) Dar baixa em veículo sinistrado = BAIXA PATRIMONIAL. (4) Transferir cadeiras entre setores = MOVIMENTAÇÃO. A chave é associar cada demanda ao instituto próprio do patrimônio.'
+      },
+      {
+        id: 'D-ADM-10-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Conceitos fundamentais de materiais e patrimônio',
+        pergunta: 'Você consegue, sem consultar, diferenciar bem de consumo x bem permanente, estoque mínimo x estoque de segurança, ponto de pedido x giro de estoque, tombamento x inventário, e alienação x baixa patrimonial?',
+        resposta: 'BEM DE CONSUMO x PERMANENTE: consumido com o uso (papel, caneta) x durável e, em regra, tombado (móveis, equipamentos, veículos). ESTOQUE MÍNIMO x DE SEGURANÇA: limite operacional x proteção adicional contra imprevistos. PONTO DE PEDIDO x GIRO: gatilho da compra (consumo médio × tempo de reposição + estoque de segurança) x indicador de renovação (consumo / estoque médio). TOMBAMENTO x INVENTÁRIO: identificação (número patrimonial) x conferência física. ALIENAÇÃO x BAIXA: transferência de propriedade a terceiro (causa) x retirada definitiva do patrimônio (gênero, que inclui a alienação, sinistro, obsolescência, furto).'
+      }
+    ]
+  },
+
+  /* ============================================================
+     ADM-11 — Gestão de Processos
+  ============================================================ */
+  'ADM-11': {
+    id: 'D-ADM-11',
+    moduloId: 'ADM-11',
+    itens: [
+      {
+        id: 'D-ADM-11-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Processo x projeto',
+        pergunta: 'Sobre a diferença entre processo e projeto, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Processo e projeto são sinônimos: ambos têm começo, meio e fim definidos.' },
+          { id: 'B', texto: 'Processo é contínuo e repetitivo (ex.: atendimento ao cidadão); projeto é temporário e único, com começo, meio e fim definidos (ex.: implantação de um novo sistema).' },
+          { id: 'C', texto: 'Processo é único e temporário; projeto é contínuo e repetitivo.' },
+          { id: 'D', texto: 'Projetos não têm prazo definido; processos, sim.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'PROCESSO: contínuo e repetitivo — gera o mesmo tipo de saída várias vezes (ex.: atendimento, matrícula, emissão de certidão). PROJETO: temporário e único — tem começo, meio e fim definidos e resultado singular (ex.: implantação de novo sistema, reforma de um prédio). A alternativa C inverte; A iguala indevidamente; D troca as características.'
+      },
+      {
+        id: 'D-ADM-11-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Processos finalísticos x processos de apoio',
+        pergunta: 'Sobre a classificação de processos, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Processos finalísticos dão suporte aos processos de apoio, que são os que geram valor direto ao cidadão.' },
+          { id: 'B', texto: 'Processos finalísticos geram valor direto ao cliente/cidadão (ex.: emissão de alvará); processos de apoio dão suporte aos finalísticos (ex.: RH, compras, TI).' },
+          { id: 'C', texto: 'Processos de apoio são os únicos que existem na Administração Pública.' },
+          { id: 'D', texto: 'Processos finalísticos são exclusivos da iniciativa privada, e de apoio, exclusivos do setor público.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'FINALÍSTICOS (ou de negócio): geram valor DIRETO ao cliente/cidadão (ex.: emissão de alvará, matrícula escolar). DE APOIO (ou de suporte): sustentam os finalísticos internamente (ex.: RH, compras, TI). A alternativa A inverte a relação; C e D restringem indevidamente a aplicação — ambos existem em qualquer organização, pública ou privada.'
+      },
+      {
+        id: 'D-ADM-11-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Identificação de gargalo (nível difícil)',
+        pergunta: 'No processo de matrícula de uma rede municipal de ensino, o fluxo é: inscrição → conferência de documentos → análise de vagas → confirmação de matrícula → comunicação ao responsável. Nos últimos meses, a etapa de ANÁLISE DE VAGAS tem acumulado pedidos, e o tempo total de matrícula subiu de 5 para 15 dias. As demais etapas operam dentro da capacidade. Nesse cenário, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'O gargalo está na etapa de inscrição, pois é a primeira do processo.' },
+          { id: 'B', texto: 'O gargalo está na etapa de ANÁLISE DE VAGAS, pois é nela que há acúmulo de pedidos e onde a capacidade limita o desempenho global do processo.' },
+          { id: 'C', texto: 'Não há gargalo, pois o processo como um todo continua funcionando.' },
+          { id: 'D', texto: 'O gargalo está na etapa de comunicação, pois é a última do processo.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'GARGALO é a etapa que LIMITA a capacidade total do processo — e ele está onde há ACÚMULO/ESPERA. No caso, a análise de vagas acumula pedidos e eleva o tempo total de 5 para 15 dias. A correção deve começar por ali. A alternativa A confunde ordem com gargalo; C nega a existência do gargalo; D confunde a etapa final com a etapa limitante.'
+      },
+      {
+        id: 'D-ADM-11-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Melhoria contínua x reengenharia',
+        pergunta: 'Melhoria contínua e reengenharia são sinônimos: ambas consistem em redesenhar radicalmente o processo, começando do zero.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. MELHORIA CONTÍNUA (kaizen) é INCREMENTAL — pequenos ajustes sucessivos, sem ruptura. REENGENHARIA é RADICAL — redesenho completo, "começar do zero", com ruptura do processo atual. Uma aperfeiçoa; a outra reinventa. A confusão entre os dois é uma das pegadinhas mais comuns.'
+      },
+      {
+        id: 'D-ADM-11-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Gestão funcional x gestão por processos',
+        pergunta: 'A gestão funcional organiza a organização por departamentos, com foco na eficiência local; a gestão por processos organiza por fluxo ponta a ponta, com foco no valor entregue ao cliente/cidadão.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. A gestão FUNCIONAL tem foco no departamento (eficiência local), mas pode gerar "silos" e retrabalho. A gestão POR PROCESSOS olha o FLUXO PONTA A PONTA, com foco no valor entregue ao cliente/cidadão — e busca romper os silos.'
+      },
+      {
+        id: 'D-ADM-11-06',
+        tipo: 'situacao',
+        subtopico: 'Processo x projeto e finalístico x apoio',
+        pergunta: 'Uma prefeitura está executando duas iniciativas simultâneas: (i) implantação de um novo sistema de protocolo digital, com prazo de 8 meses e equipe dedicada; (ii) manutenção do atendimento diário ao cidadão no balcão, que ocorre continuamente. Além disso, o setor de RH está contratando servidores para reforçar o atendimento. Sobre essas iniciativas, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: '(i) é processo finalístico; (ii) é projeto de apoio; e o RH é processo finalístico.' },
+          { id: 'B', texto: '(i) é projeto; (ii) é processo finalístico; e o RH é processo de apoio.' },
+          { id: 'C', texto: '(i) é processo de apoio; (ii) é projeto; e o RH é processo finalístico.' },
+          { id: 'D', texto: '(i) e (ii) são processos de apoio; e o RH é processo finalístico.' }
+        ],
+        gabarito: 'B',
+        explicacao: '(i) Implantação de novo sistema, com prazo e equipe dedicada, é PROJETO (temporário e único). (ii) Atendimento diário ao cidadão é PROCESSO FINALÍSTICO (contínuo, gera valor direto ao cidadão). (iii) Contratação de servidores pelo RH é PROCESSO DE APOIO (sustenta os finalísticos internamente). A chave é distinguir processo (contínuo) de projeto (temporário) e finalístico (valor direto) de apoio (suporte interno).'
+      },
+      {
+        id: 'D-ADM-11-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Conceitos fundamentais de gestão por processos',
+        pergunta: 'Você consegue, sem consultar, diferenciar processo x projeto, finalístico x apoio, atividade x tarefa, melhoria contínua x reengenharia e identificar um gargalo em um fluxo?',
+        resposta: 'PROCESSO x PROJETO: contínuo/repetitivo x temporário/único. FINALÍSTICO x APOIO: valor direto ao cidadão (ex.: certidão) x suporte interno (ex.: RH, compras, TI). ATIVIDADE x TAREFA: unidade de trabalho dentro do processo (ex.: conferir documentos) x subdivisão com execução individual (ex.: carimbar protocolo). MELHORIA CONTÍNUA x REENGENHARIA: incremental (ajustes sucessivos) x radical (redesenho "do zero"). GARGALO: etapa que limita a capacidade total do processo — está onde há acúmulo/espera; é por ela que a melhoria deve começar.'
+      }
+    ]
+  }
 };
