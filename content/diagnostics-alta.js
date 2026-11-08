@@ -1,637 +1,817 @@
 /* ============================================================
    DIAGNÓSTICOS — Módulos de prioridade ALTA
-   Preenchidos neste lote: DC-02, DC-03, DC-04, DC-05
-   Próximos lotes: DC-06, DC-07, DC-08, DC-09 (lote 2)
-                   DC-11, DC-12, DC-13 (lote 3)
+   Administração + Direito Administrativo
+   Entregues: ADM-01, ADM-02, ADM-03, ADM-04
+   Padrão por módulo: 3 MC (1 difícil) + 2 V/F + 1 situação + 1 autoavaliação
+   Próximos sub-lotes: 4.2 (ADM-06, ADM-07, ADM-10, ADM-11)
+                       4.3 (AP-13, AP-14, DA-15, DA-16, DA-17, DA-18)
+                       4.4 (DA-19, DA-20, DA-21, DA-23, DA-25, REV-28)
    ============================================================ */
 
 window.DIAGNOSTICS_ALTA = {
 
   /* ============================================================
-     DC-02 — Princípios Fundamentais
+     ADM-01 — Fundamentos de Administração
   ============================================================ */
-  'DC-02': {
-    id: 'D-DC-02',
-    moduloId: 'DC-02',
+  'ADM-01': {
+    id: 'D-ADM-01',
+    moduloId: 'ADM-01',
     itens: [
       {
-        id: 'D-DC-02-01',
+        id: 'D-ADM-01-01',
         tipo: 'multipla_escolha',
-        subtopico: 'Fundamentos, objetivos e princípios de relações internacionais',
-        pergunta: 'Assinale a alternativa que apresenta apenas FUNDAMENTOS da República Federativa do Brasil (art. 1º da CF/88):',
+        subtopico: 'Eficiência, eficácia, efetividade e produtividade',
+        pergunta: 'Sobre os conceitos de eficiência, eficácia, efetividade e produtividade na Administração, assinale a alternativa CORRETA:',
         alternativas: [
-          { id: 'A', texto: 'Soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa, pluralismo político.' },
-          { id: 'B', texto: 'Construir uma sociedade livre, justa e solidária; garantir o desenvolvimento nacional.' },
-          { id: 'C', texto: 'Independência nacional, prevalência dos direitos humanos, autodeterminação dos povos.' },
-          { id: 'D', texto: 'Erradicar a pobreza e a marginalização; reduzir as desigualdades sociais e regionais.' }
+          { id: 'A', texto: 'Eficiência é a capacidade de atingir os objetivos organizacionais, enquanto eficácia é o uso racional dos recursos.' },
+          { id: 'B', texto: 'Eficácia refere-se ao atingimento dos objetivos; eficiência, ao uso racional dos recursos; efetividade, ao impacto social positivo real; produtividade, à relação entre outputs e inputs.' },
+          { id: 'C', texto: 'Efetividade e eficácia são sinônimos — ambas medem o atingimento de metas internas.' },
+          { id: 'D', texto: 'Produtividade é sinônimo de eficácia: mede exclusivamente o alcance dos objetivos organizacionais.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Eficiência = meios (uso racional de recursos); eficácia = fins (atingimento de objetivos); efetividade = impacto social real mantido no tempo; produtividade = relação output/input. A alternativa A inverte eficiência e eficácia; C confunde efetividade com eficácia; D confunde produtividade com eficácia.'
+      },
+      {
+        id: 'D-ADM-01-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Níveis organizacionais e habilidades do administrador (Katz)',
+        pergunta: 'Segundo a teoria de Katz sobre as habilidades do administrador, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'As habilidades técnicas são mais exigidas no nível estratégico; as conceituais, no nível operacional.' },
+          { id: 'B', texto: 'As habilidades humanas são exigidas exclusivamente no nível tático, não sendo relevantes nos níveis estratégico e operacional.' },
+          { id: 'C', texto: 'As habilidades técnicas predominam no nível operacional; as conceituais, no nível estratégico; as humanas são exigidas em todos os níveis, com destaque no tático.' },
+          { id: 'D', texto: 'As três habilidades (técnicas, humanas e conceituais) têm o mesmo peso em todos os níveis organizacionais, sem qualquer predominância.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A correspondência clássica de Katz é: técnicas (operacional), conceituais (estratégico) e humanas (todos os níveis, com destaque no tático). A alternativa A inverte; B restringe indevidamente as humanas; D nega a predominância relativa, que é o ponto central da teoria.'
+      },
+      {
+        id: 'D-ADM-01-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Diferenças entre eficiência, eficácia e efetividade (nível difícil)',
+        pergunta: 'Um órgão público implanta um novo sistema de agendamento que reduz em 40% o tempo de marcação de consultas, mas NÃO consegue ampliar o número de consultas realizadas, porque a equipe médica permanece insuficiente. A economia gerada com a redução do tempo é realocada para outras áreas, sem qualquer impacto perceptível na saúde da população atendida. Sobre as dimensões de desempenho, é correto afirmar que o órgão foi:',
+        alternativas: [
+          { id: 'A', texto: 'eficiente, eficaz e efetivo, porque houve economia e melhoria no processo.' },
+          { id: 'B', texto: 'eficiente (uso mais racional do tempo), mas não eficaz (não ampliou consultas) nem efetivo (não houve impacto social real na saúde).' },
+          { id: 'C', texto: 'eficaz, mas não eficiente, porque o sistema melhorou o processo sem reduzir custos.' },
+          { id: 'D', texto: 'efetivo, porque a economia foi realocada para outras áreas, gerando impacto social indireto.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Houve EFICIÊNCIA (redução de 40% no tempo = uso mais racional de recurso), mas NÃO houve EFICÁCIA (a meta de ampliar consultas não foi atingida) e NÃO houve EFETIVIDADE (não houve impacto social real na saúde da população). A realocação da economia não configura efetividade por si só, pois falta o efeito transformador na vida das pessoas. É a distinção mais fina do tema — e a que separa quem decorou de quem entendeu.'
+      },
+      {
+        id: 'D-ADM-01-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Ciclo PODC',
+        pergunta: 'O PODC (Planejamento, Organização, Direção e Controle) é um ciclo contínuo e interdependente: o controle alimenta um novo planejamento, reiniciando o processo. Não se trata de uma sequência linear que termina no controle.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. O PODC é cíclico e interdependente: o produto do controle (desvios identificados) realimenta o próximo planejamento. Não é uma sequência rígida que termina no controle — é um processo contínuo.'
+      },
+      {
+        id: 'D-ADM-01-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Habilidades do administrador',
+        pergunta: 'As habilidades humanas (relacionamento interpessoal) são exigidas exclusivamente do nível tático, não sendo relevantes no nível estratégico nem no nível operacional.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. As habilidades humanas são exigidas em TODOS os níveis organizacionais — com peso relativo maior no tático, mas igualmente necessárias no estratégico (liderança de alta direção) e no operacional (supervisão de equipes). O que varia é a predominância relativa, não a exigência.'
+      },
+      {
+        id: 'D-ADM-01-06',
+        tipo: 'situacao',
+        subtopico: 'Aplicação de eficiência, eficácia e efetividade',
+        pergunta: 'Um município cria um programa de distribuição de cestas básicas. O programa é executado com o menor custo possível (eficiência), entrega 100% das cestas previstas no prazo (eficácia), mas, ao final de um ano, a insegurança alimentar das famílias atendidas permanece inalterada, porque o programa não foi acompanhado de ações estruturantes (geração de renda, qualificação). Sobre o desempenho do programa, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Foi eficiente, eficaz e efetivo — os três critérios foram plenamente atendidos.' },
+          { id: 'B', texto: 'Foi eficiente e eficaz, mas NÃO foi efetivo — não houve impacto social real na vida das famílias.' },
+          { id: 'C', texto: 'Foi efetivo, mas não eficiente — o baixo custo comprometeu a efetividade.' },
+          { id: 'D', texto: 'Não foi eficiente nem eficaz — o programa não gerou resultado algum.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O programa foi EFICIENTE (menor custo), EFICAZ (100% das cestas no prazo), mas NÃO foi EFETIVO (não transformou a realidade social — a insegurança alimentar permaneceu). A efetividade exige impacto social real e duradouro, não apenas cumprimento de metas internas.'
+      },
+      {
+        id: 'D-ADM-01-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Distinção dos conceitos de desempenho',
+        pergunta: 'Você consegue, sem consultar, diferenciar eficiência, eficácia, efetividade e produtividade — e explicar um exemplo de cada?',
+        resposta: 'EFICIÊNCIA: uso racional dos recursos (meios). Ex.: reduzir o consumo de papel em 30%. EFICÁCIA: atingimento dos objetivos organizacionais (fins). Ex.: atender 100% dos pedidos no prazo legal. EFETIVIDADE: impacto social positivo real, mantido no tempo. Ex.: redução efetiva da mortalidade infantil após o programa. PRODUTIVIDADE: relação entre outputs e inputs. Ex.: 30 processos analisados por servidor/hora. A chave é: eficiência olha o meio; eficácia, o fim; efetividade, o impacto; produtividade, a relação entre produção e recursos.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     ADM-02 — Processo Administrativo
+  ============================================================ */
+  'ADM-02': {
+    id: 'D-ADM-02',
+    moduloId: 'ADM-02',
+    itens: [
+      {
+        id: 'D-ADM-02-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Funções administrativas (PODC)',
+        pergunta: 'Sobre as quatro funções administrativas que compõem o PODC, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'O PODC é uma sequência rígida: cada função só pode ser iniciada após o término completo da anterior, sem retorno.' },
+          { id: 'B', texto: 'As funções são interdependentes e cíclicas: o controle alimenta novo planejamento, e as funções podem ocorrer simultaneamente em diferentes níveis da organização.' },
+          { id: 'C', texto: 'O controle é a função que antecede o planejamento, pois é ele que define os objetivos organizacionais.' },
+          { id: 'D', texto: 'A direção é a função que estrutura os recursos e atividades, e a organização é a que lidera e motiva pessoas.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O PODC é interdependente e cíclico: o controle realimenta o planejamento, e as funções podem ocorrer em paralelo nos diferentes níveis. A alternativa A descreve uma linearidade que não existe; C inverte a lógica (o planejamento precede o controle); D inverte organização e direção.'
+      },
+      {
+        id: 'D-ADM-02-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Planejamento e controle como "espelhos"',
+        pergunta: 'Sobre a relação entre as funções de planejamento e controle, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'São funções independentes: o planejamento define objetivos, e o controle não se relaciona com esses objetivos.' },
+          { id: 'B', texto: 'O planejamento define os padrões de desempenho; o controle compara o desempenho real com esses padrões e corrige desvios. Sem padrões de planejamento, não há como controlar.' },
+          { id: 'C', texto: 'O controle precede o planejamento, pois é ele que define os padrões a serem alcançados.' },
+          { id: 'D', texto: 'O controle só existe no setor privado; no setor público, não há controle de desempenho.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Planejamento e controle são funções-espelho: o planejamento estabelece padrões; o controle mede e compara o desempenho real com esses padrões, corrigindo desvios. Sem padrões definidos no planejamento, o controle não tem referência. A alternativa C inverte a lógica; A e D negam a relação.'
+      },
+      {
+        id: 'D-ADM-02-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'PODC x Processo Administrativo (Lei 9.784/99) (nível difícil)',
+        pergunta: 'Um servidor afirma: "Como estou no setor de processos, minha função principal é o processo administrativo — ou seja, planejar, organizar, dirigir e controlar." Com base na distinção técnica entre os dois conceitos, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'A afirmação está correta: processo administrativo (Lei 9.784/99) e ciclo PODC são sinônimos.' },
+          { id: 'B', texto: 'A afirmação confunde dois conceitos distintos: o PODC é o ciclo de funções do gestor (teoria geral); o processo administrativo da Lei 9.784/99 é o rito jurídico de decisão da Administração, com fases, prazos, contraditório e ampla defesa.' },
+          { id: 'C', texto: 'A afirmação está parcialmente correta: o PODC é aplicável apenas ao setor privado, e o processo administrativo da Lei 9.784/99, apenas ao setor público.' },
+          { id: 'D', texto: 'A afirmação está correta apenas se o servidor atuar em órgão federal, pois a Lei 9.784/99 só se aplica à União.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Há uma confusão terminológica clássica: o PODC é o ciclo de funções administrativas (planejar, organizar, dirigir, controlar), estudado na Teoria Geral da Administração. O "processo administrativo" da Lei 9.784/1999 é o rito jurídico pelo qual a Administração Pública toma decisões (instauração, instrução, defesa, relatório, decisão, recursos). São conceitos DIFERENTES, apesar do nome parecido. Esta é a pegadinha mais recorrente do módulo.'
+      },
+      {
+        id: 'D-ADM-02-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Natureza do PODC',
+        pergunta: 'O PODC é uma sequência linear e estanque: cada função termina completamente antes de a próxima começar, e o ciclo termina no controle.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. O PODC é cíclico e interdependente: as funções se interpenetram, podem ocorrer simultaneamente em diferentes níveis e o controle realimenta novo planejamento. Não há um "fim" no controle.'
+      },
+      {
+        id: 'D-ADM-02-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Finalidade do controle',
+        pergunta: 'A função de controle limita-se a punir servidores que cometem irregularidades.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. O controle é função diagnóstica: mede o desempenho, compara com os padrões do planejamento e corrige desvios para melhorar resultados. A punição é apenas uma das possíveis ações corretivas — e não a principal.'
+      },
+      {
+        id: 'D-ADM-02-06',
+        tipo: 'situacao',
+        subtopico: 'Identificação de função administrativa',
+        pergunta: 'Uma Secretaria de Educação define, em janeiro, a meta de elevar o IDEB em 15% até o final do ano. Em fevereiro, redistribui turmas e professores entre as escolas. Em março, o Secretário faz reuniões de motivação com os diretores. Em novembro, analisa os resultados das avaliações e identifica que duas escolas ficaram abaixo da meta, decidindo reforçar a formação de professores nelas. As funções administrativas exercidas em janeiro, fevereiro, março e novembro são, respectivamente:',
+        alternativas: [
+          { id: 'A', texto: 'Controle, organização, direção e planejamento.' },
+          { id: 'B', texto: 'Planejamento, organização, direção e controle.' },
+          { id: 'C', texto: 'Organização, planejamento, controle e direção.' },
+          { id: 'D', texto: 'Direção, controle, planejamento e organização.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Janeiro: definição de meta = PLANEJAMENTO. Fevereiro: redistribuição de turmas e professores = ORGANIZAÇÃO (estruturação de recursos). Março: reuniões de motivação = DIREÇÃO (liderança). Novembro: análise de resultados e ação corretiva = CONTROLE. É a aplicação clássica do PODC em sequência lógica.'
+      },
+      {
+        id: 'D-ADM-02-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Ciclo e interdependência do PODC',
+        pergunta: 'Você consegue explicar, sem consultar, por que o PODC é considerado um ciclo interdependente — e não uma sequência linear?',
+        resposta: 'O PODC é interdependente porque as funções se alimentam mutuamente: o planejamento define os padrões que o controle vai usar; o controle, ao identificar desvios, gera informação que realimenta novo planejamento. Além disso, as funções ocorrem simultaneamente nos diferentes níveis organizacionais (enquanto a cúpula planeja o próximo ciclo, a base executa o atual). Não há um "fim" no controle — ele é o início do próximo ciclo. Essa é a diferença entre uma visão linear (ultrapassada) e uma visão sistêmica (correta) do PODC.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     ADM-03 — Planejamento
+  ============================================================ */
+  'ADM-03': {
+    id: 'D-ADM-03',
+    moduloId: 'ADM-03',
+    itens: [
+      {
+        id: 'D-ADM-03-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Missão, visão, valores, objetivos e metas',
+        pergunta: 'Sobre os elementos do planejamento, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'Missão é onde a organização quer chegar no futuro; visão é a razão de sua existência no presente.' },
+          { id: 'B', texto: 'Missão é a razão de existir da organização (presente); visão é onde ela quer chegar (futuro); valores são os princípios que orientam a conduta; objetivos são alvos amplos; metas são objetivos quantificados com prazo.' },
+          { id: 'C', texto: 'Objetivos e metas são sinônimos: ambos são amplos e qualitativos.' },
+          { id: 'D', texto: 'Valores são metas de curto prazo, e planos são documentos que independem dos objetivos organizacionais.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Missão = razão de existir (presente). Visão = onde quer chegar (futuro). Valores = princípios de conduta. Objetivos = alvos amplos e qualitativos. Metas = objetivos quantificados e datados. Planos = documentos que formalizam as estratégias. A alternativa A inverte missão e visão; C confunde objetivo com meta; D confunde valores com metas.'
+      },
+      {
+        id: 'D-ADM-03-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Análise SWOT',
+        pergunta: 'Na análise SWOT, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Forças e fraquezas são fatores internos, controláveis pela organização; oportunidades e ameaças são fatores externos, não controláveis.' },
+          { id: 'B', texto: 'Forças e oportunidades são fatores internos; fraquezas e ameaças são externos.' },
+          { id: 'C', texto: 'Todos os quatro elementos são internos — a SWOT analisa apenas o ambiente da organização.' },
+          { id: 'D', texto: 'Todos os quatro elementos são externos — a SWOT analisa apenas o ambiente em que a organização está inserida.' }
         ],
         gabarito: 'A',
-        explicacao: 'A é o rol do art. 1º (fundamentos). B e D são OBJETIVOS fundamentais (art. 3º). C são PRINCÍPIOS das relações internacionais (art. 4º). A banca mistura as três categorias — cuidado.'
+        explicacao: 'SWOT = forças e fraquezas (ambiente INTERNO, controlável) + oportunidades e ameaças (ambiente EXTERNO, não controlável). A distinção interno x externo é o ponto central — e a pegadinha mais comum. As alternativas B, C e D trocam indevidamente as categorias.'
       },
       {
-        id: 'D-DC-02-02',
+        id: 'D-ADM-03-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Balanced Scorecard (BSC) (nível difícil)',
+        pergunta: 'Uma Secretaria de Saúde está implementando o Balanced Scorecard (BSC) e definiu os seguintes objetivos estratégicos: (i) reduzir a mortalidade infantil em 20% em 3 anos; (ii) ampliar a satisfação dos usuários nas UBS para 85%; (iii) reduzir o tempo médio de espera por consulta de 30 para 10 dias; (iv) capacitar 100% dos enfermeiros em protocolos de atenção básica. Em relação às quatro perspectivas clássicas do BSC, esses objetivos correspondem, respectivamente, a:',
+        alternativas: [
+          { id: 'A', texto: 'Clientes, financeira, processos internos e aprendizado/crescimento.' },
+          { id: 'B', texto: 'Clientes (ou sociedade), clientes, processos internos e aprendizado/crescimento.' },
+          { id: 'C', texto: 'Financeira, clientes, aprendizado/crescimento e processos internos.' },
+          { id: 'D', texto: 'Processos internos, clientes, aprendizado/crescimento e financeira.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'No BSC, as quatro perspectivas clássicas são: financeira, clientes, processos internos e aprendizado/crescimento. No setor público, é comum adaptar "clientes" para "sociedade" — por isso o item (i) "reduzir a mortalidade infantil" é tipicamente da perspectiva SOCIEDADE (cliente no setor público). O item (ii) "satisfação dos usuários" é claramente da perspectiva CLIENTES. O item (iii) "reduzir tempo de espera" é da perspectiva PROCESSOS INTERNOS. O item (iv) "capacitar enfermeiros" é da perspectiva APRENDIZADO/CRESCIMENTO. Esta é uma questão difícil porque exige conhecer as quatro perspectivas e saber aplicá-las a um contexto específico — e distinguir a adaptação "sociedade" no setor público.'
+      },
+      {
+        id: 'D-ADM-03-04',
         tipo: 'verdadeiro_falso',
-        subtopico: 'Soberania x autonomia',
-        pergunta: 'Os Municípios brasileiros são entes soberanos, podendo se separar da União e dos Estados a qualquer tempo.',
+        subtopico: 'Objetivo x meta',
+        pergunta: 'Meta é um alvo mais amplo e qualitativo que objetivo; por isso, toda meta pressupõe um objetivo quantificado.',
         alternativas: [
           { id: 'V', texto: 'Verdadeiro' },
           { id: 'F', texto: 'Falso' }
         ],
         gabarito: 'F',
-        explicacao: 'Falso. SOBERANIA é atributo exclusivo da República Federativa do Brasil (o todo). Municípios (e União, Estados e DF) têm AUTONOMIA (política, administrativa e financeira), não soberania. Além disso, a Federação é cláusula pétrea — não há direito de secessão.'
+        explicacao: 'Falso — a relação é o contrário. Objetivo é amplo e qualitativo (ex.: "melhorar o atendimento"). Meta é o objetivo quantificado com prazo (ex.: "reduzir o tempo médio de espera em 30% até dezembro"). Toda META pressupõe um OBJETIVO, e não o inverso.'
       },
       {
-        id: 'D-DC-02-03',
-        tipo: 'situacao',
-        subtopico: 'Separação de Poderes',
-        pergunta: 'Um Prefeito edita decreto determinando que o Poder Judiciário local não poderá mais julgar causas relacionadas a tributos municipais. Esse ato:',
-        alternativas: [
-          { id: 'A', texto: 'É válido, pois o Prefeito é chefe do Executivo municipal.' },
-          { id: 'B', texto: 'Viola a separação de Poderes (art. 2º da CF/88), pois os Poderes são independentes e harmônicos entre si.' },
-          { id: 'C', texto: 'É válido, desde que aprovado pela Câmara Municipal.' },
-          { id: 'D', texto: 'É válido porque a competência tributária é do Município.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'A separação de Poderes (art. 2º) impede que um Poder interfira na função típica do outro. O Prefeito não pode restringir a atuação do Judiciário. Decreto que invade competência de outro Poder é inconstitucional.'
-      },
-      {
-        id: 'D-DC-02-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Fundamentos, objetivos e princípios de relações internacionais',
-        pergunta: 'Você consegue distinguir, sem consultar, as três listas do art. 1º (fundamentos), art. 3º (objetivos) e art. 4º (princípios de relações internacionais)?',
-        resposta: 'FUNDAMENTOS (art. 1º): soberania, cidadania, dignidade da pessoa humana, valores sociais do trabalho e da livre iniciativa, pluralismo político. OBJETIVOS (art. 3º): construir sociedade livre/justa/solidária; desenvolvimento nacional; erradicar a pobreza e reduzir desigualdades; promover o bem de todos. RELAÇÕES INTERNACIONAIS (art. 4º): independência nacional, prevalência dos direitos humanos, autodeterminação, não intervenção, igualdade entre Estados, defesa da paz, solução pacífica dos conflitos, repúdio ao terrorismo e ao racismo, cooperação entre os povos, asilo político.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-03 — Direitos e Deveres Individuais e Coletivos
-  ============================================================ */
-  'DC-03': {
-    id: 'D-DC-03',
-    moduloId: 'DC-03',
-    itens: [
-      {
-        id: 'D-DC-03-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Crimes inafiançáveis e imprescritíveis',
-        pergunta: 'Sobre os crimes previstos no art. 5º da CF/88, assinale a alternativa correta:',
-        alternativas: [
-          { id: 'A', texto: 'Todos os crimes hediondos são imprescritíveis.' },
-          { id: 'B', texto: 'O racismo é crime inafiançável e imprescritível; a tortura, o tráfico e o terrorismo são inafiançáveis, mas NÃO imprescritíveis.' },
-          { id: 'C', texto: 'A ação de grupos armados contra o Estado Democrático é crime afiançável, mas imprescritível.' },
-          { id: 'D', texto: 'A tortura é crime imprescritível, mas afiançável.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'O racismo é inafiançável e imprescritível (art. 5º, XLII). Tortura, tráfico e terrorismo (3T) são inafiançáveis e hediondos, mas NÃO imprescritíveis (art. 5º, XLIII). A ação de grupos armados é inafiançável e imprescritível (art. 5º, XLIV) — letra C erra ao dizer "afiançável". Nem todo crime hediondo é imprescritível — letra A erra.'
-      },
-      {
-        id: 'D-DC-03-02',
+        id: 'D-ADM-03-05',
         tipo: 'verdadeiro_falso',
-        subtopico: 'Inviolabilidade do domicílio',
-        pergunta: 'A casa é asilo inviolável do indivíduo, e nela ninguém pode penetrar sem consentimento do morador, SALVO em caso de flagrante delito, desastre, para prestar socorro ou, durante o dia, por determinação judicial.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro — é a literalidade do art. 5º, XI. Pegadinha clássica: a ordem judicial só pode ser cumprida DURANTE O DIA. À noite, só com consentimento, flagrante, desastre ou socorro.'
-      },
-      {
-        id: 'D-DC-03-03',
-        tipo: 'situacao',
-        subtopico: 'Remédios constitucionais',
-        pergunta: 'Um servidor público federal teve seu nome indevidamente negativado em cadastro de inadimplentes por um órgão público, em razão de erro administrativo. O instrumento adequado para corrigir a situação é:',
-        alternativas: [
-          { id: 'A', texto: 'Habeas corpus, porque há constrangimento ilegal.' },
-          { id: 'B', texto: 'Habeas data, porque envolve informação pessoal em banco de dados público.' },
-          { id: 'C', texto: 'Mandado de segurança, porque há direito líquido e certo não amparado por HC ou HD.' },
-          { id: 'D', texto: 'Ação popular, porque envolve ato lesivo ao patrimônio público.' }
-        ],
-        gabarito: 'C',
-        explicacao: 'O caso é de ILEGALIDADE (negativação indevida) que atinge direito líquido e certo — cabe MS. O HD serve para ACESSAR ou RETIFICAR dados em banco público, mas quando o problema é a ilegalidade da inscrição, o STF entende que o MS é o adequado. HC é para liberdade de locomoção; AP é para ato lesivo ao patrimônio público.'
-      },
-      {
-        id: 'D-DC-03-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Remédios constitucionais',
-        pergunta: 'Você sabe diferenciar, sem consultar, HC, HD, MS, MS coletivo, MI e AP — com seus respectivos cabimentos e legitimados?',
-        resposta: 'HC: liberdade de locomoção, gratuito, qualquer pessoa. HD: acesso/retificação de dados da PRÓPRIA pessoa em banco público, não é gratuito. MS: direito líquido e certo não amparado por HC ou HD. MS coletivo: partido, sindicato, entidade de classe, associação (com 1 ano). MI: falta de norma regulamentadora. AP: qualquer CIDADÃO (eleitor) — anular ato lesivo ao patrimônio público, moralidade, meio ambiente ou patrimônio histórico-cultural; autor isento de custas e sucumbência, salvo má-fé.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-04 — Direitos Sociais
-  ============================================================ */
-  'DC-04': {
-    id: 'D-DC-04',
-    moduloId: 'DC-04',
-    itens: [
-      {
-        id: 'D-DC-04-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Rol do art. 6º',
-        pergunta: 'São direitos sociais expressamente previstos no art. 6º da CF/88, EXCETO:',
-        alternativas: [
-          { id: 'A', texto: 'Educação, saúde e alimentação.' },
-          { id: 'B', texto: 'Moradia e transporte.' },
-          { id: 'C', texto: 'Propriedade e livre iniciativa.' },
-          { id: 'D', texto: 'Previdência social, proteção à maternidade e assistência aos desamparados.' }
-        ],
-        gabarito: 'C',
-        explicacao: 'Propriedade é direito individual (art. 5º, XXII) e livre iniciativa é FUNDAMENTO da República (art. 1º, IV) — não são direitos sociais. Todos os demais estão no art. 6º. Lembre-se: moradia (EC 26/2000) e transporte (EC 90/2015) foram incluídos posteriormente.'
-      },
-      {
-        id: 'D-DC-04-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Direitos dos trabalhadores domésticos',
-        pergunta: 'Os trabalhadores domésticos têm direito a TODOS os incisos do art. 7º da CF/88, sem exceção.',
+        subtopico: 'Análise SWOT — interno x externo',
+        pergunta: 'Na análise SWOT, as forças e as oportunidades são ambas categorias do ambiente externo, pois representam fatores positivos que a organização pode aproveitar.',
         alternativas: [
           { id: 'V', texto: 'Verdadeiro' },
           { id: 'F', texto: 'Falso' }
         ],
         gabarito: 'F',
-        explicacao: 'Falso. Após a EC 72/2013, o parágrafo único do art. 7º garante aos domésticos apenas uma LISTA TAXATIVA de incisos — não todos. Urbanos e rurais é que têm todos os incisos.'
+        explicacao: 'Falso. FORÇAS são fatores INTERNOS positivos (controláveis). OPORTUNIDADES são fatores EXTERNOS positivos (não controláveis). A distinção entre interno e externo é fundamental — não se pode agrupá-las como "ambiente externo".'
       },
       {
-        id: 'D-DC-04-03',
+        id: 'D-ADM-03-06',
         tipo: 'situacao',
-        subtopico: 'Seguridade social',
-        pergunta: 'Um cidadão sem contribuição prévia procura atendimento de saúde no SUS e, no mesmo dia, solicita benefício assistencial por não ter meios de prover sua subsistência. Sobre a seguridade social:',
+        subtopico: 'Classificação em SWOT',
+        pergunta: 'Uma escola pública municipal está realizando sua análise SWOT para o planejamento de 2025. Foram levantados quatro pontos: (1) o corpo docente da escola é altamente qualificado e estável; (2) a Prefeitura anunciou um novo programa de financiamento para reforma de escolas; (3) o prédio da escola tem problemas estruturais na rede elétrica; (4) há previsão de corte no repasse de recursos federais. Esses pontos correspondem, respectivamente, a:',
         alternativas: [
-          { id: 'A', texto: 'Saúde e assistência exigem contribuição prévia, como a previdência.' },
-          { id: 'B', texto: 'A saúde é universal e a assistência é prestada a quem dela necessitar, independentemente de contribuição; a previdência, sim, exige contribuição.' },
-          { id: 'C', texto: 'Saúde, previdência e assistência são gratuitas e não exigem contribuição.' },
-          { id: 'D', texto: 'Somente a saúde é universal; previdência e assistência exigem contribuição.' }
+          { id: 'A', texto: 'Força, oportunidade, fraqueza e ameaça.' },
+          { id: 'B', texto: 'Oportunidade, força, ameaça e fraqueza.' },
+          { id: 'C', texto: 'Força, fraqueza, oportunidade e ameaça.' },
+          { id: 'D', texto: 'Fraqueza, oportunidade, força e ameaça.' }
         ],
-        gabarito: 'B',
-        explicacao: 'A SEGURIDADE (art. 194) abrange saúde, previdência e assistência. Saúde (art. 196) é universal e gratuita; assistência (art. 203) é para quem dela necessitar, sem contribuição; PREVIDÊNCIA (art. 201) é a única CONTRIBUTIVA — só quem contribui recebe.'
+        gabarito: 'A',
+        explicacao: '(1) Corpo docente qualificado = FORÇA (interno positivo). (2) Programa de financiamento anunciado = OPORTUNIDADE (externo positivo). (3) Problemas na rede elétrica = FRAQUEZA (interno negativo). (4) Corte no repasse federal = AMEAÇA (externo negativo). A chave é sempre: interno (controlável) x externo (não controlável); positivo x negativo.'
       },
       {
-        id: 'D-DC-04-04',
+        id: 'D-ADM-03-07',
         tipo: 'autoavaliacao',
-        subtopico: 'Rol do art. 6º',
-        pergunta: 'Você consegue recitar o rol completo dos direitos sociais do art. 6º da CF/88 (versão vigente, com as inclusões das EC 26/2000 e EC 90/2015)?',
-        resposta: 'Educação, saúde, alimentação, trabalho, moradia, transporte, lazer, segurança, previdência social, proteção à maternidade e à infância, assistência aos desamparados.'
+        subtopico: 'Elementos do planejamento e ferramentas',
+        pergunta: 'Você consegue, sem consultar, explicar os elementos do planejamento (missão, visão, valores, objetivos, metas, estratégias, planos) e a diferença entre SWOT e BSC?',
+        resposta: 'MISSÃO: razão de existir (presente). VISÃO: onde a organização quer chegar (futuro). VALORES: princípios de conduta. OBJETIVOS: alvos amplos e qualitativos. METAS: objetivos quantificados com prazo. ESTRATÉGIAS: cursos de ação escolhidos. PLANOS: documentos que formalizam. SWOT: ferramenta de diagnóstico do ambiente (interno: forças e fraquezas; externo: oportunidades e ameaças). BSC: ferramenta de gestão estratégica que traduz a estratégia em quatro perspectivas (financeira, clientes, processos internos, aprendizado/crescimento), com objetivos, indicadores, metas e iniciativas. SWOT diagnostica; BSC executa e mede.'
       }
     ]
   },
 
   /* ============================================================
-     DC-05 — Nacionalidade
+     ADM-04 — Organização
   ============================================================ */
-  'DC-05': {
-    id: 'D-DC-05',
-    moduloId: 'DC-05',
+  'ADM-04': {
+    id: 'D-ADM-04',
+    moduloId: 'ADM-04',
     itens: [
       {
-        id: 'D-DC-05-01',
+        id: 'D-ADM-04-01',
         tipo: 'multipla_escolha',
-        subtopico: 'Cargos privativos de brasileiro nato',
-        pergunta: 'Assinale a alternativa que contém APENAS cargos privativos de brasileiro nato (art. 12, §3º, CF/88):',
+        subtopico: 'Centralização x descentralização',
+        pergunta: 'Sobre a centralização e a descentralização administrativa, assinale a alternativa CORRETA:',
         alternativas: [
-          { id: 'A', texto: 'Presidente da República, Ministro do STF e Governador de Estado.' },
-          { id: 'B', texto: 'Presidente da República, Presidente da Câmara dos Deputados, Ministro do STF e Ministro da Defesa.' },
-          { id: 'C', texto: 'Senador, Prefeito e carreira diplomática.' },
-          { id: 'D', texto: 'Ministro de Estado, Governador e oficial das Forças Armadas.' }
+          { id: 'A', texto: 'Centralização é sempre ruim e descentralização é sempre boa — quanto mais descentralizado, melhor.' },
+          { id: 'B', texto: 'Centralização concentra as decisões na cúpula (maior controle, menor agilidade); descentralização distribui decisões (maior agilidade, demanda coordenação). A escolha depende do contexto e do tipo de decisão.' },
+          { id: 'C', texto: 'Centralização e descentralização são sinônimos — ambas distribuem decisões pela organização.' },
+          { id: 'D', texto: 'Descentralização é um ato pontual de transferência de autoridade para uma tarefa específica.' }
         ],
         gabarito: 'B',
-        explicacao: 'Os 8 cargos privativos de nato são: Presidente e Vice; Presidente da Câmara e do Senado; Ministro do STF; carreira diplomática; oficial das Forças Armadas; Ministro da Defesa. Governador, Senador, Prefeito e Ministro de Estado (exceto Defesa) podem ser ocupados por brasileiros naturalizados.'
+        explicacao: 'Centralização e descentralização são um trade-off: centralização dá mais controle e menos agilidade; descentralização dá mais agilidade e exige coordenação. Não há um "melhor absoluto" — depende do contexto e do tipo de decisão. A alternativa A trata como valor absoluto; C confunde os conceitos; D descreve DELEGAÇÃO, não descentralização.'
       },
       {
-        id: 'D-DC-05-02',
+        id: 'D-ADM-04-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Tipos de departamentalização',
+        pergunta: 'Uma rede de hospitais públicos organiza sua estrutura em diretorias específicas para atendimento infantil, adulto e idoso. Esse tipo de departamentalização é:',
+        alternativas: [
+          { id: 'A', texto: 'Funcional, porque agrupa por função desempenhada.' },
+          { id: 'B', texto: 'Por cliente, porque agrupa conforme o perfil do público atendido.' },
+          { id: 'C', texto: 'Geográfica, porque divide por localização.' },
+          { id: 'D', texto: 'Por processo, porque agrupa conforme as etapas de trabalho.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'A departamentalização POR CLIENTE agrupa as atividades conforme o perfil do público atendido (crianças, adultos, idosos). A FUNCIONAL agruparia por função (médicos, enfermeiros, administrativo); a GEOGRÁFICA, por localização; a POR PROCESSO, por etapas de trabalho. A chave é identificar o critério de agrupamento.'
+      },
+      {
+        id: 'D-ADM-04-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Estrutura matricial (nível difícil)',
+        pergunta: 'Um órgão público decide implantar uma estrutura em que cada servidor passa a responder simultaneamente ao seu gerente funcional (da área de origem) e ao gerente de um projeto transversal (como a digitalização de processos). Sobre essa estrutura, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Trata-se de estrutura linear, em que cada subordinado tem um único chefe — o que elimina conflitos de comando.' },
+          { id: 'B', texto: 'Trata-se de estrutura funcional, em que cada subordinado responde a vários chefes especializados, sem qualquer risco de conflito.' },
+          { id: 'C', texto: 'Trata-se de estrutura matricial, com dupla subordinação — o que traz como principal risco o conflito de ordens entre os dois gerentes, exigindo boa coordenação.' },
+          { id: 'D', texto: 'Trata-se de estrutura em rede, sem hierarquia nem coordenação.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A estrutura MATRICIAL combina a dimensão funcional (gerente da área) com a dimensão de projetos (gerente do projeto), gerando DUPLA SUBORDINAÇÃO. O principal risco é o CONFLITO DE ORDENS entre os dois chefes. A linear (A) tem chefe único; a funcional (B) tem múltiplos chefes especializados, mas sem a dimensão de projeto; a em rede (D) é outro modelo. A chave é reconhecer a dupla subordinação típica da matricial.'
+      },
+      {
+        id: 'D-ADM-04-04',
         tipo: 'verdadeiro_falso',
-        subtopico: 'Extradição de brasileiro naturalizado',
-        pergunta: 'O brasileiro naturalizado nunca pode ser extraditado, em nenhuma hipótese, por ter se tornado brasileiro.',
+        subtopico: 'Delegação x descentralização',
+        pergunta: 'A delegação transfere ao subordinado a autoridade E a responsabilidade final pela tarefa, de modo que o superior deixa de responder pelo resultado.',
         alternativas: [
           { id: 'V', texto: 'Verdadeiro' },
           { id: 'F', texto: 'Falso' }
         ],
         gabarito: 'F',
-        explicacao: 'Falso. O brasileiro NATURALIZADO pode ser extraditado em duas hipóteses: (1) crime comum cometido ANTES da naturalização; (2) tráfico ilícito de drogas a QUALQUER tempo (antes ou depois). Quem nunca pode ser extraditado é o brasileiro NATO.'
+        explicacao: 'Falso. A delegação transfere a AUTORIDADE para executar a tarefa, mas a RESPONSABILIDADE FINAL permanece com quem delegou. O superior continua respondendo pelo resultado perante a organização. É o princípio da paridade autoridade-responsabilidade: delega-se a execução, não a responsabilidade final.'
       },
       {
-        id: 'D-DC-05-03',
-        tipo: 'situacao',
-        subtopico: 'Brasileiro nato por solo',
-        pergunta: 'Um casal de turistas italianos, em férias no Brasil, tem um filho em território brasileiro. Sobre a nacionalidade dessa criança:',
-        alternativas: [
-          { id: 'A', texto: 'Será brasileira nata, ainda que os pais estejam a serviço da Itália.' },
-          { id: 'B', texto: 'Será brasileira nata, porque nasceu em território brasileiro, SALVO se os pais estiverem a serviço do país de origem (Itália).' },
-          { id: 'C', texto: 'Será apenas italiana, porque os pais são estrangeiros.' },
-          { id: 'D', texto: 'Será brasileira naturalizada, após residir no Brasil por 15 anos.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Art. 12, I, "a": nascido no Brasil, filho de estrangeiros, é brasileiro NATO, SALVO se os pais estiverem A SERVIÇO DO PAÍS DELES. Turistas italianos NÃO estão a serviço da Itália — logo, a criança é brasileira nata. Se fossem diplomatas italianos em missão, aí não seria brasileira nata.'
-      },
-      {
-        id: 'D-DC-05-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Quase-nacionalidade',
-        pergunta: 'Você sabe explicar o que é a "quase-nacionalidade" (art. 12, §2º) e a quem ela beneficia?',
-        resposta: 'É o instituto que confere ao PORTUGUÊS com residência permanente no Brasil, se houver reciprocidade em Portugal, os direitos inerentes ao BRASILEIRO NATURALIZADO. Não é nacionalidade brasileira plena — e não dá acesso a cargos privativos de nato.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-06 — Direitos Políticos e Partidos Políticos
-  ============================================================ */
-  'DC-06': {
-    id: 'D-DC-06',
-    moduloId: 'DC-06',
-    itens: [
-      {
-        id: 'D-DC-06-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Plebiscito x referendo',
-        pergunta: 'Sobre os institutos de participação popular direta, assinale a alternativa correta:',
-        alternativas: [
-          { id: 'A', texto: 'O plebiscito convoca o povo a ratificar decisão já tomada pelo Legislativo.' },
-          { id: 'B', texto: 'O referendo convoca o povo a autorizar previamente o Legislativo a legislar sobre determinada matéria.' },
-          { id: 'C', texto: 'O plebiscito ocorre ANTES da decisão legislativa; o referendo, DEPOIS, para ratificar ou rejeitar.' },
-          { id: 'D', texto: 'Plebiscito e referendo são sinônimos e podem ser usados indistintamente.' }
-        ],
-        gabarito: 'C',
-        explicacao: 'PLEBISCITO: consulta PRÉVIA (antes da lei/decisão). REFERENDO: consulta POSTERIOR (o povo ratifica ou rejeita o que já foi aprovado). Mnemônico: P de Plebiscito = "Precede"; R de Referendo = "Ratifica".'
-      },
-      {
-        id: 'D-DC-06-02',
+        id: 'D-ADM-04-05',
         tipo: 'verdadeiro_falso',
-        subtopico: 'Voto obrigatório x facultativo',
-        pergunta: 'O voto é obrigatório para todos os brasileiros alfabetizados maiores de 18 anos, sendo facultativo apenas para analfabetos e maiores de 70 anos.',
+        subtopico: 'Amplitude de controle',
+        pergunta: 'Quanto MAIOR a amplitude de controle (muitos subordinados por gestor), MAIOR será o número de níveis hierárquicos da organização.',
         alternativas: [
           { id: 'V', texto: 'Verdadeiro' },
           { id: 'F', texto: 'Falso' }
         ],
         gabarito: 'F',
-        explicacao: 'Falso — está incompleto. O voto facultativo (art. 14, §1º, II) abrange: analfabetos; maiores de 70 anos; E maiores de 16 e menores de 18 anos. A alternativa omite a faixa de 16 a 18 anos.'
+        explicacao: 'Falso — a relação é inversa. Amplitude AMPLA (muitos subordinados por gestor) gera MENOS níveis hierárquicos (estrutura achatada). Amplitude ESTREITA (poucos subordinados) gera MAIS níveis hierárquicos (estrutura verticalizada). Quanto maior a amplitude, mais "chata" a estrutura.'
       },
       {
-        id: 'D-DC-06-03',
+        id: 'D-ADM-04-06',
         tipo: 'situacao',
-        subtopico: 'Inelegibilidade reflexa',
-        pergunta: 'O Governador de um Estado pretende lançar seu irmão como candidato a Prefeito da capital. Sobre a situação:',
+        subtopico: 'Identificação de estrutura e departamentalização',
+        pergunta: 'Uma prefeitura decide criar quatro regionais administrativas (Norte, Sul, Leste, Oeste), cada uma com autonomia para executar serviços de manutenção urbana, atendimento ao cidadão e licenciamento de pequeno porte, prestando contas à Secretaria de Administração. Sobre essa estrutura, é correto afirmar que houve:',
         alternativas: [
-          { id: 'A', texto: 'É permitido, pois irmãos não são considerados parentes para fins de inelegibilidade reflexa.' },
-          { id: 'B', texto: 'É vedado no território de jurisdição do titular, pois irmão é parente de 2º grau — inelegibilidade reflexa (art. 14, §7º).' },
-          { id: 'C', texto: 'É permitido, desde que o irmão renuncie a qualquer cargo público antes da eleição.' },
-          { id: 'D', texto: 'É vedado apenas se o irmão já estiver exercendo mandato eletivo.' }
+          { id: 'A', texto: 'Desconcentração, pois a divisão ocorreu dentro da mesma pessoa jurídica, entre órgãos, sem criação de nova pessoa.' },
+          { id: 'B', texto: 'Descentralização por outorga, pois cada regional passou a ter personalidade jurídica própria.' },
+          { id: 'C', texto: 'Descentralização por delegação, pois cada regional passou a ser uma empresa privada.' },
+          { id: 'D', texto: 'Concentração, pois todas as decisões continuaram centralizadas na Secretaria de Administração.' }
         ],
-        gabarito: 'B',
-        explicacao: 'Art. 14, §7º: são inelegíveis, no território de jurisdição do titular, o cônjuge e os parentes consanguíneos ou afins até o 2º grau (ou por adoção) do Presidente, Governador, Prefeito ou de quem os substitua. Irmão é parente de 2º grau — logo, é inelegível no território do Governador.'
+        gabarito: 'A',
+        explicacao: 'As regionais são ÓRGÃOS da mesma pessoa jurídica (a Prefeitura), sem personalidade própria. A divisão interna, com distribuição de competências entre órgãos, é DESCONCENTRAÇÃO. A descentralização (B e C) exigiria a criação de uma entidade com personalidade jurídica própria (autarquia, fundação, empresa pública, SEM) ou a delegação a particular. A concentração (D) significaria que a execução permaneceria em um único órgão.'
       },
       {
-        id: 'D-DC-06-04',
+        id: 'D-ADM-04-07',
         tipo: 'autoavaliacao',
-        subtopico: 'Idades mínimas para cargos eletivos',
-        pergunta: 'Você consegue lembrar, sem consultar, as idades mínimas exigidas para cada cargo eletivo do art. 14, §3º, VI?',
-        resposta: 'Presidente, Vice-Presidente e Senador: 35 anos. Governador e Vice-Governador: 30 anos. Deputado Federal, Deputado Estadual, Deputado Distrital, Prefeito, Vice-Prefeito e Juiz de Paz: 21 anos. Vereador: 18 anos.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-07 — Remédios Constitucionais
-  ============================================================ */
-  'DC-07': {
-    id: 'D-DC-07',
-    moduloId: 'DC-07',
-    itens: [
-      {
-        id: 'D-DC-07-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Cabimento dos remédios',
-        pergunta: 'Sobre os remédios constitucionais, assinale a alternativa INCORRETA:',
-        alternativas: [
-          { id: 'A', texto: 'O habeas corpus protege a liberdade de locomoção e é gratuito.' },
-          { id: 'B', texto: 'O habeas data serve para assegurar o conhecimento ou retificação de informações pessoais em registros públicos — e não é gratuito.' },
-          { id: 'C', texto: 'O mandado de segurança é cabível para proteger direito líquido e certo, não amparado por habeas corpus ou habeas data.' },
-          { id: 'D', texto: 'O mandado de injunção é cabível quando a falta de norma regulamentadora inviabiliza o exercício de direitos constitucionais, e é gratuito como o HC.' }
-        ],
-        gabarito: 'D',
-        explicacao: 'A alternativa D erra ao afirmar que o MI é gratuito. Gratuito é apenas o HABEAS CORPUS (art. 5º, LXXVII — "gratuito o habeas corpus e os atos necessários ao exercício da cidadania"). O mandado de injunção NÃO tem previsão de gratuidade automática.'
-      },
-      {
-        id: 'D-DC-07-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Legitimidade',
-        pergunta: 'Qualquer cidadão pode impetrar mandado de segurança coletivo em nome próprio ou de terceiros.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'F',
-        explicacao: 'Falso. O MS coletivo (art. 5º, LXX) só pode ser impetrado por: partido político com representação no Congresso, organização sindical, entidade de classe ou associação legalmente constituída e em funcionamento há pelo menos 1 ano, em defesa de seus membros ou associados. Quem cabe a QUALQUER cidadão é a AÇÃO POPULAR.'
-      },
-      {
-        id: 'D-DC-07-03',
-        tipo: 'situacao',
-        subtopico: 'Cabimento em situação prática',
-        pergunta: 'Um cidadão quer anular um contrato firmado por uma Prefeitura que desvia recursos públicos em benefício de empresa privada, lesando o patrimônio público municipal. O instrumento adequado é:',
-        alternativas: [
-          { id: 'A', texto: 'Habeas corpus, por constrangimento ilegal.' },
-          { id: 'B', texto: 'Habeas data, por retificação de dados.' },
-          { id: 'C', texto: 'Ação popular (art. 5º, LXXIII), cabível a qualquer CIDADÃO para anular ato lesivo ao patrimônio público, à moralidade, ao meio ambiente ou ao patrimônio histórico-cultural.' },
-          { id: 'D', texto: 'Mandado de injunção, por falta de norma regulamentadora.' }
-        ],
-        gabarito: 'C',
-        explicacao: 'É o caso clássico de AÇÃO POPULAR. O legitimado é o CIDADÃO (eleitor), pessoa física, no gozo dos direitos políticos. O autor é isento de custas e sucumbência, salvo má-fé. Não cabe MS porque não se trata de direito líquido e certo individual.'
-      },
-      {
-        id: 'D-DC-07-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Cabimento dos remédios',
-        pergunta: 'Você consegue, sem consultar, associar cada remédio constitucional ao seu cabimento específico?',
-        resposta: 'HC: liberdade de locomoção (ir, vir, ficar) — gratuito. HD: acesso ou retificação de dados pessoais em banco público. MS: direito líquido e certo não amparado por HC ou HD. MS coletivo: partido, sindicato, entidade de classe ou associação (1 ano). MI: falta de norma regulamentadora. AP: ato lesivo ao patrimônio público, moralidade, meio ambiente ou patrimônio histórico-cultural — legitimado é o CIDADÃO.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-08 — Organização Político-Administrativa
-  ============================================================ */
-  'DC-08': {
-    id: 'D-DC-08',
-    moduloId: 'DC-08',
-    itens: [
-      {
-        id: 'D-DC-08-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Soberania x autonomia',
-        pergunta: 'Sobre os entes da Federação brasileira, assinale a alternativa correta:',
-        alternativas: [
-          { id: 'A', texto: 'A União, os Estados, o Distrito Federal e os Municípios são todos soberanos.' },
-          { id: 'B', texto: 'A soberania é atributo exclusivo da República Federativa do Brasil; União, Estados, DF e Municípios têm autonomia.' },
-          { id: 'C', texto: 'Somente a União e os Estados são autônomos; Municípios são subordinados aos Estados.' },
-          { id: 'D', texto: 'Os Municípios são soberanos em assuntos de interesse local.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Soberania é poder supremo na ordem interna e independência na ordem externa — pertence APENAS à República Federativa do Brasil (o todo). Cada ente (União, Estados, DF, Municípios) tem AUTONOMIA política, administrativa e financeira. Municípios NÃO são subordinados aos Estados.'
-      },
-      {
-        id: 'D-DC-08-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Criação de Estados x criação de Municípios',
-        pergunta: 'A criação de novos Estados depende de lei COMPLEMENTAR do Congresso + plebiscito + oitiva das Assembleias; a criação de Municípios depende de lei ESTADUAL + plebiscito + estudo de viabilidade municipal.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. Estados: art. 18, §3º — lei complementar federal + plebiscito + oitiva das Assembleias. Municípios: art. 18, §4º — lei estadual + plebiscito + estudo de viabilidade municipal. A troca de "lei complementar" por "lei estadual" é pegadinha clássica.'
-      },
-      {
-        id: 'D-DC-08-03',
-        tipo: 'situacao',
-        subtopico: 'Distrito Federal',
-        pergunta: 'Sobre o Distrito Federal, é correto afirmar que:',
-        alternativas: [
-          { id: 'A', texto: 'É um Estado-membro, com Constituição própria e divisão em Municípios.' },
-          { id: 'B', texto: 'É regido por Lei Orgânica, acumula competências estaduais e municipais e NÃO pode ser dividido em Municípios.' },
-          { id: 'C', texto: 'É um Território Federal administrado diretamente pela União.' },
-          { id: 'D', texto: 'Tem soberania, mas não tem autonomia.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'O DF (art. 32) tem autonomia PARCIAL: é regido por LEI ORGÂNICA (não Constituição), acumula competências estaduais e municipais, NÃO pode ser dividido em Municípios e não tem soberania (que é só da República). Não é Território (que é administrado pela União).'
-      },
-      {
-        id: 'D-DC-08-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Vedações federativas (art. 19)',
-        pergunta: 'Você lembra, sem consultar, quais são as três vedações federativas previstas no art. 19 da CF/88?',
-        resposta: 'É vedado à União, Estados, DF e Municípios: (I) estabelecer cultos religiosos ou igrejas, subvencioná-los, embaraçar-lhes o funcionamento ou manter com eles relação de dependência ou aliança, ressalvada a colaboração de interesse público; (II) recusar fé aos documentos públicos; (III) criar distinções entre brasileiros ou preferências entre si.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-09 — Repartição de Competências
-  ============================================================ */
-  'DC-09': {
-    id: 'D-DC-09',
-    moduloId: 'DC-09',
-    itens: [
-      {
-        id: 'D-DC-09-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Exclusiva x privativa',
-        pergunta: 'Sobre competências da União, assinale a alternativa correta:',
-        alternativas: [
-          { id: 'A', texto: 'A competência exclusiva (art. 21) é DELEGÁVEL aos Estados por lei complementar; a privativa (art. 22) não é.' },
-          { id: 'B', texto: 'A competência exclusiva (art. 21) NÃO é delegável; a privativa (art. 22) pode ser delegada aos Estados por lei complementar, para questões específicas.' },
-          { id: 'C', texto: 'Exclusiva e privativa são sinônimos e tratam da mesma realidade.' },
-          { id: 'D', texto: 'A competência privativa é indelegável, e a exclusiva também.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'EXCLUSIVA (art. 21): material (administrativa), NÃO delegável. PRIVATIVA (art. 22): legislativa, DELEGÁVEL aos Estados por lei complementar para questões específicas (art. 22, parágrafo único). Mnemônico: EXclusiva = EXclui a delegação. Privativa = Permite delegar.'
-      },
-      {
-        id: 'D-DC-09-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Comum x concorrente',
-        pergunta: 'A competência comum (art. 23) é MATERIAL (administrativa) e compartilhada por todos os entes; a concorrente (art. 24) é LEGISLATIVA, cabendo à União normas gerais e aos Estados/DF normas específicas.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. COMUM (art. 23): material — todos os entes atuam juntos (ex.: saúde, meio ambiente). CONCORRENTE (art. 24): legislativa — União edita normas GERAIS; Estados e DF editam normas ESPECÍFICAS; superveniência de lei federal geral SUSPENDE a estadual contrária (não revoga).'
-      },
-      {
-        id: 'D-DC-09-03',
-        tipo: 'situacao',
-        subtopico: 'Competência legislativa',
-        pergunta: 'Sobre a possibilidade de um Estado-membro legislar a respeito de direito civil, assinale a alternativa correta:',
-        alternativas: [
-          { id: 'A', texto: 'Pode, pois direito civil é matéria de competência concorrente entre União e Estados.' },
-          { id: 'B', texto: 'Não pode, pois direito civil é matéria de competência PRIVATIVA da União (art. 22, I), salvo delegação por lei complementar (art. 22, parágrafo único).' },
-          { id: 'C', texto: 'Pode, pois compete aos Estados a competência residual.' },
-          { id: 'D', texto: 'Pode, desde que haja interesse local comprovado.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Direito civil é competência PRIVATIVA da União (art. 22, I). Só pode ser delegada aos Estados por LEI COMPLEMENTAR, para questões específicas (art. 22, parágrafo único). A competência residual (art. 25, §1º) só se aplica ao que NÃO é da União nem dos Municípios.'
-      },
-      {
-        id: 'D-DC-09-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Distinção das categorias',
-        pergunta: 'Você consegue, sem consultar, diferenciar EXCLUSIVA, PRIVATIVA, COMUM e CONCORRENTE — em termos de natureza (material/legislativa), entes envolvidos e delegabilidade?',
-        resposta: 'EXCLUSIVA (art. 21): material, só União, indelegável. PRIVATIVA (art. 22): legislativa, só União, delegável por LC. COMUM (art. 23): material, todos os entes (União, Estados, DF, Municípios). CONCORRENTE (art. 24): legislativa, União (normas gerais) + Estados/DF (normas específicas); superveniência federal suspende lei estadual contrária.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-11 — Administração Pública na Constituição
-  ============================================================ */
-  'DC-11': {
-    id: 'D-DC-11',
-    moduloId: 'DC-11',
-    itens: [
-      {
-        id: 'D-DC-11-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Concurso público e acumulação',
-        pergunta: 'Sobre o concurso público e a acumulação de cargos (art. 37, II e XVI, CF/88), assinale a alternativa correta:',
-        alternativas: [
-          { id: 'A', texto: 'O prazo de validade do concurso é de até 4 anos, prorrogável indefinidamente.' },
-          { id: 'B', texto: 'A acumulação remunerada é permitida em qualquer hipótese, desde que haja compatibilidade de horários.' },
-          { id: 'C', texto: 'O prazo de validade do concurso é de até 2 anos, prorrogável UMA vez por igual período; a acumulação é permitida apenas nas hipóteses do art. 37, XVI (2 de professor; 1 de professor + 1 técnico/científico; 2 privativos de saúde), com compatibilidade de horários e respeito ao teto.' },
-          { id: 'D', texto: 'O concurso público é dispensável para cargos efetivos, sendo obrigatório apenas para cargos em comissão.' }
-        ],
-        gabarito: 'C',
-        explicacao: 'A: prazo é 2 anos, prorrogável uma única vez por igual período (art. 37, III). B: acumulação só nas 3 hipóteses do art. 37, XVI. D: inverte — concurso é obrigatório para efetivos; cargos em comissão são de livre nomeação.'
-      },
-      {
-        id: 'D-DC-11-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Responsabilidade civil do Estado',
-        pergunta: 'A responsabilidade civil do Estado é OBJETIVA (independe de culpa) em atos comissivos, e a ação regressiva contra o agente público exige comprovação de dolo ou culpa.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. Art. 37, §6º: responsabilidade OBJETIVA do Estado perante terceiros (dano + nexo causal + conduta). A ação regressiva contra o agente exige DOLO ou CULPA (responsabilidade subjetiva do agente perante o Estado).'
-      },
-      {
-        id: 'D-DC-11-03',
-        tipo: 'situacao',
-        subtopico: 'Cargos em comissão e função de confiança',
-        pergunta: 'Um Prefeito nomeia para cargo em comissão de assessor uma pessoa sem vínculo com a Administração. Sobre esse ato:',
-        alternativas: [
-          { id: 'A', texto: 'É ilegal, pois todo cargo público exige concurso.' },
-          { id: 'B', texto: 'É válido, pois o cargo em comissão é de livre nomeação e exoneração, destinado a funções de direção, chefia e assessoramento (art. 37, II e V).' },
-          { id: 'C', texto: 'É válido, mas a pessoa precisa ser servidor efetivo.' },
-          { id: 'D', texto: 'É ilegal, pois somente funções de confiança podem ser ocupadas por pessoa de fora da carreira.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Cargo em comissão é de LIVRE nomeação e exoneração, sem exigência de concurso ou vínculo prévio, e destina-se a funções de direção, chefia e assessoramento. O que é privativo de servidor de carreira é a FUNÇÃO DE CONFIANÇA (art. 37, V). As letras C e D invertem os conceitos.'
-      },
-      {
-        id: 'D-DC-11-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Princípios e teto remuneratório',
-        pergunta: 'Você consegue, sem consultar, citar os 5 princípios do LIMPE e explicar como funciona o teto remuneratório do art. 37, XI?',
-        resposta: 'LIMPE: Legalidade, Impessoalidade, Moralidade, Publicidade e Eficiência (a eficiência foi inserida pela EC 19/1998). Teto: em regra, o subsídio de Ministro do STF; nos Estados e DF, o subsídio de Desembargador do TJ (limite estadual); nos Municípios, o subsídio de Prefeito. Nenhum servidor pode receber acima do teto, consideradas todas as vantagens, salvo as exceções constitucionais.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-12 — Poder Legislativo
-  ============================================================ */
-  'DC-12': {
-    id: 'D-DC-12',
-    moduloId: 'DC-12',
-    itens: [
-      {
-        id: 'D-DC-12-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Competências da Câmara e do Senado',
-        pergunta: 'Sobre as competências do Poder Legislativo federal, assinale a alternativa correta:',
-        alternativas: [
-          { id: 'A', texto: 'A Câmara dos Deputados processa e julga o Presidente da República nos crimes de responsabilidade.' },
-          { id: 'B', texto: 'O Senado Federal autoriza a instauração de processo contra o Presidente da República.' },
-          { id: 'C', texto: 'A Câmara dos Deputados AUTORIZA (art. 51, I) e o Senado Federal PROCESSA E JULGA (art. 52, I) o Presidente da República nos crimes de responsabilidade.' },
-          { id: 'D', texto: 'Ambas as Casas julgam conjuntamente o Presidente, em sessão unicameral.' }
-        ],
-        gabarito: 'C',
-        explicacao: 'Art. 51, I: compete privativamente à Câmara AUTORIZAR a instauração de processo contra o Presidente, Vice e Ministros (2/3 dos votos). Art. 52, I: compete privativamente ao Senado PROCESSAR E JULGAR esses agentes nos crimes de responsabilidade. B e A invertem as competências.'
-      },
-      {
-        id: 'D-DC-12-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Imunidades parlamentares',
-        pergunta: 'A imunidade MATERIAL dos parlamentares federais abrange opiniões, palavras e votos, no exercício do mandato, e vale em qualquer lugar — não apenas dentro do Congresso.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. A imunidade MATERIAL (art. 53, caput) abrange opiniões, palavras e votos, no exercício do mandato, sendo inviolável civil e penalmente — em qualquer lugar, não só no recinto do Congresso. A imunidade FORMAL (art. 53, §§) trata de prisão e processo.'
-      },
-      {
-        id: 'D-DC-12-03',
-        tipo: 'situacao',
-        subtopico: 'CPI — poderes e limites',
-        pergunta: 'Uma Comissão Parlamentar de Inquérito (CPI) instaurada no Senado pretende determinar a interceptação telefônica de um investigado e decretar sua prisão preventiva. Sobre esses atos:',
-        alternativas: [
-          { id: 'A', texto: 'Ambos podem ser praticados diretamente pela CPI, que tem poderes de investigação próprios das autoridades judiciais.' },
-          { id: 'B', texto: 'Nenhum dos dois pode ser praticado diretamente pela CPI: a interceptação telefônica depende de ordem JUDICIAL e a prisão preventiva também é vedada (só cabe flagrante). A CPI pode quebrar sigilo bancário/fiscal/telefônico (dados), convocar, ouvir, requisitar, mas não pode prender (salvo flagrante) nem determinar busca domiciliar ou interceptação.' },
-          { id: 'C', texto: 'A CPI pode interceptar, mas não pode prender.' },
-          { id: 'D', texto: 'A CPI pode prender, mas não pode interceptar.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'CPI tem poderes de investigação próprios das autoridades judiciais, MAS com limites: NÃO pode decretar prisão (salvo flagrante), NÃO pode determinar busca domiciliar, NÃO pode determinar interceptação telefônica (escuta). Pode quebrar sigilo BANCÁRIO, FISCAL e de DADOS telefônicos (não a escuta), convocar, ouvir e requisitar.'
-      },
-      {
-        id: 'D-DC-12-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Estrutura e composição',
-        pergunta: 'Você consegue explicar, sem consultar, a composição do Congresso Nacional, o número de deputados por Estado, o número de senadores por Estado e o mandato de cada um?',
-        resposta: 'Congresso Nacional = Câmara dos Deputados + Senado Federal. Câmara: representantes do povo, mínimo de 8 e máximo de 70 deputados por Estado, mandato de 4 anos, sistema proporcional. Senado: 3 senadores por Estado e DF, mandato de 8 anos, eleição majoritária, renovação alternada de 1/3 e 2/3.'
-      }
-    ]
-  },
-
-  /* ============================================================
-     DC-13 — Processo Legislativo
-  ============================================================ */
-  'DC-13': {
-    id: 'D-DC-13',
-    moduloId: 'DC-13',
-    itens: [
-      {
-        id: 'D-DC-13-01',
-        tipo: 'multipla_escolha',
-        subtopico: 'Quóruns',
-        pergunta: 'Sobre os quóruns no processo legislativo, assinale a alternativa correta:',
-        alternativas: [
-          { id: 'A', texto: 'A emenda constitucional exige maioria absoluta em turno único; a lei complementar exige 3/5 em dois turnos.' },
-          { id: 'B', texto: 'A emenda constitucional exige 3/5 em dois turnos em cada Casa; a lei complementar exige MAIORIA ABSOLUTA; a lei ordinária exige maioria simples (relativa).' },
-          { id: 'C', texto: 'Lei complementar e lei ordinária têm o mesmo quórum (maioria absoluta).' },
-          { id: 'D', texto: 'A emenda constitucional exige unanimidade dos parlamentares.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'EMENDA (art. 60, §2º): 3/5 em dois turnos em cada Casa. LEI COMPLEMENTAR (art. 69): maioria ABSOLUTA. LEI ORDINÁRIA (art. 47): maioria SIMPLES (relativa, maioria dos presentes). A é inversão; C é erro (LC ≠ LO); D é absurdo.'
-      },
-      {
-        id: 'D-DC-13-02',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Medida provisória',
-        pergunta: 'A medida provisória tem vigência de 60 dias, prorrogável uma vez por igual período; se não for apreciada em até 45 dias, entra em regime de urgência e tranca a pauta da Casa onde estiver.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'V',
-        explicacao: 'Verdadeiro. Art. 62: MP vigora por 60 dias, prorrogável uma vez por mais 60. Após 45 dias contados da publicação, entra em regime de URGÊNCIA, trancando a pauta da Casa onde estiver (art. 62, §6º). Se não for apreciada em 120 dias, perde eficácia desde a edição.'
-      },
-      {
-        id: 'D-DC-13-03',
-        tipo: 'situacao',
-        subtopico: 'Sanção e veto',
-        pergunta: 'O Presidente da República recebe um projeto de lei aprovado pelo Congresso e, dentro do prazo, decide VETAR PARCIALMENTE um artigo. Sobre o veto parcial:',
-        alternativas: [
-          { id: 'A', texto: 'O veto parcial pode atingir apenas uma palavra ou expressão do texto.' },
-          { id: 'B', texto: 'O veto parcial deve recair sobre parte do texto com sentido próprio, e não sobre palavras ou artigos isolados sem relação com o conjunto.' },
-          { id: 'C', texto: 'O veto parcial só é possível com autorização prévia do Congresso.' },
-          { id: 'D', texto: 'O veto parcial é vedado, só existindo veto total.' }
-        ],
-        gabarito: 'B',
-        explicacao: 'Veto PARCIAL pode atingir parte do texto com sentido próprio. NÃO pode atingir palavra isolada ou artigo solto sem relação com o conjunto (art. 66, §2º). O veto é sempre motivado e pode ser derrubado por MAIORIA ABSOLUTA em sessão conjunta, no prazo de 30 dias.'
-      },
-      {
-        id: 'D-DC-13-04',
-        tipo: 'autoavaliacao',
-        subtopico: 'Espécies normativas do art. 59',
-        pergunta: 'Você consegue listar, sem consultar, as 7 espécies normativas do art. 59 da CF/88?',
-        resposta: 'Emendas à Constituição, leis complementares, leis ordinárias, leis delegadas, medidas provisórias, decretos legislativos e resoluções.'
+        subtopico: 'Distinções fundamentais da função Organização',
+        pergunta: 'Você consegue, sem consultar, diferenciar centralização x descentralização, delegação x descentralização, concentração x desconcentração e amplitude de controle estreita x ampla?',
+        resposta: 'CENTRALIZAÇÃO x DESCENTRALIZAÇÃO: onde a decisão fica — cúpula x distribuída. DELEGAÇÃO x DESCENTRALIZAÇÃO: ato pontual de transferir autoridade (delegação) x transferência estrutural e permanente (descentralização). CONCENTRAÇÃO x DESCONCENTRAÇÃO: um único órgão executa (concentração) x divisão entre órgãos da MESMA pessoa jurídica (desconcentração — sem nova personalidade). AMPLITUDE ESTREITA x AMPLA: poucos subordinados por gestor → mais níveis hierárquicos (verticalizada) x muitos subordinados → menos níveis (achatada).'
       }
     ]
   }
+
+  /* ============================================================
+     PRÓXIMOS SUB-LOTES (a preencher):
+     ADM-06, ADM-07, ADM-10, ADM-11  → sub-lote 4.2
+     AP-13, AP-14, DA-15 a DA-18     → sub-lote 4.3
+     DA-19, DA-20, DA-21, DA-23,
+     DA-25, REV-28                   → sub-lote 4.4
+  ============================================================ */
+
+};/* ============================================================
+   DIAGNÓSTICOS — Módulos de prioridade ALTA
+   Administração + Direito Administrativo
+   Entregues: ADM-01, ADM-02, ADM-03, ADM-04
+   Padrão por módulo: 3 MC (1 difícil) + 2 V/F + 1 situação + 1 autoavaliação
+   Próximos sub-lotes: 4.2 (ADM-06, ADM-07, ADM-10, ADM-11)
+                       4.3 (AP-13, AP-14, DA-15, DA-16, DA-17, DA-18)
+                       4.4 (DA-19, DA-20, DA-21, DA-23, DA-25, REV-28)
+   ============================================================ */
+
+window.DIAGNOSTICS_ALTA = {
+
+  /* ============================================================
+     ADM-01 — Fundamentos de Administração
+  ============================================================ */
+  'ADM-01': {
+    id: 'D-ADM-01',
+    moduloId: 'ADM-01',
+    itens: [
+      {
+        id: 'D-ADM-01-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Eficiência, eficácia, efetividade e produtividade',
+        pergunta: 'Sobre os conceitos de eficiência, eficácia, efetividade e produtividade na Administração, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'Eficiência é a capacidade de atingir os objetivos organizacionais, enquanto eficácia é o uso racional dos recursos.' },
+          { id: 'B', texto: 'Eficácia refere-se ao atingimento dos objetivos; eficiência, ao uso racional dos recursos; efetividade, ao impacto social positivo real; produtividade, à relação entre outputs e inputs.' },
+          { id: 'C', texto: 'Efetividade e eficácia são sinônimos — ambas medem o atingimento de metas internas.' },
+          { id: 'D', texto: 'Produtividade é sinônimo de eficácia: mede exclusivamente o alcance dos objetivos organizacionais.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Eficiência = meios (uso racional de recursos); eficácia = fins (atingimento de objetivos); efetividade = impacto social real mantido no tempo; produtividade = relação output/input. A alternativa A inverte eficiência e eficácia; C confunde efetividade com eficácia; D confunde produtividade com eficácia.'
+      },
+      {
+        id: 'D-ADM-01-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Níveis organizacionais e habilidades do administrador (Katz)',
+        pergunta: 'Segundo a teoria de Katz sobre as habilidades do administrador, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'As habilidades técnicas são mais exigidas no nível estratégico; as conceituais, no nível operacional.' },
+          { id: 'B', texto: 'As habilidades humanas são exigidas exclusivamente no nível tático, não sendo relevantes nos níveis estratégico e operacional.' },
+          { id: 'C', texto: 'As habilidades técnicas predominam no nível operacional; as conceituais, no nível estratégico; as humanas são exigidas em todos os níveis, com destaque no tático.' },
+          { id: 'D', texto: 'As três habilidades (técnicas, humanas e conceituais) têm o mesmo peso em todos os níveis organizacionais, sem qualquer predominância.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A correspondência clássica de Katz é: técnicas (operacional), conceituais (estratégico) e humanas (todos os níveis, com destaque no tático). A alternativa A inverte; B restringe indevidamente as humanas; D nega a predominância relativa, que é o ponto central da teoria.'
+      },
+      {
+        id: 'D-ADM-01-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Diferenças entre eficiência, eficácia e efetividade (nível difícil)',
+        pergunta: 'Um órgão público implanta um novo sistema de agendamento que reduz em 40% o tempo de marcação de consultas, mas NÃO consegue ampliar o número de consultas realizadas, porque a equipe médica permanece insuficiente. A economia gerada com a redução do tempo é realocada para outras áreas, sem qualquer impacto perceptível na saúde da população atendida. Sobre as dimensões de desempenho, é correto afirmar que o órgão foi:',
+        alternativas: [
+          { id: 'A', texto: 'eficiente, eficaz e efetivo, porque houve economia e melhoria no processo.' },
+          { id: 'B', texto: 'eficiente (uso mais racional do tempo), mas não eficaz (não ampliou consultas) nem efetivo (não houve impacto social real na saúde).' },
+          { id: 'C', texto: 'eficaz, mas não eficiente, porque o sistema melhorou o processo sem reduzir custos.' },
+          { id: 'D', texto: 'efetivo, porque a economia foi realocada para outras áreas, gerando impacto social indireto.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Houve EFICIÊNCIA (redução de 40% no tempo = uso mais racional de recurso), mas NÃO houve EFICÁCIA (a meta de ampliar consultas não foi atingida) e NÃO houve EFETIVIDADE (não houve impacto social real na saúde da população). A realocação da economia não configura efetividade por si só, pois falta o efeito transformador na vida das pessoas. É a distinção mais fina do tema — e a que separa quem decorou de quem entendeu.'
+      },
+      {
+        id: 'D-ADM-01-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Ciclo PODC',
+        pergunta: 'O PODC (Planejamento, Organização, Direção e Controle) é um ciclo contínuo e interdependente: o controle alimenta um novo planejamento, reiniciando o processo. Não se trata de uma sequência linear que termina no controle.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. O PODC é cíclico e interdependente: o produto do controle (desvios identificados) realimenta o próximo planejamento. Não é uma sequência rígida que termina no controle — é um processo contínuo.'
+      },
+      {
+        id: 'D-ADM-01-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Habilidades do administrador',
+        pergunta: 'As habilidades humanas (relacionamento interpessoal) são exigidas exclusivamente do nível tático, não sendo relevantes no nível estratégico nem no nível operacional.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. As habilidades humanas são exigidas em TODOS os níveis organizacionais — com peso relativo maior no tático, mas igualmente necessárias no estratégico (liderança de alta direção) e no operacional (supervisão de equipes). O que varia é a predominância relativa, não a exigência.'
+      },
+      {
+        id: 'D-ADM-01-06',
+        tipo: 'situacao',
+        subtopico: 'Aplicação de eficiência, eficácia e efetividade',
+        pergunta: 'Um município cria um programa de distribuição de cestas básicas. O programa é executado com o menor custo possível (eficiência), entrega 100% das cestas previstas no prazo (eficácia), mas, ao final de um ano, a insegurança alimentar das famílias atendidas permanece inalterada, porque o programa não foi acompanhado de ações estruturantes (geração de renda, qualificação). Sobre o desempenho do programa, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Foi eficiente, eficaz e efetivo — os três critérios foram plenamente atendidos.' },
+          { id: 'B', texto: 'Foi eficiente e eficaz, mas NÃO foi efetivo — não houve impacto social real na vida das famílias.' },
+          { id: 'C', texto: 'Foi efetivo, mas não eficiente — o baixo custo comprometeu a efetividade.' },
+          { id: 'D', texto: 'Não foi eficiente nem eficaz — o programa não gerou resultado algum.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O programa foi EFICIENTE (menor custo), EFICAZ (100% das cestas no prazo), mas NÃO foi EFETIVO (não transformou a realidade social — a insegurança alimentar permaneceu). A efetividade exige impacto social real e duradouro, não apenas cumprimento de metas internas.'
+      },
+      {
+        id: 'D-ADM-01-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Distinção dos conceitos de desempenho',
+        pergunta: 'Você consegue, sem consultar, diferenciar eficiência, eficácia, efetividade e produtividade — e explicar um exemplo de cada?',
+        resposta: 'EFICIÊNCIA: uso racional dos recursos (meios). Ex.: reduzir o consumo de papel em 30%. EFICÁCIA: atingimento dos objetivos organizacionais (fins). Ex.: atender 100% dos pedidos no prazo legal. EFETIVIDADE: impacto social positivo real, mantido no tempo. Ex.: redução efetiva da mortalidade infantil após o programa. PRODUTIVIDADE: relação entre outputs e inputs. Ex.: 30 processos analisados por servidor/hora. A chave é: eficiência olha o meio; eficácia, o fim; efetividade, o impacto; produtividade, a relação entre produção e recursos.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     ADM-02 — Processo Administrativo
+  ============================================================ */
+  'ADM-02': {
+    id: 'D-ADM-02',
+    moduloId: 'ADM-02',
+    itens: [
+      {
+        id: 'D-ADM-02-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Funções administrativas (PODC)',
+        pergunta: 'Sobre as quatro funções administrativas que compõem o PODC, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'O PODC é uma sequência rígida: cada função só pode ser iniciada após o término completo da anterior, sem retorno.' },
+          { id: 'B', texto: 'As funções são interdependentes e cíclicas: o controle alimenta novo planejamento, e as funções podem ocorrer simultaneamente em diferentes níveis da organização.' },
+          { id: 'C', texto: 'O controle é a função que antecede o planejamento, pois é ele que define os objetivos organizacionais.' },
+          { id: 'D', texto: 'A direção é a função que estrutura os recursos e atividades, e a organização é a que lidera e motiva pessoas.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O PODC é interdependente e cíclico: o controle realimenta o planejamento, e as funções podem ocorrer em paralelo nos diferentes níveis. A alternativa A descreve uma linearidade que não existe; C inverte a lógica (o planejamento precede o controle); D inverte organização e direção.'
+      },
+      {
+        id: 'D-ADM-02-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Planejamento e controle como "espelhos"',
+        pergunta: 'Sobre a relação entre as funções de planejamento e controle, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'São funções independentes: o planejamento define objetivos, e o controle não se relaciona com esses objetivos.' },
+          { id: 'B', texto: 'O planejamento define os padrões de desempenho; o controle compara o desempenho real com esses padrões e corrige desvios. Sem padrões de planejamento, não há como controlar.' },
+          { id: 'C', texto: 'O controle precede o planejamento, pois é ele que define os padrões a serem alcançados.' },
+          { id: 'D', texto: 'O controle só existe no setor privado; no setor público, não há controle de desempenho.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Planejamento e controle são funções-espelho: o planejamento estabelece padrões; o controle mede e compara o desempenho real com esses padrões, corrigindo desvios. Sem padrões definidos no planejamento, o controle não tem referência. A alternativa C inverte a lógica; A e D negam a relação.'
+      },
+      {
+        id: 'D-ADM-02-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'PODC x Processo Administrativo (Lei 9.784/99) (nível difícil)',
+        pergunta: 'Um servidor afirma: "Como estou no setor de processos, minha função principal é o processo administrativo — ou seja, planejar, organizar, dirigir e controlar." Com base na distinção técnica entre os dois conceitos, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'A afirmação está correta: processo administrativo (Lei 9.784/99) e ciclo PODC são sinônimos.' },
+          { id: 'B', texto: 'A afirmação confunde dois conceitos distintos: o PODC é o ciclo de funções do gestor (teoria geral); o processo administrativo da Lei 9.784/99 é o rito jurídico de decisão da Administração, com fases, prazos, contraditório e ampla defesa.' },
+          { id: 'C', texto: 'A afirmação está parcialmente correta: o PODC é aplicável apenas ao setor privado, e o processo administrativo da Lei 9.784/99, apenas ao setor público.' },
+          { id: 'D', texto: 'A afirmação está correta apenas se o servidor atuar em órgão federal, pois a Lei 9.784/99 só se aplica à União.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Há uma confusão terminológica clássica: o PODC é o ciclo de funções administrativas (planejar, organizar, dirigir, controlar), estudado na Teoria Geral da Administração. O "processo administrativo" da Lei 9.784/1999 é o rito jurídico pelo qual a Administração Pública toma decisões (instauração, instrução, defesa, relatório, decisão, recursos). São conceitos DIFERENTES, apesar do nome parecido. Esta é a pegadinha mais recorrente do módulo.'
+      },
+      {
+        id: 'D-ADM-02-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Natureza do PODC',
+        pergunta: 'O PODC é uma sequência linear e estanque: cada função termina completamente antes de a próxima começar, e o ciclo termina no controle.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. O PODC é cíclico e interdependente: as funções se interpenetram, podem ocorrer simultaneamente em diferentes níveis e o controle realimenta novo planejamento. Não há um "fim" no controle.'
+      },
+      {
+        id: 'D-ADM-02-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Finalidade do controle',
+        pergunta: 'A função de controle limita-se a punir servidores que cometem irregularidades.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. O controle é função diagnóstica: mede o desempenho, compara com os padrões do planejamento e corrige desvios para melhorar resultados. A punição é apenas uma das possíveis ações corretivas — e não a principal.'
+      },
+      {
+        id: 'D-ADM-02-06',
+        tipo: 'situacao',
+        subtopico: 'Identificação de função administrativa',
+        pergunta: 'Uma Secretaria de Educação define, em janeiro, a meta de elevar o IDEB em 15% até o final do ano. Em fevereiro, redistribui turmas e professores entre as escolas. Em março, o Secretário faz reuniões de motivação com os diretores. Em novembro, analisa os resultados das avaliações e identifica que duas escolas ficaram abaixo da meta, decidindo reforçar a formação de professores nelas. As funções administrativas exercidas em janeiro, fevereiro, março e novembro são, respectivamente:',
+        alternativas: [
+          { id: 'A', texto: 'Controle, organização, direção e planejamento.' },
+          { id: 'B', texto: 'Planejamento, organização, direção e controle.' },
+          { id: 'C', texto: 'Organização, planejamento, controle e direção.' },
+          { id: 'D', texto: 'Direção, controle, planejamento e organização.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Janeiro: definição de meta = PLANEJAMENTO. Fevereiro: redistribuição de turmas e professores = ORGANIZAÇÃO (estruturação de recursos). Março: reuniões de motivação = DIREÇÃO (liderança). Novembro: análise de resultados e ação corretiva = CONTROLE. É a aplicação clássica do PODC em sequência lógica.'
+      },
+      {
+        id: 'D-ADM-02-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Ciclo e interdependência do PODC',
+        pergunta: 'Você consegue explicar, sem consultar, por que o PODC é considerado um ciclo interdependente — e não uma sequência linear?',
+        resposta: 'O PODC é interdependente porque as funções se alimentam mutuamente: o planejamento define os padrões que o controle vai usar; o controle, ao identificar desvios, gera informação que realimenta novo planejamento. Além disso, as funções ocorrem simultaneamente nos diferentes níveis organizacionais (enquanto a cúpula planeja o próximo ciclo, a base executa o atual). Não há um "fim" no controle — ele é o início do próximo ciclo. Essa é a diferença entre uma visão linear (ultrapassada) e uma visão sistêmica (correta) do PODC.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     ADM-03 — Planejamento
+  ============================================================ */
+  'ADM-03': {
+    id: 'D-ADM-03',
+    moduloId: 'ADM-03',
+    itens: [
+      {
+        id: 'D-ADM-03-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Missão, visão, valores, objetivos e metas',
+        pergunta: 'Sobre os elementos do planejamento, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'Missão é onde a organização quer chegar no futuro; visão é a razão de sua existência no presente.' },
+          { id: 'B', texto: 'Missão é a razão de existir da organização (presente); visão é onde ela quer chegar (futuro); valores são os princípios que orientam a conduta; objetivos são alvos amplos; metas são objetivos quantificados com prazo.' },
+          { id: 'C', texto: 'Objetivos e metas são sinônimos: ambos são amplos e qualitativos.' },
+          { id: 'D', texto: 'Valores são metas de curto prazo, e planos são documentos que independem dos objetivos organizacionais.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Missão = razão de existir (presente). Visão = onde quer chegar (futuro). Valores = princípios de conduta. Objetivos = alvos amplos e qualitativos. Metas = objetivos quantificados e datados. Planos = documentos que formalizam as estratégias. A alternativa A inverte missão e visão; C confunde objetivo com meta; D confunde valores com metas.'
+      },
+      {
+        id: 'D-ADM-03-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Análise SWOT',
+        pergunta: 'Na análise SWOT, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Forças e fraquezas são fatores internos, controláveis pela organização; oportunidades e ameaças são fatores externos, não controláveis.' },
+          { id: 'B', texto: 'Forças e oportunidades são fatores internos; fraquezas e ameaças são externos.' },
+          { id: 'C', texto: 'Todos os quatro elementos são internos — a SWOT analisa apenas o ambiente da organização.' },
+          { id: 'D', texto: 'Todos os quatro elementos são externos — a SWOT analisa apenas o ambiente em que a organização está inserida.' }
+        ],
+        gabarito: 'A',
+        explicacao: 'SWOT = forças e fraquezas (ambiente INTERNO, controlável) + oportunidades e ameaças (ambiente EXTERNO, não controlável). A distinção interno x externo é o ponto central — e a pegadinha mais comum. As alternativas B, C e D trocam indevidamente as categorias.'
+      },
+      {
+        id: 'D-ADM-03-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Balanced Scorecard (BSC) (nível difícil)',
+        pergunta: 'Uma Secretaria de Saúde está implementando o Balanced Scorecard (BSC) e definiu os seguintes objetivos estratégicos: (i) reduzir a mortalidade infantil em 20% em 3 anos; (ii) ampliar a satisfação dos usuários nas UBS para 85%; (iii) reduzir o tempo médio de espera por consulta de 30 para 10 dias; (iv) capacitar 100% dos enfermeiros em protocolos de atenção básica. Em relação às quatro perspectivas clássicas do BSC, esses objetivos correspondem, respectivamente, a:',
+        alternativas: [
+          { id: 'A', texto: 'Clientes, financeira, processos internos e aprendizado/crescimento.' },
+          { id: 'B', texto: 'Clientes (ou sociedade), clientes, processos internos e aprendizado/crescimento.' },
+          { id: 'C', texto: 'Financeira, clientes, aprendizado/crescimento e processos internos.' },
+          { id: 'D', texto: 'Processos internos, clientes, aprendizado/crescimento e financeira.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'No BSC, as quatro perspectivas clássicas são: financeira, clientes, processos internos e aprendizado/crescimento. No setor público, é comum adaptar "clientes" para "sociedade" — por isso o item (i) "reduzir a mortalidade infantil" é tipicamente da perspectiva SOCIEDADE (cliente no setor público). O item (ii) "satisfação dos usuários" é claramente da perspectiva CLIENTES. O item (iii) "reduzir tempo de espera" é da perspectiva PROCESSOS INTERNOS. O item (iv) "capacitar enfermeiros" é da perspectiva APRENDIZADO/CRESCIMENTO. Esta é uma questão difícil porque exige conhecer as quatro perspectivas e saber aplicá-las a um contexto específico — e distinguir a adaptação "sociedade" no setor público.'
+      },
+      {
+        id: 'D-ADM-03-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Objetivo x meta',
+        pergunta: 'Meta é um alvo mais amplo e qualitativo que objetivo; por isso, toda meta pressupõe um objetivo quantificado.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso — a relação é o contrário. Objetivo é amplo e qualitativo (ex.: "melhorar o atendimento"). Meta é o objetivo quantificado com prazo (ex.: "reduzir o tempo médio de espera em 30% até dezembro"). Toda META pressupõe um OBJETIVO, e não o inverso.'
+      },
+      {
+        id: 'D-ADM-03-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Análise SWOT — interno x externo',
+        pergunta: 'Na análise SWOT, as forças e as oportunidades são ambas categorias do ambiente externo, pois representam fatores positivos que a organização pode aproveitar.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. FORÇAS são fatores INTERNOS positivos (controláveis). OPORTUNIDADES são fatores EXTERNOS positivos (não controláveis). A distinção entre interno e externo é fundamental — não se pode agrupá-las como "ambiente externo".'
+      },
+      {
+        id: 'D-ADM-03-06',
+        tipo: 'situacao',
+        subtopico: 'Classificação em SWOT',
+        pergunta: 'Uma escola pública municipal está realizando sua análise SWOT para o planejamento de 2025. Foram levantados quatro pontos: (1) o corpo docente da escola é altamente qualificado e estável; (2) a Prefeitura anunciou um novo programa de financiamento para reforma de escolas; (3) o prédio da escola tem problemas estruturais na rede elétrica; (4) há previsão de corte no repasse de recursos federais. Esses pontos correspondem, respectivamente, a:',
+        alternativas: [
+          { id: 'A', texto: 'Força, oportunidade, fraqueza e ameaça.' },
+          { id: 'B', texto: 'Oportunidade, força, ameaça e fraqueza.' },
+          { id: 'C', texto: 'Força, fraqueza, oportunidade e ameaça.' },
+          { id: 'D', texto: 'Fraqueza, oportunidade, força e ameaça.' }
+        ],
+        gabarito: 'A',
+        explicacao: '(1) Corpo docente qualificado = FORÇA (interno positivo). (2) Programa de financiamento anunciado = OPORTUNIDADE (externo positivo). (3) Problemas na rede elétrica = FRAQUEZA (interno negativo). (4) Corte no repasse federal = AMEAÇA (externo negativo). A chave é sempre: interno (controlável) x externo (não controlável); positivo x negativo.'
+      },
+      {
+        id: 'D-ADM-03-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Elementos do planejamento e ferramentas',
+        pergunta: 'Você consegue, sem consultar, explicar os elementos do planejamento (missão, visão, valores, objetivos, metas, estratégias, planos) e a diferença entre SWOT e BSC?',
+        resposta: 'MISSÃO: razão de existir (presente). VISÃO: onde a organização quer chegar (futuro). VALORES: princípios de conduta. OBJETIVOS: alvos amplos e qualitativos. METAS: objetivos quantificados com prazo. ESTRATÉGIAS: cursos de ação escolhidos. PLANOS: documentos que formalizam. SWOT: ferramenta de diagnóstico do ambiente (interno: forças e fraquezas; externo: oportunidades e ameaças). BSC: ferramenta de gestão estratégica que traduz a estratégia em quatro perspectivas (financeira, clientes, processos internos, aprendizado/crescimento), com objetivos, indicadores, metas e iniciativas. SWOT diagnostica; BSC executa e mede.'
+      }
+    ]
+  },
+
+  /* ============================================================
+     ADM-04 — Organização
+  ============================================================ */
+  'ADM-04': {
+    id: 'D-ADM-04',
+    moduloId: 'ADM-04',
+    itens: [
+      {
+        id: 'D-ADM-04-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Centralização x descentralização',
+        pergunta: 'Sobre a centralização e a descentralização administrativa, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'Centralização é sempre ruim e descentralização é sempre boa — quanto mais descentralizado, melhor.' },
+          { id: 'B', texto: 'Centralização concentra as decisões na cúpula (maior controle, menor agilidade); descentralização distribui decisões (maior agilidade, demanda coordenação). A escolha depende do contexto e do tipo de decisão.' },
+          { id: 'C', texto: 'Centralização e descentralização são sinônimos — ambas distribuem decisões pela organização.' },
+          { id: 'D', texto: 'Descentralização é um ato pontual de transferência de autoridade para uma tarefa específica.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Centralização e descentralização são um trade-off: centralização dá mais controle e menos agilidade; descentralização dá mais agilidade e exige coordenação. Não há um "melhor absoluto" — depende do contexto e do tipo de decisão. A alternativa A trata como valor absoluto; C confunde os conceitos; D descreve DELEGAÇÃO, não descentralização.'
+      },
+      {
+        id: 'D-ADM-04-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Tipos de departamentalização',
+        pergunta: 'Uma rede de hospitais públicos organiza sua estrutura em diretorias específicas para atendimento infantil, adulto e idoso. Esse tipo de departamentalização é:',
+        alternativas: [
+          { id: 'A', texto: 'Funcional, porque agrupa por função desempenhada.' },
+          { id: 'B', texto: 'Por cliente, porque agrupa conforme o perfil do público atendido.' },
+          { id: 'C', texto: 'Geográfica, porque divide por localização.' },
+          { id: 'D', texto: 'Por processo, porque agrupa conforme as etapas de trabalho.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'A departamentalização POR CLIENTE agrupa as atividades conforme o perfil do público atendido (crianças, adultos, idosos). A FUNCIONAL agruparia por função (médicos, enfermeiros, administrativo); a GEOGRÁFICA, por localização; a POR PROCESSO, por etapas de trabalho. A chave é identificar o critério de agrupamento.'
+      },
+      {
+        id: 'D-ADM-04-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Estrutura matricial (nível difícil)',
+        pergunta: 'Um órgão público decide implantar uma estrutura em que cada servidor passa a responder simultaneamente ao seu gerente funcional (da área de origem) e ao gerente de um projeto transversal (como a digitalização de processos). Sobre essa estrutura, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Trata-se de estrutura linear, em que cada subordinado tem um único chefe — o que elimina conflitos de comando.' },
+          { id: 'B', texto: 'Trata-se de estrutura funcional, em que cada subordinado responde a vários chefes especializados, sem qualquer risco de conflito.' },
+          { id: 'C', texto: 'Trata-se de estrutura matricial, com dupla subordinação — o que traz como principal risco o conflito de ordens entre os dois gerentes, exigindo boa coordenação.' },
+          { id: 'D', texto: 'Trata-se de estrutura em rede, sem hierarquia nem coordenação.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A estrutura MATRICIAL combina a dimensão funcional (gerente da área) com a dimensão de projetos (gerente do projeto), gerando DUPLA SUBORDINAÇÃO. O principal risco é o CONFLITO DE ORDENS entre os dois chefes. A linear (A) tem chefe único; a funcional (B) tem múltiplos chefes especializados, mas sem a dimensão de projeto; a em rede (D) é outro modelo. A chave é reconhecer a dupla subordinação típica da matricial.'
+      },
+      {
+        id: 'D-ADM-04-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Delegação x descentralização',
+        pergunta: 'A delegação transfere ao subordinado a autoridade E a responsabilidade final pela tarefa, de modo que o superior deixa de responder pelo resultado.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. A delegação transfere a AUTORIDADE para executar a tarefa, mas a RESPONSABILIDADE FINAL permanece com quem delegou. O superior continua respondendo pelo resultado perante a organização. É o princípio da paridade autoridade-responsabilidade: delega-se a execução, não a responsabilidade final.'
+      },
+      {
+        id: 'D-ADM-04-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Amplitude de controle',
+        pergunta: 'Quanto MAIOR a amplitude de controle (muitos subordinados por gestor), MAIOR será o número de níveis hierárquicos da organização.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso — a relação é inversa. Amplitude AMPLA (muitos subordinados por gestor) gera MENOS níveis hierárquicos (estrutura achatada). Amplitude ESTREITA (poucos subordinados) gera MAIS níveis hierárquicos (estrutura verticalizada). Quanto maior a amplitude, mais "chata" a estrutura.'
+      },
+      {
+        id: 'D-ADM-04-06',
+        tipo: 'situacao',
+        subtopico: 'Identificação de estrutura e departamentalização',
+        pergunta: 'Uma prefeitura decide criar quatro regionais administrativas (Norte, Sul, Leste, Oeste), cada uma com autonomia para executar serviços de manutenção urbana, atendimento ao cidadão e licenciamento de pequeno porte, prestando contas à Secretaria de Administração. Sobre essa estrutura, é correto afirmar que houve:',
+        alternativas: [
+          { id: 'A', texto: 'Desconcentração, pois a divisão ocorreu dentro da mesma pessoa jurídica, entre órgãos, sem criação de nova pessoa.' },
+          { id: 'B', texto: 'Descentralização por outorga, pois cada regional passou a ter personalidade jurídica própria.' },
+          { id: 'C', texto: 'Descentralização por delegação, pois cada regional passou a ser uma empresa privada.' },
+          { id: 'D', texto: 'Concentração, pois todas as decisões continuaram centralizadas na Secretaria de Administração.' }
+        ],
+        gabarito: 'A',
+        explicacao: 'As regionais são ÓRGÃOS da mesma pessoa jurídica (a Prefeitura), sem personalidade própria. A divisão interna, com distribuição de competências entre órgãos, é DESCONCENTRAÇÃO. A descentralização (B e C) exigiria a criação de uma entidade com personalidade jurídica própria (autarquia, fundação, empresa pública, SEM) ou a delegação a particular. A concentração (D) significaria que a execução permaneceria em um único órgão.'
+      },
+      {
+        id: 'D-ADM-04-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Distinções fundamentais da função Organização',
+        pergunta: 'Você consegue, sem consultar, diferenciar centralização x descentralização, delegação x descentralização, concentração x desconcentração e amplitude de controle estreita x ampla?',
+        resposta: 'CENTRALIZAÇÃO x DESCENTRALIZAÇÃO: onde a decisão fica — cúpula x distribuída. DELEGAÇÃO x DESCENTRALIZAÇÃO: ato pontual de transferir autoridade (delegação) x transferência estrutural e permanente (descentralização). CONCENTRAÇÃO x DESCONCENTRAÇÃO: um único órgão executa (concentração) x divisão entre órgãos da MESMA pessoa jurídica (desconcentração — sem nova personalidade). AMPLITUDE ESTREITA x AMPLA: poucos subordinados por gestor → mais níveis hierárquicos (verticalizada) x muitos subordinados → menos níveis (achatada).'
+      }
+    ]
+  }
+
+  /* ============================================================
+     PRÓXIMOS SUB-LOTES (a preencher):
+     ADM-06, ADM-07, ADM-10, ADM-11  → sub-lote 4.2
+     AP-13, AP-14, DA-15 a DA-18     → sub-lote 4.3
+     DA-19, DA-20, DA-21, DA-23,
+     DA-25, REV-28                   → sub-lote 4.4
+  ============================================================ */
 
 };
