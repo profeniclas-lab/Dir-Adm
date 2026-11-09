@@ -2,9 +2,6 @@
    MOTOR GENÉRICO — App de Estudos
    Não contém conteúdo de matéria. Lê window.APP_CONFIG (config.js)
    e mescla os arquivos de content/ com base em contentSuffixes.
-
-   v1.1 — adiciona filtro de STATUS nas telas de Questões e Simulados
-          (todos / não respondidas / já respondidas / acertos / erros)
    ============================================================ */
 (function () {
   'use strict';
@@ -55,12 +52,12 @@
   var moduleFilter = 'todas';
   var professorAnswerOpen = null;
   var diagRunning = { moduleId: null, answers: {}, itemIndex: 0, revealed: {} };
-  var questionFilter = { area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
+  var questionFilter = { area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS' };
   var questionRunning = null;
   var importReport = null;
   var flashcardFilter = { area: 'todas', moduloId: 'todos' };
   var flashcardRunning = null;
-  var simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
+  var simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS' };
   var simuladoRunning = null;
   var currentSimuladoId = null;
 
@@ -231,31 +228,14 @@
   }
   function negativosNoTotal(bySubtopic) { var n = 0; for (var k in bySubtopic) if (bySubtopic.hasOwnProperty(k)) n += bySubtopic[k].erros + bySubtopic[k].nao_sabia; return n; }
 
-  /* ---------- Filtros de Questões ---------- */
   function filterQuestions() {
     return QUESTIONS.filter(function (q) {
       if (questionFilter.area !== 'todas' && q.area !== questionFilter.area) return false;
       if (questionFilter.moduloId !== 'todos' && q.moduloId !== questionFilter.moduloId) return false;
       if (questionFilter.dificuldade !== 'todas' && q.dificuldade !== Number(questionFilter.dificuldade)) return false;
       if (questionFilter.tipo !== 'TODAS' && q.tipo !== questionFilter.tipo) return false;
-      if (questionFilter.status && questionFilter.status !== 'todas') {
-        var qs = AppState.questions[q.id];
-        var tentativas = qs ? qs.tentativas : 0;
-        if (questionFilter.status === 'nao_respondidas' && tentativas > 0) return false;
-        if (questionFilter.status === 'respondidas' && tentativas === 0) return false;
-        if (questionFilter.status === 'acertos' && (!qs || qs.ultimaCorreta !== true)) return false;
-        if (questionFilter.status === 'erros' && (!qs || qs.ultimaCorreta !== false)) return false;
-      }
       return true;
     });
-  }
-  function countUnanswered(qsArr) {
-    var n = 0;
-    for (var i = 0; i < qsArr.length; i++) {
-      var s = AppState.questions[qsArr[i].id];
-      if (!s || s.tentativas === 0) n++;
-    }
-    return n;
   }
   function startQuestionSession(ids, modo) {
     var list;
@@ -338,7 +318,6 @@
   }
   function cancelFlashcardSession() { if (!window.confirm('Cancelar a sessão de flashcards? As respostas já registradas serão mantidas.')) return; flashcardRunning = null; navigate('flashcards'); }
 
-  /* ---------- Filtros de Simulados ---------- */
   function filterForSimulado() {
     var cfg = simuladoConfig;
     return QUESTIONS.filter(function (q) {
@@ -346,14 +325,6 @@
       if (cfg.moduloId !== 'todos' && q.moduloId !== cfg.moduloId) return false;
       if (cfg.dificuldade !== 'todas' && q.dificuldade !== Number(cfg.dificuldade)) return false;
       if (cfg.tipo !== 'TODAS' && q.tipo !== cfg.tipo) return false;
-      if (cfg.status && cfg.status !== 'todas') {
-        var qs = AppState.questions[q.id];
-        var tentativas = qs ? qs.tentativas : 0;
-        if (cfg.status === 'nao_respondidas' && tentativas > 0) return false;
-        if (cfg.status === 'respondidas' && tentativas === 0) return false;
-        if (cfg.status === 'acertos' && (!qs || qs.ultimaCorreta !== true)) return false;
-        if (cfg.status === 'erros' && (!qs || qs.ultimaCorreta !== false)) return false;
-      }
       return true;
     });
   }
@@ -379,7 +350,7 @@
       if (pool.length === 0) {
         if (!window.confirm('Nenhuma questão corresponde aos filtros atuais.\n\nDeseja limpar os filtros e usar todas as questões?')) return;
         simuladoConfig.area = 'todas'; simuladoConfig.moduloId = 'todos';
-        simuladoConfig.dificuldade = 'todas'; simuladoConfig.tipo = 'TODAS'; simuladoConfig.status = 'todas';
+        simuladoConfig.dificuldade = 'todas'; simuladoConfig.tipo = 'TODAS';
         pool = filterForSimulado();
       }
     }
@@ -388,7 +359,7 @@
     if (qtd === 0) { simuladoConfig.quantidade = 10; simuladoConfig.customQty = ''; qtd = 10; }
     var ids = shuffleArray(pool.map(function (q) { return q.id; })).slice(0, Math.min(qtd, pool.length));
     if (ids.length === 0) { window.alert('Não há questões suficientes.'); return; }
-    simuladoRunning = { ids: ids, index: 0, respostas: {}, startedAt: new Date().toISOString(), config: { modo: (modo === 'PROVA_CONCURSO' && simuladoConfig.modo === 'PROVA_CONCURSO') ? 'PROVA_CONCURSO' : 'SIMULADO', quantidade: qtd, area: simuladoConfig.area, moduloId: simuladoConfig.moduloId, dificuldade: simuladoConfig.dificuldade, tipo: simuladoConfig.tipo, status: simuladoConfig.status } };
+    simuladoRunning = { ids: ids, index: 0, respostas: {}, startedAt: new Date().toISOString(), config: { modo: (modo === 'PROVA_CONCURSO' && simuladoConfig.modo === 'PROVA_CONCURSO') ? 'PROVA_CONCURSO' : 'SIMULADO', quantidade: qtd, area: simuladoConfig.area, moduloId: simuladoConfig.moduloId, dificuldade: simuladoConfig.dificuldade, tipo: simuladoConfig.tipo } };
     navigate('simulado-run');
   }
   function answerSimulado(altId) { if (!simuladoRunning) return; var qid = simuladoRunning.ids[simuladoRunning.index]; simuladoRunning.respostas[qid] = altId; render(); }
@@ -426,7 +397,7 @@
       id: 'SIM-' + Date.now().toString(36).toUpperCase(),
       tipo: simuladoRunning.config.modo,
       quantidade: total, respondidas: respondidas, naoRespondidas: naoRespondidas,
-      filtros: { area: simuladoRunning.config.area, moduloId: simuladoRunning.config.moduloId, dificuldade: simuladoRunning.config.dificuldade, tipo: simuladoRunning.config.tipo, status: simuladoRunning.config.status },
+      filtros: { area: simuladoRunning.config.area, moduloId: simuladoRunning.config.moduloId, dificuldade: simuladoRunning.config.dificuldade, tipo: simuladoRunning.config.tipo },
       questoesIds: ids.slice(), respostas: Object.assign({}, respostas),
       iniciadoEm: simuladoRunning.startedAt, finalizadoEm: new Date().toISOString(),
       resultado: { acertos: acertos, erros: erros, naoRespondidas: naoRespondidas, respondidas: respondidas, percentual: pct, porModulo: porModulo, porDificuldade: porDificuldade, porTipo: porTipo }
@@ -941,36 +912,27 @@
     var tipoOptions = '';
     var tipos = [['TODAS','Todas'], ['DIDATICA','Somente didáticas'], ['REAL','Somente reais']];
     for (var t = 0; t < tipos.length; t++) { var sel3 = questionFilter.tipo === tipos[t][0] ? ' selected' : ''; tipoOptions += '<option value="' + tipos[t][0] + '"' + sel3 + '>' + esc(tipos[t][1]) + '</option>'; }
-    var statusOptions = '';
-    var statusList = [['todas','Todos os status'], ['nao_respondidas','Somente não respondidas'], ['respondidas','Somente já respondidas'], ['acertos','Somente acertos'], ['erros','Somente erros']];
-    for (var s = 0; s < statusList.length; s++) { var sel4 = questionFilter.status === statusList[s][0] ? ' selected' : ''; statusOptions += '<option value="' + statusList[s][0] + '"' + sel4 + '>' + esc(statusList[s][1]) + '</option>'; }
-
     var filtered = filterQuestions();
-    var total = QUESTIONS.length;
-    var naoResp = countUnanswered(QUESTIONS);
-
     var html = '';
     html += '<h1 class="page-title">Questões</h1>';
-    html += '<p class="page-subtitle">' + total + ' questão(ões) no banco · <strong>' + naoResp + '</strong> ainda não respondida(s) · <strong>' + (total - naoResp) + '</strong> já respondida(s).</p>';
-    html += '<div class="type-banner"><span class="badge-pill badge-did">DIDÁTICA</span><span>Use os filtros abaixo para montar a sessão. O filtro <strong>Status</strong> permite focar apenas nas questões que você ainda não respondeu.</span></div>';
+    html += '<p class="page-subtitle">Motor de questões — filtros, correção, explicação pedagógica estruturada, histórico e desempenho.</p>';
+    html += '<div class="type-banner"><span class="badge-pill badge-did">DIDÁTICA</span><span>O banco atual contém <strong>' + QUESTIONS.length + ' questões</strong>. ';
+    if (QUESTIONS.length === 0) html += 'Nenhuma questão cadastrada ainda. ';
+    html += 'Use <strong>Banco de Questões</strong> para importar questões reais com banca, órgão, ano, prova e fonte.</span></div>';
     html += '<h2 class="section-title">Filtros</h2>';
     html += '<div class="filters">' + areaPills + '</div>';
     html += '<div class="filter-row">';
     html += '<label>Módulo</label><select id="qFilterModulo">' + moduleOptions + '</select>';
     html += '<label>Dificuldade</label><select id="qFilterDificuldade">' + diffOptions + '</select>';
     html += '<label>Tipo</label><select id="qFilterTipo">' + tipoOptions + '</select>';
-    html += '<label>Status</label><select id="qFilterStatus">' + statusOptions + '</select>';
     html += '</div>';
     html += '<div style="margin:14px 0;display:flex;gap:8px;flex-wrap:wrap;">';
-    html += '<button class="btn btn-primary" data-action="start-question-session"' + (filtered.length === 0 ? ' disabled' : '') + '>▶ Iniciar sessão (' + filtered.length + ' questão(ões)' + (questionFilter.status === 'nao_respondidas' ? ' não respondida(s)' : '') + ')</button>';
+    html += '<button class="btn btn-primary" data-action="start-question-session"' + (filtered.length === 0 ? ' disabled' : '') + '>▶ Iniciar sessão (' + filtered.length + ' questão(ões))</button>';
     html += '<button class="btn" data-action="simulado-com-filtros" data-target="questoes"' + (filtered.length === 0 ? ' disabled' : '') + '>🎯 Gerar simulado com estes filtros</button>';
     html += '</div>';
     html += '<h2 class="section-title">Prévia das questões (' + filtered.length + ')</h2>';
-    if (filtered.length === 0) {
-      html += '<div class="notice">Nenhuma questão corresponde aos filtros escolhidos.';
-      if (questionFilter.status === 'nao_respondidas' && naoResp === 0) html += ' <strong>Você já respondeu todas as questões do banco!</strong> Altere o status para "Todos os status" para revisar.';
-      html += '</div>';
-    } else {
+    if (filtered.length === 0) html += '<div class="notice">Nenhuma questão corresponde aos filtros escolhidos.</div>';
+    else {
       for (var p = 0; p < filtered.length; p++) {
         var q = filtered[p]; var qs = AppState.questions[q.id];
         var statusClass = 'qs-nova', statusText = 'Nova';
@@ -1463,9 +1425,6 @@
     var tipoOptions = '';
     var tipos = [['TODAS','Todas'], ['DIDATICA','Somente didáticas'], ['REAL','Somente reais']];
     for (var t = 0; t < tipos.length; t++) { var sel3 = simuladoConfig.tipo === tipos[t][0] ? ' selected' : ''; tipoOptions += '<option value="' + tipos[t][0] + '"' + sel3 + '>' + esc(tipos[t][1]) + '</option>'; }
-    var statusOptions = '';
-    var statusList = [['todas','Todos os status'], ['nao_respondidas','Somente não respondidas'], ['respondidas','Somente já respondidas'], ['acertos','Somente acertos'], ['erros','Somente erros']];
-    for (var s2 = 0; s2 < statusList.length; s2++) { var sel4 = simuladoConfig.status === statusList[s2][0] ? ' selected' : ''; statusOptions += '<option value="' + statusList[s2][0] + '"' + sel4 + '>' + esc(statusList[s2][1]) + '</option>'; }
     var qtyPills = '';
     var qtyOpts = [['10','10 questões'], ['20','20 questões'], ['40','40 questões'], ['custom','Personalizado']];
     for (var q = 0; q < qtyOpts.length; q++) { var val = qtyOpts[q][0]; var lbl = qtyOpts[q][1]; var act = (String(simuladoConfig.quantidade) === val) ? ' active' : ''; qtyPills += '<button class="filter-pill' + act + '" data-sim-qty="' + val + '">' + esc(lbl) + '</button>'; }
@@ -1493,8 +1452,8 @@
       html += '<div class="sim-card"><h3>Quantidade de questões</h3><p>Padrão sugerido: 20 questões. Você pode personalizar até 200.</p><div class="sim-qty-pills">' + qtyPills + '</div>';
       if (simuladoConfig.quantidade === 'custom') html += '<div class="filter-row"><label>Quantidade</label><input type="number" id="simCustomQty" min="1" max="200" value="' + esc(simuladoConfig.customQty || '') + '" placeholder="Ex.: 30"><span style="font-size:13px;color:var(--text-muted);">Entre 1 e 200.</span></div>';
       html += '</div>';
-      html += '<div class="sim-card"><h3>Filtros</h3><p>Combine área, módulo, dificuldade, tipo e status.</p><div class="filters">' + areaPills + '</div>';
-      html += '<div class="filter-row"><label>Módulo</label><select id="simFilterModulo">' + moduleOptions + '</select><label>Dificuldade</label><select id="simFilterDificuldade">' + diffOptions + '</select><label>Tipo</label><select id="simFilterTipo">' + tipoOptions + '</select><label>Status</label><select id="simFilterStatus">' + statusOptions + '</select></div></div>';
+      html += '<div class="sim-card"><h3>Filtros</h3><p>Combine área, módulo, dificuldade e tipo.</p><div class="filters">' + areaPills + '</div>';
+      html += '<div class="filter-row"><label>Módulo</label><select id="simFilterModulo">' + moduleOptions + '</select><label>Dificuldade</label><select id="simFilterDificuldade">' + diffOptions + '</select><label>Tipo</label><select id="simFilterTipo">' + tipoOptions + '</select></div></div>';
       var target = quantidadeAlvo(); var cls = 'sim-preview'; var msg = '';
       if (poolSimulado.length === 0) { cls += ' err'; msg = '<strong>Nenhuma questão corresponde aos filtros.</strong> Ajuste os filtros para prosseguir.'; }
       else if (target === 0) { cls += ' err'; msg = '<strong>Defina uma quantidade válida.</strong>'; }
@@ -1884,8 +1843,7 @@
   function setQuestionFilterModulo(v) { questionFilter.moduloId = v || 'todos'; render(); }
   function setQuestionFilterDificuldade(v) { questionFilter.dificuldade = v || 'todas'; render(); }
   function setQuestionFilterTipo(v) { questionFilter.tipo = v || 'TODAS'; render(); }
-  function setQuestionFilterStatus(v) { questionFilter.status = v || 'todas'; render(); }
-  function startQuestionsByModule(modId) { questionFilter.area = 'todas'; questionFilter.moduloId = modId; questionFilter.dificuldade = 'todas'; questionFilter.tipo = 'TODAS'; questionFilter.status = 'todas'; navigate('questoes'); }
+  function startQuestionsByModule(modId) { questionFilter.area = 'todas'; questionFilter.moduloId = modId; questionFilter.dificuldade = 'todas'; questionFilter.tipo = 'TODAS'; navigate('questoes'); }
   function setFlashcardFilterArea(a) { if (['todas'].concat(Object.keys(AREA_LABELS)).indexOf(a) === -1) return; flashcardFilter.area = a; flashcardFilter.moduloId = 'todos'; render(); }
   function startFlashcardsAll() { var ids = FLASHCARDS.map(function (f) { return f.id; }); if (ids.length === 0) { window.alert('Nenhum flashcard cadastrado ainda.'); return; } startFlashcardSession(ids, 'livre'); }
   function startFlashcardsDue() { var due = getDueFlashcards().map(function (f) { return f.id; }); if (due.length === 0) { window.alert('Nenhum flashcard vencido no momento.'); return; } startFlashcardSession(due, 'revisao'); }
@@ -1902,8 +1860,7 @@
   function setSimuladoModulo(v) { simuladoConfig.moduloId = v || 'todos'; render(); }
   function setSimuladoDificuldade(v) { simuladoConfig.dificuldade = v || 'todas'; render(); }
   function setSimuladoTipo(v) { simuladoConfig.tipo = v || 'TODAS'; render(); }
-  function setSimuladoStatus(v) { simuladoConfig.status = v || 'todas'; render(); }
-  function simuladoByModule(modId) { simuladoConfig.modo = 'SIMULADO'; simuladoConfig.area = 'todas'; simuladoConfig.moduloId = modId; simuladoConfig.dificuldade = 'todas'; simuladoConfig.tipo = 'TODAS'; simuladoConfig.status = 'todas'; if (simuladoConfig.quantidade === 'custom' && (!simuladoConfig.customQty || parseInt(simuladoConfig.customQty, 10) < 1)) simuladoConfig.quantidade = 10; navigate('simulados'); }
+  function simuladoByModule(modId) { simuladoConfig.modo = 'SIMULADO'; simuladoConfig.area = 'todas'; simuladoConfig.moduloId = modId; simuladoConfig.dificuldade = 'todas'; simuladoConfig.tipo = 'TODAS'; if (simuladoConfig.quantidade === 'custom' && (!simuladoConfig.customQty || parseInt(simuladoConfig.customQty, 10) < 1)) simuladoConfig.quantidade = 10; navigate('simulados'); }
   function toggleSidebar() { document.body.classList.toggle('sidebar-open'); }
   function showProfessorAnswer(lessonId, key) { if (professorAnswerOpen && professorAnswerOpen.lessonId === lessonId && professorAnswerOpen.key === key) professorAnswerOpen = null; else professorAnswerOpen = { lessonId: lessonId, key: key }; render(); var el = document.querySelector('.professor-answer'); if (el && el.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
   function startDiagnostic(modId) { var diag = getDiagnosticByModuleId(modId); if (!diag) { window.alert('Diagnóstico ainda não cadastrado para este módulo.'); return; } diagRunning.moduleId = modId; diagRunning.answers = {}; diagRunning.itemIndex = 0; diagRunning.revealed = {}; navigate('diagnostico', { moduleId: modId }); }
@@ -1962,10 +1919,10 @@
     localStorage.removeItem(STORAGE_KEY); AppState = createDefaultState(); saveState();
     currentScreen = 'dashboard'; currentModuleId = null; currentLessonId = null; moduleFilter = 'todas'; professorAnswerOpen = null;
     diagRunning = { moduleId: null, answers: {}, itemIndex: 0, revealed: {} };
-    questionFilter = { area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
+    questionFilter = { area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS' };
     questionRunning = null; window.__lastSession = null; importReport = null;
     flashcardFilter = { area: 'todas', moduloId: 'todos' }; flashcardRunning = null; window.__lastFlashSession = null;
-    simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
+    simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS' };
     simuladoRunning = null; currentSimuladoId = null;
     render(); window.alert('Progresso zerado.');
   }
@@ -2043,14 +2000,9 @@
       case 'delete-simulado': deleteSimulado(actionEl.getAttribute('data-sim-id')); break;
       case 'simulado-by-module': simuladoByModule(actionEl.getAttribute('data-module-id')); break;
       case 'simulado-com-filtros':
-        simuladoConfig.area = questionFilter.area;
-        simuladoConfig.moduloId = questionFilter.moduloId;
-        simuladoConfig.dificuldade = questionFilter.dificuldade;
-        simuladoConfig.tipo = questionFilter.tipo;
-        simuladoConfig.status = questionFilter.status;
-        simuladoConfig.modo = 'SIMULADO';
-        navigate('simulados');
-        break;
+        simuladoConfig.area = questionFilter.area; simuladoConfig.moduloId = questionFilter.moduloId;
+        simuladoConfig.dificuldade = questionFilter.dificuldade; simuladoConfig.tipo = questionFilter.tipo;
+        simuladoConfig.modo = 'SIMULADO'; navigate('simulados'); break;
       case 'toggle-theme': toggleTheme(); break;
       case 'export-full-state': exportFullState(); break;
       case 'import-full-state': { var elFull = document.getElementById('importFullStateTextarea'); if (elFull) importFullStateFromText(elFull.value || ''); break; }
@@ -2062,11 +2014,9 @@
     if (el.id === 'qFilterModulo') setQuestionFilterModulo(el.value);
     else if (el.id === 'qFilterDificuldade') setQuestionFilterDificuldade(el.value);
     else if (el.id === 'qFilterTipo') setQuestionFilterTipo(el.value);
-    else if (el.id === 'qFilterStatus') setQuestionFilterStatus(el.value);
     else if (el.id === 'simFilterModulo') setSimuladoModulo(el.value);
     else if (el.id === 'simFilterDificuldade') setSimuladoDificuldade(el.value);
     else if (el.id === 'simFilterTipo') setSimuladoTipo(el.value);
-    else if (el.id === 'simFilterStatus') setSimuladoStatus(el.value);
   });
   document.addEventListener('input', function (e) {
     var el = e.target; if (!el) return;
@@ -2081,10 +2031,10 @@
     applyTheme(AppState.settings && AppState.settings.theme);
     currentScreen = 'dashboard'; currentModuleId = null; currentLessonId = null; moduleFilter = 'todas'; professorAnswerOpen = null;
     diagRunning = { moduleId: null, answers: {}, itemIndex: 0, revealed: {} };
-    questionFilter = { area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
+    questionFilter = { area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS' };
     questionRunning = null; window.__lastSession = null; importReport = null;
     flashcardFilter = { area: 'todas', moduloId: 'todos' }; flashcardRunning = null; window.__lastFlashSession = null;
-    simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
+    simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS' };
     simuladoRunning = null; currentSimuladoId = null;
     render();
   }
