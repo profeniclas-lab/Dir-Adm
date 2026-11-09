@@ -1,3 +1,303 @@
+/* ============================================================
+   DIAGNÓSTICOS — Módulos de prioridade MÉDIA
+   Administração + Direito Administrativo
+   Entregues: ADM-05, ADM-08, ADM-09
+   Padrão por módulo: 3 MC (1 difícil) + 2 V/F + 1 situação + 1 autoavaliação
+   Próximo sub-lote: 6.2 (ADM-12, DA-22, DA-24)
+   ============================================================ */
+
+window.DIAGNOSTICS_MEDIA = {
+
+  /* ============================================================
+     ADM-05 — Direção, liderança e motivação
+  ============================================================ */
+  'ADM-05': {
+    id: 'D-ADM-05',
+    moduloId: 'ADM-05',
+    itens: [
+      {
+        id: 'D-ADM-05-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Autoridade x poder',
+        pergunta: 'Sobre a diferença entre autoridade e poder no contexto da liderança, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Autoridade e poder são sinônimos: ambos decorrem exclusivamente do cargo ocupado.' },
+          { id: 'B', texto: 'Autoridade é o direito formal de dar ordens, decorrente do cargo; poder é a capacidade de influenciar pessoas, podendo decorrer do cargo, do conhecimento, da personalidade ou do relacionamento.' },
+          { id: 'C', texto: 'Poder é o direito formal de dar ordens; autoridade é a capacidade de influenciar sem cargo.' },
+          { id: 'D', texto: 'Todo líder informal tem autoridade formal, e todo chefe tem poder de influência.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'AUTORIDADE: direito formal de dar ordens, decorrente do cargo (legitimidade formal). PODER: capacidade de influenciar pessoas, independentemente do cargo — pode vir do conhecimento, da personalidade, do relacionamento. A alternativa A iguala indevidamente; C inverte; D generaliza de forma incorreta (nem todo líder informal tem autoridade formal, nem todo chefe tem poder de influência).'
+      },
+      {
+        id: 'D-ADM-05-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Estilos clássicos de liderança',
+        pergunta: 'Sobre os três estilos clássicos de liderança (autocrática, democrática e liberal), é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Autocrática: decisões centralizadas no líder; democrática: decisões compartilhadas com o grupo; liberal: o grupo tem autonomia, com pouca interferência do líder.' },
+          { id: 'B', texto: 'Autocrática: decisões compartilhadas; democrática: decisões centralizadas; liberal: sem liderança.' },
+          { id: 'C', texto: 'Autocrática e liberal são sinônimos: ambas concentram as decisões no líder.' },
+          { id: 'D', texto: 'A liderança democrática é sempre a mais eficaz, independentemente da situação.' }
+        ],
+        gabarito: 'A',
+        explicacao: 'AUTOCRÁTICA: decisões centralizadas no líder, pouca participação. DEMOCRÁTICA: decisões compartilhadas, participação do grupo. LIBERAL (laissez-faire): o grupo tem autonomia, com pouca interferência do líder. A alternativa B inverte; C iguala indevidamente; D absolutiza a democracia — a eficácia depende do contexto (em emergências, a autocrática pode ser mais eficaz).'
+      },
+      {
+        id: 'D-ADM-05-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Herzberg — fatores higiênicos x motivadores (nível difícil)',
+        pergunta: 'Um órgão público aumentou o salário dos servidores em 15% e melhorou as instalações físicas do setor. Apesar disso, a equipe continua desmotivada e com baixo engajamento. Paralelamente, outro setor, sem aumento salarial, implantou programa de reconhecimento por metas alcançadas e deu autonomia aos servidores para organizar o próprio trabalho — e obteve aumento significativo de motivação. Com base na teoria dos dois fatores de Herzberg, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'O salário e as instalações são fatores MOTIVADORES; o reconhecimento e a autonomia são fatores HIGIÊNICOS.' },
+          { id: 'B', texto: 'O salário e as instalações são fatores HIGIÊNICOS — quando ausentes, geram insatisfação, mas quando presentes não motivam; o reconhecimento e a autonomia são fatores MOTIVADORES — são eles que efetivamente impulsionam o engajamento.' },
+          { id: 'C', texto: 'Salário, instalações, reconhecimento e autonomia são todos fatores higiênicos.' },
+          { id: 'D', texto: 'A teoria de Herzberg não se aplica ao setor público, pois servidores não são motivados por reconhecimento.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Em Herzberg, FATORES HIGIÊNICOS (extrínsecos — salário, condições de trabalho, políticas) evitam insatisfação, mas NÃO motivam. FATORES MOTIVADORES (intrínsecos — reconhecimento, responsabilidade, realização, autonomia) são os que efetivamente motivam. É por isso que o primeiro setor, mesmo com aumento e melhoria física, continuou desmotivado — e o segundo, sem aumento, aumentou a motivação. Esta é a distinção mais fina do tema e a que a banca mais cobra em questões difíceis.'
+      },
+      {
+        id: 'D-ADM-05-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Liderança formal x informal',
+        pergunta: 'A liderança formal decorre do cargo ocupado (designação institucional); a liderança informal emerge naturalmente do grupo, com base em confiança e respeito — e nem sempre coincide com a liderança formal.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. LIDERANÇA FORMAL: decorre do cargo — chefe designado, com autoridade institucional. LIDERANÇA INFORMAL: emerge naturalmente — influência sem cargo, baseada em confiança e respeito. As duas nem sempre coincidem: um chefe formal pode não ser o líder real da equipe; e um servidor sem cargo de chefia pode ser o líder informal.'
+      },
+      {
+        id: 'D-ADM-05-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Maslow — hierarquia das necessidades',
+        pergunta: 'Na teoria de Maslow, as necessidades humanas devem ser satisfeitas em ordem ascendente: primeiro as fisiológicas, depois segurança, sociais, estima e, por fim, autorrealização.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. A hierarquia de Maslow é: FISIOLÓGICAS (base) → SEGURANÇA → SOCIAIS → ESTIMA → AUTORREALIZAÇÃO (topo). A lógica é ascendente: as necessidades superiores só se tornam relevantes quando as inferiores estão razoavelmente satisfeitas.'
+      },
+      {
+        id: 'D-ADM-05-06',
+        tipo: 'situacao',
+        subtopico: 'Liderança situacional',
+        pergunta: 'Um coordenador assumiu uma equipe nova, com servidores recém-concursados e sem experiência no sistema utilizado pelo setor. Inicialmente, ele adotou estilo de liderança diretivo, com instruções detalhadas e supervisão próxima. Após seis meses, com a equipe já treinada e experiente, ele passou a delegar tarefas e dar mais autonomia, mantendo apenas o acompanhamento de resultados. Com base na liderança situacional (Hersey & Blanchard), é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'O coordenador errou, pois deveria ter mantido o mesmo estilo desde o início.' },
+          { id: 'B', texto: 'O coordenador agiu corretamente: na liderança situacional, o estilo é ajustado à maturidade da equipe — DIRIGIR (baixa maturidade) → PERSUADIR → PARTICIPAR → DELEGAR (alta maturidade).' },
+          { id: 'C', texto: 'O coordenador errou, pois a liderança situacional exige sempre o estilo liberal (laissez-faire).' },
+          { id: 'D', texto: 'A liderança situacional não se aplica ao setor público, apenas ao privado.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Na LIDERANÇA SITUACIONAL (Hersey & Blanchard), o estilo ideal depende da MATURIDADE da equipe: DIRIGIR (baixa maturidade — equipe inexperiente), PERSUADIR (maturidade média-baixa), PARTICIPAR (maturidade média-alta) e DELEGAR (alta maturidade). O coordenador agiu corretamente ao começar diretivo (equipe nova) e evoluir para delegação (equipe experiente). A alternativa A ignora o caráter situacional; C absolutiza um estilo; D restringe indevidamente.'
+      },
+      {
+        id: 'D-ADM-05-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Liderança e motivação — conceitos fundamentais',
+        pergunta: 'Você consegue, sem consultar, diferenciar autoridade de poder, liderança formal de informal, os três estilos clássicos, a liderança situacional e as teorias de Maslow, Herzberg e McGregor?',
+        resposta: 'AUTORIDADE (cargo) x PODER (influência). FORMAL (cargo) x INFORMAL (emerge do grupo). ESTILOS: autocrática (centralizada), democrática (participativa), liberal (autonomia). SITUACIONAL: o estilo varia com a maturidade da equipe (dirigir, persuadir, participar, delegar). MASLOW: fisiológicas → segurança → sociais → estima → autorrealização. HERZBERG: higiênicos (evitam insatisfação, não motivam) x motivadores (motivam). McGREGOR: teoria X (visão negativa) x teoria Y (visão positiva).'
+      }
+    ]
+  },
+
+  /* ============================================================
+     ADM-08 — Comunicação e comportamento organizacional
+  ============================================================ */
+  'ADM-08': {
+    id: 'D-ADM-08',
+    moduloId: 'ADM-08',
+    itens: [
+      {
+        id: 'D-ADM-08-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'Elementos da comunicação',
+        pergunta: 'Sobre os elementos do processo de comunicação, assinale a alternativa CORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'Emissor, mensagem, canal, receptor e feedback são elementos do processo; o ruído é a interferência que distorce a mensagem.' },
+          { id: 'B', texto: 'Emissor e receptor são sinônimos; ruído é o mesmo que feedback.' },
+          { id: 'C', texto: 'Feedback é opcional e não interfere na compreensão da mensagem.' },
+          { id: 'D', texto: 'Canal é o conteúdo da mensagem, e mensagem é o meio de transmissão.' }
+        ],
+        gabarito: 'A',
+        explicacao: 'Os elementos do processo de comunicação são: EMISSOR (quem envia), CODIFICAÇÃO, MENSAGEM (conteúdo), CANAL (meio), DECODIFICAÇÃO, RECEPTOR (quem recebe), FEEDBACK (retorno) e RUÍDO (interferência que distorce). A alternativa B iguala indevidamente; C nega a importância do feedback; D inverte canal e mensagem.'
+      },
+      {
+        id: 'D-ADM-08-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Comunicação formal x informal',
+        pergunta: 'Sobre a comunicação formal e a comunicação informal nas organizações, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Comunicação formal é sempre prejudicial, e a informal é sempre benéfica.' },
+          { id: 'B', texto: 'Comunicação formal flui pelos canais oficiais (hierarquia, documentos, ordens); a informal flui pelas relações interpessoais (conversas, redes) — e ambas coexistem, podendo a informal reforçar ou minar a formal.' },
+          { id: 'C', texto: 'Comunicação formal e informal são sinônimos.' },
+          { id: 'D', texto: 'Comunicação informal não existe nas organizações públicas.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'FORMAL: canais oficiais — hierarquia, documentos, ordens. INFORMAL: relações interpessoais — conversas, redes. Ambas coexistem, e a informal pode reforçar ou minar a formal. A alternativa A trata como valor absoluto; C iguala; D nega a existência da comunicação informal no setor público (ela existe em qualquer organização).'
+      },
+      {
+        id: 'D-ADM-08-03',
+        tipo: 'multipla_escolha',
+        subtopico: 'Conflito funcional x disfuncional (nível difícil)',
+        pergunta: 'Em uma reunião de equipe, dois servidores divergem sobre a melhor forma de organizar o fluxo de atendimento. A discussão é respeitosa, baseada em dados, e resulta em uma solução melhor do que a inicial. Em outro setor, dois colegas discutem por questões pessoais, com ironias e interrupções, e o clima fica hostil, prejudicando o trabalho. Sobre esses conflitos, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Ambos são disfuncionais, pois todo conflito é prejudicial.' },
+          { id: 'B', texto: 'O primeiro é FUNCIONAL (construtivo — estimula debate e melhoria); o segundo é DISFUNCIONAL (destrutivo — gera hostilidade e prejudica o desempenho).' },
+          { id: 'C', texto: 'Ambos são funcionais, pois o conflito sempre gera aprendizado.' },
+          { id: 'D', texto: 'O primeiro é disfuncional; o segundo é funcional, pois expõe problemas.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'O CONFLITO FUNCIONAL é construtivo — estimula debate, inovação e melhoria (primeiro caso). O DISFUNCIONAL é destrutivo — gera hostilidade, reduz desempenho e fragmenta o grupo (segundo caso). A chave é: nem todo conflito é ruim; o gestor deve estimular o funcional e mediar o disfuncional. A alternativa A trata todo conflito como ruim; C, como bom; D inverte.'
+      },
+      {
+        id: 'D-ADM-08-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Grupo x equipe',
+        pergunta: 'Grupo e equipe são sinônimos: ambos se caracterizam por objetivo comum, responsabilidade individual e sinergia neutra.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. GRUPO: objetivo comum, mas com responsabilidade INDIVIDUAL e sinergia neutra (ou negativa). EQUIPE: objetivo comum, habilidades COMPLEMENTARES, responsabilidade MÚTUA e sinergia POSITIVA (o resultado conjunto supera a soma das partes). A equipe é uma evolução do grupo.'
+      },
+      {
+        id: 'D-ADM-08-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Negociação distributiva x integrativa',
+        pergunta: 'A negociação distributiva é do tipo ganha-perde (recursos limitados); a integrativa busca soluções ganha-ganha, atendendo aos interesses de ambas as partes.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. DISTRIBUTIVA: ganha-perde — o ganho de um lado é a perda do outro (recursos limitados). INTEGRATIVA: ganha-ganha — busca soluções criativas que atendam aos interesses de ambos. A integrativa exige mais diálogo, mas tende a gerar soluções mais duradouras.'
+      },
+      {
+        id: 'D-ADM-08-06',
+        tipo: 'situacao',
+        subtopico: 'Identificação de elementos da comunicação',
+        pergunta: 'Um chefe envia um e-mail a um subordinado, comunicando uma mudança de procedimento. O e-mail é redigido com jargões técnicos, sem explicar o contexto. O subordinado entende a mensagem de forma equivocada e aplica o procedimento errado. Ao perceber o erro, o chefe conclui que "o subordinado não prestou atenção". Sobre o caso, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Houve comunicação eficaz: o chefe enviou a mensagem e o subordinado a recebeu.' },
+          { id: 'B', texto: 'Houve falha na comunicação, com ruído na CODIFICAÇÃO (jargões técnicos sem explicação de contexto) e ausência de FEEDBACK — o chefe não confirmou se o subordinado havia compreendido.' },
+          { id: 'C', texto: 'A falha foi exclusivamente do subordinado, que não prestou atenção.' },
+          { id: 'D', texto: 'Não houve falha, pois o e-mail é um canal formal e, por si só, garante a compreensão.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'A comunicação só se completa quando a mensagem é COMPREENDIDA. No caso, houve RUÍDO NA CODIFICAÇÃO (jargões técnicos sem contexto) e ausência de FEEDBACK (o chefe não confirmou a compreensão). Atribuir a falha ao subordinado (C) é simplista; afirmar que a comunicação foi eficaz (A) ignora a incompreensão; dizer que o canal formal garante compreensão (D) é incorreto. A chave é: transmitir ≠ comunicar.'
+      },
+      {
+        id: 'D-ADM-08-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Comunicação e comportamento organizacional',
+        pergunta: 'Você consegue, sem consultar, identificar os elementos da comunicação, diferenciar comunicação formal de informal, vertical de horizontal, conflito funcional de disfuncional e grupo de equipe?',
+        resposta: 'ELEMENTOS: emissor, codificação, mensagem, canal, decodificação, receptor, feedback e ruído. FORMAL (canais oficiais) x INFORMAL (relações interpessoais). VERTICAL (hierarquia — ascendente/descendente) x HORIZONTAL (entre pares). CONFLITO FUNCIONAL (construtivo) x DISFUNCIONAL (destrutivo). GRUPO (responsabilidade individual, sinergia neutra) x EQUIPE (responsabilidade mútua, sinergia positiva). NEGOCIAÇÃO: distributiva (ganha-perde) x integrativa (ganha-ganha).'
+      }
+    ]
+  },
+
+  /* ============================================================
+     ADM-09 — Gestão da Qualidade
+  ============================================================ */
+  'ADM-09': {
+    id: 'D-ADM-09',
+    moduloId: 'ADM-09',
+    itens: [
+      {
+        id: 'D-ADM-09-01',
+        tipo: 'multipla_escolha',
+        subtopico: 'PDCA',
+        pergunta: 'Sobre o ciclo PDCA, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'É uma sigla para Planejamento, Desenvolvimento, Controle e Avaliação — e é um processo linear.' },
+          { id: 'B', texto: 'É composto por PLAN (planejar), DO (executar), CHECK (verificar) e ACT (agir); é um ciclo contínuo — ao final do ACT, reinicia-se o PLAN com novas metas.' },
+          { id: 'C', texto: 'É uma ferramenta de comunicação interna, sem relação com a melhoria contínua.' },
+          { id: 'D', texto: 'É uma ferramenta exclusiva do setor privado, não aplicável ao setor público.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'PDCA = PLAN (planejar — metas e métodos), DO (executar — implementar), CHECK (verificar — avaliar resultados) e ACT (agir — corrigir e padronizar). É um ciclo CONTÍNUO: ao final do ACT, reinicia-se com novo PLAN. A alternativa A troca as fases e o trata como linear; C ignora sua função de melhoria; D restringe indevidamente.'
+      },
+      {
+        id: 'D-ADM-09-02',
+        tipo: 'multipla_escolha',
+        subtopico: 'Ishikawa x Pareto',
+        pergunta: 'Sobre o Diagrama de Ishikawa e o Diagrama de Pareto, é correto afirmar que:',
+        alternativas: [
+          { id: 'A', texto: 'Ishikawa prioriza as causas; Pareto identifica as causas.' },
+          { id: 'B', texto: 'Ishikawa identifica as CAUSAS de um problema (agrupadas em 6M); Pareto PRIORIZA as causas — 80% dos problemas decorrem de 20% das causas.' },
+          { id: 'C', texto: 'Ambos são a mesma ferramenta, apenas com nomes diferentes.' },
+          { id: 'D', texto: 'Pareto identifica as causas; Ishikawa prioriza.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'ISHIKAWA (espinha de peixe): identifica as CAUSAS do problema (agrupadas em 6M — mão de obra, método, máquina, material, medida e meio ambiente). PARETO: PRIORIZA as causas (princípio 80/20). São ferramentas complementares: Ishikawa investiga; Pareto prioriza. A alternativa A inverte; C iguala; D troca as funções.'
+      },
+      {
+        id: 'D-ADM-09-03',
+        tipo: 'multipla_escolha',
+        subtopico: '5W2H, Ishikawa e Pareto — aplicação (nível difícil)',
+        pergunta: 'Uma Secretaria de Saúde identificou que o tempo médio de espera por consulta é de 40 dias, muito acima da meta. A equipe de qualidade precisa, primeiro, identificar as causas do problema; depois, priorizar as principais causas; em seguida, montar um plano de ação com prazos e responsáveis. As ferramentas adequadas para cada etapa são, respectivamente:',
+        alternativas: [
+          { id: 'A', texto: 'Pareto, Ishikawa e 5W2H.' },
+          { id: 'B', texto: 'Ishikawa, Pareto e 5W2H.' },
+          { id: 'C', texto: '5W2H, Pareto e Ishikawa.' },
+          { id: 'D', texto: 'Ishikawa, 5W2H e Pareto.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'Primeiro, IDENTIFICAR as causas: ISHIKAWA (6M). Depois, PRIORIZAR as causas: PARETO (80/20). Por fim, MONTAR o plano de ação (o quê, por quê, onde, quando, quem, como, quanto custa): 5W2H. A sequência lógica é Ishikawa → Pareto → 5W2H. Esta é a aplicação mais fina das ferramentas e a que a banca mais cobra em questões difíceis.'
+      },
+      {
+        id: 'D-ADM-09-04',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Qualidade total',
+        pergunta: 'Qualidade total é uma abordagem que envolve todos os setores e todos os servidores da organização, com foco no usuário e comprometimento da alta direção.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'V',
+        explicacao: 'Verdadeiro. A QUALIDADE TOTAL (TQM) é uma abordagem sistêmica: envolve TODOS os setores e servidores, com foco no usuário e comprometimento da alta direção. Não é responsabilidade exclusiva de um setor ou da alta direção — é um compromisso coletivo.'
+      },
+      {
+        id: 'D-ADM-09-05',
+        tipo: 'verdadeiro_falso',
+        subtopico: 'Melhoria contínua x reengenharia',
+        pergunta: 'Melhoria contínua e reengenharia são sinônimos: ambas consistem em redesenhar radicalmente o processo, começando do zero.',
+        alternativas: [
+          { id: 'V', texto: 'Verdadeiro' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'Falso. MELHORIA CONTÍNUA (kaizen) é INCREMENTAL — pequenos ajustes sucessivos, sem ruptura. REENGENHARIA é RADICAL — redesenho completo, "começar do zero", com ruptura do processo atual. Uma aperfeiçoa; a outra reinventa.'
+      },
+      {
+        id: 'D-ADM-09-06',
+        tipo: 'situacao',
+        subtopico: 'Ferramentas da qualidade — escolha adequada',
+        pergunta: 'Um órgão público está com alto índice de reclamações no atendimento. A equipe de qualidade precisa: (a) identificar as possíveis causas do problema, agrupando-as por categorias (pessoas, método, ambiente, etc.); (b) verificar se poucas causas explicam a maior parte das reclamações, para priorizar ações; (c) estruturar um plano de ação com prazos e responsáveis. As ferramentas adequadas para (a), (b) e (c) são, respectivamente:',
+        alternativas: [
+          { id: 'A', texto: 'Ishikawa, Pareto e 5W2H.' },
+          { id: 'B', texto: 'Pareto, Ishikawa e 5W2H.' },
+          { id: 'C', texto: '5W2H, Ishikawa e Pareto.' },
+          { id: 'D', texto: 'Ishikawa, 5W2H e Pareto.' }
+        ],
+        gabarito: 'A',
+        explicacao: '(a) IDENTIFICAR causas agrupadas por categorias = ISHIKAWA (6M). (b) Verificar se poucas causas explicam a maior parte = PARETO (80/20). (c) Estruturar plano com prazos e responsáveis = 5W2H. A sequência é Ishikawa → Pareto → 5W2H. A chave é associar cada necessidade à ferramenta adequada.'
+      },
+      {
+        id: 'D-ADM-09-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Gestão da qualidade — conceitos fundamentais',
+        pergunta: 'Você consegue, sem consultar, explicar o PDCA, diferenciar Ishikawa de Pareto, aplicar o 5W2H e distinguir qualidade total de melhoria contínua?',
+        resposta: 'PDCA: PLAN (planejar), DO (executar), CHECK (verificar), ACT (agir) — cíclico. ISHIKAWA: identifica causas (6M). PARETO: prioriza causas (80/20). 5W2H: plano de ação (What, Why, Where, When, Who, How, How much). QUALIDADE TOTAL: abordagem ampla, com todos os setores e servidores envolvidos. MELHORIA CONTÍNUA: avanços incrementais permanentes (kaizen) — diferente da reengenharia (radical). INDICADORES: métricas de desempenho (tempo de espera, taxa de erro).'
+      }
+    ]
+  },
   /* ============================================================
      ADM-12 — Atendimento ao público e relações interpessoais
   ============================================================ */
@@ -288,3 +588,9 @@
       }
     ]
   }
+  /* ============================================================
+     PRÓXIMO SUB-LOTE (6.2):
+     ADM-12, DA-22, DA-24
+  ============================================================ */
+
+};
