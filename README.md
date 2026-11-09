@@ -1,1 +1,1 @@
-https://profeniclas-lab.github.io/meus-estudos-direito-constitucional/
+https://profeniclas-lab.github.io/Dir-Adm/
