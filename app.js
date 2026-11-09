@@ -1,10 +1,15 @@
 /* ============================================================
    MOTOR GENÉRICO — App de Estudos
-   Não contém conteúdo de matéria. Lê window.APP_CONFIG (config.js)
-   e mescla os arquivos de content/ com base em contentSuffixes.
+   v2.0 — quatro melhorias pedagógicas integradas
 
-   v1.1 — adiciona filtro de STATUS nas telas de Questões e Simulados
-          (todos / não respondidas / já respondidas / acertos / erros)
+   BLOCO 1: Cabeçalho, config, merge de conteúdo, estado persistido
+   BLOCO 2: Helpers base, diagnóstico, filtros, sessões
+   BLOCO 3: Navegação, render base, dashboard
+   BLOCO 4: Módulos, detalhe, aula, diagnóstico
+   BLOCO 5: Questões, banco, flashcards
+   BLOCO 6: Revisão adaptativa, banco de erros
+   BLOCO 7: Simulados, exercício pós-aula
+   BLOCO 8: Estatísticas, configurações, sobre, ações, eventos, init
    ============================================================ */
 (function () {
   'use strict';
@@ -13,14 +18,37 @@
   var CFG = window.APP_CONFIG || {};
   var APP_NAME       = CFG.appName       || 'ESTUDO';
   var APP_SUBTITLE   = CFG.appSubtitle   || '';
-  var APP_VERSION    = CFG.appVersion    || '1.0';
-  var SCHEMA_VERSION = CFG.schemaVersion || 1;
+  var APP_VERSION    = CFG.appVersion    || '2.0';
+  var SCHEMA_VERSION = CFG.schemaVersion || 2;
   var STORAGE_KEY    = CFG.storageKey    || 'appState.state';
   var AREA_LABELS    = CFG.areaLabels    || { GERAL: 'Geral' };
   var PRIORITY_LABELS= CFG.priorityLabels|| { alta: 'Alta', media: 'Média', baixa: 'Baixa' };
   var PRIORITY_ORDER = CFG.priorityOrder || ['alta', 'media', 'baixa'];
   var CONTENT_SUFFIXES = CFG.contentSuffixes || ['alta', 'media', 'complementar'];
   var SOBRE = CFG.sobre || {};
+
+  /* ---------- Melhorias pedagógicas ---------- */
+  var EXERCISE_CFG         = CFG.exerciseConfig || {};
+  var EXERCISE_TOTAL       = EXERCISE_CFG.totalQuestoes || 12;
+  var EXERCISE_DIST        = EXERCISE_CFG.distribuicao || { 1: 3, 2: 4, 3: 3, 4: 2 };
+  var EXERCISE_NIVEIS      = EXERCISE_CFG.niveisLabel || { 1: 'Nível 1', 2: 'Nível 2', 3: 'Nível 3', 4: 'Nível 4' };
+  var EXERCISE_NIVEIS_DESC = EXERCISE_CFG.niveisDescricao || {};
+  var EXERCISE_CLASSIF     = EXERCISE_CFG.classificacao || {};
+  var MASTERY_THRESHOLD    = EXERCISE_CFG.masteryThreshold || 75;
+
+  var ADAPTIVE_CFG         = CFG.adaptiveRevision || {};
+  var ADAPTIVE_INTERVALOS  = ADAPTIVE_CFG.intervalos || {};
+  var ADAPTIVE_DIFF_BONUS  = ADAPTIVE_CFG.dificuldadeBonusDias || { 1: 0, 2: 1, 3: 2 };
+  var ADAPTIVE_CONSEC_MULT = ADAPTIVE_CFG.acertoConsecutivoMultiplicador || 1.5;
+  var ADAPTIVE_CONSEC_MIN  = ADAPTIVE_CFG.acertoConsecutivoMinimo || 2;
+  var ADAPTIVE_MAX_DIAS    = ADAPTIVE_CFG.maxIntervaloDias || 120;
+  var ADAPTIVE_JANELA_ATRASO = ADAPTIVE_CFG.janelaRevisaoAtrasadaDias || 30;
+
+  var ERROR_CATS           = CFG.errorCategories || {};
+  var ERROR_CATS_ORDER     = CFG.errorCategoriesOrder || Object.keys(ERROR_CATS);
+
+  var PEDAGOGICAL_CFG      = CFG.pedagogicalComments || {};
+  var PEDAGOGICAL_FALLBACK = PEDAGOGICAL_CFG.fallbackSemExemplo || 'Exemplo inédito em produção para esta questão.';
 
   /* ---------- Merge dinâmico dos arquivos de conteúdo ---------- */
   var LESSONS = {};
@@ -36,6 +64,43 @@
   var MODULES    = Array.isArray(window.MODULES)    ? window.MODULES    : [];
   var QUESTIONS  = Array.isArray(window.QUESTIONS)  ? window.QUESTIONS  : [];
   var FLASHCARDS = Array.isArray(window.FLASHCARDS) ? window.FLASHCARDS : [];
+
+  /* ---------- Melhorias: conteúdo extra ---------- */
+  var EXERCISE_BLUEPRINTS = (window.EXERCISE_BLUEPRINTS && typeof window.EXERCISE_BLUEPRINTS === 'object') ? window.EXERCISE_BLUEPRINTS : {};
+  var EXERCISE_EXTRA      = Array.isArray(window.EXERCISE_EXTRA_QUESTIONS) ? window.EXERCISE_EXTRA_QUESTIONS : [];
+  var EXEMPLOS_INEDITOS   = (window.EXEMPLOS_INEDITOS && typeof window.EXEMPLOS_INEDITOS === 'object') ? window.EXEMPLOS_INEDITOS : {};
+
+  (function mergeExerciseExtras() {
+    var existingIds = {};
+    for (var i = 0; i < QUESTIONS.length; i++) existingIds[QUESTIONS[i].id] = true;
+    for (var j = 0; j < EXERCISE_EXTRA.length; j++) {
+      var q = EXERCISE_EXTRA[j];
+      if (!q || !q.id) { console.warn('[exercises] questão extra sem id, ignorada'); continue; }
+      if (String(q.id).indexOf('EX-') !== 0) { console.warn('[exercises] questão extra deve ter prefixo EX-:', q.id); continue; }
+      if (existingIds[q.id]) { console.warn('[exercises] questão extra duplicada:', q.id); continue; }
+      QUESTIONS.push(q);
+      existingIds[q.id] = true;
+    }
+  })();
+
+  (function validateExerciseBlueprints() {
+    if (!EXERCISE_BLUEPRINTS || !Object.keys(EXERCISE_BLUEPRINTS).length) return;
+    var allIds = {};
+    for (var i = 0; i < QUESTIONS.length; i++) allIds[QUESTIONS[i].id] = true;
+    for (var modId in EXERCISE_BLUEPRINTS) {
+      if (!EXERCISE_BLUEPRINTS.hasOwnProperty(modId)) continue;
+      var bp = EXERCISE_BLUEPRINTS[modId];
+      if (!bp || typeof bp !== 'object') continue;
+      for (var nivel in bp) {
+        if (!bp.hasOwnProperty(nivel)) continue;
+        var ids = bp[nivel];
+        if (!Array.isArray(ids)) continue;
+        for (var k = 0; k < ids.length; k++) {
+          if (!allIds[ids[k]]) console.warn('[exercises] blueprint ' + modId + '.' + nivel + ' referencia ID inexistente:', ids[k]);
+        }
+      }
+    }
+  })();
 
   /* ---------- Constantes de UI ---------- */
   var STATUS_LABELS = { 'conhecido': 'Conhecido', 'duvida': 'Em dúvida', 'desconhecido': 'Desconhecido' };
@@ -63,21 +128,64 @@
   var simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
   var simuladoRunning = null;
   var currentSimuladoId = null;
+  var exerciseRunning = null;
+  var exerciseFilter = { area: 'todas' };
+  var errorFilter = { area: 'todas', moduloId: 'todos', categoria: 'todas', tipo: 'todos' };
+  var errorClassificationPickerOpen = null;
 
   /* ============================================================
      ESTADO PERSISTIDO
   ============================================================ */
+  function ensureExtendedState(st) {
+    if (!st || typeof st !== 'object') return st;
+    if (!st.settings || typeof st.settings !== 'object') st.settings = { theme: 'light' };
+    if (st.settings.migratedToExerciseMastery === undefined) st.settings.migratedToExerciseMastery = false;
+    if (st.settings.ultimaMigracao === undefined) st.settings.ultimaMigracao = null;
+
+    if (!st.exercicios || typeof st.exercicios !== 'object' || Array.isArray(st.exercicios)) st.exercicios = {};
+    for (var mid in st.exercicios) {
+      if (!st.exercicios.hasOwnProperty(mid)) continue;
+      var ex = st.exercicios[mid];
+      if (!ex || typeof ex !== 'object' || Array.isArray(ex)) {
+        st.exercicios[mid] = { tentativas: 0, historico: [], ultimoPercentual: 0, melhorPercentual: 0, ultimaTentativa: null, dominado: false, legacyDominado: false };
+        continue;
+      }
+      if (typeof ex.tentativas !== 'number') ex.tentativas = 0;
+      if (!Array.isArray(ex.historico)) ex.historico = [];
+      if (typeof ex.ultimoPercentual !== 'number') ex.ultimoPercentual = 0;
+      if (typeof ex.melhorPercentual !== 'number') ex.melhorPercentual = 0;
+      if (ex.ultimaTentativa === undefined) ex.ultimaTentativa = null;
+      if (ex.dominado === undefined) ex.dominado = false;
+      if (ex.legacyDominado === undefined) ex.legacyDominado = false;
+    }
+
+    if (!st.questions || typeof st.questions !== 'object') st.questions = {};
+    for (var qid in st.questions) {
+      if (!st.questions.hasOwnProperty(qid)) continue;
+      var q = st.questions[qid];
+      if (!q || typeof q !== 'object') continue;
+      if (q.ultimaClassificacao === undefined) q.ultimaClassificacao = null;
+      if (typeof q.acertosConsecutivos !== 'number') q.acertosConsecutivos = 0;
+      if (!Array.isArray(q.historicoRevisoes)) q.historicoRevisoes = [];
+      if (!Array.isArray(q.errosDetalhados)) q.errosDetalhados = [];
+    }
+
+    return st;
+  }
+
   function createDefaultState() {
     var now = new Date().toISOString();
     return {
       schemaVersion: SCHEMA_VERSION, appVersion: APP_VERSION,
       createdAt: now, updatedAt: now,
-      settings: { theme: 'light' },
+      settings: { theme: 'light', migratedToExerciseMastery: false, ultimaMigracao: null },
       modules: {}, questions: {}, flashcards: {}, simulados: [],
+      exercicios: {},
       stats: { questoesRespondidas: 0, acertos: 0, erros: 0, flashcardsEstudados: 0, simuladosRealizados: 0, tempoEstudoMin: 0 },
       lastScreen: 'dashboard'
     };
   }
+
   function loadState() {
     try {
       var raw = localStorage.getItem(STORAGE_KEY);
@@ -85,7 +193,7 @@
       var parsed = JSON.parse(raw);
       if (!parsed || typeof parsed !== 'object') return createDefaultState();
       var base = createDefaultState();
-      return {
+      var state = {
         schemaVersion: SCHEMA_VERSION, appVersion: APP_VERSION,
         createdAt: parsed.createdAt || base.createdAt,
         updatedAt: parsed.updatedAt || base.updatedAt,
@@ -94,16 +202,75 @@
         questions: parsed.questions || {},
         flashcards: parsed.flashcards || {},
         simulados: Array.isArray(parsed.simulados) ? parsed.simulados : [],
+        exercicios: (parsed.exercicios && typeof parsed.exercicios === 'object') ? parsed.exercicios : {},
         stats: Object.assign({}, base.stats, parsed.stats || {}),
         lastScreen: parsed.lastScreen || 'dashboard'
       };
+      ensureExtendedState(state);
+      return state;
     } catch (e) { console.error('Falha ao ler estado:', e); return createDefaultState(); }
   }
+
   function saveState() {
+    if (!AppState) return;
     AppState.updatedAt = new Date().toISOString();
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(AppState)); }
     catch (e) { console.error('Falha ao salvar estado:', e); }
   }
+
+  function migrateToExerciseMastery() {
+    if (!AppState || !AppState.settings) return;
+    if (AppState.settings.migratedToExerciseMastery) return;
+    for (var i = 0; i < MODULES.length; i++) {
+      var modId = MODULES[i].id;
+      var st = AppState.modules[modId];
+      if (!st) continue;
+      var diag = st.diagnostico;
+      var legacyDom = diag && diag.result && (diag.result.dominioEstimado || 0) >= 1;
+      var lesson = getLessonByModuleId(modId);
+      var aulaLida = !lesson || (st.aulasLidas || []).indexOf(lesson.id) !== -1;
+      if (legacyDom && aulaLida && !AppState.exercicios[modId]) {
+        AppState.exercicios[modId] = {
+          tentativas: 0, historico: [], ultimoPercentual: 0, melhorPercentual: 0,
+          ultimaTentativa: null, dominado: true, legacyDominado: true
+        };
+      }
+    }
+    AppState.settings.migratedToExerciseMastery = true;
+    AppState.settings.ultimaMigracao = new Date().toISOString();
+    saveState();
+  }
+
+  function getModuleMastery(modId) {
+    var ex = AppState.exercicios && AppState.exercicios[modId];
+    if (ex) {
+      if (ex.legacyDominado && ex.tentativas === 0) return 100;
+      return typeof ex.melhorPercentual === 'number' ? ex.melhorPercentual : 0;
+    }
+    var st = AppState.modules && AppState.modules[modId];
+    if (st && st.diagnostico && st.diagnostico.result && (st.diagnostico.result.dominioEstimado || 0) >= 1) return 100;
+    return 0;
+  }
+
+  function getModuleUserExercicio(modId) {
+    if (!AppState.exercicios[modId]) {
+      AppState.exercicios[modId] = {
+        tentativas: 0, historico: [], ultimoPercentual: 0, melhorPercentual: 0,
+        ultimaTentativa: null, dominado: false, legacyDominado: false
+      };
+    }
+    return AppState.exercicios[modId];
+  }
+
+  function getModuleDominioLabel(modId) {
+    var m = getModuleMastery(modId);
+    if (m >= 90) return { label: 'Excelente domínio', cls: 'ok', pct: m };
+    if (m >= 75) return { label: 'Bom domínio', cls: 'ok', pct: m };
+    if (m >= 60) return { label: 'Domínio parcial', cls: 'warn', pct: m };
+    if (m > 0)   return { label: 'Precisa revisar', cls: 'err', pct: m };
+    return { label: 'Sem avaliação', cls: 'none', pct: 0 };
+  }
+
   function getModuleUserState(modId) {
     if (!AppState.modules[modId]) AppState.modules[modId] = { status: 'nao_iniciado', aulasLidas: [], diagnostico: null, dominioEstimado: 0, ultimaAtividade: null };
     if (!Array.isArray(AppState.modules[modId].aulasLidas)) AppState.modules[modId].aulasLidas = [];
@@ -116,39 +283,54 @@
     if (st.status === 'concluido') return true;
     var lesson = getLessonByModuleId(modId);
     var aulaLida = !lesson || (st.aulasLidas || []).indexOf(lesson.id) !== -1;
-    var dominio100 = (st.dominioEstimado || 0) >= 1;
-    return aulaLida && dominio100;
+    return aulaLida && getModuleMastery(modId) >= MASTERY_THRESHOLD;
   }
+
   function checkModuleCompletion(modId) {
     var st = getModuleUserState(modId);
     var lesson = getLessonByModuleId(modId);
     var aulaLida = !lesson || (st.aulasLidas || []).indexOf(lesson.id) !== -1;
-    var dominio100 = (st.dominioEstimado || 0) >= 1;
-    if (aulaLida && dominio100) st.status = 'concluido';
+    var domMastery = getModuleMastery(modId) >= MASTERY_THRESHOLD;
+    if (aulaLida && domMastery) st.status = 'concluido';
     else if (st.status === 'concluido') st.status = 'em_estudo';
     else if (st.status === 'nao_iniciado') {
-      if ((st.aulasLidas && st.aulasLidas.length > 0) || st.diagnostico) st.status = 'em_estudo';
+      if ((st.aulasLidas && st.aulasLidas.length > 0) || st.diagnostico || (AppState.exercicios && AppState.exercicios[modId])) st.status = 'em_estudo';
     }
   }
 
   function getQuestionUserState(qid) {
     if (!AppState.questions[qid]) {
-      AppState.questions[qid] = { tentativas: 0, acertos: 0, erros: 0, ultimaResposta: null, ultimaCorreta: null, ultimaTentativa: null, status: 'nao_respondida', historico: [], intervaloAtual: -1, proximaRevisao: null };
+      AppState.questions[qid] = {
+        tentativas: 0, acertos: 0, erros: 0,
+        ultimaResposta: null, ultimaCorreta: null, ultimaTentativa: null,
+        status: 'nao_respondida', historico: [], intervaloAtual: -1, proximaRevisao: null,
+        ultimaClassificacao: null, acertosConsecutivos: 0, historicoRevisoes: [], errosDetalhados: []
+      };
     }
-    if (AppState.questions[qid].intervaloAtual === undefined) AppState.questions[qid].intervaloAtual = -1;
-    if (AppState.questions[qid].proximaRevisao === undefined) AppState.questions[qid].proximaRevisao = null;
-    return AppState.questions[qid];
+    var qs = AppState.questions[qid];
+    if (qs.intervaloAtual === undefined) qs.intervaloAtual = -1;
+    if (qs.proximaRevisao === undefined) qs.proximaRevisao = null;
+    if (qs.ultimaClassificacao === undefined) qs.ultimaClassificacao = null;
+    if (typeof qs.acertosConsecutivos !== 'number') qs.acertosConsecutivos = 0;
+    if (!Array.isArray(qs.historicoRevisoes)) qs.historicoRevisoes = [];
+    if (!Array.isArray(qs.errosDetalhados)) qs.errosDetalhados = [];
+    return qs;
   }
+
   function getFlashcardUserState(fid) {
     if (!AppState.flashcards[fid]) {
       AppState.flashcards[fid] = { ultimaResposta: null, ultimaVez: null, repeticoes: 0, acertos: 0, duvidas: 0, erros: 0, intervaloAtual: 0, proximaRevisao: null, historico: [] };
     }
     return AppState.flashcards[fid];
   }
+
   function getSimulado(id) {
     for (var i = 0; i < AppState.simulados.length; i++) if (AppState.simulados[i].id === id) return AppState.simulados[i];
     return null;
   }
+  /* ============================================================
+     BLOCO 2 — Helpers base, diagnóstico, filtros, sessões
+  ============================================================ */
 
   /* ---------- Helpers ---------- */
   function esc(s) { return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;'); }
@@ -175,17 +357,62 @@
   function addDaysIso(days) { var d = new Date(); d.setDate(d.getDate() + days); return d.toISOString(); }
   function isDue(iso) { if (!iso) return false; var t = new Date(iso).getTime(); return isFinite(t) && t <= Date.now(); }
   function isToday(iso) { if (!iso) return false; var d = new Date(iso); var now = new Date(); return d.getFullYear() === now.getFullYear() && d.getMonth() === now.getMonth() && d.getDate() === now.getDate(); }
+  function daysSince(iso) {
+    if (!iso) return 0;
+    var t = new Date(iso).getTime();
+    if (!isFinite(t)) return 0;
+    return Math.floor((Date.now() - t) / 86400000);
+  }
+  function daysUntil(iso) {
+    if (!iso) return 0;
+    var t = new Date(iso).getTime();
+    if (!isFinite(t)) return 0;
+    return Math.ceil((t - Date.now()) / 86400000);
+  }
 
+  /* ---------- Consultas de revisão ---------- */
   function getDueQuestions() { var out = []; for (var i = 0; i < QUESTIONS.length; i++) { var qs = AppState.questions[QUESTIONS[i].id]; if (!qs || !qs.proximaRevisao) continue; if (isDue(qs.proximaRevisao)) out.push(QUESTIONS[i]); } return out; }
   function getTodayQuestions() { var out = []; for (var i = 0; i < QUESTIONS.length; i++) { var qs = AppState.questions[QUESTIONS[i].id]; if (!qs || !qs.proximaRevisao) continue; if (!isDue(qs.proximaRevisao) && isToday(qs.proximaRevisao)) out.push(QUESTIONS[i]); } return out; }
   function getFutureQuestions() { var out = []; for (var i = 0; i < QUESTIONS.length; i++) { var qs = AppState.questions[QUESTIONS[i].id]; if (!qs || !qs.proximaRevisao) continue; if (!isDue(qs.proximaRevisao) && !isToday(qs.proximaRevisao)) out.push({ q: QUESTIONS[i], iso: qs.proximaRevisao }); } out.sort(function (a, b) { return new Date(a.iso) - new Date(b.iso); }); return out; }
   function getDueFlashcards() { var out = []; for (var i = 0; i < FLASHCARDS.length; i++) { var fs = AppState.flashcards[FLASHCARDS[i].id]; if (!fs || !fs.proximaRevisao) continue; if (isDue(fs.proximaRevisao)) out.push(FLASHCARDS[i]); } return out; }
   function getTodayFlashcards() { var out = []; for (var i = 0; i < FLASHCARDS.length; i++) { var fs = AppState.flashcards[FLASHCARDS[i].id]; if (!fs || !fs.proximaRevisao) continue; if (!isDue(fs.proximaRevisao) && isToday(fs.proximaRevisao)) out.push(FLASHCARDS[i]); } return out; }
   function getFutureFlashcards() { var out = []; for (var i = 0; i < FLASHCARDS.length; i++) { var fs = AppState.flashcards[FLASHCARDS[i].id]; if (!fs || !fs.proximaRevisao) continue; if (!isDue(fs.proximaRevisao) && !isToday(fs.proximaRevisao)) out.push({ fc: FLASHCARDS[i], iso: fs.proximaRevisao }); } out.sort(function (a, b) { return new Date(a.iso) - new Date(b.iso); }); return out; }
-  function getErrorQuestions() { var out = []; for (var i = 0; i < QUESTIONS.length; i++) { var qs = AppState.questions[QUESTIONS[i].id]; if (!qs) continue; if (qs.erros > 0 && qs.ultimaCorreta !== true) out.push(QUESTIONS[i]); } return out; }
-  function countDueAll() { return getDueQuestions().length + getDueFlashcards().length; }
-  function countErrorsAll() { return getErrorQuestions().length; }
 
+  function getErrorQuestions() {
+    /* Todas as questões com pelo menos 1 erro registrado (histórico preservado). */
+    var out = [];
+    for (var i = 0; i < QUESTIONS.length; i++) {
+      var qs = AppState.questions[QUESTIONS[i].id];
+      if (qs && qs.erros > 0) out.push(QUESTIONS[i]);
+    }
+    return out;
+  }
+  function getUnresolvedErrors() {
+    /* Questões com pelo menos 1 erro detalhado ainda não marcado como resolvido. */
+    var out = [];
+    for (var i = 0; i < QUESTIONS.length; i++) {
+      var qs = AppState.questions[QUESTIONS[i].id];
+      if (!qs || !qs.errosDetalhados || !qs.errosDetalhados.length) continue;
+      for (var j = 0; j < qs.errosDetalhados.length; j++) {
+        if (!qs.errosDetalhados[j].resolvido) { out.push(QUESTIONS[i]); break; }
+      }
+    }
+    return out;
+  }
+  function getRecurringErrorQuestions() {
+    /* Questões com 2+ erros. */
+    var out = [];
+    for (var i = 0; i < QUESTIONS.length; i++) {
+      var qs = AppState.questions[QUESTIONS[i].id];
+      if (qs && qs.erros >= 2) out.push(QUESTIONS[i]);
+    }
+    return out;
+  }
+
+  function countDueAll() { return getDueQuestions().length + getDueFlashcards().length; }
+  function countErrorsAll() { return getUnresolvedErrors().length; }
+
+  /* ---------- Diagnóstico ---------- */
   function computeDiagnosticResult(moduleId, answers) {
     var diag = getDiagnosticByModuleId(moduleId);
     if (!diag) return null;
@@ -231,7 +458,176 @@
   }
   function negativosNoTotal(bySubtopic) { var n = 0; for (var k in bySubtopic) if (bySubtopic.hasOwnProperty(k)) n += bySubtopic[k].erros + bySubtopic[k].nao_sabia; return n; }
 
-  /* ---------- Filtros de Questões ---------- */
+  /* ============================================================
+     NOVOS HELPERS — Melhorias 1, 2, 3, 4
+  ============================================================ */
+
+  /* Melhoria 4 — Exemplo inédito */
+  function getExemploInedito(qid) {
+    var txt = EXEMPLOS_INEDITOS[qid];
+    return (txt && String(txt).trim()) ? String(txt) : PEDAGOGICAL_FALLBACK;
+  }
+
+  /* Melhoria 3 — Sugestão heurística de categoria de erro */
+  function suggestErrorCategory(q, chosenId) {
+    if (!q) return 'desconhecimento';
+    var inc = q.explicacao && q.explicacao.incorretas && q.explicacao.incorretas[chosenId];
+    if (inc) {
+      var txt = String(inc).toLowerCase();
+      if (txt.indexOf('confund') >= 0 || txt.indexOf('troca') >= 0 || txt.indexOf('invert') >= 0) return 'confusao';
+      if (txt.indexOf('exce') >= 0 || txt.indexOf('ressalva') >= 0 || txt.indexOf('salvo') >= 0) return 'desatencao';
+      if (txt.indexOf('art.') >= 0 || txt.indexOf('lei ') >= 0 || txt.indexOf('dispositivo') >= 0) return 'legislacao';
+      if (q.tipo === 'REAL' && q.banca) return 'pegadinha';
+      if (q.dificuldade >= 3) return 'aplicacao';
+      if (txt.indexOf('enunciado') >= 0 || txt.indexOf('incorreta') >= 0 || txt.indexOf('exceto') >= 0) return 'interpretacao';
+    }
+    return 'desconhecimento';
+  }
+
+  /* Melhoria 2 — Cálculo de intervalo adaptativo */
+  function computeAdaptiveInterval(qid, classificacao) {
+    var qs = getQuestionUserState(qid);
+    var q = getQuestion(qid);
+    if (!q) return 1;
+    var progression = ADAPTIVE_INTERVALOS[classificacao] || ADAPTIVE_INTERVALOS.desconhecimento || [1, 3, 7];
+    var idx = (typeof qs.intervaloAtual === 'number' && qs.intervaloAtual >= 0) ? qs.intervaloAtual : 0;
+    if (classificacao === 'seguranca') {
+      idx = Math.min(idx + 1, progression.length - 1);
+    } else if (classificacao === 'duvida') {
+      if (qs.acertosConsecutivos >= 2) idx = Math.min(idx + 1, progression.length - 1);
+    } else {
+      idx = 0;
+    }
+    var baseDias = progression[idx];
+    var diffBonus = ADAPTIVE_DIFF_BONUS[q.dificuldade] || 0;
+    var dias = baseDias + diffBonus;
+    if (classificacao === 'seguranca' && qs.acertosConsecutivos >= ADAPTIVE_CONSEC_MIN) {
+      dias = Math.round(dias * ADAPTIVE_CONSEC_MULT);
+    }
+    dias = Math.max(1, Math.min(dias, ADAPTIVE_MAX_DIAS));
+    qs.intervaloAtual = idx;
+    return dias;
+  }
+
+  /* Melhoria 2 — Normalização de classificação */
+  function normalizeClassification(correct, classificacao) {
+    var validos = ['seguranca', 'duvida', 'confusao', 'desconhecimento', 'interpretacao'];
+    if (classificacao && validos.indexOf(classificacao) !== -1) return classificacao;
+    return correct ? 'seguranca' : 'desconhecimento';
+  }
+
+  /* Melhoria 1 — Blueprint de exercício */
+  function getExerciseBlueprint(modId) {
+    return EXERCISE_BLUEPRINTS[modId] || null;
+  }
+
+  function getExerciseQuestions(modId) {
+    /* Retorna lista ordenada por nível: [{q, nivel}], até 12 questões.
+       Estratégia:
+       1. Se há blueprint, resolve os IDs nível a nível.
+       2. Completa com questões do módulo (embaralhadas) se faltar.
+       3. Se ainda faltar, permite reutilizar questões já resolvidas do próprio módulo.
+    */
+    var bp = getExerciseBlueprint(modId);
+    var result = [];
+    var usedIds = {};
+    if (bp) {
+      for (var nivel = 1; nivel <= 4; nivel++) {
+        var wanted = (EXERCISE_DIST[nivel] || 0);
+        var ids = (bp['nivel' + nivel] || []).slice();
+        var got = 0;
+        for (var i = 0; i < ids.length && got < wanted; i++) {
+          var q = getQuestion(ids[i]);
+          if (q && !usedIds[q.id]) { result.push({ q: q, nivel: nivel }); usedIds[q.id] = true; got++; }
+        }
+      }
+    }
+    /* Fallback: completar com questões do módulo */
+    if (result.length < EXERCISE_TOTAL) {
+      var pool = [];
+      for (var j = 0; j < QUESTIONS.length; j++) {
+        if (QUESTIONS[j].moduloId === modId && !usedIds[QUESTIONS[j].id]) pool.push(QUESTIONS[j]);
+      }
+      pool = shuffleArray(pool);
+      var nivelAtual = 1;
+      for (var k = 0; k < pool.length && result.length < EXERCISE_TOTAL; k++) {
+        /* Distribuição justa dos níveis que faltam */
+        for (nivelAtual = 1; nivelAtual <= 4; nivelAtual++) {
+          var atualNoNivel = 0;
+          for (var c = 0; c < result.length; c++) if (result[c].nivel === nivelAtual) atualNoNivel++;
+          if (atualNoNivel < (EXERCISE_DIST[nivelAtual] || 0)) {
+            result.push({ q: pool[k], nivel: nivelAtual });
+            usedIds[pool[k].id] = true;
+            break;
+          }
+        }
+      }
+    }
+    /* Reembaralhar mantendo agrupamento por nível (nível 1 → 4) */
+    var porNivel = { 1: [], 2: [], 3: [], 4: [] };
+    for (var r = 0; r < result.length; r++) porNivel[result[r].nivel].push(result[r]);
+    var final = [];
+    for (var nv = 1; nv <= 4; nv++) final = final.concat(shuffleArray(porNivel[nv]));
+    return final;
+  }
+
+  /* Melhoria 1 — Classificação de desempenho no exercício */
+  function classifyExercisePerformance(pct) {
+    if (pct >= 90) return EXERCISE_CLASSIF.excelente || { label: 'Excelente domínio', cls: 'ok' };
+    if (pct >= 75) return EXERCISE_CLASSIF.bom || { label: 'Bom domínio', cls: 'ok' };
+    if (pct >= 60) return EXERCISE_CLASSIF.parcial || { label: 'Domínio parcial', cls: 'warn' };
+    return EXERCISE_CLASSIF.revisar || { label: 'Precisa revisar', cls: 'err' };
+  }
+
+  /* Melhoria 3 — Estatísticas do banco de erros */
+  function getErrorStats() {
+    var total = 0, naoResolvidos = 0, recorrentes = 0;
+    var porCategoria = {};
+    for (var i = 0; i < ERROR_CATS_ORDER.length; i++) porCategoria[ERROR_CATS_ORDER[i]] = 0;
+    var porModulo = {};
+    for (var q = 0; q < QUESTIONS.length; q++) {
+      var qs = AppState.questions[QUESTIONS[q].id];
+      if (!qs || !qs.errosDetalhados || !qs.errosDetalhados.length) continue;
+      for (var j = 0; j < qs.errosDetalhados.length; j++) {
+        var e = qs.errosDetalhados[j];
+        total++;
+        if (!e.resolvido) naoResolvidos++;
+        if (porCategoria[e.categoria] !== undefined) porCategoria[e.categoria]++;
+        if (!porModulo[QUESTIONS[q].moduloId]) porModulo[QUESTIONS[q].moduloId] = 0;
+        porModulo[QUESTIONS[q].moduloId]++;
+      }
+      if (qs.erros >= 2) recorrentes++;
+    }
+    return { total: total, naoResolvidos: naoResolvidos, recorrentes: recorrentes, porCategoria: porCategoria, porModulo: porModulo };
+  }
+
+  /* Melhoria 3 — Dificuldades recorrentes por subtópico */
+  function getRecurringDifficulties() {
+    var porSubtema = {};
+    for (var i = 0; i < QUESTIONS.length; i++) {
+      var q = QUESTIONS[i];
+      var qs = AppState.questions[q.id];
+      if (!qs || !qs.errosDetalhados || !qs.errosDetalhados.length) continue;
+      var key = q.moduloId + '::' + (q.subtema || 'geral');
+      if (!porSubtema[key]) porSubtema[key] = { moduloId: q.moduloId, subtema: q.subtema || 'Geral', count: 0, cats: {} };
+      for (var j = 0; j < qs.errosDetalhados.length; j++) {
+        var e = qs.errosDetalhados[j];
+        if (e.resolvido) continue;
+        porSubtema[key].count++;
+        porSubtema[key].cats[e.categoria] = (porSubtema[key].cats[e.categoria] || 0) + 1;
+      }
+    }
+    var arr = [];
+    for (var k in porSubtema) if (porSubtema.hasOwnProperty(k)) {
+      if (porSubtema[k].count >= 2) arr.push(porSubtema[k]);
+    }
+    arr.sort(function (a, b) { return b.count - a.count; });
+    return arr;
+  }
+
+  /* ============================================================
+     FILTROS DE QUESTÕES
+  ============================================================ */
   function filterQuestions() {
     return QUESTIONS.filter(function (q) {
       if (questionFilter.area !== 'todas' && q.area !== questionFilter.area) return false;
@@ -257,51 +653,136 @@
     }
     return n;
   }
+
+  /* ============================================================
+     SESSÃO DE QUESTÕES
+  ============================================================ */
   function startQuestionSession(ids, modo) {
     var list;
     if (ids && ids.length) list = ids.map(getQuestion).filter(Boolean);
     else list = filterQuestions();
     if (list.length === 0) { window.alert('Nenhuma questão disponível para esta sessão.'); return; }
     var idsArr = shuffleArray(list.map(function (q) { return q.id; }));
-    questionRunning = { ids: idsArr, index: 0, respostas: {}, revealed: {}, startedAt: new Date().toISOString(), modo: modo || 'livre' };
+    questionRunning = { ids: idsArr, index: 0, respostas: {}, revealed: {}, startedAt: new Date().toISOString(), modo: modo || 'livre', classificacoes: {} };
     navigate('questao-run');
   }
-  function commitQuestionAnswer(qid, altId) {
-    var q = getQuestion(qid); if (!q) return;
+
+  /* Reformulado — Melhorias 2, 3 e 4 */
+  function commitQuestionAnswer(qid, altId, opts) {
+    opts = opts || {};
+    var q = getQuestion(qid); if (!q) return null;
     var qs = getQuestionUserState(qid);
     var correta = altId === q.gabarito;
+    var classificacao = normalizeClassification(correta, opts.classificacao);
+
     qs.tentativas += 1;
-    if (correta) qs.acertos += 1; else qs.erros += 1;
-    qs.ultimaResposta = altId; qs.ultimaCorreta = correta; qs.ultimaTentativa = new Date().toISOString();
-    qs.status = correta ? 'acerto' : 'erro';
-    qs.historico.push({ data: qs.ultimaTentativa, resposta: altId, correta: correta });
-    if (qs.historico.length > 30) qs.historico = qs.historico.slice(-30);
     if (correta) {
-      if (qs.intervaloAtual < 0) qs.intervaloAtual = 0;
-      else if (qs.intervaloAtual < Q_INTERVALS.length - 1) qs.intervaloAtual += 1;
-      qs.proximaRevisao = addDaysIso(Q_INTERVALS[qs.intervaloAtual]);
-    } else { qs.intervaloAtual = 0; qs.proximaRevisao = addDaysIso(Q_INTERVALS[0]); }
+      qs.acertos += 1;
+      qs.acertosConsecutivos = (qs.acertosConsecutivos || 0) + 1;
+    } else {
+      qs.erros += 1;
+      qs.acertosConsecutivos = 0;
+    }
+    qs.ultimaResposta = altId;
+    qs.ultimaCorreta = correta;
+    qs.ultimaTentativa = new Date().toISOString();
+    qs.ultimaClassificacao = classificacao;
+    qs.status = correta ? 'acerto' : 'erro';
+
+    qs.historico.push({ data: qs.ultimaTentativa, resposta: altId, correta: correta, classificacao: classificacao });
+    if (qs.historico.length > 50) qs.historico = qs.historico.slice(-50);
+
+    /* Melhoria 3 — registro de erro detalhado */
+    if (!correta) {
+      var cat = opts.categoriaErro || suggestErrorCategory(q, altId);
+      qs.errosDetalhados.push({
+        data: qs.ultimaTentativa,
+        escolhida: altId,
+        correta: q.gabarito,
+        categoria: cat,
+        sugeridaPeloSistema: !opts.categoriaErro,
+        resolvido: false
+      });
+      if (qs.errosDetalhados.length > 50) qs.errosDetalhados = qs.errosDetalhados.slice(-50);
+    } else if (qs.errosDetalhados.length > 0) {
+      /* Acerto posterior → marcar todos os erros anteriores como resolvidos */
+      for (var i = 0; i < qs.errosDetalhados.length; i++) {
+        if (!qs.errosDetalhados[i].resolvido) qs.errosDetalhados[i].resolvido = true;
+      }
+    }
+
+    /* Melhoria 2 — intervalo adaptativo */
+    var dias = computeAdaptiveInterval(qid, classificacao);
+    qs.proximaRevisao = addDaysIso(dias);
+    qs.historicoRevisoes.push({ data: qs.ultimaTentativa, classificacao: classificacao, intervaloAplicado: dias });
+    if (qs.historicoRevisoes.length > 30) qs.historicoRevisoes = qs.historicoRevisoes.slice(-30);
+
     AppState.stats.questoesRespondidas += 1;
     if (correta) AppState.stats.acertos += 1; else AppState.stats.erros += 1;
+
     var st = getModuleUserState(q.moduloId);
     if (st.status === 'nao_iniciado') st.status = 'em_estudo';
     st.ultimaAtividade = new Date().toISOString();
     saveState();
+
+    return {
+      correta: correta,
+      classificacao: classificacao,
+      categoriaErro: !correta ? qs.errosDetalhados[qs.errosDetalhados.length - 1].categoria : null,
+      proximaRevisao: qs.proximaRevisao,
+      diasAteRevisao: dias
+    };
   }
+
   function answerQuestion(altId) {
     if (!questionRunning) return;
     var qid = questionRunning.ids[questionRunning.index];
     if (Object.prototype.hasOwnProperty.call(questionRunning.respostas, qid)) return;
     questionRunning.respostas[qid] = altId;
     questionRunning.revealed[qid] = true;
-    commitQuestionAnswer(qid, altId);
+    var result = commitQuestionAnswer(qid, altId, {});
+    questionRunning.classificacoes[qid] = result ? result.classificacao : null;
     render(); renderNavBadges();
   }
+
+  /* Melhoria 2 — reclassificação pelo aluno */
+  function setQuestionClassification(qid, classificacao) {
+    if (!questionRunning) return;
+    var validos = ['seguranca', 'duvida', 'confusao', 'desconhecimento', 'interpretacao'];
+    if (validos.indexOf(classificacao) === -1) return;
+    var qs = getQuestionUserState(qid);
+    qs.ultimaClassificacao = classificacao;
+    /* Recalcular próxima revisão com base na nova classificação */
+    var dias = computeAdaptiveInterval(qid, classificacao);
+    qs.proximaRevisao = addDaysIso(dias);
+    if (qs.historicoRevisoes && qs.historicoRevisoes.length > 0) {
+      qs.historicoRevisoes[qs.historicoRevisoes.length - 1].classificacao = classificacao;
+      qs.historicoRevisoes[qs.historicoRevisoes.length - 1].intervaloAplicado = dias;
+    }
+    if (questionRunning) questionRunning.classificacoes[qid] = classificacao;
+    saveState(); render();
+  }
+
+  /* Melhoria 3 — reclassificação da categoria do erro */
+  function setQuestionErrorCategory(qid, categoria) {
+    var qs = getQuestionUserState(qid);
+    if (!qs.errosDetalhados || !qs.errosDetalhados.length) return;
+    var ultimo = qs.errosDetalhados[qs.errosDetalhados.length - 1];
+    if (!ultimo) return;
+    if (ERROR_CATS_ORDER.indexOf(categoria) === -1) return;
+    ultimo.categoria = categoria;
+    ultimo.sugeridaPeloSistema = false;
+    saveState(); render();
+  }
+
   function nextQuestion() { if (questionRunning && questionRunning.index < questionRunning.ids.length - 1) { questionRunning.index += 1; render(); var main = document.getElementById('main'); if (main) main.scrollTop = 0; } }
   function prevQuestion() { if (questionRunning && questionRunning.index > 0) { questionRunning.index -= 1; render(); var main = document.getElementById('main'); if (main) main.scrollTop = 0; } }
   function cancelQuestionSession() { if (!window.confirm('Cancelar a sessão? As respostas já registradas serão mantidas no histórico.')) return; questionRunning = null; navigate('questoes'); }
   function finishQuestionSession() { if (!questionRunning) return; var sess = questionRunning; questionRunning = null; window.__lastSession = sess; navigate('questao-result'); }
 
+  /* ============================================================
+     SESSÃO DE FLASHCARDS
+  ============================================================ */
   function startFlashcardSession(ids, modo) {
     if (!ids || ids.length === 0) { window.alert('Nenhum flashcard para estudar com esses filtros.'); return; }
     flashcardRunning = { ids: shuffleArray(ids), index: 0, respostas: {}, revelado: false, startedAt: new Date().toISOString(), modo: modo || 'livre' };
@@ -338,7 +819,9 @@
   }
   function cancelFlashcardSession() { if (!window.confirm('Cancelar a sessão de flashcards? As respostas já registradas serão mantidas.')) return; flashcardRunning = null; navigate('flashcards'); }
 
-  /* ---------- Filtros de Simulados ---------- */
+  /* ============================================================
+     FILTROS DE SIMULADOS E SESSÃO
+  ============================================================ */
   function filterForSimulado() {
     var cfg = simuladoConfig;
     return QUESTIONS.filter(function (q) {
@@ -442,11 +925,19 @@
     AppState.simulados = arr; saveState(); render();
   }
   function openSimuladoDetail(id) { if (!getSimulado(id)) return; currentSimuladoId = id; navigate('simulado-result'); }
-
   /* ============================================================
-     NAVEGAÇÃO / RENDER BASE
+     BLOCO 3 — Navegação, render base, dashboard
   ============================================================ */
-  var VALID_SCREENS = ['dashboard','modulos','modulo-detalhe','licao','diagnostico','diag-resultado','questoes','questao-run','questao-result','banco-questoes','flashcards','flashcard-run','flashcard-result','revisao','erros','simulados','simulado-run','simulado-result','estatisticas','configuracoes','sobre'];
+  var VALID_SCREENS = [
+    'dashboard', 'modulos', 'modulo-detalhe', 'licao',
+    'diagnostico', 'diag-resultado',
+    'questoes', 'questao-run', 'questao-result', 'banco-questoes',
+    'flashcards', 'flashcard-run', 'flashcard-result',
+    'revisao', 'erros',
+    'simulados', 'simulado-run', 'simulado-result',
+    'exercicio-run', 'exercicio-result',
+    'estatisticas', 'configuracoes', 'sobre'
+  ];
 
   function navigate(screen, opts) {
     opts = opts || {};
@@ -458,6 +949,7 @@
       if (currentLessonId) { var lesson = getLessonById(currentLessonId); if (lesson) currentModuleId = lesson.moduloId; }
     }
     if (screen === 'diagnostico' || screen === 'diag-resultado') { if (opts.moduleId) currentModuleId = opts.moduleId; }
+    if (screen === 'exercicio-run' || screen === 'exercicio-result') { if (opts.moduleId) currentModuleId = opts.moduleId; }
     AppState.lastScreen = screen; saveState();
     document.body.classList.remove('sidebar-open');
     professorAnswerOpen = null;
@@ -485,12 +977,14 @@
     var sub = document.getElementById('brandSubtitle'); if (sub) sub.textContent = APP_SUBTITLE;
     document.title = APP_NAME + ' v' + APP_VERSION + (APP_SUBTITLE ? ' — ' + APP_SUBTITLE : '');
   }
+
   function renderNavBadges() {
     var dueN = countDueAll(), errN = countErrorsAll();
     var bRev = document.getElementById('navBadgeRevisao'), bErr = document.getElementById('navBadgeErros');
     if (bRev) { if (dueN > 0) { bRev.textContent = dueN; bRev.style.display = 'inline-block'; } else bRev.style.display = 'none'; }
     if (bErr) { if (errN > 0) { bErr.textContent = errN; bErr.style.display = 'inline-block'; } else bErr.style.display = 'none'; }
   }
+
   function renderSidebarActive() {
     var items = document.querySelectorAll('.nav-item');
     for (var i = 0; i < items.length; i++) {
@@ -500,6 +994,8 @@
         (currentScreen === 'licao' && target === 'modulos') ||
         (currentScreen === 'diagnostico' && target === 'modulos') ||
         (currentScreen === 'diag-resultado' && target === 'modulos') ||
+        (currentScreen === 'exercicio-run' && target === 'modulos') ||
+        (currentScreen === 'exercicio-result' && target === 'modulos') ||
         (currentScreen === 'questao-run' && target === 'questoes') ||
         (currentScreen === 'questao-result' && target === 'questoes') ||
         (currentScreen === 'flashcard-run' && target === 'flashcards') ||
@@ -509,6 +1005,7 @@
       items[i].classList.toggle('active', active);
     }
   }
+
   function renderMain() {
     var main = document.getElementById('main'); if (!main) return;
     var html = '';
@@ -531,6 +1028,8 @@
       case 'simulados': html = renderSimulados(); break;
       case 'simulado-run': html = renderSimuladoRun(); break;
       case 'simulado-result': html = renderSimuladoResult(); break;
+      case 'exercicio-run': html = renderExerciseRun(); break;
+      case 'exercicio-result': html = renderExerciseResult(); break;
       case 'estatisticas': html = renderEstatisticas(); break;
       case 'configuracoes': html = renderSettings(); break;
       case 'sobre': html = renderAbout(); break;
@@ -560,7 +1059,7 @@
         var m = MODULES[j];
         if (m.prioridade !== PRIORITY_ORDER[os]) continue;
         if (!getDiagnosticByModuleId(m.id) && !getLessonByModuleId(m.id)) continue;
-        if (isModuleConcluido(m.id)) continue;
+        if (getModuleMastery(m.id) >= MASTERY_THRESHOLD) continue;
         sugestoes.push({ tipo: 'modulo', modulo: m });
       }
     }
@@ -580,9 +1079,9 @@
     html += '<h2 class="section-title">O que estudar hoje?</h2>';
     if (sugestoes.length === 0) {
       var totalConcluidos = 0;
-      for (var mc = 0; mc < MODULES.length; mc++) if (isModuleConcluido(MODULES[mc].id)) totalConcluidos++;
-      if (totalConcluidos === MODULES.length && MODULES.length > 0) html += '<div class="notice"><strong>🎉 Parabéns!</strong> Todos os ' + MODULES.length + ' módulos foram concluídos (aula lida + diagnóstico 100%). Mantenha as revisões e pratique simulados.</div>';
-      else html += '<div class="notice"><strong>Sem sugestões ainda.</strong> Comece pela aba <strong>Módulos</strong>.</div>';
+      for (var mc = 0; mc < MODULES.length; mc++) if (getModuleMastery(MODULES[mc].id) >= MASTERY_THRESHOLD) totalConcluidos++;
+      if (totalConcluidos === MODULES.length && MODULES.length > 0) html += '<div class="notice"><strong>🎉 Parabéns!</strong> Todos os ' + MODULES.length + ' módulos foram dominados (aproveitamento ≥ ' + MASTERY_THRESHOLD + '% no exercício). Mantenha as revisões e pratique simulados.</div>';
+      else html += '<div class="notice"><strong>Sem sugestões ainda.</strong> Comece pela aba <strong>Módulos</strong> — leia a aula e faça o exercício "Praticar o que aprendi".</div>';
     } else {
       html += '<div class="module-list">';
       for (var sg_i = 0; sg_i < sugestoes.length; sg_i++) {
@@ -595,21 +1094,24 @@
       }
       html += '</div>';
     }
-    html += '<h2 class="section-title">Regra de conclusão</h2>';
-    html += '<div class="notice"><strong>' + esc(APP_NAME) + ' v' + esc(APP_VERSION) + '.</strong> Um módulo é considerado <strong>concluído</strong> quando a <strong>aula está marcada como lida</strong> E o <strong>diagnóstico atinge 100% de domínio</strong>. Módulos concluídos saem automaticamente das sugestões acima.</div>';
+    html += '<h2 class="section-title">Como funciona o domínio</h2>';
+    html += '<div class="notice"><strong>' + esc(APP_NAME) + ' v' + esc(APP_VERSION) + '.</strong> O domínio de um módulo é determinado pelo <strong>exercício "Praticar o que aprendi"</strong> (12 questões em 4 níveis). Um módulo é considerado <strong>dominado</strong> quando o aproveitamento atinge <strong>' + MASTERY_THRESHOLD + '% ou mais</strong>. O diagnóstico continua disponível para autoavaliação, mas <strong>não determina mais o domínio</strong>.</div>';
     html += footerHtml();
     return html;
   }
+
   function statCard(label, value, hint) {
     return '<div class="stat-card"><div class="stat-label">' + esc(label) + '</div><div class="stat-value">' + esc(value) + '</div>' + (hint ? '<div class="stat-hint">' + esc(hint) + '</div>' : '') + '</div>';
   }
   function footerHtml() { return '<div class="app-footer"><span>' + esc(APP_NAME) + ' v' + esc(APP_VERSION) + '</span><span>Offline · dados salvos neste navegador</span></div>'; }
   function infoRow(key, value) { return '<div class="info-row"><span class="info-key">' + esc(key) + '</span><span class="info-val">' + esc(value) + '</span></div>'; }
-  function statusLabel(s) { var map = { 'nao_iniciado': 'Não iniciado', 'em_estudo': 'Em estudo', 'concluido': 'Concluído' }; return map[s] || s || 'Não iniciado'; }
+  function statusLabel(s) { var map = { 'nao_iniciado': 'Não iniciado', 'em_estudo': 'Em estudo', 'concluido': 'Dominado' }; return map[s] || s || 'Não iniciado'; }
 
   /* ============================================================
-     MODULES
+     BLOCO 4 — Módulos, detalhe, aula, diagnóstico
   ============================================================ */
+
+  /* ---------- MÓDULOS ---------- */
   function renderModules() {
     var areas = ['todas'].concat(Object.keys(AREA_LABELS));
     var pills = '';
@@ -622,13 +1124,14 @@
     var filtered = MODULES.filter(function (m) { return moduleFilter === 'todas' || m.area === moduleFilter; });
     var html = '';
     html += '<h1 class="page-title">Módulos</h1>';
-    html += '<p class="page-subtitle">' + filtered.length + ' módulo(s) listado(s).</p>';
+    html += '<p class="page-subtitle">' + filtered.length + ' módulo(s) listado(s). A conclusão é determinada pelo exercício "Praticar o que aprendi" (≥ ' + MASTERY_THRESHOLD + '%).</p>';
     html += '<div class="filters">' + pills + '</div>';
     if (filtered.length === 0) html += '<div class="notice">Nenhum módulo nesta área.</div>';
     else { html += '<div class="module-list">'; for (var j = 0; j < filtered.length; j++) html += moduleCardHtml(filtered[j]); html += '</div>'; }
     html += footerHtml();
     return html;
   }
+
   function moduleCardHtml(m) {
     var areaLabel = AREA_LABELS[m.area] || m.area;
     var pLabel = PRIORITY_LABELS[m.prioridade] || m.prioridade;
@@ -636,22 +1139,23 @@
     var hasDiag = !!getDiagnosticByModuleId(m.id);
     var qCount = 0; for (var i = 0; i < QUESTIONS.length; i++) if (QUESTIONS[i].moduloId === m.id) qCount++;
     var fcCount = fcByModule(m.id).length;
+    var mastery = getModuleMastery(m.id);
+    var domLabel = getModuleDominioLabel(m.id);
     var badges = '';
-    if (isModuleConcluido(m.id)) badges += '<span class="badge-pill badge-ok">✓ Dominado</span>';
+    if (mastery >= MASTERY_THRESHOLD) badges += '<span class="badge-pill badge-ok">✓ ' + mastery + '%</span>';
+    else if (mastery > 0) badges += '<span class="badge-pill badge-did">' + mastery + '%</span>';
     if (hasLesson) badges += '<span class="badge-pill badge-aula">Aula</span>';
     if (hasDiag) badges += '<span class="badge-pill badge-diag">Diagnóstico</span>';
     if (qCount > 0) badges += '<span class="badge-pill badge-real">' + qCount + ' q.</span>';
     if (fcCount > 0) badges += '<span class="badge-pill badge-flash">' + fcCount + ' fc.</span>';
     return '<button class="module-card" data-action="open-module" data-module-id="' + esc(m.id) + '">' +
       '<span class="mod-id">' + esc(m.id) + '</span>' +
-      '<span class="mod-info"><span class="mod-title">' + esc(m.titulo) + '</span><span class="mod-area">' + esc(areaLabel) + '</span></span>' +
+      '<span class="mod-info"><span class="mod-title">' + esc(m.titulo) + '</span><span class="mod-area">' + esc(areaLabel) + ' · ' + esc(domLabel.label) + '</span></span>' +
       '<span class="mod-badges">' + badges + '<span class="mod-priority priority-' + esc(m.prioridade) + '">' + esc(pLabel) + '</span></span>' +
     '</button>';
   }
 
-  /* ============================================================
-     MODULE DETAIL
-  ============================================================ */
+  /* ---------- DETALHE DO MÓDULO ---------- */
   function renderModuleDetail() {
     var m = getModule(currentModuleId);
     if (!m) return '<h1 class="page-title">Módulo não encontrado</h1><button class="btn" data-nav="modulos">← Voltar</button>';
@@ -668,9 +1172,15 @@
     for (var qi = 0; qi < moduleQuestions.length; qi++) { var qs = AppState.questions[moduleQuestions[qi].id]; if (qs && qs.tentativas > 0) qDone++; }
     var fcVistos = 0;
     for (var fi = 0; fi < moduleFlashcards.length; fi++) if (AppState.flashcards[moduleFlashcards[fi].id]) fcVistos++;
+
+    var exState = getModuleUserExercicio(m.id);
+    var mastery = getModuleMastery(m.id);
+    var domLabel = getModuleDominioLabel(m.id);
+    var exercicioFeito = exState.tentativas > 0;
+    var dominado = mastery >= MASTERY_THRESHOLD;
+
     var chips = '';
     for (var i = 0; i < m.subtopicos.length; i++) chips += '<span class="subtopic-chip">' + esc(m.subtopicos[i]) + '</span>';
-    var concluido = isModuleConcluido(m.id);
 
     var html = '';
     html += '<button class="btn" data-nav="modulos" style="margin-bottom:16px;">← Voltar aos módulos</button>';
@@ -678,17 +1188,23 @@
     html += '<p class="page-subtitle">' + esc(areaLabel) + ' · Prioridade: ' + esc(pLabel) + '</p>';
     html += '<div class="info-list">';
     html += infoRow('Status', statusLabel(st.status));
-    html += infoRow('Domínio estimado', Math.round((st.dominioEstimado || 0) * 100) + '%');
+    html += infoRow('Aproveitamento (exercício)', domLabel.pct + '% — ' + domLabel.label);
     html += infoRow('Última atividade', st.ultimaAtividade ? formatDate(st.ultimaAtividade) : '—');
     html += infoRow('Aulas lidas', (st.aulasLidas || []).length + (lesson ? ' / 1' : ' / 0'));
-    if (diagDone) html += infoRow('Diagnóstico', 'Feito em ' + formatDate(st.diagnostico.completedAt));
-    else if (diag) html += infoRow('Diagnóstico', 'Disponível');
+    if (diagDone) html += infoRow('Diagnóstico', 'Feito em ' + formatDate(st.diagnostico.completedAt) + ' (informativo)');
+    else if (diag) html += infoRow('Diagnóstico', 'Disponível (informativo)');
     else html += infoRow('Diagnóstico', '—');
+    if (exercicioFeito) html += infoRow('Exercício pós-aula', exState.tentativas + ' tentativa(s) · melhor ' + exState.melhorPercentual + '%');
+    else if (exState.legacyDominado) html += infoRow('Exercício pós-aula', 'Domínio legado (diagnóstico anterior)');
+    else html += infoRow('Exercício pós-aula', 'Não realizado');
     html += infoRow('Questões', moduleQuestions.length + ' cadastrada(s) · ' + qDone + ' vista(s)');
     html += infoRow('Flashcards', moduleFlashcards.length + ' cartão(ões) · ' + fcVistos + ' visto(s)');
-    if (concluido) html += '<div class="info-row" style="background:var(--success-soft);border-radius:6px;padding:10px 12px;margin-top:6px;border-bottom:none;"><span class="info-key" style="color:var(--success);font-weight:700;">✓ Módulo concluído</span><span class="info-val" style="color:var(--success);font-size:12px;">Aula lida + diagnóstico 100%</span></div>';
+    if (dominado) html += '<div class="info-row" style="background:var(--success-soft);border-radius:6px;padding:10px 12px;margin-top:6px;border-bottom:none;"><span class="info-key" style="color:var(--success);font-weight:700;">✓ Módulo dominado</span><span class="info-val" style="color:var(--success);font-size:12px;">Aula lida + exercício ≥ ' + MASTERY_THRESHOLD + '%</span></div>';
     html += '</div>';
+
     html += '<h2 class="section-title">Subtópicos</h2><div class="subtopic-list">' + chips + '</div>';
+
+    /* Conteúdo pedagógico — aula */
     html += '<h2 class="section-title">Conteúdo pedagógico</h2>';
     if (lesson) {
       html += '<div class="lesson-block"><h3><span class="lb-icon">📘</span> Aula: ' + esc(lesson.id) + '</h3>';
@@ -698,7 +1214,10 @@
       html += lessonRead ? '<span class="lesson-read-indicator">✓ Lida</span>' : '<span class="lesson-read-indicator pending">Não lida</span>';
       html += '</div></div>';
     } else html += '<div class="notice"><strong>Aula ainda não cadastrada.</strong></div>';
-    html += '<h2 class="section-title">Diagnóstico</h2>';
+
+    /* Diagnóstico (informativo) */
+    html += '<h2 class="section-title">Diagnóstico (informativo)</h2>';
+    html += '<p style="font-size:13px;color:var(--text-muted);margin-bottom:8px;">O diagnóstico <strong>não determina mais o domínio</strong>. Ele serve para autoavaliação inicial e identificação de subtópicos frágeis. O domínio é medido pelo exercício "Praticar o que aprendi".</p>';
     if (diag) {
       html += '<div class="lesson-block" style="border-left:4px solid var(--purple);"><h3><span class="lb-icon">🧪</span> Diagnóstico ' + esc(diag.id) + '</h3>';
       html += '<p>' + diag.itens.length + ' itens.</p>';
@@ -711,6 +1230,27 @@
       } else html += '<div style="margin-top:12px;"><button class="btn btn-purple" data-action="start-diag" data-module-id="' + esc(m.id) + '">Fazer diagnóstico →</button></div>';
       html += '</div>';
     } else html += '<div class="notice"><strong>Diagnóstico ainda não cadastrado.</strong></div>';
+
+    /* Exercício pós-aula (DESTAQUE) */
+    html += '<h2 class="section-title">Exercício pós-aula</h2>';
+    html += '<div class="lesson-block" style="border-left:4px solid var(--primary);background:var(--surface-alt);">';
+    html += '<h3><span class="lb-icon">🎯</span> Praticar o que aprendi</h3>';
+    html += '<p>12 questões em 4 níveis (compreensão → aplicação → interpretação → integração). O aproveitamento de <strong>' + MASTERY_THRESHOLD + '% ou mais</strong> é necessário para a conclusão do módulo.</p>';
+    if (!lessonRead) html += '<p style="font-size:13px;color:var(--warning);margin-top:6px;">⚠️ Recomendamos ler a aula antes de fazer o exercício.</p>';
+    html += '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">';
+    if (!exercicioFeito) {
+      html += '<button class="btn btn-primary btn-lg" data-action="start-exercise" data-module-id="' + esc(m.id) + '">Praticar o que aprendi →</button>';
+    } else {
+      html += '<button class="btn btn-primary" data-action="start-exercise" data-module-id="' + esc(m.id) + '">' + (dominado ? 'Refazer exercício' : 'Praticar novamente') + ' →</button>';
+      if (exState.historico && exState.historico.length > 0) {
+        var ult = exState.historico[exState.historico.length - 1];
+        html += '<button class="btn" data-action="open-exercise-result" data-module-id="' + esc(m.id) + '">Ver último resultado</button>';
+        html += '<span style="font-size:13px;color:var(--text-muted);">Última: <strong>' + ult.percentual + '%</strong> · Melhor: <strong>' + exState.melhorPercentual + '%</strong></span>';
+      }
+    }
+    html += '</div></div>';
+
+    /* Praticar (questões, simulado, flashcards) */
     html += '<h2 class="section-title">Praticar</h2>';
     if (moduleQuestions.length > 0) {
       html += '<div class="lesson-block"><h3><span class="lb-icon">📝</span> Questões deste módulo</h3>';
@@ -728,6 +1268,7 @@
     html += footerHtml();
     return html;
   }
+
   function summarizeResult(result) {
     var c = 0, d = 0, x = 0;
     var bs = result.bySubtopic || {};
@@ -735,9 +1276,7 @@
     return { conhecido: c, duvida: d, desconhecido: x };
   }
 
-  /* ============================================================
-     LESSON
-  ============================================================ */
+  /* ---------- AULA ---------- */
   function renderLesson() {
     var lesson = currentLessonId ? getLessonById(currentLessonId) : null;
     if (!lesson) return '<h1 class="page-title">Aula não encontrada</h1><button class="btn" data-nav="modulos">← Voltar</button>';
@@ -788,10 +1327,25 @@
       for (var r = 0; r < lesson.resumo.length; r++) html += '<li>' + esc(lesson.resumo[r]) + '</li>';
       html += '</ul></div>';
     }
+
+    /* NOVO — CTA "Praticar o que aprendi" ao final da aula */
+    var exState = m ? getModuleUserExercicio(m.id) : null;
+    var mastery = m ? getModuleMastery(m.id) : 0;
+    html += '<div class="lesson-block" style="border-left:4px solid var(--primary);background:var(--surface-alt);margin-top:16px;">';
+    html += '<h3><span class="lb-icon">🎯</span> Praticar o que aprendi</h3>';
+    html += '<p>Consolide o aprendizado com <strong>12 questões em 4 níveis</strong>. Aproveitamento de ' + MASTERY_THRESHOLD + '% ou mais é necessário para a conclusão do módulo.</p>';
+    if (exState && exState.tentativas > 0) html += '<p style="font-size:13px;color:var(--text-muted);">Última tentativa: <strong>' + exState.ultimoPercentual + '%</strong> · Melhor: <strong>' + exState.melhorPercentual + '%</strong></p>';
+    html += '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">';
+    html += '<button class="btn btn-primary btn-lg" data-action="start-exercise" data-module-id="' + esc(lesson.moduloId) + '">' + (exState && exState.tentativas > 0 ? 'Refazer exercício' : 'Praticar o que aprendi') + ' →</button>';
+    if (exState && exState.tentativas > 0) html += '<button class="btn" data-action="open-exercise-result" data-module-id="' + esc(lesson.moduloId) + '">Ver último resultado</button>';
+    if (!wasRead) html += '<button class="btn" data-action="mark-lesson-read" data-lesson-id="' + esc(lesson.id) + '">Marcar aula como lida</button>';
+    html += '</div></div>';
+
     html += renderProfessorBlock(lesson);
     html += footerHtml();
     return html;
   }
+
   function renderProfessorBlock(lesson) {
     var mp = lesson.modoProfessor || {};
     var actions = [
@@ -820,9 +1374,7 @@
     return html;
   }
 
-  /* ============================================================
-     DIAGNOSTIC
-  ============================================================ */
+  /* ---------- DIAGNÓSTICO ---------- */
   function renderDiagnosticRunning() {
     var moduleId = diagRunning.moduleId;
     var diag = getDiagnosticByModuleId(moduleId);
@@ -837,7 +1389,7 @@
     var html = '';
     html += '<div class="diag-progress"><div class="diag-progress-bar"><div class="diag-progress-fill" style="width:' + percent + '%"></div></div><div class="diag-progress-label">Item ' + (idx + 1) + ' / ' + total + '</div></div>';
     html += '<h1 class="page-title">Diagnóstico — ' + esc(m ? m.titulo : moduleId) + '</h1>';
-    html += '<p class="page-subtitle">Módulo ' + esc(moduleId) + ' · ' + esc(DIAG_TYPE_LABELS[item.tipo] || item.tipo) + '</p>';
+    html += '<p class="page-subtitle">Módulo ' + esc(moduleId) + ' · ' + esc(DIAG_TYPE_LABELS[item.tipo] || item.tipo) + ' · <span style="color:var(--text-muted);">informativo (não determina domínio)</span></p>';
     html += '<div class="diag-meta"><span class="tag">Subtópico: ' + esc(item.subtopico) + '</span><span class="tag">' + esc(DIAG_TYPE_LABELS[item.tipo] || item.tipo) + '</span></div>';
     html += '<div class="diag-question"><h2>' + esc(item.pergunta) + '</h2>';
     if (isObjective(item)) {
@@ -864,6 +1416,7 @@
     html += footerHtml();
     return html;
   }
+
   function renderDiagnosticResult() {
     var moduleId = currentModuleId;
     var m = getModule(moduleId);
@@ -881,7 +1434,7 @@
     html += '<div style="display:flex;gap:8px;flex-wrap:wrap;"><button class="btn" data-action="open-module" data-module-id="' + esc(moduleId) + '">← Módulo ' + esc(moduleId) + '</button><button class="btn" data-nav="modulos">📚 Módulos</button></div>';
     html += '<div><button class="btn btn-purple" data-action="refazer-diag" data-module-id="' + esc(moduleId) + '">Refazer diagnóstico</button></div></div>';
     html += '<h1 class="page-title">Resultado do diagnóstico</h1>';
-    html += '<p class="page-subtitle">' + esc(m.id) + ' — ' + esc(m.titulo) + ' · Concluído em ' + esc(formatDate(r.completedAt)) + '</p>';
+    html += '<p class="page-subtitle">' + esc(m.id) + ' — ' + esc(m.titulo) + ' · Concluído em ' + esc(formatDate(r.completedAt)) + ' · <em>informativo (não determina domínio)</em></p>';
     html += '<div class="result-summary">';
     html += resultStat('Subtópicos avaliados', totalSub);
     html += resultStat('Conhecidos', resumo.conhecido);
@@ -900,25 +1453,28 @@
       html += '</div><div class="recommendation">' + esc(d.recommendation) + '</div></div>';
     }
     html += '<h2 class="section-title">Próximos passos</h2><div class="notice">';
-    if (resumo.desconhecido > 0) html += '<strong>Prioridade alta.</strong> Você tem ' + resumo.desconhecido + ' subtópico(s) desconhecido(s). Estude a aula desde o início e refaça o diagnóstico.';
-    else if (resumo.duvida > 0) html += '<strong>Reforço recomendado.</strong> ' + resumo.duvida + ' subtópico(s) em dúvida. Releia a aula e refaça este diagnóstico.';
-    else html += '<strong>Bom desempenho.</strong> Todos os subtópicos foram classificados como conhecidos.';
-    if (isModuleConcluido(moduleId)) html += ' <strong>Este módulo está concluído</strong> (aula lida + diagnóstico 100%).';
-    else if ((r.dominioEstimado || 0) >= 1 && getLessonByModuleId(moduleId) && !(st.aulasLidas || []).length) html += ' <strong>Falta marcar a aula como lida</strong> para o módulo ser concluído.';
+    if (resumo.desconhecido > 0) html += '<strong>Prioridade alta.</strong> Você tem ' + resumo.desconhecido + ' subtópico(s) desconhecido(s). Estude a aula desde o início e faça o exercício "Praticar o que aprendi" para medir o domínio.';
+    else if (resumo.duvida > 0) html += '<strong>Reforço recomendado.</strong> ' + resumo.duvida + ' subtópico(s) em dúvida. Releia a aula e faça o exercício "Praticar o que aprendi".';
+    else html += '<strong>Bom desempenho.</strong> Todos os subtópicos foram classificados como conhecidos. Agora faça o exercício "Praticar o que aprendi" para consolidar e medir o domínio.';
+    html += ' <strong>O domínio do módulo é medido pelo exercício</strong> (≥ ' + MASTERY_THRESHOLD + '%). O diagnóstico não determina mais a conclusão.';
     html += '</div>';
     html += '<div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;">';
     var lesson = getLessonByModuleId(moduleId);
     if (lesson) html += '<button class="btn btn-primary" data-action="open-lesson" data-lesson-id="' + esc(lesson.id) + '">Estudar aula →</button>';
+    html += '<button class="btn btn-primary" data-action="start-exercise" data-module-id="' + esc(moduleId) + '">🎯 Praticar o que aprendi</button>';
     html += '<button class="btn" data-action="start-diag" data-module-id="' + esc(moduleId) + '">Refazer agora</button>';
     html += '</div>';
     html += footerHtml();
     return html;
   }
+
   function resultStat(label, value) { return '<div class="result-stat"><div class="rs-label">' + esc(label) + '</div><div class="rs-value">' + esc(value) + '</div></div>'; }
 
   /* ============================================================
-     QUESTIONS
+     BLOCO 5 — Questões, banco, flashcards
   ============================================================ */
+
+  /* ---------- LISTA DE QUESTÕES ---------- */
   function renderQuestions() {
     var areas = ['todas'].concat(Object.keys(AREA_LABELS));
     var areaPills = '';
@@ -962,14 +1518,12 @@
     html += '<label>Status</label><select id="qFilterStatus">' + statusOptions + '</select>';
     html += '</div>';
     html += '<div style="margin:14px 0;display:flex;gap:8px;flex-wrap:wrap;">';
-    html += '<button class="btn btn-primary" data-action="start-question-session"' + (filtered.length === 0 ? ' disabled' : '') + '>▶ Iniciar sessão (' + filtered.length + ' questão(ões)' + (questionFilter.status === 'nao_respondidas' ? ' não respondida(s)' : '') + ')</button>';
-    html += '<button class="btn" data-action="simulado-com-filtros" data-target="questoes"' + (filtered.length === 0 ? ' disabled' : '') + '>🎯 Gerar simulado com estes filtros</button>';
+    html += '<button class="btn btn-primary" data-action="start-question-session"' + (filtered.length === 0 ? ' disabled' : '') + '>▶ Iniciar sessão (' + filtered.length + ' questão(ões))</button>';
+    html += '<button class="btn" data-action="simulado-com-filtros"' + (filtered.length === 0 ? ' disabled' : '') + '>🎯 Gerar simulado com estes filtros</button>';
     html += '</div>';
     html += '<h2 class="section-title">Prévia das questões (' + filtered.length + ')</h2>';
     if (filtered.length === 0) {
-      html += '<div class="notice">Nenhuma questão corresponde aos filtros escolhidos.';
-      if (questionFilter.status === 'nao_respondidas' && naoResp === 0) html += ' <strong>Você já respondeu todas as questões do banco!</strong> Altere o status para "Todos os status" para revisar.';
-      html += '</div>';
+      html += '<div class="notice">Nenhuma questão corresponde aos filtros escolhidos.</div>';
     } else {
       for (var p = 0; p < filtered.length; p++) {
         var q = filtered[p]; var qs = AppState.questions[q.id];
@@ -989,6 +1543,58 @@
     html += footerHtml();
     return html;
   }
+
+  /* ---------- CORREÇÃO PEDAGÓGICA — Melhoria 4 ---------- */
+  function buildAdaptedExplanation(q, chosenId, correta) {
+    if (correta) return '';
+    var inc = q.explicacao && q.explicacao.incorretas && q.explicacao.incorretas[chosenId];
+    var parts = [];
+    parts.push('Você marcou <strong>' + esc(chosenId) + '</strong>' + (inc ? ': ' + esc(inc) : '.'));
+    parts.push('A alternativa correta era <strong>' + esc(q.gabarito) + '</strong>' + (q.explicacao && q.explicacao.correta ? ': ' + esc(q.explicacao.correta) : '.'));
+    return parts.join(' ');
+  }
+
+  function renderClassificationPicker(qid, currentClass) {
+    var opts = [
+      { id: 'seguranca', label: '✓ Acerto com segurança', hint: 'Domínio — aumento o intervalo' },
+      { id: 'duvida', label: '✓ Acerto com dúvida', hint: 'Insegurança — intervalo intermediário' },
+      { id: 'confusao', label: '✗ Confusão conceitual', hint: 'Revise comparando os conceitos' },
+      { id: 'desconhecimento', label: '✗ Desconhecimento', hint: 'Releia a aula' },
+      { id: 'interpretacao', label: '✗ Interpretação', hint: 'Treine leitura de enunciados' }
+    ];
+    var html = '<div class="classification-picker">';
+    html += '<div class="cp-label">Como você avalia sua resposta? (ajuda a ajustar a revisão espaçada)</div>';
+    html += '<div class="cp-options">';
+    for (var i = 0; i < opts.length; i++) {
+      var o = opts[i]; var active = (currentClass === o.id) ? ' active' : '';
+      html += '<button class="cp-btn' + active + '" data-action="classify-question" data-qid="' + esc(qid) + '" data-classification="' + esc(o.id) + '">';
+      html += '<span class="cp-btn-label">' + esc(o.label) + '</span>';
+      html += '<span class="cp-btn-hint">' + esc(o.hint) + '</span>';
+      html += '</button>';
+    }
+    html += '</div></div>';
+    return html;
+  }
+
+  function renderErrorCategoryPicker(qid, currentCat) {
+    var html = '<div class="error-cat-picker">';
+    html += '<div class="ecp-label">Por que você errou? (sua resposta direciona o estudo — não apagamos o histórico)</div>';
+    html += '<div class="ecp-options">';
+    for (var i = 0; i < ERROR_CATS_ORDER.length; i++) {
+      var catId = ERROR_CATS_ORDER[i]; var cat = ERROR_CATS[catId];
+      if (!cat) continue;
+      var active = (currentCat === catId) ? ' active' : '';
+      html += '<button class="ecp-btn' + active + '" data-action="set-error-category" data-qid="' + esc(qid) + '" data-categoria="' + esc(catId) + '">';
+      html += '<span class="ecp-btn-icon">' + esc(cat.icon || '') + '</span>';
+      html += '<span class="ecp-btn-label">' + esc(cat.label) + '</span>';
+      html += '<span class="ecp-btn-desc">' + esc(cat.desc) + '</span>';
+      html += '</button>';
+    }
+    html += '</div></div>';
+    return html;
+  }
+
+  /* ---------- SESSÃO DE QUESTÕES (RUN) — reformulado ---------- */
   function renderQuestionRun() {
     if (!questionRunning) return '<h1 class="page-title">Sessão não iniciada</h1><button class="btn btn-primary" data-nav="questoes">Ir para Questões</button>';
     var total = questionRunning.ids.length, idx = questionRunning.index;
@@ -997,7 +1603,16 @@
     var answered = Object.prototype.hasOwnProperty.call(questionRunning.respostas, qid);
     var userAnswer = questionRunning.respostas[qid];
     var percent = Math.round(((idx + (answered ? 1 : 0)) / total) * 100);
-    var modoLabel = ''; if (questionRunning.modo === 'revisao') modoLabel = 'Revisão'; else if (questionRunning.modo === 'erros') modoLabel = 'Caderno de Erros';
+    var modoLabel = ''; if (questionRunning.modo === 'revisao') modoLabel = 'Revisão'; else if (questionRunning.modo === 'erros') modoLabel = 'Recuperação de erros';
+
+    var qs = getQuestionUserState(qid);
+    var currentClass = qs.ultimaClassificacao || (answered ? (userAnswer === q.gabarito ? 'seguranca' : 'desconhecimento') : null);
+    var currentCat = null;
+    if (!answered || userAnswer === q.gabarito) currentCat = null;
+    else if (qs.errosDetalhados && qs.errosDetalhados.length > 0) currentCat = qs.errosDetalhados[qs.errosDetalhados.length - 1].categoria;
+
+    var exemploInedito = getExemploInedito(q.id);
+
     var html = '';
     html += '<div class="run-toolbar"><div class="rt-info">';
     if (modoLabel) html += '<span class="badge-pill badge-rev">' + esc(modoLabel) + '</span>';
@@ -1019,21 +1634,54 @@
       html += '<button class="' + cls + '" data-action="answer-question" data-alt="' + esc(alt.id) + '"' + (answered ? ' disabled' : '') + '><span class="opt-letter">' + esc(alt.id) + '</span><span>' + esc(alt.texto) + '</span></button>';
     }
     html += '</div>';
+
     if (answered) {
       var acertou = userAnswer === q.gabarito;
       html += '<div class="q-feedback ' + (acertou ? 'ok' : 'no') + '"><strong>' + (acertou ? '✓ Você acertou' : '✗ Você errou') + '</strong>Resposta correta: <strong>' + esc(q.gabarito) + '</strong>. Sua resposta: <strong>' + esc(userAnswer) + '</strong>.';
-      var fsInfo = AppState.questions[qid]; if (fsInfo && fsInfo.proximaRevisao) html += ' Próxima revisão: <strong>' + esc(formatDateShort(fsInfo.proximaRevisao)) + '</strong>.';
+      if (qs.proximaRevisao) html += ' Próxima revisão: <strong>' + esc(formatDateShort(qs.proximaRevisao)) + '</strong>.';
       html += '</div>';
+
+      /* Melhoria 4 — correção pedagógica completa */
       var ex = q.explicacao || {};
+
+      /* 4.1 — Explicação adaptada ao erro */
+      if (!acertou) {
+        var adaptada = buildAdaptedExplanation(q, userAnswer, acertou);
+        if (adaptada) html += '<div class="adapted-explanation"><strong>🎯 Você confundiu:</strong> ' + adaptada + '</div>';
+      }
+
+      /* 4.1 — Por que a correta está correta */
       html += '<div class="explain-block"><h4>Por que a correta está correta</h4><p>' + esc(ex.correta || '') + '</p></div>';
+
+      /* 4.1 — Por que as demais estão erradas (exceto a correta) */
       html += '<div class="explain-block"><h4>Por que as demais estão erradas</h4>';
       var inc = ex.incorretas || {};
-      for (var key in inc) { if (!inc.hasOwnProperty(key)) continue; html += '<div class="distractor"><span class="d-letter">' + esc(key) + '</span><span>' + esc(inc[key]) + '</span></div>'; }
+      for (var key in inc) {
+        if (!inc.hasOwnProperty(key)) continue;
+        if (key === q.gabarito) continue;
+        html += '<div class="distractor"><span class="d-letter">' + esc(key) + '</span><span>' + esc(inc[key]) + '</span></div>';
+      }
       html += '</div>';
+
+      /* 4.1 — Conceito cobrado */
       html += '<div class="explain-block"><h4>Conceito cobrado</h4><p>' + esc(ex.conceitoCobrado || '') + '</p></div>';
-      html += '<div class="explain-block"><h4>Pegadinha</h4><p>' + esc(ex.pegadinha || '') + '</p></div>';
-      html += '<div class="explain-block"><h4>Como aparece em concurso</h4><p>' + esc(ex.comoApareceEmConcurso || '') + '</p></div>';
+
+      /* 4.1 — Pegadinha */
+      if (ex.pegadinha) html += '<div class="explain-block"><h4>Pegadinha</h4><p>' + esc(ex.pegadinha) + '</p></div>';
+
+      /* 4.1 — Como aparece em concurso / como reconhecer */
+      html += '<div class="explain-block"><h4>Como reconhecer em outras questões</h4><p>' + esc(ex.comoApareceEmConcurso || '') + '</p></div>';
+
+      /* 4.2 — Exemplo inédito */
+      html += '<div class="explain-block example-inedito"><h4>💡 Exemplo inédito</h4><p>' + esc(exemploInedito) + '</p></div>';
+
+      /* Melhoria 2 — classificação */
+      html += renderClassificationPicker(qid, currentClass);
+
+      /* Melhoria 3 — categoria do erro (só se errou) */
+      if (!acertou) html += renderErrorCategoryPicker(qid, currentCat);
     }
+
     html += '<div class="q-actions"><div>';
     if (idx > 0) html += '<button class="btn" data-action="prev-question">← Questão anterior</button>';
     html += '</div><div>';
@@ -1044,6 +1692,7 @@
     html += footerHtml();
     return html;
   }
+
   function renderQuestionResult() {
     var sess = window.__lastSession;
     if (!sess) return '<h1 class="page-title">Nenhum resultado disponível</h1><button class="btn btn-primary" data-nav="questoes">Ir para Questões</button>';
@@ -1062,11 +1711,11 @@
       porTipo[q.tipo].total++; if (acertou) porTipo[q.tipo].acertos++;
     }
     var pct = total > 0 ? Math.round((acertos / total) * 100) : 0;
-    var modoLabel = ''; if (sess.modo === 'revisao') modoLabel = 'Revisão'; else if (sess.modo === 'erros') modoLabel = 'Caderno de Erros';
+    var modoLabel = ''; if (sess.modo === 'revisao') modoLabel = 'Revisão'; else if (sess.modo === 'erros') modoLabel = 'Recuperação de erros';
     var html = '';
     html += '<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px;"><div style="display:flex;gap:8px;flex-wrap:wrap;"><button class="btn" data-nav="questoes">← Questões</button>';
     if (modoLabel === 'Revisão') html += '<button class="btn" data-nav="revisao">🔁 Revisão</button>';
-    if (modoLabel === 'Caderno de Erros') html += '<button class="btn" data-nav="erros">❌ Meus Erros</button>';
+    if (modoLabel === 'Recuperação de erros') html += '<button class="btn" data-nav="erros">❌ Meu banco de erros</button>';
     html += '</div></div>';
     html += '<h1 class="page-title">Resultado da sessão' + (modoLabel ? ' — ' + esc(modoLabel) : '') + '</h1>';
     html += '<p class="page-subtitle">Sessão iniciada em ' + esc(formatDate(sess.startedAt)) + '</p>';
@@ -1093,6 +1742,7 @@
     html += footerHtml();
     return html;
   }
+
   function renderBreakdown(map, labelFn) {
     var html = '', hasAny = false;
     for (var k in map) { if (map.hasOwnProperty(k)) { hasAny = true; break; } }
@@ -1108,9 +1758,7 @@
     return html;
   }
 
-  /* ============================================================
-     QUESTION BANK (import/export)
-  ============================================================ */
+  /* ---------- BANCO DE QUESTÕES (import/export) ---------- */
   function renderQuestionBank() {
     var totalReal = qRealCount(), totalDid = qDidCount();
     var respondidas = 0, acertos = 0;
@@ -1149,6 +1797,7 @@
     html += footerHtml();
     return html;
   }
+
   function validateIncomingQuestion(q, existingIds) {
     var errors = [];
     if (!q || typeof q !== 'object') return ['Item não é objeto.'];
@@ -1169,6 +1818,7 @@
     }
     return errors;
   }
+
   function importQuestionsFromText(text) {
     var incoming;
     try { incoming = JSON.parse(text); }
@@ -1209,9 +1859,7 @@
   function exportQuestions() { downloadJson('questoes-v' + APP_VERSION + '.json', { exportedAt: new Date().toISOString(), appVersion: APP_VERSION, schemaVersion: SCHEMA_VERSION, questoes: QUESTIONS }); }
   function exportProgress() { downloadJson('progresso-v' + APP_VERSION + '.json', { exportedAt: new Date().toISOString(), appVersion: APP_VERSION, state: AppState }); }
 
-  /* ============================================================
-     FLASHCARDS
-  ============================================================ */
+  /* ---------- FLASHCARDS ---------- */
   function renderFlashcards() {
     var areas = ['todas'].concat(Object.keys(AREA_LABELS));
     var pills = '';
@@ -1236,10 +1884,6 @@
     html += '<div class="db-stat"><div class="dbs-label">Não sabia</div><div class="dbs-value">' + totalNao + '</div></div>';
     if (dueF > 0) html += '<div class="db-stat dbs-due"><div class="dbs-label">Vencidos</div><div class="dbs-value">' + dueF + '</div></div>';
     html += '</div>';
-    html += '<div class="type-banner"><span class="badge-pill badge-flash">FLASHCARDS</span><span>' + totalCards + ' cartão(ões) cadastrado(s). ';
-    if (totalCards === 0) html += 'Serão adicionados nas próximas fases. ';
-    else html += 'Após revelar o verso, avalie com sinceridade. O sistema agenda revisões conforme a resposta. ';
-    html += '</span></div>';
     html += '<div style="margin-bottom:14px;display:flex;gap:8px;flex-wrap:wrap;">';
     html += '<button class="btn btn-primary" data-action="start-flashcards-all"' + (totalCards === 0 ? ' disabled' : '') + '>▶ Estudar todos (' + totalCards + ')</button>';
     if (dueF > 0) html += '<button class="btn btn-purple" data-action="start-flashcards-due">🔁 Revisar vencidos (' + dueF + ')</button>';
@@ -1247,7 +1891,7 @@
     html += '<h2 class="section-title">Filtrar por área</h2>';
     html += '<div class="filters">' + pills + '</div>';
     if (modulosComCartoes.length === 0) {
-      html += '<div class="notice">Nenhum módulo com flashcards' + (FLASHCARDS.length === 0 ? ' ainda — serão adicionados nas próximas fases.' : ' para o filtro escolhido.') + '</div>';
+      html += '<div class="notice">Nenhum módulo com flashcards para o filtro escolhido.</div>';
     } else {
       html += '<h2 class="section-title">Decks por módulo</h2><div class="fc-deck-grid">';
       for (var j = 0; j < modulosComCartoes.length; j++) {
@@ -1265,6 +1909,7 @@
     html += footerHtml();
     return html;
   }
+
   function renderFlashcardRun() {
     if (!flashcardRunning) return '<h1 class="page-title">Sessão não iniciada</h1><button class="btn btn-primary" data-nav="flashcards">Ir para Flashcards</button>';
     var total = flashcardRunning.ids.length, idx = flashcardRunning.index;
@@ -1306,6 +1951,7 @@
     html += footerHtml();
     return html;
   }
+
   function renderFlashcardResult() {
     var sess = window.__lastFlashSession;
     if (!sess) return '<h1 class="page-title">Nenhum resultado de flashcards</h1><button class="btn btn-primary" data-nav="flashcards">Ir para Flashcards</button>';
@@ -1339,35 +1985,174 @@
   }
 
   /* ============================================================
-     REVISION
+     BLOCO 6 — Revisão adaptativa e banco de erros
   ============================================================ */
+
+  /* ---------- Helpers de revisão por subtópico (Melhoria 2.4) ---------- */
+  function getSubtopicKey(q) { return (q.moduloId || '?') + '::' + (q.subtema || 'Geral'); }
+
+  function getSubtopicReviewStats() {
+    /* Agrupa questões respondidas por subtópico e calcula status agregado. */
+    var bySub = {};
+    for (var i = 0; i < QUESTIONS.length; i++) {
+      var q = QUESTIONS[i];
+      var qs = AppState.questions[q.id];
+      if (!qs || qs.tentativas === 0) continue;
+      var key = getSubtopicKey(q);
+      if (!bySub[key]) {
+        bySub[key] = {
+          key: key, moduloId: q.moduloId, subtema: q.subtema || 'Geral',
+          totalQuestoes: 0, respondidas: 0,
+          due: 0, today: 0, future: 0,
+          ultimaClassificacao: null,
+          errosNaoResolvidos: 0, errosRecorrentes: 0,
+          ultimaAtividade: null
+        };
+      }
+      var s = bySub[key];
+      s.totalQuestoes += 1;
+      s.respondidas += 1;
+      if (qs.proximaRevisao) {
+        if (isDue(qs.proximaRevisao)) s.due += 1;
+        else if (isToday(qs.proximaRevisao)) s.today += 1;
+        else s.future += 1;
+      }
+      if (!s.ultimaAtividade || (qs.ultimaTentativa && qs.ultimaTentativa > s.ultimaAtividade)) s.ultimaAtividade = qs.ultimaTentativa;
+      if (qs.ultimaClassificacao) {
+        /* última classificação prevalece sobre as anteriores (mas pior status fica) */
+        var ordem = { 'desconhecimento': 0, 'confusao': 1, 'interpretacao': 2, 'duvida': 3, 'seguranca': 4 };
+        if (!s.ultimaClassificacao || ordem[qs.ultimaClassificacao] < ordem[s.ultimaClassificacao]) s.ultimaClassificacao = qs.ultimaClassificacao;
+      }
+      if (qs.errosDetalhados && qs.errosDetalhados.length) {
+        for (var j = 0; j < qs.errosDetalhados.length; j++) {
+          if (!qs.errosDetalhados[j].resolvido) s.errosNaoResolvidos += 1;
+        }
+      }
+      if (qs.erros >= 2) s.errosRecorrentes += 1;
+    }
+    var arr = [];
+    for (var k in bySub) if (bySub.hasOwnProperty(k)) arr.push(bySub[k]);
+    return arr;
+  }
+
+  function getSubtopicsNeedingReview(stats) {
+    return stats.filter(function (s) {
+      return s.errosNaoResolvidos > 0 || s.ultimaClassificacao === 'desconhecimento' || s.ultimaClassificacao === 'confusao' || s.ultimaClassificacao === 'interpretacao' || s.due > 0;
+    }).sort(function (a, b) {
+      /* Prioridade: erros não resolvidos > vencidas > classificação ruim */
+      var scoreA = a.errosNaoResolvidos * 10 + a.due * 3 + (a.ultimaClassificacao === 'desconhecimento' ? 5 : a.ultimaClassificacao === 'confusao' ? 3 : a.ultimaClassificacao === 'interpretacao' ? 2 : 0);
+      var scoreB = b.errosNaoResolvidos * 10 + b.due * 3 + (b.ultimaClassificacao === 'desconhecimento' ? 5 : b.ultimaClassificacao === 'confusao' ? 3 : b.ultimaClassificacao === 'interpretacao' ? 2 : 0);
+      return scoreB - scoreA;
+    });
+  }
+
+  function getSubtopicsMastered(stats) {
+    return stats.filter(function (s) {
+      return s.errosNaoResolvidos === 0 && s.due === 0 && (s.ultimaClassificacao === 'seguranca' || s.ultimaClassificacao === null);
+    });
+  }
+
+  /* ---------- Tela de revisão adaptativa ---------- */
   function renderRevision() {
     var dueQ = getDueQuestions(), todayQ = getTodayQuestions(), futureQ = getFutureQuestions();
     var dueF = getDueFlashcards(), todayF = getTodayFlashcards(), futureF = getFutureFlashcards();
+    var subStats = getSubtopicReviewStats();
+    var needReview = getSubtopicsNeedingReview(subStats);
+    var mastered = getSubtopicsMastered(subStats);
+    var overdueCount = 0;
+    for (var i = 0; i < dueQ.length; i++) {
+      var qs = AppState.questions[dueQ[i].id];
+      if (qs && qs.proximaRevisao) {
+        var atraso = daysSince(qs.proximaRevisao);
+        if (atraso > ADAPTIVE_JANELA_ATRASO) overdueCount++;
+      }
+    }
+
     var html = '';
-    html += '<h1 class="page-title">Revisão</h1><p class="page-subtitle">Agenda de revisões espaçadas. Intervalos adaptativos: acertos aumentam o prazo, erros reduzem.</p>';
+    html += '<h1 class="page-title">Revisão</h1>';
+    html += '<p class="page-subtitle">Agenda de revisões espaçadas adaptativas. O intervalo considera a classificação da resposta, a dificuldade da questão e os acertos consecutivos.</p>';
+
     html += '<div class="rev-summary">';
     html += '<div class="rev-stat due"><div class="rs-label">Vencidas</div><div class="rs-value">' + (dueQ.length + dueF.length) + '</div></div>';
     html += '<div class="rev-stat today"><div class="rs-label">Hoje</div><div class="rs-value">' + (todayQ.length + todayF.length) + '</div></div>';
     html += '<div class="rev-stat future"><div class="rs-label">Futuras</div><div class="rs-value">' + (futureQ.length + futureF.length) + '</div></div>';
     html += '<div class="rev-stat"><div class="rs-label">Total agendado</div><div class="rs-value">' + (dueQ.length + todayQ.length + futureQ.length + dueF.length + todayF.length + futureF.length) + '</div></div>';
     html += '</div>';
+
+    if (overdueCount > 0) {
+      html += '<div class="notice" style="background:var(--danger-soft);border-left:4px solid var(--danger);margin-bottom:14px;"><strong>⚠️ ' + overdueCount + ' revisão(ões) com mais de ' + ADAPTIVE_JANELA_ATRASO + ' dias de atraso.</strong> Priorize essas questões para evitar o esquecimento.</div>';
+    }
+
+    /* Assuntos que precisam de reforço (Melhoria 2.4 + 3.5) */
+    html += '<h2 class="section-title">Assuntos que precisam de reforço</h2>';
+    if (needReview.length === 0) {
+      html += '<div class="rev-empty">Nenhum subtópico com dificuldade identificada. Continue com as revisões programadas.</div>';
+    } else {
+      html += '<div class="rev-group">';
+      for (var r = 0; r < needReview.length; r++) {
+        var s = needReview[r];
+        var m = getModule(s.moduloId);
+        var motivos = [];
+        if (s.errosNaoResolvidos > 0) motivos.push(s.errosNaoResolvidos + ' erro(s) não resolvido(s)');
+        if (s.due > 0) motivos.push(s.due + ' questão(ões) vencida(s)');
+        if (s.ultimaClassificacao === 'desconhecimento') motivos.push('última classificação: desconhecimento');
+        if (s.ultimaClassificacao === 'confusao') motivos.push('última classificação: confusão');
+        if (s.ultimaClassificacao === 'interpretacao') motivos.push('última classificação: interpretação');
+        html += '<div class="subtopic-review-item">';
+        html += '<div class="sri-head"><strong>' + esc((m ? m.titulo : s.moduloId) + ' — ' + s.subtema) + '</strong>';
+        if (s.errosRecorrentes > 0) html += '<span class="badge-pill badge-err">' + s.errosRecorrentes + ' recorrente(s)</span>';
+        html += '</div>';
+        html += '<div class="sri-meta">' + esc(motivos.join(' · ')) + '</div>';
+        html += '<div class="sri-actions">';
+        html += '<button class="btn btn-primary" data-action="review-subtopic" data-module-id="' + esc(s.moduloId) + '" data-subtema="' + esc(s.subtema) + '">Revisar subtópico</button>';
+        html += '<button class="btn" data-action="open-lesson-by-module" data-module-id="' + esc(s.moduloId) + '">Ver aula</button>';
+        html += '</div></div>';
+      }
+      html += '</div>';
+    }
+
+    /* Assuntos dominados */
+    html += '<h2 class="section-title">Assuntos dominados</h2>';
+    if (mastered.length === 0) {
+      html += '<div class="rev-empty">Nenhum subtópico totalmente dominado ainda. Continue revisando.</div>';
+    } else {
+      html += '<div class="rev-group"><div class="mastered-grid">';
+      for (var mg = 0; mg < mastered.length; mg++) {
+        var sm = mastered[mg];
+        var mm = getModule(sm.moduloId);
+        html += '<div class="mastered-item"><span class="mi-icon">✓</span><div><strong>' + esc(sm.subtema) + '</strong><div class="mi-meta">' + esc(mm ? mm.titulo : sm.moduloId) + ' · ' + sm.respondidas + ' questão(ões)</div></div></div>';
+      }
+      html += '</div></div>';
+    }
+
+    /* Ações rápidas */
     var totalDue = dueQ.length + dueF.length;
     if (totalDue > 0) {
-      html += '<div class="quick-actions">';
+      html += '<div class="quick-actions" style="margin-top:18px;">';
       if (dueQ.length > 0) html += '<button class="btn btn-primary" data-action="start-revision-questions">📝 Revisar ' + dueQ.length + ' questão(ões) vencida(s)</button>';
       if (dueF.length > 0) html += '<button class="btn btn-purple" data-action="start-revision-flashcards">🗂️ Revisar ' + dueF.length + ' flashcard(s) vencido(s)</button>';
       html += '</div>';
     }
+
+    /* Grupos detalhados */
+    html += '<h2 class="section-title">Revisões detalhadas</h2>';
     html += '<div class="rev-group"><h3>🔴 Vencidas <span class="count-badge">' + totalDue + '</span></h3>';
     if (totalDue === 0) html += '<div class="rev-empty"><strong>Nada vencido.</strong> Você está em dia com as revisões.</div>';
-    else { for (var i = 0; i < dueQ.length; i++) html += renderRevItemQuestion(dueQ[i], 'Vencida'); for (var i2 = 0; i2 < dueF.length; i2++) html += renderRevItemFlashcard(dueF[i2], 'Vencida'); }
+    else {
+      for (var dq = 0; dq < dueQ.length; dq++) html += renderRevItemQuestion(dueQ[dq], 'Vencida');
+      for (var df = 0; df < dueF.length; df++) html += renderRevItemFlashcard(dueF[df], 'Vencida');
+    }
     html += '</div>';
+
     var totalToday = todayQ.length + todayF.length;
     html += '<div class="rev-group"><h3>🟠 Hoje <span class="count-badge">' + totalToday + '</span></h3>';
     if (totalToday === 0) html += '<div class="rev-empty">Sem revisões para hoje.</div>';
-    else { for (var j = 0; j < todayQ.length; j++) html += renderRevItemQuestion(todayQ[j], 'Hoje'); for (var j2 = 0; j2 < todayF.length; j2++) html += renderRevItemFlashcard(todayF[j2], 'Hoje'); }
+    else {
+      for (var tq = 0; tq < todayQ.length; tq++) html += renderRevItemQuestion(todayQ[tq], 'Hoje');
+      for (var tf = 0; tf < todayF.length; tf++) html += renderRevItemFlashcard(todayF[tf], 'Hoje');
+    }
     html += '</div>';
+
     var totalFuture = futureQ.length + futureF.length;
     html += '<div class="rev-group"><h3>🟢 Próximas <span class="count-badge">' + totalFuture + '</span></h3>';
     if (totalFuture === 0) html += '<div class="rev-empty">Sem revisões futuras agendadas.</div>';
@@ -1376,25 +2161,38 @@
       for (var k = 0; k < futureQ.length; k++) combined.push({ tipo: 'q', item: futureQ[k].q, iso: futureQ[k].iso });
       for (var k2 = 0; k2 < futureF.length; k2++) combined.push({ tipo: 'f', item: futureF[k2].fc, iso: futureF[k2].iso });
       combined.sort(function (a, b) { return new Date(a.iso) - new Date(b.iso); });
-      for (var m = 0; m < combined.length; m++) { var c = combined[m]; var label = formatDateShort(c.iso); if (c.tipo === 'q') html += renderRevItemQuestion(c.item, label); else html += renderRevItemFlashcard(c.item, label); }
+      for (var cmb = 0; cmb < combined.length; cmb++) {
+        var c = combined[cmb]; var label = formatDateShort(c.iso);
+        if (c.tipo === 'q') html += renderRevItemQuestion(c.item, label);
+        else html += renderRevItemFlashcard(c.item, label);
+      }
     }
     html += '</div>';
+
     html += '<h2 class="section-title">Como funciona</h2>';
-    html += '<div class="notice">Acertos aumentam gradualmente o intervalo até a próxima revisão (1 → 3 → 7 → 15 → 30 → 60 dias para questões; 0 → 1 → 3 → 7 → 15 → 30 dias para flashcards). Erros reiniciam o ciclo.</div>';
+    html += '<div class="notice">A revisão espaçada é <strong>adaptativa</strong>: o intervalo varia conforme a classificação da resposta. Acertos com segurança aumentam o intervalo; erros por confusão, desconhecimento ou interpretação reiniciam o ciclo. Também são consideradas a dificuldade da questão e a quantidade de acertos consecutivos. O objetivo é reencontrar o conteúdo no ponto certo do esquecimento.</div>';
     html += footerHtml();
     return html;
   }
+
   function renderRevItemQuestion(q, quando) {
     var qs = AppState.questions[q.id] || {};
     var m = getModule(q.moduloId);
+    var classeLabel = '';
+    if (qs.ultimaClassificacao) {
+      var cls = { 'seguranca': 'Acerto seguro', 'duvida': 'Acerto com dúvida', 'confusao': 'Confusão', 'desconhecimento': 'Desconhecimento', 'interpretacao': 'Interpretação' };
+      classeLabel = cls[qs.ultimaClassificacao] || qs.ultimaClassificacao;
+    }
     var html = '<div class="rev-item"><div class="ri-body"><div class="ri-id">' + esc(q.id) + '<span class="badge-pill badge-rev">Questão</span>';
     if (quando) html += '<span class="badge-pill ' + (quando === 'Vencida' ? 'badge-err' : 'badge-ok') + '">' + esc(quando) + '</span>';
+    if (classeLabel) html += '<span class="badge-pill badge-did">' + esc(classeLabel) + '</span>';
     html += '</div><div class="ri-text">' + esc(q.enunciado) + '</div>';
     html += '<div class="ri-meta">' + esc(q.moduloId + (m ? ' — ' + m.titulo : '') + ' · ' + q.subtema);
     if (qs.proximaRevisao) html += ' · programada: ' + esc(formatDateShort(qs.proximaRevisao));
     html += '</div></div><div class="ri-action"><button class="btn btn-primary" data-action="revisar-questao-unica" data-question-id="' + esc(q.id) + '">Revisar</button></div></div>';
     return html;
   }
+
   function renderRevItemFlashcard(fc, quando) {
     var fs = AppState.flashcards[fc.id] || {};
     var m = getModule(fc.moduloId);
@@ -1407,39 +2205,274 @@
     return html;
   }
 
-  /* ============================================================
-     ERRORS
-  ============================================================ */
-  function renderErrors() {
-    var errs = getErrorQuestions();
-    var html = '';
-    html += '<h1 class="page-title">Meus Erros</h1><p class="page-subtitle">Caderno de erros — questões com erro registrado que ainda não foram superadas.</p>';
-    html += '<div class="rev-summary"><div class="rev-stat err"><div class="rs-label">Erros em aberto</div><div class="rs-value">' + errs.length + '</div></div></div>';
-    if (errs.length === 0) {
-      html += '<div class="rev-empty"><strong>Sem erros em aberto.</strong> Continue praticando para registrar novos erros na aba <a href="#" data-nav="questoes" style="color:var(--primary);">Questões</a>.</div>';
-      html += footerHtml();
-      return html;
+  /* ---------- Funções de start de revisão ---------- */
+  function startRevisionQuestions() {
+    var due = getDueQuestions().map(function (q) { return q.id; });
+    if (due.length === 0) { window.alert('Nenhuma questão vencida no momento.'); return; }
+    startQuestionSession(due, 'revisao');
+  }
+  function startRevisionFlashcards() {
+    var due = getDueFlashcards().map(function (f) { return f.id; });
+    if (due.length === 0) { window.alert('Nenhum flashcard vencido no momento.'); return; }
+    startFlashcardSession(due, 'revisao');
+  }
+  function revisarQuestaoUnica(qid) { if (!getQuestion(qid)) return; startQuestionSession([qid], 'revisao'); }
+  function revisarFlashcardUnico(fid) { if (!getFlashcard(fid)) return; startFlashcardSession([fid], 'revisao'); }
+
+  function reviewSubtopic(modId, subtema) {
+    var pool = QUESTIONS.filter(function (q) {
+      return q.moduloId === modId && (q.subtema || 'Geral') === subtema;
+    });
+    if (pool.length === 0) { window.alert('Nenhuma questão neste subtópico.'); return; }
+    /* Prioriza erros e vencidas, mas inclui todas para revisão completa do subtópico */
+    var ids = pool.map(function (q) { return q.id; });
+    startQuestionSession(ids, 'revisao');
+  }
+
+  /* ---------- MEU BANCO DE ERROS (reformulado) ---------- */
+  function filterErrors() {
+    var out = [];
+    for (var i = 0; i < QUESTIONS.length; i++) {
+      var q = QUESTIONS[i];
+      var qs = AppState.questions[q.id];
+      if (!qs || !qs.errosDetalhados || !qs.errosDetalhados.length) continue;
+      if (errorFilter.area !== 'todas' && q.area !== errorFilter.area) continue;
+      if (errorFilter.moduloId !== 'todos' && q.moduloId !== errorFilter.moduloId) continue;
+      if (errorFilter.categoria !== 'todas') {
+        var hasCat = false;
+        for (var j = 0; j < qs.errosDetalhados.length; j++) {
+          if (qs.errosDetalhados[j].categoria === errorFilter.categoria) { hasCat = true; break; }
+        }
+        if (!hasCat) continue;
+      }
+      if (errorFilter.tipo === 'nao_resolvidos') {
+        var hasUnres = false;
+        for (var k = 0; k < qs.errosDetalhados.length; k++) {
+          if (!qs.errosDetalhados[k].resolvido) { hasUnres = true; break; }
+        }
+        if (!hasUnres) continue;
+      }
+      if (errorFilter.tipo === 'recorrentes' && qs.erros < 2) continue;
+      if (errorFilter.tipo === 'recentes') {
+        var cutoff = new Date(); cutoff.setDate(cutoff.getDate() - 7);
+        var recent = false;
+        for (var r = 0; r < qs.errosDetalhados.length; r++) {
+          if (new Date(qs.errosDetalhados[r].data) >= cutoff) { recent = true; break; }
+        }
+        if (!recent) continue;
+      }
+      out.push(q);
     }
-    html += '<div class="quick-actions"><button class="btn btn-danger" data-action="start-errors-session">❌ Revisar somente meus erros (' + errs.length + ')</button></div>';
-    html += '<h2 class="section-title">Questões com erro</h2>';
-    for (var i = 0; i < errs.length; i++) {
-      var q = errs[i]; var qs = AppState.questions[q.id] || {}; var m = getModule(q.moduloId);
-      var ultimaData = qs.ultimaTentativa ? formatDate(qs.ultimaTentativa) : '—';
-      html += '<div class="err-item"><div class="ei-head"><span class="ei-id">' + esc(q.id) + '</span><div class="ei-tags">';
-      html += '<span class="badge-pill ' + typeBadgeClass(q.tipo) + '">' + esc(typeLabel(q.tipo)) + '</span>';
-      html += '<span class="badge-pill badge-err">' + (qs.erros || 0) + ' erro(s)</span>';
-      if (qs.proximaRevisao) html += '<span class="badge-pill badge-rev">revisar ' + esc(formatDateShort(qs.proximaRevisao)) + '</span>';
-      html += '</div></div><div class="ei-text">' + esc(q.enunciado) + '</div>';
-      html += '<div class="ei-meta">' + esc(q.moduloId + (m ? ' — ' + m.titulo : '') + ' · ' + q.subtema) + ' · acertos: <strong>' + (qs.acertos || 0) + '</strong> / tentativas: <strong>' + (qs.tentativas || 0) + '</strong> · última: ' + esc(ultimaData) + '</div>';
-      html += '<div class="ei-row2"><button class="btn btn-danger" data-action="revisar-questao-unica" data-question-id="' + esc(q.id) + '">Revisar só esta questão</button><button class="btn" data-action="open-module" data-module-id="' + esc(q.moduloId) + '">Ver módulo</button></div></div>';
+    return out;
+  }
+
+  function getErrorEvolution(days) {
+    var map = {}; var today = new Date(); today.setHours(0, 0, 0, 0);
+    for (var i = days - 1; i >= 0; i--) {
+      var d = new Date(today); d.setDate(d.getDate() - i);
+      var key = d.toISOString().slice(0, 10);
+      map[key] = { date: key, label: d.getDate() + '/' + (d.getMonth() + 1), count: 0 };
+    }
+    for (var qid in AppState.questions) {
+      if (!AppState.questions.hasOwnProperty(qid)) continue;
+      var qs = AppState.questions[qid];
+      if (!qs.errosDetalhados) continue;
+      for (var j = 0; j < qs.errosDetalhados.length; j++) {
+        var e = qs.errosDetalhados[j];
+        var k = (e.data || '').slice(0, 10);
+        if (map[k]) map[k].count++;
+      }
+    }
+    var arr = []; for (var kk in map) if (map.hasOwnProperty(kk)) arr.push(map[kk]);
+    arr.sort(function (a, b) { return a.date < b.date ? -1 : 1; });
+    return arr;
+  }
+
+  function renderErrors() {
+    var stats = getErrorStats();
+    var recurring = getRecurringDifficulties();
+    var filtered = filterErrors();
+
+    var html = '';
+    html += '<h1 class="page-title">Meu banco de erros</h1>';
+    html += '<p class="page-subtitle">Registro inteligente dos erros com categorização, evolução e detecção de dificuldades recorrentes. O histórico é preservado mesmo após acertos posteriores.</p>';
+
+    /* Cards de estatísticas */
+    html += '<div class="db-summary">';
+    html += '<div class="db-stat dbs-total"><div class="dbs-label">Total de erros registrados</div><div class="dbs-value">' + stats.total + '</div></div>';
+    html += '<div class="db-stat dbs-due"><div class="dbs-label">Erros não resolvidos</div><div class="dbs-value">' + stats.naoResolvidos + '</div></div>';
+    html += '<div class="db-stat dbs-did"><div class="dbs-label">Questões recorrentes (2+ erros)</div><div class="dbs-value">' + stats.recorrentes + '</div></div>';
+    html += '<div class="db-stat dbs-real"><div class="dbs-label">Erros resolvidos</div><div class="dbs-value">' + (stats.total - stats.naoResolvidos) + '</div></div>';
+    html += '</div>';
+
+    /* Dificuldades recorrentes (Melhoria 3.5) */
+    if (recurring.length > 0) {
+      html += '<h2 class="section-title">Dificuldades recorrentes identificadas</h2>';
+      html += '<div class="rev-group">';
+      for (var r = 0; r < recurring.length && r < 5; r++) {
+        var rec = recurring[r];
+        var mm = getModule(rec.moduloId);
+        var catsStr = [];
+        for (var ck in rec.cats) if (rec.cats.hasOwnProperty(ck)) {
+          var cc = ERROR_CATS[ck];
+          if (cc) catsStr.push(cc.label + ' (' + rec.cats[ck] + ')');
+        }
+        html += '<div class="recurring-difficulty">';
+        html += '<strong>⚠️ ' + esc((mm ? mm.titulo : rec.moduloId) + ' — ' + rec.subtema) + '</strong>';
+        html += '<p>Você está apresentando <strong>' + rec.count + ' erro(s) não resolvido(s)</strong> neste subtópico. Categorias predominantes: ' + esc(catsStr.join(' · ')) + '.</p>';
+        html += '<p style="color:var(--text-muted);font-size:13px;">Recomendação: revisar a diferença entre os conceitos envolvidos e depois realizar nova bateria de questões.</p>';
+        html += '<div class="sri-actions">';
+        html += '<button class="btn btn-primary" data-action="review-subtopic" data-module-id="' + esc(rec.moduloId) + '" data-subtema="' + esc(rec.subtema) + '">Revisar subtópico</button>';
+        html += '<button class="btn" data-action="open-lesson-by-module" data-module-id="' + esc(rec.moduloId) + '">Ver aula</button>';
+        html += '</div></div>';
+      }
+      html += '</div>';
+    }
+
+    /* Breakdown por categoria */
+    html += '<h2 class="section-title">Erros por categoria</h2>';
+    html += '<div class="error-cat-breakdown">';
+    for (var ec = 0; ec < ERROR_CATS_ORDER.length; ec++) {
+      var catId = ERROR_CATS_ORDER[ec]; var cat = ERROR_CATS[catId];
+      if (!cat) continue;
+      var count = stats.porCategoria[catId] || 0;
+      var pct = stats.total > 0 ? Math.round((count / stats.total) * 100) : 0;
+      html += '<div class="ecb-row">';
+      html += '<span class="ecb-icon">' + esc(cat.icon || '') + '</span>';
+      html += '<span class="ecb-label">' + esc(cat.label) + '</span>';
+      html += '<div class="ecb-bar"><div class="ecb-fill" style="width:' + pct + '%"></div></div>';
+      html += '<span class="ecb-value">' + count + '</span>';
+      html += '</div>';
+    }
+    html += '</div>';
+
+    /* Evolução */
+    html += '<h2 class="section-title">Evolução dos erros (últimos 14 dias)</h2>';
+    var evo = getErrorEvolution(14);
+    var maxEvo = 0; for (var ev = 0; ev < evo.length; ev++) if (evo[ev].count > maxEvo) maxEvo = evo[ev].count;
+    if (maxEvo === 0) {
+      html += '<div class="rev-empty">Sem erros registrados nos últimos 14 dias.</div>';
+    } else {
+      html += '<div class="evolution-grid">';
+      for (var e2 = 0; e2 < evo.length; e2++) {
+        var d = evo[e2]; var hpct = maxEvo > 0 ? Math.round((d.count / maxEvo) * 100) : 0;
+        html += '<div class="evolution-day" title="' + esc(d.date) + ' — ' + d.count + ' erro(s)"><div class="evolution-bar" style="height:' + Math.max(hpct, 3) + '%;background:var(--danger);"></div><div class="evolution-label">' + esc(d.label) + '</div></div>';
+      }
+      html += '</div>';
+    }
+
+    /* Ações de recuperação */
+    if (stats.naoResolvidos > 0 || filtered.length > 0) {
+      html += '<div class="quick-actions" style="margin-top:18px;">';
+      if (stats.naoResolvidos > 0) html += '<button class="btn btn-danger" data-action="start-error-recovery">❌ Refazer questões que errei (' + stats.naoResolvidos + ' erro(s) não resolvido(s))</button>';
+      if (stats.recorrentes > 0) html += '<button class="btn" data-action="start-error-recovery-recurring">🔁 Refazer erros recorrentes (' + stats.recorrentes + ')</button>';
+      html += '</div>';
+    }
+
+    /* Filtros */
+    html += '<h2 class="section-title">Filtrar erros</h2>';
+    var areasOpts = '<option value="todas">Todas as áreas</option>';
+    var areaKeys = Object.keys(AREA_LABELS);
+    for (var ak = 0; ak < areaKeys.length; ak++) {
+      var akk = areaKeys[ak];
+      var selA = errorFilter.area === akk ? ' selected' : '';
+      areasOpts += '<option value="' + esc(akk) + '"' + selA + '>' + esc(AREA_LABELS[akk]) + '</option>';
+    }
+    var modOpts = '<option value="todos">Todos os módulos</option>';
+    for (var mo = 0; mo < MODULES.length; mo++) {
+      var hasErr = false;
+      for (var qe = 0; qe < QUESTIONS.length; qe++) {
+        if (QUESTIONS[qe].moduloId !== MODULES[mo].id) continue;
+        var qse = AppState.questions[QUESTIONS[qe].id];
+        if (qse && qse.errosDetalhados && qse.errosDetalhados.length) { hasErr = true; break; }
+      }
+      if (!hasErr && errorFilter.moduloId !== MODULES[mo].id) continue;
+      var selM = errorFilter.moduloId === MODULES[mo].id ? ' selected' : '';
+      modOpts += '<option value="' + esc(MODULES[mo].id) + '"' + selM + '>' + esc(MODULES[mo].id + ' — ' + MODULES[mo].titulo) + '</option>';
+    }
+    var catOpts = '<option value="todas">Todas as categorias</option>';
+    for (var cc2 = 0; cc2 < ERROR_CATS_ORDER.length; cc2++) {
+      var ccid = ERROR_CATS_ORDER[cc2];
+      if (!ERROR_CATS[ccid]) continue;
+      var selC = errorFilter.categoria === ccid ? ' selected' : '';
+      catOpts += '<option value="' + esc(ccid) + '"' + selC + '>' + esc(ERROR_CATS[ccid].label) + '</option>';
+    }
+    var tipoOpts = '<option value="todos">Todos</option><option value="nao_resolvidos"' + (errorFilter.tipo === 'nao_resolvidos' ? ' selected' : '') + '>Não resolvidos</option><option value="recorrentes"' + (errorFilter.tipo === 'recorrentes' ? ' selected' : '') + '>Recorrentes</option><option value="recentes"' + (errorFilter.tipo === 'recentes' ? ' selected' : '') + '>Recentes (7 dias)</option>';
+    html += '<div class="filter-row">';
+    html += '<label>Área</label><select id="errFilterArea">' + areasOpts + '</select>';
+    html += '<label>Módulo</label><select id="errFilterModulo">' + modOpts + '</select>';
+    html += '<label>Categoria</label><select id="errFilterCategoria">' + catOpts + '</select>';
+    html += '<label>Tipo</label><select id="errFilterTipo">' + tipoOpts + '</select>';
+    html += '</div>';
+
+    /* Lista filtrada */
+    html += '<h2 class="section-title">Erros registrados (' + filtered.length + ')</h2>';
+    if (filtered.length === 0) {
+      html += '<div class="rev-empty">Nenhum erro corresponde aos filtros escolhidos.</div>';
+    } else {
+      for (var f = 0; f < filtered.length; f++) {
+        var qf = filtered[f];
+        var qsf = AppState.questions[qf.id] || {};
+        var mf = getModule(qf.moduloId);
+        var naoRes = 0; for (var nr = 0; nr < (qsf.errosDetalhados || []).length; nr++) if (!qsf.errosDetalhados[nr].resolvido) naoRes++;
+        var ultimaCat = null;
+        if (qsf.errosDetalhados && qsf.errosDetalhados.length > 0) ultimaCat = qsf.errosDetalhados[qsf.errosDetalhados.length - 1].categoria;
+        var catLabel = ultimaCat && ERROR_CATS[ultimaCat] ? ERROR_CATS[ultimaCat].label : '—';
+        html += '<div class="err-item">';
+        html += '<div class="ei-head"><span class="ei-id">' + esc(qf.id) + '</span><div class="ei-tags">';
+        html += '<span class="badge-pill ' + typeBadgeClass(qf.tipo) + '">' + esc(typeLabel(qf.tipo)) + '</span>';
+        html += '<span class="badge-pill badge-err">' + (qsf.erros || 0) + ' erro(s)</span>';
+        if (naoRes > 0) html += '<span class="badge-pill badge-did">' + naoRes + ' não resolvido(s)</span>';
+        if (ultimaCat) html += '<span class="badge-pill badge-rev">' + esc(catLabel) + '</span>';
+        if (qsf.erros >= 2) html += '<span class="badge-pill badge-err">recorrente</span>';
+        html += '</div></div>';
+        html += '<div class="ei-text">' + esc(qf.enunciado) + '</div>';
+        html += '<div class="ei-meta">' + esc(qf.moduloId + (mf ? ' — ' + mf.titulo : '') + ' · ' + qf.subtema) + ' · acertos: <strong>' + (qsf.acertos || 0) + '</strong> / tentativas: <strong>' + (qsf.tentativas || 0) + '</strong></div>';
+        html += '<div class="ei-row2">';
+        html += '<button class="btn btn-danger" data-action="revisar-questao-unica" data-question-id="' + esc(qf.id) + '">Revisar só esta questão</button>';
+        html += '<button class="btn" data-action="open-module" data-module-id="' + esc(qf.moduloId) + '">Ver módulo</button>';
+        html += '</div></div>';
+      }
     }
     html += footerHtml();
     return html;
   }
 
+  /* ---------- Sessão de recuperação de erros (Melhoria 3.6) ---------- */
+  function startErrorRecoverySession(scope) {
+    /* scope: 'all' | 'unresolved' | 'recurring' */
+    var pool = [];
+    for (var i = 0; i < QUESTIONS.length; i++) {
+      var q = QUESTIONS[i];
+      var qs = AppState.questions[q.id];
+      if (!qs || !qs.errosDetalhados || !qs.errosDetalhados.length) continue;
+      var include = false;
+      if (scope === 'all') include = true;
+      else if (scope === 'unresolved') {
+        for (var j = 0; j < qs.errosDetalhados.length; j++) {
+          if (!qs.errosDetalhados[j].resolvido) { include = true; break; }
+        }
+      } else if (scope === 'recurring') include = qs.erros >= 2;
+      if (include) pool.push(q);
+    }
+    if (pool.length === 0) { window.alert('Nenhuma questão disponível para esta recuperação.'); return; }
+    /* Priorizar recorrentes e atrasadas */
+    pool.sort(function (a, b) {
+      var sa = AppState.questions[a.id] || {};
+      var sb = AppState.questions[b.id] || {};
+      var scoreA = (sa.erros || 0) * 3 + (sa.proximaRevisao && isDue(sa.proximaRevisao) ? 5 : 0);
+      var scoreB = (sb.erros || 0) * 3 + (sb.proximaRevisao && isDue(sb.proximaRevisao) ? 5 : 0);
+      return scoreB - scoreA;
+    });
+    var ids = pool.map(function (q) { return q.id; });
+    startQuestionSession(ids, 'erros');
+  }
+
   /* ============================================================
-     SIMULADOS
+     BLOCO 7 — Simulados (telas) e exercício pós-aula
   ============================================================ */
+
+  /* ---------- SIMULADOS (tela de configuração) ---------- */
   function renderSimulados() {
     var totalReal = qRealCount();
     var poolSimulado = filterForSimulado();
@@ -1478,7 +2511,7 @@
     html += '</div>';
     var simCount = AppState.simulados.length;
     var bestPct = null, lastPct = null;
-    for (var s = 0; s < AppState.simulados.length; s++) { var r = AppState.simulados[s].resultado; if (bestPct == null || r.percentual > bestPct) bestPct = r.percentual; lastPct = r.percentual; }
+    for (var ss = 0; ss < AppState.simulados.length; ss++) { var r = AppState.simulados[ss].resultado; if (bestPct == null || r.percentual > bestPct) bestPct = r.percentual; lastPct = r.percentual; }
     html += '<div class="db-summary">';
     html += '<div class="db-stat dbs-sim"><div class="dbs-label">Simulados feitos</div><div class="dbs-value">' + simCount + '</div></div>';
     html += '<div class="db-stat dbs-real"><div class="dbs-label">Melhor aproveitamento</div><div class="dbs-value">' + (bestPct != null ? bestPct + '%' : '—') + '</div></div>';
@@ -1537,6 +2570,7 @@
     html += footerHtml();
     return html;
   }
+
   function renderSimuladoRun() {
     if (!simuladoRunning) return '<h1 class="page-title">Simulado não iniciado</h1><button class="btn btn-primary" data-nav="simulados">Ir para Simulados</button>';
     var total = simuladoRunning.ids.length, idx = simuladoRunning.index;
@@ -1582,6 +2616,7 @@
     html += footerHtml();
     return html;
   }
+
   function renderSimuladoResult() {
     var sim = getSimulado(currentSimuladoId);
     if (!sim) return '<h1 class="page-title">Simulado não encontrado</h1><button class="btn" data-nav="simulados">← Simulados</button>';
@@ -1604,9 +2639,9 @@
     html += '<h2 class="section-title">Leitura do resultado</h2>';
     var reading = '';
     if (r.percentual >= 80) reading = '<strong>Excelente.</strong> Aproveitamento de ' + r.percentual + '%. Mantenha a rotina de revisão espaçada.';
-    else if (r.percentual >= 60) reading = '<strong>Bom desempenho.</strong> ' + r.percentual + '% — faixa competitiva. Revise os erros no <strong>Caderno de Erros</strong>.';
+    else if (r.percentual >= 60) reading = '<strong>Bom desempenho.</strong> ' + r.percentual + '% — faixa competitiva. Revise os erros no <strong>Meu banco de erros</strong>.';
     else if (r.percentual >= 40) reading = '<strong>Atenção.</strong> Aproveitamento de ' + r.percentual + '%. Priorize revisão das questões erradas e das aulas dos módulos com pior desempenho.';
-    else reading = '<strong>Foco urgente.</strong> Aproveitamento de ' + r.percentual + '%. Volte às aulas e refaça os diagnósticos dos módulos com pior desempenho antes do próximo simulado.';
+    else reading = '<strong>Foco urgente.</strong> Aproveitamento de ' + r.percentual + '%. Volte às aulas e faça o exercício "Praticar o que aprendi" dos módulos com pior desempenho antes do próximo simulado.';
     if (r.naoRespondidas > 0) reading += ' Você deixou <strong>' + r.naoRespondidas + '</strong> questão(ões) em branco.';
     html += '<div class="notice">' + reading + '</div>';
     html += '<h2 class="section-title">Desempenho por módulo</h2>' + renderBreakdown(r.porModulo || {}, function (k) { var m = getModule(k); return k + (m ? ' — ' + m.titulo : ''); });
@@ -1631,15 +2666,365 @@
   }
 
   /* ============================================================
-     ESTATÍSTICAS
+     EXERCÍCIO PÓS-AULA — "Praticar o que aprendi"
   ============================================================ */
+
+  function startExercise(modId) {
+    var m = getModule(modId);
+    if (!m) { window.alert('Módulo não encontrado.'); return; }
+    var items = getExerciseQuestions(modId);
+    if (items.length === 0) { window.alert('Não há questões suficientes para montar o exercício deste módulo.'); return; }
+    exerciseRunning = {
+      moduleId: modId,
+      items: items,                // [{q, nivel}]
+      index: 0,
+      respostas: {},               // qid -> altId
+      classificacoes: {},          // qid -> classificacao
+      startedAt: new Date().toISOString()
+    };
+    navigate('exercicio-run', { moduleId: modId });
+  }
+
+  function answerExercise(altId) {
+    if (!exerciseRunning) return;
+    var cur = exerciseRunning.items[exerciseRunning.index];
+    if (!cur) return;
+    var qid = cur.q.id;
+    if (Object.prototype.hasOwnProperty.call(exerciseRunning.respostas, qid)) return;
+    exerciseRunning.respostas[qid] = altId;
+    var correct = altId === cur.q.gabarito;
+    /* Classificação automática padrão */
+    var cls = correct ? 'seguranca' : 'desconhecimento';
+    exerciseRunning.classificacoes[qid] = cls;
+    commitQuestionAnswer(qid, altId, { classificacao: cls });
+    render();
+  }
+
+  function setExerciseClassification(qid, cls) {
+    if (!exerciseRunning) return;
+    var validos = ['seguranca', 'duvida', 'confusao', 'desconhecimento', 'interpretacao'];
+    if (validos.indexOf(cls) === -1) return;
+    exerciseRunning.classificacoes[qid] = cls;
+    var qs = getQuestionUserState(qid);
+    qs.ultimaClassificacao = cls;
+    var dias = computeAdaptiveInterval(qid, cls);
+    qs.proximaRevisao = addDaysIso(dias);
+    if (qs.historicoRevisoes && qs.historicoRevisoes.length > 0) {
+      qs.historicoRevisoes[qs.historicoRevisoes.length - 1].classificacao = cls;
+      qs.historicoRevisoes[qs.historicoRevisoes.length - 1].intervaloAplicado = dias;
+    }
+    saveState(); render();
+  }
+
+  function nextExercise() {
+    if (exerciseRunning && exerciseRunning.index < exerciseRunning.items.length - 1) {
+      exerciseRunning.index += 1; render();
+      var main = document.getElementById('main'); if (main) main.scrollTop = 0;
+    }
+  }
+  function prevExercise() {
+    if (exerciseRunning && exerciseRunning.index > 0) {
+      exerciseRunning.index -= 1; render();
+      var main = document.getElementById('main'); if (main) main.scrollTop = 0;
+    }
+  }
+  function cancelExercise() {
+    if (!window.confirm('Cancelar o exercício? As respostas já registradas serão mantidas no histórico de questões.')) return;
+    exerciseRunning = null;
+    if (currentModuleId) navigate('modulo-detalhe', { moduleId: currentModuleId });
+    else navigate('modulos');
+  }
+
+  function computeExerciseResult() {
+    if (!exerciseRunning) return null;
+    var items = exerciseRunning.items;
+    var porNivel = { 1: { total: 0, acertos: 0 }, 2: { total: 0, acertos: 0 }, 3: { total: 0, acertos: 0 }, 4: { total: 0, acertos: 0 } };
+    var acertos = 0, total = items.length;
+    var porSubtema = {};
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      var q = it.q;
+      var resp = exerciseRunning.respostas[q.id];
+      var correta = resp === q.gabarito;
+      if (correta) acertos++;
+      porNivel[it.nivel].total += 1;
+      if (correta) porNivel[it.nivel].acertos += 1;
+      var subKey = q.subtema || 'Geral';
+      if (!porSubtema[subKey]) porSubtema[subKey] = { total: 0, acertos: 0 };
+      porSubtema[subKey].total += 1;
+      if (correta) porSubtema[subKey].acertos += 1;
+    }
+    var pct = total > 0 ? Math.round((acertos / total) * 100) : 0;
+    return { acertos: acertos, total: total, percentual: pct, porNivel: porNivel, porSubtema: porSubtema, data: new Date().toISOString() };
+  }
+
+  function finishExercise() {
+    if (!exerciseRunning) return;
+    var unanswered = 0;
+    for (var i = 0; i < exerciseRunning.items.length; i++) {
+      var qid = exerciseRunning.items[i].q.id;
+      if (!Object.prototype.hasOwnProperty.call(exerciseRunning.respostas, qid)) unanswered++;
+    }
+    if (unanswered > 0) {
+      if (!window.confirm('Você deixou ' + unanswered + ' questão(ões) em branco.\n\nFinalizar mesmo assim? As questões em branco não contam como acerto.')) return;
+    }
+    var result = computeExerciseResult();
+    if (!result) return;
+
+    var modId = exerciseRunning.moduleId;
+    var exState = getModuleUserExercicio(modId);
+    exState.tentativas += 1;
+    exState.ultimoPercentual = result.percentual;
+    exState.ultimaTentativa = result.data;
+    if (result.percentual > exState.melhorPercentual) exState.melhorPercentual = result.percentual;
+    exState.dominado = result.percentual >= MASTERY_THRESHOLD;
+    exState.legacyDominado = false;
+
+    var historicoEntry = {
+      data: result.data,
+      acertos: result.acertos,
+      total: result.total,
+      percentual: result.percentual,
+      porNivel: result.porNivel,
+      porSubtema: result.porSubtema
+    };
+    exState.historico.push(historicoEntry);
+    if (exState.historico.length > 30) exState.historico = exState.historico.slice(-30);
+
+    var st = getModuleUserState(modId);
+    st.ultimaAtividade = new Date().toISOString();
+    checkModuleCompletion(modId);
+
+    saveState();
+    window.__lastExercise = { moduleId: modId, result: result, items: exerciseRunning.items.slice(), respostas: Object.assign({}, exerciseRunning.respostas) };
+    exerciseRunning = null;
+    navigate('exercicio-result', { moduleId: modId });
+  }
+
+  function openExerciseResult(modId) {
+    if (!AppState.exercicios || !AppState.exercicios[modId]) return;
+    var ex = AppState.exercicios[modId];
+    if (!ex.historico || ex.historico.length === 0) { window.alert('Nenhum resultado de exercício salvo para este módulo.'); return; }
+    var last = ex.historico[ex.historico.length - 1];
+    window.__lastExercise = { moduleId: modId, result: last, items: null, respostas: null };
+    navigate('exercicio-result', { moduleId: modId });
+  }
+
+  function renderExerciseRun() {
+    if (!exerciseRunning) return '<h1 class="page-title">Exercício não iniciado</h1><button class="btn btn-primary" data-nav="modulos">Ir para Módulos</button>';
+    var items = exerciseRunning.items;
+    var idx = exerciseRunning.index;
+    var cur = items[idx];
+    if (!cur) return '<h1 class="page-title">Item não encontrado</h1><button class="btn" data-action="cancel-exercise">Sair</button>';
+    var q = cur.q;
+    var nivel = cur.nivel;
+    var resp = exerciseRunning.respostas[q.id];
+    var answered = resp != null;
+    var cls = exerciseRunning.classificacoes[q.id];
+    var acertou = answered && resp === q.gabarito;
+    var answeredCount = 0;
+    for (var i = 0; i < items.length; i++) if (Object.prototype.hasOwnProperty.call(exerciseRunning.respostas, items[i].q.id)) answeredCount++;
+    var percent = Math.round((answeredCount / items.length) * 100);
+    var m = getModule(exerciseRunning.moduleId);
+
+    var html = '';
+    html += '<div class="run-toolbar"><div class="rt-info">';
+    html += '<span class="badge-pill badge-aula">EXERCÍCIO</span>';
+    html += '<span>' + esc(m ? m.titulo : exerciseRunning.moduleId) + '</span>';
+    html += '<span class="nivel-badge nivel-' + nivel + '">' + esc(EXERCISE_NIVEIS[nivel] || ('Nível ' + nivel)) + '</span>';
+    html += '<span style="color:var(--text-muted);">' + (idx + 1) + ' / ' + items.length + '</span>';
+    html += '</div><button class="btn" data-action="cancel-exercise">Cancelar exercício</button></div>';
+
+    html += '<div class="diag-progress"><div class="diag-progress-bar"><div class="diag-progress-fill" style="width:' + percent + '%"></div></div><div class="diag-progress-label">' + answeredCount + ' / ' + items.length + '</div></div>';
+
+    /* Descrição do nível */
+    var nivelDesc = EXERCISE_NIVEIS_DESC[nivel] || '';
+    if (nivelDesc) html += '<div class="exercise-nivel-hint"><strong>Nível ' + nivel + ' — ' + esc(EXERCISE_NIVEIS[nivel] || '') + ':</strong> ' + esc(nivelDesc) + '</div>';
+
+    html += '<div class="q-card">';
+    html += '<div class="q-head"><span class="q-id">' + esc(q.id) + '</span>';
+    html += '<span class="badge-pill ' + typeBadgeClass(q.tipo) + '">' + esc(typeLabel(q.tipo)) + '</span>';
+    html += '<span class="badge-pill ' + (DIFFICULTY_CLASS[q.dificuldade] || '') + '">' + esc(difficultyLabel(q.dificuldade)) + '</span>';
+    html += '</div>';
+    html += '<div class="q-statement">' + esc(q.enunciado) + '</div>';
+    html += '<div class="q-options">';
+    for (var a = 0; a < q.alternativas.length; a++) {
+      var alt = q.alternativas[a]; var clsBtn = 'q-option';
+      if (answered) {
+        if (alt.id === q.gabarito) clsBtn += ' correct';
+        else if (alt.id === resp) clsBtn += ' wrong';
+      }
+      html += '<button class="' + clsBtn + '" data-action="answer-exercise" data-alt="' + esc(alt.id) + '"' + (answered ? ' disabled' : '') + '><span class="opt-letter">' + esc(alt.id) + '</span><span>' + esc(alt.texto) + '</span></button>';
+    }
+    html += '</div>';
+
+    if (answered) {
+      html += '<div class="q-feedback ' + (acertou ? 'ok' : 'no') + '"><strong>' + (acertou ? '✓ Acerto' : '✗ Erro') + '</strong>Gabarito: <strong>' + esc(q.gabarito) + '</strong>. Sua resposta: <strong>' + esc(resp) + '</strong>.</div>';
+
+      var ex = q.explicacao || {};
+      if (!acertou) {
+        var adaptada = buildAdaptedExplanation(q, resp, false);
+        if (adaptada) html += '<div class="adapted-explanation"><strong>🎯 Você confundiu:</strong> ' + adaptada + '</div>';
+      }
+      html += '<div class="explain-block"><h4>Por que a correta está correta</h4><p>' + esc(ex.correta || '') + '</p></div>';
+      html += '<div class="explain-block"><h4>Por que as demais estão erradas</h4>';
+      var inc = ex.incorretas || {};
+      for (var key in inc) {
+        if (!inc.hasOwnProperty(key)) continue;
+        if (key === q.gabarito) continue;
+        html += '<div class="distractor"><span class="d-letter">' + esc(key) + '</span><span>' + esc(inc[key]) + '</span></div>';
+      }
+      html += '</div>';
+      html += '<div class="explain-block"><h4>Conceito cobrado</h4><p>' + esc(ex.conceitoCobrado || '') + '</p></div>';
+      if (ex.pegadinha) html += '<div class="explain-block"><h4>Pegadinha</h4><p>' + esc(ex.pegadinha) + '</p></div>';
+      html += '<div class="explain-block"><h4>Como reconhecer em outras questões</h4><p>' + esc(ex.comoApareceEmConcurso || '') + '</p></div>';
+      html += '<div class="explain-block example-inedito"><h4>💡 Exemplo inédito</h4><p>' + esc(getExemploInedito(q.id)) + '</p></div>';
+
+      /* Classificação opcional (mesmo seletor usado em questões) */
+      html += renderClassificationPicker(q.id, cls);
+      if (!acertou) {
+        var qsX = getQuestionUserState(q.id);
+        var catAtual = (qsX.errosDetalhados && qsX.errosDetalhados.length > 0) ? qsX.errosDetalhados[qsX.errosDetalhados.length - 1].categoria : null;
+        html += renderErrorCategoryPicker(q.id, catAtual);
+      }
+    }
+
+    html += '<div class="q-actions"><div>';
+    if (idx > 0) html += '<button class="btn" data-action="prev-exercise">← Anterior</button>';
+    html += '</div><div>';
+    if (answered && idx < items.length - 1) html += '<button class="btn btn-primary" data-action="next-exercise">Próxima →</button>';
+    else if (answered && idx === items.length - 1) html += '<button class="btn btn-purple" data-action="finish-exercise">Finalizar exercício →</button>';
+    html += '</div></div>';
+    html += '</div>';
+    html += footerHtml();
+    return html;
+  }
+
+  function renderExerciseResult() {
+    var sess = window.__lastExercise;
+    if (!sess || !sess.result) return '<h1 class="page-title">Nenhum resultado disponível</h1><button class="btn btn-primary" data-nav="modulos">Ir para Módulos</button>';
+    var r = sess.result;
+    var m = getModule(sess.moduleId);
+    var classif = classifyExercisePerformance(r.percentual);
+    var dominado = r.percentual >= MASTERY_THRESHOLD;
+
+    var html = '';
+    html += '<div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px;">';
+    html += '<div style="display:flex;gap:8px;flex-wrap:wrap;">';
+    html += '<button class="btn" data-action="open-module" data-module-id="' + esc(sess.moduleId) + '">← Módulo ' + esc(sess.moduleId) + '</button>';
+    html += '<button class="btn" data-nav="modulos">📚 Módulos</button>';
+    html += '</div>';
+    html += '<div style="display:flex;gap:8px;flex-wrap:wrap;">';
+    html += '<button class="btn btn-primary" data-action="start-exercise" data-module-id="' + esc(sess.moduleId) + '">Refazer exercício</button>';
+    html += '</div></div>';
+
+    html += '<h1 class="page-title">Resultado do exercício</h1>';
+    html += '<p class="page-subtitle">' + esc(sess.moduleId) + (m ? ' — ' + esc(m.titulo) : '') + ' · ' + esc(formatDate(r.data || new Date().toISOString())) + '</p>';
+
+    html += '<div class="result-summary">';
+    html += resultStat('Aproveitamento', r.percentual + '%');
+    html += resultStat('Acertos', r.acertos + ' / ' + r.total);
+    html += resultStat('Erros', (r.total - r.acertos) + '');
+    html += resultStat('Classificação', classif.label);
+    html += '</div>';
+
+    /* Destaque: dominado ou não */
+    if (dominado) {
+      html += '<div class="exercise-mastery-banner ok"><strong>🎉 Módulo dominado!</strong> Aproveitamento de ' + r.percentual + '% (≥ ' + MASTERY_THRESHOLD + '%) e aula lida. O módulo foi removido das sugestões de estudo do dashboard.</div>';
+    } else {
+      html += '<div class="exercise-mastery-banner ' + (r.percentual >= 60 ? 'warn' : 'err') + '"><strong>Módulo ainda não dominado.</strong> Aproveitamento de ' + r.percentual + '% — abaixo do mínimo de ' + MASTERY_THRESHOLD + '%. ' + (classif.cls === 'err' ? 'Releia a aula e refaça o exercício.' : 'Revise os pontos abaixo e refaça o exercício.') + '</div>';
+    }
+
+    /* Desempenho por nível */
+    html += '<h2 class="section-title">Desempenho por nível</h2>';
+    html += '<div class="exercise-niveis-grid">';
+    for (var nv = 1; nv <= 4; nv++) {
+      var d = (r.porNivel && r.porNivel[nv]) || { total: 0, acertos: 0 };
+      var pct = d.total > 0 ? Math.round((d.acertos / d.total) * 100) : 0;
+      var cls = pct >= 75 ? 'good' : (pct >= 50 ? 'mid' : 'bad');
+      html += '<div class="exercise-nivel-card">';
+      html += '<div class="enc-title">Nível ' + nv + '</div>';
+      html += '<div class="enc-sub">' + esc(EXERCISE_NIVEIS[nv] || '') + '</div>';
+      html += '<div class="enc-value ' + cls + '">' + d.acertos + ' / ' + d.total + ' (' + pct + '%)</div>';
+      html += '</div>';
+    }
+    html += '</div>';
+
+    /* Assuntos que precisam de reforço (subtópicos com erro) */
+    var reforço = [];
+    for (var sub in r.porSubtema) {
+      if (!r.porSubtema.hasOwnProperty(sub)) continue;
+      var sd = r.porSubtema[sub];
+      if (sd.acertos < sd.total) reforço.push({ subtema: sub, acertos: sd.acertos, total: sd.total });
+    }
+    if (reforço.length > 0) {
+      html += '<h2 class="section-title">Assuntos que precisam de reforço</h2>';
+      html += '<div class="rev-group">';
+      for (var rf = 0; rf < reforço.length; rf++) {
+        var rr = reforço[rf];
+        html += '<div class="subtopic-review-item">';
+        html += '<div class="sri-head"><strong>' + esc(rr.subtema) + '</strong><span class="badge-pill badge-did">' + rr.acertos + '/' + rr.total + '</span></div>';
+        html += '<div class="sri-actions"><button class="btn btn-primary" data-action="review-subtopic" data-module-id="' + esc(sess.moduleId) + '" data-subtema="' + esc(rr.subtema) + '">Revisar subtópico</button><button class="btn" data-action="open-lesson-by-module" data-module-id="' + esc(sess.moduleId) + '">Ver aula</button></div>';
+        html += '</div>';
+      }
+      html += '</div>';
+    }
+
+    /* Recomendação */
+    html += '<h2 class="section-title">Recomendação de estudo</h2>';
+    var rec = '';
+    if (dominado) rec = 'Você atingiu o aproveitamento mínimo. Continue com revisões espaçadas e pratique simulados para consolidar.';
+    else if (r.percentual >= 60) rec = 'Está próximo do mínimo. Releia os subtópicos com erro, faça o exercício novamente e, se necessário, retome a aula antes da próxima tentativa.';
+    else rec = 'Releia a aula completa e refaça o exercício. Foque nos subtópicos listados acima antes de tentar novamente.';
+    html += '<div class="notice">' + esc(rec) + '</div>';
+
+    /* Detalhe por questão */
+    if (sess.items && sess.respostas) {
+      html += '<h2 class="section-title">Detalhe por questão</h2>';
+      for (var i = 0; i < sess.items.length; i++) {
+        var it = sess.items[i];
+        var qq = it.q;
+        var resp = sess.respostas[qq.id];
+        var ok = resp === qq.gabarito;
+        var clsStatus = resp == null ? 'qs-nova' : (ok ? 'qs-acerto' : 'qs-erro');
+        var txtStatus = resp == null ? 'Em branco' : (ok ? '✓ Acerto' : '✗ Erro');
+        html += '<div class="question-preview"><div class="qp-header"><span class="qp-id">' + esc(qq.id) + '</span>';
+        html += '<span class="nivel-badge nivel-' + it.nivel + '">Nível ' + it.nivel + '</span>';
+        html += '<span class="qp-status ' + clsStatus + '">' + txtStatus + '</span></div>';
+        html += '<div class="qp-text">' + esc(qq.enunciado) + '</div>';
+        html += '<div class="qp-meta">Sua resposta: <strong>' + esc(resp || '—') + '</strong> · Gabarito: <strong>' + esc(qq.gabarito) + '</strong></div></div>';
+      }
+    }
+
+    html += '<div style="margin-top:18px;display:flex;gap:8px;flex-wrap:wrap;">';
+    html += '<button class="btn btn-primary" data-action="start-exercise" data-module-id="' + esc(sess.moduleId) + '">Refazer exercício</button>';
+    html += '<button class="btn" data-action="open-module" data-module-id="' + esc(sess.moduleId) + '">Voltar ao módulo</button>';
+    html += '</div>';
+    html += footerHtml();
+    return html;
+  }
+
+  /* ============================================================
+     BLOCO 8 — Estatísticas, configurações, sobre, ações, eventos, init
+  ============================================================ */
+
+  /* ---------- ESTATÍSTICAS ---------- */
   function getDailyActivity(days) {
     var map = {}; var today = new Date(); today.setHours(0, 0, 0, 0);
-    for (var i = days - 1; i >= 0; i--) { var d = new Date(today); d.setDate(d.getDate() - i); var key = d.toISOString().slice(0, 10); map[key] = { date: key, label: d.getDate() + '/' + (d.getMonth() + 1), questions: 0, flashcards: 0, simulados: 0, total: 0 }; }
+    for (var i = days - 1; i >= 0; i--) { var d = new Date(today); d.setDate(d.getDate() - i); var key = d.toISOString().slice(0, 10); map[key] = { date: key, label: d.getDate() + '/' + (d.getMonth() + 1), questions: 0, flashcards: 0, simulados: 0, exercicios: 0, total: 0 }; }
     var qid, fid;
     for (qid in AppState.questions) { if (!AppState.questions.hasOwnProperty(qid)) continue; var hq = AppState.questions[qid].historico || []; for (var a = 0; a < hq.length; a++) { var kq = (hq[a].data || '').slice(0, 10); if (map[kq]) { map[kq].questions++; map[kq].total++; } } }
     for (fid in AppState.flashcards) { if (!AppState.flashcards.hasOwnProperty(fid)) continue; var hf = AppState.flashcards[fid].historico || []; for (var b = 0; b < hf.length; b++) { var kf = (hf[b].data || '').slice(0, 10); if (map[kf]) { map[kf].flashcards++; map[kf].total++; } } }
     for (var s = 0; s < AppState.simulados.length; s++) { var ks = (AppState.simulados[s].finalizadoEm || '').slice(0, 10); if (map[ks]) { map[ks].simulados++; map[ks].total++; } }
+    for (var exId in AppState.exercicios) {
+      if (!AppState.exercicios.hasOwnProperty(exId)) continue;
+      var exSt = AppState.exercicios[exId];
+      if (!exSt || !exSt.historico) continue;
+      for (var he = 0; he < exSt.historico.length; he++) {
+        var ke = (exSt.historico[he].data || '').slice(0, 10);
+        if (map[ke]) { map[ke].exercicios++; map[ke].total++; }
+      }
+    }
     var arr = []; for (var k in map) if (map.hasOwnProperty(k)) arr.push(map[k]);
     arr.sort(function (x, y) { return x.date < y.date ? -1 : 1; });
     return arr;
@@ -1679,11 +3064,9 @@
   function getMasteryByModule() {
     var out = [];
     for (var i = 0; i < MODULES.length; i++) {
-      var m = MODULES[i]; var st = AppState.modules[m.id]; if (!st) continue;
-      var dom = st.dominioEstimado || 0; var tent = 0, ac = 0;
-      for (var j = 0; j < QUESTIONS.length; j++) { if (QUESTIONS[j].moduloId !== m.id) continue; var qs = AppState.questions[QUESTIONS[j].id]; if (!qs) continue; tent += qs.tentativas || 0; ac += qs.acertos || 0; }
-      var pctQ = tent > 0 ? (ac / tent) : null; var estimado = dom; if (pctQ != null) estimado = (dom + pctQ) / 2;
-      out.push({ modulo: m, dominio: Math.round(estimado * 100), tentativas: tent, temDados: dom > 0 || tent > 0 });
+      var m = MODULES[i];
+      var mastery = getModuleMastery(m.id);
+      out.push({ modulo: m, dominio: mastery, temDados: mastery > 0 || (AppState.exercicios && AppState.exercicios[m.id]) });
     }
     out.sort(function (a, b) { return b.dominio - a.dominio; });
     return out;
@@ -1726,6 +3109,7 @@
       html += '<div class="evolution-legend"><span><span class="dot" style="background:var(--primary);"></span>Atividade por dia</span><span><span class="dot" style="background:var(--purple);"></span>Hoje</span></div>';
     }
     html += '</div>';
+
     html += '<div class="stats-grid-2" style="margin-top:18px;">';
     html += '<div class="stats-block"><h3><span class="sb-icon">📚</span> Desempenho por módulo</h3>';
     if (porModulo.length === 0) html += '<div style="color:var(--text-muted);font-size:14px;">Responda questões para gerar este painel.</div>';
@@ -1738,6 +3122,7 @@
     if (porTipo.length === 0) html += '<div style="color:var(--text-muted);font-size:14px;">Sem dados.</div>';
     else { for (var t = 0; t < porTipo.length; t++) { var pt = porTipo[t]; var clsT = pt.pct >= 70 ? 'good' : (pt.pct >= 40 ? 'mid' : 'bad'); html += '<div class="stats-bar"><div class="stats-bar-label">' + esc(pt.label) + '</div><div class="stats-bar-track"><div class="stats-bar-fill ' + clsT + '" style="width:' + pt.pct + '%"></div></div><div class="stats-bar-value">' + pt.pct + '%</div></div>'; } }
     html += '</div></div>';
+
     html += '<h2 class="section-title">Ranking de erros</h2>';
     if (ranking.length === 0) html += '<div class="rev-empty">Nenhum erro registrado.</div>';
     else {
@@ -1752,10 +3137,11 @@
       }
       html += '</div>';
     }
+
     html += '<div class="stats-grid-2" style="margin-top:18px;">';
-    html += '<div class="stats-block"><h3><span class="sb-icon">🧠</span> Domínio estimado por módulo</h3>';
+    html += '<div class="stats-block"><h3><span class="sb-icon">🧠</span> Domínio por módulo (exercício)</h3>';
     var domComDados = []; for (var k = 0; k < dominios.length; k++) if (dominios[k].temDados) domComDados.push(dominios[k]);
-    if (domComDados.length === 0) html += '<div style="color:var(--text-muted);font-size:14px;">Faça diagnósticos ou responda questões para estimar domínio.</div>';
+    if (domComDados.length === 0) html += '<div style="color:var(--text-muted);font-size:14px;">Faça o exercício "Praticar o que aprendi" para estimar domínio.</div>';
     else { for (var x = 0; x < domComDados.length; x++) { var dm = domComDados[x]; var clsDom = dm.dominio >= 70 ? 'good' : (dm.dominio >= 40 ? 'mid' : 'bad'); html += '<div class="stats-bar"><div class="stats-bar-label" title="' + esc(dm.modulo.titulo) + '">' + esc(dm.modulo.id) + ' — ' + esc(dm.modulo.titulo) + '</div><div class="stats-bar-track"><div class="stats-bar-fill ' + clsDom + '" style="width:' + dm.dominio + '%"></div></div><div class="stats-bar-value">' + dm.dominio + '%</div></div>'; } }
     html += '</div>';
     html += '<div class="stats-block"><h3><span class="sb-icon">⭐</span> Assuntos fortes e fracos</h3>';
@@ -1776,9 +3162,7 @@
     return html;
   }
 
-  /* ============================================================
-     SETTINGS
-  ============================================================ */
+  /* ---------- CONFIGURAÇÕES ---------- */
   function renderSettings() {
     var totalModulos = MODULES.length;
     var modulosComEstado = 0;
@@ -1793,7 +3177,7 @@
     html += '</div>';
     html += '<p style="margin-top:12px;"><button class="btn btn-primary theme-btn" data-action="toggle-theme">' + esc(proximoLabel) + '</button></p>';
     html += '<h2 class="section-title">Backup completo</h2>';
-    html += '<div class="notice">Exporta o estado inteiro (progresso, questões vistas, flashcards, simulados, tema). Útil para backup ou migração.</div>';
+    html += '<div class="notice">Exporta o estado inteiro (progresso, questões vistas, flashcards, simulados, exercícios, tema). Útil para backup ou migração.</div>';
     html += '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;"><button class="btn btn-primary" data-action="export-full-state">📤 Exportar backup completo</button></div>';
     html += '<div class="io-box" style="margin-top:14px;"><h3><span>📥</span> Importar backup completo</h3><p>Cole o JSON gerado acima. O progresso atual será substituído <strong>somente após sua confirmação</strong>.</p>';
     html += '<textarea id="importFullStateTextarea" placeholder=\'{"exportedAt":"...","appVersion":"...","state":{...}}\'></textarea>';
@@ -1810,19 +3194,20 @@
     html += infoRow('Revisões pendentes (vencidas)', countDueAll());
     html += infoRow('Erros em aberto', countErrorsAll());
     html += infoRow('Módulos com estado', modulosComEstado);
+    html += infoRow('Módulos com domínio ≥ ' + MASTERY_THRESHOLD + '%', (function () { var n = 0; for (var mm = 0; mm < MODULES.length; mm++) if (getModuleMastery(MODULES[mm].id) >= MASTERY_THRESHOLD) n++; return n; })());
+    html += infoRow('Migração de domínio (exercício)', (AppState.settings && AppState.settings.migratedToExerciseMastery ? '✓ Concluída' : 'Pendente'));
+    if (AppState.settings && AppState.settings.ultimaMigracao) html += infoRow('Última migração', formatDate(AppState.settings.ultimaMigracao));
     html += infoRow('Criado em', formatDate(AppState.createdAt));
     html += infoRow('Atualizado em', formatDate(AppState.updatedAt));
     html += '</div>';
     html += '<h2 class="section-title">Zerar progresso</h2>';
-    html += '<div class="notice">Apaga módulos, diagnóstico, questões, flashcards, simulados, revisões, erros, estatísticas e histórico. Ação irreversível.</div>';
+    html += '<div class="notice">Apaga módulos, diagnóstico, questões, flashcards, simulados, exercícios, revisões, erros, estatísticas e histórico. Ação irreversível.</div>';
     html += '<p style="margin-top:12px;"><button class="btn btn-danger" data-action="reset-progress">Zerar progresso</button></p>';
     html += footerHtml();
     return html;
   }
 
-  /* ============================================================
-     SOBRE
-  ============================================================ */
+  /* ---------- SOBRE ---------- */
   function renderAbout() {
     var html = '';
     html += '<h1 class="page-title">Sobre</h1><p class="page-subtitle">Informações do aplicativo.</p>';
@@ -1838,10 +3223,19 @@
     html += infoRow('Questões cadastradas', QUESTIONS.length + ' (' + qRealCount() + ' reais, ' + qDidCount() + ' didáticas)');
     html += infoRow('Flashcards cadastrados', FLASHCARDS.length);
     html += infoRow('Simulados', AppState.simulados.length);
-    html += infoRow('Regra de conclusão', 'Aula lida + diagnóstico com domínio 100%');
+    html += infoRow('Exercícios pós-aula (blueprints)', Object.keys(EXERCISE_BLUEPRINTS).length + ' / ' + MODULES.length);
+    html += infoRow('Exemplos inéditos (questões)', Object.keys(EXEMPLOS_INEDITOS).length);
+    html += infoRow('Regra de domínio', 'Exercício ≥ ' + MASTERY_THRESHOLD + '% + aula lida');
     html += infoRow('Modo', 'Offline — sem servidor ou IA externa');
     html += '</div>';
     if (SOBRE.observacoes) html += '<h2 class="section-title">Observações</h2><div class="notice">' + esc(SOBRE.observacoes) + '</div>';
+    html += '<h2 class="section-title">Melhorias pedagógicas (v' + APP_VERSION + ')</h2><div class="notice">';
+    html += '<ul style="padding-left:18px;margin:0;">';
+    html += '<li><strong>1. Exercício pós-aula:</strong> 12 questões em 4 níveis; determina o domínio do módulo.</li>';
+    html += '<li><strong>2. Revisão espaçada adaptativa:</strong> intervalo varia com a classificação da resposta, dificuldade e acertos consecutivos.</li>';
+    html += '<li><strong>3. Banco de erros inteligente:</strong> categorização do erro, histórico preservado, dificuldades recorrentes e recuperação.</li>';
+    html += '<li><strong>4. Comentários pedagógicos:</strong> explicação adaptada ao erro + exemplo inédito por questão.</li>';
+    html += '</ul></div>';
     html += footerHtml();
     return html;
   }
@@ -1864,6 +3258,10 @@
     st.ultimaAtividade = new Date().toISOString();
     saveState();
     navigate('licao', { lessonId: lessonId });
+  }
+  function openLessonByModule(modId) {
+    var lesson = getLessonByModuleId(modId); if (!lesson) { window.alert('Este módulo ainda não tem aula cadastrada.'); return; }
+    openLesson(lesson.id);
   }
   function markLessonRead(lessonId) {
     var lesson = getLessonById(lessonId); if (!lesson) return;
@@ -1890,11 +3288,7 @@
   function startFlashcardsAll() { var ids = FLASHCARDS.map(function (f) { return f.id; }); if (ids.length === 0) { window.alert('Nenhum flashcard cadastrado ainda.'); return; } startFlashcardSession(ids, 'livre'); }
   function startFlashcardsDue() { var due = getDueFlashcards().map(function (f) { return f.id; }); if (due.length === 0) { window.alert('Nenhum flashcard vencido no momento.'); return; } startFlashcardSession(due, 'revisao'); }
   function startFlashcardsByModule(modId) { var cards = fcByModule(modId); var ids = cards.map(function (f) { return f.id; }); startFlashcardSession(ids, 'livre'); }
-  function startRevisionQuestions() { var due = getDueQuestions().map(function (q) { return q.id; }); if (due.length === 0) { window.alert('Nenhuma questão vencida no momento.'); return; } startQuestionSession(due, 'revisao'); }
-  function startRevisionFlashcards() { var due = getDueFlashcards().map(function (f) { return f.id; }); if (due.length === 0) { window.alert('Nenhum flashcard vencido no momento.'); return; } startFlashcardSession(due, 'revisao'); }
-  function startErrorsSession() { var errs = getErrorQuestions().map(function (q) { return q.id; }); if (errs.length === 0) { window.alert('Nenhuma questão no caderno de erros.'); return; } startQuestionSession(errs, 'erros'); }
-  function revisarQuestaoUnica(qid) { if (!getQuestion(qid)) return; startQuestionSession([qid], 'revisao'); }
-  function revisarFlashcardUnico(fid) { if (!getFlashcard(fid)) return; startFlashcardSession([fid], 'revisao'); }
+  function startErrorsSession() { var errs = getUnresolvedErrors().map(function (q) { return q.id; }); if (errs.length === 0) { window.alert('Nenhum erro não resolvido no banco.'); return; } startQuestionSession(errs, 'erros'); }
   function setSimuladoMode(m) { if (m !== 'SIMULADO' && m !== 'PROVA_CONCURSO') return; simuladoConfig.modo = m; render(); }
   function setSimuladoQuantidade(v) { if (v === 'custom') { simuladoConfig.quantidade = 'custom'; if (!simuladoConfig.customQty) simuladoConfig.customQty = '30'; } else { var n = parseInt(v, 10); if (!isFinite(n)) return; simuladoConfig.quantidade = n; } render(); }
   function setSimuladoCustomQty(v) { simuladoConfig.customQty = v; render(); }
@@ -1906,6 +3300,7 @@
   function simuladoByModule(modId) { simuladoConfig.modo = 'SIMULADO'; simuladoConfig.area = 'todas'; simuladoConfig.moduloId = modId; simuladoConfig.dificuldade = 'todas'; simuladoConfig.tipo = 'TODAS'; simuladoConfig.status = 'todas'; if (simuladoConfig.quantidade === 'custom' && (!simuladoConfig.customQty || parseInt(simuladoConfig.customQty, 10) < 1)) simuladoConfig.quantidade = 10; navigate('simulados'); }
   function toggleSidebar() { document.body.classList.toggle('sidebar-open'); }
   function showProfessorAnswer(lessonId, key) { if (professorAnswerOpen && professorAnswerOpen.lessonId === lessonId && professorAnswerOpen.key === key) professorAnswerOpen = null; else professorAnswerOpen = { lessonId: lessonId, key: key }; render(); var el = document.querySelector('.professor-answer'); if (el && el.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+
   function startDiagnostic(modId) { var diag = getDiagnosticByModuleId(modId); if (!diag) { window.alert('Diagnóstico ainda não cadastrado para este módulo.'); return; } diagRunning.moduleId = modId; diagRunning.answers = {}; diagRunning.itemIndex = 0; diagRunning.revealed = {}; navigate('diagnostico', { moduleId: modId }); }
   function answerDiag(altId) { var diag = getDiagnosticByModuleId(diagRunning.moduleId); if (!diag) return; var item = diag.itens[diagRunning.itemIndex]; if (!item) return; if (Object.prototype.hasOwnProperty.call(diagRunning.answers, item.id)) return; diagRunning.answers[item.id] = altId; render(); }
   function nextDiag() { var diag = getDiagnosticByModuleId(diagRunning.moduleId); if (!diag) return; if (diagRunning.itemIndex < diag.itens.length - 1) { diagRunning.itemIndex += 1; render(); var main = document.getElementById('main'); if (main) main.scrollTop = 0; } }
@@ -1942,6 +3337,7 @@
     if (state.questions !== undefined && (typeof state.questions !== 'object' || state.questions === null)) erros.push('Campo "questions" com formato inesperado.');
     if (state.flashcards !== undefined && (typeof state.flashcards !== 'object' || state.flashcards === null)) erros.push('Campo "flashcards" com formato inesperado.');
     if (state.simulados !== undefined && !Array.isArray(state.simulados)) erros.push('Campo "simulados" deve ser array.');
+    if (state.exercicios !== undefined && (typeof state.exercicios !== 'object' || state.exercicios === null)) erros.push('Campo "exercicios" com formato inesperado.');
     return { erros: erros, state: state };
   }
   function importFullStateFromText(text) {
@@ -1949,17 +3345,28 @@
     var check = validateIncomingState(parsed);
     if (check.erros.length > 0) { window.alert('Backup rejeitado:\n\n- ' + check.erros.join('\n- ')); return; }
     var st = check.state;
-    var resumo = ['Módulos: ' + Object.keys(st.modules || {}).length, 'Questões vistas: ' + Object.keys(st.questions || {}).length, 'Flashcards vistos: ' + Object.keys(st.flashcards || {}).length, 'Simulados: ' + ((st.simulados && st.simulados.length) || 0)].join('\n');
+    var resumo = ['Módulos: ' + Object.keys(st.modules || {}).length, 'Questões vistas: ' + Object.keys(st.questions || {}).length, 'Flashcards vistos: ' + Object.keys(st.flashcards || {}).length, 'Simulados: ' + ((st.simulados && st.simulados.length) || 0), 'Exercícios: ' + Object.keys(st.exercicios || {}).length].join('\n');
     if (!window.confirm('Substituir o progresso atual pelo backup?\n\n' + resumo + '\n\nA ação não pode ser desfeita.')) return;
     var base = createDefaultState();
-    AppState = { schemaVersion: SCHEMA_VERSION, appVersion: APP_VERSION, createdAt: st.createdAt || base.createdAt, updatedAt: new Date().toISOString(), settings: Object.assign({}, base.settings, st.settings || {}), modules: st.modules || {}, questions: st.questions || {}, flashcards: st.flashcards || {}, simulados: Array.isArray(st.simulados) ? st.simulados : [], stats: Object.assign({}, base.stats, st.stats || {}), lastScreen: 'dashboard' };
+    AppState = {
+      schemaVersion: SCHEMA_VERSION, appVersion: APP_VERSION,
+      createdAt: st.createdAt || base.createdAt, updatedAt: new Date().toISOString(),
+      settings: Object.assign({}, base.settings, st.settings || {}),
+      modules: st.modules || {}, questions: st.questions || {},
+      flashcards: st.flashcards || {}, simulados: Array.isArray(st.simulados) ? st.simulados : [],
+      exercicios: (st.exercicios && typeof st.exercicios === 'object') ? st.exercicios : {},
+      stats: Object.assign({}, base.stats, st.stats || {}), lastScreen: 'dashboard'
+    };
+    ensureExtendedState(AppState);
     saveState(); applyTheme(AppState.settings && AppState.settings.theme);
     currentScreen = 'dashboard'; currentModuleId = null; currentLessonId = null;
     render(); window.alert('Backup restaurado com sucesso.');
   }
   function resetProgress() {
-    if (!window.confirm('Zerar todo o progresso?\n\nApaga módulos, diagnóstico, questões, flashcards, simulados, revisões e erros. Não é possível desfazer.')) return;
-    localStorage.removeItem(STORAGE_KEY); AppState = createDefaultState(); saveState();
+    if (!window.confirm('Zerar todo o progresso?\n\nApaga módulos, diagnóstico, questões, flashcards, simulados, exercícios, revisões e erros. Não é possível desfazer.')) return;
+    localStorage.removeItem(STORAGE_KEY); AppState = createDefaultState();
+    migrateToExerciseMastery();
+    saveState();
     currentScreen = 'dashboard'; currentModuleId = null; currentLessonId = null; moduleFilter = 'todas'; professorAnswerOpen = null;
     diagRunning = { moduleId: null, answers: {}, itemIndex: 0, revealed: {} };
     questionFilter = { area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
@@ -1967,6 +3374,8 @@
     flashcardFilter = { area: 'todas', moduloId: 'todos' }; flashcardRunning = null; window.__lastFlashSession = null;
     simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
     simuladoRunning = null; currentSimuladoId = null;
+    exerciseRunning = null; window.__lastExercise = null;
+    errorFilter = { area: 'todas', moduloId: 'todos', categoria: 'todas', tipo: 'todos' };
     render(); window.alert('Progresso zerado.');
   }
 
@@ -1996,8 +3405,10 @@
       case 'toggle-sidebar': toggleSidebar(); break;
       case 'open-module': openModule(actionEl.getAttribute('data-module-id')); break;
       case 'open-lesson': openLesson(actionEl.getAttribute('data-lesson-id')); break;
+      case 'open-lesson-by-module': openLessonByModule(actionEl.getAttribute('data-module-id')); break;
       case 'mark-lesson-read': markLessonRead(actionEl.getAttribute('data-lesson-id')); break;
       case 'professor-answer': showProfessorAnswer(actionEl.getAttribute('data-lesson-id'), actionEl.getAttribute('data-key')); break;
+
       case 'start-diag': startDiagnostic(actionEl.getAttribute('data-module-id')); break;
       case 'open-diag-result': openDiagResult(actionEl.getAttribute('data-module-id')); break;
       case 'refazer-diag': refazerDiag(actionEl.getAttribute('data-module-id')); break;
@@ -2006,6 +3417,23 @@
       case 'diag-prev': prevDiag(); break;
       case 'diag-cancel': cancelDiag(); break;
       case 'diag-finish': finishDiag(); break;
+
+      case 'start-exercise': startExercise(actionEl.getAttribute('data-module-id')); break;
+      case 'open-exercise-result': openExerciseResult(actionEl.getAttribute('data-module-id')); break;
+      case 'answer-exercise': answerExercise(actionEl.getAttribute('data-alt')); break;
+      case 'next-exercise': nextExercise(); break;
+      case 'prev-exercise': prevExercise(); break;
+      case 'finish-exercise': finishExercise(); break;
+      case 'cancel-exercise': cancelExercise(); break;
+      case 'classify-question': {
+        var qidC = actionEl.getAttribute('data-qid');
+        var cl = actionEl.getAttribute('data-classification');
+        if (currentScreen === 'exercicio-run') setExerciseClassification(qidC, cl);
+        else setQuestionClassification(qidC, cl);
+        break;
+      }
+      case 'set-error-category': setQuestionErrorCategory(actionEl.getAttribute('data-qid'), actionEl.getAttribute('data-categoria')); break;
+
       case 'start-question-session': startQuestionSession(null, 'livre'); break;
       case 'answer-question': answerQuestion(actionEl.getAttribute('data-alt')); break;
       case 'next-question': nextQuestion(); break;
@@ -2013,11 +3441,13 @@
       case 'cancel-question-session': cancelQuestionSession(); break;
       case 'finish-question-session': finishQuestionSession(); break;
       case 'questions-by-module': startQuestionsByModule(actionEl.getAttribute('data-module-id')); break;
+
       case 'export-questions': exportQuestions(); break;
       case 'export-progress': exportProgress(); break;
       case 'import-questions': { var ta = document.getElementById('importTextarea'); if (ta) importQuestionsFromText(ta.value || ''); break; }
       case 'clear-import': clearImport(); break;
       case 'load-sample': loadImportSample(); break;
+
       case 'start-flashcards-all': startFlashcardsAll(); break;
       case 'start-flashcards-due': startFlashcardsDue(); break;
       case 'start-flashcards-by-module': startFlashcardsByModule(actionEl.getAttribute('data-module-id')); break;
@@ -2025,11 +3455,16 @@
       case 'reveal-flashcard': revealFlashcard(); break;
       case 'answer-flashcard': answerFlashcard(actionEl.getAttribute('data-level')); break;
       case 'cancel-flashcard-session': cancelFlashcardSession(); break;
+
       case 'start-revision-questions': startRevisionQuestions(); break;
       case 'start-revision-flashcards': startRevisionFlashcards(); break;
       case 'start-errors-session': startErrorsSession(); break;
       case 'revisar-questao-unica': revisarQuestaoUnica(actionEl.getAttribute('data-question-id')); break;
       case 'revisar-flashcard-unico': revisarFlashcardUnico(actionEl.getAttribute('data-flashcard-id')); break;
+      case 'review-subtopic': reviewSubtopic(actionEl.getAttribute('data-module-id'), actionEl.getAttribute('data-subtema')); break;
+      case 'start-error-recovery': startErrorRecoverySession('unresolved'); break;
+      case 'start-error-recovery-recurring': startErrorRecoverySession('recurring'); break;
+
       case 'start-simulado': startSimulado('SIMULADO'); break;
       case 'start-prova-concurso': startSimulado('PROVA_CONCURSO'); break;
       case 'sim-answer': answerSimulado(actionEl.getAttribute('data-alt')); break;
@@ -2051,12 +3486,14 @@
         simuladoConfig.modo = 'SIMULADO';
         navigate('simulados');
         break;
+
       case 'toggle-theme': toggleTheme(); break;
       case 'export-full-state': exportFullState(); break;
       case 'import-full-state': { var elFull = document.getElementById('importFullStateTextarea'); if (elFull) importFullStateFromText(elFull.value || ''); break; }
       case 'reset-progress': resetProgress(); break;
     }
   });
+
   document.addEventListener('change', function (e) {
     var el = e.target; if (!el) return;
     if (el.id === 'qFilterModulo') setQuestionFilterModulo(el.value);
@@ -2067,7 +3504,12 @@
     else if (el.id === 'simFilterDificuldade') setSimuladoDificuldade(el.value);
     else if (el.id === 'simFilterTipo') setSimuladoTipo(el.value);
     else if (el.id === 'simFilterStatus') setSimuladoStatus(el.value);
+    else if (el.id === 'errFilterArea') { errorFilter.area = el.value; render(); }
+    else if (el.id === 'errFilterModulo') { errorFilter.moduloId = el.value; render(); }
+    else if (el.id === 'errFilterCategoria') { errorFilter.categoria = el.value; render(); }
+    else if (el.id === 'errFilterTipo') { errorFilter.tipo = el.value; render(); }
   });
+
   document.addEventListener('input', function (e) {
     var el = e.target; if (!el) return;
     if (el.id === 'simCustomQty') setSimuladoCustomQty(el.value);
@@ -2078,6 +3520,7 @@
   ============================================================ */
   function init() {
     AppState = loadState();
+    migrateToExerciseMastery();
     applyTheme(AppState.settings && AppState.settings.theme);
     currentScreen = 'dashboard'; currentModuleId = null; currentLessonId = null; moduleFilter = 'todas'; professorAnswerOpen = null;
     diagRunning = { moduleId: null, answers: {}, itemIndex: 0, revealed: {} };
@@ -2086,8 +3529,12 @@
     flashcardFilter = { area: 'todas', moduloId: 'todos' }; flashcardRunning = null; window.__lastFlashSession = null;
     simuladoConfig = { modo: 'SIMULADO', quantidade: 10, customQty: '', area: 'todas', moduloId: 'todos', dificuldade: 'todas', tipo: 'TODAS', status: 'todas' };
     simuladoRunning = null; currentSimuladoId = null;
+    exerciseRunning = null; window.__lastExercise = null;
+    errorFilter = { area: 'todas', moduloId: 'todos', categoria: 'todas', tipo: 'todos' };
+    errorClassificationPickerOpen = null;
     render();
   }
+
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
