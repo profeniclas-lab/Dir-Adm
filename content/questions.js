@@ -5939,6 +5939,521 @@ window.QUESTIONS = [
       comoApareceEmConcurso: 'Cobrança de associação.'
     },
     tags: ['reforma 1967', 'Decreto-Lei 200', 'descentralização']
+  },
+  /* ============================================================
+     LOTE COMPLEMENTAR — Fase 10 (questões extraídas das provas)
+     DA-15 a DA-26 — fechamento do lote
+  ============================================================ */
+  {
+    id: 'Q-REAL-DA-15-005',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-15',
+    banca: 'IBFC', orgao: 'UFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IBFC 2025 — UFPB — Assistente em Administração' },
+    subtema: 'Princípios expressos — identificação do INCORRETO',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'A administração pública direta e indireta de qualquer dos Poderes da União, dos Estados, do Distrito Federal e dos Municípios obedecerá aos princípios expressos no caput do art. 37 da CF/88. Assinale a alternativa INCORRETA quanto a esses princípios:',
+    alternativas: [
+      { id: 'A', texto: 'Efetividade.' },
+      { id: 'B', texto: 'Legalidade.' },
+      { id: 'C', texto: 'Impessoalidade.' },
+      { id: 'D', texto: 'Moralidade.' },
+      { id: 'E', texto: 'Publicidade.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'A EFETIVIDADE não é princípio expresso do caput do art. 37. O rol é: legalidade, impessoalidade, moralidade, publicidade e eficiência (LIMPE). Efetividade é uma dimensão de desempenho (impacto social), não princípio constitucional.',
+      incorretas: { B: 'É princípio expresso (LIMPE).', C: 'É princípio expresso.', D: 'É princípio expresso.', E: 'É princípio expresso.' },
+      conceitoCobrado: 'LIMPE — identificação de princípio não previsto',
+      pegadinha: 'Incluir "efetividade" (dimensão de desempenho) como se fosse princípio do LIMPE.',
+      comoApareceEmConcurso: 'Cobrança de INCORRETA em rol.'
+    },
+    tags: ['LIMPE', 'art. 37', 'efetividade']
+  },
+  {
+    id: 'Q-REAL-DA-16-005',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-16',
+    banca: 'IDECAN', orgao: 'UFPB', ano: 2016, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IDECAN 2016 — UFPB — Assistente em Administração' },
+    subtema: 'Acumulação de cargos — hipótese VEDADA',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Nos termos do capítulo destinado à Administração Pública na Constituição Federal, assinale a alternativa que apresenta hipótese VEDADA de acumulação de cargos públicos:',
+    alternativas: [
+      { id: 'A', texto: 'Dois cargos públicos de professor de dedicação exclusiva.' },
+      { id: 'B', texto: 'Um cargo público de professor e um cargo público de médico.' },
+      { id: 'C', texto: 'Dois cargos públicos de enfermeiro no mesmo hospital público.' },
+      { id: 'D', texto: 'Um cargo público de professor estadual e um cargo público de professor municipal.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'São permitidas apenas as três hipóteses do art. 37, XVI: (a) dois cargos de professor; (b) um de professor + um técnico/científico; (c) dois privativos de profissionais de saúde. "Professor + médico" NÃO se enquadra em nenhuma delas (médico é profissional de saúde, não "técnico/científico"), logo é VEDADA.',
+      incorretas: { A: 'Hipótese (a) — permitida.', C: 'Hipótese (c) — permitida (saúde + saúde).', D: 'Hipótese (a) — permitida (2 professor).' },
+      conceitoCobrado: 'Acumulação — análise da hipótese vedada',
+      pegadinha: 'Confundir "profissional de saúde" com "técnico/científico" na hipótese (b).',
+      comoApareceEmConcurso: 'Cobrança de hipótese VEDADA, não das permitidas.'
+    },
+    tags: ['acumulação', 'art. 37, XVI']
+  },
+  {
+    id: 'Q-REAL-DA-17-007',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-17',
+    banca: 'IBFC', orgao: 'UFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IBFC 2025 — UFPB — Assistente em Administração' },
+    subtema: 'Requisitos para investidura em cargo público',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Luiz, brasileiro, com 16 anos completos, em pleno gozo dos direitos políticos, quite com obrigações militares e eleitorais e apto física e mentalmente, pretende realizar concurso público. Assinale a alternativa que apresenta qual requisito básico para investidura em cargo público NÃO está observado, nos termos da Lei 8.112/90:',
+    alternativas: [
+      { id: 'A', texto: 'Nacionalidade brasileira.' },
+      { id: 'B', texto: 'Idade mínima de 18 anos.' },
+      { id: 'C', texto: 'Estar em gozo dos direitos políticos.' },
+      { id: 'D', texto: 'Aptidão física e mental.' },
+      { id: 'E', texto: 'Quitação com as obrigações militares e eleitorais.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A Lei 8.112/90 (art. 5º, V) exige IDADE MÍNIMA DE 18 ANOS. Luiz tem apenas 16 — requisito não atendido.',
+      incorretas: { A: 'Atendido (brasileiro).', C: 'Atendido (gozo dos direitos políticos).', D: 'Atendido (apto).', E: 'Atendido (quite).' },
+      conceitoCobrado: 'Requisitos para investidura (art. 5º da Lei 8.112/90)',
+      pegadinha: 'Achar que 16 anos é idade mínima.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['investidura', 'requisitos', 'Lei 8.112']
+  },
+  {
+    id: 'Q-REAL-DA-17-008',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-17',
+    banca: 'IBFC', orgao: 'UFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IBFC 2025 — UFPB — Assistente em Administração (gabarito inferido — conferir com o gabarito oficial da banca)' },
+    subtema: 'Validade do concurso público',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Maria Luiza prestou concurso público em janeiro de 2022. No que tange às disposições da Lei 8.112/90, a validade do concurso por ela prestado pode ocorrer até:',
+    alternativas: [
+      { id: 'A', texto: 'Junho de 2022.' },
+      { id: 'B', texto: 'Janeiro de 2026.' },
+      { id: 'C', texto: 'Janeiro de 2027.' },
+      { id: 'D', texto: 'Janeiro de 2024.' },
+      { id: 'E', texto: 'Janeiro de 2023.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A validade do concurso é de ATÉ 2 ANOS, prorrogável UMA VEZ por igual período (art. 12 da Lei 8.112/90). Portanto, o prazo máximo é 4 anos: janeiro de 2022 + 4 anos = JANEIRO DE 2026.',
+      incorretas: { A: 'Prazo insuficiente.', C: 'Excede o máximo legal.', D: 'Corresponde apenas ao prazo inicial (2 anos), não ao máximo.', E: 'Prazo insuficiente.' },
+      conceitoCobrado: 'Validade do concurso',
+      pegadinha: 'Confundir o prazo inicial (2 anos) com o máximo (4 anos).',
+      comoApareceEmConcurso: 'Cálculo aplicado.'
+    },
+    tags: ['concurso', 'validade', 'Lei 8.112']
+  },
+  {
+    id: 'Q-REAL-DA-17-009',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-17',
+    banca: 'IDECAN', orgao: 'UFPB', ano: 2016, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IDECAN 2016 — UFPB — Assistente em Administração' },
+    subtema: 'Afastamento por casamento',
+    dificuldade: 1, prioridade: 'alta',
+    enunciado: 'Em relação às noções de regime jurídico estatutário federal, o servidor faz jus à concessão de _____ dias em função de casamento. Assinale a alternativa que preenche corretamente a lacuna:',
+    alternativas: [
+      { id: 'A', texto: 'Dois.' },
+      { id: 'B', texto: 'Três.' },
+      { id: 'C', texto: 'Cinco.' },
+      { id: 'D', texto: 'Oito.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'O servidor pode ausentar-se do serviço por 8 (OITO) dias consecutivos em razão de casamento (art. 97, III, "a" da Lei 8.112/90), sem prejuízo da remuneração.',
+      incorretas: { A: 'Dois dias — não previsto.', B: 'Três dias — não previsto.', C: 'Cinco dias — não previsto.' },
+      conceitoCobrado: 'Afastamento por casamento (art. 97, III, "a")',
+      pegadinha: 'Confundir com outros prazos de afastamento.',
+      comoApareceEmConcurso: 'Cobrança literal.'
+    },
+    tags: ['afastamento', 'casamento', 'Lei 8.112']
+  },
+  {
+    id: 'Q-REAL-DA-17-010',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-17',
+    banca: 'COMPERVE', orgao: 'UFRN', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'COMPERVE 2025 — UFRN — Assistente em Administração' },
+    subtema: 'Deveres do servidor — ordens manifestamente ilegais',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'A servidora pública federal Kleciane realizou reunião com sua equipe para ressaltar a importância da prestação eficiente do serviço público aos usuários, baseada no correto desempenho dos deveres do servidor, conforme definidos na Lei 8.112/90. Dentre os deveres previstos no regime jurídico dos servidores públicos civis da União, Kleciane ressalta o de:',
+    alternativas: [
+      { id: 'A', texto: 'Cumprir as ordens superiores, exceto quando manifestamente ilegais.' },
+      { id: 'B', texto: 'Exercer função de gerência ou participar da administração de sociedade privada, personificada ou não.' },
+      { id: 'C', texto: 'Promover manifestação de apreço ou desapreço no recinto da repartição.' },
+      { id: 'D', texto: 'Manter, sob sua chefia imediata em cargo ou função de confiança, cônjuge, companheiro ou parente até o segundo grau civil.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Art. 116, IV da Lei 8.112/90: é dever do servidor "cumprir as ordens superiores, exceto quando manifestamente ilegais".',
+      incorretas: { B: 'É PROIBIÇÃO (art. 117, V), não dever.', C: 'É PROIBIÇÃO (art. 117, VI), não dever.', D: 'É PROIBIÇÃO (art. 117, VIII), não dever.' },
+      conceitoCobrado: 'Deveres do servidor (art. 116) x proibições (art. 117)',
+      pegadinha: 'Confundir deveres com proibições.',
+      comoApareceEmConcurso: 'Cobrança da distinção.'
+    },
+    tags: ['deveres', 'Lei 8.112', 'ordens ilegais']
+  },
+  {
+    id: 'Q-REAL-DA-17-011',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-17',
+    banca: 'Instituto AOCP', orgao: 'IFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'Instituto AOCP 2025 — IFPB — Assistente em Administração' },
+    subtema: 'Reitor de Instituto Federal — requisitos',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Um docente, italiano e doutor, pertencente ao Quadro de Pessoal Ativo Permanente dos campi que integram o IFPB, com cinco anos de efetivo exercício em instituição federal de educação profissional e tecnológica, atuando na Carreira do Magistério do Ensino Básico, deseja ser reitor. Com base na Lei 11.892/2008, esse docente poderá se candidatar ao cargo desejado?',
+    alternativas: [
+      { id: 'A', texto: 'Não, tendo em vista que, para se candidatar ao cargo de reitor, é necessário ter pós-doutorado.' },
+      { id: 'B', texto: 'Não, tendo em vista a ausência de cumprimento de tempo mínimo de serviço, que é de dez anos.' },
+      { id: 'C', texto: 'Sim, pois o cargo de reitor pode ser ocupado por qualquer servidor efetivo do Instituto Federal, independentemente de ser docente.' },
+      { id: 'D', texto: 'Não, tendo em vista que, para ocupar o cargo de reitor, é necessário ter nacionalidade brasileira.' },
+      { id: 'E', texto: 'Sim, pois a lei exige apenas que o docente seja efetivo, doutor e tenha cinco anos de exercício em instituição federal.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'A Lei 11.892/2008 exige que o reitor seja brasileiro (nato ou naturalizado). O docente é ITALIANO — não preenche o requisito de nacionalidade brasileira.',
+      incorretas: { A: 'A lei não exige pós-doutorado.', B: 'A lei exige 5 anos de efetivo exercício, não 10.', C: 'Reitor é escolhido entre os docentes da carreira do magistério.', E: 'Falta o requisito de nacionalidade brasileira.' },
+      conceitoCobrado: 'Requisitos do cargo de reitor (Lei 11.892/2008)',
+      pegadinha: 'Omitir a exigência de nacionalidade brasileira.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['reitor', 'IFPB', 'nacionalidade']
+  },
+  {
+    id: 'Q-REAL-DA-18-008',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-18',
+    banca: 'IBFC', orgao: 'UFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IBFC 2025 — UFPB — Assistente em Administração' },
+    subtema: 'Poder hierárquico — definição',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'O poder de que dispõe o Executivo para distribuir e escalonar as funções de seus órgãos, ordenar e rever a atuação de seus agentes, estabelecendo a relação de subordinação entre os servidores do seu quadro de pessoal é definido como poder:',
+    alternativas: [
+      { id: 'A', texto: 'De polícia.' },
+      { id: 'B', texto: 'Disciplinar.' },
+      { id: 'C', texto: 'Hierárquico.' },
+      { id: 'D', texto: 'Processual.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'A definição corresponde ao PODER HIERÁRQUICO: distribuir e escalonar funções, ordenar e rever a atuação dos agentes, estabelecer subordinação.',
+      incorretas: { A: 'Poder de polícia limita direitos do particular.', B: 'Poder disciplinar pune faltas.', D: 'Poder processual não é categoria doutrinária.' },
+      conceitoCobrado: 'Poder hierárquico',
+      pegadinha: 'Confundir com poder disciplinar.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['poder hierárquico']
+  },
+  {
+    id: 'Q-REAL-DA-18-009',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-18',
+    banca: 'IBFC', orgao: 'UFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IBFC 2025 — UFPB — Assistente em Administração' },
+    subtema: 'Poderes administrativos — afirmativa correta',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Sobre os poderes administrativos, assinale a afirmativa CORRETA:',
+    alternativas: [
+      { id: 'A', texto: 'O poder hierárquico é aquele em que o Chefe do Congresso Nacional distribui e escalona as funções de seus órgãos e agentes, criando relação de subordinação.' },
+      { id: 'B', texto: 'No tocante ao poder discricionário, este não admite análise de conveniência e oportunidade quando da prática do ato, não tendo o agente liberdade para agir.' },
+      { id: 'C', texto: 'Poder disciplinar é aquele conferido à Administração com o intuito de restringir, frenar, condicionar e limitar o exercício de direitos e atividades econômicas dos particulares.' },
+      { id: 'D', texto: 'A autoexecutoriedade é atributo do poder de polícia que constitui possibilidade de execução imediata do ato administrativo, independentemente de prévia manifestação do Poder Judiciário.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'A AUTOEXECUTORIEDADE é atributo do poder de polícia: a Administração executa diretamente seus atos, sem precisar de autorização judicial prévia.',
+      incorretas: { A: 'O poder hierárquico é do Executivo — não do "Chefe do Congresso Nacional".', B: 'O poder discricionário ADMITE análise de conveniência e oportunidade.', C: 'A descrição é do PODER DE POLÍCIA, não do disciplinar.' },
+      conceitoCobrado: 'Poderes administrativos — distinções',
+      pegadinha: 'Trocar as definições entre hierárquico, discricionário, disciplinar e de polícia.',
+      comoApareceEmConcurso: 'Cobrança combinada de quatro conceitos.'
+    },
+    tags: ['poderes administrativos', 'autoexecutoriedade']
+  },
+  {
+    id: 'Q-REAL-DA-19-008',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-19',
+    banca: 'IDECAN', orgao: 'UFPB', ano: 2016, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IDECAN 2016 — UFPB — Assistente em Administração' },
+    subtema: 'Atos administrativos — revisão integrada V/F',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Analise as afirmativas sobre atos administrativos, marcando V (verdadeira) ou F (falsa): ( ) A Administração pode anular seus próprios atos, quando eivados de vícios que os tornam ilegais, porque deles não se originam direitos; ou revogá-los, por motivo de conveniência e oportunidade, respeitados os direitos adquiridos, e ressalvada, em todos os casos, a apreciação judicial. ( ) Presunção de legitimidade, autoexecutoriedade e imperatividade são ELEMENTOS do ato administrativo. ( ) Ato administrativo é toda manifestação unilateral de vontade da Administração Pública que tem por finalidade imediata adquirir, resguardar, transferir, modificar, extinguir e declarar direitos, ou impor obrigações aos administrados ou a si própria. ( ) Um órgão administrativo e seu titular poderão delegar parte da sua competência a outros órgãos ou titulares, ainda que estes NÃO lhe sejam hierarquicamente subordinados, quando for conveniente, em razão de circunstâncias de índole técnica, social, econômica, jurídica ou territorial, salvo as matérias de competência exclusiva do órgão ou autoridade. A sequência correta, de cima para baixo, é:',
+    alternativas: [
+      { id: 'A', texto: 'V – V – F – F.' },
+      { id: 'B', texto: 'F – F – V – V.' },
+      { id: 'C', texto: 'V – F – V – V.' },
+      { id: 'D', texto: 'V – F – V – F.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'V (Súmula 473 do STF). F (presunção de legitimidade, autoexecutoriedade e imperatividade são ATRIBUTOS, não elementos — os elementos são competência, finalidade, forma, motivo e objeto). V (definição de ato administrativo). V (art. 12 da Lei 9.784/99 permite delegação a órgãos não subordinados).',
+      incorretas: { A: 'A segunda é F e a terceira é V.', B: 'A primeira e a terceira são V.', D: 'A quarta é V.' },
+      conceitoCobrado: 'Atos administrativos — revisão integrada',
+      pegadinha: 'Confundir elementos (competência, finalidade, forma, motivo, objeto) com atributos (presunção, imperatividade, autoexecutoriedade, tipicidade).',
+      comoApareceEmConcurso: 'Cobrança combinada de múltiplos conceitos.'
+    },
+    tags: ['atos administrativos', 'elementos', 'atributos', 'delegação']
+  },
+  {
+    id: 'Q-REAL-DA-20-008',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-20',
+    banca: 'IDECAN', orgao: 'UFPB', ano: 2016, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IDECAN 2016 — UFPB — Assistente em Administração' },
+    subtema: 'Serviço adequado — princípios da Lei 8.987/95',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Nos termos da legislação específica, serviço adequado é aquele que atenda aos seguintes princípios, EXCETO:',
+    alternativas: [
+      { id: 'A', texto: 'Segurança.' },
+      { id: 'B', texto: 'Atualidade.' },
+      { id: 'C', texto: 'Efetividade.' },
+      { id: 'D', texto: 'Regularidade.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'A Lei 8.987/95 (art. 6º, §1º) define serviço adequado como o que satisfaz: regularidade, continuidade, eficiência, segurança, atualidade, generalidade, cortesia e modicidade das tarifas. EFETIVIDADE não está na lista — é uma dimensão de desempenho (impacto social), não princípio do serviço público.',
+      incorretas: { A: 'É princípio.', B: 'É princípio.', D: 'É princípio.' },
+      conceitoCobrado: 'Princípios do serviço público — Lei 8.987/95',
+      pegadinha: 'Confundir "efetividade" com "eficiência" (esta sim é princípio).',
+      comoApareceEmConcurso: 'Cobrança de EXCETO em rol.'
+    },
+    tags: ['serviço adequado', 'Lei 8.987/95', 'efetividade']
+  },
+  {
+    id: 'Q-REAL-DA-21-009',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-21',
+    banca: 'IBFC', orgao: 'UFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IBFC 2025 — UFPB — Assistente em Administração' },
+    subtema: 'Pregão — modalidade obrigatória',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Segundo a Lei 14.133/2021, é a modalidade de licitação obrigatória para aquisição de bens e serviços comuns, cujo critério de julgamento poderá ser o de menor preço ou o de maior desconto. Assinale a alternativa que preencha corretamente a lacuna:',
+    alternativas: [
+      { id: 'A', texto: 'Leilão.' },
+      { id: 'B', texto: 'Diálogo Competitivo.' },
+      { id: 'C', texto: 'Pregão.' },
+      { id: 'D', texto: 'Concurso.' },
+      { id: 'E', texto: 'Credenciamento.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'O PREGÃO é a modalidade obrigatória para bens e serviços comuns, com critério de menor preço ou maior desconto (art. 29 da Lei 14.133/2021).',
+      incorretas: { A: 'Leilão é para alienação de bens.', B: 'Diálogo competitivo é para inovação/complexidade.', D: 'Concurso é para trabalho técnico/científico/artístico.', E: 'Credenciamento é procedimento auxiliar, não modalidade.' },
+      conceitoCobrado: 'Pregão',
+      pegadinha: 'Confundir pregão com outras modalidades ou com credenciamento.',
+      comoApareceEmConcurso: 'Cobrança de modalidade específica.'
+    },
+    tags: ['pregão', 'Lei 14.133/2021']
+  },
+  {
+    id: 'Q-REAL-DA-21-010',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-21',
+    banca: 'FUNCERN', orgao: 'IFRN', ano: 2024, prova: 'Assistente em Administração',
+    fonte: { descricao: 'FUNCERN 2024 — IFRN — Assistente em Administração' },
+    subtema: 'Credenciamento',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'De acordo com a redação expressa da Lei 14.133/2021, entende-se por Credenciamento:',
+    alternativas: [
+      { id: 'A', texto: 'Procedimento seletivo prévio à licitação, convocado por edital, destinado à análise das condições de habilitação, total ou parcial, dos interessados ou do objeto.' },
+      { id: 'B', texto: 'Conjunto de procedimentos para realização, mediante contratação direta ou licitação, de registro formal de preços relativos à prestação de serviços, a obras e à aquisição e locação de bens para contratações futuras.' },
+      { id: 'C', texto: 'Processo administrativo de chamamento público em que a Administração Pública convoca interessados em prestar serviços ou fornecer bens para que, preenchidos os requisitos necessários, se credenciem no órgão ou na entidade para executar o objeto quando convocados.' },
+      { id: 'D', texto: 'Documento vinculativo e obrigacional, com característica de compromisso para futura contratação, no qual são registrados o objeto, os preços, os fornecedores, os órgãos participantes e as condições a serem praticadas.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'O CREDENCIAMENTO é o processo administrativo de chamamento público em que a Administração convoca interessados para se credenciarem, preenchidos os requisitos, a executar o objeto quando convocados (art. 6º, XLIII, da Lei 14.133/2021).',
+      incorretas: { A: 'Descreve a pré-qualificação.', B: 'Descreve o registro de preços.', D: 'Descreve a ata de registro de preços.' },
+      conceitoCobrado: 'Credenciamento — procedimento auxiliar',
+      pegadinha: 'Confundir com pré-qualificação, registro de preços ou ata.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['credenciamento', 'procedimentos auxiliares']
+  },
+  {
+    id: 'Q-REAL-DA-21-011',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-21',
+    banca: 'FUNCERN', orgao: 'IFRN', ano: 2024, prova: 'Assistente em Administração',
+    fonte: { descricao: 'FUNCERN 2024 — IFRN — Assistente em Administração' },
+    subtema: 'Diálogo competitivo',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'A modalidade Diálogo Competitivo constitui uma das principais inovações da Lei 14.133/2021. Conforme redação expressa do normativo, sobre esse instituto é CORRETO afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'A Administração definirá a proposta vencedora, de acordo com critérios divulgados no início da fase competitiva, assegurada a contratação que represente o menor preço como resultado.' },
+      { id: 'B', texto: 'Os critérios empregados para pré-seleção dos licitantes deverão ser previstos em Ordem de Serviço, e serão admitidos todos os interessados que preencherem os requisitos objetivos estabelecidos.' },
+      { id: 'C', texto: 'A Administração apresentará, por ocasião da divulgação do edital em sítio eletrônico oficial, suas necessidades e as exigências já definidas e estabelecerá prazo mínimo de 25 (vinte e cinco) dias úteis para manifestação de interesse na participação da licitação.' },
+      { id: 'D', texto: 'O Diálogo Competitivo será conduzido por comissão de contratação composta de pelo menos 3 (três) servidores efetivos, vedada a contratação de profissionais para assessoramento técnico da comissão.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Art. 32, §1º da Lei 14.133/2021: a Administração apresenta, no edital, suas necessidades e as exigências, e estabelece prazo mínimo de 25 DIAS ÚTEIS para manifestação de interesse.',
+      incorretas: { A: 'O critério não é necessariamente "menor preço".', B: 'Os critérios de pré-seleção devem estar no EDITAL, não em Ordem de Serviço.', D: 'A comissão PODE contratar profissionais para assessoramento técnico (art. 32, caput).' },
+      conceitoCobrado: 'Diálogo competitivo',
+      pegadinha: 'Confundir a vedação de assessoramento (não existe) ou o prazo de 25 dias úteis.',
+      comoApareceEmConcurso: 'Cobrança de dispositivo específico.'
+    },
+    tags: ['diálogo competitivo', 'Lei 14.133/2021']
+  },
+  {
+    id: 'Q-REAL-DA-21-012',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-21',
+    banca: 'IDECAN', orgao: 'UFPB', ano: 2016, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IDECAN 2016 — UFPB — Assistente em Administração' },
+    subtema: 'Contratos administrativos — prorrogação',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Quanto aos "contratos administrativos típicos", é CORRETO afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'Têm validade de dois anos, em regra.' },
+      { id: 'B', texto: 'Independem de prévio procedimento licitatório.' },
+      { id: 'C', texto: 'Admitem prorrogação nos termos e limites legais.' },
+      { id: 'D', texto: 'Podem ser alterados unilateralmente pelo contratado.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'Os contratos administrativos ADMITEM PRORROGAÇÃO nos termos e limites legais (art. 105 e ss. da Lei 14.133/2021).',
+      incorretas: { A: 'Não há regra geral de 2 anos — depende do objeto.', B: 'Em regra, dependem de licitação.', D: 'A alteração unilateral é prerrogativa da ADMINISTRAÇÃO, não do contratado (cláusula exorbitante).' },
+      conceitoCobrado: 'Contratos administrativos — prorrogação',
+      pegadinha: 'Inverter a prerrogativa de alteração unilateral.',
+      comoApareceEmConcurso: 'Cobrança de característica.'
+    },
+    tags: ['contratos administrativos', 'prorrogação']
+  },
+  {
+    id: 'Q-REAL-DA-23-008',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-23',
+    banca: 'IDECAN', orgao: 'UFPB', ano: 2016, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IDECAN 2016 — UFPB — Assistente em Administração' },
+    subtema: 'Controle posterior — classificação',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Em relação ao controle da administração pública, a anulação de um ato administrativo após provocação do interessado ao Poder Judiciário constitui exemplo de controle:',
+    alternativas: [
+      { id: 'A', texto: 'Prévio.' },
+      { id: 'B', texto: 'Posterior.' },
+      { id: 'C', texto: 'Concomitante.' },
+      { id: 'D', texto: 'Administrativo.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'O controle judicial é POSTERIOR: ocorre após a prática do ato, quando o interessado provoca o Judiciário.',
+      incorretas: { A: 'Controle prévio é antes da prática do ato (ex.: CCJ).', C: 'Controle concomitante é durante a execução.', D: 'O controle é judicial, não administrativo.' },
+      conceitoCobrado: 'Momento do controle',
+      pegadinha: 'Confundir controle judicial com controle administrativo.',
+      comoApareceEmConcurso: 'Cobrança de classificação.'
+    },
+    tags: ['controle posterior', 'controle judicial']
+  },
+  {
+    id: 'Q-REAL-DA-24-008',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-24',
+    banca: 'IBFC', orgao: 'UFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IBFC 2025 — UFPB — Assistente em Administração' },
+    subtema: 'Enriquecimento ilícito — exemplo específico',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Nos termos da Lei de Improbidade Administrativa (Lei 8.429/92), assinale a alternativa que apresenta ato de improbidade que importa em ENRIQUECIMENTO ILÍCITO:',
+    alternativas: [
+      { id: 'A', texto: 'Permitir ou facilitar a aquisição, permuta ou locação de bem ou serviço por preço superior ao de mercado.' },
+      { id: 'B', texto: 'Conceder benefício administrativo ou fiscal sem a observância das formalidades legais ou regulamentares aplicáveis.' },
+      { id: 'C', texto: 'Frustrar a licitude de processo licitatório, acarretando perda patrimonial efetiva.' },
+      { id: 'D', texto: 'Celebrar contrato de rateio de consórcio público sem suficiente e prévia dotação orçamentária.' },
+      { id: 'E', texto: 'Receber vantagem econômica de qualquer natureza, direta ou indireta, para tolerar a exploração ou a prática de jogos de azar, de lenocínio, de narcotráfico, de contrabando, de usura ou de qualquer outra atividade ilícita, ou aceitar promessa de tal vantagem.' }
+    ],
+    gabarito: 'E',
+    explicacao: {
+      correta: 'Art. 9º, VII da Lei 8.429/92 — receber vantagem econômica para tolerar a prática de atividades ilícitas é a hipótese clássica de ENRIQUECIMENTO ILÍCITO.',
+      incorretas: { A: 'É prejuízo ao erário (art. 10).', B: 'É prejuízo ao erário / atentado a princípios.', C: 'É prejuízo ao erário (art. 10).', D: 'É prejuízo ao erário / atentado a princípios.' },
+      conceitoCobrado: 'Modalidades de improbidade — enriquecimento ilícito',
+      pegadinha: 'Confundir as três modalidades.',
+      comoApareceEmConcurso: 'Cobrança de exemplo típico.'
+    },
+    tags: ['improbidade', 'enriquecimento ilícito']
+  },
+  {
+    id: 'Q-REAL-DA-25-008',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-25',
+    banca: 'COMPERVE', orgao: 'UFRN', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'COMPERVE 2025 — UFRN — Assistente em Administração' },
+    subtema: 'Princípios do processo administrativo — interpretação da norma',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Na Lei 9.784/99, é um dos critérios a ser observado nos processos administrativos:',
+    alternativas: [
+      { id: 'A', texto: 'A interpretação da norma administrativa da forma que melhor garanta o atendimento do fim público a que se dirige, vedada aplicação retroativa de nova interpretação.' },
+      { id: 'B', texto: 'A divulgação oficial dos atos administrativos sigilosos, como forma de promover o princípio da publicidade.' },
+      { id: 'C', texto: 'A objetividade no atendimento do interesse público, pautada na promoção pessoal de agentes ou autoridades.' },
+      { id: 'D', texto: 'A atuação voltada a fins de interesse pessoal do agente público executor, vedada a renúncia total ou parcial de poderes ou competências.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Art. 2º, parágrafo único, XIII da Lei 9.784/99: "interpretação da norma administrativa da forma que melhor garanta o atendimento do fim público a que se dirige, vedada aplicação retroativa de nova interpretação".',
+      incorretas: { B: 'Atos sigilosos NÃO são divulgados (contradição).', C: 'A promoção pessoal é vedada.', D: 'O interesse pessoal é vedado.' },
+      conceitoCobrado: 'Critérios do processo administrativo',
+      pegadinha: 'Confundir com princípios gerais.',
+      comoApareceEmConcurso: 'Cobrança literal.'
+    },
+    tags: ['processo administrativo', 'interpretação', 'Lei 9.784']
+  },
+  {
+    id: 'Q-REAL-DA-25-009',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-25',
+    banca: 'COMPERVE', orgao: 'UFRN', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'COMPERVE 2025 — UFRN — Assistente em Administração' },
+    subtema: 'Avocação temporária',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Em relação à competência, um dos dispositivos da Lei 9.784/99 estabelece que:',
+    alternativas: [
+      { id: 'A', texto: 'As decisões adotadas por delegação devem mencionar, explicitamente, esta qualidade e considerar-se-ão editadas pelo delegante.' },
+      { id: 'B', texto: 'Um órgão administrativo e seu titular poderão delegar parte da sua competência a outros órgãos ou titulares, com a condição de que lhe sejam hierarquicamente subordinados.' },
+      { id: 'C', texto: 'O processo administrativo deverá ser iniciado perante a autoridade de maior grau hierárquico para decidir em caso de inexistência de competência legal específica.' },
+      { id: 'D', texto: 'A avocação temporária de competência atribuída a órgão hierarquicamente inferior será permitida em caráter excepcional e por motivos relevantes devidamente justificados.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'Art. 15 da Lei 9.784/99: "Será permitida, em caráter excepcional e por motivos relevantes devidamente justificados, a avocação temporária de competência atribuída a órgão hierarquicamente inferior".',
+      incorretas: { A: 'As decisões delegadas consideram-se editadas pelo DELEGADO, não pelo delegante (art. 14, §1º).', B: 'A delegação pode ocorrer a órgãos NÃO subordinados hierarquicamente (art. 12).', C: 'Não há essa regra — a competência é definida por lei.' },
+      conceitoCobrado: 'Avocação (art. 15)',
+      pegadinha: 'Confundir avocação com delegação ou inverter o sujeito.',
+      comoApareceEmConcurso: 'Cobrança literal.'
+    },
+    tags: ['avocação', 'competência', 'Lei 9.784']
+  },
+  {
+    id: 'Q-REAL-DA-25-010',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-25',
+    banca: 'COMPERVE', orgao: 'UFRN', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'COMPERVE 2025 — UFRN — Assistente em Administração' },
+    subtema: 'Intimação — formas de comunicação',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'A Lei 9.784/99 estabelece regras para a comunicação dos atos processuais. De acordo com essa lei, quanto à intimação, está estabelecido que:',
+    alternativas: [
+      { id: 'A', texto: 'O comparecimento do administrado não supre a falta ou irregularidade da intimação, uma vez que prejudica sua defesa.' },
+      { id: 'B', texto: 'A intimação deve ser efetuada por meio de jornal de grande circulação no caso de interessados indeterminados, desconhecidos ou com domicílio indefinido.' },
+      { id: 'C', texto: 'O desatendimento da intimação implica no reconhecimento da verdade dos fatos pelo administrado.' },
+      { id: 'D', texto: 'A intimação pode ser efetuada por ciência no processo, por via postal com aviso de recebimento, por telegrama ou outro meio que assegure a certeza da ciência do interessado.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'Art. 26, §3º da Lei 9.784/99: "A intimação poderá ser efetuada por ciência no processo, por via postal com aviso de recebimento, por telegrama ou outro meio que assegure a certeza da ciência do interessado".',
+      incorretas: { A: 'O comparecimento SUPRE a falta de intimação (art. 26, §5º).', B: 'A intimação por edital é para interessados indeterminados/desconhecidos — não especificamente por jornal de grande circulação.', C: 'O desatendimento NÃO implica reconhecimento da verdade.' },
+      conceitoCobrado: 'Intimação (art. 26)',
+      pegadinha: 'Inverter o efeito do comparecimento.',
+      comoApareceEmConcurso: 'Cobrança literal.'
+    },
+    tags: ['intimação', 'comunicação', 'Lei 9.784']
+  },
+  {
+    id: 'Q-REAL-DA-25-011',
+    tipo: 'REAL', area: 'DA', moduloId: 'DA-25',
+    banca: 'IBFC', orgao: 'UFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IBFC 2025 — UFPB — Assistente em Administração' },
+    subtema: 'Motivação — assertiva INCORRETA',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Sobre a motivação dos atos administrativos, assinale a alternativa INCORRETA, nos termos da Lei 9.784/1999:',
+    alternativas: [
+      { id: 'A', texto: 'A motivação das decisões de órgãos colegiados e comissões ou de decisões orais constará da respectiva ata ou de termo escrito.' },
+      { id: 'B', texto: 'Na solução de vários assuntos da mesma natureza, pode ser utilizado meio mecânico que reproduza os fundamentos das decisões, desde que não prejudique direito ou garantia dos interessados.' },
+      { id: 'C', texto: 'A motivação não pode consistir em declaração de concordância com fundamentos de pareceres, informações, decisões ou propostas anteriores.' },
+      { id: 'D', texto: 'A motivação dos atos administrativos deverá indicar os pressupostos de fato e de direito que a determinaram.' },
+      { id: 'E', texto: 'Os atos administrativos deverão ser motivados, com indicação dos fatos e dos fundamentos jurídicos, quando negarem, limitarem ou afetarem direitos ou interesses dos administrados.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'A alternativa C está INCORRETA: a motivação PODE consistir em declaração de concordância com fundamentos de pareceres, informações, decisões ou propostas anteriores, que, neste caso, serão parte integrante do ato (art. 50, §1º da Lei 9.784/99).',
+      incorretas: { A: 'Correta (art. 50, §1º).', B: 'Correta (art. 50, §2º).', D: 'Correta (art. 50, caput).', E: 'Correta (art. 50, I).' },
+      conceitoCobrado: 'Motivação — conteúdo e limites',
+      pegadinha: 'Achar que a motivação não pode remeter a pareceres anteriores.',
+      comoApareceEmConcurso: 'Cobrança de INCORRETA.'
+    },
+    tags: ['motivação', 'Lei 9.784']
   }
 
 ];
