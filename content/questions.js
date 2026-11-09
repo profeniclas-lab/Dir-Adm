@@ -5545,6 +5545,400 @@ window.QUESTIONS = [
       comoApareceEmConcurso: 'Cobrança conceitual.'
     },
     tags: ['indicadores', 'estratégicos']
+  },
+  /* ============================================================
+     LOTE COMPLEMENTAR — Fase 10 (questões extraídas das provas)
+     ADM-07 a AP-14
+  ============================================================ */
+  {
+    id: 'Q-REAL-ADM-07-009',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-07',
+    subtema: 'Pilares da gestão de pessoas',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'A administração de recursos humanos abrange o conjunto de técnicas, procedimentos e instrumentos que permite às organizações atrair, manter e desenvolver os talentos humanos. Assinale a alternativa que inclui alguns desses pilares para a gestão de pessoas nas empresas:',
+    alternativas: [
+      { id: 'A', texto: 'Liderança, prolixidade, treinamento e capacitação.' },
+      { id: 'B', texto: 'Trabalho em equipe, treinamento e comunicação.' },
+      { id: 'C', texto: 'Processos, prolixidade e trabalho em equipe.' },
+      { id: 'D', texto: 'Comunicação, laconismo e vaidade.' },
+      { id: 'E', texto: 'Capacitação, vaidade e liderança.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'São pilares da gestão de pessoas: trabalho em equipe, treinamento e comunicação — além de liderança, capacitação, motivação e avaliação de desempenho.',
+      incorretas: { A: 'Prolixidade não é pilar.', C: 'Prolixidade não é pilar.', D: 'Laconismo e vaidade não são pilares.', E: 'Vaidade não é pilar.' },
+      conceitoCobrado: 'Pilares da gestão de pessoas',
+      pegadinha: 'Incluir termos negativos (prolixidade, vaidade) como pilares.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['gestão de pessoas', 'pilares']
+  },
+  {
+    id: 'Q-REAL-ADM-07-010',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-07',
+    banca: 'Instituto AOCP', orgao: 'IFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'Instituto AOCP 2025 — IFPB — Assistente em Administração (gabarito inferido — conferir com o gabarito oficial da banca)' },
+    subtema: 'Testes psicológicos — Quati, Palográfico, PMK, Rorschach, FIGS, DTO',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Em um processo seletivo, a equipe de gestão de pessoas decidiu utilizar diferentes testes psicológicos para compreender o perfil comportamental e motivacional dos candidatos. Relacione os testes às suas características: 1. Quati. 2. Palográfico. 3. PMK. 4. Rorschach e Zulliger. 5. FIGS. 6. DTO. ( ) Avalia o ritmo e a qualidade do trabalho, além de aspectos como inibição, temperamento e inteligência. ( ) Analisa a personalidade por meio de tensões musculares involuntárias. ( ) Avalia a personalidade a partir das escolhas situacionais, identificando atitudes e funções perceptivas. ( ) Busca compreender a estrutura da personalidade do indivíduo. ( ) Avalia responsabilidade profissional, relações interpessoais e autoconceito. ( ) Analisa estilos cognitivos e comportamentais necessários ao desempenho das funções organizacionais. A sequência correta é:',
+    alternativas: [
+      { id: 'A', texto: '2 – 3 – 1 – 4 – 5 – 6.' },
+      { id: 'B', texto: '1 – 2 – 3 – 4 – 6 – 5.' },
+      { id: 'C', texto: '3 – 2 – 1 – 5 – 4 – 6.' },
+      { id: 'D', texto: '2 – 1 – 3 – 4 – 5 – 6.' },
+      { id: 'E', texto: '1 – 3 – 2 – 4 – 6 – 5.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'PALOGRÁFICO (2): ritmo/qualidade do trabalho. PMK (3): tensões musculares involuntárias. QUATI (1): escolhas situacionais. RORSCHACH/ZULLIGER (4): estrutura da personalidade. FIGS (5): responsabilidade profissional, relações interpessoais e autoconceito. DTO (6): estilos cognitivos e comportamentais. Sequência: 2 – 3 – 1 – 4 – 5 – 6.',
+      incorretas: { B: 'Inverte 1, 2, 3.', C: 'Inverte.', D: 'Inverte 1 e 2.', E: 'Inverte.' },
+      conceitoCobrado: 'Testes psicológicos em seleção',
+      pegadinha: 'Confundir os testes e suas siglas.',
+      comoApareceEmConcurso: 'Associação de testes a características.'
+    },
+    tags: ['testes psicológicos', 'Quati', 'Palográfico']
+  },
+  {
+    id: 'Q-REAL-ADM-07-011',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-07',
+    banca: 'Instituto AOCP', orgao: 'IFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'Instituto AOCP 2025 — IFPB — Assistente em Administração (gabarito inferido — conferir com o gabarito oficial da banca)' },
+    subtema: 'Cargo — atribuições x especificações',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'A Diretoria de Gestão de Pessoas iniciou a revisão do seu plano de cargos. Durante o processo, uma equipe foi encarregada de: (1) detalhar as atividades desempenhadas, os resultados esperados, o grau de importância de cada tarefa e os equipamentos utilizados; (2) reunir habilidades, qualificações, esforços físicos e traços pessoais necessários para o bom desempenho das atividades. Com base nas definições clássicas da gestão de cargos, assinale a alternativa correta:',
+    alternativas: [
+      { id: 'A', texto: 'O primeiro processo corresponde às especificações do cargo, e o segundo às atribuições.' },
+      { id: 'B', texto: 'Ambos os processos se referem às atribuições do cargo.' },
+      { id: 'C', texto: 'O primeiro processo corresponde às atribuições do cargo, e o segundo às especificações do cargo.' },
+      { id: 'D', texto: 'O primeiro processo representa as funções essenciais, e o segundo a análise ocupacional.' },
+      { id: 'E', texto: 'O primeiro processo é parte das especificações, e o segundo trata da avaliação de desempenho.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'ATRIBUIÇÕES do cargo: o que o ocupante FAZ (atividades, resultados, tarefas, equipamentos). ESPECIFICAÇÕES do cargo: QUEM pode ocupar (habilidades, qualificações, esforços, traços).',
+      incorretas: { A: 'Inverte.', B: 'São conceitos distintos.', D: 'Não corresponde.', E: 'Não corresponde.' },
+      conceitoCobrado: 'Cargo — atribuições x especificações',
+      pegadinha: 'Inverter os conceitos.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['cargo', 'atribuições', 'especificações']
+  },
+  {
+    id: 'Q-REAL-ADM-07-012',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-07',
+    banca: 'Instituto AOCP', orgao: 'IFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'Instituto AOCP 2025 — IFPB — Assistente em Administração (gabarito inferido — conferir com o gabarito oficial da banca)' },
+    subtema: 'Avaliação de desempenho — Avaliação 90º',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'O setor de gestão de pessoas do IFPB optou por um modelo de avaliação de desempenho que confere ao chefe imediato a responsabilidade exclusiva pela aplicação do instrumento e emissão do parecer final. Esse modelo foi escolhido devido à sua agilidade e ao conhecimento detalhado que o gestor tem da equipe. Contudo, por ser unidirecional, apresenta riscos inerentes de viés de julgamento. O modelo adotado é:',
+    alternativas: [
+      { id: 'A', texto: 'Avaliação 180º.' },
+      { id: 'B', texto: 'Avaliação 360º.' },
+      { id: 'C', texto: 'Autoavaliação.' },
+      { id: 'D', texto: 'Avaliação 90º.' },
+      { id: 'E', texto: 'Avaliação Matriz Nove Boxes.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'A AVALIAÇÃO 90º (ou vertical) é aquela em que APENAS o chefe imediato avalia o subordinado — unidirecional, ágil, mas sujeita a viés.',
+      incorretas: { A: 'A 180º inclui o próprio avaliado e o chefe.', B: 'A 360º inclui chefes, pares, subordinados e autoavaliação.', C: 'Autoavaliação é só do próprio avaliado.', E: 'Nove Boxes é matriz de talentos.' },
+      conceitoCobrado: 'Modelos de avaliação de desempenho',
+      pegadinha: 'Confundir 90º com 180º ou 360º.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['avaliação de desempenho', 'avaliação 90º']
+  },
+  {
+    id: 'Q-REAL-ADM-08-009',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-08',
+    banca: 'CPCon', orgao: 'UEPB', ano: 2025, prova: 'Assistente Administrativo',
+    fonte: { descricao: 'CPCon 2025 — UEPB — Assistente Administrativo' },
+    subtema: 'Função da comunicação — informação',
+    dificuldade: 2, prioridade: 'media',
+    enunciado: 'A comunicação pode ser definida como o compartilhamento de informações entre duas ou mais pessoas, a fim de alcançar um entendimento comum. Dentre suas funções no contexto organizacional, a comunicação pode cumprir o papel de facilitadora do processo decisório, permitindo a circulação de dados necessários para a tomada de decisões, exercendo uma função de:',
+    alternativas: [
+      { id: 'A', texto: 'Feedback.' },
+      { id: 'B', texto: 'Controle.' },
+      { id: 'C', texto: 'Motivação.' },
+      { id: 'D', texto: 'Expressão emocional.' },
+      { id: 'E', texto: 'Informação.' }
+    ],
+    gabarito: 'E',
+    explicacao: {
+      correta: 'A comunicação exerce a função de INFORMAÇÃO quando fornece dados necessários à tomada de decisão.',
+      incorretas: { A: 'Feedback é retorno.', B: 'Controle é outra função.', C: 'Motivação é outra função.', D: 'Expressão emocional é outra função.' },
+      conceitoCobrado: 'Funções da comunicação',
+      pegadinha: 'Confundir informação com feedback.',
+      comoApareceEmConcurso: 'Cobrança de função específica.'
+    },
+    tags: ['comunicação', 'funções']
+  },
+  {
+    id: 'Q-REAL-ADM-08-010',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-08',
+    banca: 'FUNCERN', orgao: 'IFRN', ano: 2024, prova: 'Assistente em Administração',
+    fonte: { descricao: 'FUNCERN 2024 — IFRN — Assistente em Administração' },
+    subtema: 'Barreiras à comunicação — percepção seletiva',
+    dificuldade: 3, prioridade: 'media',
+    enunciado: 'A comunicação eficiente é um fator de grande relevância na execução das atividades diárias de um grupo de trabalho. Sobre as barreiras no processo de comunicação, é CORRETO afirmar:',
+    alternativas: [
+      { id: 'A', texto: 'A filtragem deve ser um mecanismo incentivado em uma organização que visa aperfeiçoar seus processos internos de comunicação.' },
+      { id: 'B', texto: 'A percepção seletiva é o desvio de interpretação baseado em aspectos como preconceitos e experiências anteriores.' },
+      { id: 'C', texto: 'As emoções não influenciam o modo como um indivíduo interpretará uma mensagem; não podem ser consideradas barreira.' },
+      { id: 'D', texto: 'O excesso de informação contribui com a fluidez do processo de comunicação em uma organização.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A PERCEPÇÃO SELETIVA é uma barreira à comunicação: o receptor interpreta a mensagem com base em preconceitos, experiências e valores pessoais.',
+      incorretas: { A: 'A filtragem é barreira, não mecanismo a incentivar.', C: 'As emoções influenciam a interpretação.', D: 'O excesso de informação é barreira (sobrecarga).' },
+      conceitoCobrado: 'Barreiras à comunicação',
+      pegadinha: 'Confundir barreiras com mecanismos positivos.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['barreiras', 'percepção seletiva']
+  },
+  {
+    id: 'Q-REAL-ADM-08-011',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-08',
+    banca: 'Instituto AOCP', orgao: 'IFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'Instituto AOCP 2025 — IFPB — Assistente em Administração' },
+    subtema: 'Negociação — ganha-perde → perde-perde',
+    dificuldade: 3, prioridade: 'media',
+    enunciado: 'Em uma negociação entre dois setores, o Setor A insistiu em manter seus prazos, argumentando que qualquer ajuste traria prejuízo ao seu cronograma. O Setor B, para evitar atritos e encerrar rapidamente o impasse, aceitou integralmente as condições impostas, mesmo sabendo que isso comprometeria suas metas e a qualidade do serviço. Semanas depois, o Setor B demonstrou insatisfação e resistência em cooperar com o Setor A em novas demandas, gerando prejuízo à relação de ambos. Considerando os tipos de resultados em negociação, a situação evoluiu de:',
+    alternativas: [
+      { id: 'A', texto: 'perde-ganha para ganha-ganha.' },
+      { id: 'B', texto: 'ganha-perde para perde-perde, pois a vitória inicial de uma parte resultou em prejuízos para ambas a longo prazo.' },
+      { id: 'C', texto: 'perde-perde para ganha-perde.' },
+      { id: 'D', texto: 'ganha-ganha para ganha-perde.' },
+      { id: 'E', texto: 'perde-ganha para ganha-perde.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'No início, o Setor A GANHOU e o Setor B PERDEU (ganha-perde). A longo prazo, a resistência do Setor B gerou prejuízo para ambos (perde-perde).',
+      incorretas: { A: 'Não evoluiu para ganha-ganha.', C: 'Inverte.', D: 'Não evoluiu de ganha-ganha.', E: 'Não evoluiu para ganha-perde.' },
+      conceitoCobrado: 'Tipos de resultado em negociação',
+      pegadinha: 'Confundir ganha-perde com perde-ganha.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['negociação', 'ganha-perde', 'perde-perde']
+  },
+  {
+    id: 'Q-REAL-ADM-09-009',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-09',
+    banca: 'FUNCERN', orgao: 'IFRN', ano: 2024, prova: 'Assistente em Administração',
+    fonte: { descricao: 'FUNCERN 2024 — IFRN — Assistente em Administração' },
+    subtema: 'Sete ferramentas da qualidade',
+    dificuldade: 3, prioridade: 'media',
+    enunciado: 'As Sete Ferramentas da Qualidade são instrumentos que permitem a melhoria da gestão dos processos de trabalho. Sobre essa temática, é CORRETO afirmar:',
+    alternativas: [
+      { id: 'A', texto: 'O Diagrama de Ishikawa permite a estruturação e a hierarquização das principais causas que podem contribuir para um determinado efeito.' },
+      { id: 'B', texto: 'O Diagrama de Pareto permite a identificação dos problemas relacionados a um efeito por meio da quantificação e do registro da frequência de sua ocorrência.' },
+      { id: 'C', texto: 'O Histograma é a representação gráfica de um fluxo de tarefas a partir do detalhamento sequenciado de suas etapas.' },
+      { id: 'D', texto: 'O Diagrama de Dispersão é caracterizado por sua natureza qualitativa, permitindo a coleta de dados subjetivos.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'O DIAGRAMA DE ISHIKAWA (espinha de peixe) estrutura e hierarquiza as CAUSAS de um efeito (6M).',
+      incorretas: { B: 'O Pareto prioriza por frequência/impacto (80/20), não apenas identifica.', C: 'O Histograma é gráfico de distribuição de frequência, não fluxo.', D: 'O Diagrama de Dispersão é quantitativo (correlação entre variáveis).' },
+      conceitoCobrado: 'Sete ferramentas da qualidade',
+      pegadinha: 'Confundir as funções de cada ferramenta.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['ferramentas da qualidade', 'Ishikawa']
+  },
+  {
+    id: 'Q-REAL-ADM-09-010',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-09',
+    banca: 'Instituto AOCP', orgao: 'IFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'Instituto AOCP 2025 — IFPB — Assistente em Administração' },
+    subtema: 'Diagrama de Pareto — aplicação (80/20)',
+    dificuldade: 2, prioridade: 'media',
+    enunciado: 'Em uma universidade pública, o Pró-reitor de Administração identifica alto volume de reclamações sobre a demora nos processos administrativos. Rita, Pró-reitora Adjunta, sugere criar uma equipe para registrar e analisar os problemas, identificando os fatores que mais impactam o atraso. Ela esclarece que a estratégia é baseada no princípio segundo o qual, em muitos casos, 80% das consequências são resultados de 20% das causas. Esse princípio fundamenta a ferramenta da qualidade denominada:',
+    alternativas: [
+      { id: 'A', texto: 'Diagrama de Ishikawa.' },
+      { id: 'B', texto: 'Fluxograma.' },
+      { id: 'C', texto: 'Histograma.' },
+      { id: 'D', texto: 'Diagrama de Pareto.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'O princípio 80/20 é a base do DIAGRAMA DE PARETO, que prioriza as causas mais impactantes.',
+      incorretas: { A: 'Ishikawa identifica causas (6M), não prioriza por 80/20.', B: 'Fluxograma representa fluxo.', C: 'Histograma mostra distribuição de frequência.' },
+      conceitoCobrado: 'Diagrama de Pareto',
+      pegadinha: 'Confundir com Ishikawa.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['Pareto', '80/20']
+  },
+  {
+    id: 'Q-REAL-ADM-10-009',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-10',
+    banca: 'IDECAN', orgao: 'UFPB', ano: 2016, prova: 'Assistente em Administração',
+    fonte: { descricao: 'IDECAN 2016 — UFPB — Assistente em Administração (gabarito inferido — conferir com o gabarito oficial da banca)' },
+    subtema: 'Tipos de almoxarifado',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Sobre os diferentes tipos de estoque que podem existir em uma empresa, assinale a afirmativa CORRETA:',
+    alternativas: [
+      { id: 'A', texto: 'O almoxarifado de matérias-primas é onde estão as peças que servem de apoio à manutenção dos equipamentos e do edifício.' },
+      { id: 'B', texto: 'O almoxarifado de materiais auxiliares é composto por insumos ou matérias-primas que serão transformadas durante o processo produtivo em um produto final.' },
+      { id: 'C', texto: 'O almoxarifado de produtos acabados é onde são armazenados os materiais que auxiliam e participam do processo de transformação do produto; no entanto, não se agregam a ele.' },
+      { id: 'D', texto: 'O almoxarifado intermediário é onde se encontram os produtos em fase de processamento, ainda não acabados, ou subconjuntos que estão armazenados para a composição do produto final.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'O ALMOXARIFADO INTERMEDIÁRIO guarda produtos em fase de processamento (semiacabados) ou subconjuntos para a composição do produto final.',
+      incorretas: { A: 'Descreve o almoxarifado de manutenção.', B: 'Descreve o almoxarifado de matérias-primas.', C: 'Descreve o almoxarifado de materiais auxiliares.' },
+      conceitoCobrado: 'Tipos de almoxarifado',
+      pegadinha: 'Trocar as definições.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['almoxarifado', 'tipos de estoque']
+  },
+  {
+    id: 'Q-REAL-ADM-10-010',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-10',
+    banca: 'FADE', orgao: 'UFPE', ano: 2023, prova: 'Assistente em Administração',
+    fonte: { descricao: 'FADE 2023 — UFPE — Assistente em Administração' },
+    subtema: 'Atividades da gestão de materiais',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'A administração de materiais envolve a gestão de todos os processos ligados à cadeia de suprimentos, desde os pontos de origem com a aquisição das matérias-primas até a entrega do produto ao consumidor final. Assinale a única alternativa que NÃO constitui atividade da gestão de materiais:',
+    alternativas: [
+      { id: 'A', texto: 'Seleção de fornecedores.' },
+      { id: 'B', texto: 'Transporte.' },
+      { id: 'C', texto: 'Armazenagem.' },
+      { id: 'D', texto: 'Definição dos preços.' },
+      { id: 'E', texto: 'Embalagens.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'A DEFINIÇÃO DOS PREÇOS é atividade de marketing/finanças, não da gestão de materiais.',
+      incorretas: { A: 'Seleção de fornecedores é atividade.', B: 'Transporte é atividade.', C: 'Armazenagem é atividade.', E: 'Embalagens é atividade.' },
+      conceitoCobrado: 'Atividades da gestão de materiais',
+      pegadinha: 'Incluir atividade de outra área.',
+      comoApareceEmConcurso: 'Cobrança de INCORRETA.'
+    },
+    tags: ['gestão de materiais', 'atividades']
+  },
+  {
+    id: 'Q-REAL-ADM-10-011',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-10',
+    banca: 'FADE', orgao: 'UFPE', ano: 2023, prova: 'Assistente em Administração',
+    fonte: { descricao: 'FADE 2023 — UFPE — Assistente em Administração' },
+    subtema: 'WMS — Warehouse Management System',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'A logística de armazenagem compreende atividades gerenciais e operacionais para armazenar e proteger produtos, com o objetivo de minimizar custos operacionais e manter um serviço de qualidade. Entre os diferentes sistemas de armazenagem, pode-se citar o WMS. Acerca desse sistema, é correto afirmar que ele:',
+    alternativas: [
+      { id: 'A', texto: 'É voltado apenas para a identificação dos pallets que armazenam os itens do estoque.' },
+      { id: 'B', texto: 'É voltado apenas para a criação de etiquetas adesivas de produtos perecíveis.' },
+      { id: 'C', texto: 'Permite o controle de entrada e saída de mercadorias disponíveis.' },
+      { id: 'D', texto: 'É focado exclusivamente na administração de mercadorias hospitalares.' },
+      { id: 'E', texto: 'Cria uma logística própria, não se ajustando a outros sistemas.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'O WMS (Warehouse Management System) é o sistema de gestão de armazém que controla entrada, saída e movimentação de mercadorias.',
+      incorretas: { A: 'Não se limita a pallets.', B: 'Não se limita a etiquetas.', D: 'Não é exclusivo de hospital.', E: 'Integra-se a outros sistemas.' },
+      conceitoCobrado: 'WMS',
+      pegadinha: 'Restringir o WMS a uma única função.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['WMS', 'armazenagem']
+  },
+  {
+    id: 'Q-REAL-ADM-11-009',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-11',
+    banca: 'Instituto AOCP', orgao: 'IFPB', ano: 2025, prova: 'Assistente em Administração',
+    fonte: { descricao: 'Instituto AOCP 2025 — IFPB — Assistente em Administração' },
+    subtema: 'BPM — fase de Mudanças de Arquitetura',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'A gestão BPM (Business Process Management) segue um ciclo de vida estruturado, composto por etapas integradas e interdependentes. A maioria dos modelos de ciclo de vida pode ser descrita como um processo iterativo, dividido em cinco fases. Uma dessas fases é denominada Mudanças de Arquitetura, na qual há:',
+    alternativas: [
+      { id: 'A', texto: 'O trabalho de modelação, de análise, de desenho e de medição do desempenho dos processos, buscando identificar os principais processos organizacionais atuais e interfuncionais no contexto das metas e dos objetivos desejados.' },
+      { id: 'B', texto: 'O processo de criação do modelo permanente de Gestão Corporativa (Arquiteturas) de Processos e de governança para a organização, incluindo a medição e a monitorização contínua dos processos de negócio e da tecnologia.' },
+      { id: 'C', texto: 'A realização de todos os planos da fase que a antecede, sendo coordenada e gerida pelo patrocinador do programa e pelo gestor do projeto, os quais providenciam a elaboração de um cronograma estruturado de implementação.' },
+      { id: 'D', texto: 'A elaboração de uma estratégia e de um plano, fundamentalmente baseados em processos, para a organização, a partir da compreensão dos objetivos organizacionais, garantindo uma proposta de valor atrativa aos clientes.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A fase de MUDANÇAS DE ARQUITETURA cria o modelo permanente de gestão corporativa (arquiteturas de processos) e de governança, com medição e monitorização contínua dos processos de negócio e da tecnologia.',
+      incorretas: { A: 'Descreve a fase de descoberta/modelagem.', C: 'Descreve a fase de implementação.', D: 'Descreve a fase de estratégia/planejamento.' },
+      conceitoCobrado: 'BPM — fases do ciclo de vida',
+      pegadinha: 'Confundir a fase de arquitetura com modelagem ou implementação.',
+      comoApareceEmConcurso: 'Cobrança de fase específica.'
+    },
+    tags: ['BPM', 'gestão por processos']
+  },
+  {
+    id: 'Q-REAL-ADM-12-009',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-12',
+    banca: 'FADE', orgao: 'UFPE', ano: 2023, prova: 'Assistente em Administração',
+    fonte: { descricao: 'FADE 2023 — UFPE — Assistente em Administração' },
+    subtema: 'Formas de atendimento obrigatório',
+    dificuldade: 2, prioridade: 'media',
+    enunciado: 'Uma das características do servidor público é o atendimento ao cidadão com qualidade e presteza. Analise, quanto à obrigatoriedade, as formas de atendimento: 1) Agir com respeito. 2) Ser acessível e gentil. 3) Não duvidar da boa-fé do cidadão. 4) Atender à fila por ordem de chegada (salvo situações previstas em lei). São formas de atendimento de uso OBRIGATÓRIO:',
+    alternativas: [
+      { id: 'A', texto: '1, 2 e 3, apenas.' },
+      { id: 'B', texto: '2 e 4, apenas.' },
+      { id: 'C', texto: '2, 3 e 4, apenas.' },
+      { id: 'D', texto: '1, 2, 3 e 4.' },
+      { id: 'E', texto: '3 e 4, apenas.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'Todas as quatro formas são OBRIGATÓRIAS: respeito, acessibilidade/gentileza, boa-fé e ordem de chegada (salvo exceções legais, como atendimento preferencial).',
+      incorretas: { A: 'A 4 também é obrigatória.', B: '1 e 3 também são obrigatórias.', C: '1 também é obrigatória.', E: '1 e 2 também são obrigatórias.' },
+      conceitoCobrado: 'Formas de atendimento obrigatório',
+      pegadinha: 'Excluir alguma das formas.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['atendimento', 'formas obrigatórias']
+  },
+  {
+    id: 'Q-REAL-ADM-12-010',
+    tipo: 'REAL', area: 'ADM', moduloId: 'ADM-12',
+    banca: 'FADE', orgao: 'UFPE', ano: 2023, prova: 'Assistente em Administração',
+    fonte: { descricao: 'FADE 2023 — UFPE — Assistente em Administração' },
+    subtema: 'Trabalho em equipe — característica INCORRETA',
+    dificuldade: 2, prioridade: 'media',
+    enunciado: 'O trabalho em equipe é de fundamental importância para a qualidade do produto a ser desenvolvido. Assinale a única alternativa que NÃO está associada ao trabalho em equipe:',
+    alternativas: [
+      { id: 'A', texto: 'Presença de independência de membros do grupo.' },
+      { id: 'B', texto: 'Participação de lideranças no grupo.' },
+      { id: 'C', texto: 'Comprometimento e empatia.' },
+      { id: 'D', texto: 'Compromisso da equipe com a pontualidade na entrega.' },
+      { id: 'E', texto: 'Preocupação com a eficiência e eficácia.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'A INDEPENDÊNCIA de membros do grupo NÃO está associada ao trabalho em equipe — a equipe pressupõe INTERDEPENDÊNCIA e cooperação.',
+      incorretas: { B: 'Liderança participativa está associada.', C: 'Comprometimento e empatia estão associados.', D: 'Pontualidade está associada.', E: 'Eficiência e eficácia estão associadas.' },
+      conceitoCobrado: 'Trabalho em equipe',
+      pegadinha: 'Inverter independência por interdependência.',
+      comoApareceEmConcurso: 'Cobrança de INCORRETA.'
+    },
+    tags: ['trabalho em equipe', 'independência']
+  },
+  {
+    id: 'Q-DID-AP-14-007',
+    tipo: 'DIDATICA', area: 'AP', moduloId: 'AP-14',
+    subtema: 'Reforma de 1967 (Decreto-Lei 200)',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'A Reforma Administrativa de 1967, por meio do Decreto-Lei 200, é considerada uma etapa intermediária na evolução da Administração Pública brasileira. Sua principal característica foi:',
+    alternativas: [
+      { id: 'A', texto: 'A introdução da burocracia weberiana no Brasil, com a criação do DASP.' },
+      { id: 'B', texto: 'A descentralização para autarquias e fundações, transferindo atividades para a Administração Indireta.' },
+      { id: 'C', texto: 'A criação do Conselho Nacional de Justiça (CNJ) e da súmula vinculante.' },
+      { id: 'D', texto: 'A inserção da eficiência no caput do art. 37 da CF/88.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A REFORMA DE 1967 (Decreto-Lei 200) promoveu a DESCENTRALIZAÇÃO para autarquias e fundações — a chamada "administração indireta".',
+      incorretas: { A: 'A burocracia weberiana foi introduzida em 1936.', C: 'CNJ e súmula vinculante são de 2004 (EC 45).', D: 'A eficiência foi inserida pela EC 19/1998.' },
+      conceitoCobrado: 'Reforma de 1967 (Decreto-Lei 200)',
+      pegadinha: 'Confundir com a Reforma de 1936 ou 1995.',
+      comoApareceEmConcurso: 'Cobrança de associação.'
+    },
+    tags: ['reforma 1967', 'Decreto-Lei 200', 'descentralização']
   }
 
 ];
