@@ -5152,6 +5152,399 @@ window.QUESTIONS = [
       comoApareceEmConcurso: 'Cenário integrado.'
     },
     tags: ['integração', 'licitação', 'urgência']
+  },
+  /* ============================================================
+     LOTE COMPLEMENTAR — Fase 10 (questões extraídas das provas)
+     ADM-01 a ADM-06
+  ============================================================ */
+  {
+    id: 'Q-REAL-ADM-01-009',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-01',
+    subtema: 'Etimologia e conceito de Administração',
+    dificuldade: 1, prioridade: 'alta',
+    enunciado: 'A palavra "administração" vem do latim ad (junto de) e ministratio (prestação de serviço). Sobre o conceito de Administração, analise as afirmativas: I. A palavra administração significa "ação de prestar serviço ou ajuda". II. A administração é o processo de planejar, organizar, dirigir e controlar o uso de recursos e competências para alcançar objetivos com eficiência. III. Administração é uma tarefa dispersadora e desintegrada, que separa os interesses das partes. Estão corretas:',
+    alternativas: [
+      { id: 'A', texto: 'I e II apenas.' },
+      { id: 'B', texto: 'III apenas.' },
+      { id: 'C', texto: 'I, II e III.' },
+      { id: 'D', texto: 'II e III apenas.' },
+      { id: 'E', texto: 'I apenas.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'I (etimologia) e II (conceito) estão corretas. III está INCORRETA: a Administração é INTEGRADORA (junta e integra interesses), não dispersadora.',
+      incorretas: { B: 'I e II também estão corretas.', C: 'III está incorreta.', D: 'III está incorreta.', E: 'II também está correta.' },
+      conceitoCobrado: 'Conceito e etimologia de Administração',
+      pegadinha: 'Inverter integradora por dispersadora.',
+      comoApareceEmConcurso: 'Cobrança da etimologia e do conceito.'
+    },
+    tags: ['conceito', 'etimologia']
+  },
+  {
+    id: 'Q-DID-ADM-01-010',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-01',
+    subtema: 'Objetivos da Administração',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Sobre os objetivos da Administração, assinale a alternativa INCORRETA:',
+    alternativas: [
+      { id: 'A', texto: 'Oferecer resultados ou fazer acontecer.' },
+      { id: 'B', texto: 'Dar retorno do investimento aos investidores.' },
+      { id: 'C', texto: 'Apoiar a comunidade, com responsabilidade social e ecológica.' },
+      { id: 'D', texto: 'Satisfazer toda expectativa do consumidor incondicionalmente.' },
+      { id: 'E', texto: 'Oferecer resultados que atendam aos stakeholders.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'A alternativa D está INCORRETA: a Administração busca satisfazer as expectativas do consumidor DENTRO DE LIMITES legais, éticos e econômicos — não "incondicionalmente".',
+      incorretas: { A: 'É objetivo.', B: 'É objetivo.', C: 'É objetivo.', E: 'É objetivo.' },
+      conceitoCobrado: 'Objetivos da Administração',
+      pegadinha: 'Absolutizar a satisfação do consumidor.',
+      comoApareceEmConcurso: 'Cobrança de INCORRETA em cenário.'
+    },
+    tags: ['objetivos']
+  },
+  {
+    id: 'Q-DID-ADM-01-011',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-01',
+    subtema: 'Níveis hierárquicos (institucional, intermediário, operacional)',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Relacione os níveis hierárquicos às suas características: 1. Nível institucional. 2. Nível intermediário. 3. Nível operacional. ( ) Composto pelos gestores/gerentes de departamentos; concentra-se no desdobramento da estratégia junto a clientes, fornecedores e colaboradores. ( ) Composto por colaboradores, corpo técnico e supervisores; responsável pela execução de tarefas planejadas, propondo correções e melhorias. ( ) Composto pela presidência e diretores; concentra-se na interação com o ambiente externo e em questões estratégicas. A sequência correta é:',
+    alternativas: [
+      { id: 'A', texto: '1, 2, 3.' },
+      { id: 'B', texto: '2, 3, 1.' },
+      { id: 'C', texto: '3, 1, 2.' },
+      { id: 'D', texto: '3, 2, 1.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: '2 = intermediário (gerentes, desdobramento da estratégia). 3 = operacional (execução, tarefas). 1 = institucional (presidência, diretores, ambiente externo). Sequência: 2 – 3 – 1.',
+      incorretas: { A: 'Inverte.', C: 'Inverte.', D: 'Inverte.' },
+      conceitoCobrado: 'Níveis hierárquicos',
+      pegadinha: 'Inverter os níveis.',
+      comoApareceEmConcurso: 'Associação.'
+    },
+    tags: ['níveis hierárquicos']
+  },
+  {
+    id: 'Q-REAL-ADM-02-009',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-02',
+    subtema: 'Funções administrativas — identificação',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Sobre as funções administrativas (PODC), é CORRETO afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'A função de Controle significa o ato de estruturar os recursos e órgãos incumbidos de sua administração.' },
+      { id: 'B', texto: 'A Direção é a terceira função do PODC, vindo depois do Planejamento e da Organização, e antecedendo o Controle.' },
+      { id: 'C', texto: 'A função de Organização está relacionada com a maneira pela qual os objetivos devem ser alcançados por meio da atividade de pessoas e da aplicação de recursos.' },
+      { id: 'D', texto: 'O Planejamento está voltado para o presente e monitora os resultados auferidos durante um período.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A Direção é a terceira função do PODC (Planejamento → Organização → Direção → Controle).',
+      incorretas: { A: 'Controle é medir e corrigir, não estruturar.', C: 'Organização é estrutural; a descrição confunde com Direção.', D: 'Planejamento olha o FUTURO, não o presente.' },
+      conceitoCobrado: 'Funções administrativas',
+      pegadinha: 'Confundir as funções.',
+      comoApareceEmConcurso: 'Cobrança da ordem e das atribuições.'
+    },
+    tags: ['PODC', 'funções']
+  },
+  {
+    id: 'Q-DID-ADM-02-010',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-02',
+    subtema: 'Tomada de decisão — etapas',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'A tomada de decisão é um processo que pode ser entendido a partir de etapas sequenciais. A etapa na qual o decisor determina exatamente o que é importante na resolução do problema, a partir de seus valores, interesses e preferências, é denominada:',
+    alternativas: [
+      { id: 'A', texto: 'Desenvolvimento de alternativas.' },
+      { id: 'B', texto: 'Definição do problema.' },
+      { id: 'C', texto: 'Coleta de informações.' },
+      { id: 'D', texto: 'Identificação de critérios.' },
+      { id: 'E', texto: 'Avaliação de alternativas.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'A IDENTIFICAÇÃO DE CRITÉRIOS é a etapa em que o decisor define o que é importante para a decisão, com base em seus valores e preferências.',
+      incorretas: { A: 'Desenvolvimento de alternativas é gerar opções.', B: 'Definição do problema é identificar a situação.', C: 'Coleta de informações é levantar dados.', E: 'Avaliação de alternativas é comparar opções.' },
+      conceitoCobrado: 'Etapas da tomada de decisão',
+      pegadinha: 'Confundir identificação de critérios com definição do problema.',
+      comoApareceEmConcurso: 'Cobrança de etapa específica.'
+    },
+    tags: ['tomada de decisão', 'critérios']
+  },
+  {
+    id: 'Q-REAL-ADM-03-009',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-03',
+    subtema: 'Planejamento estratégico — horizonte temporal',
+    dificuldade: 1, prioridade: 'alta',
+    enunciado: 'Os planos podem ser classificados quanto ao seu horizonte temporal. Os planos estratégicos são caracterizados por um horizonte temporal:',
+    alternativas: [
+      { id: 'A', texto: 'De longo prazo.' },
+      { id: 'B', texto: 'De médio prazo.' },
+      { id: 'C', texto: 'De curto prazo.' },
+      { id: 'D', texto: 'Indefinido.' },
+      { id: 'E', texto: 'Imediato.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'Os planos ESTRATÉGICOS têm horizonte de LONGO PRAZO (geralmente 5, 10 ou mais anos). Táticos = médio prazo. Operacionais = curto prazo.',
+      incorretas: { B: 'Médio prazo é tático.', C: 'Curto prazo é operacional.', D: 'Tem prazo definido.', E: 'Imediato não é horizonte de planejamento.' },
+      conceitoCobrado: 'Níveis de planejamento — horizonte temporal',
+      pegadinha: 'Confundir os horizontes.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['planejamento estratégico', 'horizonte']
+  },
+  {
+    id: 'Q-DID-ADM-03-010',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-03',
+    subtema: 'Etapas do planejamento',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Sobre as etapas do processo de planejamento, assinale a alternativa que associa corretamente a etapa à sua descrição:',
+    alternativas: [
+      { id: 'A', texto: 'Definição dos objetivos — estabelecer quais são os caminhos possíveis.' },
+      { id: 'B', texto: 'Situação atual — definição de onde estamos agora e o que precisa ser feito.' },
+      { id: 'C', texto: 'Alternativas de ação — definição para onde queremos ir.' },
+      { id: 'D', texto: 'Premissas em relação ao futuro — o que temos pela frente, definição de cenários.' },
+      { id: 'E', texto: 'Escolher a melhor alternativa — seguir o que foi planejado e avaliar resultados.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'SITUAÇÃO ATUAL: definição de onde estamos agora e o que precisa ser feito.',
+      incorretas: { A: 'Definição de objetivos é definir PARA ONDE vamos, não caminhos.', C: 'Alternativas de ação é definir caminhos possíveis, não destino.', D: 'Premissas é o que temos pela frente (cenários) — correta, mas não é a única. E: Escolher a melhor alternativa é definir o melhor caminho; seguir e avaliar é a etapa final.' },
+      conceitoCobrado: 'Etapas do planejamento',
+      pegadinha: 'Confundir a descrição de cada etapa.',
+      comoApareceEmConcurso: 'Cobrança de associação.'
+    },
+    tags: ['planejamento', 'etapas']
+  },
+  {
+    id: 'Q-REAL-ADM-04-009',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-04',
+    subtema: 'Especialização do trabalho',
+    dificuldade: 2, prioridade: 'alta',
+    enunciado: 'Dentre os elementos do processo de organização, o grau em que as tarefas são divididas e padronizadas, visando à rapidez e à eficiência para que possam ser aprendidas e realizadas, corresponde ao conceito de:',
+    alternativas: [
+      { id: 'A', texto: 'Especialização do trabalho.' },
+      { id: 'B', texto: 'Amplitude de controle.' },
+      { id: 'C', texto: 'Centralização.' },
+      { id: 'D', texto: 'Cadeia de comando.' },
+      { id: 'E', texto: 'Formalização.' }
+    ],
+    gabarito: 'A',
+    explicacao: {
+      correta: 'A ESPECIALIZAÇÃO DO TRABALHO é o grau em que as tarefas são divididas e padronizadas.',
+      incorretas: { B: 'Amplitude é o número de subordinados por gestor.', C: 'Centralização é a concentração de decisões.', D: 'Cadeia de comando é a linha de autoridade.', E: 'Formalização é o grau de regras escritas.' },
+      conceitoCobrado: 'Elementos da organização',
+      pegadinha: 'Confundir com formalização.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['especialização', 'organização']
+  },
+  {
+    id: 'Q-DID-ADM-04-010',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-04',
+    subtema: 'Estrutura sem fronteiras',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'O conceito de Estrutura Organizacional introduzido por Jack Welch, que parte de pressupostos como a eliminação da cadeia de comando, a existência de amplitude de controle ilimitada e a substituição dos departamentos por equipes autônomas, é conhecido como:',
+    alternativas: [
+      { id: 'A', texto: 'Estrutura Funcional.' },
+      { id: 'B', texto: 'Estrutura Matricial.' },
+      { id: 'C', texto: 'Organização Holográfica.' },
+      { id: 'D', texto: 'Organização sem Fronteiras.' },
+      { id: 'E', texto: 'Estrutura em Rede.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'ORGANIZAÇÃO SEM FRONTEIRAS (boundaryless organization) é o conceito de Jack Welch: elimina a cadeia de comando, amplitude ilimitada e equipes autônomas.',
+      incorretas: { A: 'Funcional é por funções.', B: 'Matricial tem dupla subordinação.', C: 'Holográfica é outro conceito.', E: 'Em rede é outra configuração.' },
+      conceitoCobrado: 'Estruturas organizacionais contemporâneas',
+      pegadinha: 'Confundir com estrutura em rede.',
+      comoApareceEmConcurso: 'Cobrança de conceito específico.'
+    },
+    tags: ['estrutura sem fronteiras', 'Jack Welch']
+  },
+  {
+    id: 'Q-DID-ADM-04-011',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-04',
+    subtema: 'Departamentalização matricial — cenário',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'O IFPB criou uma equipe temporária para desenvolver um novo sistema de gestão acadêmica. Nessa equipe, foram designados servidores de diferentes setores — TI, administração, comunicação e finanças — que continuam respondendo aos seus chefes imediatos, mas também passam a receber orientações e tarefas de um coordenador específico do projeto. Essa forma de organização caracteriza qual tipo de departamentalização?',
+    alternativas: [
+      { id: 'A', texto: 'Funcional.' },
+      { id: 'B', texto: 'Por produtos ou serviços.' },
+      { id: 'C', texto: 'Territorial.' },
+      { id: 'D', texto: 'Matricial.' },
+      { id: 'E', texto: 'Por clientes.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'A departamentalização MATRICIAL combina autoridade funcional (chefes de setor) com autoridade de projeto (coordenador) — dupla subordinação.',
+      incorretas: { A: 'Funcional é por área, sem dimensão de projeto.', B: 'Por produto é por linha de produto.', C: 'Territorial é por localização.', E: 'Por cliente é por perfil de público.' },
+      conceitoCobrado: 'Departamentalização matricial',
+      pegadinha: 'Confundir com funcional.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['matricial', 'departamentalização']
+  },
+  {
+    id: 'Q-REAL-ADM-05-009',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-05',
+    subtema: 'Autoridade burocrática',
+    dificuldade: 2, prioridade: 'media',
+    enunciado: 'As relações de autoridade estabelecidas entre superiores e subordinados podem ter como base diferentes fatores. O comando legitimado do superior sobre os subordinados, de maneira racional, por normas e regras aceitas dentro de um contexto organizacional, corresponde a uma autoridade com base na:',
+    alternativas: [
+      { id: 'A', texto: 'Tradição.' },
+      { id: 'B', texto: 'Relação pessoal.' },
+      { id: 'C', texto: 'Burocracia.' },
+      { id: 'D', texto: 'Competência técnica.' },
+      { id: 'E', texto: 'Carisma.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: 'A AUTORIDADE BUROCRÁTICA (racional-legal) é baseada em normas e regras aceitas no contexto organizacional (Weber).',
+      incorretas: { A: 'Tradição é autoridade tradicional.', B: 'Relação pessoal não é a base racional-legal.', D: 'Competência técnica é outro tipo de poder.', E: 'Carisma é autoridade carismática.' },
+      conceitoCobrado: 'Tipos de autoridade (Weber)',
+      pegadinha: 'Confundir os tipos.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['autoridade', 'burocracia', 'Weber']
+  },
+  {
+    id: 'Q-DID-ADM-05-010',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-05',
+    subtema: 'Motivação extrínseca',
+    dificuldade: 2, prioridade: 'media',
+    enunciado: 'Quando falamos que a motivação pressupõe que o comportamento humano pode ser projetado, modelado ou mudado por meio da utilização adequada dos vários tipos de recompensas ou punições disponíveis no meio ambiente, estamos nos referindo a qual tipo de motivação?',
+    alternativas: [
+      { id: 'A', texto: 'Intrínseca.' },
+      { id: 'B', texto: 'Exponencial.' },
+      { id: 'C', texto: 'Subjetiva.' },
+      { id: 'D', texto: 'Extrínseca.' },
+      { id: 'E', texto: 'Competitiva.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'A MOTIVAÇÃO EXTRÍNSECA é baseada em recompensas e punições externas (ambiente).',
+      incorretas: { A: 'Intrínseca é interna (autorrealização).', B: 'Não existe.', C: 'Subjetiva é interna.', E: 'Competitiva não é tipo.' },
+      conceitoCobrado: 'Motivação intrínseca x extrínseca',
+      pegadinha: 'Inverter.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['motivação extrínseca']
+  },
+  {
+    id: 'Q-DID-ADM-05-011',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-05',
+    subtema: 'Teoria ERC (Existência, Relacionamento e Crescimento)',
+    dificuldade: 3, prioridade: 'media',
+    enunciado: 'Um Programa de QVT estabelece: (1) implantação de novo plano de cargos e salários; (2) grupos de convivência e oficinas colaborativas; (3) programa de capacitação e certificação interna. Com base na Teoria ERC (Existência, Relacionamento e Crescimento), as ações 1, 2 e 3 correspondem, respectivamente, a necessidades de:',
+    alternativas: [
+      { id: 'A', texto: 'Crescimento, relacionamento e existência.' },
+      { id: 'B', texto: 'Relacionamento, crescimento e existência.' },
+      { id: 'C', texto: 'Existência, relacionamento e crescimento.' },
+      { id: 'D', texto: 'Relacionamento, existência e crescimento.' },
+      { id: 'E', texto: 'Existência, crescimento e relacionamento.' }
+    ],
+    gabarito: 'C',
+    explicacao: {
+      correta: '1 = EXISTÊNCIA (salário). 2 = RELACIONAMENTO (convivência). 3 = CRESCIMENTO (capacitação). Sequência: existência – relacionamento – crescimento.',
+      incorretas: { A: 'Inverte.', B: 'Inverte.', D: 'Inverte.', E: 'Inverte.' },
+      conceitoCobrado: 'Teoria ERC (Clayton Alderfer)',
+      pegadinha: 'Inverter as três necessidades.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['ERC', 'Alderfer']
+  },
+  {
+    id: 'Q-DID-ADM-05-012',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-05',
+    subtema: 'Papéis de Mintzberg — atividades',
+    dificuldade: 3, prioridade: 'media',
+    enunciado: 'Um gestor desempenhou: (1) recebeu relatórios e compartilhou informações com a equipe; (2) manteve redes de comunicação dentro e fora da organização; (3) motivou a equipe e orientou individualmente; (4) redistribuiu recursos entre projetos; (5) representou a instituição em cerimônia; (6) identificou oportunidades de melhoria e implementou mudança. Com base nos papéis de Mintzberg, assinale a associação correta (interpessoal / informacional / decisorial):',
+    alternativas: [
+      { id: 'A', texto: 'Interpessoal: 1, 2, 5. Informacional: 3, 6. Decisorial: 4.' },
+      { id: 'B', texto: 'Interpessoal: 3, 5. Informacional: 1. Decisorial: 4, 6, 2.' },
+      { id: 'C', texto: 'Interpessoal: 3, 5, 2. Informacional: 1. Decisorial: 4, 6.' },
+      { id: 'D', texto: 'Interpessoal: 1, 3, 5. Informacional: 2. Decisorial: 4, 6.' },
+      { id: 'E', texto: 'Interpessoal: 3, 5. Informacional: 1, 2. Decisorial: 4, 6.' }
+    ],
+    gabarito: 'E',
+    explicacao: {
+      correta: 'INTERPESSOAL: 3 (liderança) e 5 (representação). INFORMACIONAL: 1 (disseminação) e 2 (ligação). DECISORIAL: 4 (alocação de recursos) e 6 (empreendedorismo).',
+      incorretas: { A: '1 é informacional; 2 é informacional.', B: '2 é informacional.', C: '2 é informacional.', D: '1 é informacional.' },
+      conceitoCobrado: 'Papéis de Mintzberg',
+      pegadinha: 'Confundir ligação com interpessoal.',
+      comoApareceEmConcurso: 'Cenário aplicado com múltiplas atividades.'
+    },
+    tags: ['Mintzberg', 'papéis']
+  },
+  {
+    id: 'Q-DID-ADM-05-013',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-05',
+    subtema: 'Liderança — teoria dos traços',
+    dificuldade: 2, prioridade: 'media',
+    enunciado: 'Segundo a Teoria da Liderança, quanto aos traços de personalidade, a liderança é caracterizada:',
+    alternativas: [
+      { id: 'A', texto: 'Pelas maneiras e estilos de se comportar de um líder.' },
+      { id: 'B', texto: 'Pelas características marcantes, notáveis em um líder.' },
+      { id: 'C', texto: 'Pela adequação do comportamento do líder às circunstâncias da situação.' },
+      { id: 'D', texto: 'Pela postura autoritária do líder frente aos seus liderados.' },
+      { id: 'E', texto: 'Por um comportamento passivo diante das diferentes situações.' }
+    ],
+    gabarito: 'B',
+    explicacao: {
+      correta: 'A TEORIA DOS TRAÇOS defende que o líder possui características marcantes (traços inatos ou adquiridos) que o distinguem.',
+      incorretas: { A: 'Descreve teorias comportamentais.', C: 'Descreve teorias contingenciais.', D: 'Descreve estilo autocrático.', E: 'Não corresponde.' },
+      conceitoCobrado: 'Teorias de liderança',
+      pegadinha: 'Confundir com comportamental ou contingencial.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['liderança', 'traços']
+  },
+  {
+    id: 'Q-REAL-ADM-06-009',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-06',
+    subtema: 'Controle — ênfase nas exceções',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Um sistema de controle eficaz tem preocupação com aquilo que é essencial, com os desvios que necessitam de alguma ação gerencial. Essa característica é denominada:',
+    alternativas: [
+      { id: 'A', texto: 'Critérios múltiplos.' },
+      { id: 'B', texto: 'Foco estratégico.' },
+      { id: 'C', texto: 'Aceitação.' },
+      { id: 'D', texto: 'Economia.' },
+      { id: 'E', texto: 'Ênfase nas exceções.' }
+    ],
+    gabarito: 'E',
+    explicacao: {
+      correta: 'A ÊNFASE NAS EXCEÇÕES é a característica do controle que prioriza os desvios significativos — o que é essencial.',
+      incorretas: { A: 'Critérios múltiplos é outra característica.', B: 'Foco estratégico é outra.', C: 'Aceitação é outra.', D: 'Economia é outra.' },
+      conceitoCobrado: 'Características do controle',
+      pegadinha: 'Confundir com foco estratégico.',
+      comoApareceEmConcurso: 'Cobrança de característica específica.'
+    },
+    tags: ['controle', 'ênfase nas exceções']
+  },
+  {
+    id: 'Q-DID-ADM-06-010',
+    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-06',
+    subtema: 'Indicadores estratégicos x de produtividade',
+    dificuldade: 3, prioridade: 'alta',
+    enunciado: 'Os indicadores de produtividade avaliam o rendimento e a eficiência de cada colaborador. Já os indicadores estratégicos:',
+    alternativas: [
+      { id: 'A', texto: 'Medem a relação da empresa com a concorrência.' },
+      { id: 'B', texto: 'Mensuram a capacidade de resposta de um processo.' },
+      { id: 'C', texto: 'Compreendem qualquer desvio ou não conformidade de um processo produtivo.' },
+      { id: 'D', texto: 'Indicam onde está a empresa em relação aos objetivos estabelecidos anteriormente.' },
+      { id: 'E', texto: 'São compostos pela relação percentual entre lucro e vendas totais.' }
+    ],
+    gabarito: 'D',
+    explicacao: {
+      correta: 'Os INDICADORES ESTRATÉGICOS indicam onde a empresa está em relação aos objetivos previamente definidos.',
+      incorretas: { A: 'Relação com a concorrência é outro indicador.', B: 'Capacidade de resposta é outro.', C: 'Desvios são não conformidades.', E: 'Lucro/vendas é indicador financeiro.' },
+      conceitoCobrado: 'Indicadores estratégicos',
+      pegadinha: 'Confundir com indicadores de produtividade.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['indicadores', 'estratégicos']
   }
 
 ];
