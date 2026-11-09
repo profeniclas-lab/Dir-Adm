@@ -1,3 +1,9 @@
+/* ============================================================
+   ADM-ESTUDO v2.0 — style.css
+   Base + melhorias pedagógicas (exercício, revisão adaptativa,
+   banco de erros inteligente, comentários com exemplo inédito)
+   ============================================================ */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
   --bg: #f1f5f9; --surface: #ffffff; --surface-alt: #f8fafc;
@@ -346,6 +352,353 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helve
 .weak-strong-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 @media (max-width: 780px) { .weak-strong-grid { grid-template-columns: 1fr; } }
 .app-footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 12px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+/* ============================================================
+   MELHORIA 1 — EXERCÍCIO PÓS-AULA
+   ============================================================ */
+
+/* Badge de nível (usado no exercício e no detalhe das questões) */
+.nivel-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  background: var(--surface-alt);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+.nivel-badge.nivel-1 { background: #ecfdf5; color: #047857; border-color: #a7f3d0; }
+.nivel-badge.nivel-2 { background: #eff6ff; color: #1d4ed8; border-color: #bfdbfe; }
+.nivel-badge.nivel-3 { background: #fef3c7; color: #b45309; border-color: #fde68a; }
+.nivel-badge.nivel-4 { background: #fce7f3; color: #9d174d; border-color: #fbcfe8; }
+
+/* Hint descritivo do nível no topo do exercício */
+.exercise-nivel-hint {
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+.exercise-nivel-hint strong { color: var(--text); }
+
+/* Grid de desempenho por nível no resultado */
+.exercise-niveis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.exercise-nivel-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  text-align: left;
+}
+.exercise-nivel-card .enc-title {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--text-muted);
+}
+.exercise-nivel-card .enc-sub {
+  font-size: 13px;
+  color: var(--text);
+  margin-top: 3px;
+  font-weight: 600;
+}
+.exercise-nivel-card .enc-value {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 8px;
+  color: var(--text-muted);
+}
+.exercise-nivel-card .enc-value.good { color: var(--success); }
+.exercise-nivel-card .enc-value.mid { color: var(--warning); }
+.exercise-nivel-card .enc-value.bad { color: var(--danger); }
+
+/* Banner de domínio no resultado */
+.exercise-mastery-banner {
+  border-radius: 10px;
+  padding: 14px 18px;
+  font-size: 14px;
+  line-height: 1.55;
+  margin-bottom: 16px;
+  border-left: 4px solid var(--primary);
+  background: var(--surface-alt);
+}
+.exercise-mastery-banner strong { display: block; margin-bottom: 4px; font-size: 15px; }
+.exercise-mastery-banner.ok {
+  border-left-color: var(--success);
+  background: var(--success-soft);
+  color: var(--text);
+}
+.exercise-mastery-banner.warn {
+  border-left-color: var(--warning);
+  background: var(--warning-soft);
+  color: var(--text);
+}
+.exercise-mastery-banner.err {
+  border-left-color: var(--danger);
+  background: var(--danger-soft);
+  color: var(--text);
+}
+
+/* ============================================================
+   MELHORIA 2 — CLASSIFICAÇÃO DA RESPOSTA (revisão adaptativa)
+   ============================================================ */
+
+.classification-picker {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  border-left: 3px solid var(--purple);
+}
+.cp-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.cp-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+}
+.cp-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: var(--text);
+  transition: border-color .12s ease, background .12s ease;
+}
+.cp-btn:hover { border-color: var(--purple); background: var(--purple-soft); }
+.cp-btn.active { border-color: var(--purple); background: var(--purple-soft); }
+.cp-btn-label { font-size: 13.5px; font-weight: 700; color: var(--text); }
+.cp-btn-hint { font-size: 11.5px; color: var(--text-muted); }
+
+/* ============================================================
+   MELHORIA 3 — BANCO DE ERROS INTELIGENTE
+   ============================================================ */
+
+/* Seletor de categoria de erro (pós-resposta) */
+.error-cat-picker {
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  border-left: 3px solid var(--danger);
+}
+.ecp-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.ecp-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8px;
+}
+.ecp-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: var(--text);
+  transition: border-color .12s ease, background .12s ease;
+  position: relative;
+  padding-left: 34px;
+}
+.ecp-btn:hover { border-color: var(--danger); background: var(--danger-soft); }
+.ecp-btn.active { border-color: var(--danger); background: var(--danger-soft); }
+.ecp-btn-icon {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 14px;
+}
+.ecp-btn-label { font-size: 13px; font-weight: 700; color: var(--text); }
+.ecp-btn-desc { font-size: 11.5px; color: var(--text-muted); line-height: 1.4; }
+
+/* Subtopic review item (revisão e banco de erros) */
+.subtopic-review-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 8px;
+  border-left: 4px solid var(--warning);
+}
+.sri-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.sri-head strong { font-size: 14px; color: var(--text); }
+.sri-meta {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.sri-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Mastered grid (assuntos dominados) */
+.mastered-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px;
+}
+.mastered-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  border-left: 3px solid var(--success);
+}
+.mastered-item .mi-icon {
+  color: var(--success);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+.mastered-item strong { font-size: 13.5px; color: var(--text); }
+.mastered-item .mi-meta {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Dificuldade recorrente (alerta no banco de erros) */
+.recurring-difficulty {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--danger);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  margin-bottom: 8px;
+}
+.recurring-difficulty strong {
+  display: block;
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.recurring-difficulty p {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.recurring-difficulty p:last-child { margin-bottom: 10px; }
+
+/* Breakdown de erros por categoria */
+.error-cat-breakdown {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+}
+.ecb-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.ecb-row:last-child { border-bottom: none; }
+.ecb-icon { font-size: 14px; width: 20px; text-align: center; flex-shrink: 0; }
+.ecb-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  min-width: 130px;
+}
+.ecb-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+  min-width: 80px;
+}
+.ecb-fill {
+  height: 100%;
+  background: var(--danger);
+  border-radius: 999px;
+  transition: width .3s;
+}
+.ecb-value {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 40px;
+  text-align: right;
+}
+
+/* ============================================================
+   MELHORIA 4 — COMENTÁRIOS PEDAGÓGICOS
+   ============================================================ */
+
+/* Explicação adaptada ao erro (destaque antes dos explain-blocks) */
+.adapted-explanation {
+  margin-top: 14px;
+  padding: 12px 14px;
+  background: #fef2f2;
+  border-left: 4px solid var(--danger);
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text);
+}
+.adapted-explanation strong { color: var(--danger); }
+
+/* Bloco de exemplo inédito (destaca dos demais explain-blocks) */
+.explain-block.example-inedito {
+  background: #ecfeff;
+  border-left-color: #0891b2;
+}
+.explain-block.example-inedito h4 { color: #0e7490; }
+
+/* ============================================================
+   RESPONSIVIDADE
+   ============================================================ */
 @media (max-width: 780px) {
   #app { grid-template-columns: 1fr; grid-template-areas: "header" "main"; }
   .sidebar { position: fixed; top: 56px; left: 0; bottom: 0; width: 250px; z-index: 15; transform: translateX(-100%); transition: transform .2s ease; box-shadow: var(--shadow-lg); }
@@ -361,7 +714,15 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helve
   .fc-card { padding: 22px 18px; }
   .fc-card .fc-front { font-size: 17px; }
   .sim-mode-tab { min-width: 100%; }
+  .cp-options, .ecp-options { grid-template-columns: 1fr; }
+  .exercise-niveis-grid { grid-template-columns: 1fr 1fr; }
+  .mastered-grid { grid-template-columns: 1fr; }
+  .ecb-label { min-width: 90px; font-size: 12px; }
 }
+
+/* ============================================================
+   TEMA ESCURO
+   ============================================================ */
 body.dark {
   --bg: #0f172a;
   --surface: #1e293b;
@@ -403,3 +764,39 @@ body.dark .fhr-ans.sabia { color: #86efac; }
 body.dark .fhr-ans.duvida { color: #fdba74; }
 body.dark .fhr-ans.nao { color: #fca5a5; }
 body.dark .theme-btn { border-color: var(--border); }
+
+/* Nível badges no dark */
+body.dark .nivel-badge.nivel-1 { background: #064e3b; color: #a7f3d0; border-color: #065f46; }
+body.dark .nivel-badge.nivel-2 { background: #1e3a8a; color: #bfdbfe; border-color: #1e40af; }
+body.dark .nivel-badge.nivel-3 { background: #78350f; color: #fde68a; border-color: #92400e; }
+body.dark .nivel-badge.nivel-4 { background: #831843; color: #fbcfe8; border-color: #9d174d; }
+
+/* Exemplo inédito no dark */
+body.dark .explain-block.example-inedito {
+  background: #164e63;
+  border-left-color: #0891b2;
+}
+body.dark .explain-block.example-inedito h4 { color: #67e8f9; }
+
+/* Explicação adaptada no dark */
+body.dark .adapted-explanation {
+  background: #450a0a;
+  border-left-color: #dc2626;
+}
+body.dark .adapted-explanation strong { color: #fca5a5; }
+
+/* Mastery banner no dark */
+body.dark .exercise-mastery-banner.ok { background: #14532d; color: #e2e8f0; }
+body.dark .exercise-mastery-banner.warn { background: #78350f; color: #e2e8f0; }
+body.dark .exercise-mastery-banner.err { background: #7f1d1d; color: #e2e8f0; }
+
+/* Classification/error pickers no dark */
+body.dark .cp-btn.active,
+body.dark .cp-btn:hover { background: #4c1d95; }
+body.dark .ecp-btn.active,
+body.dark .ecp-btn:hover { background: #7f1d1d; }
+
+/* ECB fill no dark */
+body.dark .ecb-fill { background: #f87171; }
+
+/* ===== FIM DO STYLE.CSS v2.0 ===== */
