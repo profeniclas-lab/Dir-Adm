@@ -473,5 +473,118 @@ window.EXEMPLOS_INEDITOS = {
     'Servidor cede em tudo para evitar atrito (acomodação) e depois sabota o projeto (perde-perde). O ideal é a negociação integrativa: buscar solução que atenda aos interesses de ambos (ganha-ganha) — exige diálogo, mas gera compromisso real.',
   'EX-ADM-08-001':
     'Uma campanha publicitária oficial que destaca a foto do prefeito viola a impessoalidade (art. 37, §1º). Comunicação institucional deve informar, não promover pessoalmente o agente. Já a comunicação interna (mural, e-mail) sobre protocolos é legítima.'
-       
+,
+
+  /* ============================================================
+     ADM-09 — Gestão da Qualidade
+  ============================================================ */
+  'Q-REAL-ADM-09-001':
+    'O PDCA não é estático: após o Act (padronizar ou ajustar), reinicia-se o Plan com nova meta. Uma UBS que reduziu o tempo de espera em 20% usa o resultado como base para a próxima meta (reduzir mais 10%). Ciclo contínuo, não etapas isoladas.',
+  'Q-REAL-ADM-09-002':
+    'Se 1.200 pedidos foram registrados e 150 não atendidos, o grau de atendimento é 87,5% (1.050/1.200). O indicador mede a efetividade do atendimento — sem confundir com "taxa de erro" (que seria 12,5%).',
+  'Q-REAL-ADM-09-003':
+    'Uma Secretaria de Saúde visita hospitais reconhecidos por boas práticas de acolhimento e adapta o que aprendeu ao seu contexto. Isso é benchmarking — aprender com quem já faz melhor, sem copiar cegamente.',
+  'Q-REAL-ADM-09-004':
+    'Ajustar um processo existente (melhoria contínua, incremental) ≠ redesenhar do zero (reengenharia, radical). A primeira aperfeiçoa; a segunda reinventa. Uma UBS que muda o fluxo da triagem faz melhoria contínua; uma que implanta um novo modelo de atendimento faz reengenharia.',
+  'Q-DID-ADM-09-001':
+    'O gestor suspeita que o atraso no atendimento vem de várias causas. Usa Ishikawa (6M) para levantá-las e Pareto para priorizar as que respondem por 80% do problema. Investigar → priorizar: duas etapas, duas ferramentas.',
+  'Q-DID-ADM-09-002':
+    'O 5W2H força o plano a responder: o quê (What), por quê (Why), onde (Where), quando (When), quem (Who), como (How) e quanto custa (How much). Sem esses 7 pontos, o plano tem lacunas.',
+  'Q-DID-ADM-09-003':
+    'Qualidade total não é tarefa do "setor de qualidade" — envolve todos os setores e servidores, com foco no usuário e comprometimento da alta direção. Uma UBS que responsabiliza só a recepção pela satisfação do paciente não pratica qualidade total.',
+  'Q-DID-ADM-09-004':
+    'Tempo de espera (indicador de processo), taxa de erro (indicador de qualidade), satisfação (indicador de percepção). Cada um mede uma dimensão. Juntos, dão o retrato da qualidade.',
+  'Q-REAL-ADM-09-009':
+    'Quando a banca descreve o Ishikawa como ferramenta que "identifica causas por categorias (6M)", a resposta está certa. Pareto prioriza (80/20), Ishikawa investiga (causas). Não se confundem.',
+  'Q-REAL-ADM-09-010':
+    'Uma UBS lista 10 tipos de reclamação. Pareto mostra que 3 tipos (30%) respondem por 80% das queixas. Priorizar essas 3 é mais eficiente que atacar as 10 ao mesmo tempo. Princípio 80/20 na prática.',
+  'EX-ADM-09-001':
+    'O controle (função do PODC) mede desempenho e compara com padrão; o PDCA (ferramenta de qualidade) organiza a melhoria em ciclo. Um órgão pode usar o controle para detectar desvio de meta e o PDCA para estruturar a correção — sem que um substitua o outro.',
+  'EX-ADM-09-002':
+    'A gestão por processos revela ONDE intervir (mapeamento do fluxo, identificação do gargalo); as ferramentas da qualidade dizem POR QUÊ (Ishikawa) e EM QUE ORDEM (Pareto). Mapear sem investigar é adivinhação; investigar sem mapear é dispersão.',
+
+  /* ============================================================
+     ADM-10 — Administração de Materiais e Patrimônio
+  ============================================================ */
+  'Q-REAL-ADM-10-001':
+    'O LEC equilibra dois custos: pedir muito (aumenta estoque, custo de armazenagem) x pedir pouco (aumenta frequência, custo de pedido). A fórmula do LEC encontra o ponto que minimiza a soma dos dois. Não confundir com ponto de pedido (que define QUANDO comprar).',
+  'Q-REAL-ADM-10-002':
+    'Consumo 30/dia × tempo de reposição 4 dias = 120 unidades consumidas no período. Mais 60 de segurança = 180 unidades. O ponto de pedido (180) dispara a compra. Se o estoque chega a 180, ainda restam 60 para cobrir imprevistos.',
+  'Q-REAL-ADM-10-003':
+    'Giro = consumo anual / estoque médio. Se consumo = 2.400/ano e estoque médio = 200, giro = 12 (renova 12 vezes no ano, ou 1 vez por mês). Indicador de eficiência: quanto mais alto, menos capital parado.',
+  'Q-REAL-ADM-10-004':
+    'Inventário rotativo = contínuo e seletivo (cronograma cobre todos os itens no período). Periódico = em datas fixas (encerramento do exercício). Físico = contagem geral. Cada um tem um ritmo e um propósito.',
+  'Q-REAL-ADM-10-005':
+    'Recebimento provisório = conferência rápida na entrega (quantidade, estado aparente). Definitivo = aceitação formal, após verificação das especificações. A etapa provisória NÃO substitui a definitiva — são complementares.',
+  'Q-DID-ADM-10-001':
+    'Papel é consumido com o uso (consumo). Mesa é durável e tombada (permanente). Computador é permanente; caneta é de consumo. A distinção guia o controle: permanentes têm número de patrimônio, de consumo entram no almoxarifado.',
+  'Q-DID-ADM-10-002':
+    'Estoque mínimo é o limite operacional (abaixo dele, a operação fica vulnerável). Estoque de segurança é proteção extra contra imprevistos (demanda acima do previsto, atraso de fornecedor). O mínimo é a base; o de segurança, o colchão.',
+  'Q-DID-ADM-10-003':
+    'Tombamento = atribuir número de patrimônio (identificação). Inventário = conferência física (contagem e conciliação com registros). O tombamento individualiza; o inventário audita o conjunto.',
+  'Q-REAL-ADM-10-009':
+    'Almoxarifado de matérias-primas (insumos a transformar), de materiais auxiliares (apoiam a produção, não se incorporam), de produtos acabados (prontos para venda) e intermediário (semiacabados). Cada um tem função e controle próprios.',
+  'Q-REAL-ADM-10-010':
+    'Preço é definido por finanças/marketing, não pela gestão de materiais. Esta cuida de seleção de fornecedor, transporte, armazenagem, embalagem. Preço é consequência, não atividade da área.',
+  'Q-REAL-ADM-10-011':
+    'WMS (Warehouse Management System) controla entrada, saída e movimentação de mercadorias. Vai muito além de "identificar pallets" ou "criar etiquetas" — é o cérebro do armazém, integrado a ERP e TMS.',
+  'EX-ADM-10-001':
+    'O inventário periódico (contagem física + comparação com registros + ação corretiva) é a aplicação do CICLO DE CONTROLE (padrão → medição → comparação → correção) ao patrimônio. A gestão de materiais fornece o objeto (estoques, bens); o controle fornece o método.',
+
+  /* ============================================================
+     ADM-11 — Gestão de Processos
+  ============================================================ */
+  'Q-DID-ADM-11-001':
+    'Matrícula escolar é processo (contínuo, repetitivo, gera o mesmo tipo de saída a cada período). Implantar um novo sistema de matrícula é projeto (temporário, único, com começo e fim). Processo é rotina; projeto é empreitada.',
+  'Q-DID-ADM-11-002':
+    'Emissão de alvará é processo finalístico (valor direto ao cidadão). Contratação de pessoal é processo de apoio (sustenta internamente). O cidadão vê o finalístico; o servidor vê os dois.',
+  'Q-DID-ADM-11-003':
+    'Conferir documentos é ATIVIDADE (unidade de trabalho). Carimbar o protocolo é TAREFA (subdivisão da atividade). A atividade é o "o quê"; a tarefa é o "como", em nível granular.',
+  'Q-DID-ADM-11-004':
+    'Melhoria contínua = ajustes pequenos e sucessivos (kaizen). Reengenharia = redesenho radical ("do zero"). A primeira aperfeiçoa o processo; a segunda o reinventa. Uma UBS que ajusta a triagem faz melhoria contínua; a que implanta um novo modelo faz reengenharia.',
+  'Q-DID-ADM-11-005':
+    'Gestão funcional = organiza por departamento (foco local, risco de silos). Gestão por processos = organiza por fluxo ponta a ponta (foco no valor). A primeira olha a árvore; a segunda, a floresta.',
+  'Q-DID-ADM-11-006':
+    'Fluxograma = representação visual do fluxo de um processo (início, atividades, decisões, fim). Organograma = representação da estrutura (quem manda em quem). Um é processo; o outro, estrutura.',
+  'Q-DID-ADM-11-007':
+    'Gargalo = etapa que limita a capacidade total do processo. Está onde há acúmulo ou espera. Não é necessariamente a primeira ou a última etapa — é a que "trava" o fluxo. Melhorar o que não é gargalo não aumenta a capacidade do todo.',
+  'Q-DID-ADM-11-008':
+    'AS-IS = como o processo é hoje (situação atual). TO-BE = como deveria ser (após a melhoria). O AS-IS diagnostica; o TO-BE projeta. Um não substitui o outro — são duas fotos da mesma transformação.',
+  'Q-REAL-ADM-11-009':
+    'BPM organiza a gestão por processos em fases (descoberta, modelagem, análise, desenho, implementação, monitoramento, refinamento). A fase de "Mudanças de Arquitetura" cuida da governança permanente e da medição contínua — não da modelagem pontual.',
+  'EX-ADM-11-001':
+    'A licitação é processo de APOIO (sustenta a atividade-fim do órgão): repetitiva, interfuncional, com etapas definidas. Não é projeto (não tem fim único) nem finalística (não entrega valor direto ao cidadão). Mapear o fluxo licitatório é gestão por processos aplicada à área de compras.',
+  'EX-ADM-11-002':
+    'O atendimento em saúde é processo FINALÍSTICO: entrega valor direto ao cidadão, com etapas interdependentes (recepção → triagem → consulta → receita). A espera entre triagem e consulta é GARGALO — deve ser priorizado via mapeamento. Melhorar o atendimento exige olhar o fluxo inteiro.',
+  'EX-ADM-11-003':
+    'A estrutura funcional otimiza cada secretaria, mas fragmenta o fluxo de alvará (quatro secretarias, retrabalho). A gestão por processos busca o FLUXO PONTA A PONTA, integrando a estrutura. As duas visões são complementares: estrutura organiza pessoas; processos organizam o trabalho.',
+
+  /* ============================================================
+     ADM-12 — Atendimento ao público e relações interpessoais
+  ============================================================ */
+  'Q-REAL-ADM-12-001':
+    'EXPEDIÇÃO = envio formal de documentos aos destinatários (ofícios, memorandos). Não confundir com recebimento (protocolo), arquivamento (guarda) ou digitalização (cópia). Cada fase tem sua nomenclatura.',
+  'Q-REAL-ADM-12-002':
+    'Relatório administrativo deve ser OBJETIVO, ORGANIZADO e com DADOS VERIFICÁVEIS. Opiniões pessoais, ficção e informalidade são incompatíveis com o gênero. É instrumento de informação, não de expressão.',
+  'Q-REAL-ADM-12-003':
+    'Escuta ativa = ouvir com atenção, demonstrar interesse, compreender a demanda. Não é interromper, nem antecipar a resposta, nem desviar a atenção. O cidadão percebe quando é ouvido de verdade.',
+  'Q-REAL-ADM-12-004':
+    '"Respeitosamente" para superior hierárquico; "Atenciosamente" para mesma hierarquia ou inferior. O fecho sinaliza o tratamento, não o grau de simpatia. Errar o fecho pode gerar ruído desnecessário.',
+  'Q-REAL-ADM-12-005':
+    'Ofício = comunicação oficial entre órgãos públicos ou destes com particulares, observando as normas de redação oficial. Não é ofício apenas entre órgãos — também pode ser com particular (ex.: notificação).',
+  'Q-REAL-ADM-12-006':
+    'Requerimento = pedido formal do interessado perante a autoridade competente. Diferente de ofício (comunicação entre órgãos), ata (registro de reunião), portaria (ato normativo) e despacho (decisão). Cada documento tem sua função.',
+  'Q-REAL-ADM-12-007':
+    'Atender prontamente, identificar o órgão, saudar com polidez e auxiliar — o padrão. Espera prolongada sem informação, ignorar ligações externas, usar gírias e transferir sem triagem são inadequados. O tom de voz e a clareza vocal são essenciais.',
+  'Q-DID-ADM-12-001':
+    'Cidadão = usuário de DIREITOS. O serviço público é dever do Estado, não favor. Servidor público não atende "cliente" (lógica de consumo), mas titular de direitos (lógica de cidadania). A diferença é conceitual e jurídica.',
+  'Q-REAL-ADM-12-009':
+    'Respeito, acessibilidade/gentileza, boa-fé e ordem de chegada (salvo exceções legais) são TODOS obrigatórios. Não são "recomendações" — são deveres funcionais. Descumpri-los gera responsabilização.',
+  'Q-REAL-ADM-12-010':
+    'Independência de membros NÃO é característica de equipe — a equipe pressupõe INTERDEPENDÊNCIA e cooperação. Liderança participativa, comprometimento, empatia e pontualidade estão associados. Independência é o oposto de trabalho em equipe.',
+  'EX-ADM-12-001':
+    'Priorizar amigo na fila viola a IMPESSOALIDADE (favoritismo sem base legal). Atender o cidadão leigo com linguagem clara é boa prática (acessibilidade + cortesia). Servidor deve tratar todos por critérios objetivos (ordem de chegada, prioridade legal), não por relações pessoais.',
+  'EX-ADM-12-002':
+    'Escuta ativa ("o senhor quer dizer que...") + linguagem sem jargão = atendimento eficaz. As práticas de comunicação (ADM-08) são a base do bom atendimento (ADM-12). Repetir a demanda confirma entendimento e demonstra respeito ao cidadão.'
+
 };
