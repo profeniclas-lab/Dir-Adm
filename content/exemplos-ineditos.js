@@ -113,7 +113,7 @@ window.EXEMPLOS_INEDITOS = {
   'Q-DID-ADM-04-010':
     'Uma organização SEM FRONTEIRAS (Jack Welch) elimina a cadeia de comando tradicional, amplia a amplitude de controle e substitui departamentos por equipes autônomas. É uma configuração pós-burocrática.',
   'Q-DID-ADM-04-011':
-    'Um instituto federal cria equipe temporária com servidores de TI, administração e comunicação; cada um mantém vínculo com sua área e recebe orientações do coordenador do projeto. É a departamentalização MATRICIAL (dupla subordinação).'
+    'Um instituto federal cria equipe temporária com servidores de TI, administração e comunicação; cada um mantém vínculo com sua área e recebe orientações do coordenador do projeto. É a departamentalização MATRICIAL (dupla subordinação).',
   /* ============================================================
      LOTE PDF — Exemplos inéditos (Lotes 1 a 3)
      ============================================================ */
