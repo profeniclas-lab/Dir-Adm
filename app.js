@@ -1061,14 +1061,12 @@ var PRIORITY_LABELS_SHORT = {
     var dueQ = getDueQuestions(), dueF = getDueFlashcards();
     if (dueQ.length > 0 || dueF.length > 0) sugestoes.push({ tipo: 'revisao', titulo: 'Revisão pendente', descricao: dueQ.length + ' questão(ões) e ' + dueF.length + ' flashcard(s) para revisar hoje.' });
     if (errN > 0) sugestoes.push({ tipo: 'erros', titulo: 'Erros em aberto', descricao: errN + ' questão(ões) com erro aguardando revisão dedicada.' });
-    for (var os = 0; os < PRIORITY_ORDER.length && sugestoes.length < 4; os++) {
-      for (var j = 0; j < MODULES.length && sugestoes.length < 4; j++) {
-        var m = MODULES[j];
-        if (m.prioridade !== PRIORITY_ORDER[os]) continue;
-        if (!getDiagnosticByModuleId(m.id) && !getLessonByModuleId(m.id)) continue;
-        if (getModuleMastery(m.id) >= MASTERY_THRESHOLD) continue;
-        sugestoes.push({ tipo: 'modulo', modulo: m });
-      }
+    for (var j = 0; j < MODULES.length && sugestoes.length < 6; j++) {
+  var m = MODULES[j];
+  if (!getDiagnosticByModuleId(m.id) && !getLessonByModuleId(m.id)) continue;
+  if (getModuleMastery(m.id) >= MASTERY_THRESHOLD) continue;
+  sugestoes.push({ tipo: 'modulo', modulo: m });
+}
     }
 
     var html = '';
