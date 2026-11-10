@@ -354,6 +354,124 @@ window.EXEMPLOS_INEDITOS = {
     'A Lei 14.133/2021 não substituiu imediatamente a Lei 8.666/1993; houve período de transição.',
   'Q-PDF-DA-21-016':
     'O pregão é a modalidade para bens e serviços comuns, com disputa por lances e inversão de fases.'
+,
 
+  /* ============================================================
+     ADM-05 — Direção, liderança e motivação
+  ============================================================ */
+  'Q-REAL-ADM-05-001':
+    'Um prefeito que premia secretários pelo cumprimento de metas anuais (transacional) e outro que inspira a equipe com um projeto de cidade inclusiva (transformacional) lideram, mas por mecanismos distintos. Já a liderança situacional ajusta o estilo à maturidade da equipe.',
+  'Q-REAL-ADM-05-002':
+    'Um diretor hospitalar que participa de conselho intersetorial (ligação), repassa normas ao corpo clínico (disseminação) e renegocia contrato com fornecedor de insumos (negociação) exerce papéis das três categorias de Mintzberg: interpessoal, informacional e decisorial.',
+  'Q-REAL-ADM-05-003':
+    'Em uma equipe de fiscalização, o ritmo de produção se ajusta ao padrão informal estabelecido pelos colegas mais antigos — e não à meta formal da chefia. É a lógica da Escola das Relações Humanas: o grupo social pesa mais que o desenho formal.',
+  'Q-DID-ADM-05-001':
+    'Um coordenador recém-nomeado tem autoridade formal (cargo), mas a equipe só o procura para decisões técnicas quando confia em seu conhecimento (poder). Autoridade vem do cargo; poder, da influência. Nem sempre coincidem.',
+  'Q-DID-ADM-05-002':
+    'Em uma emergência hospitalar, o chefe assume decisões imediatas (autocrático); em uma reunião de planejamento, ouve a equipe (democrático); com uma equipe experiente, delega a organização (liberal). Cada contexto pede um estilo.',
+  'Q-DID-ADM-05-003':
+    'Um órgão aumenta salário e melhora instalações — a insatisfação diminui, mas o engajamento não cresce. Quando implanta reconhecimento por metas e autonomia, a motivação aparece. Salário é higiênico; reconhecimento é motivador.',
+  'Q-DID-ADM-05-004':
+    'Antes de valorizar o servidor com plano de carreira (estima), a prefeitura precisa garantir condições básicas de trabalho (fisiológicas) e estabilidade (segurança). A hierarquia de Maslow é ascendente: necessidades inferiores precisam ser razoavelmente atendidas.',
+  'Q-DID-ADM-05-005':
+    'Um gestor que instala câmeras para vigiar servidores adota a Teoria X (visão negativa). Outro que delega projetos e cobra resultados adota a Teoria Y (visão positiva). O estilo de gestão reflete a visão de ser humano.',
+  'Q-REAL-ADM-05-009':
+    'Um chefe de setor só é obedecido porque o regimento interno atribui ao cargo essa competência — não por carisma pessoal nem por tradição familiar. É a autoridade racional-legal (burocrática), típica do modelo weberiano.',
+  'Q-DID-ADM-05-010':
+    'Um órgão cria prêmio mensal por produtividade. O servidor trabalha mais para ganhar o prêmio, não pelo prazer da tarefa. É motivação extrínseca — vem de fora, por recompensas e punições.',
+  'Q-DID-ADM-05-011':
+    'Um servidor que recebe reajuste salarial (existência), participa de grupo de convivência (relacionamento) e é matriculado em curso de pós-graduação (crescimento) tem as três necessidades da ERC atendidas. Alderfer simplificou Maslow em três níveis.',
+  'Q-DID-ADM-05-012':
+    'Um gestor que recebe relatório (disseminação), lidera reunião (liderança), representa o órgão em evento (representação) e remaneja verba (alocação de recursos) exerce papéis das três categorias: informacional, interpessoal e decisorial.',
+  'Q-DID-ADM-05-013':
+    'Quando uma banca afirma que "o líder nasce com carisma e inteligência inata", está descrevendo a Teoria dos Traços. Já a Liderança Situacional (Hersey & Blanchard) diria que o estilo se ajusta à maturidade da equipe — não é inato.',
+  'EX-ADM-05-001':
+    'Um novo supervisor operacional precisa combinar habilidade técnica (conhecer a operação) e humana (liderar a equipe). Ao ser promovido a gerente, precisará também da conceitual (visão de todo). O estilo de liderança se ajusta ao nível — e as três habilidades se combinam de forma diferente em cada um.',
+
+  /* ============================================================
+     ADM-06 — Controle e avaliação
+  ============================================================ */
+  'Q-REAL-ADM-06-001':
+    'Uma Secretaria de Obras mede mensalmente o percentual de obras concluídas no prazo e, quando o índice cai, revisa o cronograma. Isso é CONTROLE — não planejamento. Planejar define a meta; controlar mede e corrige.',
+  'Q-REAL-ADM-06-002':
+    'Um supervisor de fila que monitora em tempo real o tempo de espera e redistribui atendentes durante o expediente exerce controle SIMULTÂNEO — durante o processo, não antes nem depois. Age enquanto o serviço está sendo prestado.',
+  'Q-REAL-ADM-06-003':
+    'A LOA é, ao mesmo tempo, planejamento (define onde gastar) e controle (compara o realizado com o previsto, gerando relatórios de execução). Um instrumento, duas funções: traduz planos em números e serve de padrão.',
+  'Q-DID-ADM-06-001':
+    'Uma UBS estabelece padrão (100% das gestantes atendidas em 24h), mede o desempenho (85% no mês), compara com o padrão e age (reforça equipe). Padrão → medição → comparação → ação corretiva: o ciclo completo do controle.',
+  'Q-DID-ADM-06-002':
+    'Meta: 95% dos pedidos em 20 dias (PADRÃO). Indicador: percentual efetivamente atendido no prazo (MÉTRICA). Sem padrão, o indicador não tem referência; sem indicador, o padrão não é medido. O controle exige os dois.',
+  'Q-DID-ADM-06-003':
+    'Treinar servidores antes do novo sistema (preventivo); monitorar em tempo real o tempo de espera (simultâneo); auditar contratos após o encerramento (posterior). Cada um atua em um momento distinto do processo.',
+  'Q-DID-ADM-06-004':
+    'O gestor mede o desempenho da equipe (controle administrativo/PODC). A Controladoria audita o órgão (controle da Administração Pública/DA). São funções diferentes, exercidas por atores diferentes e com finalidades complementares.',
+  'Q-DID-ADM-06-005':
+    'Uma Secretaria acompanha indicadores de atendimento não para punir, mas para identificar gargalos e melhorar o fluxo. A punição é apenas uma das ações corretivas possíveis — não o objetivo do controle. Controle é diagnóstico.',
+  'Q-REAL-ADM-06-009':
+    'Em vez de auditar todos os 10.000 contratos, o Tribunal concentra esforços nos 200 com sinais de risco (sobrepreço, aditivos recorrentes). É a ênfase nas exceções — controle pelo que importa, não pelo que é trivial.',
+  'Q-DID-ADM-06-010':
+    'Reduzir mortalidade infantil em 20% (estratégico — direção) x 30 atendimentos/servidor-hora (produtividade — operação). Estratégico indica "para onde" a organização vai; produtividade mede "como" o trabalho rende.',
+  'EX-ADM-06-001':
+    'Um processo de matrícula que demora 15 dias tem gargalo na análise de vagas. O controle (medir tempo total) revela o problema; a gestão por processos (mapear o fluxo) indica onde intervir. Controle diagnostica; processos explicam a causa.',
+  'EX-ADM-06-002':
+    'Um órgão tem controle interno (Controladoria que revê procedimentos) e externo (TCU que audita contas). Interno previne e corrige internamente; externo fiscaliza de fora. São complementares — não concorrentes, nem substitutos.',
+
+  /* ============================================================
+     ADM-07 — Gestão de Pessoas
+  ============================================================ */
+  'Q-REAL-ADM-07-001':
+    'Em blocos de 4 frases, o avaliador marca qual MAIS e qual MENOS caracteriza o servidor. Os escores de cada frase são desconhecidos do avaliador — reduz viés de leniência. É a escolha forçada, que busca objetividade.',
+  'Q-REAL-ADM-07-002':
+    'Um boletim de merecimento que pontua qualidade, iniciativa, ética e assiduidade em escalas de 1 a 5 é ESCALAS GRÁFICAS — o método mais difundido, simples e visual. Fácil de aplicar, mas sujeito a generalizações.',
+  'Q-REAL-ADM-07-003':
+    'Teste de raciocínio lógico (psicométrico — mede aptidão com escore padronizado) x teste de dinâmica de personalidade (traços e motivações). São famílias distintas: uma mede capacidade cognitiva, a outra, padrões comportamentais.',
+  'Q-REAL-ADM-07-004':
+    'Aptidão para atendimento ao público não se ensina do zero — é disposição natural que se aperfeiçoa. Já a habilidade técnica de usar o sistema é aprendida. Aptidão é disposição; habilidade é prática.',
+  'Q-REAL-ADM-07-005':
+    'Curso de 20h sobre o novo sistema de protocolo = treinamento (tarefa atual, curto prazo). Programa de formação de líderes para 3 anos = desenvolvimento (futuro, longo prazo). Uma ensina o "como agora"; a outra prepara o "onde vamos".',
+  'Q-DID-ADM-07-001':
+    'Concurso público (agregar); avaliação de desempenho (aplicar); plano de cargos (recompensar); curso de capacitação (desenvolver); pesquisa de clima (manter); banco de dados de RH (monitorar). Os seis processos, um por um.',
+  'Q-DID-ADM-07-002':
+    'Anunciar a vaga no site do órgão é recrutamento (atração). Aplicar prova e entrevista é seleção (escolha). Atrair ≠ escolher. O recrutamento traz candidatos; a seleção filtra o melhor perfil.',
+  'Q-DID-ADM-07-003':
+    'Após uma crise interna, o clima organizacional cai (percepção momentânea). Já os valores de transparência e ética, enraizados há décadas, permanecem (cultura). Clima é temperatura; cultura é DNA.',
+  'Q-REAL-ADM-07-009':
+    'Liderança, comunicação e trabalho em equipe não são "extras" — são pilares da gestão de pessoas. Sem eles, nem atração, nem retenção, nem desenvolvimento funcionam. São o alicerce, não o acabamento.',
+  'Q-REAL-ADM-07-010':
+    'Palográfico analisa ritmo e qualidade do trabalho (traços de execução). Quati usa escolhas situacionais (funções perceptivas). PMK estuda tensões musculares. Cada teste capta uma dimensão diferente da personalidade.',
+  'Q-REAL-ADM-07-011':
+    'Atribuições descrevem O QUE o ocupante faz (atende, analisa, despacha). Especificações descrevem QUEM pode ocupar (formação, habilidades, traços). Duas faces do mesmo cargo — não se confundem.',
+  'Q-REAL-ADM-07-012':
+    'Só o chefe imediato avalia o subordinado, sozinho. É a avaliação 90º (vertical) — ágil, mas sujeita ao viés de percepção do gestor. A 360º inclui chefes, pares, subordinados e autoavaliação.',
+  'EX-ADM-07-001':
+    'Um órgão cria mapa de competências (CHA) por cargo. Cada departamento (divisão funcional) usa o mapa para treinar e avaliar. Competências dão o "quê"; estrutura dá o "onde". Complementares — não excludentes.',
+
+  /* ============================================================
+     ADM-08 — Comunicação e comportamento organizacional
+  ============================================================ */
+  'Q-REAL-ADM-08-001':
+    'O "rádio-corredor" de um ministério antecipa mudanças antes da publicação oficial. A rede informal é rápida, útil como termômetro do clima, mas exige que o gestor saiba usá-la com responsabilidade — sem confundir com canal oficial.',
+  'Q-REAL-ADM-08-002':
+    'Uma equipe que evita discordar do chefe para não "quebrar o clima" deixa de perceber um erro grave. É o groupthink: coesão em excesso suprime a análise crítica — e prejudica a decisão.',
+  'Q-REAL-ADM-08-003':
+    'Campanha de vacinação que combina comunicação externa (população) e interna (servidores da saúde) é relações públicas — gestão do relacionamento com todos os públicos, não só externo. O interno também é público.',
+  'Q-REAL-ADM-08-004':
+    'O servidor explica "indeferimento por vício formal" a um cidadão leigo. Ele entende que o pedido foi "negado por erro dele". O jargão técnico vira barreira semântica — e o atendimento falha.',
+  'Q-DID-ADM-08-001':
+    'Um e-mail institucional envolve: emissor (chefe), mensagem (orientação), canal (e-mail), receptor (equipe), feedback (resposta confirmando entendimento) e ruído (excesso de jargão). Todos os elementos em jogo — e o ruído pode quebrar o processo.',
+  'Q-DID-ADM-08-002':
+    'A portaria que cria um novo fluxo é formal. O comentário no corredor sobre a mudança é informal. Coexistem — e podem se reforçar ou se contradizer. O gestor precisa saber ler as duas.',
+  'Q-DID-ADM-08-003':
+    'Cinco servidores sentados no mesmo setor formam um GRUPO. Cinco servidores que dividem tarefas complementares, com responsabilidade mútua e cooperação, formam uma EQUIPE. Grupo = soma; equipe = sinergia.',
+  'Q-DID-ADM-08-004':
+    'Debate sobre a melhor forma de organizar a fila (funcional, gera solução) x discussão por antipatia pessoal (disfuncional, gera hostilidade). Nem todo conflito é ruim — o gestor estimula o primeiro, medeia o segundo.',
+  'Q-REAL-ADM-08-009':
+    'Informação (dados para decisão), controle (regras), motivação (incentivo), expressão emocional (desabafo). Um mesmo canal pode servir a várias funções — e a função predominante muda conforme o contexto.',
+  'Q-REAL-ADM-08-010':
+    'Dois servidores leem a mesma portaria e interpretam de forma diferente porque têm histórias e valores distintos. É a percepção seletiva — cada um vê o que espera ver. O emissor precisa calibrar a mensagem para reduzir o ruído.',
+  'Q-REAL-ADM-08-011':
+    'Servidor cede em tudo para evitar atrito (acomodação) e depois sabota o projeto (perde-perde). O ideal é a negociação integrativa: buscar solução que atenda aos interesses de ambos (ganha-ganha) — exige diálogo, mas gera compromisso real.',
+  'EX-ADM-08-001':
+    'Uma campanha publicitária oficial que destaca a foto do prefeito viola a impessoalidade (art. 37, §1º). Comunicação institucional deve informar, não promover pessoalmente o agente. Já a comunicação interna (mural, e-mail) sobre protocolos é legítima.'
        
 };
