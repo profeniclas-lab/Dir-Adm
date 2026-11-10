@@ -6454,6 +6454,4498 @@ window.QUESTIONS = [
       comoApareceEmConcurso: 'Cobrança de INCORRETA.'
     },
     tags: ['motivação', 'Lei 9.784']
-  }
+  },
+  /* ============================================================
+     LOTE PDF — QConcursos
+     ADM-01 a ADM-04
+     ============================================================ */
 
+  {
+    id: 'Q-PDF-ADM-01-001',
+    idOriginal: 'Q4416598',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-01',
+    subtema: 'Habilidades do administrador (Katz) — conceituais',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4416598' },
+    enunciado: 'Segundo Katz (1955), há três tipos de habilidades que caracterizam o desempenho administrativo eficaz. Um desses tipos diz respeito às habilidades que representam as capacidades cognitivas mais elevadas do administrador e que lhe permitem realizar ações de planejamento, de criação e de interpretação da missão, da visão e dos valores organizacionais. Define-se essas habilidades como sendo do tipo:',
+    alternativas: [
+      { id: 'A', texto: 'técnicas' },
+      { id: 'B', texto: 'humanas' },
+      { id: 'C', texto: 'conceituais' },
+      { id: 'D', texto: 'interpessoais' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'As habilidades conceituais são as capacidades cognitivas mais elevadas, envolvendo planejamento, criação e interpretação da missão, visão e valores.',
+      incorretas: {
+        A: 'Habilidades técnicas envolvem o manuseio de métodos e processos concretos.',
+        B: 'Habilidades humanas envolvem a capacidade de trabalhar com pessoas.',
+        D: 'Habilidades interpessoais são um subconjunto das humanas, não a categoria de Katz.'
+      },
+      conceitoCobrado: 'Habilidades de Katz',
+      pegadinha: 'Confundir habilidades conceituais com humanas ou interpessoais.',
+      comoApareceEmConcurso: 'Cobrança direta da classificação de Katz.'
+    },
+    tags: ['Katz', 'habilidades conceituais']
+  },
+  {
+    id: 'Q-PDF-ADM-01-002',
+    idOriginal: 'Q4389349',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-01',
+    subtema: 'Ambiente organizacional — externo',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4389349' },
+    enunciado: 'O conceito de ambiente organizacional refere-se ao conjunto de forças, e elementos externos e internos à organização que são capazes de influenciar o seu desempenho. É CORRETO afirmar que um aspecto referente ao ambiente externo de uma organização é(são) a(s):',
+    alternativas: [
+      { id: 'A', texto: 'instalações físicas.' },
+      { id: 'B', texto: 'estrutura organizacional.' },
+      { id: 'C', texto: 'cultura organizacional.' },
+      { id: 'D', texto: 'legislação trabalhista vigente.' },
+      { id: 'E', texto: 'equipe de trabalho e gestores.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A legislação trabalhista é um fator externo (macroambiente) que influencia a organização.',
+      incorretas: {
+        A: 'Instalações físicas são internas.',
+        B: 'Estrutura organizacional é interna.',
+        C: 'Cultura organizacional é interna.',
+        E: 'Equipe e gestores são internos.'
+      },
+      conceitoCobrado: 'Ambiente externo x interno',
+      pegadinha: 'Classificar elementos internos como externos.',
+      comoApareceEmConcurso: 'Cobrança da distinção entre ambiente interno e externo.'
+    },
+    tags: ['ambiente externo', 'legislação']
+  },
+  {
+    id: 'Q-PDF-ADM-01-003',
+    idOriginal: 'Q4416596',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-01',
+    subtema: 'Influências históricas da Administração — Igreja Católica',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4416596' },
+    enunciado: 'Ao longo de sua história, a administração foi influenciada por filósofos, organizações, ciências diversas, economistas liberais, revolução industrial e empreendedores. Nesse sentido, a hierarquia de autoridade, o estado-maior geral e a coordenação funcional são influências da administração devido à:',
+    alternativas: [
+      { id: 'A', texto: 'Igreja Católica' },
+      { id: 'B', texto: 'Corporação familiar' },
+      { id: 'C', texto: 'Revolução Industrial' },
+      { id: 'D', texto: 'Reforma Protestante' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A Igreja Católica influenciou a administração com a hierarquia de autoridade, o estado-maior (staff) e a coordenação funcional.',
+      incorretas: {
+        B: 'A corporação familiar influenciou outros aspectos, não esses.',
+        C: 'A Revolução Industrial influenciou a mecanização e a produção em massa.',
+        D: 'A Reforma Protestante influenciou a ética do trabalho.'
+      },
+      conceitoCobrado: 'Influências históricas da Administração',
+      pegadinha: 'Atribuir à Revolução Industrial ou à Reforma Protestante influências que são da Igreja Católica.',
+      comoApareceEmConcurso: 'Cobrança da origem histórica de princípios administrativos.'
+    },
+    tags: ['Igreja Católica', 'influências históricas']
+  },
+  {
+    id: 'Q-PDF-ADM-01-004',
+    idOriginal: 'Q4325100',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-01',
+    subtema: 'Dever de eficiência',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4325100' },
+    enunciado: 'Um assistente administrativo da Prefeitura de Porto dos Gaúchos identificou que um superior hierárquico omite-se reiteradamente em despachar processos dentro do prazo legal, causando, assim, prejuízo ao interesse público. Considerando os deveres do administrador público, a conduta omitida afronta principalmente o dever de:',
+    alternativas: [
+      { id: 'A', texto: 'eficiência' },
+      { id: 'B', texto: 'probidade' },
+      { id: 'C', texto: 'legalidade' },
+      { id: 'D', texto: 'prestação de contas' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A omissão reiterada em despachar dentro do prazo viola o dever de eficiência, que exige celeridade e resultados úteis à Administração.',
+      incorretas: {
+        B: 'Probidade refere-se à honestidade.',
+        C: 'A legalidade é observada formalmente, mas a omissão fere a eficiência.',
+        D: 'Prestação de contas é outro dever.'
+      },
+      conceitoCobrado: 'Dever de eficiência',
+      pegadinha: 'Confundir eficiência com legalidade ou probidade.',
+      comoApareceEmConcurso: 'Cobrança da dimensão do dever de eficiência.'
+    },
+    tags: ['eficiência', 'deveres']
+  },
+  {
+    id: 'Q-PDF-ADM-02-001',
+    idOriginal: 'Q4802721',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-02',
+    subtema: 'Funções administrativas — planejamento x controle',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4802721' },
+    enunciado: 'Acerca das funções administrativas de planejamento, organização, direção e controle, julgue os itens a seguir. O planejamento estabelece os objetivos organizacionais e verifica, ao final do período, se eles foram alcançados.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. O planejamento estabelece objetivos, mas a verificação final é função do CONTROLE.',
+      incorretas: {},
+      conceitoCobrado: 'Funções administrativas — planejamento x controle',
+      pegadinha: 'Atribuir ao planejamento a etapa de verificação, que é do controle.',
+      comoApareceEmConcurso: 'Confusão clássica entre planejamento e controle.'
+    },
+    tags: ['planejamento', 'controle']
+  },
+  {
+    id: 'Q-PDF-ADM-02-002',
+    idOriginal: 'Q4730860',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-02',
+    subtema: 'Funções administrativas — controle',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4730860' },
+    enunciado: 'Visando melhorar o desempenho institucional, a Presidência do Instituto de Previdência dos Servidores do Município de Araguaína (IMPAR) estabeleceu a meta de reduzir em 30% o tempo médio de análise dos pedidos de aposentadoria. Para tanto, foram implementadas medidas de capacitação de servidores, redistribuição de atividades entre os setores e acompanhamento periódico dos resultados alcançados. Considerando as funções administrativas clássicas da Administração, assinale a alternativa correta.',
+    alternativas: [
+      { id: 'A', texto: 'A capacitação dos servidores constitui atividade inerente à função planejamento.' },
+      { id: 'B', texto: 'A redistribuição das atividades entre os setores caracteriza atividade típica da função direção.' },
+      { id: 'C', texto: 'O acompanhamento dos resultados e a verificação do alcance das metas estabelecidas constituem atividades típicas da função controle.' },
+      { id: 'D', texto: 'O estabelecimento de metas organizacionais e a distribuição das atividades entre os setores integram principalmente a função organização.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O acompanhamento de resultados e a verificação do alcance de metas são típicos da função CONTROLE.',
+      incorretas: {
+        A: 'Capacitação é desenvolvimento, não planejamento.',
+        B: 'Redistribuição é organização.',
+        D: 'Metas são planejamento; distribuição é organização.'
+      },
+      conceitoCobrado: 'Funções administrativas (PODC)',
+      pegadinha: 'Classificar capacitação como planejamento ou redistribuição como direção.',
+      comoApareceEmConcurso: 'Identificação da função a partir de ações concretas.'
+    },
+    tags: ['controle', 'PODC']
+  },
+  {
+    id: 'Q-PDF-ADM-02-003',
+    idOriginal: 'Q4562769',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-02',
+    subtema: 'Função de direção — níveis organizacionais',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4562769' },
+    enunciado: 'Acerca das funções administrativas, julgue os itens a seguir. A função de direção no nível institucional é de competência dos supervisores de primeira linha, que possuem a atribuição de interpretar os planos estratégicos para os demais empregados da organização.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A direção no nível institucional é da alta cúpula; os supervisores de primeira linha atuam no nível operacional.',
+      incorretas: {},
+      conceitoCobrado: 'Direção x níveis organizacionais',
+      pegadinha: 'Atribuir à supervisão de primeira linha a direção institucional.',
+      comoApareceEmConcurso: 'Confusão entre níveis hierárquicos.'
+    },
+    tags: ['direção', 'níveis organizacionais']
+  },
+  {
+    id: 'Q-PDF-ADM-04-001',
+    idOriginal: 'Q4730849',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-04',
+    subtema: 'Função administrativa de organização',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4730849' },
+    enunciado: 'Após a aprovação de um novo plano institucional, uma autarquia promoveu a redistribuição das atividades entre os seus setores, redefiniu níveis hierárquicos e estabeleceu relações formais de autoridade. Nesse sentido, a situação apresentada caracteriza a função administrativa de:',
+    alternativas: [
+      { id: 'A', texto: 'Organização.' },
+      { id: 'B', texto: 'Direção.' },
+      { id: 'C', texto: 'Controle.' },
+      { id: 'D', texto: 'Planejamento.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'Redistribuir atividades, redefinir níveis hierárquicos e estabelecer relações de autoridade é função de ORGANIZAÇÃO.',
+      incorretas: {
+        B: 'Direção envolve liderança e motivação.',
+        C: 'Controle envolve medição e correção.',
+        D: 'Planejamento define objetivos.'
+      },
+      conceitoCobrado: 'Função de organização',
+      pegadinha: 'Confundir organização com direção ou planejamento.',
+      comoApareceEmConcurso: 'Identificação da função a partir de ações estruturais.'
+    },
+    tags: ['organização', 'estrutura']
+  },
+  {
+    id: 'Q-PDF-ADM-04-002',
+    idOriginal: 'Q4562796',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-04',
+    subtema: 'Estrutura linear — limitações',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4562796' },
+    enunciado: 'A respeito dos tipos de estrutura organizacional, das relações humanas, do desempenho profissional, da cidadania e das relações públicas, julgue os itens seguintes. A estrutura do tipo linear favorece a agilidade na tomada de decisão em organizações complexas e dinâmicas, uma vez que a centralização da autoridade permite que as comunicações fluam rapidamente entre a base e o topo da pirâmide.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A estrutura linear é mais adequada a ambientes estáveis e simples; em organizações complexas e dinâmicas, a rigidez e a centralização podem dificultar a agilidade.',
+      incorretas: {},
+      conceitoCobrado: 'Estrutura linear x organizações complexas',
+      pegadinha: 'Generalizar a agilidade da estrutura linear para qualquer contexto.',
+      comoApareceEmConcurso: 'Cobrança das limitações da estrutura linear.'
+    },
+    tags: ['estrutura linear', 'agilidade']
+  },
+  {
+    id: 'Q-PDF-ADM-04-003',
+    idOriginal: 'Q4404798',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-04',
+    subtema: 'Estrutura organizacional — adaptação',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4404798' },
+    enunciado: 'Acerca dos conceitos e dos tipos de estrutura organizacional aplicáveis ao CRFa-1ª Região, julgue os itens a seguir. A estrutura organizacional deve permanecer inalterada ao longo do tempo para manter a estabilidade institucional.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A estrutura organizacional deve se adaptar às mudanças do ambiente e às necessidades institucionais.',
+      incorretas: {},
+      conceitoCobrado: 'Adaptação da estrutura organizacional',
+      pegadinha: 'Defender a imutabilidade da estrutura.',
+      comoApareceEmConcurso: 'Cobrança da natureza dinâmica da estrutura.'
+    },
+    tags: ['estrutura', 'adaptação']
+  },
+  {
+    id: 'Q-PDF-ADM-04-004',
+    idOriginal: 'Q4389348',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-04',
+    subtema: 'Princípio da unidade de direção',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4389348' },
+    enunciado: 'A administração pode ser entendida como o processo de coordenação do trabalho dos membros de uma organização para alcançar os objetivos estabelecidos. Alguns princípios da administração orientam a atuação do profissional no ambiente organizacional. O princípio segundo o qual deve-se especificar um só chefe e um só programa para um conjunto de operações que visam ao mesmo objetivo é denominado:',
+    alternativas: [
+      { id: 'A', texto: 'hierarquia.' },
+      { id: 'B', texto: 'centralização.' },
+      { id: 'C', texto: 'equidade.' },
+      { id: 'D', texto: 'unidade de direção.' },
+      { id: 'E', texto: 'autoridade e responsabilidade.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O princípio da UNIDADE DE DIREÇÃO estabelece um só chefe e um só programa para operações com o mesmo objetivo.',
+      incorretas: {
+        A: 'Hierarquia é a escala de autoridade.',
+        B: 'Centralização é a concentração de decisões.',
+        C: 'Equidade é justiça.',
+        E: 'Autoridade e responsabilidade são correlatas.'
+      },
+      conceitoCobrado: 'Princípio da unidade de direção',
+      pegadinha: 'Confundir com hierarquia ou centralização.',
+      comoApareceEmConcurso: 'Cobrança de princípio clássico da Administração.'
+    },
+    tags: ['unidade de direção', 'princípios']
+  },
+  {
+    id: 'Q-PDF-ADM-03-001',
+    idOriginal: 'Q4416614',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-03',
+    subtema: 'Planejamento estratégico — visão',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4416614' },
+    enunciado: 'Com base no Planejamento Estratégico 2025-2029, a Empresa Gerencial de Projetos Navais (EMGEPRON) divulga, para seus públicos interno e externo, com foco na excelência técnica e na valorização humana no setor de defesa naval, a seguinte frase: “Ser reconhecida, nacional e internacionalmente, em seu ambiente de negócios, como referência no gerenciamento de projetos, com qualidade e transparência, buscando sempre a inovação e valorização humana em um ambiente sustentável”. Pode-se assumir que essa declaração refere-se ao componente do planejamento estratégico intitulado:',
+    alternativas: [
+      { id: 'A', texto: 'visão' },
+      { id: 'B', texto: 'missão' },
+      { id: 'C', texto: 'valores' },
+      { id: 'D', texto: 'propósitos' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A VISÃO descreve onde a organização quer chegar (futuro almejado).',
+      incorretas: {
+        B: 'Missão é a razão de existir (presente).',
+        C: 'Valores são princípios.',
+        D: 'Propósitos são intenções.'
+      },
+      conceitoCobrado: 'Visão no planejamento estratégico',
+      pegadinha: 'Confundir visão com missão.',
+      comoApareceEmConcurso: 'Identificação do componente estratégico a partir de declaração institucional.'
+    },
+    tags: ['visão', 'planejamento estratégico']
+  },
+  /* ============================================================
+     LOTE PDF — QConcursos / Gran Cursos
+     ADM-05 a ADM-12
+     ============================================================ */
+
+  /* ============================================================
+     ADM-05 — Direção, liderança e motivação
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-05-001',
+    idOriginal: 'Q1152847',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-05',
+    subtema: 'Motivação extrínseca',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q1152847' },
+    enunciado: 'Quando falamos que a motivação pressupõe que o comportamento humano pode ser projetado, modelado ou mudado por meio da utilização adequada dos vários tipos de recompensas ou punições disponíveis no meio ambiente, estamos nos referindo a qual tipo de motivação?',
+    alternativas: [
+      { id: 'A', texto: 'Intrínseca.' },
+      { id: 'B', texto: 'Exponencial.' },
+      { id: 'C', texto: 'Subjetiva.' },
+      { id: 'D', texto: 'Extrínseca.' },
+      { id: 'E', texto: 'Competitiva.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A motivação extrínseca é baseada em recompensas e punições externas (ambiente).',
+      incorretas: {
+        A: 'Intrínseca é interna (autorrealização).',
+        B: 'Não existe essa categoria.',
+        C: 'Subjetiva é interna.',
+        E: 'Competitiva não é tipo de motivação.'
+      },
+      conceitoCobrado: 'Motivação intrínseca x extrínseca',
+      pegadinha: 'Inverter os conceitos.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['motivação extrínseca']
+  },
+  {
+    id: 'Q-PDF-ADM-05-002',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-05',
+    subtema: 'Teoria ERC (Existência, Relacionamento e Crescimento)',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Teoria ERC' },
+    enunciado: 'Um Programa de QVT estabelece: (1) implantação de novo plano de cargos e salários; (2) grupos de convivência e oficinas colaborativas; (3) programa de capacitação e certificação interna. Com base na Teoria ERC (Existência, Relacionamento e Crescimento), as ações 1, 2 e 3 correspondem, respectivamente, a necessidades de:',
+    alternativas: [
+      { id: 'A', texto: 'Crescimento, relacionamento e existência.' },
+      { id: 'B', texto: 'Relacionamento, crescimento e existência.' },
+      { id: 'C', texto: 'Existência, relacionamento e crescimento.' },
+      { id: 'D', texto: 'Relacionamento, existência e crescimento.' },
+      { id: 'E', texto: 'Existência, crescimento e relacionamento.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: '1 = EXISTÊNCIA (salário). 2 = RELACIONAMENTO (convivência). 3 = CRESCIMENTO (capacitação). Sequência: existência – relacionamento – crescimento.',
+      incorretas: {
+        A: 'Inverte.',
+        B: 'Inverte.',
+        D: 'Inverte.',
+        E: 'Inverte.'
+      },
+      conceitoCobrado: 'Teoria ERC (Clayton Alderfer)',
+      pegadinha: 'Inverter as três necessidades.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['ERC', 'Alderfer']
+  },
+  {
+    id: 'Q-PDF-ADM-05-003',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-05',
+    subtema: 'Papéis gerenciais (Mintzberg)',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Mintzberg' },
+    enunciado: 'Um gestor desempenhou: (1) recebeu relatórios e compartilhou informações com a equipe; (2) manteve redes de comunicação dentro e fora da organização; (3) motivou a equipe e orientou individualmente; (4) redistribuiu recursos entre projetos; (5) representou a instituição em cerimônia; (6) identificou oportunidades de melhoria e implementou mudança. Com base nos papéis de Mintzberg, assinale a associação correta (interpessoal / informacional / decisorial):',
+    alternativas: [
+      { id: 'A', texto: 'Interpessoal: 1, 2, 5. Informacional: 3, 6. Decisorial: 4.' },
+      { id: 'B', texto: 'Interpessoal: 3, 5. Informacional: 1. Decisorial: 4, 6, 2.' },
+      { id: 'C', texto: 'Interpessoal: 3, 5, 2. Informacional: 1. Decisorial: 4, 6.' },
+      { id: 'D', texto: 'Interpessoal: 1, 3, 5. Informacional: 2. Decisorial: 4, 6.' },
+      { id: 'E', texto: 'Interpessoal: 3, 5. Informacional: 1, 2. Decisorial: 4, 6.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'INTERPESSOAL: 3 (liderança) e 5 (representação). INFORMACIONAL: 1 (disseminação) e 2 (ligação). DECISORIAL: 4 (alocação de recursos) e 6 (empreendedorismo).',
+      incorretas: {
+        A: '1 é informacional; 2 é informacional.',
+        B: '2 é informacional.',
+        C: '2 é informacional.',
+        D: '1 é informacional.'
+      },
+      conceitoCobrado: 'Papéis de Mintzberg',
+      pegadinha: 'Confundir ligação com interpessoal.',
+      comoApareceEmConcurso: 'Cenário aplicado com múltiplas atividades.'
+    },
+    tags: ['Mintzberg', 'papéis']
+  },
+  {
+    id: 'Q-PDF-ADM-05-004',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-05',
+    subtema: 'Liderança — teoria dos traços',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Teoria dos traços' },
+    enunciado: 'Segundo a Teoria da Liderança, quanto aos traços de personalidade, a liderança é caracterizada:',
+    alternativas: [
+      { id: 'A', texto: 'Pelas maneiras e estilos de se comportar de um líder.' },
+      { id: 'B', texto: 'Pelas características marcantes, notáveis em um líder.' },
+      { id: 'C', texto: 'Pela adequação do comportamento do líder às circunstâncias da situação.' },
+      { id: 'D', texto: 'Pela postura autoritária do líder frente aos seus liderados.' },
+      { id: 'E', texto: 'Por um comportamento passivo diante das diferentes situações.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A TEORIA DOS TRAÇOS defende que o líder possui características marcantes (traços inatos ou adquiridos) que o distinguem.',
+      incorretas: {
+        A: 'Descreve teorias comportamentais.',
+        C: 'Descreve teorias contingenciais.',
+        D: 'Descreve estilo autocrático.',
+        E: 'Não corresponde.'
+      },
+      conceitoCobrado: 'Teorias de liderança',
+      pegadinha: 'Confundir com comportamental ou contingencial.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['liderança', 'traços']
+  },
+  {
+    id: 'Q-PDF-ADM-05-005',
+    idOriginal: 'Q4416598',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-05',
+    subtema: 'Autoridade burocrática (Weber)',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4416598' },
+    enunciado: 'As relações de autoridade estabelecidas entre superiores e subordinados podem ter como base diferentes fatores. O comando legitimado do superior sobre os subordinados, de maneira racional, por normas e regras aceitas dentro de um contexto organizacional, corresponde a uma autoridade com base na:',
+    alternativas: [
+      { id: 'A', texto: 'Tradição.' },
+      { id: 'B', texto: 'Relação pessoal.' },
+      { id: 'C', texto: 'Burocracia.' },
+      { id: 'D', texto: 'Competência técnica.' },
+      { id: 'E', texto: 'Carisma.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A AUTORIDADE BUROCRÁTICA (racional-legal) é baseada em normas e regras aceitas no contexto organizacional (Weber).',
+      incorretas: {
+        A: 'Tradição é autoridade tradicional.',
+        B: 'Relação pessoal não é a base racional-legal.',
+        D: 'Competência técnica é outro tipo de poder.',
+        E: 'Carisma é autoridade carismática.'
+      },
+      conceitoCobrado: 'Tipos de autoridade (Weber)',
+      pegadinha: 'Confundir os tipos.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['autoridade', 'burocracia', 'Weber']
+  },
+
+  /* ============================================================
+     ADM-06 — Controle e avaliação
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-06-001',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-06',
+    subtema: 'Controle — ênfase nas exceções',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Controle ênfase nas exceções' },
+    enunciado: 'Um sistema de controle eficaz tem preocupação com aquilo que é essencial, com os desvios que necessitam de alguma ação gerencial. Essa característica é denominada:',
+    alternativas: [
+      { id: 'A', texto: 'Critérios múltiplos.' },
+      { id: 'B', texto: 'Foco estratégico.' },
+      { id: 'C', texto: 'Aceitação.' },
+      { id: 'D', texto: 'Economia.' },
+      { id: 'E', texto: 'Ênfase nas exceções.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A ÊNFASE NAS EXCEÇÕES é a característica do controle que prioriza os desvios significativos — o que é essencial.',
+      incorretas: {
+        A: 'Critérios múltiplos é outra característica.',
+        B: 'Foco estratégico é outra.',
+        C: 'Aceitação é outra.',
+        D: 'Economia é outra.'
+      },
+      conceitoCobrado: 'Características do controle',
+      pegadinha: 'Confundir com foco estratégico.',
+      comoApareceEmConcurso: 'Cobrança de característica específica.'
+    },
+    tags: ['controle', 'ênfase nas exceções']
+  },
+  {
+    id: 'Q-PDF-ADM-06-002',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-06',
+    subtema: 'Indicadores estratégicos x de produtividade',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Indicadores estratégicos' },
+    enunciado: 'Os indicadores de produtividade avaliam o rendimento e a eficiência de cada colaborador. Já os indicadores estratégicos:',
+    alternativas: [
+      { id: 'A', texto: 'Medem a relação da empresa com a concorrência.' },
+      { id: 'B', texto: 'Mensuram a capacidade de resposta de um processo.' },
+      { id: 'C', texto: 'Compreendem qualquer desvio ou não conformidade de um processo produtivo.' },
+      { id: 'D', texto: 'Indicam onde está a empresa em relação aos objetivos estabelecidos anteriormente.' },
+      { id: 'E', texto: 'São compostos pela relação percentual entre lucro e vendas totais.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'Os INDICADORES ESTRATÉGICOS indicam onde a empresa está em relação aos objetivos previamente definidos.',
+      incorretas: {
+        A: 'Relação com a concorrência é outro indicador.',
+        B: 'Capacidade de resposta é outro.',
+        C: 'Desvios são não conformidades.',
+        E: 'Lucro/vendas é indicador financeiro.'
+      },
+      conceitoCobrado: 'Indicadores estratégicos',
+      pegadinha: 'Confundir com indicadores de produtividade.',
+      comoApareceEmConcurso: 'Cobrança conceitual.'
+    },
+    tags: ['indicadores', 'estratégicos']
+  },
+
+  /* ============================================================
+     ADM-07 — Gestão de Pessoas
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-07-001',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-07',
+    subtema: 'Pilares da gestão de pessoas',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Pilares da gestão de pessoas' },
+    enunciado: 'A administração de recursos humanos abrange o conjunto de técnicas, procedimentos e instrumentos que permite às organizações atrair, manter e desenvolver os talentos humanos. Assinale a alternativa que inclui alguns desses pilares para a gestão de pessoas nas empresas:',
+    alternativas: [
+      { id: 'A', texto: 'Liderança, prolixidade, treinamento e capacitação.' },
+      { id: 'B', texto: 'Trabalho em equipe, treinamento e comunicação.' },
+      { id: 'C', texto: 'Processos, prolixidade e trabalho em equipe.' },
+      { id: 'D', texto: 'Comunicação, laconismo e vaidade.' },
+      { id: 'E', texto: 'Capacitação, vaidade e liderança.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'São pilares da gestão de pessoas: trabalho em equipe, treinamento e comunicação — além de liderança, capacitação, motivação e avaliação de desempenho.',
+      incorretas: {
+        A: 'Prolixidade não é pilar.',
+        C: 'Prolixidade não é pilar.',
+        D: 'Laconismo e vaidade não são pilares.',
+        E: 'Vaidade não é pilar.'
+      },
+      conceitoCobrado: 'Pilares da gestão de pessoas',
+      pegadinha: 'Incluir termos negativos (prolixidade, vaidade) como pilares.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['gestão de pessoas', 'pilares']
+  },
+  {
+    id: 'Q-PDF-ADM-07-002',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-07',
+    subtema: 'Testes psicológicos em seleção',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Testes psicológicos' },
+    enunciado: 'Em um processo seletivo, a equipe de gestão de pessoas decidiu utilizar diferentes testes psicológicos para compreender o perfil comportamental e motivacional dos candidatos. Relacione os testes às suas características: 1. Quati. 2. Palográfico. 3. PMK. 4. Rorschach e Zulliger. 5. FIGS. 6. DTO. ( ) Avalia o ritmo e a qualidade do trabalho, além de aspectos como inibição, temperamento e inteligência. ( ) Analisa a personalidade por meio de tensões musculares involuntárias. ( ) Avalia a personalidade a partir das escolhas situacionais, identificando atitudes e funções perceptivas. ( ) Busca compreender a estrutura da personalidade do indivíduo. ( ) Avalia responsabilidade profissional, relações interpessoais e autoconceito. ( ) Analisa estilos cognitivos e comportamentais necessários ao desempenho das funções organizacionais. A sequência correta é:',
+    alternativas: [
+      { id: 'A', texto: '2 – 3 – 1 – 4 – 5 – 6.' },
+      { id: 'B', texto: '1 – 2 – 3 – 4 – 6 – 5.' },
+      { id: 'C', texto: '3 – 2 – 1 – 5 – 4 – 6.' },
+      { id: 'D', texto: '2 – 1 – 3 – 4 – 5 – 6.' },
+      { id: 'E', texto: '1 – 3 – 2 – 4 – 6 – 5.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'PALOGRÁFICO (2): ritmo/qualidade do trabalho. PMK (3): tensões musculares involuntárias. QUATI (1): escolhas situacionais. RORSCHACH/ZULLIGER (4): estrutura da personalidade. FIGS (5): responsabilidade profissional, relações interpessoais e autoconceito. DTO (6): estilos cognitivos e comportamentais. Sequência: 2 – 3 – 1 – 4 – 5 – 6.',
+      incorretas: {
+        B: 'Inverte 1, 2, 3.',
+        C: 'Inverte.',
+        D: 'Inverte 1 e 2.',
+        E: 'Inverte.'
+      },
+      conceitoCobrado: 'Testes psicológicos em seleção',
+      pegadinha: 'Confundir os testes e suas siglas.',
+      comoApareceEmConcurso: 'Associação de testes a características.'
+    },
+    tags: ['testes psicológicos', 'Quati', 'Palográfico']
+  },
+  {
+    id: 'Q-PDF-ADM-07-003',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-07',
+    subtema: 'Cargo — atribuições x especificações',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Cargo atribuições x especificações' },
+    enunciado: 'A Diretoria de Gestão de Pessoas iniciou a revisão do seu plano de cargos. Durante o processo, uma equipe foi encarregada de: (1) detalhar as atividades desempenhadas, os resultados esperados, o grau de importância de cada tarefa e os equipamentos utilizados; (2) reunir habilidades, qualificações, esforços físicos e traços pessoais necessários para o bom desempenho das atividades. Com base nas definições clássicas da gestão de cargos, assinale a alternativa correta:',
+    alternativas: [
+      { id: 'A', texto: 'O primeiro processo corresponde às especificações do cargo, e o segundo às atribuições.' },
+      { id: 'B', texto: 'Ambos os processos se referem às atribuições do cargo.' },
+      { id: 'C', texto: 'O primeiro processo corresponde às atribuições do cargo, e o segundo às especificações do cargo.' },
+      { id: 'D', texto: 'O primeiro processo representa as funções essenciais, e o segundo a análise ocupacional.' },
+      { id: 'E', texto: 'O primeiro processo é parte das especificações, e o segundo trata da avaliação de desempenho.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ATRIBUIÇÕES do cargo: o que o ocupante FAZ (atividades, resultados, tarefas, equipamentos). ESPECIFICAÇÕES do cargo: QUEM pode ocupar (habilidades, qualificações, esforços, traços).',
+      incorretas: {
+        A: 'Inverte.',
+        B: 'São conceitos distintos.',
+        D: 'Não corresponde.',
+        E: 'Não corresponde.'
+      },
+      conceitoCobrado: 'Cargo — atribuições x especificações',
+      pegadinha: 'Inverter os conceitos.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['cargo', 'atribuições', 'especificações']
+  },
+  {
+    id: 'Q-PDF-ADM-07-004',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-07',
+    subtema: 'Avaliação de desempenho — Avaliação 90º',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Avaliação 90º' },
+    enunciado: 'O setor de gestão de pessoas do IFPB optou por um modelo de avaliação de desempenho que confere ao chefe imediato a responsabilidade exclusiva pela aplicação do instrumento e emissão do parecer final. Esse modelo foi escolhido devido à sua agilidade e ao conhecimento detalhado que o gestor tem da equipe. Contudo, por ser unidirecional, apresenta riscos inerentes de viés de julgamento. O modelo adotado é:',
+    alternativas: [
+      { id: 'A', texto: 'Avaliação 180º.' },
+      { id: 'B', texto: 'Avaliação 360º.' },
+      { id: 'C', texto: 'Autoavaliação.' },
+      { id: 'D', texto: 'Avaliação 90º.' },
+      { id: 'E', texto: 'Avaliação Matriz Nove Boxes.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A AVALIAÇÃO 90º (ou vertical) é aquela em que APENAS o chefe imediato avalia o subordinado — unidirecional, ágil, mas sujeita a viés.',
+      incorretas: {
+        A: 'A 180º inclui o próprio avaliado e o chefe.',
+        B: 'A 360º inclui chefes, pares, subordinados e autoavaliação.',
+        C: 'Autoavaliação é só do próprio avaliado.',
+        E: 'Nove Boxes é matriz de talentos.'
+      },
+      conceitoCobrado: 'Modelos de avaliação de desempenho',
+      pegadinha: 'Confundir 90º com 180º ou 360º.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['avaliação de desempenho', 'avaliação 90º']
+  },
+
+  /* ============================================================
+     ADM-08 — Comunicação e comportamento organizacional
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-08-001',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Função da comunicação — informação',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Função da comunicação' },
+    enunciado: 'A comunicação pode ser definida como o compartilhamento de informações entre duas ou mais pessoas, a fim de alcançar um entendimento comum. Dentre suas funções no contexto organizacional, a comunicação pode cumprir o papel de facilitadora do processo decisório, permitindo a circulação de dados necessários para a tomada de decisões, exercendo uma função de:',
+    alternativas: [
+      { id: 'A', texto: 'Feedback.' },
+      { id: 'B', texto: 'Controle.' },
+      { id: 'C', texto: 'Motivação.' },
+      { id: 'D', texto: 'Expressão emocional.' },
+      { id: 'E', texto: 'Informação.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A comunicação exerce a função de INFORMAÇÃO quando fornece dados necessários à tomada de decisão.',
+      incorretas: {
+        A: 'Feedback é retorno.',
+        B: 'Controle é outra função.',
+        C: 'Motivação é outra função.',
+        D: 'Expressão emocional é outra função.'
+      },
+      conceitoCobrado: 'Funções da comunicação',
+      pegadinha: 'Confundir informação com feedback.',
+      comoApareceEmConcurso: 'Cobrança de função específica.'
+    },
+    tags: ['comunicação', 'funções']
+  },
+  {
+    id: 'Q-PDF-ADM-08-002',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Barreiras à comunicação — percepção seletiva',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Percepção seletiva' },
+    enunciado: 'A comunicação eficiente é um fator de grande relevância na execução das atividades diárias de um grupo de trabalho. Sobre as barreiras no processo de comunicação, é CORRETO afirmar:',
+    alternativas: [
+      { id: 'A', texto: 'A filtragem deve ser um mecanismo incentivado em uma organização que visa aperfeiçoar seus processos internos de comunicação.' },
+      { id: 'B', texto: 'A percepção seletiva é o desvio de interpretação baseado em aspectos como preconceitos e experiências anteriores.' },
+      { id: 'C', texto: 'As emoções não influenciam o modo como um indivíduo interpretará uma mensagem; não podem ser consideradas barreira.' },
+      { id: 'D', texto: 'O excesso de informação contribui com a fluidez do processo de comunicação em uma organização.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A PERCEPÇÃO SELETIVA é uma barreira à comunicação: o receptor interpreta a mensagem com base em preconceitos, experiências e valores pessoais.',
+      incorretas: {
+        A: 'A filtragem é barreira, não mecanismo a incentivar.',
+        C: 'As emoções influenciam a interpretação.',
+        D: 'O excesso de informação é barreira (sobrecarga).'
+      },
+      conceitoCobrado: 'Barreiras à comunicação',
+      pegadinha: 'Confundir barreiras com mecanismos positivos.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['barreiras', 'percepção seletiva']
+  },
+  {
+    id: 'Q-PDF-ADM-08-003',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Negociação — ganha-perde → perde-perde',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Negociação' },
+    enunciado: 'Em uma negociação entre dois setores, o Setor A insistiu em manter seus prazos, argumentando que qualquer ajuste traria prejuízo ao seu cronograma. O Setor B, para evitar atritos e encerrar rapidamente o impasse, aceitou integralmente as condições impostas, mesmo sabendo que isso comprometeria suas metas e a qualidade do serviço. Semanas depois, o Setor B demonstrou insatisfação e resistência em cooperar com o Setor A em novas demandas, gerando prejuízo à relação de ambos. Considerando os tipos de resultados em negociação, a situação evoluiu de:',
+    alternativas: [
+      { id: 'A', texto: 'perde-ganha para ganha-ganha.' },
+      { id: 'B', texto: 'ganha-perde para perde-perde, pois a vitória inicial de uma parte resultou em prejuízos para ambas a longo prazo.' },
+      { id: 'C', texto: 'perde-perde para ganha-perde.' },
+      { id: 'D', texto: 'ganha-ganha para ganha-perde.' },
+      { id: 'E', texto: 'perde-ganha para ganha-perde.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'No início, o Setor A GANHOU e o Setor B PERDEU (ganha-perde). A longo prazo, a resistência do Setor B gerou prejuízo para ambos (perde-perde).',
+      incorretas: {
+        A: 'Não evoluiu para ganha-ganha.',
+        C: 'Inverte.',
+        D: 'Não evoluiu de ganha-ganha.',
+        E: 'Não evoluiu para ganha-perde.'
+      },
+      conceitoCobrado: 'Tipos de resultado em negociação',
+      pegadinha: 'Confundir ganha-perde com perde-ganha.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['negociação', 'ganha-perde', 'perde-perde']
+  },
+
+  /* ============================================================
+     ADM-09 — Gestão da Qualidade
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-09-001',
+    idOriginal: 'Q2353854',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-09',
+    subtema: 'Sete ferramentas da qualidade',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q2353854' },
+    enunciado: 'As Sete Ferramentas da Qualidade são instrumentos que permitem a melhoria da gestão dos processos de trabalho. Sobre essa temática, é CORRETO afirmar:',
+    alternativas: [
+      { id: 'A', texto: 'O Diagrama de Ishikawa permite a estruturação e a hierarquização das principais causas que podem contribuir para um determinado efeito.' },
+      { id: 'B', texto: 'O Diagrama de Pareto permite a identificação dos problemas relacionados a um efeito por meio da quantificação e do registro da frequência de sua ocorrência.' },
+      { id: 'C', texto: 'O Histograma é a representação gráfica de um fluxo de tarefas a partir do detalhamento sequenciado de suas etapas.' },
+      { id: 'D', texto: 'O Diagrama de Dispersão é caracterizado por sua natureza qualitativa, permitindo a coleta de dados subjetivos.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O DIAGRAMA DE ISHIKAWA (espinha de peixe) estrutura e hierarquiza as CAUSAS de um efeito (6M).',
+      incorretas: {
+        B: 'O Pareto prioriza por frequência/impacto (80/20), não apenas identifica.',
+        C: 'O Histograma é gráfico de distribuição de frequência, não fluxo.',
+        D: 'O Diagrama de Dispersão é quantitativo (correlação entre variáveis).'
+      },
+      conceitoCobrado: 'Sete ferramentas da qualidade',
+      pegadinha: 'Confundir as funções de cada ferramenta.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['ferramentas da qualidade', 'Ishikawa']
+  },
+  {
+    id: 'Q-PDF-ADM-09-002',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-09',
+    subtema: 'Diagrama de Pareto — aplicação (80/20)',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Diagrama de Pareto' },
+    enunciado: 'Em uma universidade pública, o Pró-reitor de Administração identifica alto volume de reclamações sobre a demora nos processos administrativos. Rita, Pró-reitora Adjunta, sugere criar uma equipe para registrar e analisar os problemas, identificando os fatores que mais impactam o atraso. Ela esclarece que a estratégia é baseada no princípio segundo o qual, em muitos casos, 80% das consequências são resultados de 20% das causas. Esse princípio fundamenta a ferramenta da qualidade denominada:',
+    alternativas: [
+      { id: 'A', texto: 'Diagrama de Ishikawa.' },
+      { id: 'B', texto: 'Fluxograma.' },
+      { id: 'C', texto: 'Histograma.' },
+      { id: 'D', texto: 'Diagrama de Pareto.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O princípio 80/20 é a base do DIAGRAMA DE PARETO, que prioriza as causas mais impactantes.',
+      incorretas: {
+        A: 'Ishikawa identifica causas (6M), não prioriza por 80/20.',
+        B: 'Fluxograma representa fluxo.',
+        C: 'Histograma mostra distribuição de frequência.'
+      },
+      conceitoCobrado: 'Diagrama de Pareto',
+      pegadinha: 'Confundir com Ishikawa.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['Pareto', '80/20']
+  },
+
+  /* ============================================================
+     ADM-10 — Administração de Materiais e Patrimônio
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-10-001',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-10',
+    subtema: 'Tipos de almoxarifado',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Tipos de almoxarifado' },
+    enunciado: 'Sobre os diferentes tipos de estoque que podem existir em uma empresa, assinale a afirmativa CORRETA:',
+    alternativas: [
+      { id: 'A', texto: 'O almoxarifado de matérias-primas é onde estão as peças que servem de apoio à manutenção dos equipamentos e do edifício.' },
+      { id: 'B', texto: 'O almoxarifado de materiais auxiliares é composto por insumos ou matérias-primas que serão transformadas durante o processo produtivo em um produto final.' },
+      { id: 'C', texto: 'O almoxarifado de produtos acabados é onde são armazenados os materiais que auxiliam e participam do processo de transformação do produto; no entanto, não se agregam a ele.' },
+      { id: 'D', texto: 'O almoxarifado intermediário é onde se encontram os produtos em fase de processamento, ainda não acabados, ou subconjuntos que estão armazenados para a composição do produto final.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O ALMOXARIFADO INTERMEDIÁRIO guarda produtos em fase de processamento (semiacabados) ou subconjuntos para a composição do produto final.',
+      incorretas: {
+        A: 'Descreve o almoxarifado de manutenção.',
+        B: 'Descreve o almoxarifado de matérias-primas.',
+        C: 'Descreve o almoxarifado de materiais auxiliares.'
+      },
+      conceitoCobrado: 'Tipos de almoxarifado',
+      pegadinha: 'Trocar as definições.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['almoxarifado', 'tipos de estoque']
+  },
+  {
+    id: 'Q-PDF-ADM-10-002',
+    idOriginal: 'Q2282445',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-10',
+    subtema: 'Atividades da gestão de materiais',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q2282445' },
+    enunciado: 'A administração de materiais envolve a gestão de todos os processos ligados à cadeia de suprimentos, desde os pontos de origem com a aquisição das matérias-primas até a entrega do produto ao consumidor final. Assinale a única alternativa que NÃO constitui atividade da gestão de materiais:',
+    alternativas: [
+      { id: 'A', texto: 'Seleção de fornecedores.' },
+      { id: 'B', texto: 'Transporte.' },
+      { id: 'C', texto: 'Armazenagem.' },
+      { id: 'D', texto: 'Definição dos preços.' },
+      { id: 'E', texto: 'Embalagens.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A DEFINIÇÃO DOS PREÇOS é atividade de marketing/finanças, não da gestão de materiais.',
+      incorretas: {
+        A: 'Seleção de fornecedores é atividade.',
+        B: 'Transporte é atividade.',
+        C: 'Armazenagem é atividade.',
+        E: 'Embalagens é atividade.'
+      },
+      conceitoCobrado: 'Atividades da gestão de materiais',
+      pegadinha: 'Incluir atividade de outra área.',
+      comoApareceEmConcurso: 'Cobrança de INCORRETA.'
+    },
+    tags: ['gestão de materiais', 'atividades']
+  },
+  {
+    id: 'Q-PDF-ADM-10-003',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-10',
+    subtema: 'WMS — Warehouse Management System',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — WMS' },
+    enunciado: 'A logística de armazenagem compreende atividades gerenciais e operacionais para armazenar e proteger produtos, com o objetivo de minimizar custos operacionais e manter um serviço de qualidade. Entre os diferentes sistemas de armazenagem, pode-se citar o WMS. Acerca desse sistema, é correto afirmar que ele:',
+    alternativas: [
+      { id: 'A', texto: 'É voltado apenas para a identificação dos pallets que armazenam os itens do estoque.' },
+      { id: 'B', texto: 'É voltado apenas para a criação de etiquetas adesivas de produtos perecíveis.' },
+      { id: 'C', texto: 'Permite o controle de entrada e saída de mercadorias disponíveis.' },
+      { id: 'D', texto: 'É focado exclusivamente na administração de mercadorias hospitalares.' },
+      { id: 'E', texto: 'Cria uma logística própria, não se ajustando a outros sistemas.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O WMS (Warehouse Management System) é o sistema de gestão de armazém que controla entrada, saída e movimentação de mercadorias.',
+      incorretas: {
+        A: 'Não se limita a pallets.',
+        B: 'Não se limita a etiquetas.',
+        D: 'Não é exclusivo de hospital.',
+        E: 'Integra-se a outros sistemas.'
+      },
+      conceitoCobrado: 'WMS',
+      pegadinha: 'Restringir o WMS a uma única função.',
+      comoApareceEmConcurso: 'Cobrança direta.'
+    },
+    tags: ['WMS', 'armazenagem']
+  },
+
+  /* ============================================================
+     ADM-11 — Gestão de Processos
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-11-001',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-11',
+    subtema: 'BPM — fase de Mudanças de Arquitetura',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — BPM Mudanças de Arquitetura' },
+    enunciado: 'A gestão BPM (Business Process Management) segue um ciclo de vida estruturado, composto por etapas integradas e interdependentes. A maioria dos modelos de ciclo de vida pode ser descrita como um processo iterativo, dividido em cinco fases. Uma dessas fases é denominada Mudanças de Arquitetura, na qual há:',
+    alternativas: [
+      { id: 'A', texto: 'O trabalho de modelação, de análise, de desenho e de medição do desempenho dos processos, buscando identificar os principais processos organizacionais atuais e interfuncionais no contexto das metas e dos objetivos desejados.' },
+      { id: 'B', texto: 'O processo de criação do modelo permanente de Gestão Corporativa (Arquiteturas) de Processos e de governança para a organização, incluindo a medição e a monitorização contínua dos processos de negócio e da tecnologia.' },
+      { id: 'C', texto: 'A realização de todos os planos da fase que a antecede, sendo coordenada e gerida pelo patrocinador do programa e pelo gestor do projeto, os quais providenciam a elaboração de um cronograma estruturado de implementação.' },
+      { id: 'D', texto: 'A elaboração de uma estratégia e de um plano, fundamentalmente baseados em processos, para a organização, a partir da compreensão dos objetivos organizacionais, garantindo uma proposta de valor atrativa aos clientes.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A fase de MUDANÇAS DE ARQUITETURA cria o modelo permanente de gestão corporativa (arquiteturas de processos) e de governança, com medição e monitorização contínua dos processos de negócio e da tecnologia.',
+      incorretas: {
+        A: 'Descreve a fase de descoberta/modelagem.',
+        C: 'Descreve a fase de implementação.',
+        D: 'Descreve a fase de estratégia/planejamento.'
+      },
+      conceitoCobrado: 'BPM — fases do ciclo de vida',
+      pegadinha: 'Confundir a fase de arquitetura com modelagem ou implementação.',
+      comoApareceEmConcurso: 'Cobrança de fase específica.'
+    },
+    tags: ['BPM', 'gestão por processos']
+  },
+
+  /* ============================================================
+     ADM-12 — Atendimento ao público e relações interpessoais
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-12-001',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Trabalho em equipe — característica INCORRETA',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Trabalho em equipe' },
+    enunciado: 'O trabalho em equipe é de fundamental importância para a qualidade do produto a ser desenvolvido. Assinale a única alternativa que NÃO está associada ao trabalho em equipe:',
+    alternativas: [
+      { id: 'A', texto: 'Presença de independência de membros do grupo.' },
+      { id: 'B', texto: 'Participação de lideranças no grupo.' },
+      { id: 'C', texto: 'Comprometimento e empatia.' },
+      { id: 'D', texto: 'Compromisso da equipe com a pontualidade na entrega.' },
+      { id: 'E', texto: 'Preocupação com a eficiência e eficácia.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A INDEPENDÊNCIA de membros do grupo NÃO está associada ao trabalho em equipe — a equipe pressupõe INTERDEPENDÊNCIA e cooperação.',
+      incorretas: {
+        B: 'Liderança participativa está associada.',
+        C: 'Comprometimento e empatia estão associados.',
+        D: 'Pontualidade está associada.',
+        E: 'Eficiência e eficácia estão associadas.'
+      },
+      conceitoCobrado: 'Trabalho em equipe',
+      pegadinha: 'Inverter independência por interdependência.',
+      comoApareceEmConcurso: 'Cobrança de INCORRETA.'
+    },
+    tags: ['trabalho em equipe', 'independência']
+  },
+  {
+    id: 'Q-PDF-ADM-12-002',
+    idOriginal: 'Não identificado',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Atendimento — presteza e interesse',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Atendimento presteza e interesse' },
+    enunciado: 'Um cidadão procurou um Conselho Regional em busca de informações a respeito de um processo administrativo. Todavia, embora o assunto não fosse de sua competência, o colaborador indicou o setor responsável, informou a sua localização e ofereceu-se para acompanhá-lo até o local. Com base nessa situação hipotética, é correto afirmar que a conduta do colaborador evidencia os atributos de:',
+    alternativas: [
+      { id: 'A', texto: 'discrição e tolerância, pois o colaborador preservou a confidencialidade das informações e manteve a postura respeitosa durante o atendimento.' },
+      { id: 'B', texto: 'presteza e interesse, pois buscou atender prontamente à necessidade do cidadão e demonstrou disposição para auxiliá-lo até o encaminhamento adequado da demanda.' },
+      { id: 'C', texto: 'comunicabilidade e objetividade, pois transmitiu as informações necessárias de forma clara, restringindo-se às orientações indispensáveis ao atendimento.' },
+      { id: 'D', texto: 'apresentação e comunicabilidade, considerando que o êxito do atendimento depende, sobretudo, da forma como o colaborador se apresentou ao cidadão.' },
+      { id: 'E', texto: 'eficiência e resolutividade, pois solucionou a demanda do cidadão, independentemente das atribuições de sua unidade de atuação no escopo de trabalho.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A conduta evidencia PRESTEZA (atendimento pronto) e INTERESSE (disposição para auxiliar e acompanhar o cidadão até o setor correto).',
+      incorretas: {
+        A: 'Discrição e tolerância não são os atributos centrais.',
+        C: 'Comunicabilidade e objetividade não captam a disposição de acompanhar.',
+        D: 'Apresentação e comunicabilidade não são o foco.',
+        E: 'Eficiência e resolutividade não se aplicam, pois a demanda não foi resolvida na unidade.'
+      },
+      conceitoCobrado: 'Atributos do atendimento',
+      pegadinha: 'Confundir presteza com eficiência ou resolutividade.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['atendimento', 'presteza', 'interesse']
+  },
+  /* ============================================================
+     LOTE PDF — QConcursos / Gran Cursos
+     AP-13, AP-14 + DA-15 a DA-18
+     ============================================================ */
+
+  /* ============================================================
+     AP-13 — Conceitos fundamentais de Administração Pública
+  ============================================================ */
+  {
+    id: 'Q-PDF-AP-13-001',
+    idOriginal: 'Q4650036',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'AP',
+    moduloId: 'AP-13',
+    subtema: 'Função administrativa x função política x função jurisdicional',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4650036' },
+    enunciado: 'A Administração Pública compreende o conjunto de atividades desenvolvidas pelo Estado para atender às necessidades coletivas, observando os princípios constitucionais e o regime jurídico-administrativo. Nesse contexto, a atuação administrativa distingue-se da atividade política e da função jurisdicional. Com base nas noções de Administração Pública, assinale a alternativa correta.',
+    alternativas: [
+      { id: 'A', texto: 'A função administrativa caracteriza-se pela execução concreta das políticas públicas e pela prestação de serviços à coletividade, sendo exercida predominantemente pelo Poder Executivo, sem exclusividade.' },
+      { id: 'B', texto: 'A Administração Pública exerce função política quando pratica atos de gestão destinados à execução de serviços públicos e à satisfação direta das necessidades da população.' },
+      { id: 'C', texto: 'A função administrativa é exercida exclusivamente pelo Poder Executivo, cabendo aos Poderes Legislativo e Judiciário apenas as funções legislativa e jurisdicional, respectivamente.' },
+      { id: 'D', texto: 'A Administração Pública possui autonomia para definir livremente seus objetivos institucionais, desde que suas decisões estejam alinhadas às prioridades estabelecidas pelo chefe do Poder Executivo.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A função administrativa é a execução concreta das políticas públicas e a prestação de serviços à coletividade. É exercida predominantemente pelo Executivo, mas também pelos demais Poderes quando exercem atividade administrativa (ex.: gestão de pessoal, licitações).',
+      incorretas: {
+        B: 'Função política envolve decisões estratégicas (ex.: sanção de leis, declaração de guerra); não se confunde com atos de gestão.',
+        C: 'A função administrativa não é exclusiva do Executivo — os três Poderes a exercem quando praticam atos de gestão interna.',
+        D: 'A Administração Pública não define livremente seus objetivos — está vinculada à lei e ao interesse público.'
+      },
+      conceitoCobrado: 'Função administrativa x função política',
+      pegadinha: 'Restringir a função administrativa ao Executivo ou confundi-la com função política.',
+      comoApareceEmConcurso: 'Cobrança da distinção entre funções estatais.'
+    },
+    tags: ['função administrativa', 'função política']
+  },
+
+  /* ============================================================
+     DA-15 — Princípios da Administração Pública
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-15-001',
+    idOriginal: 'Q4369752',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-15',
+    subtema: 'Princípio da legalidade — sentido amplo (di Pietro)',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4369752' },
+    enunciado: 'Segundo di Pietro (2023), os princípios da legalidade e da supremacia do interesse público são fundamentais para a compreensão da Administração Pública, pois permeiam todo o direito público e formam a base para todos os outros princípios. Acerca dessa informação, julgue os itens seguintes. O princípio da legalidade estabelece a ideia de limites da atuação administrativa que tenha por objeto a restrição ao exercício de direitos em benefício da coletividade.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. Para di Pietro, a legalidade em sentido amplo abrange não apenas a conformidade com a lei, mas também a restrição de direitos em benefício da coletividade (legalidade material).',
+      incorretas: {},
+      conceitoCobrado: 'Legalidade em sentido amplo',
+      pegadinha: 'Restringir a legalidade à mera conformidade formal com a lei.',
+      comoApareceEmConcurso: 'Cobrança da dimensão material da legalidade.'
+    },
+    tags: ['legalidade', 'di Pietro']
+  },
+  {
+    id: 'Q-PDF-DA-15-002',
+    idOriginal: 'Q4650534',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-15',
+    subtema: 'Princípio da moralidade — definição',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4650534' },
+    enunciado: 'Marque a alternativa que preenche a lacuna a seguir corretamente a respeito dos princípios da administração pública: "Caracterizam ofensa à _____ administrativa: intencional violação do direito, por ação ou omissão, quer quanto aos meios de atuação dos agentes públicos, quer quanto aos fins inerentes ao exercício da função pública; o atuar com intenção viciada nos atos expedidos no exercício de competência discricionária; os atos eivados de desvio de poder; e ofensas à ordem jurídico-positiva que têm por abstrato valores morais."',
+    alternativas: [
+      { id: 'A', texto: 'eficiência' },
+      { id: 'B', texto: 'impessoalidade' },
+      { id: 'C', texto: 'legalidade' },
+      { id: 'D', texto: 'publicidade' },
+      { id: 'E', texto: 'moralidade' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A descrição — intencional violação do direito, atuação com intenção viciada, desvio de poder, ofensas a valores morais — corresponde à MORALIDADE administrativa.',
+      incorretas: {
+        A: 'Eficiência trata de resultados e racionalidade de meios.',
+        B: 'Impessoalidade trata da objetividade e vedação de favorecimentos.',
+        C: 'Legalidade trata da conformidade com a lei.',
+        D: 'Publicidade trata da divulgação oficial.'
+      },
+      conceitoCobrado: 'Moralidade administrativa',
+      pegadinha: 'Confundir moralidade com legalidade ou impessoalidade.',
+      comoApareceEmConcurso: 'Cobrança da definição de moralidade.'
+    },
+    tags: ['moralidade', 'LIMPE']
+  },
+  {
+    id: 'Q-PDF-DA-15-003',
+    idOriginal: 'Q4596259',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-15',
+    subtema: 'Princípio da impessoalidade — dupla acepção',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4596259' },
+    enunciado: 'Em seu trabalho diário, o Assistente Administrativo precisa lidar com a publicidade de atos administrativos, como a divulgação de editais para eventos culturais e esportivos. Nesse sentido, o princípio da impessoalidade é central para garantir que a promoção pessoal dos agentes públicos não se confunda com a publicidade institucional do órgão que trabalha, conforme previsto na Constituição Federal. Isso posto, o princípio da impessoalidade na Administração Pública possui dupla acepção. Diante do exposto, pergunta-se: Qual das alternativas descreve CORRETAMENTE uma dessas acepções e seu impacto na atuação do agente público?',
+    alternativas: [
+      { id: 'A', texto: 'Veda a criação de despesas que não estejam previamente autorizadas em lei financeira.' },
+      { id: 'B', texto: 'Impõe que a Administração atue em busca do interesse público primário, e não do interesse privado do agente ou de terceiros.' },
+      { id: 'C', texto: 'Exige que todos os atos administrativos sejam devidamente fundamentados, com indicação exclusivamente dos pressupostos e fundamentos discricionários levantados dentro do processo em curso.' },
+      { id: 'D', texto: 'Obriga que a conduta do agente seja pautada somente na moralidade, afastando a legalidade do contexto da ação e os padrões éticos coletivos.' },
+      { id: 'E', texto: 'Determina que a Administração não pode dispensar isenções reguláveis ou cometer favoritismos em detrimento de indivíduos específicos.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A impessoalidade impõe que a Administração atue em busca do interesse público primário (coletividade), e não do interesse privado do agente ou de terceiros. É a dimensão material da impessoalidade.',
+      incorretas: {
+        A: 'Vedação de despesas sem lei é legalidade orçamentária.',
+        C: 'Fundamentação é motivação, não impessoalidade.',
+        D: 'Afastar a legalidade é incorreto — moralidade e legalidade coexistem.',
+        E: 'A impessoalidade veda favoritismos, mas a descrição não é a mais precisa.'
+      },
+      conceitoCobrado: 'Impessoalidade — dupla acepção',
+      pegadinha: 'Confundir impessoalidade com legalidade ou moralidade.',
+      comoApareceEmConcurso: 'Cobrança da dimensão material da impessoalidade.'
+    },
+    tags: ['impessoalidade', 'interesse público']
+  },
+  {
+    id: 'Q-PDF-DA-15-004',
+    idOriginal: 'Q4432137',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-15',
+    subtema: 'Princípio da eficiência — dimensão material',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4432137' },
+    enunciado: 'A incorporação do princípio da eficiência ao texto constitucional inseriu novas exigências no regime jurídico-administrativo, influenciando parâmetros de atuação estatal e critérios de avaliação da atividade administrativa. Com base nessa informação, julgue os itens a seguir. A utilização racional dos recursos públicos, com vistas à obtenção do melhor resultado possível com o menor dispêndio necessário, constitui dimensão material do princípio da eficiência administrativa.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. A dimensão material da eficiência é exatamente a utilização racional dos recursos públicos para obter o melhor resultado com o menor dispêndio (economicidade + qualidade).',
+      incorretas: {},
+      conceitoCobrado: 'Eficiência — dimensão material',
+      pegadinha: 'Confundir eficiência com eficácia ou efetividade.',
+      comoApareceEmConcurso: 'Cobrança da definição constitucional de eficiência.'
+    },
+    tags: ['eficiência', 'LIMPE']
+  },
+
+  /* ============================================================
+     DA-16 — Organização da Administração Pública
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-16-001',
+    idOriginal: 'Q4372731',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-16',
+    subtema: 'Sociedade de economia mista — CAGECE',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4372731' },
+    enunciado: 'A administração indireta é o conjunto de entes que, vinculado a algum órgão da administração direta, prestam serviços públicos ou de interesse público. A Companhia de Água e Esgoto do Ceará - CAGECE, trata-se de uma:',
+    alternativas: [
+      { id: 'A', texto: 'Autarquia.' },
+      { id: 'B', texto: 'Fundação Pública de Direito Público.' },
+      { id: 'C', texto: 'Fundação Pública de Direito Privado.' },
+      { id: 'D', texto: 'Empresa Pública.' },
+      { id: 'E', texto: 'Sociedade de Economia Mista.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A CAGECE é uma SOCIEDADE DE ECONOMIA MISTA — pessoa jurídica de direito privado, com capital misto (maioria pública), constituída como sociedade anônima, para exploração de atividade econômica ou prestação de serviço público.',
+      incorretas: {
+        A: 'Autarquia é pessoa jurídica de direito público, criada por lei para atividade típica de Estado.',
+        B: 'Fundação pública de direito público é outra categoria.',
+        C: 'Fundação pública de direito privado é outra categoria.',
+        D: 'Empresa pública tem capital 100% público; a CAGECE tem capital misto.'
+      },
+      conceitoCobrado: 'Sociedade de economia mista',
+      pegadinha: 'Confundir SEM com empresa pública.',
+      comoApareceEmConcurso: 'Identificação da natureza jurídica de entidade da Administração Indireta.'
+    },
+    tags: ['sociedade de economia mista', 'CAGECE']
+  },
+  {
+    id: 'Q-PDF-DA-16-002',
+    idOriginal: 'Q4622854',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-16',
+    subtema: 'Competência administrativa — órgãos federais',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4622854' },
+    enunciado: 'Em uma repartição federal, foi recebido um processo referente ao planejamento nacional de infraestrutura logística, de transportes e de obras estruturantes. O assistente administrativo observou que o assunto não deveria ser encaminhado ao Ministério do Desenvolvimento Regional, pois a competência administrativa principal, nesse caso, está vinculada ao Ministério:',
+    alternativas: [
+      { id: 'A', texto: 'das Cidades' },
+      { id: 'B', texto: 'da Integração' },
+      { id: 'C', texto: 'dos Transportes' },
+      { id: 'D', texto: 'do Planejamento' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O planejamento nacional de infraestrutura logística, de transportes e de obras estruturantes é competência do MINISTÉRIO DOS TRANSPORTES.',
+      incorretas: {
+        A: 'Ministério das Cidades cuida de habitação, saneamento e mobilidade urbana.',
+        B: 'Ministério da Integração cuida de desenvolvimento regional.',
+        D: 'Ministério do Planejamento cuida de orçamento e gestão.'
+      },
+      conceitoCobrado: 'Competência administrativa — organização dos órgãos federais',
+      pegadinha: 'Confundir as competências dos ministérios.',
+      comoApareceEmConcurso: 'Cobrança da estrutura administrativa federal.'
+    },
+    tags: ['competência', 'ministérios', 'transportes']
+  },
+
+  /* ============================================================
+     DA-17 — Agentes públicos
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-17-001',
+    idOriginal: 'Q4458690',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-17',
+    subtema: 'Responsabilização administrativa do servidor',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4458690' },
+    enunciado: 'A atuação do servidor público está sujeita a mecanismos de responsabilização destinados a assegurar a legalidade e a regularidade das atividades administrativas. Assinale a alternativa CORRETA.',
+    alternativas: [
+      { id: 'A', texto: 'A responsabilidade administrativa do servidor público somente ocorre quando houver condenação judicial definitiva relacionada ao ato praticado no exercício da função pública.' },
+      { id: 'B', texto: 'A responsabilização administrativa do servidor depende exclusivamente da comprovação de vantagem econômica obtida pelo agente no exercício da função pública.' },
+      { id: 'C', texto: 'A responsabilidade funcional aplica-se apenas aos servidores ocupantes de cargos de chefia ou direção no âmbito da Administração Pública.' },
+      { id: 'D', texto: 'O servidor público não pode ser responsabilizado por atos praticados no exercício da função administrativa desempenhada no âmbito da Administração.' },
+      { id: 'E', texto: 'O servidor público responde administrativamente pelos atos praticados no exercício de suas atribuições quando violar dever funcional ou causar prejuízo à Administração Pública.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O servidor responde administrativamente quando viola dever funcional ou causa prejuízo à Administração, independentemente de condenação judicial (as esferas são independentes).',
+      incorretas: {
+        A: 'A responsabilidade administrativa é independente da judicial.',
+        B: 'Não exige vantagem econômica — basta violação de dever funcional.',
+        C: 'Aplica-se a todos os servidores, não apenas a chefias.',
+        D: 'O servidor pode e deve ser responsabilizado.'
+      },
+      conceitoCobrado: 'Responsabilização administrativa do servidor',
+      pegadinha: 'Condicionar a responsabilização à condenação judicial ou à vantagem econômica.',
+      comoApareceEmConcurso: 'Cobrança da independência das esferas de responsabilização.'
+    },
+    tags: ['responsabilidade', 'servidor público']
+  },
+
+  /* ============================================================
+     DA-18 — Poderes da Administração Pública
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-18-001',
+    idOriginal: 'Q4641329',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-18',
+    subtema: 'Poder hierárquico — definição',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4641329' },
+    enunciado: 'Determinada autoridade pública decide editar um ato administrativo para organizar a escala de férias dos agentes de sua unidade, visando garantir a continuidade do serviço essencial. Ao fazer isso, a autoridade distribui funções e estabelece uma relação de subordinação e coordenação entre os diversos departamentos sob seu comando. Essa capacidade de comando, fiscalização e revisão de atos de subordinados, que permite a organização interna dos órgãos públicos para a prestação eficiente de serviços, fundamenta-se diretamente na aplicação do seguinte poder:',
+    alternativas: [
+      { id: 'A', texto: 'Regulamentar.' },
+      { id: 'B', texto: 'Hierárquico.' },
+      { id: 'C', texto: 'Judiciário.' },
+      { id: 'D', texto: 'Discricionário.' },
+      { id: 'E', texto: 'De polícia.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A capacidade de comando, fiscalização e revisão de atos de subordinados, com distribuição de funções e estabelecimento de subordinação, é o PODER HIERÁRQUICO.',
+      incorretas: {
+        A: 'Poder regulamentar é a edição de decretos para detalhar a lei.',
+        C: 'Poder Judiciário não é poder administrativo.',
+        D: 'Discricionariedade é margem de escolha, não poder hierárquico.',
+        E: 'Poder de polícia limita direitos do particular.'
+      },
+      conceitoCobrado: 'Poder hierárquico',
+      pegadinha: 'Confundir com poder disciplinar ou regulamentar.',
+      comoApareceEmConcurso: 'Cobrança da definição de poder hierárquico.'
+    },
+    tags: ['poder hierárquico']
+  },
+  {
+    id: 'Q-PDF-DA-18-002',
+    idOriginal: 'Q4539064',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-18',
+    subtema: 'Poder de polícia — fases (ordem)',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539064' },
+    enunciado: 'Determinada autarquia federal responsável pela regulação do transporte intermunicipal editou Portaria estabelecendo requisitos para a prestação do serviço por particulares. Uma empresa solicitou autorização para operar em certa linha, sendo o pedido analisado e deferido com base em critérios de conveniência e oportunidade. Posteriormente, durante fiscalização de rotina, verificou-se que a empresa deixou de cumprir condições estabelecidas no ato de autorização, o que ensejou a lavratura de auto de infração e, após regular processo administrativo, a aplicação de multa. À luz do ciclo do poder de polícia, assinale a afirmativa correta.',
+    alternativas: [
+      { id: 'A', texto: 'A aplicação da multa constitui fase do poder de polícia e pode ocorrer ainda que não haja previsão legal específica para a conduta.' },
+      { id: 'B', texto: 'A autorização concedida à empresa gera direito subjetivo à manutenção da atividade, impedindo a revogação do ato administrativo.' },
+      { id: 'C', texto: 'O deferimento do pedido da empresa configura ato vinculado, pois a administração deve conceder a autorização quando preenchidos os requisitos legais.' },
+      { id: 'D', texto: 'A fiscalização realizada pela autarquia não apresenta caráter preventivo, estando voltada à aplicação de penalidades em face de irregularidades constatadas.' },
+      { id: 'E', texto: 'A edição da Portaria pela autarquia corresponde à fase de ordem, por meio da qual a administração estabelece normas e restrições ao exercício de atividades privadas.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A edição de Portaria que estabelece requisitos e restrições é a fase de ORDEM do ciclo de polícia (legislação/normatização).',
+      incorretas: {
+        A: 'A multa é fase de sanção e exige previsão legal.',
+        B: 'Autorização é ato precário e revogável.',
+        C: 'A autorização é ato discricionário, não vinculado.',
+        D: 'A fiscalização tem caráter preventivo e repressivo.'
+      },
+      conceitoCobrado: 'Poder de polícia — fases',
+      pegadinha: 'Confundir a fase de ordem (normatização) com as fases de consentimento, fiscalização e sanção.',
+      comoApareceEmConcurso: 'Cobrança do ciclo de polícia em cenário aplicado.'
+    },
+    tags: ['poder de polícia', 'fases', 'ordem']
+  },
+  {
+    id: 'Q-PDF-DA-18-003',
+    idOriginal: 'Q4539212',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-18',
+    subtema: 'Poder de polícia — interdição de atividade',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539212' },
+    enunciado: 'A fiscalização do CRC, ao constatar que um escritório de contabilidade está funcionando sem o registro cadastral obrigatório, decide lavrar um auto de infração e interditar temporariamente as atividades até a regularização. Essa prerrogativa da Administração de restringir o exercício de atividades privadas em benefício da ordem profissional é denominada:',
+    alternativas: [
+      { id: 'A', texto: 'Poder de Polícia.' },
+      { id: 'B', texto: 'Poder Disciplinar.' },
+      { id: 'C', texto: 'Poder Regulamentar.' },
+      { id: 'D', texto: 'Poder Hierárquico.' },
+      { id: 'E', texto: 'Poder Legislativo.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A prerrogativa de restringir o exercício de atividades privadas em benefício da ordem profissional é o PODER DE POLÍCIA.',
+      incorretas: {
+        B: 'Poder disciplinar pune servidores e sujeitos à disciplina interna.',
+        C: 'Poder regulamentar edita decretos para detalhar a lei.',
+        D: 'Poder hierárquico organiza internamente a Administração.',
+        E: 'Poder Legislativo não é poder administrativo.'
+      },
+      conceitoCobrado: 'Poder de polícia',
+      pegadinha: 'Confundir com poder disciplinar.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['poder de polícia', 'interdição']
+  },
+  /* ============================================================
+     LOTE PDF — QConcursos / Gran Cursos
+     DA-19 a DA-21
+     ============================================================ */
+
+  /* ============================================================
+     DA-19 — Atos Administrativos
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-19-001',
+    idOriginal: 'Q4494298',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-19',
+    subtema: 'Natureza do ato administrativo — ato concreto e unilateral',
+    dificuldade: 1,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4494298' },
+    enunciado: 'Em uma repartição pública, o gestor emite um ato que, de forma unilateral e motivada por fatos concretos previstos em lei, impõe uma multa a um cidadão por descumprimento de norma ambiental. Esse ato possui características específicas que o distinguem de outros atos jurídicos. Assinale a alternativa que identifica corretamente a natureza desse ato.',
+    alternativas: [
+      { id: 'A', texto: 'Ato legislativo.' },
+      { id: 'B', texto: 'Ato judicial.' },
+      { id: 'C', texto: 'Ato privado.' },
+      { id: 'D', texto: 'Ato administrativo.' },
+      { id: 'E', texto: 'Ato normativo.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A multa aplicada por gestor público, com base em lei, de forma unilateral e concreta, é um ATO ADMINISTRATIVO, manifestação da Administração no exercício de suas funções.',
+      incorretas: {
+        A: 'Ato legislativo é produzido pelo Poder Legislativo no exercício da função legislativa.',
+        B: 'Ato judicial é produzido pelo Poder Judiciário no exercício da jurisdição.',
+        C: 'Ato privado é praticado por particulares, sem prerrogativas públicas.',
+        E: 'Ato normativo é genérico e abstrato; a multa é concreta.'
+      },
+      conceitoCobrado: 'Natureza do ato administrativo',
+      pegadinha: 'Confundir ato administrativo com ato normativo ou judicial.',
+      comoApareceEmConcurso: 'Identificação da natureza de um ato a partir de suas características.'
+    },
+    tags: ['ato administrativo', 'multa']
+  },
+  {
+    id: 'Q-PDF-DA-19-002',
+    idOriginal: 'Q4311371',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-19',
+    subtema: 'Elementos do ato administrativo — finalidade pública',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4311371' },
+    enunciado: 'O ato administrativo é uma manifestação unilateral de vontade da Administração Pública que, com base na legalidade, tem por finalidade produzir efeitos jurídicos no âmbito do Direito Público. São elementos ou requisitos para o ato administrativo: sujeito competente; finalidade pública; forma prescrita em lei; motivo e objeto. Sobre o elemento finalidade pública, analise as sentenças: I - Finalidade é o resultado ou o bem jurídico que a Administração Pública quer alcançar com o ato. II - Em razão do princípio constitucional da finalidade pública, toda atividade desenvolvida pela Administração Pública deve guiar-se para o atendimento de um único resultado ou bem jurídico, qual seja, o fim público, que nada mais é senão servir ao interesse da coletividade. III - Se o fim visado não for aquele previsto para o ato editado haverá o desvio específico de finalidade expondo o ato à invalidação. IV - O desvio de finalidade se verifica quando o agente pratica o ato pretendendo fim diverso daquele previsto, explicita ou implicitamente, na regra de competência. A finalidade é elemento sempre vinculado. Após a análise, pode-se afirmar:',
+    alternativas: [
+      { id: 'A', texto: 'As sentenças I, II, III e IV estão corretas.' },
+      { id: 'B', texto: 'Somente as sentenças II, III e IV estão corretas.' },
+      { id: 'C', texto: 'Somente as sentenças I, III e IV estão corretas.' },
+      { id: 'D', texto: 'Somente as sentenças I, II e III estão corretas.' },
+      { id: 'E', texto: 'Somente as sentenças III e IV estão corretas.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'Todas as sentenças estão corretas: a finalidade é o bem jurídico visado (I); a Administração deve buscar o interesse coletivo (II); o desvio de finalidade invalida o ato (III); e a finalidade é elemento vinculado (IV).',
+      incorretas: {
+        B: 'A I também está correta.',
+        C: 'A II também está correta.',
+        D: 'A IV também está correta.',
+        E: 'A I e II também estão corretas.'
+      },
+      conceitoCobrado: 'Finalidade do ato administrativo',
+      pegadinha: 'Excluir alguma das assertivas corretas.',
+      comoApareceEmConcurso: 'Análise de múltiplas sentenças sobre um elemento do ato.'
+    },
+    tags: ['finalidade', 'desvio de finalidade']
+  },
+  {
+    id: 'Q-PDF-DA-19-003',
+    idOriginal: 'Q4467888',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-19',
+    subtema: 'Vício de competência — anulação',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4467888' },
+    enunciado: 'Em um órgão público municipal, um auxiliar administrativo responsável pela expedição de autorizações administrativas emitiu determinado ato permitindo o funcionamento de uma atividade econômica local. Posteriormente, verificou-se que o ato foi praticado por um agente sem competência legal para tal atribuição, embora todos os demais elementos, finalidade pública, forma e motivação estivessem adequadamente presentes. Diante da situação, a Administração decidiu revisar o ato, considerando seus requisitos de validade e os efeitos produzidos perante terceiros de boa-fé. Nesse contexto, é correto afirmar que o ato administrativo:',
+    alternativas: [
+      { id: 'A', texto: 'É inválido por vício de competência, podendo ser objeto de anulação pela própria Administração, ainda que tenha produzido efeitos, ressalvada a análise de eventuais consequências para terceiros de boa-fé.' },
+      { id: 'B', texto: 'É inexistente juridicamente, não produzindo qualquer efeito desde sua origem, independentemente da aparência de legalidade ou da confiança gerada nos administrados.' },
+      { id: 'C', texto: 'Permanece válido, uma vez que a ausência de competência não compromete a eficácia do ato quando presentes os demais requisitos, especialmente nos casos em que há atendimento ao interesse público.' },
+      { id: 'D', texto: 'Deve ser automaticamente convalidado, pois a presença de finalidade pública e motivação adequada supre eventual irregularidade quanto à competência do agente que o praticou.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O vício de competência é sanável (convalidável), mas a Administração pode anular o ato, ressalvando os efeitos perante terceiros de boa-fé.',
+      incorretas: {
+        B: 'O ato existe e produz efeitos até ser anulado; não é inexistente.',
+        C: 'A competência é requisito de validade; sua ausência compromete o ato.',
+        D: 'A convalidação é possível, mas não automática.'
+      },
+      conceitoCobrado: 'Vício de competência e anulação',
+      pegadinha: 'Achar que o ato é inexistente ou que a convalidação é automática.',
+      comoApareceEmConcurso: 'Cenário aplicado sobre vício de competência.'
+    },
+    tags: ['competência', 'anulação', 'convalidação']
+  },
+  {
+    id: 'Q-PDF-DA-19-004',
+    idOriginal: 'Q4650034',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-19',
+    subtema: 'Atributos do ato administrativo — presunção de legitimidade',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4650034' },
+    enunciado: 'Durante a análise de um processo administrativo, o Oficial de Administração verificou que determinado ato foi praticado por agente público no exercício de suas atribuições, apresentou finalidade de atendimento ao interesse público, observou a forma prevista em lei e produziu efeitos independentemente da concordância do particular atingido. Considerando o conceito, os requisitos e os atributos dos atos administrativos, assinale a alternativa correta.',
+    alternativas: [
+      { id: 'A', texto: 'A presunção de legitimidade confere ao ato administrativo presunção relativa de conformidade com a lei e com os fatos que lhe deram fundamento, sem afastar a possibilidade de controle administrativo ou judicial.' },
+      { id: 'B', texto: 'A imperatividade constitui atributo dos atos administrativos que impõem obrigações ao particular, enquanto a autoexecutoriedade permite à Administração executar diretamente suas decisões sempre que a medida se mostrar necessária à satisfação do interesse público.' },
+      { id: 'C', texto: 'A competência, a finalidade, a forma, o motivo e o objeto constituem atributos do ato administrativo, enquanto a presunção de legitimidade e a autoexecutoriedade são seus requisitos de validade.' },
+      { id: 'D', texto: 'A exigência de concordância do particular para a produção de efeitos constitui requisito indispensável dos atos administrativos, em razão da necessidade de preservação da autonomia da vontade.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: true,
+    explicacao: {
+      correta: 'A presunção de legitimidade é relativa (iuris tantum): o ato se presume válido até prova em contrário, sem afastar o controle.',
+      incorretas: {
+        B: 'A definição de imperatividade e autoexecutoriedade está correta em tese, mas a alternativa A é mais precisa e não contém generalização. (Gabarito inferido — conferir.)',
+        C: 'Inverte atributos e requisitos.',
+        D: 'A concordância do particular não é requisito.'
+      },
+      conceitoCobrado: 'Presunção de legitimidade',
+      pegadinha: 'Confundir atributos com requisitos ou generalizar a autoexecutoriedade.',
+      comoApareceEmConcurso: 'Cobrança de atributo específico.'
+    },
+    tags: ['presunção de legitimidade', 'atributos']
+  },
+  {
+    id: 'Q-PDF-DA-19-005',
+    idOriginal: 'Q4634589',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-19',
+    subtema: 'Espécies de atos — ordinatório e enunciativo',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4634589' },
+    enunciado: 'Ato administrativo é toda manifestação unilateral de vontade da Administração Pública, que tem por objetivo imediato adquirir, resguardar, transferir, modificar, extinguir direitos ou impor obrigações aos administrados ou a si própria. Assinale a alternativa que apresenta, respectivamente, a espécie dos atos administrativos Portaria de Pessoal e pedido de Certidão Negativa de Débitos solicitada por um cidadão perante o órgão público:',
+    alternativas: [
+      { id: 'A', texto: 'Normativo e Negocial' },
+      { id: 'B', texto: 'Ordinatório e Enunciativo.' },
+      { id: 'C', texto: 'Enunciativo e Normativo.' },
+      { id: 'D', texto: 'Negocial e Ordinatório.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'Portaria de Pessoal é ato ORDINATÓRIO (organiza a Administração). Certidão é ato ENUNCIATIVO (declara uma situação).',
+      incorretas: {
+        A: 'Portaria não é normativa (genérica) e certidão não é negocial.',
+        C: 'Inverte.',
+        D: 'Portaria não é negocial.'
+      },
+      conceitoCobrado: 'Espécies de atos administrativos',
+      pegadinha: 'Confundir ordinatório com normativo ou enunciativo com negocial.',
+      comoApareceEmConcurso: 'Classificação de atos concretos.'
+    },
+    tags: ['espécies de atos', 'ordinatório', 'enunciativo']
+  },
+  {
+    id: 'Q-PDF-DA-19-006',
+    idOriginal: 'Q4286551',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-19',
+    subtema: 'Convalidação — vício de competência sanável',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4286551' },
+    enunciado: 'Na gestão pública de um município, o órgão de controle interno verificou que o servidor público Tércio, apesar de ter obedecido à forma exigida em lei, assinou um ato no lugar do servidor público Osvaldo, seu superior imediato. Observou-se também que Osvaldo não detém competência exclusiva para a assinatura desse ato, além de não se vislumbrar prejuízo ao interesse público e a terceiros. Para que tal ato permaneça no ordenamento jurídico daquele município, ele será',
+    alternativas: [
+      { id: 'A', texto: 'anulado, sem efeitos retroativos.' },
+      { id: 'B', texto: 'revogado, com efeitos retroativos.' },
+      { id: 'C', texto: 'anulado, com efeitos retroativos.' },
+      { id: 'D', texto: 'convalidado, sem efeitos retroativos.' },
+      { id: 'E', texto: 'convalidado, com efeitos retroativos.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O vício de competência (não exclusiva) é sanável; a convalidação produz efeitos retroativos (ex tunc).',
+      incorretas: {
+        A: 'Não é caso de anulação.',
+        B: 'Revogação é por mérito, não por vício.',
+        C: 'Anulação seria possível, mas a convalidação é mais adequada.',
+        D: 'A convalidação tem efeitos retroativos.'
+      },
+      conceitoCobrado: 'Convalidação',
+      pegadinha: 'Confundir convalidação com anulação ou achar que os efeitos são ex nunc.',
+      comoApareceEmConcurso: 'Cenário aplicado sobre vício sanável.'
+    },
+    tags: ['convalidação', 'competência']
+  },
+
+  /* ============================================================
+     DA-20 — Serviços Públicos
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-20-001',
+    idOriginal: 'Q4539178',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-20',
+    subtema: 'Conceito de serviço público — concessão e permissão',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539178' },
+    enunciado: 'Os serviços públicos, enquanto atividades destinadas à satisfação de necessidades coletivas, ocupam posição central no direito administrativo, sendo regidos por um conjunto de normas e diretrizes que asseguram sua adequada prestação, como a continuidade, universalidade, eficiência e modicidade. A disciplina jurídica do tema, delineada pela Constituição Federal de 1988 e pela legislação infraconstitucional, estabelece direitos dos usuários e deveres do poder público, conformando um regime jurídico próprio que busca equilibrar interesse público e garantias individuais. Considerando esse contexto normativo e doutrinário sobre os serviços públicos, analise as afirmativas a seguir. I. No tocante ao conceito de serviço público, a doutrina aponta que ele é composto de três elementos ou critérios: o orgânico ou subjetivo; o formal; e o material. II. A concessão de serviço público consiste na delegação de sua prestação, feita pelo poder concedente, mediante licitação, na modalidade concorrência ou diálogo competitivo, à pessoa jurídica ou consórcio de empresas que demonstre capacidade para seu desempenho, por sua conta e risco e por prazo determinado. III. A permissão de serviço público transfere ao particular a titularidade do serviço, que passa a ser exercido em nome próprio. Está correto o que se afirma em',
+    alternativas: [
+      { id: 'A', texto: 'I, II e III.' },
+      { id: 'B', texto: 'II, apenas.' },
+      { id: 'C', texto: 'I e II, apenas.' },
+      { id: 'D', texto: 'I e III, apenas.' },
+      { id: 'E', texto: 'II e III, apenas.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'I está correta: a doutrina aponta os elementos orgânico, formal e material. II está correta: a concessão é delegação mediante licitação (concorrência ou diálogo competitivo). III está errada: a permissão não transfere a titularidade; o particular executa em nome próprio, mas a titularidade permanece com o Estado.',
+      incorretas: {
+        A: 'III está errada.',
+        B: 'I também está correta.',
+        D: 'III está errada.',
+        E: 'III está errada.'
+      },
+      conceitoCobrado: 'Serviço público — concessão e permissão',
+      pegadinha: 'Achar que a permissão transfere titularidade.',
+      comoApareceEmConcurso: 'Análise de múltiplas assertivas sobre serviço público.'
+    },
+    tags: ['serviço público', 'concessão', 'permissão']
+  },
+
+  /* ============================================================
+     DA-21 — Licitações e Contratos Administrativos
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-21-001',
+    idOriginal: 'Q4552303',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Sistema de Registro de Preços (SRP)',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4552303' },
+    enunciado: 'Determinada prefeitura, ao utilizar o Sistema de Registro de Preços (SRP) para adquirir materiais de escritório. Assinale a alternativa correta:',
+    alternativas: [
+      { id: 'A', texto: 'fica obrigada a realizar a contratação.' },
+      { id: 'B', texto: 'visa a contratações futuras.' },
+      { id: 'C', texto: 'pode utilizar ata de registro de preços com validade superior a dois anos.' },
+      { id: 'D', texto: 'impede a aquisição parcelada.' },
+      { id: 'E', texto: 'busca utilizar quaisquer modalidades licitatórias.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O SRP visa a contratações futuras, sem obrigar a Administração a contratar.',
+      incorretas: {
+        A: 'A Administração não é obrigada a contratar.',
+        C: 'A ata tem validade de 1 ano, prorrogável por 1 ano.',
+        D: 'O SRP não impede aquisição parcelada.',
+        E: 'O SRP não se aplica a qualquer modalidade.'
+      },
+      conceitoCobrado: 'Sistema de Registro de Preços',
+      pegadinha: 'Achar que o SRP obriga a contratar ou que a validade é superior a 2 anos.',
+      comoApareceEmConcurso: 'Cobrança de característica do SRP.'
+    },
+    tags: ['SRP', 'registro de preços']
+  },
+  {
+    id: 'Q-PDF-DA-21-002',
+    idOriginal: 'Q4539131',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Adjudicação — ato de atribuição do objeto',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539131' },
+    enunciado: 'No âmbito do pregão eletrônico realizado em plataformas de compras públicas federais, após a fase de análise de habilitação do licitante vencedor e inexistindo recursos administrativos ou após o julgamento destes, ocorre o ato formal pelo qual o objeto da licitação é atribuído ao licitante vencedor, indicando que este está apto a celebrar contrato com a Administração Pública. Esse ato administrativo denomina-se:',
+    alternativas: [
+      { id: 'A', texto: 'homologação.' },
+      { id: 'B', texto: 'adjudicação.' },
+      { id: 'C', texto: 'ratificação.' },
+      { id: 'D', texto: 'habilitação.' },
+      { id: 'E', texto: 'classificação.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A ADJUDICAÇÃO é o ato que atribui o objeto ao vencedor.',
+      incorretas: {
+        A: 'A homologação é posterior e confirma o procedimento.',
+        C: 'Ratificação é ato de convalidação.',
+        D: 'Habilitação é fase anterior.',
+        E: 'Classificação é fase de julgamento.'
+      },
+      conceitoCobrado: 'Adjudicação',
+      pegadinha: 'Confundir adjudicação com homologação.',
+      comoApareceEmConcurso: 'Identificação do ato na sequência licitatória.'
+    },
+    tags: ['adjudicação', 'pregão']
+  },
+  {
+    id: 'Q-PDF-DA-21-003',
+    idOriginal: 'Q4433340',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Lei 13.303/2016 — licitações em estatais',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4433340' },
+    enunciado: 'Uma sociedade de economia mista estadual, responsável pela gestão de tecnologia da informação, precisa contratar serviços especializados de manutenção de seus equipamentos, adquirir novos computadores e contratar um consultor renomado para treinamento de seus funcionários. A empresa é regida pela Lei n.º 13.303/2016 (Lei de Responsabilidade das Estatais), que estabelece regras específicas para licitações e contratos no âmbito das empresas públicas e sociedades de economia mista. Considerando as disposições da Lei n.º 13.303/2016 sobre licitações e contratos, assinale a alternativa correta.',
+    alternativas: [
+      { id: 'A', texto: 'A empresa está integralmente dispensada de realizar licitação para todas as suas contratações, por se submeter ao regime jurídico de direito privado.' },
+      { id: 'B', texto: 'As licitações realizadas pela sociedade de economia mista seguem rigorosamente as mesmas regras da Lei n.º 14.133/2021, aplicável à administração direta.' },
+      { id: 'C', texto: 'A Lei n.º 13.303/2016 veda a elaboração de regulamentos internos de licitação pelas estatais, que devem seguir integralmente os procedimentos da administração direta.' },
+      { id: 'D', texto: 'As sociedades de economia mista, por possuírem capital público e privado, estão totalmente excluídas da obrigatoriedade de licitar, podendo contratar livremente.' },
+      { id: 'E', texto: 'A Lei n.º 13.303/2016 estabelece a obrigatoriedade de licitação para obras, serviços, compras e alienações, admitindo hipóteses legais de dispensa e inexigibilidade.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A Lei 13.303/2016 obriga as estatais a licitar, com hipóteses de dispensa e inexigibilidade.',
+      incorretas: {
+        A: 'Não há dispensa geral.',
+        B: 'A Lei 13.303 tem regras próprias, não segue integralmente a 14.133.',
+        C: 'A lei permite regulamentos internos.',
+        D: 'Não estão excluídas da obrigação de licitar.'
+      },
+      conceitoCobrado: 'Licitações em estatais (Lei 13.303/2016)',
+      pegadinha: 'Achar que estatais não precisam licitar ou que seguem a 14.133 integralmente.',
+      comoApareceEmConcurso: 'Cobrança do regime licitatório das estatais.'
+    },
+    tags: ['Lei 13.303/2016', 'estatais', 'licitação']
+  },
+  {
+    id: 'Q-PDF-DA-21-004',
+    idOriginal: 'Q4539130',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Gestão x fiscalização de contratos',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539130' },
+    enunciado: 'A Lei nº 14.133/2021 estabelece que a execução do contrato deve ser acompanhada e fiscalizada por representantes da Administração, designados formalmente, de modo a assegurar que os resultados pretendidos pelo contrato sejam alcançados. Considerando os conceitos de gestão e fiscalização de contratos administrativos, assinale a alternativa correta.',
+    alternativas: [
+      { id: 'A', texto: 'A fiscalização contratual possui natureza predominantemente estratégica e envolve decisões relacionadas à alteração de cláusulas contratuais, reequilíbrio econômico-financeiro e aplicação de sanções administrativas.' },
+      { id: 'B', texto: 'A gestão contratual consiste na verificação direta da execução do objeto contratado, cabendo ao gestor registrar ocorrências técnicas, atestar a conformidade da prestação do serviço e elaborar relatórios de execução.' },
+      { id: 'C', texto: 'A distinção entre gestor e fiscal de contrato decorre da necessidade de separar funções administrativas e técnicas na execução contratual.' },
+      { id: 'D', texto: 'A atuação do fiscal do contrato tem o enfoque na observação da execução do objeto contratado, sendo incomum a comunicação de irregularidades à autoridade competente.' },
+      { id: 'E', texto: 'A gestão contratual, nos termos da Lei nº 14.133/2021, concentra-se na fase de planejamento da contratação, não abrangendo o acompanhamento da execução contratual.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A distinção entre gestor e fiscal decorre da separação entre funções administrativas (gestão) e técnicas (fiscalização).',
+      incorretas: {
+        A: 'A fiscalização é técnica, não estratégica.',
+        B: 'A gestão é administrativa, não verificação direta.',
+        D: 'O fiscal deve comunicar irregularidades.',
+        E: 'A gestão abrange toda a execução.'
+      },
+      conceitoCobrado: 'Gestão e fiscalização de contratos',
+      pegadinha: 'Inverter as funções de gestor e fiscal.',
+      comoApareceEmConcurso: 'Cobrança da distinção entre os papéis.'
+    },
+    tags: ['gestão contratual', 'fiscalização']
+  },
+  {
+    id: 'Q-PDF-DA-21-005',
+    idOriginal: 'Q4802769',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Impedimento de licitar x declaração de inidoneidade',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4802769' },
+    enunciado: 'No contexto da Lei nº 14.133/2021, o impedimento de licitar e contratar produz efeitos perante todos os entes federativos, tal como a declaração de inidoneidade.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. O impedimento de licitar (art. 156, III) tem efeitos restritos ao ente que aplicou a sanção; a declaração de inidoneidade é que tem efeitos nacional.',
+      incorretas: {},
+      conceitoCobrado: 'Sanções administrativas — extensão dos efeitos',
+      pegadinha: 'Igualar os efeitos do impedimento e da inidoneidade.',
+      comoApareceEmConcurso: 'Cobrança da distinção entre sanções.'
+    },
+    tags: ['impedimento', 'inidoneidade']
+  },
+  {
+    id: 'Q-PDF-DA-21-006',
+    idOriginal: 'Q4654353',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Prazo de contratos de serviços contínuos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4654353' },
+    enunciado: 'Os Contratos Administrativos assinados após a realização de uma licitação pública para contratação de serviços contínuos, pode apresentar prazo inicial máximo e o prazo total máximo de:',
+    alternativas: [
+      { id: 'A', texto: 'Um ano e três anos' },
+      { id: 'B', texto: 'Dos anos e quatro anos.' },
+      { id: 'C', texto: 'Três anos e cinco anos.' },
+      { id: 'D', texto: 'Cinco anos e dez anos.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A Lei 14.133/2021 permite prazo inicial de 5 anos, prorrogável por até 10 anos, para serviços contínuos.',
+      incorretas: {
+        A: 'Prazos menores que o legal.',
+        B: 'Prazos menores que o legal.',
+        C: 'Prazos menores que o legal.'
+      },
+      conceitoCobrado: 'Prazo de contratos de serviços contínuos',
+      pegadinha: 'Confundir com prazos de outras hipóteses.',
+      comoApareceEmConcurso: 'Cobrança de prazo legal.'
+    },
+    tags: ['prazo', 'serviços contínuos']
+  },
+  {
+    id: 'Q-PDF-DA-21-007',
+    idOriginal: 'Q4596269',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Supremacia do interesse público em contratos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4596269' },
+    enunciado: 'Na administração pública, os contratos administrativos são instrumentos essenciais para a execução das atividades públicas, regulados por princípios específicos que os diferenciam dos contratos privados. Nessa perspectiva, a interpretação dos contratos administrativos deve considerar os princípios constitucionais e legais que regem a Administração Pública. Nesse sentido, é fundamental compreender como os princípios da legalidade, impessoalidade e moralidade influenciam a execução desses contratos. Com base nas informações supracitadas, pergunta-se: Qual o princípio abaixo listado é considerado o mais relevante na interpretação dos contratos administrativos?',
+    alternativas: [
+      { id: 'A', texto: 'Princípio da soberania da vontade do contratado sobre o executor.' },
+      { id: 'B', texto: 'Princípio da subjetividade dos efeitos do contrato (e-social), sem prejuízo ao órgão interessado.' },
+      { id: 'C', texto: 'Princípio da livre concorrência e escolha do que melhor convém ao ente público.' },
+      { id: 'D', texto: 'Princípio da finalidade pública do contrato, visando a paz e a ordem jurídica que regula a administração pública do Brasil.' },
+      { id: 'E', texto: 'Princípio da supremacia do interesse público.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A supremacia do interesse público é o princípio basilar dos contratos administrativos, justificando as cláusulas exorbitantes.',
+      incorretas: {
+        A: 'A vontade do contratado não soberana.',
+        B: 'A subjetividade não é princípio.',
+        C: 'A livre concorrência é princípio licitatório, não interpretativo do contrato.',
+        D: 'A finalidade pública é relevante, mas a supremacia é o princípio central.'
+      },
+      conceitoCobrado: 'Supremacia do interesse público',
+      pegadinha: 'Confundir com outros princípios.',
+      comoApareceEmConcurso: 'Cobrança do princípio informador dos contratos.'
+    },
+    tags: ['supremacia do interesse público', 'contratos']
+  },
+  {
+    id: 'Q-PDF-DA-21-008',
+    idOriginal: 'Q4494315',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Contrato administrativo x convênio',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4494315' },
+    enunciado: 'Após a homologação de licitação para fornecimento de serviços especializados, o órgão público celebra um instrumento jurídico com o vencedor, definindo obrigações recíprocas, prazos e valores. Em contraste, para parcerias entre dois entes públicos na realização de ações conjuntas de interesse coletivo, com transferência de recursos, utiliza-se instrumento diverso, não decorrente de licitação. Assinale a alternativa que identifica o instrumento utilizado no primeiro caso.',
+    alternativas: [
+      { id: 'A', texto: 'Convênio.' },
+      { id: 'B', texto: 'Contrato administrativo.' },
+      { id: 'C', texto: 'Termo de cooperação.' },
+      { id: 'D', texto: 'Ordem de serviço isolada.' },
+      { id: 'E', texto: 'Acordo de parceria.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O instrumento celebrado após licitação, com obrigações recíprocas, é o CONTRATO ADMINISTRATIVO. O convênio é para parcerias sem fim lucrativo.',
+      incorretas: {
+        A: 'Convênio é para parcerias, não para compras.',
+        C: 'Termo de cooperação é similar ao convênio.',
+        D: 'Ordem de serviço não é instrumento contratual.',
+        E: 'Acordo de parceria é outro instituto.'
+      },
+      conceitoCobrado: 'Contrato administrativo x convênio',
+      pegadinha: 'Confundir contrato com convênio.',
+      comoApareceEmConcurso: 'Distinção entre instrumentos.'
+    },
+    tags: ['contrato administrativo', 'convênio']
+  },
+  {
+    id: 'Q-PDF-DA-21-009',
+    idOriginal: 'Q4592807',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Adiantamento contratual — requisitos',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4592807' },
+    enunciado: 'Planejando a contratação direta de uma empresa para desenvolver um módulo de segurança cibernética para os municípios consorciados, um consórcio público intermunicipal, submetido à Lei nº 14.133/2021, deparou-se com uma exigência: a liberação antecipada de 30% do valor para custear licenças de softwares estrangeiros essenciais ao projeto. Sabendo-se que o fornecedor condicionou a prestação à satisfação dessa exigência, sob pena de não realização do serviço, o Agente de Contratação responsável deve orientar que:',
+    alternativas: [
+      { id: 'A', texto: 'Não seja liberada a quantia, haja vista que a antecipação de pagamentos é vedada de forma absoluta na nova lei de licitações.' },
+      { id: 'B', texto: 'Seja realizado o adiantamento, pois despesas tecnológicas possuem natureza discricionária e dispensam aval formal do órgão.' },
+      { id: 'C', texto: 'A liberação seja condicionada à prévia justificativa no processo e à previsão expressa no instrumento formal de contratação.' },
+      { id: 'D', texto: 'Seja autorizada a antecipação financeira sob a premissa legal de exigência compulsória de garantia real no valor de 100%.' },
+      { id: 'E', texto: 'Não seja realizada a transação pecuniária, porquanto adiantamentos contratuais limitam-se legalmente ao patamar de até 10%.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O adiantamento é permitido, mas exige justificativa prévia e previsão no contrato, conforme a Lei 14.133/2021.',
+      incorretas: {
+        A: 'Não é vedado de forma absoluta.',
+        B: 'Não dispensa aval formal.',
+        D: 'Não há exigência de garantia real de 100%.',
+        E: 'Não há limite legal de 10%.'
+      },
+      conceitoCobrado: 'Adiantamento contratual',
+      pegadinha: 'Achar que o adiantamento é vedado ou que tem limite de 10%.',
+      comoApareceEmConcurso: 'Cenário aplicado sobre condições do adiantamento.'
+    },
+    tags: ['adiantamento', 'contrato']
+  },
+  {
+    id: 'Q-PDF-DA-21-010',
+    idOriginal: 'Q4460374',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Inexigibilidade x dispensa — associação',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4460374' },
+    enunciado: 'Nos termos da Lei nº 14.133/2021 — Lei de Licitações e Contratos Administrativos, sobre inexigibilidade e dispensa de licitação, relacionar as colunas e assinalar a sequência correspondente. (1) Dispensável. (2) Inexigível. ( ) Aquisição ou locação de imóvel cujas características de instalações e de localização tornem necessária sua escolha. ( ) Para contratação que mantenha todas as condições definidas em edital de licitação realizada há menos de um ano, quando se verificar que naquela licitação não surgiram licitantes interessados. ( ) Objetos que devam ou possam ser contratados por meio de credenciamento.',
+    alternativas: [
+      { id: 'A', texto: '1 - 2 - 2.' },
+      { id: 'B', texto: '1 - 2 - 1.' },
+      { id: 'C', texto: '2 - 1 - 1.' },
+      { id: 'D', texto: '2 - 1 - 2.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'Aquisição de imóvel com características especiais é INEXIGÍVEL (2). Licitação deserta com condições mantidas é DISPENSÁVEL (1). Credenciamento é DISPENSÁVEL (1). Sequência: 2 - 1 - 1.',
+      incorretas: {
+        A: 'Inverte a primeira.',
+        B: 'Inverte a primeira.',
+        D: 'Inverte a terceira.'
+      },
+      conceitoCobrado: 'Dispensa x inexigibilidade',
+      pegadinha: 'Confundir as hipóteses.',
+      comoApareceEmConcurso: 'Associação de hipóteses legais.'
+    },
+    tags: ['dispensa', 'inexigibilidade', 'credenciamento']
+  },
+  {
+    id: 'Q-PDF-DA-21-011',
+    idOriginal: 'Q4311373',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Contratos administrativos — cláusulas exorbitantes',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4311373' },
+    enunciado: 'Referindo-se aos contratos administrativos, analise as sentenças: I - Os contratos administrativos podem ser entendidos como acordos celebrados pela Administração Pública com o objetivo de atender ao interesse público por meio de fornecimentos de bens, serviços, locações e obras de um particular. II - Os contratos administrativos possuem cláusulas reguladas pelos preceitos de direito público, e a eles são aplicados, supletivamente, os princípios da teoria geral dos contratos e as disposições de direito privado. III - Os contratos administrativos são regidos pelo direito administrativo, ostentam o caráter público e possuem como marca fundamental a existência da Administração Pública em um dos polos da relação jurídica. IV - O regime jurídico dos contratos administrativos confere prerrogativas à Administração, denominado pela doutrina de cláusulas exorbitantes – consubstanciadas no princípio da supremacia do interesse privado sobre o público. V - A Administração Pública poderá alterar ou extinguir um contrato administrativo; aplicar sanções administrativas, ocupar provisoriamente bens móveis e imóveis e utilizar pessoal e serviços vinculados ao objeto do contrato. Após a análise, pode-se afirmar:',
+    alternativas: [
+      { id: 'A', texto: 'Somente as sentenças II, III, IV e V estão corretas.' },
+      { id: 'B', texto: 'Somente as sentenças I, II, III e V estão corretas.' },
+      { id: 'C', texto: 'Somente as sentenças III, IV e V estão corretas.' },
+      { id: 'D', texto: 'As sentenças I, II, III, IV e V estão corretas.' },
+      { id: 'E', texto: 'As sentenças I, II, III, IV e V estão incorretas.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'I, II, III e V estão corretas. IV está errada porque fala em "supremacia do interesse privado sobre o público" — o correto é o inverso.',
+      incorretas: {
+        A: 'IV está errada.',
+        C: 'I e II também estão corretas.',
+        D: 'IV está errada.',
+        E: 'A maioria está correta.'
+      },
+      conceitoCobrado: 'Contratos administrativos e cláusulas exorbitantes',
+      pegadinha: 'Inverter a supremacia (privado sobre público).',
+      comoApareceEmConcurso: 'Análise de múltiplas assertivas.'
+    },
+    tags: ['contratos', 'cláusulas exorbitantes']
+  },
+  {
+    id: 'Q-PDF-DA-21-012',
+    idOriginal: 'Q4539155',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Fiscalização e controle de contratações',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539155' },
+    enunciado: 'A adequada fiscalização das licitações e contratos administrativos constitui elemento essencial para a preservação do interesse público, na medida em que permite não apenas a verificação da legalidade dos atos praticados, mas também a avaliação de sua economicidade, eficiência e aderência às finalidades públicas. Diante do exposto, a respeito do controle das contratações públicas nos termos da Lei nº 14.133/2021, analise as afirmativas a seguir. I. As contratações públicas deverão submeter-se a práticas contínuas e permanentes de gestão de riscos e de controle preventivo, inclusive mediante adoção de recursos de tecnologia da informação, além de estar em subordinadas ao controle social. II. Na fiscalização de controle sobre as contratações públicas serão adotados procedimentos objetivos e imparciais e elaboração de relatórios tecnicamente fundamentados, baseados exclusivamente nas evidências obtidas e organizados de acordo com as normas de auditoria do respectivo órgão de controle, de modo a evitar que interesses pessoais e interpretações tendenciosas interfiram na apresentação e no tratamento dos fatos levantados. III. Ao ser intimado da ordem de suspensão cautelar do processo licitatório pelo Tribunal de Contas, o órgão ou a entidade deverá, no prazo de dez dias úteis, admitida a prorrogação, informar as medidas adotadas para cumprimento da decisão, prestar todas as informações cabíveis e proceder à apuração de responsabilidade, se for o caso. Está correto o que se afirma em',
+    alternativas: [
+      { id: 'A', texto: 'I, II e III.' },
+      { id: 'B', texto: 'III, apenas.' },
+      { id: 'C', texto: 'I e II, apenas.' },
+      { id: 'D', texto: 'I e III, apenas.' },
+      { id: 'E', texto: 'II e III, apenas.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'Todas as afirmativas estão corretas: gestão de riscos e controle preventivo (I); procedimentos objetivos e imparciais (II); prazo de 10 dias úteis para informar medidas após suspensão cautelar (III).',
+      incorretas: {
+        B: 'I e II também estão corretas.',
+        C: 'III também está correta.',
+        D: 'II também está correta.',
+        E: 'I também está correta.'
+      },
+      conceitoCobrado: 'Controle das contratações',
+      pegadinha: 'Excluir alguma assertiva correta.',
+      comoApareceEmConcurso: 'Análise de múltiplas assertivas sobre controle.'
+    },
+    tags: ['controle', 'fiscalização', 'gestão de riscos']
+  },
+  {
+    id: 'Q-PDF-DA-21-013',
+    idOriginal: 'Q4556215',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Pré-qualificação',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4556215' },
+    enunciado: 'É o procedimento seletivo prévio à licitação, convocado por meio de edital, destinado à análise das condições de habilitação, total ou parcial, dos interessados ou do objeto. Esse conceito refere-se',
+    alternativas: [
+      { id: 'A', texto: 'à manifestação de interesse.' },
+      { id: 'B', texto: 'ao credenciamento.' },
+      { id: 'C', texto: 'à pré-qualificação.' },
+      { id: 'D', texto: 'ao diálogo competitivo.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A PRÉ-QUALIFICAÇÃO é o procedimento seletivo prévio, por edital, para analisar habilitação ou objeto.',
+      incorretas: {
+        A: 'Manifestação de interesse é outro procedimento.',
+        B: 'Credenciamento é para contratações paralelas e contínuas.',
+        D: 'Diálogo competitivo é modalidade de licitação.'
+      },
+      conceitoCobrado: 'Pré-qualificação',
+      pegadinha: 'Confundir com credenciamento ou manifestação de interesse.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['pré-qualificação', 'procedimentos auxiliares']
+  },
+  {
+    id: 'Q-PDF-DA-21-014',
+    idOriginal: 'Q4539055',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Princípios na licitação — segregação de funções, motivação e celeridade',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539055' },
+    enunciado: 'José iniciou recentemente suas atividades como assistente administrativo em uma autarquia e, inicialmente, foi designado para atuar em diferentes etapas do procedimento licitatório, incluindo a elaboração do termo de referência, a condução da fase interna do processo, a análise das propostas e a emissão de parecer técnico. Posteriormente, no desempenho dessas atribuições, deixou de registrar formalmente no processo administrativo as razões concretas e os fundamentos jurídicos que justificavam a contratação. Por fim, diante do acúmulo de tarefas, passou a conduzir suas atividades em ritmo próprio, ainda que isso implicasse atrasos no andamento processual. Considerando a situação hipotética apresentada, assinale a alternativa que indica, correta e respectivamente, os princípios infringidos.',
+    alternativas: [
+      { id: 'A', texto: 'Publicidade; legalidade; e eficiência.' },
+      { id: 'B', texto: 'Segregação de funções; motivação; e celeridade.' },
+      { id: 'C', texto: 'Impessoalidade; equilíbrio institucional; e publicidade.' },
+      { id: 'D', texto: 'Eficiência; transparência operacional; e vinculação ao edital.' },
+      { id: 'E', texto: 'Vinculação ao edital; boa gestão administrativa; e moralidade.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'José atuou em várias etapas (segregação de funções), não motivou (motivação) e causou atrasos (celeridade).',
+      incorretas: {
+        A: 'Não são os princípios mais diretamente violados.',
+        C: 'Não corresponde.',
+        D: 'Não corresponde.',
+        E: 'Não corresponde.'
+      },
+      conceitoCobrado: 'Princípios aplicados à licitação',
+      pegadinha: 'Confundir os princípios violados.',
+      comoApareceEmConcurso: 'Cenário aplicado com múltiplas condutas.'
+    },
+    tags: ['segregação de funções', 'motivação', 'celeridade']
+  },
+  /* ============================================================
+     LOTE PDF — QConcursos / Gran Cursos
+     DA-23 (LAI) e DA-24
+     ============================================================ */
+
+  /* ============================================================
+     DA-24 — Improbidade Administrativa
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-24-001',
+    idOriginal: 'Q4494252',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-24',
+    subtema: 'Improbidade — elemento subjetivo (dolo)',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4494252' },
+    enunciado: 'A Lei n.º 14.230/2021 promoveu alteração relevante na Lei de Improbidade Administrativa no que se refere ao elemento subjetivo exigido para a configuração dos atos previstos nos arts. 9.º, 10 e 11 da Lei n.º 8.429/1992. Acerca do elemento subjetivo na configuração do ato de improbidade administrativa, conforme a redação vigente da lei, assinale a alternativa correta.',
+    alternativas: [
+      { id: 'A', texto: 'Os atos de improbidade que causam lesão ao erário (art. 10) ainda admitem a modalidade culposa, pois a Lei n.º 14.230/2021 manteve essa ressalva apenas para os casos em que o dano ao patrimônio público seja de pequena monta.' },
+      { id: 'B', texto: 'Configura-se o dolo exigido pela Lei n.º 8.429/1992 pela simples voluntariedade do agente na prática do ato, independentemente do resultado ilícito que tenha pretendido alcançar.' },
+      { id: 'C', texto: 'A Lei n.º 14.230/2021 manteve a responsabilidade objetiva da pessoa jurídica de direito privado que se beneficia de ato de improbidade, exigindo dolo apenas para o agente público autor do ato.' },
+      { id: 'D', texto: 'O dolo exigido para a configuração de improbidade administrativa é o dolo específico de causar dano ao erário ou de obter vantagem indevida, não sendo suficiente a mera vontade de praticar a conduta tipificada.' },
+      { id: 'E', texto: 'Para fins de configuração do ato de improbidade administrativa, considera-se dolo a vontade livre e consciente de alcançar o resultado ilícito tipificado nos arts. 9º, 10 e 11 da Lei n.º 8.429/1992, não bastando a voluntariedade do agente na prática do ato.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A Lei 14.230/2021 exige dolo específico: a vontade livre e consciente de alcançar o resultado ilícito tipificado, não bastando a mera voluntariedade.',
+      incorretas: {
+        A: 'A modalidade culposa foi eliminada.',
+        B: 'A simples voluntariedade não configura dolo.',
+        C: 'A responsabilidade objetiva foi afastada.',
+        D: 'O dolo não se limita à intenção de causar dano ou obter vantagem; abrange a vontade de realizar a conduta ilícita.'
+      },
+      conceitoCobrado: 'Dolo na improbidade',
+      pegadinha: 'Confundir dolo específico com voluntariedade ou com dolo genérico.',
+      comoApareceEmConcurso: 'Cobrança da alteração legislativa de 2021.'
+    },
+    tags: ['improbidade', 'dolo', 'Lei 14.230/2021']
+  },
+  {
+    id: 'Q-PDF-DA-24-002',
+    idOriginal: 'Q4539131',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-24',
+    subtema: 'Improbidade — natureza das sanções',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539131' },
+    enunciado: 'As sanções previstas na Lei nº 8.429/1992 para os atos de improbidade administrativa possuem natureza cível e política, não se confundindo com as sanções de natureza penal, embora possam coexistir com responsabilizações nas esferas criminal e disciplinar.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. As sanções da Lei de Improbidade são de natureza cível e política (perda de função, suspensão de direitos políticos, multa), distintas das penais, mas podem ser cumuladas com estas.',
+      incorretas: {},
+      conceitoCobrado: 'Natureza das sanções por improbidade',
+      pegadinha: 'Achar que as sanções são penais ou que excluem as demais esferas.',
+      comoApareceEmConcurso: 'Cobrança da independência das instâncias.'
+    },
+    tags: ['improbidade', 'sanções']
+  },
+  {
+    id: 'Q-PDF-DA-24-003',
+    idOriginal: 'Q4366701',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-24',
+    subtema: 'Improbidade — frustração de concurso público',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4366701' },
+    enunciado: 'Considere a situação hipotética a seguir: Hércules, prefeito do município de Nova Andrômeda, monta esquema destinado a frustrar o caráter concorrencial de concurso público, com vistas a favorecer pessoas de sua família. Sobre a situação, é CORRETO afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'Hércules praticou ato de improbidade que causa lesão ao erário, estando sujeito a perda da função pública, suspensão dos direitos políticos até 12 anos, pagamento de multa civil equivalente ao valor do dano e proibição de contratar com o poder público ou de receber benefícios ou incentivos fiscais ou creditícios, direta ou indiretamente, ainda que por intermédio de pessoa jurídica da qual seja sócio majoritário, pelo prazo não superior a 12 anos.' },
+      { id: 'B', texto: 'Hércules praticou ato de improbidade que atenta contra os princípios da Administração Pública, estando sujeito ao pagamento de multa civil de até 24 vezes o valor da sua remuneração e proibição de contratar com o poder público ou de receber benefícios ou incentivos fiscais ou creditícios, direta ou indiretamente, ainda que por intermédio de pessoa jurídica da qual seja sócio majoritário, pelo prazo não superior a 4 anos.' },
+      { id: 'C', texto: 'Hércules praticou ato de improbidade que importa em enriquecimento ilícito, estando sujeito a perda da função pública, suspensão dos direitos políticos até 12 anos, pagamento de multa civil equivalente ao valor do dano e proibição de contratar com o poder público ou de receber benefícios ou incentivos fiscais ou creditícios, direta ou indiretamente, ainda que por intermédio de pessoa jurídica da qual seja sócio majoritário, pelo prazo não superior a 12 anos.' },
+      { id: 'D', texto: 'Hércules praticou ato de improbidade que atenta contra os princípios da Administração Pública, estando sujeito a perda da função pública, suspensão dos direitos políticos até 12 anos, pagamento de multa civil equivalente ao valor do dano e proibição de contratar com o poder público ou de receber benefícios ou incentivos fiscais ou creditícios, direta ou indiretamente, ainda que por intermédio de pessoa jurídica da qual seja sócio majoritário, pelo prazo não superior a 12 anos.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: true,
+    explicacao: {
+      correta: 'A frustração de concurso público é ato de improbidade que atenta contra os princípios da Administração (art. 11). As sanções do art. 12, III, são multa de até 24 vezes a remuneração e proibição de contratar por até 4 anos.',
+      incorretas: {
+        A: 'Não há lesão ao erário, mas violação de princípios.',
+        C: 'Não há enriquecimento ilícito.',
+        D: 'As sanções do art. 11 não incluem perda da função ou suspensão de direitos políticos.'
+      },
+      conceitoCobrado: 'Improbidade — frustração de concurso',
+      pegadinha: 'Confundir as modalidades e suas sanções.',
+      comoApareceEmConcurso: 'Cenário aplicado com identificação da modalidade e sanção.'
+    },
+    tags: ['improbidade', 'concurso público', 'sanções']
+  },
+  {
+    id: 'Q-PDF-DA-24-004',
+    idOriginal: 'Q4647785',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-24',
+    subtema: 'Improbidade — perda patrimonial e dolo',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4647785' },
+    enunciado: 'Considerando as disposições da Lei de Improbidade Administrativa, Lei Federal nº 8.429/1992, assinale a alternativa correta.',
+    alternativas: [
+      { id: 'A', texto: 'Consideram-se atos de improbidade administrativa as condutas culposas e dolosas tipificadas na Lei.' },
+      { id: 'B', texto: 'A mera perda patrimonial decorrente da atividade econômica não acarretará improbidade administrativa em qualquer hipótese.' },
+      { id: 'C', texto: 'O exercício de agente público fica condicionado à apresentação de declaração de imposto de renda e proventos de qualquer natureza.' },
+      { id: 'D', texto: 'Configura improbidade a ação ou omissão decorrente de divergência interpretativa da Lei, com base em jurisprudência não pacificada.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A mera perda patrimonial em atividade econômica, sem dolo, não configura improbidade (art. 10, §2º).',
+      incorretas: {
+        A: 'A modalidade culposa foi extinta.',
+        C: 'A declaração de bens é dever, mas não condiciona o exercício.',
+        D: 'Divergência interpretativa com base em jurisprudência não pacificada não configura improbidade (art. 21, §2º).'
+      },
+      conceitoCobrado: 'Improbidade — exclusão de conduta culposa e divergência interpretativa',
+      pegadinha: 'Achar que a culpa ou a divergência interpretativa configuram improbidade.',
+      comoApareceEmConcurso: 'Cobrança das hipóteses de não configuração.'
+    },
+    tags: ['improbidade', 'dolo', 'divergência interpretativa']
+  },
+  {
+    id: 'Q-PDF-DA-24-005',
+    idOriginal: 'Q4364002',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-24',
+    subtema: 'Improbidade — prescrição do ressarcimento',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4364002' },
+    enunciado: 'Acerca das regras prescricionais previstas na Lei nº 8.429/1992, Lei de Improbidade Administrativa, e na Lei nº 8.112/1990, que dispõe a respeito do Regime Jurídico dos Servidores Públicos Civis da União, das autarquias e das fundações públicas federais, julgue os itens a seguir. Nas ações de ressarcimento ao erário fundadas na prática de ato doloso, devidamente tipificado pela lei de improbidade administrativa, não há que se falar em prescrição.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. O STF (Tema 897) firmou que as ações de ressarcimento por ato doloso de improbidade são imprescritíveis.',
+      incorretas: {},
+      conceitoCobrado: 'Prescrição do ressarcimento',
+      pegadinha: 'Achar que há prazo prescricional para ressarcimento doloso.',
+      comoApareceEmConcurso: 'Cobrança do entendimento do STF.'
+    },
+    tags: ['improbidade', 'prescrição', 'ressarcimento']
+  },
+  {
+    id: 'Q-PDF-DA-24-006',
+    idOriginal: 'Q4539440',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-24',
+    subtema: 'Improbidade — responsabilização de terceiros',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539440' },
+    enunciado: 'Com relação à disposição da Lei de Improbidade Administrativa, assinale a alternativa CORRETA.',
+    alternativas: [
+      { id: 'A', texto: 'Sujeitam-se às sanções da lei de improbidade administrativa apenas os atos de improbidade praticados contra o patrimônio de entidades públicas.' },
+      { id: 'B', texto: 'Considera-se ato de improbidade administrativa a conduta que causa lesão ao erário, dolosa ou culposa, omissiva ou comissiva, que enseja perda patrimonial, desvio, apropriação, malbaratamento ou dilapidação dos bens ou haveres das entidades integrantes da organização do Estado.' },
+      { id: 'C', texto: 'As sanções da Lei de Improbidade Administrativa alcançam todos aqueles que, mesmo não sendo agentes públicos, induzam ou concorram para a prática do ato de improbidade.' },
+      { id: 'D', texto: 'Constitui ato de improbidade administrativa deixar de prestar contas quando esteja obrigado a fazê-lo, ainda que não disponha de condições para isso e não tenha a intenção de ocultar irregularidades.' },
+      { id: 'E', texto: 'Independentemente de integrar a administração indireta, estão sujeitos às sanções desta Lei os atos de improbidade praticados contra o patrimônio de entidade privada para cuja criação ou custeio o erário haja concorrido ou concorra no seu patrimônio ou receita atual, limitado o ressarcimento de prejuízos, nesse caso, à repercussão do ilícito sobre a contribuição dos cofres públicos.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: true,
+    explicacao: {
+      correta: 'O art. 3º da Lei 8.429/1992 prevê que as sanções alcançam todos os que induzam ou concorram para o ato de improbidade, mesmo não sendo agentes públicos.',
+      incorretas: {
+        A: 'A lei também protege entidades privadas que recebam recursos públicos.',
+        B: 'A modalidade culposa foi extinta.',
+        D: 'A falta de condições ou a ausência de intenção de ocultar não descaracterizam o ato, mas a lei exige dolo.',
+        E: 'A alternativa também está correta em tese, mas a C é a mais abrangente e direta. (Gabarito inferido — conferir.)'
+      },
+      conceitoCobrado: 'Responsabilização de terceiros',
+      pegadinha: 'Achar que apenas agentes públicos respondem.',
+      comoApareceEmConcurso: 'Cobrança da extensão subjetiva da lei.'
+    },
+    tags: ['improbidade', 'terceiros']
+  },
+  {
+    id: 'Q-PDF-DA-24-007',
+    idOriginal: 'Q4363989',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-24',
+    subtema: 'Improbidade — amizade e conflito de interesses',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4363989' },
+    enunciado: 'Um empregado público de um conselho de classe, lotado no setor de pessoal, decidiu que tentaria influenciar os seus superiores a realizar uma capacitação para os servidores que lidam com licitações do órgão, pois acreditava que poderia melhorar a eficiência dos processos de compras do órgão. Ocorre que, durante a fase de contratação da instituição que faria os cursos para o conselho, o empregado público descobriu que o gerente comercial da instituição era um grande amigo seu. Considerando essa situação hipotética e as normas de regência a respeito do assunto, julgue os itens a seguir. A contratação deve ser interrompida pelo conselho, pois há indícios de improbidade administrativa.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A amizade entre o empregado e o gerente comercial não configura, por si só, indício de improbidade administrativa. Pode gerar suspeição ou impedimento, mas não ato ímprobo.',
+      incorretas: {},
+      conceitoCobrado: 'Improbidade x conflito de interesses',
+      pegadinha: 'Confundir amizade com improbidade.',
+      comoApareceEmConcurso: 'Cenário aplicado sobre a caracterização de improbidade.'
+    },
+    tags: ['improbidade', 'amizade', 'suspeição']
+  },
+
+  /* ============================================================
+     DA-23 — Controle da Administração Pública (LAI)
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-23-001',
+    idOriginal: 'Q4562733',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — sigilos legais específicos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4562733' },
+    enunciado: 'À luz da Lei nº 12.527/2011, que trata do acesso à informação, bem como do decreto que a regulamenta, julgue os itens a seguir. O acesso à informação disciplinado na Lei de Acesso à Informação não se aplica às hipóteses de sigilo previstas na legislação, como fiscal, bancário, de operações e serviços no mercado de capitais, comercial, profissional, industrial e segredo de justiça.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. A LAI não revoga sigilos específicos previstos em outras leis (art. 22 da Lei 12.527/2011).',
+      incorretas: {},
+      conceitoCobrado: 'LAI e sigilos legais',
+      pegadinha: 'Achar que a LAI se sobrepõe a todos os sigilos.',
+      comoApareceEmConcurso: 'Cobrança da relação entre a LAI e outras leis de sigilo.'
+    },
+    tags: ['LAI', 'sigilo']
+  },
+  {
+    id: 'Q-PDF-DA-23-002',
+    idOriginal: 'Q4495780',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — transparência ativa',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4495780' },
+    enunciado: 'No âmbito da Administração Pública municipal, foram adotadas medidas para revisar as práticas de transparência ativa e passiva, com o objetivo de ampliar o acesso da população às informações públicas. Foram implementadas medidas como disponibilização de dados em portal eletrônico, incentivo à participação social e capacitação de servidores para atendimento de solicitações de informação. À luz da Lei nº 12.527/2011, que estabelece diretrizes para assegurar o direito fundamental de acesso à informação, assinale a alternativa INCORRETA:',
+    alternativas: [
+      { id: 'A', texto: 'A divulgação de informações de interesse público depende, em regra, de solicitação prévia do cidadão, não sendo exigida atuação proativa da Administração.' },
+      { id: 'B', texto: 'O incentivo à cultura de transparência e ao controle social integra as diretrizes da Administração para assegurar o acesso à informação.' },
+      { id: 'C', texto: 'A publicidade deve ser compreendida como regra geral na Administração Pública, sendo o sigilo admitido apenas em situações excepcionais devidamente justificadas.' },
+      { id: 'D', texto: 'A utilização de tecnologias da informação constitui instrumento relevante para viabilizar o acesso amplo e eficiente às informações públicas.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A alternativa A está INCORRETA: a LAI prevê a transparência ativa, ou seja, a divulgação proativa de informações de interesse público, independentemente de solicitação.',
+      incorretas: {
+        B: 'Correta.',
+        C: 'Correta.',
+        D: 'Correta.'
+      },
+      conceitoCobrado: 'Transparência ativa',
+      pegadinha: 'Achar que toda informação depende de pedido.',
+      comoApareceEmConcurso: 'Cobrança da diferença entre transparência ativa e passiva.'
+    },
+    tags: ['LAI', 'transparência ativa']
+  },
+  {
+    id: 'Q-PDF-DA-23-003',
+    idOriginal: 'Q4369795',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — LGPD e remuneração de agentes públicos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4369795' },
+    enunciado: 'Um jornal local fez uma matéria a respeito da remuneração de diversos agentes públicos e o desrespeito ao teto constitucional no município. Um biblioteconomista ficou indignado e buscou, no site de seu Conselho de classe, as informações detalhadas acerca dos pagamentos realizados pela autarquia. Não encontrando as informações como desejava, fez um requerimento administrativo com base na Lei de Acesso à Informação. Com base nessa situação hipotética e na legislação de regência, julgue os itens a seguir. A resposta pode negar acesso a informações com base na LGPD, mas somente quanto a dados pessoais, não sendo esse o caso para o tema de remuneração de agentes públicos.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. A LGPD pode fundamentar a negativa de acesso a dados pessoais, mas a remuneração de agentes públicos é informação de interesse público e não pode ser negada com base na LGPD.',
+      incorretas: {},
+      conceitoCobrado: 'LAI x LGPD',
+      pegadinha: 'Achar que a LGPD protege a remuneração de agentes públicos.',
+      comoApareceEmConcurso: 'Cobrança da prevalência do interesse público sobre a proteção de dados.'
+    },
+    tags: ['LAI', 'LGPD', 'remuneração']
+  },
+  {
+    id: 'Q-PDF-DA-23-004',
+    idOriginal: 'Q4369791',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — motivos do pedido de acesso',
+    dificuldade: 1,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4369791' },
+    enunciado: 'Um jornal local fez uma matéria a respeito da remuneração de diversos agentes públicos e o desrespeito ao teto constitucional no município. Um biblioteconomista ficou indignado e buscou, no site de seu Conselho de classe, as informações detalhadas acerca dos pagamentos realizados pela autarquia. Não encontrando as informações como desejava, fez um requerimento administrativo com base na Lei de Acesso à Informação. Com base nessa situação hipotética e na legislação de regência, julgue os itens a seguir. No processamento do pedido de acesso, o Conselho não pode realizar exigências relativas aos motivos determinantes da solicitação de informações.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. A LAI veda a exigência de motivação do pedido (art. 10, §3º).',
+      incorretas: {},
+      conceitoCobrado: 'Desburocratização do acesso',
+      pegadinha: 'Achar que o órgão pode exigir justificativa.',
+      comoApareceEmConcurso: 'Cobrança de vedação expressa.'
+    },
+    tags: ['LAI', 'pedido', 'motivação']
+  },
+  {
+    id: 'Q-PDF-DA-23-005',
+    idOriginal: 'Q4460369',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — entidades privadas sem fins lucrativos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4460369' },
+    enunciado: 'Nos termos da Lei nº 12.527/2011, a obrigação de prestar transparência sobre os recursos públicos recebidos aplica-se às entidades privadas sem fins lucrativos que os recebam. Sobre o alcance dessa obrigação, segundo a Lei de Acesso à Informação, é CORRETO afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'A publicidade refere-se à parcela dos recursos públicos recebidos e à sua destinação, sem prejuízo das prestações de contas a que a entidade esteja legalmente obrigada.' },
+      { id: 'B', texto: 'A publicidade se estende à totalidade das atividades desenvolvidas pela entidade, independentemente de sua origem de financiamento.' },
+      { id: 'C', texto: 'A obrigação de transparência alcança apenas as entidades que tenham recebido recursos diretamente do orçamento, excluindo aquelas beneficiadas por convênios ou contratos de gestão.' },
+      { id: 'D', texto: 'A lei se aplica integralmente às entidades privadas sem fins lucrativos, sujeitando-as aos mesmos procedimentos dos órgãos da administração pública direta.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A transparência alcança a parcela dos recursos públicos recebidos e sua destinação, sem prejuízo das prestações de contas legais.',
+      incorretas: {
+        B: 'Não se estende à totalidade das atividades.',
+        C: 'Alcança também convênios e contratos de gestão.',
+        D: 'Não se aplica integralmente, mas apenas quanto aos recursos públicos recebidos.'
+      },
+      conceitoCobrado: 'Transparência em entidades privadas',
+      pegadinha: 'Achar que a LAI se aplica integralmente ou apenas a recursos orçamentários.',
+      comoApareceEmConcurso: 'Cobrança do alcance da LAI.'
+    },
+    tags: ['LAI', 'entidades privadas', 'transparência']
+  },
+  {
+    id: 'Q-PDF-DA-23-006',
+    idOriginal: 'Q4562727',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — aplicação a entidades privadas',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4562727' },
+    enunciado: 'À luz da Lei nº 12.527/2011, que trata do acesso à informação, bem como do decreto que a regulamenta, julgue os itens a seguir. As entidades privadas sem fins lucrativos, mesmo que não recebam recursos públicos para a realização de ações de interesse público, subordinam-se à Lei de Acesso à Informação, limitando o acesso à informação a seus doadores.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A LAI só se aplica a entidades privadas sem fins lucrativos que recebam recursos públicos (art. 2º, parágrafo único).',
+      incorretas: {},
+      conceitoCobrado: 'Âmbito de aplicação da LAI',
+      pegadinha: 'Achar que toda entidade sem fins lucrativos está sujeita à LAI.',
+      comoApareceEmConcurso: 'Cobrança do requisito de recebimento de recursos públicos.'
+    },
+    tags: ['LAI', 'entidades privadas']
+  },
+  {
+    id: 'Q-PDF-DA-23-007',
+    idOriginal: 'Q4562730',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — finalidade',
+    dificuldade: 1,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4562730' },
+    enunciado: 'À luz da Lei nº 12.527/2011, que trata do acesso à informação, bem como do decreto que a regulamenta, julgue os itens a seguir. Os procedimentos previstos na Lei de Acesso à Informação destinam-se a assegurar a proteção das informações consideradas imprescindíveis à segurança da sociedade ou do Estado.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A LAI tem como objetivo assegurar o direito fundamental de acesso à informação, e não apenas proteger informações sigilosas.',
+      incorretas: {},
+      conceitoCobrado: 'Finalidade da LAI',
+      pegadinha: 'Reduzir a LAI à proteção de sigilos.',
+      comoApareceEmConcurso: 'Cobrança da finalidade precípua da lei.'
+    },
+    tags: ['LAI', 'finalidade']
+  },
+  {
+    id: 'Q-PDF-DA-23-008',
+    idOriginal: 'Q4604711',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — alternativa incorreta',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4604711' },
+    enunciado: 'Conforme a Lei nº 12.527, de 18 de novembro de 2011, assinale a alternativa incorreta.',
+    alternativas: [
+      { id: 'A', texto: 'Qualquer interessado poderá apresentar pedido de acesso a informações aos órgãos e entidades referidos no art. 1º desta Lei, por qualquer meio legítimo, devendo o pedido conter a identificação do requerente e a especificação da informação requerida.' },
+      { id: 'B', texto: 'O serviço de busca e de fornecimento de informação é gratuito.' },
+      { id: 'C', texto: 'No caso de indeferimento de acesso às informações ou às razões da negativa do acesso, poderá o interessado interpor recurso contra a decisão no prazo de 10 (dez) dias a contar da sua ciência.' },
+      { id: 'D', texto: 'É direito do requerente obter o inteiro teor de decisão de negativa de acesso, por certidão ou cópia.' },
+      { id: 'E', texto: 'Será negada a consulta quando se tratar de acesso à informação contida em documento cuja manipulação possa prejudicar sua integridade.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A alternativa E está INCORRETA: a LAI garante o acesso, podendo ser fornecido cópia ou meio alternativo, não se negando a consulta sumariamente.',
+      incorretas: {
+        A: 'Correta.',
+        B: 'Correta.',
+        C: 'Correta.',
+        D: 'Correta.'
+      },
+      conceitoCobrado: 'LAI — regras de acesso',
+      pegadinha: 'Achar que a integridade do documento justifica a negativa total.',
+      comoApareceEmConcurso: 'Cobrança de dispositivo específico.'
+    },
+    tags: ['LAI', 'consulta', 'integridade']
+  },
+  {
+    id: 'Q-PDF-DA-23-009',
+    idOriginal: 'Q4539091',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-23',
+    subtema: 'LAI — conceito de informação',
+    dificuldade: 1,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539091' },
+    enunciado: 'De acordo com a Lei n.º 12.527/2011 – Lei de Acesso à Informação, considera-se informação:',
+    alternativas: [
+      { id: 'A', texto: 'exclusivamente informações sigilosas ou classificadas que necessitam de tratamento especial para garantir a segurança do Estado.' },
+      { id: 'B', texto: 'documentos físicos e digitais, excluindo-se dados brutos ou não processados que ainda não possuam utilidade administrativa.' },
+      { id: 'C', texto: 'apenas dados processados que resultem em relatórios administrativos destinados à gestão interna da Administração Pública.' },
+      { id: 'D', texto: 'apenas dados processados que já tenham sido validados por autoridade competente para a produção de conhecimento oficial.' },
+      { id: 'E', texto: 'dados, processados ou não, que podem ser utilizados para produção e transmissão de conhecimento, contidos em qualquer meio, suporte ou formato.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'Informação, para a LAI, são dados, processados ou não, que podem ser utilizados para produção e transmissão de conhecimento, em qualquer suporte (art. 4º, I).',
+      incorretas: {
+        A: 'Não se restringe a informações sigilosas.',
+        B: 'Inclui dados brutos.',
+        C: 'Não se restringe a relatórios.',
+        D: 'Não exige validação prévia.'
+      },
+      conceitoCobrado: 'Conceito de informação',
+      pegadinha: 'Restringir o conceito a dados processados ou a documentos formais.',
+      comoApareceEmConcurso: 'Cobrança da definição legal.'
+    },
+    tags: ['LAI', 'conceito', 'informação']
+  },
+  /* ============================================================
+     LOTE PDF — QConcursos / Gran Cursos
+     DA-25 + sobras (ADM-03, ADM-05, ADM-06, ADM-07, ADM-08,
+     ADM-11, ADM-12, DA-21)
+     ============================================================ */
+
+  /* ============================================================
+     DA-25 — Processo Administrativo
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-25-001',
+    idOriginal: 'Q4272306',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-25',
+    subtema: 'Lei 9.784/99 — direito à assistência por advogado',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4272306' },
+    enunciado: 'À luz da Lei nº 9.784/1999, julgue os itens a seguir. Assistir-se obrigatoriamente, por advogado, independentemente de determinação legal, é um direito do administrado.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A assistência por advogado não é obrigatória nem automática; depende de previsão legal específica ou de decisão do administrado.',
+      incorretas: {},
+      conceitoCobrado: 'Direito à assistência por advogado',
+      pegadinha: 'Achar que a assistência é sempre obrigatória.',
+      comoApareceEmConcurso: 'Cobrança do art. 3º da Lei 9.784/99.'
+    },
+    tags: ['advogado', 'Lei 9.784']
+  },
+  {
+    id: 'Q-PDF-DA-25-002',
+    idOriginal: 'Q4443019',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-25',
+    subtema: 'Lei 9.784/99 — princípios do processo administrativo',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4443019' },
+    enunciado: 'O processo administrativo constitui instrumento destinado a assegurar a atuação regular da Administração Pública e a proteção dos direitos dos administrados, estabelecendo princípios e critérios que devem orientar a condução dos procedimentos administrativos. Considerando exclusivamente o disposto na Lei nº 9.784/1999, que regula o processo administrativo no âmbito da Administração Pública Federal, analise as afirmativas a seguir. I. A Administração Pública deve obedecer aos princípios da legalidade, finalidade e motivação. II. O processo administrativo visa à proteção dos direitos dos administrados e ao melhor cumprimento dos fins da Administração. III. A Administração deve atuar segundo padrões de moralidade, razoabilidade e eficiência. IV. A Administração Pública pode deixar de motivar atos administrativos quando houver interesse público relevante. Assinale a alternativa CORRETA.',
+    alternativas: [
+      { id: 'A', texto: 'Apenas III e IV.' },
+      { id: 'B', texto: 'I, II, III e IV.' },
+      { id: 'C', texto: 'Apenas II e III.' },
+      { id: 'D', texto: 'Apenas I e II.' },
+      { id: 'E', texto: 'Apenas I, II e III.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'I, II e III estão corretas. IV está INCORRETA: a motivação é regra, e o interesse público relevante não dispensa a motivação.',
+      incorretas: {
+        A: 'I e II também estão corretas.',
+        B: 'IV está incorreta.',
+        C: 'I também está correta.',
+        D: 'III também está correta.'
+      },
+      conceitoCobrado: 'Princípios do processo administrativo',
+      pegadinha: 'Achar que o interesse público dispensa motivação.',
+      comoApareceEmConcurso: 'Análise de múltiplas assertivas.'
+    },
+    tags: ['Lei 9.784', 'princípios', 'motivação']
+  },
+
+  /* ============================================================
+     ADM-03 — Planejamento (sobra)
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-03-002',
+    idOriginal: 'Q4458625',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-03',
+    subtema: 'Gestão por resultados — condições de implementação',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4458625' },
+    enunciado: 'Determinada prefeitura decidiu adotar um modelo de gestão por resultados com o objetivo de melhorar a eficiência das políticas públicas municipais. Para isso, a administração iniciou um processo de definição de objetivos estratégicos alinhados às demandas da população, estabeleceu indicadores de desempenho para acompanhar os resultados das ações governamentais e implantou sistemas tecnológicos destinados ao monitoramento contínuo dos programas públicos. Entretanto, durante a implementação do modelo, foram identificadas algumas dificuldades institucionais, como resistência de parte dos servidores às novas práticas de gestão, limitações técnicas na definição de indicadores adequados para medir resultados e restrições orçamentárias que dificultavam investimentos em capacitação e tecnologia. Considerando o contexto apresentado, bem como os princípios e as etapas necessárias para a implementação da gestão por resultados na administração pública, assinale a alternativa CORRETA acerca das condições necessárias para a adoção desse modelo de gestão.',
+    alternativas: [
+      { id: 'A', texto: 'A centralização das decisões administrativas na alta gestão com o objetivo de reduzir a influência de fatores culturais e institucionais na implementação do modelo de gestão por resultados no setor público.' },
+      { id: 'B', texto: 'A adoção de indicadores padronizados aplicáveis indistintamente a todas as políticas públicas, de modo a simplificar os processos de avaliação de desempenho institucional no âmbito da administração pública.' },
+      { id: 'C', texto: 'A articulação entre planejamento estratégico, definição consistente de indicadores, capacitação institucional e utilização de instrumentos de monitoramento capazes de sustentar uma cultura organizacional orientada a resultados.' },
+      { id: 'D', texto: 'A priorização de ferramentas tecnológicas de controle administrativo que permitam reduzir a participação dos gestores públicos nos processos de avaliação de desempenho institucional e na tomada de decisões estratégicas.' },
+      { id: 'E', texto: 'A substituição dos processos tradicionais de planejamento governamental por mecanismos automatizados de acompanhamento de metas, baseados exclusivamente em indicadores quantitativos de desempenho institucional.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A gestão por resultados exige articulação entre planejamento estratégico, indicadores, capacitação e monitoramento, sustentando uma cultura orientada a resultados.',
+      incorretas: {
+        A: 'A centralização não é condição; a gestão por resultados demanda descentralização e engajamento.',
+        B: 'Indicadores não podem ser padronizados indistintamente.',
+        D: 'A participação dos gestores é essencial.',
+        E: 'A substituição total por mecanismos automatizados é inadequada.'
+      },
+      conceitoCobrado: 'Condições para gestão por resultados',
+      pegadinha: 'Achar que a centralização ou a automação total resolvem.',
+      comoApareceEmConcurso: 'Cenário aplicado com múltiplas condições.'
+    },
+    tags: ['gestão por resultados', 'planejamento']
+  },
+
+  /* ============================================================
+     ADM-05 — Direção, liderança e motivação (sobra)
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-05-006',
+    idOriginal: 'Q4416623',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-05',
+    subtema: 'Grade gerencial de Blake & Mouton — 9,9',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4416623' },
+    enunciado: 'A liderança pode ser conceituada como o processo de influenciar pessoas através de uma comunicação eficiente, com a finalidade de atender aos objetivos organizacionais. Assim, na grade gerencial de Blake & Mouton, o líder que é simultaneamente voltado para as pessoas e para a produção é identificado como o líder:',
+    alternativas: [
+      { id: 'A', texto: '9,9' },
+      { id: 'B', texto: '9,1' },
+      { id: 'C', texto: '5,5' },
+      { id: 'D', texto: '1,1' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O líder 9,9 (team management) é simultaneamente voltado para pessoas e produção.',
+      incorretas: {
+        B: '9,1 é foco em produção (autoritário).',
+        C: '5,5 é meio-termo.',
+        D: '1,1 é abdicação.'
+      },
+      conceitoCobrado: 'Grade gerencial de Blake & Mouton',
+      pegadinha: 'Confundir 9,9 com 9,1.',
+      comoApareceEmConcurso: 'Cobrança direta da grade.'
+    },
+    tags: ['Blake & Mouton', 'liderança']
+  },
+
+  /* ============================================================
+     ADM-06 — Controle e avaliação (sobra)
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-06-003',
+    idOriginal: 'Q4596282',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-06',
+    subtema: 'Controle — ação corretiva',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4596282' },
+    enunciado: 'A rotina no dia a dia de trabalho é geralmente muito intensa na sede da SEDUCE, localizada no município de Petrolina-PE. Para que o ano letivo ocorra sem sobressaltos, a Secretária de Educação municipal precisa: Planejar as metas de ensino; Organizar a distribuição dos professores e recursos didáticos; Dirigir as equipes pedagógicas, motivando-as; e, por fim, controlar os resultados. O controle é, muitas vezes, a função mais negligenciada, mas é a que garante que os impostos do cidadão petrolinense estão gerando o impacto esperado. Sem controle, o planejamento é apenas um desejo (Bateman; Snell, 2021). Quando um gestor da SEDUCE olha para os dados do programa "Escola em Tempo Integral" — um marco para o desenvolvimento das crianças do Vale do São Francisco -- ele não está apenas lendo números; ele está exercendo o poder-dever de fiscalizar e garantir que o padrão de excelência municipal seja mantido em cada bairro e distrito. Ao analisar os relatórios de frequência dos alunos no programa "Escola em Tempo Integral", o gestor da SEDUCE identifica que uma unidade escolar está com índices significativamente abaixo da meta. Ele não apenas detecta o desvio do objetivo daquilo que foi acordado, mas também convoca o diretor da escola para entender as causas e propor um Plano de Ação (PA) para melhorias sistemáticas no processo em questão. Considerando a natureza do processo de controle administrativo, a ação do gestor ao propor um "PA" representa a etapa conhecida como:',
+    alternativas: [
+      { id: 'A', texto: 'estabelecimento de padrões contingenciais, caracterizados pela discricionariedade absoluta do gestor ao fixar as metas de frequência na SEDUCE.' },
+      { id: 'B', texto: 'medição do desempenho extemporânea, visando exclusivamente à sustação dos atos administrativos pedagógicos realizados pela unidade escolar.' },
+      { id: 'C', texto: 'comparação do desempenho com o padrão mandatário, resultando na imediata vacância administrativa do cargo de diretor para apuração de dolo.' },
+      { id: 'D', texto: 'ação corretiva.' },
+      { id: 'E', texto: 'replanejamento estratégico retroativo, com o objetivo de exonerar a responsabilidade do Município de Petrolina-PE sobre o desvio detectado.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'Propor um Plano de Ação para corrigir o desvio é AÇÃO CORRETIVA, última etapa do controle.',
+      incorretas: {
+        A: 'Não é estabelecimento de padrões.',
+        B: 'Não é medição.',
+        C: 'Não é comparação com padrão mandatário.',
+        E: 'Não é replanejamento retroativo.'
+      },
+      conceitoCobrado: 'Etapas do controle',
+      pegadinha: 'Confundir ação corretiva com medição ou comparação.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['controle', 'ação corretiva']
+  },
+
+  /* ============================================================
+     ADM-07 — Gestão de Pessoas (sobras)
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-07-005',
+    idOriginal: 'Q4577960',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-07',
+    subtema: 'Desempenho profissional — fatores internos e externos',
+    dificuldade: 1,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4577960' },
+    enunciado: 'Quanto ao desenvolvimento de equipes e às relações humanas, julgue os itens a seguir. O desempenho profissional de um auxiliar administrativo é influenciado tanto por fatores internos (motivação) quanto por fatores externos (recursos disponíveis e clima organizacional).',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. O desempenho é influenciado por fatores internos (motivação, competências) e externos (recursos, clima, condições de trabalho).',
+      incorretas: {},
+      conceitoCobrado: 'Fatores de desempenho',
+      pegadinha: 'Achar que só a motivação importa.',
+      comoApareceEmConcurso: 'Cobrança da multicausalidade do desempenho.'
+    },
+    tags: ['desempenho', 'motivação', 'clima']
+  },
+  {
+    id: 'Q-PDF-ADM-07-006',
+    idOriginal: 'Q4529529',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-07',
+    subtema: 'Cultura organizacional — elementos',
+    dificuldade: 3,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4529529' },
+    enunciado: 'Em determinado Conselho Regional de Contabilidade (CRC), observa-se que, ao longo dos anos, os servidores desenvolveram uma forma própria de interação: utilizam expressões técnicas específicas do sistema CFC/CRCs; realizam rituais informais antes das sessões plenárias (como reuniões preparatórias recorrentes); e demonstram respeito aos conselheiros mais antigos. Além disso, novos servidores aprendem rapidamente quais comportamentos são aceitos ou reprovados, mesmo quando tais orientações não estão formalmente documentadas. Paralelamente, a alta gestão do CRC enfatiza, em seus documentos institucionais, valores como ética profissional, eficiência na fiscalização e compromisso com a sociedade, reforçando políticas de tratamento respeitoso aos profissionais registrados e aos cidadãos. Com base no conceito de cultura organizacional e em suas características, é correto afirmar que o caso hipotético apresentado evidencia, de forma predominante:',
+    alternativas: [
+      { id: 'A', texto: 'A sobreposição do clima organizacional às regras formais, indicando que o sentimento de pertencimento substitui os valores dominantes explicitados pela alta gestão.' },
+      { id: 'B', texto: 'Um conflito estrutural entre filosofia organizacional e regras formais, típico de organizações públicas fortemente burocratizadas, o que enfraquece a cultura organizacional.' },
+      { id: 'C', texto: 'A prevalência de normas formais e regras explícitas, demonstrando que a cultura organizacional do CRC é definida exclusivamente por documentos oficiais e legislações do sistema profissional.' },
+      { id: 'D', texto: 'A coexistência de regularidades comportamentais, normas implícitas e valores dominantes, revelando uma cultura organizacional consolidada, aprendida historicamente na interação com o ambiente institucional.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A cultura organizacional é evidenciada pela coexistência de regularidades comportamentais, normas implícitas e valores dominantes.',
+      incorretas: {
+        A: 'Não há sobreposição de clima sobre regras formais.',
+        B: 'Não há conflito estrutural.',
+        C: 'A cultura não se define exclusivamente por documentos.'
+      },
+      conceitoCobrado: 'Cultura organizacional',
+      pegadinha: 'Reduzir a cultura a documentos formais.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['cultura organizacional']
+  },
+  {
+    id: 'Q-PDF-ADM-07-007',
+    idOriginal: 'Q4495803',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-07',
+    subtema: 'Gestão por resultados x avaliação comportamental',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4495803' },
+    enunciado: 'Em relação à gestão de pessoas nas organizações públicas, julgue os itens seguintes. Determinada autarquia federal, ao adotar a gestão por resultados, deve substituir a avaliação com base em comportamentos por indicadores focados nas contribuições concretas de cada servidor ao objetivo final.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A gestão por resultados não exige substituir a avaliação comportamental; os dois enfoques podem se complementar.',
+      incorretas: {},
+      conceitoCobrado: 'Gestão por resultados x avaliação comportamental',
+      pegadinha: 'Achar que um modelo substitui necessariamente o outro.',
+      comoApareceEmConcurso: 'Cobrança da complementaridade dos modelos.'
+    },
+    tags: ['gestão por resultados', 'avaliação']
+  },
+
+  /* ============================================================
+     ADM-08 — Comunicação e comportamento organizacional (sobras)
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-08-004',
+    idOriginal: 'Q4376764',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Comunicação institucional em ambientes digitais',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4376764' },
+    enunciado: 'Em um órgão público de grande porte, a ampliação do uso de sistemas informatizados, correio eletrônico institucional, plataformas colaborativas e ambientes virtuais de atendimento ao cidadão trouxe ganhos relevantes de agilidade, mas também revelou fragilidades no tratamento da informação. Foram identificados casos de envio de documentos oficiais por contas pessoais, compartilhamento de arquivos sem controle de versão, ausência de classificação quanto ao grau de sigilo, utilização de aplicativos de mensagens instantâneas para decisões administrativas e armazenamento de dados funcionais em serviços externos não autorizados. Considerando os princípios da Administração Pública, os fundamentos da gestão da informação, a necessidade de rastreabilidade dos atos administrativos e as boas práticas de comunicação institucional em ambientes digitais, assinale a alternativa que expressa a conduta tecnicamente correta para o uso dos meios eletrônicos de comunicação no setor público.',
+    alternativas: [
+      { id: 'A', texto: 'Reconhecer que, diante da dinâmica do trabalho contemporâneo, a escolha do meio de comunicação deve ficar a critério de cada servidor, sendo suficiente que o conteúdo das mensagens esteja alinhado às atividades funcionais, independentemente do canal utilizado, da existência de registros formais ou do atendimento a padrões institucionais.' },
+      { id: 'B', texto: 'Permitir o uso complementar de contas pessoais e aplicativos de mensagens, desde que posteriormente os principais encaminhamentos sejam resumidos em relatório interno, dispensando a necessidade de registro integral das comunicações e de controle sobre versões de documentos.' },
+      { id: 'C', texto: 'Estabelecer como regra a utilização exclusiva de canais institucionais, exigir classificação adequada da informação, garantir mecanismos de controle de versão, registro e rastreabilidade das comunicações relevantes, observar políticas de segurança da informação e restringir o uso de plataformas externas não autorizadas.' },
+      { id: 'D', texto: 'Priorizar a rapidez da comunicação em detrimento da formalidade, admitindo o uso de qualquer ferramenta digital que possibilite resposta imediata, ainda que isso implique fragilização dos controles administrativos e dificuldade posterior de comprovação dos atos praticados.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A conduta correta é usar exclusivamente canais institucionais, classificar a informação, garantir rastreabilidade e restringir plataformas não autorizadas.',
+      incorretas: {
+        A: 'A escolha do meio não é livre.',
+        B: 'O uso de contas pessoais não é adequado.',
+        D: 'A rapidez não justifica a fragilização dos controles.'
+      },
+      conceitoCobrado: 'Comunicação institucional digital',
+      pegadinha: 'Achar que a informalidade é aceitável.',
+      comoApareceEmConcurso: 'Cenário aplicado sobre boas práticas.'
+    },
+    tags: ['comunicação digital', 'segurança da informação']
+  },
+  {
+    id: 'Q-PDF-ADM-08-005',
+    idOriginal: 'Q4286525',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Thomas-Kilmann — estilo de compromisso',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4286525' },
+    enunciado: 'A gestão dos conflitos organizacionais é fundamental, entre outros motivos, para a vivência em um ambiente de trabalho saudável e para os objetivos das organizações, sejam elas públicas ou privadas. A partir da análise das variáveis assertividade e cooperatividade, o método Thomas-Kilmann Instrument (TKI) define cinco estilos de solução de conflitos. Com base nesse método, quando os funcionários decidem pelo meio-termo, ou seja, moderadamente assertivos e moderadamente cooperativos, adotam o estilo',
+    alternativas: [
+      { id: 'A', texto: 'da competição.' },
+      { id: 'B', texto: 'da acomodação.' },
+      { id: 'C', texto: 'do compromisso.' },
+      { id: 'D', texto: 'da evitação.' },
+      { id: 'E', texto: 'da colaboração.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O estilo de COMPROMISSO é moderadamente assertivo e moderadamente cooperativo (meio-termo).',
+      incorretas: {
+        A: 'Competição é alta assertividade e baixa cooperação.',
+        B: 'Acomodação é baixa assertividade e alta cooperação.',
+        D: 'Evitação é baixa assertividade e baixa cooperação.',
+        E: 'Colaboração é alta assertividade e alta cooperação.'
+      },
+      conceitoCobrado: 'Thomas-Kilmann',
+      pegadinha: 'Confundir compromisso com colaboração.',
+      comoApareceEmConcurso: 'Cobrança do estilo a partir das variáveis.'
+    },
+    tags: ['Thomas-Kilmann', 'conflito', 'compromisso']
+  },
+  {
+    id: 'Q-PDF-ADM-08-006',
+    idOriginal: 'Q4386645',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Resiliência interpessoal — flexibilidade',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4386645' },
+    enunciado: 'No que concerne ao trabalho em equipe, aos aspectos de personalidade, ao relacionamento, ao comportamento, à empatia e à compreensão, julgue os itens seguintes. A resiliência interpessoal é um fator positivo que permite ao empregado manter a rigidez de seus métodos de trabalho frente às críticas externas, garantindo que o atendimento não seja influenciado pelas opiniões do público.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A resiliência envolve FLEXIBILIDADE e adaptação, não rigidez.',
+      incorretas: {},
+      conceitoCobrado: 'Resiliência interpessoal',
+      pegadinha: 'Inverter flexibilidade por rigidez.',
+      comoApareceEmConcurso: 'Cobrança do conceito de resiliência.'
+    },
+    tags: ['resiliência', 'flexibilidade']
+  },
+  {
+    id: 'Q-PDF-ADM-08-007',
+    idOriginal: 'Q4272360',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Relações públicas — público interno e externo',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4272360' },
+    enunciado: 'Julgue os itens a seguir, no que diz respeito às noções de administração. Relações públicas, no contexto organizacional, visam gerenciar a comunicação e o relacionamento da empresa com os seus públicos externos, também chamados de stakeholders.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. As relações públicas abrangem públicos INTERNOS e EXTERNOS.',
+      incorretas: {},
+      conceitoCobrado: 'Relações públicas',
+      pegadinha: 'Restringir aos públicos externos.',
+      comoApareceEmConcurso: 'Cobrança do alcance das relações públicas.'
+    },
+    tags: ['relações públicas', 'stakeholders']
+  },
+  {
+    id: 'Q-PDF-ADM-08-008',
+    idOriginal: 'Q4389366',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Comunicação ascendente e desequilíbrio de poder',
+    dificuldade: 3,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4389366' },
+    enunciado: 'A comunicação pode ser entendida como o compartilhamento de informações entre duas ou mais pessoas, a fim de se alcançar um entendimento comum sobre um objeto ou uma situação. A comunicação organizacional, por sua vez, pode ser entendida como os padrões e tipos de comunicação que ocorrem no nível da organização ou de unidades da organização. A respeito de barreiras à comunicação eficaz no ambiente organizacional, avalie as asserções a seguir e a relação proposta entre elas: I - Em uma comunicação ascendente, o desequilíbrio de poder entre emissor e receptor envolvidos no processo comunicacional pode comprometer a eficácia da comunicação. PORQUE II - Os indivíduos em níveis superiores da hierarquia organizacional podem dispor de poder para recompensar e punir os indivíduos dos níveis inferiores. A respeito dessas asserções, é CORRETO afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'a asserção I é uma proposição verdadeira, e a II é uma proposição falsa.' },
+      { id: 'B', texto: 'as asserções I e II são proposições falsas.' },
+      { id: 'C', texto: 'as asserções I e II são proposições verdadeiras, mas a II não é uma justificativa correta da I.' },
+      { id: 'D', texto: 'as asserções I e II são proposições verdadeiras, e a II é uma justificativa correta da I.' },
+      { id: 'E', texto: 'a asserção I é uma proposição falsa, e a II é uma proposição verdadeira.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'As duas asserções são verdadeiras, e a II justifica a I: o desequilíbrio de poder compromete a comunicação ascendente, pois o superior pode recompensar ou punir.',
+      incorretas: {
+        A: 'A II é verdadeira.',
+        B: 'Ambas são verdadeiras.',
+        C: 'A II justifica a I.',
+        E: 'A I é verdadeira.'
+      },
+      conceitoCobrado: 'Barreiras à comunicação',
+      pegadinha: 'Achar que a II não justifica a I.',
+      comoApareceEmConcurso: 'Análise de asserções.'
+    },
+    tags: ['comunicação ascendente', 'poder']
+  },
+  {
+    id: 'Q-PDF-ADM-08-009',
+    idOriginal: 'Q4469370',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Decodificação',
+    dificuldade: 1,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4469370' },
+    enunciado: 'Durante suas atividades em um órgão público, um assistente administrativo recebe um memorando eletrônico com orientações sobre novos procedimentos internos. Ao ler a mensagem, ele interpreta o conteúdo e compreende as instruções que deverão ser aplicadas no setor. No processo de comunicação, a etapa em que o receptor interpreta e atribui significado à mensagem recebida é denominada:',
+    alternativas: [
+      { id: 'A', texto: 'Feedback.' },
+      { id: 'B', texto: 'Codificação.' },
+      { id: 'C', texto: 'Decodificação.' },
+      { id: 'D', texto: 'Canal.' },
+      { id: 'E', texto: 'Ruído.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'DECODIFICAÇÃO é a interpretação da mensagem pelo receptor.',
+      incorretas: {
+        A: 'Feedback é a resposta.',
+        B: 'Codificação é a elaboração da mensagem.',
+        D: 'Canal é o meio.',
+        E: 'Ruído é a interferência.'
+      },
+      conceitoCobrado: 'Elementos da comunicação',
+      pegadinha: 'Confundir decodificação com feedback ou codificação.',
+      comoApareceEmConcurso: 'Cobrança de elemento específico.'
+    },
+    tags: ['decodificação', 'comunicação']
+  },
+  {
+    id: 'Q-PDF-ADM-08-010',
+    idOriginal: 'Q4386647',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Comportamento defensivo — escuta seletiva',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4386647' },
+    enunciado: 'Acerca das formas de comportamento, empatia e compreensão mútua, julgue os itens a seguir. O comportamento defensivo é uma reação que ocorre quando o indivíduo percebe uma ameaça a seu autoconceito, que se manifesta pela escuta seletiva, na qual o receptor distorce a mensagem para que esta se encaixe em suas predisposições, reduzindo a eficácia da comunicação organizacional.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. O comportamento defensivo envolve escuta seletiva e distorção da mensagem para preservar o autoconceito.',
+      incorretas: {},
+      conceitoCobrado: 'Comportamento defensivo',
+      pegadinha: 'Achar que o comportamento defensivo melhora a comunicação.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['comportamento defensivo', 'escuta seletiva']
+  },
+  {
+    id: 'Q-PDF-ADM-08-011',
+    idOriginal: 'Q4389365',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Esforço emocional',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4389365' },
+    enunciado: 'A compreensão do comportamento organizacional passa pela consideração do papel das emoções no contexto das organizações. Os profissionais reagem emocionalmente às coisas que lhes acontecem no ambiente de trabalho, o que pode afetar seu desempenho e satisfação. A expressão de emoções desejadas pela organização feita pelos profissionais durante os relacionamentos interpessoais no trabalho é denominada:',
+    alternativas: [
+      { id: 'A', texto: 'compensação de positividade.' },
+      { id: 'B', texto: 'dissonância emocional.' },
+      { id: 'C', texto: 'emoções sentidas.' },
+      { id: 'D', texto: 'afetividade positiva.' },
+      { id: 'E', texto: 'esforço emocional.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ESFORÇO EMOCIONAL é a expressão de emoções desejadas pela organização.',
+      incorretas: {
+        A: 'Compensação de positividade é outro conceito.',
+        B: 'Dissonância emocional é o conflito entre emoções sentidas e expressas.',
+        C: 'Emoções sentidas são as reais.',
+        D: 'Afetividade positiva é uma predisposição.'
+      },
+      conceitoCobrado: 'Esforço emocional',
+      pegadinha: 'Confundir com dissonância emocional.',
+      comoApareceEmConcurso: 'Cobrança de definição.'
+    },
+    tags: ['esforço emocional', 'emoções']
+  },
+  {
+    id: 'Q-PDF-ADM-08-012',
+    idOriginal: 'Q4657918',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Feedback — comportamento receptivo',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4657918' },
+    enunciado: 'Durante uma reunião de equipe, o colaborador X apontou uma falha em um relatório elaborado pelo colega Y. Ao receber a observação, o colega Y não apresentou objeções imediatas, reconheceu o ponto levantado e definiu, por conta própria, a solução técnica a ser adotada, comunicando posteriormente aos demais a forma como conduziria a correção. Com base nessa situação hipotética, é correto afirmar que a conduta do colega Y caracteriza um comportamento',
+    alternativas: [
+      { id: 'A', texto: 'defensivo, uma vez que ele, ao definir a solução por conta própria, buscou preservar a sua autoridade técnica diante da falha apontada.' },
+      { id: 'B', texto: 'indiferente, já que o colega Y não discutiu com o colega que apontou a falha, antes de decidir como proceder.' },
+      { id: 'C', texto: 'receptivo, pois o reconhecimento da falha e a definição de uma solução, ainda que individual, demonstram abertura ao conteúdo do feedback recebido.' },
+      { id: 'D', texto: 'autoritário, pois a definição unilateral da solução técnica, sem deliberação conjunta com a equipe, é incompatível com a receptividade ao feedback.' },
+      { id: 'E', texto: 'competitivo, considerando que a definição individual da solução evidencia a intenção de superar o desempenho do colega que apontou a falha.' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A conduta é RECEPTIVA: reconhecer a falha e propor solução demonstra abertura ao feedback.',
+      incorretas: {
+        A: 'Não é defensivo.',
+        B: 'Não é indiferente.',
+        D: 'Não é autoritário.',
+        E: 'Não é competitivo.'
+      },
+      conceitoCobrado: 'Receptividade ao feedback',
+      pegadinha: 'Confundir autonomia com autoritarismo.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['feedback', 'receptividade']
+  },
+  {
+    id: 'Q-PDF-ADM-08-013',
+    idOriginal: 'Q4470183',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-08',
+    subtema: 'Elementos da comunicação — canal',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4470183' },
+    enunciado: 'Chiavenato (2025) define que o processo de comunicação é composto de sete elementos. Nesse sentido, de acordo com o autor, um programa de TV a ser transmitido é considerado como o elemento denominado:',
+    alternativas: [
+      { id: 'A', texto: 'Canal.' },
+      { id: 'B', texto: 'Fonte.' },
+      { id: 'C', texto: 'Receptor.' },
+      { id: 'D', texto: 'Retroação.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: true,
+    explicacao: {
+      correta: 'O canal é o meio pelo qual a mensagem é transmitida; a TV (programa) funciona como canal. (Gabarito inferido — conferir.)',
+      incorretas: {
+        B: 'Fonte é o emissor.',
+        C: 'Receptor é o destinatário.',
+        D: 'Retroação é o feedback.'
+      },
+      conceitoCobrado: 'Elementos da comunicação',
+      pegadinha: 'Confundir canal com fonte ou mensagem.',
+      comoApareceEmConcurso: 'Cobrança de elemento específico.'
+    },
+    tags: ['canal', 'comunicação']
+  },
+
+  /* ============================================================
+     ADM-11 — Gestão de Processos (sobras)
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-11-002',
+    idOriginal: 'Q4539136',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-11',
+    subtema: 'O&M — princípios constitucionais',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539136' },
+    enunciado: 'A análise dos processos da Administração Pública no campo da Organização e Métodos (O&M) constitui um dos eixos centrais da gestão pública contemporânea. Sobre esse assunto, é INCORRETO afirmar que:',
+    alternativas: [
+      { id: 'A', texto: 'a área de Organização e Métodos busca racionalizar estruturas e rotinas administrativas por meio da análise de fluxos de trabalho, padronização de procedimentos e melhoria da eficiência operacional.' },
+      { id: 'B', texto: 'a análise de processos administrativos permite identificar redundâncias, gargalos e sobreposições de atividades, contribuindo para a simplificação e aperfeiçoamento das rotinas institucionais.' },
+      { id: 'C', texto: 'o estudo dos processos administrativos no setor público envolve a consideração de fatores legais, normativos e institucionais que condicionam a atuação da administração e a execução de suas atividades.' },
+      { id: 'D', texto: 'a aplicação das técnicas de Organização e Métodos na administração pública dispensa a observância dos princípios constitucionais da legalidade e da publicidade, desde que haja ganho de eficiência administrativa.' },
+      { id: 'E', texto: 'o mapeamento e a documentação dos processos organizacionais constituem instrumentos relevantes para a modernização administrativa e para a melhoria da gestão pública.' }
+    ],
+    gabarito: 'D',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A alternativa D está INCORRETA: a O&M não dispensa os princípios constitucionais; a eficiência não autoriza afastar a legalidade e a publicidade.',
+      incorretas: {
+        A: 'Correta.',
+        B: 'Correta.',
+        C: 'Correta.',
+        E: 'Correta.'
+      },
+      conceitoCobrado: 'O&M e princípios',
+      pegadinha: 'Achar que a eficiência se sobrepõe à legalidade.',
+      comoApareceEmConcurso: 'Cobrança de INCORRETA.'
+    },
+    tags: ['O&M', 'legalidade', 'publicidade']
+  },
+  {
+    id: 'Q-PDF-ADM-11-003',
+    idOriginal: 'Q4556225',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-11',
+    subtema: 'Modelo WV — passos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4556225' },
+    enunciado: 'O modelo WV é uma metodologia de análise e redesenho de processos que propõe uma estrutura específica para a resolução de problemas e melhoria contínua. Tal modelo foi criado pelos autores Shiba, Grahan e Walden. Quantos passos compõem essa metodologia?',
+    alternativas: [
+      { id: 'A', texto: 'Oito passos.' },
+      { id: 'B', texto: 'Sete passos.' },
+      { id: 'C', texto: 'Cinco passos.' },
+      { id: 'D', texto: 'Quatro passos.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'O modelo WV (Western View) é composto por SETE passos.',
+      incorretas: {
+        A: 'Não são oito.',
+        C: 'Não são cinco.',
+        D: 'Não são quatro.'
+      },
+      conceitoCobrado: 'Modelo WV',
+      pegadinha: 'Confundir com outros modelos (PDCA, 8D).',
+      comoApareceEmConcurso: 'Cobrança de característica específica.'
+    },
+    tags: ['modelo WV', 'processos']
+  },
+  {
+    id: 'Q-PDF-ADM-11-004',
+    idOriginal: 'Q4562785',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-11',
+    subtema: 'Fluxogramas em manuais de procedimentos',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4562785' },
+    enunciado: 'De acordo com os procedimentos e os manuais administrativos, a organização, os métodos e a gestão de estoques e de suprimentos, julgue os itens a seguir. Em estruturas complexas, os manuais de procedimentos administrativos prescindem do uso de fluxogramas, uma vez que a descrição textual detalhada é tecnicamente superior à representação gráfica para a identificação de gargalos e de duplicidade de tarefas.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. O fluxograma é ferramenta essencial para visualização de processos, e a descrição textual não é tecnicamente superior.',
+      incorretas: {},
+      conceitoCobrado: 'Fluxograma',
+      pegadinha: 'Desvalorizar o fluxograma.',
+      comoApareceEmConcurso: 'Cobrança da importância do fluxograma.'
+    },
+    tags: ['fluxograma', 'manuais']
+  },
+  {
+    id: 'Q-PDF-ADM-11-005',
+    idOriginal: 'Q4495805',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-11',
+    subtema: 'Manuais de procedimentos — finalidade',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4495805' },
+    enunciado: 'No que diz respeito aos procedimentos, aos manuais administrativos e ao sistema de organização e métodos nas organizações públicas, julgue os itens a seguir. O coordenador de conselho federal de profissões regulamentadas deve adotar o manual de procedimentos para estabelecer as diretrizes filosóficas e os limites para a tomada de decisão estratégica.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. Manuais de procedimentos detalham rotinas operacionais; não estabelecem diretrizes filosóficas nem limites para decisão estratégica.',
+      incorretas: {},
+      conceitoCobrado: 'Finalidade dos manuais',
+      pegadinha: 'Confundir manual de procedimentos com planejamento estratégico.',
+      comoApareceEmConcurso: 'Cobrança da finalidade do manual.'
+    },
+    tags: ['manuais', 'procedimentos']
+  },
+  {
+    id: 'Q-PDF-ADM-11-006',
+    idOriginal: 'Q4577773',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-11',
+    subtema: 'Manuais — atualização',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4577773' },
+    enunciado: 'Acerca da organização, dos métodos e da gestão de suprimentos em um conselho profissional, julgue os itens seguintes. Os manuais de procedimentos administrativos de um conselho profissional, uma vez que são aprovados, não devem sofrer alterações frequentes para preservar a segurança jurídica e a uniformidade de conduta.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. Manuais devem ser atualizados sempre que necessário, para acompanhar mudanças legais e organizacionais.',
+      incorretas: {},
+      conceitoCobrado: 'Atualização de manuais',
+      pegadinha: 'Achar que a estabilidade justifica a não atualização.',
+      comoApareceEmConcurso: 'Cobrança da dinamicidade dos manuais.'
+    },
+    tags: ['manuais', 'atualização']
+  },
+  {
+    id: 'Q-PDF-ADM-11-007',
+    idOriginal: 'Q4551362',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-11',
+    subtema: 'Macroprocesso',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4551362' },
+    enunciado: 'O novo gestor do Almoxarifado de uma Prefeitura decidiu mapear toda a dinâmica de "Aquisição de Bens" do órgão. Ele observou que esse rito é complexo, pois inicia no setor demandante, cruza os departamentos de compras e jurídico, e termina na tesouraria, gerando forte impacto na organização. Ao detalhar o fluxo, ele solicitou que a equipe descesse até a menor subdivisão de trabalho possível, focando no esforço individual executado por cada servidor em sua mesa. A luz da teoria sobre os níveis de detalhamento de processos, afirma-se CORRETAMENTE que a dinâmica geral que cruza os vários setores configura um:',
+    alternativas: [
+      { id: 'A', texto: 'Macroprocesso.' },
+      { id: 'B', texto: 'Processo primário.' },
+      { id: 'C', texto: 'Fluxo de trabalho.' },
+      { id: 'D', texto: 'Sistema de suporte.' }
+    ],
+    gabarito: 'A',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A dinâmica geral que cruza vários setores é um MACROPROCESSO.',
+      incorretas: {
+        B: 'Processo primário é uma subdivisão.',
+        C: 'Fluxo de trabalho é nível mais detalhado.',
+        D: 'Sistema de suporte é categoria funcional.'
+      },
+      conceitoCobrado: 'Níveis de detalhamento de processos',
+      pegadinha: 'Confundir macroprocesso com processo primário.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['macroprocesso', 'processos']
+  },
+
+  /* ============================================================
+     ADM-12 — Atendimento e relações interpessoais (sobras)
+  ============================================================ */
+  {
+    id: 'Q-PDF-ADM-12-003',
+    idOriginal: 'Q4432283',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Trabalho em equipe — centralização e feedback',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4432283' },
+    enunciado: 'Acerca do trabalho em equipe nas organizações públicas, julgue os itens seguintes. Quando um gestor público, para aumentar a produtividade, centraliza as decisões e elimina feedbacks informais, focando, sobremaneira, nas metas formais da equipe, serão esperadas uma melhoria no relacionamento e uma maior agilidade operacional.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A centralização e a eliminação de feedbacks tendem a piorar o relacionamento e reduzir a agilidade.',
+      incorretas: {},
+      conceitoCobrado: 'Trabalho em equipe',
+      pegadinha: 'Achar que centralizar melhora o relacionamento.',
+      comoApareceEmConcurso: 'Cobrança de consequências da centralização.'
+    },
+    tags: ['trabalho em equipe', 'centralização']
+  },
+  {
+    id: 'Q-PDF-ADM-12-004',
+    idOriginal: 'Q4272355',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Equipes eficazes — habilidades técnicas',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4272355' },
+    enunciado: 'Julgue os itens a seguir, no que diz respeito às noções de administração. O desenvolvimento de equipes de trabalho eficazes depende de uma seleção de bons indivíduos com altas habilidades técnicas e especializadas.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. Equipes eficazes dependem não apenas de habilidades técnicas, mas também de habilidades interpessoais, comunicação e cooperação.',
+      incorretas: {},
+      conceitoCobrado: 'Equipes eficazes',
+      pegadinha: 'Reduzir a eficácia a habilidades técnicas.',
+      comoApareceEmConcurso: 'Cobrança da multidimensionalidade.'
+    },
+    tags: ['equipes', 'habilidades']
+  },
+  {
+    id: 'Q-PDF-ADM-12-005',
+    idOriginal: 'Q4495829',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Atendimento — comunicabilidade e tolerância',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4495829' },
+    enunciado: 'Um determinado conselho de profissão regulamentada possui cinco servidores no setor de atendimento ao público, conforme está descrito a seguir. • Abadia destaca-se por evitar termos jurídicos complexos que o usuário não compreende. • Beto sempre porta o crachá de identificação visível e mantém a postura ereta e atenta ao receber o cidadão. • Carla é reconhecida pelo tratamento educado e respeitoso, e pelo uso de expressões "por favor", "obrigada" e "com licença". • Donato mantém a calma com o usuário idoso que não ouve bem. • Eva nega qualquer tentativa de recebimento de vantagem pessoal. Considerando essa situação hipotética, julgue os itens seguintes, acerca dos atributos de qualidade no atendimento preponderantes em cada servidor. Abadia vale-se da comunicabilidade, ao passo que Donato preza pela tolerância.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'C',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'CERTO. Abadia usa comunicabilidade (linguagem acessível); Donato usa tolerância (paciência com idoso).',
+      incorretas: {},
+      conceitoCobrado: 'Atributos do atendimento',
+      pegadinha: 'Confundir os atributos.',
+      comoApareceEmConcurso: 'Associação de atributos a servidores.'
+    },
+    tags: ['comunicabilidade', 'tolerância']
+  },
+  {
+    id: 'Q-PDF-ADM-12-006',
+    idOriginal: 'Q4495826',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Atendimento — atenção e cortesia',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4495826' },
+    enunciado: 'Um determinado conselho de profissão regulamentada possui cinco servidores no setor de atendimento ao público, conforme está descrito a seguir. • Abadia destaca-se por evitar termos jurídicos complexos que o usuário não compreende. • Beto sempre porta o crachá de identificação visível e mantém a postura ereta e atenta ao receber o cidadão. • Carla é reconhecida pelo tratamento educado e respeitoso, e pelo uso de expressões "por favor", "obrigada" e "com licença". • Donato mantém a calma com o usuário idoso que não ouve bem. • Eva nega qualquer tentativa de recebimento de vantagem pessoal. Considerando essa situação hipotética, julgue os itens seguintes, acerca dos atributos de qualidade no atendimento preponderantes em cada servidor. Abadia caracteriza-se pela atenção ao usuário, enquanto Beto prima pela cortesia.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. Abadia se destaca pela COMUNICABILIDADE (evita jargões); Beto, pela APRESENTAÇÃO (crachá, postura).',
+      incorretas: {},
+      conceitoCobrado: 'Atributos do atendimento',
+      pegadinha: 'Trocar os atributos.',
+      comoApareceEmConcurso: 'Associação de atributos.'
+    },
+    tags: ['atenção', 'cortesia', 'apresentação']
+  },
+  {
+    id: 'Q-PDF-ADM-12-007',
+    idOriginal: 'Q4272400',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Compreensão mútua — decisões fundamentadas',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4272400' },
+    enunciado: 'Julgue os itens a seguir, acerca do trabalho em equipe. A compreensão mútua não implica, necessariamente, concordância unânime para evitar conflitos, mas, em alguns casos, ela pode não exigir decisões fundamentadas, para que o grupo mantenha um apoio coletivo.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A compreensão mútua não dispensa decisões fundamentadas; o apoio coletivo deve ser construído com base em razões.',
+      incorretas: {},
+      conceitoCobrado: 'Compreensão mútua',
+      pegadinha: 'Achar que a harmonia dispensa fundamentação.',
+      comoApareceEmConcurso: 'Cobrança da necessidade de fundamentação.'
+    },
+    tags: ['compreensão mútua', 'decisões']
+  },
+  {
+    id: 'Q-PDF-ADM-12-008',
+    idOriginal: 'Q4539140',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Atendimento externo — satisfação do cidadão',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4539140' },
+    enunciado: 'No que diz respeito à postura profissional, às relações interpessoais, aos atendimentos telefônicos e aos atendimentos ao público interno e ao público externo nas organizações públicas, julgue os itens a seguir. A eficácia do atendimento externo nas organizações públicas vincula-se ao cumprimento restrito das formalidades processuais, independentemente da satisfação final do cidadão-usuário.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A eficácia do atendimento não se resume ao cumprimento de formalidades; a satisfação do cidadão é relevante.',
+      incorretas: {},
+      conceitoCobrado: 'Atendimento ao cidadão',
+      pegadinha: 'Reduzir o atendimento a formalidades.',
+      comoApareceEmConcurso: 'Cobrança da centralidade do cidadão.'
+    },
+    tags: ['atendimento', 'cidadão']
+  },
+  {
+    id: 'Q-PDF-ADM-12-009',
+    idOriginal: 'Q4562815',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Parecer — documento técnico',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4562815' },
+    enunciado: 'No que concerne aos tipos de documentos administrativos e aos protocolos, julgue os itens seguintes. O parecer constitui um documento técnico por meio do qual um órgão consultivo ou um especialista emite uma decisão fundamentada acerca de determinada matéria.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. O parecer é OPINIÃO técnica fundamentada; não é decisão.',
+      incorretas: {},
+      conceitoCobrado: 'Parecer',
+      pegadinha: 'Confundir parecer com decisão.',
+      comoApareceEmConcurso: 'Cobrança da natureza do parecer.'
+    },
+    tags: ['parecer', 'documentos']
+  },
+  {
+    id: 'Q-PDF-ADM-12-010',
+    idOriginal: 'Q4657913',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Atendimento — presteza e interesse',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4657913' },
+    enunciado: 'Um cidadão procurou um Conselho Regional em busca de informações a respeito de um processo administrativo. Todavia, embora o assunto não fosse de sua competência, o colaborador indicou o setor responsável, informou a sua localização e ofereceu-se para acompanhá-lo até o local. Com base nessa situação hipotética, é correto afirmar que a conduta do colaborador evidencia os atributos de',
+    alternativas: [
+      { id: 'A', texto: 'discrição e tolerância, pois o colaborador preservou a confidencialidade das informações e manteve a postura respeitosa durante o atendimento.' },
+      { id: 'B', texto: 'presteza e interesse, pois buscou atender prontamente à necessidade do cidadão e demonstrou disposição para auxiliá-lo até o encaminhamento adequado da demanda.' },
+      { id: 'C', texto: 'comunicabilidade e objetividade, pois transmitiu as informações necessárias de forma clara, restringindo-se às orientações indispensáveis ao atendimento.' },
+      { id: 'D', texto: 'apresentação e comunicabilidade, considerando que o êxito do atendimento depende, sobretudo, da forma como o colaborador se apresentou ao cidadão.' },
+      { id: 'E', texto: 'eficiência e resolutividade, pois solucionou a demanda do cidadão, independentemente das atribuições de sua unidade de atuação no escopo de trabalho.' }
+    ],
+    gabarito: 'B',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'A conduta evidencia PRESTEZA (atendimento pronto) e INTERESSE (disposição para auxiliar e acompanhar o cidadão até o setor correto).',
+      incorretas: {
+        A: 'Discrição e tolerância não são os atributos centrais.',
+        C: 'Comunicabilidade e objetividade não captam a disposição de acompanhar.',
+        D: 'Apresentação e comunicabilidade não são o foco.',
+        E: 'Eficiência e resolutividade não se aplicam, pois a demanda não foi resolvida na unidade.'
+      },
+      conceitoCobrado: 'Atributos do atendimento',
+      pegadinha: 'Confundir presteza com eficiência ou resolutividade.',
+      comoApareceEmConcurso: 'Cenário aplicado.'
+    },
+    tags: ['atendimento', 'presteza', 'interesse']
+  },
+  {
+    id: 'Q-PDF-ADM-12-011',
+    idOriginal: 'Q4272393',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'ADM',
+    moduloId: 'ADM-12',
+    subtema: 'Trabalho em equipe — homogeneidade',
+    dificuldade: 2,
+    prioridade: 'media',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4272393' },
+    enunciado: 'Julgue os itens a seguir, acerca do trabalho em equipe. Para alcançar a máxima efetividade no comportamento interpessoal, é fundamental que haja uma homogeneidade no comportamento da equipe, para que o objetivo seja alcançado.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A diversidade de comportamentos e habilidades é positiva para a equipe; a homogeneidade não é requisito.',
+      incorretas: {},
+      conceitoCobrado: 'Trabalho em equipe',
+      pegadinha: 'Achar que a homogeneidade é necessária.',
+      comoApareceEmConcurso: 'Cobrança do valor da diversidade.'
+    },
+    tags: ['trabalho em equipe', 'diversidade']
+  },
+
+  /* ============================================================
+     DA-21 — Licitações e Contratos (sobras)
+  ============================================================ */
+  {
+    id: 'Q-PDF-DA-21-015',
+    idOriginal: 'Q4386350',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'certo_errado',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Lei 14.133/2021 x Lei 8.666/1993 — substituição',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4386350' },
+    enunciado: 'De acordo com a CRFB/1988, com a Lei nº 5.905/1973, com o Decreto nº 94.406/1987, com a Lei nº 14.133/2021 e com as Resoluções COFEN nº 507/2016, nº 564/2017, nº 581/2018, nº 584/2018, nº 609/2019, nº 706/2022, nº 721/2023, nº 769/2024 e nº 782/2025, julgue os itens a seguir. A Lei nº 14.133/2021 (Nova Lei de Licitações) substituiu integralmente a Lei nº 8.666/1993.',
+    alternativas: [
+      { id: 'C', texto: 'Certo' },
+      { id: 'E', texto: 'Errado' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: false,
+    explicacao: {
+      correta: 'ERRADO. A Lei 14.133/2021 previu período de transição e não substituiu imediatamente a Lei 8.666/1993; a revogação ocorreu após prazo legal.',
+      incorretas: {},
+      conceitoCobrado: 'Transição entre leis de licitação',
+      pegadinha: 'Achar que a substituição foi imediata.',
+      comoApareceEmConcurso: 'Cobrança da transição legal.'
+    },
+    tags: ['Lei 14.133', 'Lei 8.666', 'transição']
+  },
+  {
+    id: 'Q-PDF-DA-21-016',
+    idOriginal: 'Q4400150',
+    origem: 'pdf_qconcursos',
+    tipo: 'REAL',
+    formato: 'multipla_escolha',
+    area: 'DA',
+    moduloId: 'DA-21',
+    subtema: 'Pregão — modalidade',
+    dificuldade: 2,
+    prioridade: 'alta',
+    banca: 'Não identificada',
+    orgao: 'Não identificado',
+    ano: null,
+    prova: 'Não identificada',
+    fonte: { descricao: 'PDF QConcursos — Q4400150' },
+    enunciado: 'Assinale alternativa que apresenta a modalidade de licitação usada para aquisição de bens e serviços comuns em que a disputa pelo fornecimento é feita em sessão pública, por meio de propostas e lances, para classificação e habilitação do licitante com a proposta de menor preço, onde a grande inovação se dá pela inversão das fases de habilitação e análise das propostas e com base legal na Lei n.º 10.520, de 17 de julho de 2002:',
+    alternativas: [
+      { id: 'A', texto: 'Concorrência.' },
+      { id: 'B', texto: 'Tomada de Preços.' },
+      { id: 'C', texto: 'Concurso.' },
+      { id: 'D', texto: 'Leilão.' },
+      { id: 'E', texto: 'Pregão.' }
+    ],
+    gabarito: 'E',
+    gabaritoInferido: true,
+    explicacao: {
+      correta: 'O PREGÃO é a modalidade para bens e serviços comuns, com disputa por lances e inversão de fases. (Gabarito inferido — conferir; a Lei 10.520/2002 foi revogada pela Lei 14.133/2021, mas o conceito permanece.)',
+      incorretas: {
+        A: 'Concorrência é para obras e serviços de maior complexidade.',
+        B: 'Tomada de preços foi extinta.',
+        C: 'Concurso é para trabalho técnico.',
+        D: 'Leilão é para alienação de bens.'
+      },
+      conceitoCobrado: 'Pregão',
+      pegadinha: 'Confundir com concorrência ou tomada de preços.',
+      comoApareceEmConcurso: 'Cobrança de modalidade específica.'
+    },
+    tags: ['pregão', 'Lei 10.520']
+  }
+   
 ];
