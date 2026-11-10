@@ -586,5 +586,464 @@ window.EXEMPLOS_INEDITOS = {
     'Priorizar amigo na fila viola a IMPESSOALIDADE (favoritismo sem base legal). Atender o cidadão leigo com linguagem clara é boa prática (acessibilidade + cortesia). Servidor deve tratar todos por critérios objetivos (ordem de chegada, prioridade legal), não por relações pessoais.',
   'EX-ADM-12-002':
     'Escuta ativa ("o senhor quer dizer que...") + linguagem sem jargão = atendimento eficaz. As práticas de comunicação (ADM-08) são a base do bom atendimento (ADM-12). Repetir a demanda confirma entendimento e demonstra respeito ao cidadão.'
+,
+
+  /* ============================================================
+     AP-13 — Conceitos fundamentais de Administração Pública
+  ============================================================ */
+  'Q-DID-AP-13-001':
+    'Quando uma autarquia federal emite uma certidão, há ATIVIDADE administrativa (sentido objetivo). Quando o conjunto de servidores e órgãos que emitiu a certidão é considerado, há o aspecto orgânico (sentido subjetivo). "O que se faz" x "quem faz" — duas lentes sobre o mesmo fenômeno.',
+  'Q-DID-AP-13-002':
+    'Quando o STF julga um habeas corpus, exerce função jurisdicional. Quando compra computadores para seus servidores, exerce função ADMINISTRATIVA — entra no sentido AMPLO. Já o sentido RESTRITO considera apenas o Executivo. Amplo = 3 Poderes em função administrativa; restrito = só Executivo.',
+  'Q-DID-AP-13-003':
+    'Uma Secretaria de Saúde (órgão, direta) emite alvará. Uma autarquia municipal de transporte (entidade, indireta) gere o serviço. Direta = entes + órgãos, sem personalidade própria. Indireta = entidades com personalidade jurídica própria.',
+  'Q-DID-AP-13-004':
+    'O Ministério da Saúde é órgão (sem CNPJ próprio). O INSS é autarquia (CNPJ próprio, personalidade jurídica). Órgão integra a pessoa jurídica; entidade é a própria pessoa jurídica. O primeiro centro de competência; o segundo, pessoa jurídica.',
+  'Q-DID-AP-13-005':
+    'Construir uma UBS em bairro carente é INTERESSE PÚBLICO (coletividade). Já o "interesse da máquina" (preservar o prestígio do órgão) é INTERESSE DO ESTADO, distinto. E o "interesse do agente" (favorecer um parente) não é interesse público — é desvio.',
+  'Q-DID-AP-13-006':
+    'A desapropriação por utilidade pública expressa a SUPREMACIA (prerrogativa). A necessidade de motivação e de legalidade estrita expressa a INDISPONIBILIDADE (limite). Um confere poderes; o outro impõe restrições. Os dois pilares do regime jurídico-administrativo.',
+  'Q-DID-AP-13-007':
+    'Um servidor do INSS, no exercício da função, causa dano a um particular. Pela Teoria do Órgão, a conduta é imputada à União (pessoa jurídica a que pertence o órgão). A vítima aciona o Estado; o Estado, depois, pode regressar contra o servidor (dolo ou culpa).',
+  'Q-DID-AP-13-008':
+    'Uma prefeitura cria autarquia para transporte (entidade da indireta) e capacita seus fiscais (gestão interna da direta). Emissão de alvará é atividade (sentido objetivo). Comprar computadores é gestão interna. Cada situação ativa uma faceta diferente da Administração Pública.',
+  'EX-AP-13-001':
+    'O Judiciário licitando computadores ilustra o sentido amplo (função administrativa em outro Poder). A Secretaria emitindo alvará ilustra o sentido objetivo (atividade). Servidores executando a vacinação ilustram o sentido subjetivo (quem faz). A criação de autarquia ilustra a descentralização. Cada situação ativa uma faceta.',
+  'EX-AP-13-002':
+    'O prefeito nomeia o filho — isso é NEPOTISMO (confusão entre interesse público e interesse do agente), que viola impessoalidade e moralidade. Priorizar escolas carentes, ao contrário, atende ao INTERESSE PÚBLICO (coletividade), ainda que contrarie empreiteiros. Nem toda decisão impopular para grupos de pressão é contrária ao interesse público.',
+  'EX-AP-13-003':
+    'A supremacia do interesse público autoriza a desapropriação, as cláusulas exorbitantes, a autoexecutoriedade. A indisponibilidade exige motivação, legalidade estrita, impessoalidade. Os dois pilares estão espelhados no LIMPE: legalidade, impessoalidade, moralidade, publicidade e eficiência — cada um com uma faceta de prerrogativa ou restrição.',
+  'EX-AP-13-004':
+    'As coordenações regionais são órgãos — mesma pessoa jurídica = desconcentração. A autarquia tem CNPJ próprio = descentralização por outorga. Confundir os dois é um dos erros mais comuns em prova — fixe: descentralização = OUTRA pessoa; desconcentração = MESMA pessoa.',
+
+  /* ============================================================
+     AP-14 — Modelos de Administração Pública
+  ============================================================ */
+  'Q-REAL-AP-14-001':
+    'Nomear parentes por confiança pessoal = patrimonialista. Exigir regras detalhadas para todo procedimento = burocrático. Adotar contrato de gestão com metas e indicadores = gerencial. Definir competências formais com padronização = burocrático. Em cada prática, um modelo — e a administração brasileira combina as três.',
+  'Q-REAL-AP-14-002':
+    'A associação correta é: I = patrimonialista (pessoalidade); II e IV = burocrático (formalismo, padronização); III = gerencial (contratos de gestão, resultados). Práticas de modelos diferentes coexistem no mesmo órgão — não são excludentes.',
+  'Q-DID-AP-14-001':
+    'No patrimonialismo, o cargo público é tratado como propriedade do governante: o filho do prefeito assume a Secretaria de Obras por laço familiar, sem concurso. Confusão entre público e privado — traço pré-burocrático.',
+  'Q-DID-AP-14-002':
+    'A burocracia weberiana introduziu o concurso público (meritocracia), o formalismo (regras escritas), a hierarquia e a impessoalidade. No Brasil, foi implantada pela Reforma de 1936 (DASP). Não confundir com patrimonialismo (pessoalidade) nem com gerencial (resultados).',
+  'Q-DID-AP-14-003':
+    'A administração gerencial (Reforma de 1995) foca em RESULTADOS: contratos de gestão, indicadores, avaliação de desempenho, descentralização, foco no cidadão. Introduzida pela EC 19/1998 (eficiência no art. 37). Não substituiu a burocracia — convive com ela.',
+  'Q-DID-AP-14-004':
+    'A Reforma de 1936 criou o DASP (Departamento Administrativo do Serviço Público) e implantou a burocracia weberiana no Brasil: meritocracia, impessoalidade, hierarquia, regras escritas. Não confundir com a Reforma de 1995 (gerencial).',
+  'Q-DID-AP-14-005':
+    'A Reforma de 1995 (Plano Diretor da Reforma do Aparelho do Estado — Bresser-Pereira) introduziu o modelo gerencial. A EC 19/1998 inseriu a eficiência no art. 37 da CF. Ambas caminham juntas: a reforma administrativa e o marco constitucional da gestão por resultados.',
+  'Q-DID-AP-14-006':
+    'Patrimonialismo = pessoalidade (filho do prefeito nomeado). Burocracia = procedimentos (concurso, formalismo). Gerencial = resultados (contratos de gestão, indicadores). Cada modelo enfatiza um aspecto distinto — e o Brasil passou por todos os três, sem eliminar completamente os anteriores.',
+  'Q-DID-AP-14-007':
+    'O Decreto-Lei 200/1967 descentralizou atividades para autarquias e fundações — a chamada "administração indireta". Não é burocracia pura nem gerencial puro: é uma etapa intermediária que preparou o terreno para a reforma de 1995.',
+  'EX-AP-14-001':
+    'Concurso público + procedimentos padronizados = burocracia. Contratos de gestão + premiação por metas de satisfação = gerencial. Um mesmo órgão pode ter as duas lógicas convivendo — o gerencial não elimina a burocracia. Práticas híbridas são a regra na administração brasileira.',
+  'EX-AP-14-002':
+    'A EC 19/1998 inseriu a eficiência no art. 37 como parte do projeto gerencial: resultados, avaliação de desempenho, contratos de gestão. A eficiência não substitui os demais princípios — soma-se a eles. A partir de 1998, o LIMPE exige qualidade e resultado, não apenas legalidade formal.',
+  'EX-AP-14-003':
+    'O PODC é estrutura da Administração. A diferença do modelo gerencial é o FOCO: metas e resultados (não procedimentos). Planejar metas, organizar de forma descentralizada, dirigir com foco em resultado e controlar por indicadores de desempenho — tudo isso é PODC aplicado com a lógica gerencial.'
+,
+
+  /* ============================================================
+     DA-15 — Princípios da Administração Pública
+  ============================================================ */
+  'Q-REAL-DA-15-001':
+    'O princípio da PUBLICIDADE exige a divulgação oficial dos atos administrativos como condição de eficácia, para transparência e controle social. Não confundir com "marketing" — é dever jurídico, não escolha política.',
+  'Q-REAL-DA-15-002':
+    'EFICIÊNCIA = prestar serviços com qualidade, rapidez e uso racional de recursos. Não autoriza agir fora da lei, nem dispensar concurso, nem eliminar controles. Eficiência é dentro do ordenamento jurídico.',
+  'Q-REAL-DA-15-003':
+    'Priorizar amigo na fila viola a IMPESSOALIDADE (favorecimento). Divulgar uma ação destacando o nome do servidor viola a IMPESSOALIDADE (promoção pessoal — art. 37, §1º). Duas formas do mesmo princípio.',
+  'Q-REAL-DA-15-004':
+    'O rol expresso é o LIMPE: LEGALIDADE, IMPESSOALIDADE, MORALIDADE, PUBLICIDADE e EFICIÊNCIA (art. 37, caput). Hierarquia, autonomia, economicidade, transparência e razoabilidade não estão no caput — são implícitos ou de outras áreas.',
+  'Q-REAL-DA-15-005':
+    'EFETIVIDADE (impacto social real) não é princípio expresso do LIMPE — é dimensão de desempenho. Não confundir: eficiência é princípio (LIMPE); efetividade é critério de avaliação (ADM-01).',
+  'Q-DID-DA-15-001':
+    'O particular pode fazer tudo o que a lei NÃO PROÍBE (autonomia privada). A Administração só pode fazer o que a lei AUTORIZA ou DETERMINA (legalidade estrita). Esse é o ponto central do princípio da legalidade administrativa.',
+  'Q-DID-DA-15-002':
+    'MORALIDADE exige ética, probidade, boa-fé — além do cumprimento formal da lei. Um ato pode ser legal e imoral (ex.: nepotismo formalmente amparado por norma interna). A moralidade é mais ampla que a legalidade.',
+  'Q-DID-DA-15-003':
+    'AUTOTUTELA: a Administração revê SEUS PRÓPRIOS atos (Súmulas 346 e 473 do STF). TUTELA: supervisão da Direta sobre a Indireta. Uma é autocontrole; a outra é supervisão de outra entidade. Conceitos diferentes.',
+  'Q-DID-DA-15-004':
+    'RAZOABILIDADE: adequação meios-fins (a medida faz sentido?). PROPORCIONALIDADE: três planos — adequação, necessidade (menos gravosa) e proporcionalidade em sentido estrito (benefício > custo). A proporcionalidade é mais analítica.',
+  'EX-DA-15-001':
+    'Interditar restaurante por 30 dias por falta de lixeira é EXCESSO (sanção desproporcional à infração leve). Aplicar advertência a empresa com contaminação comprovada é INSUFICIÊNCIA (sanção branda para infração grave). Ambas violam a proporcionalidade — por lados opostos.',
+  'EX-DA-15-002':
+    'Cessão informal de servidor por "troca de favores" viola impessoalidade e legalidade (forma). Negar informação sobre a cessão viola publicidade. Um caso pode ferir vários princípios ao mesmo tempo — não se trata de "um único vício".',
+  'EX-DA-15-003':
+    'A multa por perseguição viola razoabilidade, motivação e moralidade. A "revogação" da multa ilegal é erro: o correto é ANULAÇÃO (Súmula 473). Revogar ato ilegal é usar o instituto errado — além de manter o vício, não corrige.',
+
+  /* ============================================================
+     DA-16 — Organização da Administração Pública
+  ============================================================ */
+  'Q-REAL-DA-16-001':
+    'A CODERN é entidade da Administração INDIRETA — tem personalidade jurídica própria, patrimônio próprio e atua de forma descentralizada. Não é hierarquicamente subordinada à União (há tutela, não hierarquia).',
+  'Q-REAL-DA-16-002':
+    'Os entes da Administração Direta (União, Estados, DF, Municípios) são pessoas jurídicas de DIREITO PÚBLICO — não de direito privado. Já as entidades da Indireta podem ser de direito público (autarquias) ou privado (EP, SEM, fundações privadas).',
+  'Q-REAL-DA-16-003':
+    'AGÊNCIA REGULADORA é autarquia de regime especial que regulamenta, controla e fiscaliza serviços públicos transferidos ao setor privado (ANEEL, ANS, ANTT). Não confundir com agência executiva (qualificação, não natureza).',
+  'Q-REAL-DA-16-004':
+    'Criar autarquia = DESCENTRALIZAÇÃO (entidade com personalidade própria). Dividir uma secretaria em coordenações = DESCONCENTRAÇÃO (órgãos, mesma pessoa). Descentralização = OUTRA pessoa; desconcentração = MESMA pessoa.',
+  'Q-REAL-DA-16-005':
+    'A acumulação de dois cargos de professor é permitida (hipótese do art. 37, XVI, "a"), com compatibilidade de horários. Acumular professor com técnico também é (hipótese "b"). Já "professor + médico" não se encaixa em nenhuma hipótese — é VEDADA.',
+  'Q-DID-DA-16-001':
+    'AUTARQUIA = direito público, criada por lei, função típica. FUNDAÇÃO = direito público ou privado, atividade não exclusiva do Estado. EP = 100% público, qualquer forma societária. SEM = capital misto, maioria pública, sempre S.A.',
+  'Q-DID-DA-16-002':
+    'Descentralização cria entidade (ou delega a particular). Desconcentração divide internamente entre órgãos. Desconcentração NUNCA cria nova pessoa jurídica — se criou CNPJ, é descentralização.',
+  'Q-DID-DA-16-003':
+    'Centralização = o próprio ente executa. Descentralização = repassa a outra pessoa (outorga ou delegação). Centralização concentra; descentralização distribui.',
+  'Q-DID-DA-16-004':
+    'Pela Teoria do Órgão, a conduta do agente é imputada à PESSOA JURÍDICA a que pertence o órgão. A vítima aciona o Estado; o Estado, depois, pode regressar contra o agente (dolo ou culpa). O órgão não tem personalidade — quem tem é o ente.',
+  'EX-DA-16-001':
+    'Agência reguladora = autarquia de regime especial. Assistência técnica rural = autarquia/fundação (depende da lei). Data center = empresa estatal (EP/SEM). A atividade define a natureza — e a lei criadora detalha.',
+  'EX-DA-16-002':
+    'Quem faz concurso para EP/SEM é EMPREGADO PÚBLICO (CLT). Quem faz para autarquia/fundação é SERVIDOR ESTATUTÁRIO. A natureza da entidade define o regime — não o simples fato de ter feito concurso.',
+  'EX-DA-16-003':
+    'Agência reguladora pode editar resolução detalhando a lei — sem inovar. STF reconhece esse poder normativo, dentro dos limites legais. Não é "só executar", nem "só o Presidente pode".'
+,
+
+  /* ============================================================
+     DA-17 — Agentes públicos
+  ============================================================ */
+  'Q-REAL-DA-17-001':
+    'A PROMOÇÃO é movimentação INTERNA na carreira. A REINTEGRAÇÃO é RETORNO ao exercício (o servidor estável demitido ilegalmente volta ao cargo). Duas formas de provimento derivado — com naturezas distintas: uma move, a outra reintegra.',
+  'Q-REAL-DA-17-002':
+    'A cessão de servidor para outro órgão exige ANUÊNCIA do servidor e CONVÊNIO (ou instrumento congênere). Não pode ser para empresa privada com fins lucrativos. Não pode ser unilateral nem sem formalização. A cessão não é movimentação discricionária.',
+  'Q-REAL-DA-17-007':
+    'Para investidura em cargo público (Lei 8.112/90), exige-se nacionalidade brasileira, idade mínima de 18 anos, gozo dos direitos políticos, quitação militar/eleitoral e aptidão. Candidato de 16 anos não atende a idade mínima — não pode tomar posse.',
+  'Q-REAL-DA-17-008':
+    'A validade do concurso é de ATÉ 2 anos, prorrogável UMA VEZ por igual período (art. 12 da Lei 8.112/90) — total máximo de 4 anos. Concurso realizado em jan/2022 pode ser prorrogado até jan/2026 (máximo).',
+  'Q-REAL-DA-17-009':
+    'O servidor pode ausentar-se por 8 dias consecutivos em razão de CASAMENTO (art. 97, III, "a" da Lei 8.112/90). Não confundir com luto (8 dias) ou outros afastamentos. O prazo é literal: 8 dias.',
+  'Q-REAL-DA-17-010':
+    'É DEVER do servidor "cumprir as ordens superiores, exceto quando manifestamente ilegais" (art. 116, IV). Já "promover manifestação de apreço ou desapreço" é PROIBIÇÃO (art. 117). Confundir dever com proibição é erro clássico.',
+  'Q-REAL-DA-17-011':
+    'Reitor de Instituto Federal exige nacionalidade BRASILEIRA (nato ou naturalizado) — requisito da Lei 11.892/2008. Docente italiano com doutorado e 5 anos de efetivo exercício não preenche o requisito de nacionalidade. Não pode se candidatar.',
+  'Q-DID-DA-17-001':
+    'AGENTES POLÍTICOS: cúpula (Presidente, Governador, Prefeito, Ministros, Secretários, Vereadores, Deputados, Senadores, Juízes, Membros do MP). SERVIDORES: vínculo profissional. PARTICULARES EM COLABORAÇÃO: sem vínculo (mesários, jurados). Três categorias, três regimes.',
+  'Q-DID-DA-17-002':
+    'CARGO: vínculo estatutário (criado por lei, com denominação própria). EMPREGO: vínculo celetista (CLT). FUNÇÃO: atribuições sem vínculo de cargo/emprego. Cargo é efetivo; emprego é CLT; função é o "conjunto de tarefas".',
+  'Q-DID-DA-17-003':
+    'A acumulação é VEDADA, salvo as três hipóteses do art. 37, XVI: dois cargos de professor; um de professor + outro técnico/científico; dois privativos de profissionais de saúde. Sempre com compatibilidade de horários e respeito ao teto.',
+  'Q-DID-DA-17-004':
+    'PROVIMENTO ORIGINÁRIO: nomeação (concurso). DERIVADO: promoção, readaptação, reversão, aproveitamento, reintegração, recondução. A TRANSFERÊNCIA não é mais provimento derivado (EC 19/1998).',
+  'Q-DID-DA-17-005':
+    'EMPREGADO PÚBLICO: ocupa emprego, sob CLT, em EP, SEM ou fundação de direito privado. Não confundir com servidor estatutário (cargo efetivo, regime jurídico único). O regime decorre da natureza da entidade.',
+  'Q-DID-DA-17-006':
+    'Enfermeira em dois hospitais públicos: dois cargos privativos de profissionais de saúde (art. 37, XVI, "c"), com compatibilidade de horários e respeito ao teto. A acumulação é LÍCITA. Profissional de saúde com profissional de saúde, sempre.',
+  'EX-DA-17-001':
+    'Autarquia = servidor estatutário. Empresa pública = empregado público (CLT). Cargo em comissão = livre nomeação (pode ser externo). Função de confiança = privativa de efetivo. O que define o regime é a natureza da entidade e do vínculo — não o fato de ter feito concurso.',
+
+  /* ============================================================
+     DA-18 — Poderes da Administração Pública
+  ============================================================ */
+  'Q-REAL-DA-18-001':
+    'O desvio de finalidade NÃO se restringe ao interesse particular: ocorre quando o agente pratica o ato com FINALIDADE DIVERSA da prevista em lei, ainda que atenda a outra finalidade pública. O vício está no desvio da finalidade legal, não apenas no interesse pessoal.',
+  'Q-REAL-DA-18-008':
+    'O poder HIERÁRQUICO é o que permite ao superior distribuir e escalonar funções, ordenar e rever a atuação dos agentes, estabelecendo subordinação. Manifesta-se em ordens, fiscalização, delegação e avocação — sempre internamente, entre órgãos.',
+  'Q-REAL-DA-18-009':
+    'AUTOEXECUTORIEDADE é atributo do poder de polícia: a Administração executa diretamente seus atos, sem precisar de autorização judicial prévia. As demais alternativas invertem conceitos (hierárquico é do Executivo; discricionário admite juízo de conveniência; disciplinar pune servidores).',
+  'Q-DID-DA-18-001':
+    'São quatro poderes administrativos: HIERÁRQUICO (organiza a estrutura interna), DISCIPLINAR (pune faltas), REGULAMENTAR (decreto do chefe do Executivo para detalhar lei) e DE POLÍCIA (limita direitos do particular em favor do interesse público). Poder Moderador é figura histórica, não administrativa.',
+  'Q-DID-DA-18-002':
+    'DISCIPLINAR: atinge servidores e sujeitos à disciplina interna (alunos, contratados). POLÍCIA: atinge o particular em geral (fiscalização, interdição, licenciamento). É a distinção mais cobrada em prova — fixe: internos x externos.',
+  'Q-DID-DA-18-003':
+    'EXCESSO: atua ALÉM da competência (ato ultra vires). DESVIO: atua DENTRO da competência, mas com FINALIDADE diversa. Excesso = vício de competência. Desvio = vício de finalidade. Ambos são abuso de poder.',
+  'Q-DID-DA-18-004':
+    'O poder REGULAMENTAR permite ao chefe do Executivo editar decretos que detalham a lei, SEM INOVAR na ordem jurídica. A competência é do chefe (Presidente, Governador, Prefeito), não de qualquer agente. Decreto não cria obrigação nova.',
+  'Q-DID-DA-18-005':
+    'Manifestações do poder hierárquico: dar ordens, fiscalizar, rever atos, DELEGAR e AVOCAR. Punir particular por infração de trânsito é poder de POLÍCIA — não hierárquico. O hierárquico é interno e sobre subordinados.',
+  'Q-DID-DA-18-006':
+    'O poder de POLÍCIA limita ou disciplina direitos do particular em favor do interesse público (fiscalização, interdição, licenciamento). Não se confunde com o disciplinar (que atinge servidores) nem com o regulamentar (que edita normas).',
+  'Q-DID-DA-18-007':
+    'ABUSO DE PODER é o GÊNERO. Espécies: EXCESSO DE PODER (além da competência) e DESVIO DE FINALIDADE (finalidade diversa). O desvio é espécie do abuso — não são sinônimos. Todo desvio é abuso; nem todo abuso é desvio.',
+  'EX-DA-18-001':
+    'Vício de competência (excesso) é sanável; vício de finalidade (desvio) é insanável; decreto que inova é nulo. Três atos, três vícios: sanável, insanável e nulo. A classificação correta é o primeiro passo para o controle adequado.',
+  'EX-DA-18-002':
+    'HIERARQUIA (DA-18) é prerrogativa jurídica do cargo: direito de dar ordens, fiscalizar, delegar. LIDERANÇA (ADM-05) é influência interpessoal (formal ou informal). Um chefe pode ter hierarquia sem liderança; um líder informal pode ter liderança sem hierarquia. O ideal é a convergência das duas.'
+,
+
+  /* ============================================================
+     DA-19 — Atos Administrativos
+  ============================================================ */
+  'Q-REAL-DA-19-001':
+    'Os requisitos do ato são: COMPETÊNCIA, FINALIDADE, FORMA, MOTIVO e OBJETO. Mérito é o juízo de conveniência e oportunidade — não é requisito. Sem os cinco requisitos, o ato é inválido.',
+  'Q-DID-DA-19-001':
+    'Anulação = ilegalidade, ex tunc, feita pela Administração (autotutela) E pelo Judiciário. Revogação = mérito, ex nunc, SÓ pela Administração (Súmulas 346 e 473). O Judiciário não revoga — só anula.',
+  'Q-DID-DA-19-002':
+    'Cassação = descumprimento. Caducidade = decurso de prazo ou fato novo. Contraposição = ato novo que extingue o anterior. Nenhuma delas é anulação (ilegalidade) ou revogação (mérito).',
+  'Q-DID-DA-19-003':
+    'A presunção de legitimidade é RELATIVA (iuris tantum): o ato se presume válido até prova em contrário. Não é absoluta, nem definitiva. Admite prova contrária e controle.',
+  'Q-DID-DA-19-004':
+    'Nem todo ato tem autoexecutoriedade: a INTERDIÇÃO tem (execução direta); a MULTA não tem (precisa de cobrança judicial). A presença depende da natureza do ato e de previsão legal.',
+  'Q-DID-DA-19-005':
+    'A convalidação corrige vícios SANÁVEIS: competência e forma (quando não houver prejuízo ao interesse público nem a terceiros). Vícios de finalidade, motivo e objeto são, em regra, INSANÁVEIS.',
+  'Q-DID-DA-19-006':
+    'Vício de competência: sanável (convalidação, em regra). Vício de finalidade: insanável (em regra). O primeiro pode ser corrigido; o segundo gera nulidade. A distinção é essencial para o controle.',
+  'Q-REAL-DA-19-008':
+    'Súmula 473 do STF: a Administração pode anular seus atos ilegais (ex tunc) e revogar os inconvenientes (ex nunc), respeitados os direitos adquiridos e ressalvada a apreciação judicial. Delegação é possível, salvo competência exclusiva (art. 12 da Lei 9.784).',
+  'EX-DA-19-001':
+    'Interdição: imperatividade (impõe-se) + autoexecutoriedade (executável sem Judiciário) + presunção de legitimidade (relativa). Multa: imperatividade + presunção, mas SEM autoexecutoriedade (cobrança judicial). Nem todo ato é autoexecutável.',
+  'EX-DA-19-002':
+    'Descumprimento = cassação. Prazo = caducidade. Ato novo = contraposição. Três institutos distintos, todos de extinção do ato. Não confundir com anulação (ilegalidade) ou revogação (mérito).',
+  'EX-DA-19-003':
+    'Aplicar sanção sem previsão legal viola legalidade e objeto (não há suporte normativo). Há excesso de poder. A moralidade não autoriza sanção — deve estar conjugada com a legalidade. Não há poder sancionatório sem lei.',
+  'EX-DA-19-004':
+    'Exonerar servidor em estágio probatório por "insuficiência de desempenho" sem avaliação formal, sem motivação e sem contraditório viola motivação, ampla defesa e moralidade. Estágio probatório não elimina direitos processuais.',
+
+  /* ============================================================
+     DA-20 — Serviços Públicos
+  ============================================================ */
+  'Q-REAL-DA-20-001':
+    'UTI UNIVERSI (geral): prestado a destinatários INDETERMINADOS, indivisível, custeado por imposto (iluminação pública, limpeza urbana). UTI SINGULI (individual): destinatários DETERMINADOS, divisível, custeado por taxa/tarifa (energia, água). A questão inverteu as definições.',
+  'Q-DID-DA-20-001':
+    'São princípios do serviço público: generalidade, continuidade, modicidade, regularidade, atualidade, segurança, cortesia, mutabilidade. LUCRAVIDADE não é — serviço público pode ser prestado com lucro, mas o princípio não é a lucratividade.',
+  'Q-DID-DA-20-002':
+    'CONCESSÃO: contrato, prazo determinado, licitação. PERMISSÃO: ato unilateral, prazo indeterminado, licitação (Lei 8.987/95). AUTORIZAÇÃO: ato unilateral, prazo curto, sem licitação. Três naturezas distintas: contrato, ato e ato.',
+  'Q-DID-DA-20-003':
+    'A continuidade é a REGRA, mas admite exceções legais: razões técnicas/segurança, inadimplemento com aviso prévio, emergência. Não é absoluta. A interrupção sem justificativa viola o princípio.',
+  'Q-DID-DA-20-004':
+    'ENCAMPAÇÃO: retomada por INTERESSE PÚBLICO, durante o prazo, com lei autorizativa e indenização. CADUCIDADE: perda por DESCUMPRIMENTO, sem indenização. Uma é decisão discricionária; a outra é sanção.',
+  'Q-DID-DA-20-005':
+    'PRÓPRIO: essencial, prestado pelo Estado (saúde, educação). IMPRÓPRIO: atividade econômica em sentido estrito. A essencialidade e o prestador definem a natureza.',
+  'Q-DID-DA-20-006':
+    '(i) contrato de 20 anos + licitação = concessão. (ii) permissão de quiosque, prazo indeterminado = permissão. (iii) food truck em evento de 3 dias = autorização. (iv) feira por 1 fim de semana = autorização. O prazo e a natureza do ajuste definem.',
+  'Q-DID-DA-20-007':
+    'Os direitos dos usuários estão na Lei 8.987/95 e, quando aplicável, no CDC: informação, qualidade, resposta a reclamações, continuidade. Não se limitam a um só diploma.',
+  'EX-DA-20-001':
+    '(i) razões de segurança e (ii) inadimplemento com aviso prévio são exceções LEGAIS ao princípio da continuidade. (iii) interrupção sem justificativa é ILEGAL. A continuidade é regra, não absoluta.',
+  'EX-DA-20-002':
+    'Concessão = contrato, prazo determinado, licitação. Permissão = ato, prazo indeterminado. Autorização = ato, prazo curto, sem licitação. A natureza (contrato x ato) e o prazo (determinado x indeterminado) definem cada figura.',
+  'EX-DA-20-003':
+    'A concessão exige LICITAÇÃO obrigatória (art. 175, CF + Lei 8.987/95), na modalidade concorrência ou diálogo competitivo. Articula DA-20 (regime do serviço) com DA-21 (regime da licitação). Delegação não dispensa certame.',
+  'EX-DA-20-004':
+    'TCU = controle externo. Agência reguladora = controle interno setorial. Ouvidoria = controle social. Três atores, três dimensões — não há hierarquia entre eles, atuam de forma complementar.',
+
+  /* ============================================================
+     DA-21 — Licitações e contratos administrativos
+  ============================================================ */
+  'Q-REAL-DA-21-001':
+    'Contratação direta por VALOR, dentro dos limites legais (art. 75 da Lei 14.133/2021), é hipótese de licitação DISPENSÁVEL. Não confundir com "dispensada" (gênero) nem com "inexigível" (competição inviável).',
+  'Q-REAL-DA-21-002':
+    'A primeira etapa da fase preparatória é o ESTUDO TÉCNICO PRELIMINAR (ETP) — art. 18 da Lei 14.133/2021. Vem antes do termo de referência, do projeto básico e do executivo.',
+  'Q-REAL-DA-21-003':
+    'Contratação de instituição de NOTÓRIA ESPECIALIZAÇÃO para curso especializado é INEXIGIBILIDADE (art. 74 da Lei 14.133/2021) — competição inviável. Não confundir com dispensa por valor ou emergência.',
+  'Q-REAL-DA-21-004':
+    'A legitimidade para impugnar edital NÃO depende de prévia habilitação. Qualquer cidadão é parte legítima; qualquer licitante pode solicitar esclarecimentos (art. 164 da Lei 14.133/2021).',
+  'Q-DID-DA-21-001':
+    'DISPENSA (art. 75): competição POSSÍVEL, mas a lei dispensa (valor, emergência). INEXIGIBILIDADE (art. 74): competição INVIÁVEL (fornecedor exclusivo, notória especialização). Um é "não precisa"; o outro é "não há como".',
+  'Q-DID-DA-21-002':
+    'Modalidades da Lei 14.133/2021: pregão, concorrência, concurso, leilão e diálogo competitivo. CONVITE não existe mais (era da Lei 8.666/93). Não confundir com credenciamento (procedimento auxiliar, não modalidade).',
+  'Q-DID-DA-21-003':
+    'Cláusulas exorbitantes: alteração unilateral, rescisão unilateral, fiscalização, aplicação de sanções, ocupação provisória. RENÚNCIA de direitos NÃO é cláusula exorbitante — é o oposto: a Administração não pode renunciar a prerrogativas em favor do interesse público.',
+  'Q-DID-DA-21-004':
+    'Critérios da Lei 14.133/2021: menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance (leilão) e maior retorno econômico. "Maior vantagem financeira imediata" não existe no rol.',
+  'Q-REAL-DA-21-009':
+    'O PREGÃO é modalidade obrigatória para bens e serviços COMUNS, com critério de menor preço ou maior desconto (art. 29 da Lei 14.133/2021). Não confundir com concorrência (obras, serviços especiais, bens não comuns).',
+  'Q-REAL-DA-21-010':
+    'CREDENCIAMENTO é procedimento auxiliar de chamamento público: a Administração convoca interessados, que se credenciam para executar o objeto quando convocados (art. 6º, XLIII). Não confundir com pré-qualificação, registro de preços ou ata.',
+  'Q-REAL-DA-21-011':
+    'Diálogo competitivo: a Administração apresenta suas necessidades e exigências no edital, com prazo mínimo de 25 DIAS ÚTEIS para manifestação de interesse (art. 32, §1º). A comissão pode contratar assessoria técnica — não há vedação.',
+  'Q-REAL-DA-21-012':
+    'Contratos administrativos admitem PRORROGAÇÃO nos termos e limites legais (art. 105 e ss.). Não há prazo único de 2 anos — depende do objeto. A alteração unilateral é prerrogativa da ADMINISTRAÇÃO, não do contratado.'
+,
+
+  /* ============================================================
+     DA-22 — Responsabilidade Civil do Estado
+  ============================================================ */
+  'Q-DID-DA-22-001':
+    'O art. 37, §6º, da CF adotou a responsabilidade OBJETIVA em atos comissivos: basta dano + nexo causal + conduta. A culpa do agente importa apenas na AÇÃO REGRESSIVA (responsabilidade subjetiva do agente perante o Estado). Duas etapas distintas.',
+  'Q-DID-DA-22-002':
+    'A ação regressiva exige DOLO ou CULPA do agente (art. 37, §6º). A vítima aciona o Estado (objetiva); o Estado, após indenizar, pode cobrar do agente (subjetiva). Se o agente agiu com imprudência, há culpa — cabe regressiva. Se agiu com dolo, idem.',
+  'Q-DID-DA-22-003':
+    'Culpa exclusiva da vítima, caso fortuito/força maior e fato de terceiro são EXCLUDENTES — quebram o nexo causal. A culpa leve do agente NÃO é excludente: a responsabilidade do Estado perante a vítima é objetiva.',
+  'Q-DID-DA-22-004':
+    'O Brasil adotou o RISCO ADMINISTRATIVO: responsabilidade objetiva, mas COM excludentes. O risco INTEGRAL (sem excludentes) não é a regra — só em hipóteses excepcionais previstas em lei (ex.: dano ambiental).',
+  'Q-DID-DA-22-005':
+    'Atos COMISSIVOS: responsabilidade objetiva (art. 37, §6º). Omissão GENÉRICA: exige-se culpa (falha do serviço — jurisprudência majoritária). Omissão ESPECÍFICA (dever legal direto): pode haver objetiva. A distinção altera o regime aplicável.',
+  'Q-DID-DA-22-006':
+    'Pedestre atropelado em local proibido, com sinal vermelho, e motorista prudente: CULPA EXCLUSIVA DA VÍTIMA — excludente. A responsabilidade objetiva do Estado não é absoluta. Quebra o nexo causal.',
+  'Q-DID-DA-22-007':
+    'Servidor conduz veículo oficial com imprudência e causa dano. A vítima aciona a União (objetiva). Após indenizar, a União ajuíza AÇÃO REGRESSIVA contra o servidor (dolo ou culpa — imprudência = culpa). Duas etapas: Estado paga → Estado cobra.',
+  'Q-DID-DA-22-008':
+    'Requisitos da responsabilidade objetiva: CONDUTA + DANO + NEXO CAUSAL. A culpa do agente NÃO é requisito perante a vítima — só importa na ação regressiva.',
+  'EX-DA-22-001':
+    'Pedestre em local proibido, com sinal vermelho, e motorista prudente = culpa exclusiva da vítima. Exclui a responsabilidade do Estado. A responsabilidade objetiva não é absoluta — admite excludentes (culpa da vítima, caso fortuito, fato de terceiro).',
+  'EX-DA-22-002':
+    'Detento morto em presídio = omissão ESPECÍFICA (dever direto de custódia — art. 5º, XLIX). STF reconhece responsabilidade OBJETIVA. Enchente em área sem drenagem = omissão GENÉRICA (dever amplo) — jurisprudência exige culpa (falha do serviço). O tipo de omissão altera o regime.',
+  'EX-DA-22-003':
+    'Teoria do Órgão: conduta do agente é imputada ao Estado. Vítima aciona o Estado (objetiva). Estado, após indenizar, pode regressar contra o agente (dolo ou culpa). Duas etapas: primeiro o Estado paga; depois, se cabível, cobra do agente.',
+  'EX-DA-22-004':
+    'Reparação ao particular = via judicial (responsabilidade objetiva, art. 37, §6º). Controle do contrato = via do TCU (art. 71 — controle externo). Vias complementares: uma repara o dano, a outra previne/corrige irregularidades. Não se confundem.',
+
+  /* ============================================================
+     DA-23 — Controle da Administração Pública
+  ============================================================ */
+  'Q-REAL-DA-23-001':
+    'O TCU tem jurisdição ampla: alcança sociedades de economia mista (recursos da União), recursos federais repassados a municípios, entidades privadas que recebem contribuições parafiscais e particulares que causem prejuízo ao erário. Não se restringe à Administração Direta.',
+  'Q-REAL-DA-23-002':
+    'A CGU é órgão CENTRAL do sistema de controle interno do Executivo federal (art. 74). Avalia metas, fiscaliza programas e apura irregularidades. Não é órgão setorial.',
+  'Q-REAL-DA-23-003':
+    'Compete ao sistema de controle interno (art. 74) avaliar o cumprimento das metas do PPA e da LDO, a execução dos programas e dos orçamentos, comprovar a legalidade e avaliar resultados. Apoiar o controle externo é atribuição, mas não a única.',
+  'Q-REAL-DA-23-008':
+    'Anulação de ato após provocação do Judiciário é CONTROLE POSTERIOR (após a prática do ato). É controle JUDICIAL, não administrativo. O controle prévio é antes; o concomitante, durante.',
+  'Q-DID-DA-23-001':
+    'INTERNO: dentro de cada Poder (Controladoria — art. 74). EXTERNO: Tribunais de Contas (art. 71). O interno é autocontrole; o externo é controle por outro órgão. Não confundir com controle social (cidadão/ouvidoria).',
+  'Q-DID-DA-23-002':
+    'LEGALIDADE: Administração + Judiciário. MÉRITO: só Administração. O Judiciário não revê mérito (conveniência e oportunidade) — só legalidade. Súmula 473 do STF.',
+  'Q-DID-DA-23-003':
+    'AUTOTUTELA: revisão dos PRÓPRIOS atos (Súmulas 346 e 473). TUTELA: supervisão da Direta sobre a Indireta. Uma é autocontrole; a outra é supervisão de outra entidade.',
+  'Q-DID-DA-23-004':
+    'O TCU APRECIA as contas do Presidente (parecer prévio). Quem JULGA é o CONGRESSO NACIONAL (art. 49, IX). O TCU julga as contas dos DEMAIS administradores. Pegadinha clássica.',
+  'Q-DID-DA-23-005':
+    'Prazo decadencial para a Administração anular seus atos: 5 ANOS, salvo comprovada MÁ-FÉ (art. 54 da Lei 9.784/99). O prazo concretiza a segurança jurídica.',
+  'EX-DA-23-001':
+    'Controladoria = interno (art. 74). TCU = externo (art. 71). Ouvidoria = social (participação do cidadão). Três dimensões complementares — não excludentes. A CF prevê articulação entre eles.',
+  'EX-DA-23-002':
+    'Autotutela permite anular ato ilegal, mas há prazo de 5 ANOS (art. 54 da Lei 9.784), salvo má-fé. Passados 7 anos, sem má-fé, o ato não pode mais ser anulado pela via administrativa — segurança jurídica prevalece.',
+  'EX-DA-23-003':
+    'O controle é o INSTRUMENTO pelo qual o LIMPE se torna exigível: publicidade (sem publicação), motivação/moralidade (sem motivação), impessoalidade (sem processo seletivo). Sem controle, os princípios são letra morta.',
+
+  /* ============================================================
+     DA-24 — Improbidade Administrativa
+  ============================================================ */
+  'Q-REAL-DA-24-001':
+    'A obrigação de reparar o dano é TRANSMISSÍVEL aos herdeiros, mas LIMITADA ao valor da herança ou do patrimônio transferido (art. 8º da Lei 8.429/92). Se o falecido não deixou patrimônio, o herdeiro não responde com seu próprio patrimônio.',
+  'Q-REAL-DA-24-002':
+    'A Lei 14.230/2021 exige DOLO em TODAS as modalidades. A perda patrimonial decorrente de atividade econômica NÃO configura, por si só, improbidade (art. 10, §2º). Divergência interpretativa com base em jurisprudência não pacificada NÃO configura improbidade (art. 21, §2º).',
+  'Q-REAL-DA-24-003':
+    'A aprovação das contas pelo TCU NÃO impede a aplicação de sanções por improbidade. As instâncias são INDEPENDENTES (art. 21 da Lei 8.429/92). O TCU aprova contas sob a ótica contábil; a improbidade analisa dolo e gravidade — independentes.',
+  'Q-REAL-DA-24-008':
+    'Receber vantagem econômica para tolerar atividade ilícita (jogo, lenocínio, narcotráfico) é ENRIQUECIMENTO ILÍCITO (art. 9º, VII). As demais alternativas descrevem prejuízo ao erário ou atentado a princípios. Cada conduta, uma modalidade.',
+  'Q-DID-DA-24-001':
+    'Modalidades: enriquecimento ilícito (art. 9º), prejuízo ao erário (art. 10) e atentado a princípios (art. 11). A improbidade CULPOSA foi EXTINTA pela Lei 14.230/2021. Só há improbidade com DOLO.',
+  'Q-DID-DA-24-002':
+    'Após a Lei 14.230/2021, exige-se DOLO em TODAS as modalidades. A modalidade culposa foi extinta. A "vontade livre e consciente de alcançar o resultado ilícito" é o dolo específico exigido — não basta a mera voluntariedade.',
+  'Q-DID-DA-24-003':
+    'IMPROBIDADE: dolo + gravidade. IRREGULARIDADE: falha formal/procedimental, que pode gerar sanções administrativas, mas não necessariamente improbidade. Nem toda irregularidade é improbidade.',
+  'Q-DID-DA-24-004':
+    'A ação civil pública por improbidade é de competência do MINISTÉRIO PÚBLICO (art. 17). O cidadão pode representar, mas não ajuizar diretamente. Não cabe a qualquer pessoa jurídica nem apenas à União.',
+  'Q-DID-DA-24-005':
+    'Terceiros que concorram para o ato também podem ser responsabilizados (art. 3º). Ex.: empresário que paga propina a servidor. Não é necessário ser servidor público para responder por improbidade.',
+  'EX-DA-24-001':
+    'Nepotismo = atentado a princípios (art. 11), sem ressarcimento. Superfaturamento = prejuízo ao erário (art. 10), com ressarcimento. Modalidades e sanções distintas. Improbidade não exige enriquecimento pessoal.',
+  'EX-DA-24-002':
+    'Improbidade se aplica a todo agente público (sentido amplo), incluindo empregados de EP/SEM. Particular que concorre também responde (art. 3º). Independe do regime (estatutário ou celetista).',
+  'EX-DA-24-003':
+    'Esferas independentes: reparação civil ao particular (via Estado), improbidade contra o agente (via MP), ação regressiva (via Estado), sanções penais e administrativas. Um fato, múltiplas responsabilizações. Não se excluem.'
+,
+
+  /* ============================================================
+     DA-25 — Processo Administrativo
+  ============================================================ */
+  'Q-REAL-DA-25-001':
+    'A fase de INSTRUÇÃO é destinada a averiguar e comprovar os dados necessários à tomada de decisão. Vem depois da instauração e antes da defesa. Não confundir com instauração (início) nem com decisão (final).',
+  'Q-REAL-DA-25-002':
+    'A comunicação dos atos processuais se faz por NOTIFICAÇÃO (art. 26 da Lei 9.784/99). Não confundir com averbação (registro), qualificação (identificação), apensação (união de processos) ou indicação.',
+  'Q-REAL-DA-25-003':
+    'A delegação é revogável a qualquer tempo (art. 14 da Lei 9.784/99), e o ato de revogação deve ser publicado no meio oficial. Não é irretratável, mas exige publicidade.',
+  'Q-REAL-DA-25-004':
+    'A Lei 9.784/99 aplica-se SUBSIDIARIAMENTE aos processos administrativos específicos (art. 69). Onde a lei específica for omissa, aplica-se a 9.784 — sem excluí-la.',
+  'Q-DID-DA-25-001':
+    'PROCESSO ADMINISTRATIVO (Lei 9.784) = rito jurídico de decisão. PODC = funções do gestor. Conceitos DIFERENTES, apesar do nome parecido. A pegadinha clássica do módulo.',
+  'Q-DID-DA-25-002':
+    'IMPEDIMENTO: vínculo OBJETIVO (cônjuge, parente até 3º grau, interesse direto). SUSPEIÇÃO: vínculo SUBJETIVO (amizade íntima, inimizade). Ambos afastam o agente do processo — por motivo objetivo ou subjetivo.',
+  'Q-DID-DA-25-003':
+    'As fases são: instauração, instrução, defesa, relatório e decisão (além dos recursos). "Homologação judicial" não é fase do processo administrativo — é instituto do processo judicial.',
+  'Q-DID-DA-25-004':
+    'RECONSIDERAÇÃO: mesma autoridade. RECURSO HIERÁRQUICO: autoridade superior. Duas formas de recurso administrativo — com destinatários distintos.',
+  'Q-REAL-DA-25-008':
+    'Interpretação da norma administrativa da forma que melhor garanta o fim público, vedada aplicação retroativa de nova interpretação (art. 2º, XIII, Lei 9.784). Segurança jurídica em primeiro plano.',
+  'Q-REAL-DA-25-009':
+    'Avocação (art. 15): em caráter excepcional e por motivos relevantes, o superior pode chamar para si competência do subordinado. Não confundir com delegação (que vai na direção oposta).',
+  'Q-REAL-DA-25-010':
+    'Intimação: ciência no processo, via postal com AR, telegrama ou outro meio que assegure a ciência (art. 26, §3º). O comparecimento do administrado supre a falta de intimação — não o contrário.',
+  'Q-REAL-DA-25-011':
+    'A motivação PODE consistir em declaração de concordância com pareceres, informações ou propostas anteriores (art. 50, §1º) — que, neste caso, integram o ato. A alternativa INCORRETA dizia o contrário.',
+
+  /* ============================================================
+     DA-26 — Bens Públicos
+  ============================================================ */
+  'Q-DID-DA-26-001':
+    'USO COMUM: praça, rua (coletividade). USO ESPECIAL: escola, hospital (serviço público). DOMINICAL: terreno sem uso (sem destinação específica). Três categorias — cada uma com regime próprio de alienação.',
+  'Q-DID-DA-26-002':
+    'IMPESCRITIBILIDADE: bens públicos não são adquiridos por usucapião, independentemente do tempo (Súmula 340 do STF; art. 102 do CC). Ocupação prolongada não gera propriedade.',
+  'Q-DID-DA-26-003':
+    'A alienação exige, em regra, autorização legislativa + avaliação prévia + licitação (leilão). Bens dominicais podem ser alienados; afetados não, enquanto mantida a afetação.',
+  'Q-DID-DA-26-004':
+    'AUTORIZAÇÃO: ato precário, interesse do particular. PERMISSÃO: ato precário, prazo indeterminado. CONCESSÃO: contrato, prazo determinado, licitação. Cada uma com natureza própria.',
+  'Q-DID-DA-26-005':
+    'AFETAÇÃO: atribui destinação pública. DESAFETAÇÃO: retira a destinação. Bens desafetados (dominicais) podem ser alienados, cumpridos os requisitos.',
+  'Q-DID-DA-26-006':
+    'Prédio de escola transferido para outro local fica SEM uso — há DESAFETAÇÃO. Passa à categoria de bem DOMINICAL e pode ser alienado (com autorização legislativa, avaliação e leilão).',
+  'Q-DID-DA-26-007':
+    'IMPENHORABILIDADE: bens públicos não são penhoráveis. Execução contra o Estado segue PRECATÓRIOS (art. 100, CF), salvo RPV (pequeno valor).',
+  'Q-DID-DA-26-008':
+    'USO COMUM: coletividade em geral (praça, rua). USO ESPECIAL: serviço/estabelecimento público (escola, hospital). A destinação define a categoria — não a localização ou o proprietário.',
+  'EX-DA-26-001':
+    'Food truck em evento = autorização. Quiosque por prazo indeterminado = permissão. Restaurante por 10 anos, com licitação = concessão. A duração e a natureza do ajuste definem a forma — não o uso comercial em si.',
+  'EX-DA-26-002':
+    'Bem dominical pode ser alienado, mas o procedimento exige autorização legislativa + avaliação + leilão. Sem qualquer desses requisitos, a alienação é nula. Autorização do Prefeito sozinha não basta.',
+  'EX-DA-26-003':
+    'Bem de autarquia é público (regime público). Afetado ao hospital = USO ESPECIAL. Impenhorável, imprescritível, inalienável enquanto afetado. Só pode ser alienado se desafetado e cumpridos os requisitos.',
+  'EX-DA-26-004':
+    'Particular que danifica veículo oficial responde ao Estado (relação civil). Servidor que danifica equipamentos por imprudência responde ao Estado (ação regressiva). Em ambos, há dever de reparação ao patrimônio público.',
+
+  /* ============================================================
+     DA-27 — Intervenção do Estado e restrições administrativas
+  ============================================================ */
+  'Q-DID-DA-27-001':
+    'São formas de intervenção: desapropriação, servidão administrativa, requisição, ocupação temporária, limitações administrativas e tombamento. Confisco tributário NÃO é intervenção — é sanção tributária.',
+  'Q-DID-DA-27-002':
+    'Desapropriação ORDINÁRIA exige indenização PRÉVIA, JUSTA e EM DINHEIRO (art. 5º, XXIV). Títulos são de hipóteses específicas (agrária, urbanística). Não é facultativa.',
+  'Q-DID-DA-27-003':
+    'Desapropriação EXTRAORDINÁRIA (art. 243): cultivo ilegal de plantas psicotrópicas — indenização apenas das BENFEITORIAS ÚTEIS. Distinta da indenização (ordinária) e do confisco (indireta).',
+  'Q-DID-DA-27-004':
+    'SERVIDÃO: ônus real, sem transferência. DESAPROPRIAÇÃO: transfere a propriedade, com indenização. A primeira restringe; a segunda retira.',
+  'Q-DID-DA-27-005':
+    'REQUISIÇÃO (art. 5º, XXV): uso TEMPORÁRIO em IMINENTE PERIGO PÚBLICO, com indenização ULTERIOR se houver dano. Não transfere propriedade. Não confundir com desapropriação.',
+  'Q-DID-DA-27-006':
+    'OCUPAÇÃO TEMPORÁRIA: uso temporário de imóvel para obras ou serviços públicos (ex.: canteiro de obras). Em regra, gera indenização. Distinta da requisição (perigo público).',
+  'Q-DID-DA-27-007':
+    'LIMITAÇÕES ADMINISTRATIVAS: restrições GERAIS e ABSTRATAS (zoneamento, gabarito), em regra sem indenização — salvo se esvaziarem o valor econômico do bem. Não são individuais.',
+  'Q-DID-DA-27-008':
+    'TOMBAMENTO: preservação de bem cultural, sem transferência de propriedade. Pode ser provisório ou definitivo, voluntário ou compulsório. Em regra, sem indenização — salvo se esvaziar o valor econômico.',
+  'EX-DA-27-001':
+    'Rede de água sobre terreno = servidão (ônus real). Canteiro de obras = ocupação temporária (uso transitório). Terreno para escola = desapropriação (transferência). Só a desapropriação transfere propriedade.',
+  'EX-DA-27-002':
+    'Requisição em enchente (iminente perigo público) é lícita. Não transfere propriedade. Indenização ulterior pelos danos. Não confundir com desapropriação (prévia) nem com "não gera indenização" (gera, ulterior).',
+  'EX-DA-27-003':
+    'Ocupar terreno particular sem desapropriação é ESBULHO ADMINISTRATIVO. Direito a reintegração + indenização + discussão sobre desapropriação indireta. Supremacia do interesse público não autoriza esbulho — exige processo legal e indenização.',
+  'EX-DA-27-004':
+    'A CF/88 assegura a propriedade (art. 5º, XXII), mas a condiciona à FUNÇÃO SOCIAL (art. 5º, XXIII). Supremacia fundamenta prerrogativas; indisponibilidade impõe limites (processo legal + indenização + proporcionalidade). Função social vale para urbanos (art. 182) e rurais (art. 186).'
+,
+
+  /* ============================================================
+     REV-28 — Revisão integrada e domínio por questões
+  ============================================================ */
+  'Q-DID-REV-28-001':
+    'Reler 3 vezes a aula de Poderes Administrativos (passiva) rende menos que fazer 10 questões e analisar os erros (ativa). A primeira gera reconhecimento; a segunda, recuperação ativa — que fixa na memória de longo prazo. Revisão ativa > passiva.',
+  'Q-DID-REV-28-002':
+    'Um estudante que só anota "errei" no caderno não sabe o que fazer. Se anota "errei por confusão entre dispensa e inexigibilidade", a ação fica clara: comparar os dois conceitos. A classificação transforma o erro em AÇÃO.',
+  'Q-DID-REV-28-003':
+    '(i) confusão anulação x revogação = comparar; (ii) desconhecimento de contraposição = estudar; (iii) não viu "INCORRETA" = treinar leitura; (iv) respondeu rápido = gerenciar tempo. Cada tipo, uma ação — não existe "ação única".',
+  'Q-DID-REV-28-004':
+    'A revisão espaçada programa retornos em 1, 3, 7, 15, 30 e 60 dias. Cada retorno ocorre ANTES do esquecimento — não depois. Revisão contínua (todo dia) é ineficiente; espaçada é cirúrgica.',
+  'Q-DID-REV-28-005':
+    'CICLO: alterna teoria → questões → revisão, sem data fixa. CRONOGRAMA: distribui matérias por datas. O ciclo se ajusta ao ritmo; o cronograma, à agenda. O ideal é combinar: ciclo dentro do cronograma.',
+  'Q-DID-REV-28-006':
+    'Um servidor trata mal o cidadão: viola impessoalidade e moralidade (DA-15), deveres de atendimento (ADM-12), mas NÃO é improbidade (falta dolo + gravidade). Integração de módulos: saber distinguir as esferas.',
+  'Q-DID-REV-28-007':
+    'Vício de finalidade em ato administrativo (DA-19) → ato nulo. Se houver dolo e gravidade → improbidade (DA-24). Se gerar dano → responsabilidade civil (DA-22). Um fato, múltiplas consequências jurídicas — saber reconhecer.',
+  'Q-DID-REV-28-008':
+    'Contratação direta por urgência exige enquadramento legal (DA-21), estrutura administrativa compatível (ADM-04) e observância de princípios (DA-15). Sem isso, é irregular e pode configurar improbidade (DA-24). Integração de módulos.',
+  'EX-REV-28-001':
+    '(i) confundir dispensa com inexigibilidade = confusão (comparar). (ii) não ver "INCORRETA" = interpretação (treinar leitura). (iii) responder rápido demais = pressa (tempo). (iv) desconhecer credenciamento = falta de conhecimento (estudar). Cada erro, uma ação específica.',
+  'EX-REV-28-002':
+    'Interpretação → treinar leitura. Confusão → comparar. Desconhecimento → revisar aula. Esquecimento → revisão espaçada. Pegadinha → conhecer banca. Cada tipo de erro tem uma ação corretiva própria — não existe "fórmula única".',
+  'EX-REV-28-003':
+    'Para resolver "confundo anulação com revogação", o melhor caminho é COMPARAR diretamente (tabela: ilegalidade x mérito, ex tunc x ex nunc, Administração + Judiciário x só Administração), fazer nova bateria focada e revisar espaçado. Reler a aula inteira é ineficiente — o problema está num ponto específico.',
+  'EX-REV-28-004':
+    'Acerto com segurança → intervalo maior. Acerto com dúvida → intervalo intermediário. Erro → intervalo curto. O sistema sugere 3 dias para dúvida — nem tão curto quanto erro, nem tão longo quanto segurança. A adaptatividade considera o GRAU de confiança, não só o acerto binário.'
 
 };
