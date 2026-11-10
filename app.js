@@ -1067,7 +1067,7 @@ var PRIORITY_LABELS_SHORT = {
   if (getModuleMastery(m.id) >= MASTERY_THRESHOLD) continue;
   sugestoes.push({ tipo: 'modulo', modulo: m });
 }
-    }
+
 
     var html = '';
     html += '<h1 class="page-title">Dashboard</h1>';
