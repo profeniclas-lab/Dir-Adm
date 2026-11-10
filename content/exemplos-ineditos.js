@@ -114,4 +114,246 @@ window.EXEMPLOS_INEDITOS = {
     'Uma organização SEM FRONTEIRAS (Jack Welch) elimina a cadeia de comando tradicional, amplia a amplitude de controle e substitui departamentos por equipes autônomas. É uma configuração pós-burocrática.',
   'Q-DID-ADM-04-011':
     'Um instituto federal cria equipe temporária com servidores de TI, administração e comunicação; cada um mantém vínculo com sua área e recebe orientações do coordenador do projeto. É a departamentalização MATRICIAL (dupla subordinação).'
+  /* ============================================================
+     LOTE PDF — Exemplos inéditos (Lotes 1 a 3)
+     ============================================================ */
+  'Q-PDF-ADM-01-001':
+    'Um gestor de uma secretaria de saúde precisa decidir como realocar leitos entre hospitais, considerando o panorama geral da rede e as políticas públicas de saúde. Essa capacidade de visão sistêmica e de interpretação do ambiente é uma habilidade conceitual, típica do nível estratégico.',
+  'Q-PDF-ADM-01-002':
+    'Uma mudança na alíquota de impostos federais afeta o orçamento de uma autarquia municipal. Esse é um fator externo (político-legal), que exige adaptação interna.',
+  'Q-PDF-ADM-01-003':
+    'A estrutura de autoridade da Igreja Católica, com sua hierarquia e órgãos de assessoria, inspirou modelos de organização empresarial, como o estado-maior (staff).',
+  'Q-PDF-ADM-01-004':
+    'Um setor de licitações que acumula processos e não cumpre prazos legais prejudica o interesse público, violando o dever de eficiência, mesmo que os atos sejam formalmente legais.',
+  'Q-PDF-ADM-02-001':
+    'Uma coordenação define a meta de reduzir evasão escolar em 10% (planejamento) e, ao final do ano, compara o índice alcançado com a meta (controle). Atribuir a comparação ao planejamento é erro conceitual.',
+  'Q-PDF-ADM-02-002':
+    'Após implantar um novo sistema de protocolo, uma prefeitura monitora mensalmente o tempo médio de tramitação e corrige desvios. Essa é a função de controle, que realimenta o planejamento.',
+  'Q-PDF-ADM-02-003':
+    'Em um ministério, a direção institucional cabe ao ministro e aos secretários-executivos, que interpretam o plano estratégico. Os supervisores de primeira linha atuam no nível operacional, não no institucional.',
+  'Q-PDF-ADM-04-001':
+    'Uma universidade cria novos departamentos e redefine a subordinação das coordenações após aprovar um plano de expansão. Essas medidas são típicas da função organização.',
+  'Q-PDF-ADM-04-002':
+    'Em uma startup de tecnologia, a estrutura linear pode ser ágil no início, mas, com o crescimento e a complexidade, tende a se tornar lenta e sobrecarregar a cúpula.',
+  'Q-PDF-ADM-04-003':
+    'Uma estrutura organizacional que não se adapta às novas demandas digitais pode ficar obsoleta e ineficiente, comprometendo a prestação de serviços.',
+  'Q-PDF-ADM-04-004':
+    'Em uma secretaria, se dois setores executam atividades com o mesmo objetivo sem um comando unificado, há duplicidade e conflito. O princípio da unidade de direção busca evitar isso.',
+  'Q-PDF-ADM-03-001':
+    'A visão de uma autarquia previdenciária pode ser "ser referência nacional em gestão previdenciária até 2030", enquanto sua missão é "garantir aposentadorias e pensões com eficiência".',
+  'Q-PDF-ADM-05-001':
+    'Uma prefeitura institui um programa de bonificação por produtividade para servidores que baterem metas. Esse é um exemplo de motivação extrínseca, pois o estímulo vem de fora (recompensa financeira).',
+  'Q-PDF-ADM-05-002':
+    'Uma autarquia oferece auxílio-alimentação (existência), promove confraternizações (relacionamento) e custeia pós-graduação (crescimento). Essas ações atendem, respectivamente, às três necessidades da Teoria ERC.',
+  'Q-PDF-ADM-05-003':
+    'Um diretor que representa o órgão em evento externo (interpessoal), repassa informações à equipe (informacional) e decide realocar verbas (decisorial) desempenha papéis de Mintzberg.',
+  'Q-PDF-ADM-05-004':
+    'A teoria dos traços defende que líderes já nascem com características como carisma e inteligência. Um exemplo é a crença de que "líder nato" possui traços que o distinguem.',
+  'Q-PDF-ADM-05-005':
+    'Em um órgão público, o chefe tem autoridade porque ocupa um cargo previsto em lei e segue normas impessoais — essa é a autoridade racional-legal (burocrática).',
+  'Q-PDF-ADM-06-001':
+    'Um gestor que só analisa os processos que atrasaram mais de 30% (desvios significativos) e ignora os que estão dentro do prazo aplica a ênfase nas exceções.',
+  'Q-PDF-ADM-06-002':
+    'Um indicador estratégico de uma secretaria pode ser "percentual de cumprimento do plano plurianual", que mostra onde a organização está em relação aos objetivos de longo prazo.',
+  'Q-PDF-ADM-07-001':
+    'Trabalho em equipe, treinamento e comunicação são pilares da gestão de pessoas, pois permitem atrair, desenvolver e manter talentos.',
+  'Q-PDF-ADM-07-002':
+    'Em um concurso, o teste Palográfico avalia ritmo de trabalho, enquanto o Quati avalia escolhas situacionais. São testes psicológicos com focos distintos.',
+  'Q-PDF-ADM-07-003':
+    'As atribuições de um cargo descrevem o que o servidor faz (ex.: atender público); as especificações descrevem o que ele precisa ter (ex.: ensino médio e informática básica).',
+  'Q-PDF-ADM-07-004':
+    'Na avaliação 90º, apenas o chefe imediato avalia o servidor, sem participação de pares ou do próprio avaliado. É um modelo ágil, mas sujeito a viés.',
+  'Q-PDF-ADM-08-001':
+    'Quando um órgão divulga dados que subsidiam a decisão de um gestor, a comunicação cumpre a função de informação.',
+  'Q-PDF-ADM-08-002':
+    'Um servidor que interpreta uma crítica como perseguição, por já ter tido experiência negativa com o chefe, está sob o efeito da percepção seletiva.',
+  'Q-PDF-ADM-08-003':
+    'Dois setores negociam prazos; um impõe sua vontade e o outro cede (ganha-perde). Depois, o setor que cedeu passa a boicotar as demandas, gerando prejuízo mútuo (perde-perde).',
+  'Q-PDF-ADM-09-001':
+    'O Diagrama de Ishikawa (espinha de peixe) é usado para levantar as causas de um problema, como atraso em licitações.',
+  'Q-PDF-ADM-09-002':
+    'Um gestor que prioriza a solução dos 20% de causas responsáveis por 80% das reclamações está aplicando o Diagrama de Pareto.',
+  'Q-PDF-ADM-10-001':
+    'O almoxarifado intermediário guarda produtos semiacabados que serão usados na montagem final, diferente do almoxarifado de matérias-primas ou de produtos acabados.',
+  'Q-PDF-ADM-10-002':
+    'Definir preços de venda é atividade de marketing, não da gestão de materiais. A gestão de materiais cuida de compras, armazenagem e transporte.',
+  'Q-PDF-ADM-10-003':
+    'O WMS controla entradas e saídas de mercadorias em um armazém, permitindo rastreabilidade e gestão eficiente do estoque.',
+  'Q-PDF-ADM-11-001':
+    'A fase de Mudanças de Arquitetura em BPM cria o modelo permanente de processos e governança, com monitoramento contínuo.',
+  'Q-PDF-ADM-12-001':
+    'Em uma equipe de atendimento, a independência total de cada membro não é desejável; a interdependência e a cooperação são características do trabalho em equipe.',
+  'Q-PDF-ADM-12-002':
+    'Um servidor que, mesmo sem competência para resolver a demanda, orienta o cidadão e o acompanha até o setor correto demonstra presteza e interesse.',
+  'Q-PDF-AP-13-001':
+    'Um tribunal eleitoral, ao organizar seu quadro de servidores e realizar licitações para compra de urnas, exerce função administrativa — embora sua função principal seja jurisdicional. A função administrativa não é exclusiva do Executivo.',
+  'Q-PDF-DA-15-001':
+    'A criação de uma taxa para fiscalização ambiental, que restringe o direito de propriedade em benefício da coletividade, insere-se na dimensão material da legalidade.',
+  'Q-PDF-DA-15-002':
+    'Nomear um parente para cargo em comissão sem concurso, com desvio de finalidade, viola a moralidade administrativa, ainda que haja previsão legal para o cargo.',
+  'Q-PDF-DA-15-003':
+    'Um prefeito que utiliza a publicidade institucional para promover sua imagem pessoal viola a impessoalidade, pois a Administração deve buscar o interesse público, não o interesse privado do agente.',
+  'Q-PDF-DA-15-004':
+    'Um órgão que reduz o consumo de energia elétrica sem prejudicar o atendimento ao público está aplicando a dimensão material da eficiência.',
+  'Q-PDF-DA-16-001':
+    'O Banco do Brasil é uma sociedade de economia mista: capital misto, maioria pública, constituído como S.A. Distingue-se da Caixa Econômica Federal (empresa pública, 100% público).',
+  'Q-PDF-DA-16-002':
+    'Um processo sobre política nacional de habitação popular deve ser encaminhado ao Ministério das Cidades, não ao Ministério dos Transportes.',
+  'Q-PDF-DA-17-001':
+    'Um servidor que se apropria de material de expediente responde administrativamente (PAD), civilmente (ressarcimento) e penalmente (peculato), independentemente de condenação judicial prévia.',
+  'Q-PDF-DA-18-001':
+    'Um diretor que redistribui servidores entre setores e define novas chefias exerce o poder hierárquico — capacidade de organizar internamente a Administração.',
+  'Q-PDF-DA-18-002':
+    'Uma resolução do CONAMA que estabelece limites de emissão de poluentes corresponde à fase de ordem do poder de polícia ambiental.',
+  'Q-PDF-DA-18-003':
+    'A Vigilância Sanitária que interdita um restaurante com condições inadequadas de higiene exerce poder de polícia, restringindo atividade privada em favor da coletividade.',
+   /* ============================================================
+     LOTE PDF — Exemplos inéditos (Lotes 4 a 6)
+     ============================================================ */
+  'Q-PDF-DA-19-001':
+    'Um fiscal de vigilância sanitária aplica uma multa a um restaurante por descumprimento de normas de higiene. Esse ato é administrativo, pois é praticado por agente público no exercício da função, de forma unilateral e concreta.',
+  'Q-PDF-DA-19-002':
+    'Um prefeito desapropria um imóvel para construir uma escola, mas o faz para beneficiar um aliado político. Há desvio de finalidade, pois o fim visado não é o interesse público.',
+  'Q-PDF-DA-19-003':
+    'Um servidor sem competência assina uma licença ambiental. O ato é inválido por vício de competência, podendo ser anulado, ressalvados os efeitos perante terceiros de boa-fé.',
+  'Q-PDF-DA-19-004':
+    'Um ato administrativo goza de presunção relativa de legitimidade: presume-se válido até que se prove o contrário, sem afastar o controle judicial.',
+  'Q-PDF-DA-19-005':
+    'Uma portaria que designa servidores para uma comissão é ato ordinatório; uma certidão que declara um direito é ato enunciativo.',
+  'Q-PDF-DA-19-006':
+    'Um servidor assina ato de seu superior, sem competência exclusiva deste. O vício é sanável, e a convalidação produz efeitos retroativos.',
+  'Q-PDF-DA-20-001':
+    'A concessão de serviço público é delegada por licitação na modalidade concorrência ou diálogo competitivo; a permissão é delegação precária, sem transferir a titularidade.',
+  'Q-PDF-DA-21-001':
+    'Uma ata de registro de preços tem validade de 1 ano, prorrogável por mais 1, e não obriga a Administração a contratar.',
+  'Q-PDF-DA-21-002':
+    'Após o julgamento das propostas e a habilitação, o pregoeiro adjudica o objeto ao vencedor; a homologação vem depois, pela autoridade superior.',
+  'Q-PDF-DA-21-003':
+    'Uma empresa pública deve licitar para comprar computadores, mas pode usar dispensa ou inexigibilidade nas hipóteses legais.',
+  'Q-PDF-DA-21-004':
+    'O gestor do contrato cuida da parte administrativa; o fiscal verifica a execução técnica. A separação evita conflitos de interesse.',
+  'Q-PDF-DA-21-005':
+    'O impedimento de licitar só vale no ente que aplicou a sanção; a declaração de inidoneidade vale em todo o território nacional.',
+  'Q-PDF-DA-21-006':
+    'Um contrato de serviço contínuo pode ter prazo inicial de 5 anos, prorrogável por até 10 anos.',
+  'Q-PDF-DA-21-007':
+    'A supremacia do interesse público fundamenta as cláusulas exorbitantes, como a alteração unilateral do contrato.',
+  'Q-PDF-DA-21-008':
+    'Após a licitação, celebra-se contrato administrativo; para parcerias entre entes públicos, usa-se convênio.',
+  'Q-PDF-DA-21-009':
+    'O adiantamento de parte do valor contratual é permitido, desde que justificado no processo e previsto no contrato.',
+  'Q-PDF-DA-21-010':
+    'A compra de imóvel com características específicas é inexigível; a contratação de licitante remanescente é dispensável; o credenciamento é dispensável.',
+  'Q-PDF-DA-21-011':
+    'As cláusulas exorbitantes decorrem da supremacia do interesse público sobre o privado, e não o contrário.',
+  'Q-PDF-DA-21-012':
+    'A gestão de riscos e o controle preventivo são obrigatórios nas contratações públicas, assim como a resposta a suspensões cautelares em 10 dias úteis.',
+  'Q-PDF-DA-21-013':
+    'A pré-qualificação é um edital prévio para analisar a habilitação dos interessados antes da licitação principal.',
+  'Q-PDF-DA-21-014':
+    'Um servidor que atua em todas as fases da licitação viola a segregação de funções; se não motiva, viola a motivação; se atrasa, viola a celeridade.',
+  'Q-PDF-DA-24-001':
+    'Um prefeito que nomeia parentes para cargos em comissão, sem observar a lei, pode ter agido com dolo específico de obter vantagem indevida, o que configura improbidade. A mera voluntariedade não basta; é preciso a intenção de alcançar o resultado ilícito.',
+  'Q-PDF-DA-24-002':
+    'As sanções por improbidade (perda de função, suspensão de direitos políticos, multa) são cíveis e políticas, não penais, mas podem ser cumuladas com sanções criminais e administrativas.',
+  'Q-PDF-DA-24-003':
+    'Um gestor que frauda um concurso público para favorecer um apadrinhado pratica ato de improbidade que atenta contra os princípios da Administração, sujeitando-se a multa e proibição de contratar.',
+  'Q-PDF-DA-24-004':
+    'Se uma empresa pública tem prejuízo em uma operação de mercado, sem dolo ou fraude, não há improbidade. A mera perda patrimonial não configura o ato.',
+  'Q-PDF-DA-24-005':
+    'O STF firmou que as ações de ressarcimento por ato doloso de improbidade são imprescritíveis, conforme o Tema 897.',
+  'Q-PDF-DA-24-006':
+    'Um particular que concorre para um ato de improbidade, mesmo sem ser agente público, pode ser responsabilizado, conforme o art. 3º da Lei 8.429/1992.',
+  'Q-PDF-DA-24-007':
+    'A amizade entre um servidor e um fornecedor não configura, por si só, improbidade; pode gerar suspeição, mas não indício de ato ímprobo.',
+  'Q-PDF-DA-23-001':
+    'A LAI não revoga sigilos específicos, como o bancário e o fiscal; esses permanecem protegidos por leis próprias.',
+  'Q-PDF-DA-23-002':
+    'A Administração deve divulgar proativamente informações de interesse coletivo, independentemente de pedido, como determina a transparência ativa.',
+  'Q-PDF-DA-23-003':
+    'A LGPD não pode ser invocada para negar acesso à remuneração de agentes públicos, pois esses dados são de interesse público.',
+  'Q-PDF-DA-23-004':
+    'O órgão não pode exigir que o cidadão explique os motivos do pedido de informação, sob pena de violar a LAI.',
+  'Q-PDF-DA-23-005':
+    'Uma ONG que recebe recursos públicos deve divulgar a parcela recebida e sua destinação, conforme a LAI.',
+  'Q-PDF-DA-23-006':
+    'Uma entidade privada sem fins lucrativos que não recebe recursos públicos não está sujeita à LAI.',
+  'Q-PDF-DA-23-007':
+    'A LAI visa garantir o acesso à informação, não apenas proteger informações sigilosas.',
+  'Q-PDF-DA-23-008':
+    'A LAI garante o acesso a documentos, mas pode restringir a consulta a documentos cuja manipulação possa danificar o original.',
+  'Q-PDF-DA-23-009':
+    'Informação, para a LAI, é todo dado, processado ou não, que possa ser utilizado para produzir conhecimento, em qualquer suporte.',
+  'Q-PDF-DA-25-001':
+    'Um administrado pode solicitar a presença de advogado em processo administrativo, mas isso não é obrigatório nem automático; depende de previsão legal ou de sua escolha.',
+  'Q-PDF-DA-25-002':
+    'A motivação é regra no processo administrativo, e o interesse público não dispensa a fundamentação das decisões.',
+  'Q-PDF-ADM-03-002':
+    'A gestão por resultados exige planejamento, indicadores, capacitação e monitoramento, e não apenas automação ou centralização.',
+  'Q-PDF-ADM-05-006':
+    'Na grade de Blake & Mouton, o líder 9,9 combina alta preocupação com pessoas e com produção.',
+  'Q-PDF-ADM-06-003':
+    'Após detectar que uma meta não foi atingida, o gestor propõe um plano de ação para corrigir o desvio — isso é ação corretiva.',
+  'Q-PDF-ADM-07-005':
+    'O desempenho de um servidor depende tanto de sua motivação interna quanto das condições externas, como recursos e clima organizacional.',
+  'Q-PDF-ADM-07-006':
+    'A cultura de um órgão se manifesta em normas implícitas, rituais e valores compartilhados, não apenas em documentos oficiais.',
+  'Q-PDF-ADM-07-007':
+    'A gestão por resultados pode complementar, mas não substituir automaticamente, a avaliação comportamental.',
+  'Q-PDF-ADM-08-004':
+    'O uso de canais institucionais, classificação da informação e rastreabilidade é a conduta correta na comunicação digital pública.',
+  'Q-PDF-ADM-08-005':
+    'No método Thomas-Kilmann, o estilo de compromisso é moderadamente assertivo e moderadamente cooperativo.',
+  'Q-PDF-ADM-08-006':
+    'A resiliência envolve flexibilidade e adaptação, e não rigidez diante de críticas.',
+  'Q-PDF-ADM-08-007':
+    'As relações públicas abrangem públicos internos e externos, não apenas stakeholders externos.',
+  'Q-PDF-ADM-08-008':
+    'Em uma comunicação ascendente, o desequilíbrio de poder pode comprometer a eficácia, pois o superior pode recompensar ou punir.',
+  'Q-PDF-ADM-08-009':
+    'A decodificação é a interpretação da mensagem pelo receptor.',
+  'Q-PDF-ADM-08-010':
+    'O comportamento defensivo distorce a mensagem para preservar o autoconceito, reduzindo a eficácia da comunicação.',
+  'Q-PDF-ADM-08-011':
+    'O esforço emocional é a expressão de emoções desejadas pela organização, como sorrir em atendimento ao público.',
+  'Q-PDF-ADM-08-012':
+    'Reconhecer uma falha e propor solução demonstra receptividade ao feedback.',
+  'Q-PDF-ADM-08-013':
+    'O canal é o meio de transmissão da mensagem; a TV, o rádio e a internet são exemplos de canais.',
+  'Q-PDF-ADM-11-002':
+    'A O&M não dispensa os princípios da legalidade e da publicidade; a eficiência não autoriza afastá-los.',
+  'Q-PDF-ADM-11-003':
+    'O modelo WV, de Shiba, Graham e Walden, é composto por sete passos.',
+  'Q-PDF-ADM-11-004':
+    'O fluxograma é essencial para visualizar processos e identificar gargalos, não podendo ser dispensado.',
+  'Q-PDF-ADM-11-005':
+    'Manuais de procedimentos detalham rotinas, não estabelecem diretrizes filosóficas ou estratégicas.',
+  'Q-PDF-ADM-11-006':
+    'Manuais devem ser atualizados sempre que necessário, para acompanhar mudanças legais e organizacionais.',
+  'Q-PDF-ADM-11-007':
+    'Um processo que cruza vários setores, como a aquisição de bens, é um macroprocesso.',
+  'Q-PDF-ADM-12-003':
+    'Centralizar decisões e eliminar feedbacks tende a piorar o relacionamento e a agilidade, não melhorá-los.',
+  'Q-PDF-ADM-12-004':
+    'Equipes eficazes dependem de habilidades técnicas e interpessoais, não apenas de especialização.',
+  'Q-PDF-ADM-12-005':
+    'Abadia usa comunicabilidade (linguagem acessível); Donato usa tolerância (paciência com idoso).',
+  'Q-PDF-ADM-12-006':
+    'Abadia se destaca pela comunicabilidade; Beto, pela apresentação (crachá e postura).',
+  'Q-PDF-ADM-12-007':
+    'A compreensão mútua não dispensa decisões fundamentadas; o apoio coletivo deve ser construído com base em razões.',
+  'Q-PDF-ADM-12-008':
+    'A eficácia do atendimento não se resume ao cumprimento de formalidades; a satisfação do cidadão é relevante.',
+  'Q-PDF-ADM-12-009':
+    'O parecer é opinião técnica fundamentada, não decisão.',
+  'Q-PDF-ADM-12-010':
+    'Indicar o setor correto e acompanhar o cidadão demonstra presteza e interesse.',
+  'Q-PDF-ADM-12-011':
+    'A diversidade de comportamentos e habilidades é positiva para a equipe; a homogeneidade não é requisito.',
+  'Q-PDF-DA-21-015':
+    'A Lei 14.133/2021 não substituiu imediatamente a Lei 8.666/1993; houve período de transição.',
+  'Q-PDF-DA-21-016':
+    'O pregão é a modalidade para bens e serviços comuns, com disputa por lances e inversão de fases.'
+
+       
 };
