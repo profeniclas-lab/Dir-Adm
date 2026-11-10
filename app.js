@@ -24,6 +24,13 @@
   var AREA_LABELS    = CFG.areaLabels    || { GERAL: 'Geral' };
   var PRIORITY_LABELS= CFG.priorityLabels|| { alta: 'Alta', media: 'Média', baixa: 'Baixa' };
   var PRIORITY_ORDER = CFG.priorityOrder || ['alta', 'media', 'baixa'];
+/* Rótulos abreviados (usados nos cards de módulo — Dashboard e Módulos) */
+var PRIORITY_LABELS_SHORT = {
+  'alta':        'N. MA',
+  'media':       'N. A',
+  'baixa':       'N. Me',
+  'muito_baixa': 'N. B'
+};   
   var CONTENT_SUFFIXES = CFG.contentSuffixes || ['alta', 'media', 'complementar'];
   var SOBRE = CFG.sobre || {};
 
@@ -1132,9 +1139,10 @@
     return html;
   }
 
-  function moduleCardHtml(m) {
+function moduleCardHtml(m) {
     var areaLabel = AREA_LABELS[m.area] || m.area;
-    var pLabel = PRIORITY_LABELS[m.prioridade] || m.prioridade;
+    var pFullLabel = PRIORITY_LABELS[m.prioridade] || m.prioridade;
+    var pLabel = PRIORITY_LABELS_SHORT[m.prioridade] || pFullLabel;
     var hasLesson = !!getLessonByModuleId(m.id);
     var hasDiag = !!getDiagnosticByModuleId(m.id);
     var qCount = 0; for (var i = 0; i < QUESTIONS.length; i++) if (QUESTIONS[i].moduloId === m.id) qCount++;
@@ -1144,16 +1152,16 @@
     var badges = '';
     if (mastery >= MASTERY_THRESHOLD) badges += '<span class="badge-pill badge-ok">✓ ' + mastery + '%</span>';
     else if (mastery > 0) badges += '<span class="badge-pill badge-did">' + mastery + '%</span>';
-    if (hasLesson) badges += '<span class="badge-pill badge-aula">Aula</span>';
-    if (hasDiag) badges += '<span class="badge-pill badge-diag">Diagnóstico</span>';
-    if (qCount > 0) badges += '<span class="badge-pill badge-real">' + qCount + ' q.</span>';
-    if (fcCount > 0) badges += '<span class="badge-pill badge-flash">' + fcCount + ' fc.</span>';
+    if (hasLesson) badges += '<span class="badge-pill badge-aula" title="Aula">A</span>';
+    if (hasDiag) badges += '<span class="badge-pill badge-diag" title="Diagnóstico">DIAG</span>';
+    if (qCount > 0) badges += '<span class="badge-pill badge-real" title="Questões">' + qCount + ' q.</span>';
+    if (fcCount > 0) badges += '<span class="badge-pill badge-flash" title="Flashcards">' + fcCount + ' fc.</span>';
     return '<button class="module-card" data-action="open-module" data-module-id="' + esc(m.id) + '">' +
       '<span class="mod-id">' + esc(m.id) + '</span>' +
       '<span class="mod-info"><span class="mod-title">' + esc(m.titulo) + '</span><span class="mod-area">' + esc(areaLabel) + ' · ' + esc(domLabel.label) + '</span></span>' +
-      '<span class="mod-badges">' + badges + '<span class="mod-priority priority-' + esc(m.prioridade) + '">' + esc(pLabel) + '</span></span>' +
+      '<span class="mod-badges">' + badges + '<span class="mod-priority priority-' + esc(m.prioridade) + '" title="' + esc(pFullLabel) + '">' + esc(pLabel) + '</span></span>' +
     '</button>';
-  }
+}
 
   /* ---------- DETALHE DO MÓDULO ---------- */
   function renderModuleDetail() {
