@@ -1061,14 +1061,14 @@ var PRIORITY_LABELS_SHORT = {
     var dueQ = getDueQuestions(), dueF = getDueFlashcards();
     if (dueQ.length > 0 || dueF.length > 0) sugestoes.push({ tipo: 'revisao', titulo: 'Revisão pendente', descricao: dueQ.length + ' questão(ões) e ' + dueF.length + ' flashcard(s) para revisar hoje.' });
     if (errN > 0) sugestoes.push({ tipo: 'erros', titulo: 'Erros em aberto', descricao: errN + ' questão(ões) com erro aguardando revisão dedicada.' });
-    for (var j = 0; j < MODULES.length && sugestoes.length < 6; j++) {
+/* Ordem das sugestões = sequência dos módulos em modules.js (continuidade pedagógica).
+   A prioridade (N. MA / N. A / N. Me) permanece apenas como etiqueta visual no card. */
+for (var j = 0; j < MODULES.length && sugestoes.length < 4; j++) {
   var m = MODULES[j];
   if (!getDiagnosticByModuleId(m.id) && !getLessonByModuleId(m.id)) continue;
   if (getModuleMastery(m.id) >= MASTERY_THRESHOLD) continue;
   sugestoes.push({ tipo: 'modulo', modulo: m });
 }
-
-
     var html = '';
     html += '<h1 class="page-title">Dashboard</h1>';
     html += '<p class="page-subtitle">Visão geral do seu progresso em ' + esc(APP_SUBTITLE || APP_NAME) + '. Dados salvos localmente no navegador.</p>';
