@@ -19,7 +19,7 @@ window.DIAGNOSTICS_COMPLEMENTAR = {
         id: 'D-DA-26-01',
         tipo: 'multipla_escolha',
         subtopico: 'Classificação dos bens públicos',
-        pergunta: 'Sobre a classificação dos bens públicos (art. 20 do Código Civil), assinale a alternativa CORRETA:',
+        pergunta: 'Sobre a classificação dos bens públicos (art. 99 do Código Civil), assinale a alternativa CORRETA:',
         alternativas: [
           { id: 'A', texto: 'Bens de uso comum do povo: praças, ruas, estradas, rios. Bens de uso especial: escolas, hospitais, repartições. Bens dominicais: terrenos sem uso, prédios desativados, semoventes.' },
           { id: 'B', texto: 'Bens de uso comum: escolas e hospitais. Bens de uso especial: praças e ruas. Bens dominicais: apenas imóveis rurais.' },
@@ -27,7 +27,7 @@ window.DIAGNOSTICS_COMPLEMENTAR = {
           { id: 'D', texto: 'Bens de uso especial são os que não têm destinação pública; bens dominicais são os destinados ao serviço público.' }
         ],
         gabarito: 'A',
-        explicacao: 'USO COMUM DO POVO: destinados à coletividade em geral (praças, ruas, estradas, rios). USO ESPECIAL: destinados a serviço ou estabelecimento público (escolas, hospitais, repartições). DOMINICAIS: bens públicos sem destinação pública específica (terrenos sem uso, prédios desativados, semoventes). A alternativa B troca as categorias; C reduz tudo a dominical; D inverte uso especial e dominical.'
+        explicacao: 'USO COMUM DO POVO (art. 99, I): destinados à coletividade em geral (praças, ruas, estradas, rios). USO ESPECIAL (art. 99, II): destinados a serviço ou estabelecimento público (escolas, hospitais, repartições). DOMINICAIS (art. 99, III): bens públicos sem destinação pública específica (terrenos sem uso, prédios desativados, semoventes). A alternativa B troca as categorias; C reduz tudo a dominical; D inverte uso especial e dominical.'
       },
       {
         id: 'D-DA-26-02',
@@ -129,16 +129,16 @@ window.DIAGNOSTICS_COMPLEMENTAR = {
       {
         id: 'D-DA-27-02',
         tipo: 'multipla_escolha',
-        subtopico: 'Desapropriação ordinária x extraordinária x indireta',
-        pergunta: 'Sobre as modalidades de desapropriação, é correto afirmar que:',
+        subtopico: 'Desapropriação — modalidades e indenizações',
+        pergunta: 'Sobre as modalidades de desapropriação e as respectivas indenizações, é CORRETO afirmar que:',
         alternativas: [
-          { id: 'A', texto: 'A desapropriação ordinária exige indenização prévia, justa e em dinheiro; a extraordinária (art. 243 da CF) é para cultivo ilegal de plantas psicotrópicas, com indenização apenas das benfeitorias úteis; a indireta (confisco) decorre do descumprimento da função social, com indenização em títulos da dívida.' },
+          { id: 'A', texto: 'A desapropriação ordinária exige indenização prévia, justa e em dinheiro (art. 5º, XXIV, CF); a desapropriação-sanção por descumprimento da função social indeniza em títulos da dívida; a expropriação do art. 243 da CF (cultivo ilegal de plantas psicotrópicas ou trabalho escravo) é feita SEM qualquer indenização; e a desapropriação indireta é a tomada irregular da propriedade pelo Poder Público, que gera direito a indenização. São quatro institutos distintos.' },
           { id: 'B', texto: 'Todas as modalidades de desapropriação exigem indenização prévia, justa e em dinheiro.' },
-          { id: 'C', texto: 'A desapropriação indireta é aquela feita sem processo judicial, por acordo entre as partes.' },
-          { id: 'D', texto: 'A desapropriação extraordinária é a mesma coisa que a desapropriação indireta.' }
+          { id: 'C', texto: 'A desapropriação indireta é sinônimo de confisco: o particular perde o bem sem qualquer indenização.' },
+          { id: 'D', texto: 'A expropriação do art. 243 é a mesma coisa que a desapropriação indireta e gera indenização apenas das benfeitorias úteis.' }
         ],
         gabarito: 'A',
-        explicacao: 'DESAPROPRIAÇÃO ORDINÁRIA: indenização prévia, justa e em dinheiro (regra do art. 5º, XXIV, CF). EXTRAORDINÁRIA (ou sancionatória — art. 243 da CF): para cultivo ilegal de plantas psicotrópicas, com indenização apenas das benfeitorias úteis. INDIRETA (confisco): decorre do descumprimento da função social da propriedade urbana ou rural, com indenização em títulos da dívida. A alternativa B generaliza indevidamente; C confunde com desapropriação amigável; D iguala hipóteses distintas.'
+        explicacao: 'Desapropriação ORDINÁRIA: indenização prévia, justa e em dinheiro. Desapropriação-SANÇÃO (função social): indenização em TÍTULOS. Expropriação do art. 243: SEM qualquer indenização. Desapropriação INDIRETA: tomada IRREGULAR, com direito a indenização — não é confisco. A alternativa A reúne as quatro distinções; B generaliza; C confunde indireta com confisco; D confunde indireta com art. 243 e ainda prevê indenização que não existe.'
       },
       {
         id: 'D-DA-27-03',
