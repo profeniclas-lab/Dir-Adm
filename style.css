@@ -799,4 +799,105 @@ body.dark .ecp-btn:hover { background: #7f1d1d; }
 /* ECB fill no dark */
 body.dark .ecb-fill { background: #f87171; }
 
+/* ============================================================
+   GAMIFICAÇÃO — widget de XP, ofensiva, nível e meta
+   ============================================================ */
+
+.gamif-widget {
+  background: linear-gradient(135deg, var(--surface) 0%, var(--surface-alt) 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+
+.gamif-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.gamif-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px 6px;
+  border-radius: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.gamif-icon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.gamif-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -.3px;
+}
+
+.gamif-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
+
+.gamif-progress-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.gamif-progress-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: .3px;
+  min-width: 70px;
+}
+
+.gamif-progress-label:last-child {
+  text-align: right;
+}
+
+.gamif-progress-bar {
+  flex: 1;
+  height: 8px;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.gamif-progress-fill {
+  height: 100%;
+  background: var(--purple);
+  border-radius: 999px;
+  transition: width .3s ease;
+}
+
+.gamif-progress-fill.meta {
+  background: var(--success);
+}
+
+@media (max-width: 640px) {
+  .gamif-row {
+    grid-template-columns: 1fr;
+  }
+  .gamif-stat {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 14px;
+  }
+}
 /* ===== FIM DO STYLE.CSS v2.0 ===== */
