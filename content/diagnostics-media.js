@@ -543,15 +543,10 @@ window.DIAGNOSTICS_MEDIA = {
       },
       {
         id: 'D-DA-24-04',
-        tipo: 'verdadeiro_falso',
-        subtopico: 'Legitimidade da ação de improbidade',
-        pergunta: 'A ação civil pública por improbidade administrativa pode ser proposta por qualquer cidadão, independentemente de representação ao Ministério Público.',
-        alternativas: [
-          { id: 'V', texto: 'Verdadeiro' },
-          { id: 'F', texto: 'Falso' }
-        ],
-        gabarito: 'F',
-        explicacao: 'Falso. A ação civil pública por improbidade é de competência do MINISTÉRIO PÚBLICO (art. 17 da Lei 8.429/92). O cidadão pode representar ao MP (provocando a atuação), mas não pode ajuizar a ação diretamente. A legitimidade ativa é do MP.'
+        tipo: 'autoavaliacao',
+        subtopico: 'Legitimidade e responsabilização por improbidade',
+        pergunta: 'Você consegue explicar, sem consultar, quem tem legitimidade para propor a ação de improbidade após a Lei 14.230/2021 e a jurisprudência do STF?',
+        resposta: 'A Lei 14.230/2021 atribuiu ao Ministério Público a legitimidade para propor a ação de improbidade. O STF, nas ADIs 7042 e 7043, restabeleceu a legitimidade CONCORRENTE e DISJUNTIVA das PESSOAS JURÍDICAS INTERESSADAS (entes públicos lesados), que também podem propor a ação e celebrar acordos de não persecução civil. O cidadão não ajuíza diretamente, mas pode representar ao MP. A legitimidade passiva alcança agentes públicos e terceiros que induzam ou concorram para o ato (art. 3º). Prescrição: 8 anos (regra geral).'
       },
       {
         id: 'D-DA-24-05',
