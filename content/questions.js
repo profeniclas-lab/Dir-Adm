@@ -5303,13 +5303,13 @@ window.QUESTIONS = [
       { id: 'A', texto: 'Definição dos objetivos — estabelecer quais são os caminhos possíveis.' },
       { id: 'B', texto: 'Situação atual — definição de onde estamos agora e o que precisa ser feito.' },
       { id: 'C', texto: 'Alternativas de ação — definição para onde queremos ir.' },
-      { id: 'D', texto: 'Premissas em relação ao futuro — o que temos pela frente, definição de cenários.' },
+      { id: 'D', texto: 'Premissas em relação ao futuro — avaliação dos resultados obtidos após a execução do planejamento.' },
       { id: 'E', texto: 'Escolher a melhor alternativa — seguir o que foi planejado e avaliar resultados.' }
     ],
     gabarito: 'B',
     explicacao: {
       correta: 'SITUAÇÃO ATUAL: definição de onde estamos agora e o que precisa ser feito.',
-      incorretas: { A: 'Definição de objetivos é definir PARA ONDE vamos, não caminhos.', C: 'Alternativas de ação é definir caminhos possíveis, não destino.', D: 'Premissas é o que temos pela frente (cenários) — correta, mas não é a única. E: Escolher a melhor alternativa é definir o melhor caminho; seguir e avaliar é a etapa final.' },
+      incorretas: { A: 'Definição de objetivos é definir PARA ONDE vamos, não caminhos.', C: 'Alternativas de ação é definir caminhos possíveis, não destino.', D: 'Incorreta. A avaliação dos resultados obtidos após a execução pertence ao controle. As premissas em relação ao futuro dizem respeito aos cenários e condições que devem ser considerados antes da execução do planejamento.', E: 'Escolher a melhor alternativa é definir o melhor caminho; seguir e avaliar é a etapa final.' },
       conceitoCobrado: 'Etapas do planejamento',
       pegadinha: 'Confundir a descrição de cada etapa.',
       comoApareceEmConcurso: 'Cobrança de associação.'
