@@ -976,11 +976,11 @@ window.LESSONS_ALTA = {
   'DA-19': {
     id: 'L-DA-19',
     moduloId: 'DA-19',
-    objetivo: 'Dominar o conceito, requisitos/elementos, atributos, classificação, espécies e formas de extinção dos atos administrativos, com foco na distinção entre anulação e revogação (Súmulas 346 e 473 do STF), na convalidação e nos vícios de cada elemento.',
+    objetivo: 'Dominar o conceito, requisitos/elementos, atributos, classificação, espécies e formas de extinção dos atos administrativos, com foco na distinção entre anulação e revogação (Súmulas 346 e 473 do STF), na convalidação e nos vícios de cada elemento. Distinguir corretamente **caducidade** (norma superveniente incompatível) de **extinção pelo advento do termo final** (decurso de prazo).',
     prerequisitos: ['DA-15', 'DA-16', 'DA-18'],
-    introducao: 'Se os princípios são as vigas e os poderes são as ferramentas, o ATO ADMINISTRATIVO é a manifestação concreta da Administração. Praticamente tudo o que o Estado faz na função administrativa passa por um ato. Por isso, este é um dos módulos mais cobrados de Direito Administrativo.',
-    explicacaoSimples: 'Ato administrativo é a decisão da Administração que produz efeitos jurídicos imediatos. Pense num alvará, numa multa, numa nomeação, numa interdição. Todo ato tem uma estrutura (elementos), características próprias (atributos) e pode ser extinto de formas diferentes — anulado (por ilegalidade) ou revogado (por conveniência).',
-    explicacaoTecnica: 'ATO ADMINISTRATIVO é a manifestação unilateral da Administração Pública, no exercício de prerrogativas públicas, que produz efeitos jurídicos imediatos, com o fim de atender ao interesse público, sujeita ao regime jurídico-administrativo e ao controle judicial. REQUISITOS/ELEMENTOS: COMPETÊNCIA (poder legal — em regra, vinculada; pode ser delegada, salvo quando exclusiva); FINALIDADE (interesse público — sempre vinculada); FORMA (exteriorização — em regra vinculada, salvo forma livre); MOTIVO (pressupostos de fato e de direito — vinculado ou discricionário, conforme o ato); OBJETO (conteúdo — vinculado ou discricionário). ATRIBUTOS: PRESUNÇÃO DE LEGITIMIDADE (relativa — vale até prova em contrário); IMPERATIVIDADE (o ato se impõe ao particular independentemente da concordância); AUTOEXECUTORIEDADE (a Administração executa diretamente, sem recorrer ao Judiciário — nem todo ato tem: multa não é; interdição é); TIPICIDADE (correspondência com uma figura típica prevista em lei). CLASSIFICAÇÃO: vinculados x discricionários; gerais x individuais; internos x externos; simples, complexos e compostos; constitutivos, declaratórios e extintivos. ESPÉCIES: normativos (decretos, resoluções); ordinatórios (instruções, circulares — internos); negociais (licença, autorização, permissão); enunciativos (certidões, atestados, pareceres); punitivos (multas, interdições). EXTINÇÃO: ANULAÇÃO (ato ILEGAL — efeito EX TUNC, Súmula 473 do STF; pode ser feita pela Administração e pelo Judiciário); REVOGAÇÃO (ato INCONVENIENTE/inoportuno — efeito EX NUNC, Súmula 346 do STF; só pela Administração); CASSAÇÃO (descumprimento de condição pelo beneficiário); CADUCIDADE (decurso de prazo ou mudança de fato); CONTRAPOSIÇÃO (ato novo que extingue o anterior por incompatibilidade). CONVALIDAÇÃO: correção de vícios SANÁVEIS (competência e forma, quando não houver prejuízo ao interesse público nem a terceiros), com efeito retroativo (EX TUNC). Vícios insanáveis: finalidade, motivo e objeto (em regra).',
+    introducao: 'Se os princípios são as vigas e os poderes são as ferramentas, o ATO ADMINISTRATIVO é a manifestação concreta da Administração. Praticamente tudo o que o Estado faz na função administrativa passa por um ato. Por isso, este é um dos módulos mais cobrados de Direito Administrativo. E a distinção entre as formas de extinção — especialmente **caducidade x termo final** — é uma das mais finas.',
+    explicacaoSimples: 'Ato administrativo é a decisão da Administração que produz efeitos jurídicos imediatos. Pense num alvará, numa multa, numa nomeação, numa interdição. Todo ato tem uma estrutura (elementos), características próprias (atributos) e pode ser extinto de formas diferentes — anulado (por ilegalidade), revogado (por conveniência), cassado (por descumprimento), **caducado (por norma nova que o torna incompatível)** ou **extinto pelo advento do termo final (quando o prazo acaba)**. Essas duas últimas são frequentemente confundidas — mas são institutos distintos.',
+    explicacaoTecnica: 'ATO ADMINISTRATIVO é a manifestação unilateral da Administração Pública, no exercício de prerrogativas públicas, que produz efeitos jurídicos imediatos, com o fim de atender ao interesse público, sujeita ao regime jurídico-administrativo e ao controle judicial. REQUISITOS/ELEMENTOS: COMPETÊNCIA; FINALIDADE; FORMA; MOTIVO; OBJETO. ATRIBUTOS: PRESUNÇÃO DE LEGITIMIDADE (relativa); IMPERATIVIDADE; AUTOEXECUTORIEDADE (nem todo ato tem: multa não tem; interdição tem); TIPICIDADE. CLASSIFICAÇÃO: vinculados x discricionários; gerais x individuais; internos x externos; simples, complexos e compostos; constitutivos, declaratórios e extintivos. ESPÉCIES: normativos, ordinatórios, negociais, enunciativos, punitivos. EXTINÇÃO: **ANULAÇÃO** (ato ILEGAL — efeito EX TUNC, Súmula 473; Administração e Judiciário); **REVOGAÇÃO** (ato INCONVENIENTE — efeito EX NUNC, Súmula 346; só Administração); **CASSAÇÃO** (descumprimento de condição pelo beneficiário); **CADUCIDADE** (extinção por **norma jurídica superveniente** que torna incompatível a manutenção do ato — também chamada de decaimento); **CONTRAPOSIÇÃO** (ato novo que extingue o anterior por incompatibilidade). **EXTINÇÃO PELO ADVENTO DO TERMO FINAL**: quando o próprio ato prevê prazo de validade e este se esgota — é o **decurso de prazo**, instituto distinto da caducidade. CONVALIDAÇÃO: correção de vícios SANÁVEIS (competência e forma, quando não houver prejuízo ao interesse público nem a terceiros), com efeito EX TUNC. Vícios insanáveis: finalidade, motivo e objeto (em regra).',
     exemplos: [
       'Competência: servidor incompetente aplica multa — vício de competência (em regra, sanável).',
       'Finalidade: agente usa poder de fiscalização para perseguir desafeto — vício de finalidade (insanável).',
@@ -993,33 +993,34 @@ window.LESSONS_ALTA = {
       'Anulação: decreto ilegal é anulado, com efeito retroativo.',
       'Revogação: permissão de uso de bem público é revogada por conveniência, com efeito ex nunc.',
       'Cassação: permissionário descumpre condição — perde a permissão.',
-      'Caducidade: autorização para evento expira no prazo previsto.',
+      'Caducidade: nova lei torna incompatível uma autorização antes concedida — o ato caduca.',
+      'Extinção pelo termo final: autorização para evento expira no prazo previsto (decurso de prazo).',
       'Contraposição: nova permissão que extingue a anterior por incompatibilidade.',
       'Convalidação: ato com vício de competência é ratificado pela autoridade competente.'
     ],
     comparacoes: [
-      { termoA: 'Anulação', termoB: 'Revogação', diferenca: 'ANULAÇÃO: ato ILEGAL — efeito EX TUNC (retroativo) — feita pela Administração (autotutela) E pelo Judiciário (controle de legalidade). REVOGAÇÃO: ato INCONVENIENTE/inoportuno (mérito) — efeito EX NUNC (dali para frente) — SÓ pela Administração. É a distinção mais cobrada em prova.' },
-      { termoA: 'Cassação', termoB: 'Caducidade', diferenca: 'CASSAÇÃO: o beneficiário DESCUMPRE uma condição do ato — perda por comportamento. CADUCIDADE: perda por DECURSO DE PRAZO ou MUDANÇA DE FATO — independente do comportamento do beneficiário.' },
-      { termoA: 'Cassação', termoB: 'Contraposição', diferenca: 'CASSAÇÃO: descumprimento de condição. CONTRAPOSIÇÃO: um NOVO ATO extingue o anterior por incompatibilidade — não há descumprimento; há substituição por ato novo.' },
-      { termoA: 'Ato vinculado', termoB: 'Ato discricionário', diferenca: 'VINCULADO: a lei não deixa margem — o agente deve praticar o ato nos exatos termos legais. DISCRICIONÁRIO: a lei deixa margem de escolha (mérito administrativo — conveniência e oportunidade) — o Judiciário não pode rever o mérito, só a legalidade.' },
-      { termoA: 'Presunção de legitimidade', termoB: 'Autoexecutoriedade', diferenca: 'PRESUNÇÃO DE LEGITIMIDADE: o ato se presume válido até prova em contrário (relativa — admite prova contrária). AUTOEXECUTORIEDADE: a Administração pode executar o ato diretamente, sem recorrer ao Judiciário — nem todo ato tem (multa não tem; interdição tem).' },
-      { termoA: 'Convalidação', termoB: 'Anulação', diferenca: 'CONVALIDAÇÃO: correção de vício SANÁVEL (competência e forma, quando não houver prejuízo ao interesse público nem a terceiros) — efeito EX TUNC. ANULAÇÃO: extinção do ato ILEGAL — pode ter efeito EX TUNC (regra) ou ser modulada. Vícios insanáveis (finalidade, motivo, objeto) não admitem convalidação.' }
+      { termoA: 'Caducidade', termoB: 'Extinção pelo advento do termo final', diferenca: '**CADUCIDADE** (ou decaimento): extinção do ato porque **sobreveio norma jurídica** que tornou incompatível a sua manutenção. Ex.: nova lei proíbe atividade antes autorizada. **TERMO FINAL**: extinção porque o **prazo de validade do próprio ato se esgotou**. Ex.: autorização para evento de 3 dias — no 4º dia, extingue-se pelo termo final. São institutos DISTINTOS: um decorre de **fato normativo superveniente**; o outro, do **decurso de prazo previsto no próprio ato**.' },
+      { termoA: 'Caducidade', termoB: 'Cassação', diferenca: 'CASSAÇÃO: descumprimento de condição pelo **beneficiário**. CADUCIDADE: norma superveniente incompatível — **independente do comportamento** do beneficiário.' },
+      { termoA: 'Cassação', termoB: 'Contraposição', diferenca: 'CASSAÇÃO: descumprimento de condição. CONTRAPOSIÇÃO: um **novo ato** extingue o anterior por incompatibilidade — não há descumprimento; há substituição por ato novo.' },
+      { termoA: 'Anulação', termoB: 'Revogação', diferenca: 'ANULAÇÃO: ato ILEGAL — efeito EX TUNC — Administração E Judiciário. REVOGAÇÃO: ato INCONVENIENTE — efeito EX NUNC — SÓ Administração.' },
+      { termoA: 'Presunção de legitimidade', termoB: 'Autoexecutoriedade', diferenca: 'PRESUNÇÃO DE LEGITIMIDADE: relativa — o ato se presume válido até prova em contrário. AUTOEXECUTORIEDADE: execução direta, sem Judiciário — **nem todo ato tem** (multa não tem; interdição tem).' },
+      { termoA: 'Convalidação', termoB: 'Anulação', diferenca: 'CONVALIDAÇÃO: correção de vício SANÁVEL (competência e forma, sem prejuízo) — efeito EX TUNC. ANULAÇÃO: extinção do ato ILEGAL. Vícios insanáveis (finalidade, motivo, objeto) não admitem convalidação.' }
     ],
-    aplicacaoEmConcurso: 'Altíssima frequência: anulação x revogação (efeitos, legitimidade); atributos; elementos e seus vícios; cassação x caducidade x contraposição; convalidação. A banca ama: dizer que o Judiciário pode revogar (não pode); dizer que a anulação é ex nunc (é ex tunc); confundir cassação com caducidade; dizer que todo ato é autoexecutável (multa não é).',
+    aplicacaoEmConcurso: 'Altíssima frequência: anulação x revogação; atributos; elementos e seus vícios; **caducidade x termo final** (distinção fina, cada vez mais cobrada); cassação x caducidade x contraposição; convalidação. A banca ama: dizer que o Judiciário pode revogar (não pode); dizer que a anulação é ex nunc (é ex tunc); **confundir caducidade com decurso de prazo**; dizer que todo ato é autoexecutável (multa não é).',
     pegadinhas: [
-      'Dizer que o Judiciário pode revogar ato administrativo. NÃO — só anular (controle de legalidade).',
-      'Dizer que a anulação tem efeito ex nunc. NÃO — regra é ex tunc (retroativo).',
-      'Confundir cassação (descumprimento) com caducidade (prazo/fato).',
-      'Achar que todo ato tem autoexecutoriedade. A multa NÃO tem — precisa de cobrança judicial.',
-      'Dizer que a presunção de legitimidade é absoluta. É RELATIVA — admite prova em contrário.',
-      'Achar que qualquer vício é convalidável. Vícios de finalidade, motivo e objeto, em regra, são insanáveis.',
-      'Dizer que revogação e anulação se confundem. Uma trata de mérito (revogação); a outra, de legalidade (anulação).',
-      'Achar que a Administração pode revogar ato que gerou direito adquirido. NÃO — direito adquirido é protegido.'
+      'Dizer que o Judiciário pode revogar ato administrativo. NÃO — só anular (Súmula 473).',
+      'Dizer que a anulação tem efeito ex nunc. NÃO — regra é ex tunc.',
+      '**Confundir caducidade (norma superveniente incompatível) com extinção pelo termo final (decurso de prazo)**. São institutos DISTINTOS.',
+      'Achar que todo ato tem autoexecutoriedade. A multa NÃO tem.',
+      'Dizer que a presunção de legitimidade é absoluta. É RELATIVA.',
+      'Achar que qualquer vício é convalidável. Vícios de finalidade, motivo e objeto são insanáveis.',
+      'Dizer que revogação e anulação se confundem.',
+      'Achar que a Administração pode revogar ato que gerou direito adquirido.'
     ],
     errosComuns: [
       'Decorar os elementos sem associar aos vícios.',
       'Confundir anulação com revogação.',
-      'Não diferenciar cassação, caducidade e contraposição.',
+      '**Chamar de "caducidade" o simples decurso de prazo** — é termo final.',
       'Achar que autoexecutoriedade é atributo de todo ato.'
     ],
     resumo: [
@@ -1028,18 +1029,18 @@ window.LESSONS_ALTA = {
       'Atributos: presunção de legitimidade (relativa), imperatividade, autoexecutoriedade (não é de todo ato), tipicidade.',
       'Anulação: ilegalidade — ex tunc — Administração e Judiciário.',
       'Revogação: mérito — ex nunc — só Administração.',
-      'Cassação: descumprimento. Caducidade: prazo/fato. Contraposição: ato novo que extingue o anterior.',
+      'Cassação: descumprimento. **Caducidade: norma superveniente incompatível.** **Termo final: decurso de prazo do próprio ato.** Contraposição: ato novo que extingue o anterior.',
       'Convalidação: vícios sanáveis (competência e forma), com ex tunc.'
     ],
     modoProfessor: {
-      explicarMaisSimples: 'Ato administrativo é a "decisão" da Administração. Anulação é para ato ilegal (volta tudo ao passado — ex tunc). Revogação é para ato inconveniente (vale dali para frente — ex nunc). Só a Administração revoga; o Judiciário só anula.',
-      outroExemplo: 'Um decreto municipal ilegal é anulado pela própria Prefeitura (autotutela) ou pelo Judiciário (controle de legalidade), com efeito retroativo. Já a permissão de uso de um quiosque pode ser revogada pela Prefeitura por conveniência, com efeito dali para frente.',
-      compararConceitos: 'Anulação x revogação = ilegalidade x mérito; ex tunc x ex nunc; Administração + Judiciário x só Administração. Cassação x caducidade = descumprimento x prazo/fato. Vinculado x discricionário = sem margem x com margem.',
-      mostrarPegadinha: 'Cuidado: "O Judiciário pode revogar ato administrativo". ERRADO. O Judiciário só anula (controle de legalidade). Revogação é ato de mérito, exclusivo da Administração.',
-      comoApareceEmConcurso: 'Questões pedem distinção anulação/revogação; classificação de vícios; identificação do tipo de extinção (cassação, caducidade, contraposição).',
+      explicarMaisSimples: 'Ato administrativo é a "decisão" da Administração. Anulação é para ato ilegal (volta tudo ao passado — ex tunc). Revogação é para ato inconveniente (vale dali para frente — ex nunc). Só a Administração revoga; o Judiciário só anula. **Caducidade** é quando uma lei nova torna o ato incompatível; **termo final** é quando o prazo do próprio ato acaba.',
+      outroExemplo: 'Uma autorização para explorar um serviço é atingida por uma lei nova que proíbe aquela atividade — o ato **caduca**. Já uma autorização para um evento de 3 dias **extingue-se pelo termo final** no 4º dia. Um permissionário que descumpre condição tem a permissão **cassada**.',
+      compararConceitos: 'Anulação x revogação = ilegalidade x mérito; ex tunc x ex nunc. **Caducidade x termo final = norma superveniente x decurso de prazo**. Cassação x caducidade = descumprimento x norma nova.',
+      mostrarPegadinha: 'Cuidado: "Caducidade é o decurso de prazo". ERRADO. O decurso de prazo é **extinção pelo termo final**. A caducidade (decaimento) ocorre quando **sobrevém norma jurídica** que torna o ato incompatível.',
+      comoApareceEmConcurso: 'Distinção anulação/revogação; classificação de vícios; **identificação do tipo de extinção (cassação, caducidade, termo final, contraposição)**.',
       fazerPergunta: {
-        pergunta: 'Um permissionário descumpre uma condição da permissão. Qual o instituto de extinção?',
-        resposta: 'CASSAÇÃO — a perda decorre do DESCUMPRIMENTO de condição pelo beneficiário. Se fosse por decurso de prazo ou mudança de fato, seria CADUCIDADE.'
+        pergunta: 'Qual a diferença entre caducidade e extinção pelo termo final?',
+        resposta: '**Caducidade** (decaimento): extinção do ato porque **sobreveio norma jurídica** que o tornou incompatível com o ordenamento. **Termo final**: extinção porque o **prazo de validade do próprio ato se esgotou**. Um decorre de **fato normativo superveniente**; o outro, do **decurso de prazo previsto no ato**.'
       }
     }
   },
@@ -1188,66 +1189,64 @@ window.LESSONS_ALTA = {
   'DA-23': {
     id: 'L-DA-23',
     moduloId: 'DA-23',
-    objetivo: 'Compreender as formas de controle da Administração Pública: controle administrativo (autotutela e recursos), controle legislativo, controle judicial, controle externo (Tribunais de Contas) e controle interno. Dominar as distinções entre controle de legalidade e de mérito e entre anulação e revogação.',
+    objetivo: 'Compreender as formas de controle da Administração Pública: controle administrativo (autotutela e recursos), controle legislativo, controle judicial, controle externo (Congresso Nacional com auxílio dos Tribunais de Contas) e controle interno. Dominar as distinções entre controle de legalidade e de mérito e entre anulação e revogação.',
     prerequisitos: ['DA-15', 'DA-19'],
-    introducao: 'A Administração Pública não é dona de si mesma: é controlada por vários mecanismos. Internamente, pelo autocontrole. Externamente, pelo Legislativo (com os Tribunais de Contas) e pelo Judiciário. Cada um tem seu campo, seus limites e suas pegadinhas.',
-    explicacaoSimples: 'Pense numa empresa com vários "fiscais". O próprio chefe revisa o trabalho (controle administrativo). O conselho fiscal revisa as contas (controle legislativo, com Tribunais de Contas). O Judiciário verifica se o que foi feito respeita a lei (controle judicial). E dentro de cada setor há uma equipe de auditoria interna (controle interno). Cada um tem um papel.',
-    explicacaoTecnica: 'CONTROLE DA ADMINISTRAÇÃO PÚBLICA é o conjunto de mecanismos pelos quais se verifica a legalidade, legitimidade, economicidade, eficiência e resultados da atuação administrativa. CLASSIFICAÇÃO: quanto ao órgão (administrativo, legislativo, judicial); quanto ao momento (prévio, concomitante, posterior); quanto à natureza (legalidade x mérito). CONTROLE ADMINISTRATIVO: exercido pela própria Administração, sobre seus próprios atos — base na autotutela (Súmulas 346 e 473 do STF). Pode ser: (a) de ofício (autotutela); (b) por provocação (recursos administrativos — reclamação, representação, pedido de reconsideração, recurso hierárquico). Prazo decadencial para anulação: 5 anos (art. 54 da Lei 9.784/99), salvo má-fé. CONTROLE LEGISLATIVO: exercido pelo Congresso Nacional (e Casas legislativas), com apoio dos Tribunais de Contas. Inclui: fiscalização contábil, financeira, orçamentária, operacional e patrimonial (art. 70, CF); sustação de atos normativos do Executivo que exorbitem do poder regulamentar (art. 49, V); convocação de Ministros (art. 50); CPI (art. 58). CONTROLE JUDICIAL: exercido pelo Judiciário sobre atos administrativos — apenas de LEGALIDADE, não de mérito (Súmula 473 do STF). Pode ser: (a) por ação (mandado de segurança, ação popular, ação civil pública, ação de improbidade); (b) por exceção (defesa em processo). CONTROLE EXTERNO: exercido pelos Tribunais de Contas (auxiliares do Legislativo — art. 71, CF), com ampla competência (apreciar contas, julgar contas dos administradores, realizar auditorias, sustar atos, aplicar sanções, etc.). CONTROLE INTERNO: exercido dentro de cada Poder (art. 74, CF — sistema de controle interno), com atribuições de avaliar cumprimento de metas, comprovar legalidade, avaliar resultados, apoiar controle externo.',
+    introducao: 'A Administração Pública não é dona de si mesma: é controlada por vários mecanismos. Internamente, pelo autocontrole. Externamente, pelo Legislativo (com o auxílio dos Tribunais de Contas) e pelo Judiciário. Cada um tem seu campo, seus limites e suas pegadinhas. A distinção mais cobrada em prova é: o **controle externo é do Congresso Nacional**; o TCU **auxilia**, não substitui.',
+    explicacaoSimples: 'Pense numa empresa com vários "fiscais". O próprio chefe revisa o trabalho (controle administrativo). O conselho fiscal revisa as contas (controle externo, a cargo do Legislativo, com apoio dos Tribunais de Contas). O Judiciário verifica se o que foi feito respeita a lei (controle judicial). E dentro de cada setor há uma equipe de auditoria interna (controle interno). Cada um tem um papel — e o Tribunal de Contas é o **auxiliar técnico** do Legislativo, não o titular do controle externo.',
+    explicacaoTecnica: 'CONTROLE DA ADMINISTRAÇÃO PÚBLICA é o conjunto de mecanismos pelos quais se verifica a legalidade, legitimidade, economicidade, eficiência e resultados da atuação administrativa. CLASSIFICAÇÃO: quanto ao órgão (administrativo, legislativo, judicial); quanto ao momento (prévio, concomitante, posterior); quanto à natureza (legalidade x mérito). CONTROLE ADMINISTRATIVO: exercido pela própria Administração, sobre seus próprios atos — base na autotutela (Súmulas 346 e 473 do STF). Prazo decadencial para anulação: 5 anos (art. 54 da Lei 9.784/99), salvo má-fé. CONTROLE LEGISLATIVO: exercido pelo Congresso Nacional (e Casas legislativas). Inclui: fiscalização contábil, financeira, orçamentária, operacional e patrimonial (art. 70, CF); sustação de atos normativos do Executivo que exorbitem do poder regulamentar (art. 49, V); convocação de Ministros (art. 50); CPI (art. 58). CONTROLE EXTERNO: **a cargo do Congresso Nacional**, exercido **com o auxílio do Tribunal de Contas da União** (art. 71, caput, CF). O TCU é órgão auxiliar, com competências próprias de fiscalização e julgamento de contas, mas **não é o titular do controle externo**. COMPETÊNCIAS DO TCU (art. 71): apreciar as contas do Presidente (parecer prévio); julgar as contas dos demais administradores; realizar auditorias; sustar atos; aplicar sanções. CONTROLE JUDICIAL: exercido pelo Judiciário sobre atos administrativos — apenas de LEGALIDADE, não de mérito (Súmula 473 do STF). CONTROLE INTERNO: exercido dentro de cada Poder (art. 74, CF — sistema de controle interno), com atribuições de avaliar cumprimento de metas, comprovar legalidade, avaliar resultados, apoiar o controle externo.',
     exemplos: [
       'Controle administrativo de ofício: prefeitura anula ato ilegal (Súmula 473).',
       'Controle administrativo por provocação: recurso hierárquico contra decisão.',
       'Controle legislativo: Congresso susta ato normativo do Executivo que exorbita do poder regulamentar (art. 49, V).',
       'Controle legislativo: convocação de Ministro para prestar informações (art. 50).',
       'Controle legislativo: CPI (art. 58).',
+      'Controle externo: Congresso Nacional, com auxílio do TCU, aprecia as contas do Presidente.',
+      'TCU: julga as contas dos administradores públicos (exceto Presidente) e aplica sanções.',
       'Controle judicial: mandado de segurança contra ato ilegal.',
       'Controle judicial: ação popular para anular ato lesivo ao patrimônio público.',
-      'Controle judicial: ação de improbidade administrativa.',
-      'Controle externo: TCU julga contas dos administradores públicos.',
-      'Controle externo: TCU realiza auditoria e aplica sanções.',
-      'Controle interno: controladoria-geral avalia cumprimento de metas.',
-      'Controle interno: sistema de controle interno de cada Poder (art. 74).'
+      'Controle interno: controladoria-geral avalia cumprimento de metas.'
     ],
     comparacoes: [
-      { termoA: 'Controle interno', termoB: 'Controle externo', diferenca: 'INTERNO: exercido dentro de cada Poder (art. 74, CF) — Controladorias, sistemas de controle interno. EXTERNO: exercido pelos Tribunais de Contas (art. 71, CF), auxiliares do Legislativo. O interno é autocontrole; o externo é controle por outro órgão.' },
+      { termoA: 'Controle externo (titular)', termoB: 'Tribunal de Contas (auxiliar)', diferenca: 'O **controle externo é do Congresso Nacional** (art. 71, caput). O TCU é órgão **auxiliar**, com competências próprias (apreciar contas do Presidente, julgar contas dos demais administradores, auditorias, sanções). O TCU não é o titular do controle externo — é o seu braço técnico. Pegadinha clássica: dizer que "o controle externo é exercido pelo TCU". ERRADO.' },
+      { termoA: 'Controle interno', termoB: 'Controle externo', diferenca: 'INTERNO: exercido dentro de cada Poder (art. 74, CF — Controladorias). EXTERNO: a cargo do Congresso Nacional, com auxílio do TCU (art. 71, CF). O interno é autocontrole; o externo é controle por outro órgão (Legislativo).' },
       { termoA: 'Controle de legalidade', termoB: 'Controle de mérito', diferenca: 'LEGALIDADE: verifica se o ato respeita a lei — exercido pela Administração E pelo Judiciário. MÉRITO: verifica conveniência e oportunidade — exercido APENAS pela Administração (autotutela). O Judiciário não revê mérito.' },
-      { termoA: 'Anulação', termoB: 'Revogação', diferenca: 'ANULAÇÃO: ato ILEGAL — ex tunc — Administração E Judiciário. REVOGAÇÃO: ato inconveniente (mérito) — ex nunc — SÓ Administração. Aplicação no controle: o Judiciário só anula; a Administração anula e revoga.' },
-      { termoA: 'Autotutela', termoB: 'Tutela', diferenca: 'AUTOTUTELA: a Administração revê seus PRÓPRIOS atos (Súmulas 346 e 473). TUTELA: controle que a Administração Direta exerce sobre a INDIRETA (supervisão de autarquias, fundações, empresas públicas, SEM). São coisas distintas.' },
-      { termoA: 'Controle legislativo', termoB: 'Controle externo', diferenca: 'LEGISLATIVO: gênero — exercido pelo Congresso Nacional, incluindo sustação de atos, convocação de Ministros, CPI. EXTERNO: exercido especificamente pelos TRIBUNAIS DE CONTAS, que auxiliam o Legislativo. O controle externo é uma MODALIDADE do controle legislativo (em sentido amplo).' }
+      { termoA: 'Anulação', termoB: 'Revogação', diferenca: 'ANULAÇÃO: ato ILEGAL — ex tunc — Administração E Judiciário. REVOGAÇÃO: ato inconveniente (mérito) — ex nunc — SÓ Administração.' },
+      { termoA: 'Autotutela', termoB: 'Tutela', diferenca: 'AUTOTUTELA: a Administração revê seus PRÓPRIOS atos (Súmulas 346 e 473). TUTELA: controle que a Administração Direta exerce sobre a INDIRETA (supervisão de autarquias, fundações, empresas públicas, SEM).' }
     ],
-    aplicacaoEmConcurso: 'Altíssima frequência: controle interno x externo; controle de legalidade x de mérito; autotutela x tutela; anulação x revogação; competências do TCU. A banca ama: dizer que o Judiciário pode revogar (não pode); confundir autotutela com tutela; dizer que o TCU julga contas do Presidente (o TCU aprecia, quem julga é o Congresso).',
+    aplicacaoEmConcurso: 'Altíssima frequência: controle interno x externo; controle de legalidade x de mérito; autotutela x tutela; anulação x revogação; competências do TCU; e, em especial, a **titularidade do controle externo** (Congresso Nacional) x o **auxílio do TCU**. A banca ama: dizer que o TCU é o titular do controle externo (não é); confundir autotutela com tutela; dizer que o TCU julga as contas do Presidente (o TCU aprecia; quem julga é o Congresso).',
     pegadinhas: [
+      'Dizer que o controle externo é exercido pelo TCU. ERRADO. O titular é o **Congresso Nacional**; o TCU **auxilia** (art. 71, caput).',
       'Dizer que o Judiciário pode revogar ato administrativo. NÃO — só anular (Súmula 473).',
       'Confundir autotutela com tutela.',
       'Achar que o TCU julga as contas do Presidente. O TCU APRECIA; quem JULGA é o Congresso Nacional (art. 49, IX).',
-      'Confundir controle legislativo com controle judicial.',
       'Dizer que a autotutela é ilimitada. Há prazo decadencial de 5 anos para anulação (art. 54 da Lei 9.784/99), salvo má-fé.',
-      'Achar que o controle externo é exercido apenas pelo Judiciário. É exercido pelo Legislativo, com apoio dos Tribunais de Contas.',
+      'Achar que o controle externo é exercido apenas pelo Judiciário. É exercido pelo Legislativo, com apoio do TCU.',
       'Dizer que o controle interno é subordinado ao externo. Atuam de forma articulada, mas cada um tem seu campo.'
     ],
     errosComuns: [
-      'Decorar os tipos de controle sem exemplos.',
+      'Atribuir o controle externo ao TCU, em vez de ao Congresso Nacional.',
       'Confundir autotutela com tutela.',
       'Não diferenciar controle de legalidade e de mérito.',
       'Achar que o TCU julga contas do Presidente (julga contas dos administradores; as do Presidente são apreciadas pelo TCU e julgadas pelo Congresso).'
     ],
     resumo: [
       'Controle: mecanismos de verificação da atuação administrativa.',
-      'Interno (art. 74) x externo (art. 71 — Tribunais de Contas).',
+      'Interno (art. 74) x externo (art. 71 — a cargo do Congresso Nacional, com auxílio do TCU).',
       'Administrativo (autotutela + recursos) x legislativo x judicial.',
       'Legalidade: Administração + Judiciário. Mérito: só Administração.',
       'Anulação: ilegalidade, ex tunc. Revogação: mérito, ex nunc, só Administração.',
       'Autotutela: próprios atos. Tutela: supervisão da indireta.',
-      'TCU: aprecia contas; Congresso: julga contas do Presidente.'
+      'TCU: aprecia contas do Presidente; Congresso: julga. TCU julga contas dos demais administradores.'
     ],
     modoProfessor: {
-      explicarMaisSimples: 'A Administração é controlada por vários "fiscais": ela mesma (autotutela), o Legislativo (com o TCU) e o Judiciário. O Judiciário só vê legalidade, não mérito. E o TCU aprecia contas — quem julga as do Presidente é o Congresso.',
-      outroExemplo: 'Um ato ilegal da prefeitura pode ser anulado pela própria prefeitura (autotutela) ou pelo Judiciário (controle judicial). Já um ato inconveniente só pode ser revogado pela prefeitura — o Judiciário não revoga.',
-      compararConceitos: 'Interno x externo = dentro do Poder x TCU. Legalidade x mérito = lei x conveniência. Anulação x revogação = ilegal x inconveniente; ex tunc x ex nunc; Administração + Judiciário x só Administração. Autotutela x tutela = próprios atos x supervisão da indireta.',
-      mostrarPegadinha: 'Cuidado: "O TCU julga as contas do Presidente". ERRADO. O TCU APRECIA as contas; quem JULGA é o Congresso Nacional (art. 49, IX, CF).',
-      comoApareceEmConcurso: 'Questões pedem distinção de tipos de controle, competência do TCU e diferença anulação x revogação.',
+      explicarMaisSimples: 'A Administração é controlada por vários "fiscais": ela mesma (autotutela), o Legislativo (com o auxílio do TCU) e o Judiciário. O **titular do controle externo é o Congresso Nacional**; o TCU é o **auxiliar técnico**. O Judiciário só vê legalidade, não mérito.',
+      outroExemplo: 'Um ato ilegal da prefeitura pode ser anulado pela própria prefeitura (autotutela) ou pelo Judiciário (controle judicial). O TCU não "controla externamente" sozinho: ele auxilia o Congresso. Quem exerce o controle externo é o Legislativo.',
+      compararConceitos: 'Controle externo (Congresso) x TCU (auxiliar). Interno x externo. Legalidade x mérito. Anulação x revogação. Autotutela x tutela.',
+      mostrarPegadinha: 'Cuidado: "O controle externo é exercido pelo TCU". ERRADO. O art. 71, caput, diz: "O controle externo, a cargo do Congresso Nacional, será exercido com o auxílio do Tribunal de Contas da União". O TCU auxilia, não titulariza.',
+      comoApareceEmConcurso: 'Questões pedem a titularidade do controle externo; competência do TCU; diferença anulação x revogação.',
       fazerPergunta: {
-        pergunta: 'O TCU pode anular um contrato administrativo firmado por órgão federal?',
-        resposta: 'O TCU pode determinar medidas e sustar atos, mas a anulação do contrato é ato da própria Administração (autotutela) ou do Judiciário. O TCU atua no controle externo, com poder de fiscalização, determinação e sanção, mas não substitui a autoridade administrativa nem o Judiciário.'
+        pergunta: 'Quem exerce o controle externo no âmbito federal?',
+        resposta: 'O **Congresso Nacional**, com o **auxílio do TCU** (art. 71, caput, CF). O TCU é órgão auxiliar, com competências próprias (apreciar contas do Presidente, julgar contas dos demais administradores, auditorias, sanções), mas **não é o titular** do controle externo.'
       }
     }
   },
@@ -1258,11 +1257,11 @@ window.LESSONS_ALTA = {
   'DA-25': {
     id: 'L-DA-25',
     moduloId: 'DA-25',
-    objetivo: 'Compreender o processo administrativo, seus princípios, direitos e deveres do administrado, competência, impedimento e suspeição, fases, decisão e recursos, com foco na Lei 9.784/1999 (federal). Distinguir processo administrativo (Lei 9.784/99) do ciclo PODC.',
+    objetivo: 'Compreender o processo administrativo, seus princípios, direitos e deveres do administrado, competência, impedimento e suspeição, fases, decisão e recursos, com foco na Lei 9.784/1999 (federal). Distinguir corretamente os arts. 53 e 54 da Lei 9.784/1999. Entender que a Lei 9.784/1999 é **federal** e não é automaticamente a lei geral de processo administrativo dos Estados e Municípios.',
     prerequisitos: ['DA-15', 'DA-19', 'DA-23'],
-    introducao: 'Processo administrativo é o caminho formal pelo qual a Administração toma decisões e o cidadão participa. Tem princípios, fases, prazos e garantias. A Lei 9.784/1999 disciplina o processo administrativo no âmbito federal — e cai muito em prova. Atenção: NÃO confundir com o PODC.',
-    explicacaoSimples: 'Pense no processo administrativo como um "devido processo legal" da Administração. Antes de decidir (aplicar uma multa, negar um pedido, rescindir um contrato), a Administração precisa ouvir o interessado, produzir provas, motivar a decisão e dar chance de recurso. A Lei 9.784/1999 disciplina esse caminho no âmbito federal.',
-    explicacaoTecnica: 'PROCESSO ADMINISTRATIVO é o conjunto de atos administrativos encadeados, praticados pela Administração com a participação do administrado, para a formação de uma decisão final. Lei 9.784/1999 (federal). PRINCÍPIOS (art. 2º): legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público, eficiência. DIREITOS DO ADMINISTRADO (art. 3º): ser tratado com respeito, conhecer as decisões, ter vista dos autos, formular alegações e apresentar documentos, produzir provas, recorrer, etc. DEVERES DO ADMINISTRADO (art. 4º): expor os fatos conforme a verdade, proceder com lealdade, não obstruir a apuração, etc. COMPETÊNCIA (art. 11): irrenunciável, exercida pelo órgão competente; não pode ser delegada se exclusiva; a delegação é possível para atos de decisão, desde que não exclusivos. IMPEDIMENTO E SUSPEIÇÃO (arts. 18 a 21): impedimento (vínculo objetivo — interesse direto, cônjuge, parente até 3º grau, litígio); suspeição (vínculo subjetivo — amizade íntima, inimizade). FASES (art. 41 e ss.): instauração (de ofício ou a pedido), instrução (provas, manifestações), defesa, relatório, decisão. DECISÃO: deve ser motivada (art. 50). RECURSOS: pedido de reconsideração (à mesma autoridade), recurso hierárquico (à autoridade superior). PRAZO DE DECISÃO: 30 dias, prorrogável por igual período, salvo norma especial (art. 49). PRESCRIÇÃO: 5 anos para a Administração rever seus atos, salvo hipótese de má-fé (art. 54). ANULAÇÃO (ilegalidade) e REVOGAÇÃO (mérito) — arts. 53 e 54. CONVALIDAÇÃO (art. 55): vícios sanáveis, com efeito retroativo.',
+    introducao: 'Processo administrativo é o caminho formal pelo qual a Administração toma decisões e o cidadão participa. Tem princípios, fases, prazos e garantias. A Lei 9.784/1999 disciplina o processo administrativo no âmbito **federal** — e cai muito em prova. Atenção: NÃO confundir com o PODC, NÃO confundir os arts. 53 e 54, e NÃO tratar a lei federal como se fosse automaticamente aplicável a todos os entes.',
+    explicacaoSimples: 'Pense no processo administrativo como um "devido processo legal" da Administração. Antes de decidir (aplicar uma multa, negar um pedido, rescindir um contrato), a Administração precisa ouvir o interessado, produzir provas, motivar a decisão e dar chance de recurso. A Lei 9.784/1999 disciplina esse caminho no âmbito **federal**. Cada Estado e Município pode ter sua própria lei — a federal não vale automaticamente para todos.',
+    explicacaoTecnica: 'PROCESSO ADMINISTRATIVO é o conjunto de atos administrativos encadeados, praticados pela Administração com a participação do administrado, para a formação de uma decisão final. Lei 9.784/1999 (federal). PRINCÍPIOS (art. 2º): legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público, eficiência. DIREITOS DO ADMINISTRADO (art. 3º): ser tratado com respeito, conhecer as decisões, ter vista dos autos, formular alegações e apresentar documentos, produzir provas, recorrer. DEVERES (art. 4º): expor os fatos conforme a verdade, proceder com lealdade, não obstruir a apuração. COMPETÊNCIA (art. 11): irrenunciável; delegação possível, salvo se exclusiva. IMPEDIMENTO E SUSPEIÇÃO (arts. 18 a 21): impedimento (vínculo objetivo — interesse direto, cônjuge, parente até 3º grau, litígio); suspeição (vínculo subjetivo — amizade íntima, inimizade). FASES (art. 41 e ss.): instauração (de ofício ou a pedido), instrução (provas, manifestações), defesa, relatório, decisão. DECISÃO: deve ser motivada (art. 50). RECURSOS: pedido de reconsideração (à mesma autoridade), recurso hierárquico (à autoridade superior). PRAZO DE DECISÃO: 30 dias, prorrogável por igual período, salvo norma especial (art. 49). **ANULAÇÃO E REVOGAÇÃO (art. 53)**: a Administração deve anular seus atos ilegais e pode revogar os inconvenientes, respeitados os direitos adquiridos. **DECADÊNCIA (art. 54)**: o direito de anular atos **favoráveis** decai em **5 anos**, salvo má-fé. **Atenção**: o prazo de 5 anos do art. 54 **não é o prazo da revogação** — é o prazo para anular atos favoráveis. A revogação (art. 53) não tem prazo decadencial, mas respeita direitos adquiridos. CONVALIDAÇÃO (art. 55): vícios sanáveis, com efeito retroativo. **APLICAÇÃO**: a Lei 9.784/1999 é **federal** (art. 1º). Estados e Municípios têm competência para legislar sobre processo administrativo próprio (art. 24, CF — competência concorrente). No RN, há legislação estadual específica. A lei federal **não é automaticamente** a lei geral de processo administrativo do Estado do RN.',
     exemplos: [
       'Processo administrativo disciplinar: apura falta de servidor.',
       'Processo administrativo de licitação: apura irregularidade em certame.',
@@ -1277,51 +1276,56 @@ window.LESSONS_ALTA = {
       'Recurso hierárquico: recurso à autoridade superior.',
       'Pedido de reconsideração: à mesma autoridade.',
       'Prazo de decisão: 30 dias, prorrogável por igual período.',
-      'Anulação: ato ilegal é anulado, com efeito retroativo.',
-      'Revogação: ato inconveniente é revogado, com efeito ex nunc.'
+      'Anulação (art. 53): ato ilegal é anulado, com efeito retroativo.',
+      'Revogação (art. 53): ato inconveniente é revogado, com efeito ex nunc.',
+      'Decadência (art. 54): ato favorável não pode ser anulado após 5 anos, salvo má-fé.'
     ],
     comparacoes: [
-      { termoA: 'Processo administrativo (Lei 9.784/99)', termoB: 'Ciclo administrativo (PODC)', diferenca: 'PROCESSO ADMINISTRATIVO (Lei 9.784/99): rito jurídico de decisão, com fases, prazos, contraditório e ampla defesa. CICLO ADMINISTRATIVO (PODC): planejamento, organização, direção e controle — funções do gestor. São coisas DIFERENTES, apesar do nome parecido. Cai muito em prova.' },
-      { termoA: 'Impedimento', termoB: 'Suspeição', diferenca: 'IMPEDIMENTO: vínculo OBJETIVO — interesse direto, cônjuge, parente até 3º grau, litígio. Leva à exclusão obrigatória do agente. SUSPEIÇÃO: vínculo SUBJETIVO — amizade íntima, inimizade. Leva à exclusão por declaração. Ambas garantem imparcialidade.' },
-      { termoA: 'Pedido de reconsideração', termoB: 'Recurso hierárquico', diferenca: 'PEDIDO DE RECONSIDERAÇÃO: dirigido à MESMA autoridade que proferiu a decisão. RECURSO HIERÁRQUICO: dirigido à autoridade SUPERIOR. Ambos são formas de recurso administrativo.' },
-      { termoA: 'Anulação', termoB: 'Revogação (Lei 9.784/99)', diferenca: 'ANULAÇÃO (art. 53): ato ILEGAL — efeito EX TUNC. REVOGAÇÃO (art. 54): ato inconveniente (mérito) — efeito EX NUNC, respeitados direitos adquiridos. Ambas devem ser motivadas e observar contraditório.' },
-      { termoA: 'Direito de petição', termoB: 'Processo administrativo', diferenca: 'PETIÇÃO: direito fundamental de se dirigir à Administração (art. 5º, XXXIV, CF). PROCESSO ADMINISTRATIVO: instrumento pelo qual a Administração processa a petição e decide. A petição é o ato inicial; o processo é o caminho.' }
+      { termoA: 'Art. 53 (anulação e revogação)', termoB: 'Art. 54 (decadência)', diferenca: '**Art. 53**: trata da **anulação** (ato ilegal) e da **revogação** (ato inconveniente). **Art. 54**: trata da **decadência do direito de anular atos favoráveis** em **5 anos**, salvo má-fé. O art. 54 **não** é o fundamento da revogação — é o prazo para anular atos que geram efeitos favoráveis ao destinatário.' },
+      { termoA: 'Anulação', termoB: 'Revogação (Lei 9.784/99)', diferenca: 'ANULAÇÃO (art. 53): ato ILEGAL — efeito EX TUNC. REVOGAÇÃO (art. 53): ato inconveniente (mérito) — efeito EX NUNC, respeitados direitos adquiridos. A **revogação não tem prazo decadencial**; a **anulação de ato favorável** tem prazo de 5 anos (art. 54), salvo má-fé.' },
+      { termoA: 'Impedimento', termoB: 'Suspeição', diferenca: 'IMPEDIMENTO: vínculo OBJETIVO (interesse direto, cônjuge, parente até 3º grau, litígio). SUSPEIÇÃO: vínculo SUBJETIVO (amizade íntima, inimizade). Ambos afastam o agente do processo.' },
+      { termoA: 'Pedido de reconsideração', termoB: 'Recurso hierárquico', diferenca: 'RECONSIDERAÇÃO: dirigido à MESMA autoridade que proferiu a decisão. RECURSO HIERÁRQUICO: dirigido à autoridade SUPERIOR.' },
+      { termoA: 'Lei 9.784/1999 (federal)', termoB: 'Lei estadual/municipal', diferenca: 'A Lei 9.784/1999 é **federal** — aplica-se à Administração Pública federal. Estados e Municípios têm competência para legislar sobre processo administrativo próprio (art. 24, CF — competência concorrente). No RN, há legislação estadual específica. A lei federal **não é automaticamente** a lei geral de processo administrativo do Estado do RN.' }
     ],
-    aplicacaoEmConcurso: 'Altíssima frequência: princípios do processo administrativo; direito de petição; diferença impedimento x suspeição; prazos; anulação x revogação; recursos administrativos. A banca ama: confundir processo administrativo (Lei 9.784/99) com o PODC; confundir impedimento com suspeição; dizer que a competência é renunciável.',
+    aplicacaoEmConcurso: 'Altíssima frequência: princípios; direitos do administrado; diferença impedimento x suspeição; prazos; **distinção entre art. 53 e art. 54**; **aplicação da lei federal x lei estadual**. A banca ama: **trocar o art. 53 pelo art. 54** e vice-versa; **dizer que a Lei 9.784 é a lei geral de processo administrativo de todos os entes**; confundir processo administrativo com PODC.',
     pegadinhas: [
       'Confundir processo administrativo da Lei 9.784/99 com o PODC.',
-      'Dizer que a competência é renunciável. NÃO é — é irrenunciável (art. 11).',
-      'Confundir impedimento (vínculo objetivo) com suspeição (vínculo subjetivo).',
+      'Dizer que a competência é renunciável. NÃO — é irrenunciável.',
+      'Confundir impedimento (objetivo) com suspeição (subjetivo).',
+      '**Dizer que o prazo de 5 anos do art. 54 é o prazo da revogação**. ERRADO. O art. 54 trata da **decadência do direito de anular atos favoráveis**. A revogação está no art. 53 e não tem prazo decadencial.',
+      '**Dizer que a Lei 9.784/1999 é a lei geral de processo administrativo de todos os entes**. ERRADO. É **federal**; Estados e Municípios têm legislação própria.',
       'Dizer que o prazo de 5 anos para anulação é absoluto. Há exceção para má-fé (art. 54).',
-      'Confundir pedido de reconsideração (mesma autoridade) com recurso hierárquico (autoridade superior).',
+      'Confundir pedido de reconsideração com recurso hierárquico.',
       'Achar que o processo administrativo é exclusivo do âmbito federal. A Lei 9.784/99 aplica-se à União; Estados e Municípios têm leis próprias, mas os princípios são os mesmos.'
     ],
     errosComuns: [
       'Decorar fases sem entender a lógica do contraditório.',
       'Confundir impedimento com suspeição.',
-      'Ignorar o prazo de 5 anos para anulação.',
+      '**Trocar os arts. 53 e 54**.',
+      '**Tratar a Lei 9.784/1999 como se fosse automaticamente aplicável a todos os entes**.',
       'Não diferenciar pedido de reconsideração de recurso hierárquico.'
     ],
     resumo: [
       'Processo administrativo: rito formal de decisão — não confundir com PODC.',
-      'Lei 9.784/1999 (federal).',
+      'Lei 9.784/1999 — **federal**.',
       'Princípios: legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público, eficiência.',
       'Direitos do administrado: respeito, vista, alegações, provas, recurso.',
       'Competência: irrenunciável; delegação possível, salvo se exclusiva.',
       'Impedimento (objetivo) x suspeição (subjetivo).',
       'Fases: instauração, instrução, defesa, relatório, decisão.',
-      'Prazos: 30 dias para decidir (prorrogável); 5 anos para anular, salvo má-fé.',
+      '**Art. 53**: anulação e revogação. **Art. 54**: decadência de 5 anos para anular atos favoráveis, salvo má-fé.',
+      'Prazos: 30 dias para decidir (prorrogável).',
       'Recursos: pedido de reconsideração (mesma autoridade) x recurso hierárquico (superior).'
     ],
     modoProfessor: {
-      explicarMaisSimples: 'Processo administrativo é o "devido processo legal" da Administração. Antes de decidir, ela precisa ouvir o interessado, produzir provas, motivar e dar chance de recurso. A Lei 9.784/1999 disciplina isso no âmbito federal.',
-      outroExemplo: 'Um servidor é acusado de falta. A Administração instaura processo (instauração), produz provas (instrução), ouve o servidor (defesa), elabora relatório e decide (decisão motivada). Se o servidor for condenado, pode pedir reconsideração ou recorrer hierarquicamente.',
-      compararConceitos: 'Processo administrativo (Lei 9.784) x PODC. Impedimento (objetivo) x suspeição (subjetivo). Reconsideração (mesma autoridade) x recurso hierárquico (superior). Anulação (ilegal, ex tunc) x revogação (mérito, ex nunc).',
-      mostrarPegadinha: 'Cuidado: "Processo administrativo é o mesmo que PODC". ERRADO. Processo administrativo (Lei 9.784) é o rito formal; PODC é o ciclo de funções administrativas.',
-      comoApareceEmConcurso: 'Questões pedem princípios, distinção impedimento/suspeição, prazos e recursos.',
+      explicarMaisSimples: 'Processo administrativo é o "devido processo legal" da Administração. A Lei 9.784/1999 disciplina isso no âmbito **federal**. Antes de decidir, a Administração ouve, produz provas, motiva e dá chance de recurso. **Art. 53** fala de anulação e revogação; **art. 54** fala do prazo de 5 anos para anular atos favoráveis, salvo má-fé. E a lei federal não vale automaticamente para Estados e Municípios.',
+      outroExemplo: 'Um servidor é acusado de falta. A Administração instaura processo (instauração), produz provas (instrução), ouve o servidor (defesa), elabora relatório e decide (decisão motivada). Se o ato for ilegal, pode ser anulado (art. 53). Se for apenas inconveniente, pode ser revogado (art. 53). Se o ato for favorável ao servidor e já tiverem passado 5 anos, não pode mais ser anulado, salvo má-fé (art. 54).',
+      compararConceitos: 'Processo administrativo x PODC. Impedimento (objetivo) x suspeição (subjetivo). **Art. 53 (anulação/revogação) x art. 54 (decadência de 5 anos)**. Lei federal x lei estadual.',
+      mostrarPegadinha: 'Cuidado: "O art. 54 é o prazo da revogação". ERRADO. O art. 54 trata da **decadência do direito de anular atos favoráveis**. A revogação está no art. 53. E "a Lei 9.784 é a lei geral de processo administrativo de todos os entes" também está ERRADO — é federal.',
+      comoApareceEmConcurso: 'Questões pedem princípios, distinção impedimento/suspeição, prazos, **arts. 53 e 54**, aplicação da lei federal.',
       fazerPergunta: {
-        pergunta: 'O prazo para a Administração anular seus atos é de 5 anos? Sempre?',
-        resposta: 'SIM, em regra (art. 54 da Lei 9.784/99) — mas com EXCEÇÃO: se houver MÁ-FÉ, não há prazo decadencial. A Súmula 473 do STF e o art. 54 combinam nesse sentido.'
+        pergunta: 'O prazo de 5 anos da Lei 9.784/1999 é o prazo para revogar atos administrativos?',
+        resposta: '**NÃO**. O prazo de 5 anos está no **art. 54** e se refere à **decadência do direito de anular atos administrativos favoráveis**, salvo má-fé. A **revogação** está no **art. 53** e **não tem prazo decadencial** — respeita direitos adquiridos.'
       }
     }
   },
