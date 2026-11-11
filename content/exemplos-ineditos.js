@@ -798,8 +798,8 @@ window.EXEMPLOS_INEDITOS = {
     'UTI UNIVERSI (geral): prestado a destinatários INDETERMINADOS, indivisível, custeado por imposto (iluminação pública, limpeza urbana). UTI SINGULI (individual): destinatários DETERMINADOS, divisível, custeado por taxa/tarifa (energia, água). A questão inverteu as definições.',
   'Q-DID-DA-20-001':
     'São princípios do serviço público: generalidade, continuidade, modicidade, regularidade, atualidade, segurança, cortesia, mutabilidade. LUCRAVIDADE não é — serviço público pode ser prestado com lucro, mas o princípio não é a lucratividade.',
-  'Q-DID-DA-20-002':
-    'CONCESSÃO: contrato, prazo determinado, licitação. PERMISSÃO: ato unilateral, prazo indeterminado, licitação (Lei 8.987/95). AUTORIZAÇÃO: ato unilateral, prazo curto, sem licitação. Três naturezas distintas: contrato, ato e ato.',
+'Q-DID-DA-20-002':
+  'CONCESSÃO: delegação de serviço público formalizada por contrato, precedida de licitação e com prazo determinado. PERMISSÃO: delegação a título precário, também precedida de licitação, formalizada por contrato de adesão, conforme o art. 40 da Lei 8.987/1995. Não se deve ensinar a permissão de serviço público como simples ato unilateral. A autorização possui regimes próprios conforme o setor e não deve ser apresentada como uma terceira modalidade geral equivalente às duas anteriores sem contextualização.'
   'Q-DID-DA-20-003':
     'A continuidade é a REGRA, mas admite exceções legais: razões técnicas/segurança, inadimplemento com aviso prévio, emergência. Não é absoluta. A interrupção sem justificativa viola o princípio.',
   'Q-DID-DA-20-004':
@@ -909,8 +909,8 @@ window.EXEMPLOS_INEDITOS = {
   ============================================================ */
   'Q-REAL-DA-24-001':
     'A obrigação de reparar o dano é TRANSMISSÍVEL aos herdeiros, mas LIMITADA ao valor da herança ou do patrimônio transferido (art. 8º da Lei 8.429/92). Se o falecido não deixou patrimônio, o herdeiro não responde com seu próprio patrimônio.',
-  'Q-REAL-DA-24-002':
-    'A Lei 14.230/2021 exige DOLO em TODAS as modalidades. A perda patrimonial decorrente de atividade econômica NÃO configura, por si só, improbidade (art. 10, §2º). Divergência interpretativa com base em jurisprudência não pacificada NÃO configura improbidade (art. 21, §2º).',
+'Q-REAL-DA-24-002':
+  'A Lei 14.230/2021 passou a exigir dolo para a configuração dos atos de improbidade administrativa. A divergência interpretativa sobre a lei, baseada em jurisprudência, deve ser analisada conforme o art. 1º, § 8º, da Lei 8.429/1992 e a interpretação constitucional dada pelo STF. Não basta afirmar genericamente que qualquer divergência baseada em jurisprudência não pacificada afasta a improbidade. É necessário observar os critérios definidos pelos Tribunais Superiores. Também é importante distinguir a mera voluntariedade da vontade livre e consciente de alcançar o resultado ilícito.'
   'Q-REAL-DA-24-003':
     'A aprovação das contas pelo TCU NÃO impede a aplicação de sanções por improbidade. As instâncias são INDEPENDENTES (art. 21 da Lei 8.429/92). O TCU aprova contas sob a ótica contábil; a improbidade analisa dolo e gravidade — independentes.',
   'Q-REAL-DA-24-008':
