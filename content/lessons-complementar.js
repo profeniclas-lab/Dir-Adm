@@ -13,64 +13,67 @@ window.LESSONS_COMPLEMENTAR = {
   'DA-26': {
     id: 'L-DA-26',
     moduloId: 'DA-26',
-    objetivo: 'Compreender o conceito de bem público, sua classificação (bens de uso comum do povo, bens de uso especial e bens dominicais), as características do regime jurídico-administrativo (inalienabilidade, imprescritibilidade, impenhorabilidade e não oneração), as formas de utilização por particulares e as regras de alienação.',
+    objetivo: 'Compreender o conceito de bem público, sua classificação (art. 99 do CC: bens de uso comum do povo, bens de uso especial e bens dominicais), as características do regime jurídico-administrativo (inalienabilidade, imprescritibilidade, impenhorabilidade e não oneração — arts. 100 a 102 do CC), as formas de utilização por particulares e as regras de alienação.',
     prerequisitos: ['DA-15', 'DA-16'],
-    introducao: 'Os bens públicos são o patrimônio do Estado — e estão sujeitos a um regime jurídico próprio, diferente dos bens privados. Entender essa diferença é fundamental: ela explica por que um bem público não pode ser usucapido, por que não pode ser penhorado e por que sua venda exige procedimentos específicos.',
-    explicacaoSimples: 'Bem público é todo bem que pertence a uma pessoa jurídica de direito público (União, Estados, DF, Municípios, autarquias e fundações públicas). Não é só prédio de repartição: uma praça, uma rua, um rio, uma escola, um terreno sem uso, tudo isso é bem público. E, por pertencer ao Estado, tem regras próprias — não se aplicam as mesmas regras dos bens particulares.',
-    explicacaoTecnica: 'BENS PÚBLICOS são todos os bens que, por sua natureza ou destinação, pertencem às pessoas jurídicas de direito público (União, Estados, DF, Municípios, autarquias e fundações públicas) e estão afetados à prestação de serviço público ou ao uso da coletividade. CLASSIFICAÇÃO (art. 20 do Código Civil): BENS DE USO COMUM DO POVO (destinados ao uso da coletividade em geral, sem necessidade de inscrição — ex.: ruas, praças, rios, mares, estradas); BENS DE USO ESPECIAL (destinados a serviço ou estabelecimento público — ex.: escolas, hospitais, repartições, veículos oficiais); BENS DOMINICAIS (bens públicos por natureza, mas sem destinação pública específica — ex.: terrenos sem uso, prédios desativados, semoventes). CARACTERÍSTICAS: INALIENABILIDADE (em regra, os bens públicos não podem ser alienados — a alienação só é possível com autorização legislativa e, nos casos de bens dominicais, mediante licitação); IMPRESCRITIBILIDADE (não são adquiridos por usucapião); IMPENHORABILIDADE (não podem ser penhorados — a execução contra o Estado segue o regime de precatórios); NÃO ONERAÇÃO (não podem ser gravados com ônus real, salvo exceções legais). CLASSIFICAÇÃO QUANTO À DISPONIBILIDADE: BENS AFETADOS (destinados a uma finalidade pública — não podem ser alienados enquanto mantida a afetação) x BENS DESAFETADOS (sem destinação pública — podem ser alienados, cumpridos os requisitos legais). USO POR PARTICULARES: AUTORIZAÇÃO DE USO (ato unilateral, precário, para interesse do particular — ex.: uso de espaço público para evento); PERMISSÃO DE USO (ato unilateral, precário, para uso de bem público — ex.: quiosque em praça); CONCESSÃO DE USO (contrato administrativo, prazo determinado — ex.: exploração de restaurante em prédio público); CONCESSÃO DE DIREITO REAL DE USO (para fins de moradia, regularização fundiária). ALIENAÇÃO: exige AUTORIZAÇÃO LEGISLATIVA e, em regra, LICITAÇÃO (leilão, na modalidade prevista na Lei 14.133/2021), além de AVALIAÇÃO PRÉVIA. Bens de uso comum e de uso especial não podem ser alienados enquanto mantida a destinação; os dominicais podem ser alienados, cumpridos os requisitos.',
+    introducao: 'Os bens públicos são o patrimônio do Estado — e estão sujeitos a um regime jurídico próprio. A base legal está nos **arts. 99 a 102 do Código Civil**. Entender essa disciplina é fundamental: ela explica por que um bem público não pode ser usucapido, por que não pode ser penhorado e por que sua venda exige procedimentos específicos. O art. 99 classifica; os arts. 100 a 102 estabelecem o regime.',
+    explicacaoSimples: 'Bem público é todo bem que pertence a uma pessoa jurídica de direito público (União, Estados, DF, Municípios, autarquias e fundações públicas). Não é só prédio de repartição: uma praça, uma rua, um rio, uma escola, um terreno sem uso — tudo isso é bem público. O Código Civil, no **art. 99**, classifica em três espécies: uso comum do povo, uso especial e dominicais. E nos **arts. 100 a 102** estabelece as regras: os afetados não podem ser alienados; os dominicais podem; e nenhum deles pode ser adquirido por usucapião.',
+    explicacaoTecnica: 'BENS PÚBLICOS são todos os bens que, por sua natureza ou destinação, pertencem às pessoas jurídicas de direito público (União, Estados, DF, Municípios, autarquias e fundações públicas). CLASSIFICAÇÃO (**art. 99 do Código Civil**): BENS DE USO COMUM DO POVO (rios, mares, estradas, ruas, praças — destinados ao uso da coletividade em geral); BENS DE USO ESPECIAL (edifícios ou terrenos destinados a serviço ou estabelecimento da administração — escolas, hospitais, repartições — inclusive os de autarquias); BENS DOMINICAIS (patrimônio das pessoas jurídicas de direito público, sem destinação pública específica — terrenos sem uso, prédios desativados). REGIME JURÍDICO: **Art. 100**: os bens de uso comum e de uso especial são **inalienáveis enquanto conservarem essa qualificação**. **Art. 101**: os bens dominicais **podem ser alienados**, observadas as exigências da lei (autorização legislativa, avaliação, licitação — leilão, na forma da Lei 14.133/2021). **Art. 102**: os bens públicos **não são adquiridos por usucapião** (imprescritibilidade). CARACTERÍSTICAS: INALIENABILIDADE (em regra, para os afetados); IMPRESCRITIBILIDADE (art. 102; Súmula 340 do STF); IMPENHORABILIDADE (execução por precatórios — art. 100, CF); NÃO ONERAÇÃO (em regra). USO POR PARTICULARES: AUTORIZAÇÃO DE USO (ato precário, interesse do particular); PERMISSÃO DE USO (ato precário, prazo indeterminado); CONCESSÃO DE USO (contrato, prazo determinado, licitação). AFETAÇÃO x DESAFETAÇÃO: com ou sem destinação pública. Bens desafetados (dominicais) podem ser alienados, cumpridos os requisitos.',
     exemplos: [
-      'Bem de uso comum: praça pública, rua, estrada, rio.',
-      'Bem de uso especial: escola, hospital, repartição, veículo oficial.',
-      'Bem dominical: terreno sem uso, prédio desativado, semovente.',
-      'Inalienabilidade: bem afetado a serviço público não pode ser vendido enquanto mantida a afetação.',
-      'Imprescritibilidade: particular não pode adquirir praça pública por usucapião.',
-      'Impenhorabilidade: bem público não pode ser penhorado; execução segue precatórios.',
-      'Autorização de uso: prefeitura autoriza uso de praça para evento.',
+      'Art. 99, I: praça, rua, rio — uso comum do povo.',
+      'Art. 99, II: escola, hospital, repartição — uso especial.',
+      'Art. 99, III: terreno sem uso, prédio desativado — dominical.',
+      'Art. 100: bem afetado a serviço público não pode ser alienado enquanto mantida a afetação.',
+      'Art. 101: bem dominical pode ser alienado, com autorização legislativa, avaliação e leilão.',
+      'Art. 102: bem público não pode ser adquirido por usucapião (imprescritibilidade).',
+      'Impenhorabilidade: bem público não pode ser penhorado — execução por precatórios.',
+      'Autorização de uso: evento em praça pública, por prazo curto.',
       'Permissão de uso: quiosque em praça, por prazo indeterminado.',
-      'Concessão de uso: restaurante em prédio público, mediante contrato e licitação.',
-      'Alienação de bem dominical: terreno sem uso é alienado após autorização legislativa, avaliação e leilão.'
+      'Concessão de uso: restaurante em prédio público, mediante contrato e licitação.'
     ],
     comparacoes: [
-      { termoA: 'Bens de uso comum do povo', termoB: 'Bens de uso especial', diferenca: 'USO COMUM: destinados à COLETIVIDADE em geral, sem necessidade de inscrição (ruas, praças, rios). USO ESPECIAL: destinados a SERVIÇO ou estabelecimento público (escolas, hospitais, repartições). Os primeiros servem à população; os segundos, à Administração. Ambos são bens AFETADOS — não podem ser alienados enquanto mantida a destinação.' },
-      { termoA: 'Bens de uso especial', termoB: 'Bens dominicais', diferenca: 'USO ESPECIAL: têm destinação pública específica (serviço ou estabelecimento). DOMINICAIS: NÃO têm destinação pública específica — são bens que pertencem ao Estado, mas sem afetação. Por isso, os dominicais podem ser alienados, cumpridos os requisitos legais; os de uso especial, em regra, não (enquanto afetados).' },
-      { termoA: 'Inalienabilidade', termoB: 'Imprescritibilidade', diferenca: 'INALIENABILIDADE: os bens públicos, em regra, não podem ser alienados (dependem de autorização legislativa, licitação e avaliação). IMPRESCRITIBILIDADE: os bens públicos não são adquiríveis por usucapião. A primeira limita a venda; a segunda impede a aquisição pelo decurso do tempo.' },
-      { termoA: 'Autorização de uso', termoB: 'Concessão de uso', diferenca: 'AUTORIZAÇÃO: ato unilateral, precário, para interesse do PARTICULAR (ex.: evento em praça). CONCESSÃO: CONTRATO administrativo, prazo determinado, precedida de licitação, para uso de bem público em atividade de interesse coletivo (ex.: restaurante em prédio público). A primeira é ato; a segunda, contrato.' },
-      { termoA: 'Permissão de uso', termoB: 'Concessão de uso', diferenca: 'PERMISSÃO: ATO unilateral, precário, prazo INDETERMINADO, para uso de bem público (ex.: quiosque em praça). CONCESSÃO: CONTRATO, prazo DETERMINADO, precedida de licitação. A permissão é mais precária (pode ser revogada a qualquer tempo); a concessão tem mais estabilidade.' }
+      { termoA: 'Bens de uso comum do povo', termoB: 'Bens de uso especial', diferenca: 'USO COMUM: destinados à COLETIVIDADE em geral (rios, mares, estradas, ruas, praças) — art. 99, I. USO ESPECIAL: destinados a SERVIÇO ou estabelecimento público (escolas, hospitais, repartições) — art. 99, II. Ambos são bens AFETADOS e, enquanto mantida a qualificação, **inalienáveis** (art. 100).' },
+      { termoA: 'Bens de uso especial', termoB: 'Bens dominicais', diferenca: 'USO ESPECIAL: têm destinação pública específica (art. 99, II). DOMINICAIS: NÃO têm destinação pública específica (art. 99, III) — são bens que pertencem ao Estado, mas sem afetação. Por isso, os dominicais **podem ser alienados** (art. 101); os de uso especial, em regra, não (art. 100).' },
+      { termoA: 'Art. 100', termoB: 'Art. 101', diferenca: '**Art. 100**: bens de uso comum e de uso especial são **inalienáveis enquanto conservarem a qualificação**. **Art. 101**: bens dominicais **podem ser alienados**, observadas as exigências da lei. Um trata da inalienabilidade dos afetados; o outro, da alienabilidade dos dominicais.' },
+      { termoA: 'Inalienabilidade', termoB: 'Imprescritibilidade', diferenca: 'INALIENABILIDADE (art. 100): os bens afetados não podem ser alienados enquanto mantida a afetação. IMPRESCRITIBILIDADE (art. 102): os bens públicos não são adquiridos por **usucapião**. A primeira limita a venda; a segunda impede a aquisição pelo decurso do tempo.' },
+      { termoA: 'Autorização de uso', termoB: 'Concessão de uso', diferenca: 'AUTORIZAÇÃO: ato unilateral, precário, para interesse do PARTICULAR (evento em praça). CONCESSÃO: CONTRATO administrativo, prazo determinado, precedido de licitação (restaurante em prédio público). A primeira é ato; a segunda, contrato.' }
     ],
-    aplicacaoEmConcurso: 'Cobrança: classificação dos bens públicos (uso comum, uso especial, dominical); características (inalienabilidade, imprescritibilidade, impenhorabilidade, não oneração); formas de uso por particulares (autorização, permissão, concessão); requisitos de alienação. A banca ama: dizer que bem público pode ser adquirido por usucapião; confundir uso comum com uso especial; confundir autorização/permissão/concessão de uso.',
+    aplicacaoEmConcurso: 'Cobrança: classificação do **art. 99** (uso comum, uso especial, dominical); características (**arts. 100 a 102** — inalienabilidade, alienabilidade dos dominicais, imprescritibilidade); formas de uso por particulares (autorização, permissão, concessão); requisitos de alienação. A banca ama: **atribuir a classificação ao art. 20** (ERRADO — é o art. 99); dizer que bem público pode ser adquirido por usucapião (não pode — art. 102); confundir uso comum com uso especial; confundir autorização/permissão/concessão de uso.',
     pegadinhas: [
-      'Dizer que bens públicos podem ser adquiridos por usucapião. NÃO — são IMPRESCRITÍVEIS.',
-      'Dizer que bens públicos podem ser penhorados. NÃO — são IMPENHORÁVEIS (execução por precatórios).',
-      'Achar que todo bem público é inalienável. Em regra, sim — mas os bens DOMINICAIS podem ser alienados, cumpridos os requisitos.',
+      '**Atribuir a classificação dos bens públicos ao art. 20 do Código Civil**. ERRADO. É o **art. 99**.',
+      'Dizer que bens públicos podem ser adquiridos por usucapião. NÃO — **art. 102** (imprescritibilidade).',
+      'Dizer que bens públicos podem ser penhorados. NÃO — são impenhoráveis (execução por precatórios).',
+      'Achar que todo bem público é inalienável. Em regra, os afetados são (art. 100); os **dominicais podem ser alienados** (art. 101).',
       'Confundir bens de uso comum (praça, rua) com bens de uso especial (escola, hospital).',
-      'Confundir AUTORIZAÇÃO (ato precário, interesse do particular) com CONCESSÃO (contrato, prazo determinado).',
-      'Dizer que a alienação de bem público dispensa licitação. Em regra, EXIGE (leilão) — salvo hipóteses legais específicas.',
-      'Achar que a afetação é permanente. Pode haver DESAFETAÇÃO — quando o bem perde a destinação pública.'
+      'Confundir autorização (ato precário, interesse do particular) com concessão (contrato, prazo determinado).',
+      'Dizer que a alienação de bem público dispensa licitação. Em regra, exige (leilão).',
+      'Achar que a afetação é permanente. Pode haver DESAFETAÇÃO.'
     ],
     errosComuns: [
+      '**Citar o art. 20 em vez do art. 99**.',
       'Decorar a classificação sem exemplos.',
-      'Confundir as formas de uso por particulares (autorização, permissão, concessão).',
+      'Confundir as formas de uso por particulares.',
       'Ignorar os requisitos de alienação.',
       'Não distinguir bens afetados de desafetados.'
     ],
     resumo: [
       'Bem público: pertence a pessoa jurídica de direito público, afetado a serviço ou uso coletivo.',
-      'Classificação: uso comum (praça, rua), uso especial (escola, hospital), dominical (terreno sem uso).',
-      'Características: inalienabilidade, imprescritibilidade, impenhorabilidade e não oneração.',
+      '**Classificação: art. 99 do CC** — uso comum (praça, rua), uso especial (escola, hospital), dominical (terreno sem uso).',
+      '**Art. 100**: bens de uso comum e especial são inalienáveis enquanto mantida a qualificação.',
+      '**Art. 101**: bens dominicais podem ser alienados, cumpridos os requisitos.',
+      '**Art. 102**: bens públicos não são adquiridos por usucapião.',
+      'Características: inalienabilidade (afetados), imprescritibilidade, impenhorabilidade, não oneração.',
       'Formas de uso: autorização, permissão e concessão de uso.',
-      'Alienação: exige autorização legislativa, avaliação e, em regra, licitação (leilão).',
-      'Bens afetados x desafetados.',
-      'Imprescritibilidade: não se adquire bem público por usucapião.'
+      'Bens afetados x desafetados.'
     ],
     modoProfessor: {
-      explicarMaisSimples: 'Bem público é o patrimônio do Estado — não só prédio de repartição, mas também praça, rua, rio, escola. Por pertencer à coletividade, tem regras próprias: não pode ser vendido sem autorização, não pode ser adquirido por usucapião, não pode ser penhorado.',
-      outroExemplo: 'Uma praça pública é bem de USO COMUM. Uma escola é bem de USO ESPECIAL. Um terreno sem uso do município é bem DOMINICAL. Se o município quiser vender o terreno, precisa de autorização legislativa, avaliação e leilão. Se alguém ocupar a praça por 20 anos, não adquire a propriedade — bens públicos são IMPRESCRITÍVEIS.',
-      compararConceitos: 'Uso comum x uso especial x dominical = coletividade x serviço público x sem destinação. Inalienabilidade x imprescritibilidade x impenhorabilidade = não vende x não usucape x não penhora. Autorização x permissão x concessão de uso = ato precário interesse particular x ato precário prazo indeterminado x contrato prazo determinado.',
-      mostrarPegadinha: 'Cuidado: "Bens públicos podem ser adquiridos por usucapião". ERRADO. São IMPRESCRITÍVEIS — não se adquire bem público por decurso de prazo.',
-      comoApareceEmConcurso: 'Questões pedem classificação (uso comum, uso especial, dominical), características (especialmente imprescritibilidade e impenhorabilidade) e formas de uso por particulares.',
+      explicarMaisSimples: 'Bem público é o patrimônio do Estado. O **art. 99 do Código Civil** classifica em três tipos: uso comum (praça, rua), uso especial (escola, hospital) e dominical (terreno sem uso). O **art. 100** diz que os afetados não podem ser vendidos; o **art. 101** diz que os dominicais podem; o **art. 102** diz que nenhum pode ser adquirido por usucapião.',
+      outroExemplo: 'Uma praça é bem de uso comum (art. 99, I). Uma escola é de uso especial (art. 99, II). Um terreno sem uso é dominical (art. 99, III). Se o município quiser vender o terreno, pode (art. 101), com autorização legislativa, avaliação e leilão. Se alguém ocupar a praça por 20 anos, não adquire — art. 102 (imprescritibilidade).',
+      compararConceitos: 'Uso comum x uso especial x dominical. **Art. 100 (inalienabilidade dos afetados) x art. 101 (alienabilidade dos dominicais) x art. 102 (imprescritibilidade)**. Autorização x permissão x concessão de uso.',
+      mostrarPegadinha: 'Cuidado: "A classificação dos bens públicos está no art. 20 do CC". ERRADO. É o **art. 99**. E "bens públicos podem ser usucapidos" também está ERRADO — art. 102.',
+      comoApareceEmConcurso: 'Classificação (art. 99), características (arts. 100 a 102), formas de uso por particulares.',
       fazerPergunta: {
-        pergunta: 'Um quiosque instalado em praça pública, por prazo indeterminado, sem contrato, configura autorização, permissão ou concessão de uso?',
-        resposta: 'PERMISSÃO DE USO — ato unilateral, precário, prazo indeterminado, sem contrato. A CONCESSÃO exigiria contrato, prazo determinado e licitação. A AUTORIZAÇÃO seria para interesse do particular (ex.: evento), não para exploração comercial contínua.'
+        pergunta: 'Qual é o dispositivo do Código Civil que classifica os bens públicos?',
+        resposta: 'O **art. 99** do Código Civil. Ele os classifica em: I — uso comum do povo; II — uso especial; III — dominicais. Os **arts. 100 a 102** tratam, respectivamente, da inalienabilidade dos afetados, da alienabilidade dos dominicais e da imprescritibilidade.'
       }
     }
   },
