@@ -4149,19 +4149,19 @@ window.QUESTIONS = [
     enunciado: 'Sobre controle interno e externo, é CORRETO afirmar que:',
     alternativas: [
       { id: 'A', texto: 'Interno é exercido pelos Tribunais de Contas; externo, pelas Controladorias.' },
-      { id: 'B', texto: 'Interno é exercido dentro de cada Poder (Controladorias — art. 74); externo é exercido pelos Tribunais de Contas (art. 71).' },
+      { id: 'B', texto: 'Interno é exercido dentro de cada Poder (Controladorias — art. 74, CF). Externo é a cargo do Congresso Nacional, com o auxílio do Tribunal de Contas (art. 71, caput, CF): o TCU é órgão auxiliar, não o titular do controle externo.' },
       { id: 'C', texto: 'São sinônimos.' },
       { id: 'D', texto: 'Externo é exercido apenas pelo Judiciário.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'INTERNO: dentro de cada Poder (art. 74 — Controladorias). EXTERNO: Tribunais de Contas (art. 71).',
-      incorretas: { A: 'Inverte.', C: 'São distintos.', D: 'Externo é exercido pelo Legislativo, com apoio dos Tribunais de Contas.' },
-      conceitoCobrado: 'Controle interno x externo',
-      pegadinha: 'Inverter.',
-      comoApareceEmConcurso: 'Cobrança conceitual.'
+      correta: 'INTERNO: dentro de cada Poder (art. 74 — Controladorias). EXTERNO: a cargo do Congresso Nacional, com auxílio do TCU (art. 71, caput). O TCU é órgão auxiliar — não titulariza o controle externo.',
+      incorretas: { A: 'Inverte.', C: 'São distintos.', D: 'O externo é exercido pelo Legislativo, com apoio do TCU.' },
+      conceitoCobrado: 'Controle interno x externo (titularidade)',
+      pegadinha: 'Atribuir o controle externo ao TCU (o titular é o Congresso Nacional).',
+      comoApareceEmConcurso: 'Cobrança clássica da titularidade do controle externo.'
     },
-    tags: ['controle interno', 'externo']
+    tags: ['controle interno', 'externo', 'TCU']
   },
   {
     id: 'Q-DID-DA-23-002',
