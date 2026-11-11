@@ -109,6 +109,26 @@ window.APP_CONFIG = {
     exigirExemploInedito: false,
     fallbackSemExemplo: 'Exemplo inédito em produção para esta questão.',
     profundidadeDireito: 'informarFundamentoLegalQuandoAplicavel'
+  },
+
+  /* ============================================================
+     GAMIFICAÇÃO — XP, ofensiva, nível e meta diária
+     (paralela às estatísticas existentes; não as altera)
+     ============================================================ */
+  gamification: {
+    xp: {
+      acerto:                 10,
+      erro:                    2,
+      flashcardSabia:          5,
+      flashcardDuvida:         3,
+      flashcardNaoSabia:       1,
+      exercicioBase:          50,
+      exercicioBonus:         20,   // extra se atingir o limiar de domínio
+      simuladoBase:          100,
+      diagnostico:            30
+    },
+    metaDiaria: 50,
+    niveis: [0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500]
   }
 
 };
