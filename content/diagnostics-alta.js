@@ -1849,16 +1849,16 @@ window.DIAGNOSTICS_ALTA = {
       {
         id: 'D-DA-19-06',
         tipo: 'situacao',
-        subtopico: 'Cassação x caducidade x contraposição',
-        pergunta: 'Um permissionário de uso de bem público teve sua permissão extinta em três situações distintas, em momentos diferentes: (a) descumpriu uma condição prevista no termo; (b) o prazo da permissão expirou; (c) foi editado um novo ato incompatível com a permissão anterior, que a substituiu. Os institutos de extinção são, respectivamente:',
+        subtopico: 'Cassação x caducidade x contraposição x termo final',
+        pergunta: 'Um permissionário de uso de bem público teve sua permissão extinta em quatro situações distintas: (a) descumpriu uma condição prevista no termo; (b) sobreveio lei nova que proibiu a atividade, tornando a permissão incompatível com o ordenamento; (c) o prazo previsto no próprio ato expirou; (d) foi editado um novo ato incompatível com a permissão anterior, que a substituiu. Os institutos de extinção são, respectivamente:',
         alternativas: [
-          { id: 'A', texto: 'Cassação, caducidade e contraposição.' },
-          { id: 'B', texto: 'Caducidade, cassação e contraposição.' },
-          { id: 'C', texto: 'Contraposição, caducidade e cassação.' },
-          { id: 'D', texto: 'Cassação, contraposição e caducidade.' }
+          { id: 'A', texto: 'Cassação, caducidade, extinção pelo advento do termo final e contraposição.' },
+          { id: 'B', texto: 'Caducidade, cassação, contraposição e extinção pelo termo final.' },
+          { id: 'C', texto: 'Contraposição, caducidade, cassação e extinção pelo termo final.' },
+          { id: 'D', texto: 'Cassação, contraposição, caducidade e extinção pelo termo final.' }
         ],
         gabarito: 'A',
-        explicacao: '(a) DESCUMPRIMENTO de condição = CASSAÇÃO. (b) DECURSO DE PRAZO = CADUCIDADE. (c) ATO NOVO incompatível que extingue o anterior = CONTRAPOSIÇÃO. A chave é: cassação (comportamento), caducidade (prazo/fato) e contraposição (ato novo). É a distinção mais fina do tema.'
+        explicacao: '(a) DESCUMPRIMENTO de condição = CASSAÇÃO. (b) NORMA SUPERVENIENTE incompatível = CADUCIDADE. (c) DECURSO DE PRAZO do próprio ato = EXTINÇÃO PELO ADVENTO DO TERMO FINAL. (d) ATO NOVO que extingue o anterior = CONTRAPOSIÇÃO. A chave é: cassação (comportamento), caducidade (norma nova), termo final (prazo) e contraposição (ato novo).'
       },
       {
         id: 'D-DA-19-07',
@@ -2078,12 +2078,12 @@ window.DIAGNOSTICS_ALTA = {
         pergunta: 'Sobre o controle interno e o controle externo da Administração Pública, é correto afirmar que:',
         alternativas: [
           { id: 'A', texto: 'Controle interno é exercido pelos Tribunais de Contas; controle externo, pelas Controladorias.' },
-          { id: 'B', texto: 'Controle interno é exercido dentro de cada Poder (Controladorias, sistemas de controle interno — art. 74, CF); controle externo é exercido pelos Tribunais de Contas (art. 71, CF), auxiliares do Legislativo.' },
+          { id: 'B', texto: 'Controle interno é exercido dentro de cada Poder (Controladorias, sistemas de controle interno — art. 74, CF). Controle externo é a cargo do Congresso Nacional, com o auxílio do Tribunal de Contas da União (art. 71, caput, CF) — o TCU é órgão auxiliar, não o titular do controle externo.' },
           { id: 'C', texto: 'Controle interno e externo são sinônimos: ambos são exercidos pelo Legislativo.' },
           { id: 'D', texto: 'Controle externo é exercido apenas pelo Judiciário.' }
         ],
         gabarito: 'B',
-        explicacao: 'CONTROLE INTERNO: exercido dentro de cada Poder (art. 74, CF) — Controladorias, sistemas de controle interno. CONTROLE EXTERNO: exercido pelos Tribunais de Contas (art. 71, CF), auxiliares do Legislativo. A alternativa A inverte; C iguala; D restringe indevidamente o controle externo ao Judiciário.'
+        explicacao: 'CONTROLE INTERNO: exercido dentro de cada Poder (art. 74, CF) — Controladorias, sistemas de controle interno. CONTROLE EXTERNO: a cargo do Congresso Nacional, com o auxílio do TCU (art. 71, caput, CF). O TCU é órgão auxiliar, não titular. A alternativa A inverte; C iguala; D restringe indevidamente o controle externo ao Judiciário.'
       },
       {
         id: 'D-DA-23-02',
