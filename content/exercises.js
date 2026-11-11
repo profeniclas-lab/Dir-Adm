@@ -1954,22 +1954,22 @@ window.EXERCISE_EXTRA_QUESTIONS = [
     tipo: 'DIDATICA', area: 'DA', moduloId: 'DA-23',
     subtema: 'Controle interno x externo x social',
     dificuldade: 3, prioridade: 'alta',
-    enunciado: 'Um órgão público sofre três formas de controle simultâneas: (i) a Controladoria-Geral revisa procedimentos internos e aponta falhas; (ii) o Tribunal de Contas audita a prestação de contas anual; (iii) um cidadão protocola representação na ouvidoria sobre a qualidade do atendimento. Sobre as três formas, é CORRETO afirmar que:',
+    enunciado: 'Um órgão público sofre três formas de controle simultâneas: (i) a Controladoria-Geral revisa procedimentos internos e aponta falhas; (ii) o Tribunal de Contas audita a prestação de contas anual, no âmbito do controle externo a cargo do Congresso Nacional; (iii) um cidadão protocola representação na ouvidoria sobre a qualidade do atendimento. Sobre as três formas, é CORRETO afirmar que:',
     alternativas: [
       { id: 'A', texto: 'As três são controle externo, pois envolvem órgãos distintos.' },
-      { id: 'B', texto: '(i) CONTROLE INTERNO (dentro do próprio Poder, art. 74, CF); (ii) CONTROLE EXTERNO (Tribunais de Contas, art. 71, CF); (iii) CONTROLE SOCIAL (participação do cidadão, transparência e ouvidoria). São COMPLEMENTARES — cada um tem um papel e um alcance. A Constituição prevê a articulação entre eles.' },
+      { id: 'B', texto: '(i) CONTROLE INTERNO (dentro do próprio Poder, art. 74, CF); (ii) CONTROLE EXTERNO — exercido pelo Congresso Nacional, com auxílio do TCU (art. 71, caput), sendo o TCU o órgão auxiliar que realiza a auditoria; (iii) CONTROLE SOCIAL (participação do cidadão, transparência e ouvidoria). São COMPLEMENTARES — cada um tem um papel e um alcance.' },
       { id: 'C', texto: 'O controle social substitui o controle externo, pois é mais próximo do cidadão.' },
       { id: 'D', texto: 'A Controladoria exerce controle externo, e o TCU exerce controle interno.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'Interno = Controladoria (art. 74). Externo = TCU (art. 71). Social = cidadão/ouvidoria. Três dimensões complementares — não excludentes.',
+      correta: 'Interno = Controladoria (art. 74). Externo = Congresso Nacional, com auxílio do TCU (art. 71) — o TCU é auxiliar, não titular. Social = cidadão/ouvidoria. Complementares.',
       incorretas: { A: 'Interno, externo e social são distintos.', C: 'Não substitui — complementa.', D: 'Inverte.' },
-      conceitoCobrado: 'Controle interno x externo x social',
-      pegadinha: 'Achar que só há controle interno e externo — o social também existe.',
+      conceitoCobrado: 'Controle interno x externo (titularidade) x social',
+      pegadinha: 'Atribuir o controle externo ao TCU em vez do Congresso Nacional.',
       comoApareceEmConcurso: 'Cenário que exige classificar três formas de controle.'
     },
-    tags: ['controle interno', 'externo', 'social']
+    tags: ['controle interno', 'externo', 'social', 'TCU']
   },
 
   /* ============================================================
