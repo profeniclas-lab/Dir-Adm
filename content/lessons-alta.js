@@ -14,59 +14,79 @@ window.LESSONS_ALTA = {
   'ADM-01': {
     id: 'L-ADM-01',
     moduloId: 'ADM-01',
-    objetivo: 'Compreender o conceito de Administração, o papel das organizações e dos recursos organizacionais; distinguir com precisão eficiência, eficácia, efetividade e produtividade; conhecer as quatro funções administrativas (PODC), os três níveis organizacionais (estratégico, tático e operacional) e as três habilidades do administrador segundo Katz (técnicas, humanas e conceituais). É a base de tudo o que vem depois.',
+    objetivo: 'Compreender o conceito de Administração, o papel das organizações e dos recursos organizacionais; distinguir com precisão eficiência, eficácia, efetividade e produtividade; conhecer as quatro funções administrativas (PODC), os três níveis organizacionais e as três habilidades do administrador segundo Katz. Além disso, dominar a EVOLUÇÃO DO PENSAMENTO ADMINISTRATIVO: Taylor (Administração Científica), Fayol (Teoria Clássica), Weber (Burocracia), Mayo (Relações Humanas), Neoclássica, Estruturalista, Comportamental, Sistemas e Contingencial — com foco, contribuição central e limitações de cada uma.',
     prerequisitos: [],
-    introducao: 'Antes de estudar planejamento, organização, gestão de pessoas ou administração pública, é preciso entender o que é Administração e como ela se manifesta em qualquer organização — pública ou privada. Este módulo estabelece o vocabulário que será usado em todos os demais.',
-    explicacaoSimples: 'Administração é o trabalho de fazer as coisas acontecerem por meio de outras pessoas, usando recursos limitados para alcançar objetivos. Pense numa cozinha de restaurante: alguém precisa planejar o cardápio (planejamento), dividir tarefas entre cozinheiros (organização), liderar a equipe durante o serviço (direção) e verificar se os pratos saíram como deviam (controle). Isso é Administração — e acontece em qualquer lugar, seja numa empresa, num hospital ou numa prefeitura.',
-    explicacaoTecnica: 'Administração é o processo de planejar, organizar, dirigir e controlar o uso de recursos e competências para alcançar os objetivos organizacionais com eficiência e eficácia. As organizações são sistemas sociais que combinam recursos humanos, materiais, financeiros, tecnológicos e informacionais para produzir bens ou serviços. As quatro funções administrativas formam o PODC: Planejamento (definir objetivos e cursos de ação), Organização (estruturar recursos e atividades), Direção (liderar e motivar pessoas) e Controle (monitorar e corrigir desvios). Os três níveis organizacionais são: estratégico (institucional — alta direção, decisões de longo prazo), tático (intermediário — gerências, médio prazo) e operacional (execução — supervisão e tarefas, curto prazo). As habilidades do administrador segundo Katz são: técnicas (uso de ferramentas e métodos — mais exigidas no nível operacional), humanas (relacionamento interpessoal — exigidas em TODOS os níveis, com destaque no tático) e conceituais (visão sistêmica, planejamento — mais exigidas no nível estratégico).',
+    introducao: 'Antes de estudar planejamento, organização, gestão de pessoas ou administração pública, é preciso entender o que é Administração, como ela se manifesta em qualquer organização e COMO O PENSAMENTO ADMINISTRATIVO EVOLUIU. Cada teoria nasceu como resposta aos problemas da sua época — e as provas cobram tanto as características quanto a sequência histórica. Este módulo estabelece o vocabulário e a linha do tempo que serão usados em todos os demais.',
+    explicacaoSimples: 'Administração é o trabalho de fazer as coisas acontecerem por meio de outras pessoas, usando recursos limitados para alcançar objetivos. Pense numa cozinha de restaurante: alguém precisa planejar o cardápio (planejamento), dividir tarefas (organização), liderar a equipe (direção) e verificar se os pratos saíram como deviam (controle). Isso é Administração — e acontece em qualquer lugar. Agora, imagine que, ao longo de mais de 100 anos, várias pessoas olharam para essa cozinha por ângulos diferentes: Taylor olhou para a tarefa do cozinheiro (tempo, movimento, eficiência); Fayol olhou para a cozinha como um todo (estrutura, princípios); Weber olhou para as regras (burocracia); Mayo olhou para as relações entre os cozinheiros (grupo informal). Cada teoria é uma "lente" que enfatiza um aspecto — e todas convivem na prática.',
+    explicacaoTecnica: 'Administração é o processo de planejar, organizar, dirigir e controlar o uso de recursos e competências para alcançar os objetivos organizacionais com eficiência e eficácia. Organizações são sistemas sociais que combinam recursos humanos, materiais, financeiros, tecnológicos e informacionais. As quatro funções do PODC: Planejamento (definir objetivos e cursos de ação), Organização (estruturar recursos), Direção (liderar pessoas), Controle (monitorar e corrigir). Níveis organizacionais: estratégico (longo prazo, cúpula), tático (médio, gerências), operacional (curto, execução). Habilidades de Katz: técnicas (operacional), humanas (todos, destaque no tático), conceituais (estratégico).\n\nEVOLUÇÃO DO PENSAMENTO ADMINISTRATIVO:\n\n(1) ADMINISTRAÇÃO CIENTÍFICA (Taylor, 1900s) — foco na TAREFA. Estudo de tempos e movimentos, padronização de ferramentas, seleção e treinamento do operário, ORT (Organização Racional do Trabalho). Conceito de "homo economicus" (o trabalhador é motivado por recompensa financeira). Objetivo: eliminar o desperdício e maximizar a eficiência. Limitação: visão mecanicista, ignora o fator humano e o contexto social.\n\n(2) TEORIA CLÁSSICA (Fayol, 1916) — foco na ESTRUTURA. Define as funções do administrador (prever, organizar, comandar, coordenar, controlar) e formula 14 princípios: divisão do trabalho, autoridade e responsabilidade, disciplina, unidade de comando, unidade de direção, subordinação do interesse individual ao geral, remuneração, centralização, hierarquia, ordem, equidade, estabilidade do pessoal, iniciativa, espírito de equipe. Limitação: excesso de rigidez e prescrição normativa.\n\n(3) TEORIA DA BUROCRACIA (Weber, difundida nos EUA a partir dos anos 1940) — foco nas REGRAS. Weber descreve o "tipo ideal" de organização: impessoalidade, hierarquia, regras escritas, meritocracia, especialização, formalismo e previsibilidade. Vantagens: racionalidade, uniformidade, previsibilidade. Disfunções (Merton): apego excessivo às regras, resistência a mudanças, despersonalização, "comportamento ritualista".\n\n(4) TEORIA DAS RELAÇÕES HUMANAS (Mayo, 1930s) — foco nas PESSOAS. Experiências de Hawthorne (1924-1932): descobriu-se que o fator psicológico e social influencia a produtividade. Conceito de "homo social". Valorização do grupo informal, da comunicação informal e da motivação social. Limitação: supervalorização do grupo, visão ingênua das relações.\n\n(5) TEORIA NEOCLÁSSICA (1950s) — retomada de Fayol, com foco em OBJETIVOS e RESULTADOS. Principais nomes: Drucker (APO — Administração por Objetivos), Koontz e O\'Donnell. Ênfase em resultados, descentralização, amplitude de controle, princípios de administração. Não rompe com a Clássica — atualiza.\n\n(6) TEORIA ESTRUTURALISTA (1950s-60s) — SÍNTESE das teorias anteriores. Organização formal + informal, conflitos, incentivos, recompensas. Amplia a análise para o ambiente externo. Tipologias de Etzioni (coercitiva, utilitária, normativa) e Blau/Scott (associações de benefícios mútuos, firmas, etc.).\n\n(7) TEORIA COMPORTAMENTAL (1940s-50s) — foco no COMPORTAMENTO. Também chamada de Behaviorista. Principais nomes: Simon (teoria das decisões), Maslow, Herzberg, McGregor, Likert, Lewin. Estuda motivação, liderança, decisão, participação. Origem do Desenvolvimento Organizacional (DO).\n\n(8) TEORIA DOS SISTEMAS (1950s-60s) — organização como SISTEMA ABERTO. Bertalanffy (Teoria Geral dos Sistemas). Conceitos: inputs, processamento, outputs, feedback, entropia, homeostase, adaptação ao ambiente. A organização é vista como um sistema composto de subsistemas inter-relacionados.\n\n(9) TEORIA CONTINGENCIAL (1960s-70s) — NÃO há uma única forma correta; tudo DEPENDE. Variáveis: tecnologia (Woodward), tamanho (Aston Group), ambiente (Burns e Stalker, Lawrence e Lorsch). Estrutura flexível (orgânica) x burocrática (mecanicista) conforme o contexto.',
     exemplos: [
       'Eficiência: uma prefeitura reduz o consumo de papel ao digitalizar processos — faz mais com menos.',
-      'Eficácia: o mesmo município consegue, com a digitalização, atender 100% dos pedidos de alvará dentro do prazo legal.',
-      'Efetividade: o cidadão percebe a melhoria no atendimento e a economia se converte em mais escolas ou postos de saúde.',
-      'Produtividade: relação entre a quantidade de processos analisados e o número de servidores/hora empregados.',
-      'Nível estratégico: Prefeito e Secretários definem o plano plurianual.',
-      'Nível tático: Diretor de Departamento desdobra o plano em metas anuais por setor.',
-      'Nível operacional: Chefe de seção organiza as tarefas diárias da equipe de atendimento.',
-      'Habilidade conceitual: perceber que a queda no atendimento afeta a imagem do órgão e a arrecadação.'
+      'Eficácia: o mesmo município atende 100% dos pedidos de alvará dentro do prazo legal.',
+      'Efetividade: o cidadão percebe a melhoria e a economia se converte em mais escolas.',
+      'Produtividade: relação entre a quantidade de processos analisados e o número de servidores/hora.',
+      'Taylor: um estudo de tempos e movimentos reduz o tempo de montagem de 3 min para 1,5 min.',
+      'Fayol: a unidade de comando evita que um servidor receba ordens de dois chefes.',
+      'Weber: o concurso público (meritocracia) e as regras escritas são marcas da burocracia.',
+      'Mayo: um grupo informal de servidores define seu próprio ritmo de trabalho, acima da meta.',
+      'Neoclássica: a APO (Administração por Objetivos) fixa metas negociadas entre chefe e subordinado.',
+      'Estruturalista: a organização é analisada em conjunto com o ambiente e com os conflitos internos.',
+      'Comportamental: a motivação de Maslow e os dois fatores de Herzberg são teorias comportamentais.',
+      'Sistemas: a organização recebe insumos, processa e devolve produtos/serviços ao ambiente, com feedback.',
+      'Contingencial: uma estrutura matricial é mais adequada a projetos; uma linear, a rotinas estáveis.'
     ],
     comparacoes: [
-      { termoA: 'Eficiência', termoB: 'Eficácia', diferenca: 'EFICIÊNCIA: fazer certo — uso racional dos recursos (meios). EFICÁCIA: fazer a coisa certa — atingir os objetivos (fins). É possível ser eficiente sem ser eficaz e eficaz sem ser eficiente.' },
-      { termoA: 'Eficácia', termoB: 'Efetividade', diferenca: 'EFICÁCIA: atingiu os objetivos organizacionais internos. EFETIVIDADE: gerou impacto social positivo real, mantido no tempo. Efetividade é a dimensão mais ampla (impacto); eficácia é a intermediária (resultado); eficiência é a operacional (meios).' },
-      { termoA: 'Nível estratégico', termoB: 'Nível operacional', diferenca: 'ESTRATÉGICO (institucional): decisões de longo prazo, organização como um todo, incerteza alta. OPERACIONAL: decisões de curto prazo, tarefas específicas, rotina. Entre eles está o NÍVEL TÁTICO, que faz a ponte.' },
-      { termoA: 'Habilidade técnica', termoB: 'Habilidade conceitual', diferenca: 'TÉCNICA: saber fazer — mais exigida no nível operacional. CONCEITUAL: saber pensar o todo — mais exigida no nível estratégico. HABILIDADES HUMANAS são exigidas em todos os níveis, com peso alto no tático.' }
+      { termoA: 'Taylor (Adm. Científica)', termoB: 'Fayol (Teoria Clássica)', diferenca: 'Taylor olha a TAREFA (bottom-up) — tempos, movimentos, eficiência operacional. Fayol olha a ESTRUTURA (top-down) — funções do administrador, 14 princípios, organização como um todo. São abordagens complementares da mesma Escola Clássica.' },
+      { termoA: 'Escola Clássica', termoB: 'Escola das Relações Humanas', diferenca: 'CLÁSSICA (Taylor + Fayol): foco na tarefa/estrutura, homo economicus, ênfase nos aspectos formais. RELAÇÕES HUMANAS (Mayo): foco nas pessoas, homo social, ênfase nos grupos informais e na motivação social. A segunda surge como REAÇÃO à primeira.' },
+      { termoA: 'Teoria Neoclássica', termoB: 'Teoria Clássica', diferenca: 'CLÁSSICA: ênfase em estruturas e princípios rígidos. NEOCLÁSSICA: ênfase em OBJETIVOS e RESULTADOS (APO), descentralização, flexibilização dos princípios. A Neoclássica atualiza a Clássica sem romper totalmente com ela.' },
+      { termoA: 'Teoria Comportamental', termoB: 'Teoria das Relações Humanas', diferenca: 'RELAÇÕES HUMANAS: foco no grupo social e na informalidade. COMPORTAMENTAL: foco no comportamento INDIVIDUAL — motivação (Maslow, Herzberg), liderança, tomada de decisão (Simon). A Comportamental é mais analítica e individualista.' },
+      { termoA: 'Teoria de Sistemas', termoB: 'Teoria Contingencial', diferenca: 'SISTEMAS: a organização é vista como um todo integrado (sistema aberto, subsistemas, feedback). CONTINGENCIAL: não há forma universal — a estrutura depende da tecnologia, do tamanho e do ambiente. A Contingencial é uma evolução dos Sistemas, aplicando a ideia de adaptação.' },
+      { termoA: 'Weber (Burocracia)', termoB: 'Fayol (Teoria Clássica)', diferenca: 'FAYOL: prescreve princípios para a estrutura (unidade de comando, hierarquia). WEBER: descreve o "tipo ideal" racional-legal (impessoalidade, meritocracia, formalismo). Fayol é prescritivo; Weber é descritivo-analítico.' }
     ],
-    aplicacaoEmConcurso: 'Praticamente toda prova de Administração cobra: diferença entre eficiência, eficácia e efetividade; o PODC como base; correspondência entre níveis e habilidades de Katz. Bancas gostam de cenários "gastou pouco mas não entregou" ou "entregou no prazo mas gastou o dobro".',
+    aplicacaoEmConcurso: 'Praticamente toda prova de Administração cobra: eficiência/eficácia/efetividade; PODC; níveis; habilidades de Katz; E, cada vez mais, a IDENTIFICAÇÃO DE TEORIAS. A banca descreve uma característica e pergunta a qual teoria pertence (ex.: "estudo de tempos e movimentos" → Taylor; "14 princípios" → Fayol; "tipo ideal, impessoalidade" → Weber; "experiências de Hawthorne" → Mayo; "APO" → Neoclássica; "conflito e informalidade" → Estruturalista; "Maslow/Herzberg" → Comportamental; "sistema aberto" → Sistemas; "tudo depende" → Contingencial).',
     pegadinhas: [
       'Trocar eficiência com eficácia. Fixe: Eficiência = meio; Eficácia = fim; Efetividade = impacto.',
-      'Dizer que habilidade humana é exclusiva do nível tático. NÃO — é exigida em todos os níveis; destaca-se no tático.',
-      'Afirmar que o nível operacional também formula objetivos. NÃO — ele executa.',
-      'Confundir produtividade com eficiência. Produtividade é RELAÇÃO (output/input).',
+      'Dizer que habilidade humana é exclusiva do nível tático. NÃO — é exigida em todos os níveis.',
+      'Confundir Taylor (tarefa) com Fayol (estrutura).',
+      'Dizer que Weber criou a burocracia (ele DESCREVEU o tipo ideal, não inventou).',
+      'Achar que Mayo e a Escola das Relações Humanas são sinônimos da Teoria Comportamental. A Comportamental é posterior e mais individualista.',
+      'Dizer que a Neoclássica rompeu com a Clássica. Ela retoma Fayol, com ênfase em objetivos.',
+      'Confundir Sistemas (visão integrada, sistema aberto) com Contingencial (tudo depende do contexto).',
+      'Dizer que a Contingencial defende "uma única melhor forma de organizar". É o OPOSTO.',
       'Achar que PODC é sequência rígida. É cíclica e inter-relacionada.',
-      'Dizer que Administração é exclusiva do setor privado. Aplica-se igualmente ao setor público, com particularidades.'
+      'Dizer que Administração é exclusiva do setor privado. Aplica-se igualmente ao público.'
     ],
     errosComuns: [
       'Decorar eficiência/eficácia/efetividade sem exemplos.',
       'Esquecer que direção e controle fazem parte do PODC.',
       'Confundir a habilidade predominante no nível tático (humana, não técnica).',
-      'Memorizar os níveis organizacionais sem associar às decisões típicas.'
+      'Memorizar as teorias sem associar cada uma ao seu foco (tarefa/estrutura/pessoas/regras/objetivos/etc.).',
+      'Não saber a ordem histórica das teorias.'
     ],
     resumo: [
       'Administração = planejar, organizar, dirigir e controlar recursos para atingir objetivos com eficiência e eficácia.',
-      'Recursos organizacionais: humanos, materiais, financeiros, tecnológicos, informacionais.',
       'Eficiência: meios. Eficácia: fins. Efetividade: impacto social. Produtividade: output/input.',
       'PODC: Planejamento → Organização → Direção → Controle (cíclico).',
       'Níveis: estratégico (longo prazo), tático (médio), operacional (curto).',
-      'Habilidades de Katz: técnicas (operacional), humanas (todos, destaque tático), conceituais (estratégico).'
+      'Katz: técnicas (operacional), humanas (todos, destaque tático), conceituais (estratégico).',
+      'TAYLOR: Administração Científica — foco na TAREFA (tempos e movimentos, homo economicus).',
+      'FAYOL: Teoria Clássica — foco na ESTRUTURA (14 princípios, PODC).',
+      'WEBER: Burocracia — regras escritas, impessoalidade, meritocracia, tipo ideal.',
+      'MAYO: Relações Humanas — foco nas PESSOAS (homo social, Hawthorne, informalidade).',
+      'NEOCLÁSSICA: ênfase em OBJETIVOS e RESULTADOS (APO, Drucker).',
+      'ESTRUTURALISTA: síntese — organização formal + informal + ambiente + conflitos.',
+      'COMPORTAMENTAL: motivação, liderança, decisão (Maslow, Herzberg, Simon).',
+      'SISTEMAS: organização como sistema aberto (input → processo → output → feedback).',
+      'CONTINGENCIAL: "tudo depende" — tecnologia, tamanho, ambiente.'
     ],
     modoProfessor: {
-      explicarMaisSimples: 'Administração é coordenar gente e recursos para chegar a um resultado. Você faz isso quando organiza uma viagem ou lidera um grupo de estudo. A diferença é que a Administração estuda isso de forma sistemática.',
-      outroExemplo: 'Um hospital público comprou um novo sistema de agendamento. Se o sistema reduziu o tempo de marcação (eficiência), cumpriu a meta de atender 90% dos pedidos (eficácia) e os pacientes passaram a conseguir consulta em menos dias (efetividade), ele foi eficiente, eficaz e efetivo.',
-      compararConceitos: 'Eficiência = como; Eficácia = o quê; Efetividade = para quê. PODC = quatro funções. Níveis = três camadas. Katz = três habilidades.',
-      mostrarPegadinha: 'Cuidado: "A habilidade humana é mais importante no nível operacional". ERRADO. No operacional predominam as técnicas; as humanas destacam-se no tático.',
-      comoApareceEmConcurso: 'Cenários pedindo classificação em eficiência/eficácia/efetividade; correspondência níveis x habilidades.',
+      explicarMaisSimples: 'Administração é coordenar gente e recursos para chegar a um resultado. Cada teoria é um jeito de olhar para esse processo: Taylor olhou para a tarefa, Fayol para a estrutura, Weber para as regras, Mayo para as pessoas. Nenhuma está "errada" — cada uma enfatiza um aspecto.',
+      outroExemplo: 'Pense numa fábrica de sapatos. Taylor mediria o tempo de cada costura; Fayol desenharia a hierarquia (gerente, supervisor, operário); Weber escreveria um manual de regras; Mayo observaria os grupos informais no refeitório. Cada lente revela algo diferente.',
+      compararConceitos: 'Clássica (tarefa/estrutura) x RH (pessoas) x Neoclássica (resultados) x Comportamental (indivíduo) x Sistemas (ambiente) x Contingencial (contexto). A evolução vai do micro (tarefa) ao macro (ambiente).',
+      mostrarPegadinha: 'Cuidado: "Weber criou a burocracia". ERRADO. Ele DESCREVEU o tipo ideal de organização burocrática — não inventou o fenômeno.',
+      comoApareceEmConcurso: 'Identificação de teoria por característica, ordem histórica, foco de cada uma.',
       fazerPergunta: {
-        pergunta: 'Um órgão público implanta um sistema que reduz o tempo de análise de processos de 10 para 2 dias. Isso é eficiência, eficácia ou efetividade?',
-        resposta: 'É EFICIÊNCIA — uso mais racional do tempo (recurso). Se também cumpre a meta de analisar 100% dos processos no prazo legal, há EFICÁCIA. Se os cidadãos passam a resolver seus problemas mais rapidamente e a economia se converte em mais serviços, há EFETIVIDADE.'
+        pergunta: 'Uma questão descreve "estudo de tempos e movimentos, com foco na eficiência do operário e no homo economicus". A que teoria se refere?',
+        resposta: 'ADMINISTRAÇÃO CIENTÍFICA — Taylor. Foco na TAREFA, padronização, tempos e movimentos. Fayol (foco na estrutura) e Weber (foco nas regras) são teorias distintas.'
       }
     }
   },
@@ -389,59 +409,75 @@ window.LESSONS_ALTA = {
   'ADM-10': {
     id: 'L-ADM-10',
     moduloId: 'ADM-10',
-    objetivo: 'Dominar a gestão de materiais (classificação, especificação, codificação, cadastramento, estoque, armazenagem, movimentação, inventário, compras, almoxarifado), a gestão de estoques (estoque mínimo, de segurança, ponto de pedido, giro e custos) e a gestão patrimonial (bens permanentes x bens de consumo, tombamento, registro, movimentação, inventário e baixa).',
+    objetivo: 'Dominar a gestão de materiais (classificação, especificação, codificação, cadastramento, estoque, armazenagem, movimentação, inventário, compras, almoxarifado); a GESTÃO DE ESTOQUES com métodos quantitativos (ponto de pedido, giro, estoque mínimo/de segurança, PREVISÃO DE CONSUMO, LOTE ECONÔMICO DE COMPRAS — LEC); a CLASSIFICAÇÃO de materiais (CURVA ABC, CLASSIFICAÇÃO XYZ) e os MÉTODOS DE AVALIAÇÃO DE ESTOQUE (PEPS, UEPS, CUSTO MÉDIO); os TIPOS DE INVENTÁRIO (rotativo, periódico, geral); e a GESTÃO PATRIMONIAL (bens permanentes x de consumo, tombamento, registro, movimentação, inventário, baixa).',
     prerequisitos: ['ADM-01'],
-    introducao: 'Administração de materiais e patrimônio é a área que garante que a organização tenha o que precisa, na hora certa, com o menor custo — sem excesso nem falta.',
-    explicacaoSimples: 'Pense no estoque de uma cozinha. Se falta arroz, o prato não sai; se sobra demais, estraga. O administrador de materiais equilibra isso: define o que comprar, quanto estocar, quando pedir mais e como guardar. Já o patrimônio cuida dos bens duráveis (mesas, computadores, veículos) — diferente dos materiais consumíveis (papel, caneta).',
-    explicacaoTecnica: 'ADMINISTRAÇÃO DE MATERIAIS: conjunto de atividades que planeja, executa e controla a aquisição, armazenagem e distribuição de materiais. CONCEITOS: CLASSIFICAÇÃO, ESPECIFICAÇÃO, CODIFICAÇÃO, CADASTRAMENTO, ESTOQUE, ARMAZENAGEM, MOVIMENTAÇÃO, INVENTÁRIO, COMPRAS, ALMOXARIFADO. GESTÃO DE ESTOQUES: ESTOQUE MÍNIMO (quantidade mínima para cobrir oscilações); ESTOQUE DE SEGURANÇA (proteção contra imprevistos); PONTO DE PEDIDO (consumo médio × tempo de reposição + estoque de segurança); GIRO DE ESTOQUE (consumo / estoque médio); CUSTOS DE ESTOQUE. PATRIMÔNIO: BENS PERMANENTES (duráveis, tombados) x BENS DE CONSUMO. TOMBAMENTO: registro patrimonial que confere número único. REGISTRO: inscrição em sistema. MOVIMENTAÇÃO: transferência entre setores. INVENTÁRIO PATRIMONIAL: conferência física. BAIXA: retirada definitiva (alienação, sinistro, obsolescência).',
+    introducao: 'Administração de materiais e patrimônio garante que a organização tenha o que precisa, na hora certa, com o menor custo — sem excesso nem falta. Além dos conceitos básicos, o gestor precisa dominar MÉTODOS QUANTITATIVOS: como prever o consumo, quando comprar, quanto comprar, como avaliar o estoque e como classificá-lo para priorizar. Este módulo cobre tanto a base quanto as ferramentas de decisão.',
+    explicacaoSimples: 'Pense no estoque de uma cozinha. Se falta arroz, o prato não sai; se sobra demais, estraga. O administrador de materiais equilibra isso: define o que comprar, quanto estocar, quando pedir mais e como guardar. Ferramentas como a CURVA ABC mostram quais itens merecem mais atenção; o LEC diz QUANTO pedir; a PREVISÃO DE CONSUMO diz o que esperar do futuro. Já o PATRIMÔNIO cuida dos bens duráveis (mesas, computadores) — diferente dos consumíveis (papel, caneta).',
+    explicacaoTecnica: 'CONCEITOS BÁSICOS: classificação, especificação, codificação, cadastramento, estoque, armazenagem, movimentação, inventário, compras, almoxarifado. BENS DE CONSUMO (consumidos com o uso: papel, caneta) x BENS PERMANENTES (duráveis, tombados: móveis, equipamentos, veículos).\n\nGESTÃO DE ESTOQUES — MÉTODOS QUANTITATIVOS:\n\n(1) PREVISÃO DE CONSUMO: estimativa da demanda futura com base em histórico. Métodos: média móvel, média ponderada, suavização exponencial, regressão. Objetivo: dimensionar o estoque com base na demanda esperada.\n\n(2) PONTO DE PEDIDO (PP): nível que dispara a compra. Fórmula: PP = (consumo médio × tempo de reposição) + estoque de segurança. Ex.: consumo 30/dia, tempo 4 dias, segurança 60 → PP = 30×4 + 60 = 180.\n\n(3) ESTOQUE MÍNIMO: limite operacional abaixo do qual não se deve operar. ESTOQUE DE SEGURANÇA: parcela adicional para cobrir imprevistos (demanda acima do previsto ou atraso de fornecedor).\n\n(4) GIRO DE ESTOQUE: número de vezes que o estoque médio se renova no período. Giro = consumo / estoque médio. Quanto maior o giro, menor o capital parado.\n\n(5) LOTE ECONÔMICO DE COMPRAS (LEC): quantidade ideal por pedido, que MINIMIZA a soma dos custos de pedido e de armazenagem. Fórmula clássica: LEC = √(2 × D × Cp / Ca), onde D = demanda anual, Cp = custo por pedido, Ca = custo de armazenagem por unidade/ano. Não confundir com ponto de pedido (que define QUANDO comprar; o LEC define QUANTO).\n\nCLASSIFICAÇÃO DE MATERIAIS:\n\n(6) CURVA ABC: classifica os itens por VALOR (importância financeira). Classe A: poucos itens, alto valor (80% do valor total); Classe B: intermediários; Classe C: muitos itens, baixo valor. Gestão: itens A exigem controle rigoroso; itens C, controle simplificado. Princípio de Pareto aplicado.\n\n(7) CLASSIFICAÇÃO XYZ: classifica os itens por CRITICIDADE (importância operacional). X: itens de baixa criticidade (podem ser substituídos); Y: média criticidade; Z: alta criticidade (imprescindíveis, não substituíveis). Combina-se com a ABC (matriz ABC-XYZ) para priorizar ações.\n\nMÉTODOS DE AVALIAÇÃO DE ESTOQUE:\n\n(8) PEPS (Primeiro que Entra, Primeiro que Sai) — FIFO: o custo do material vendido/consumido é o das PRIMEIRAS entradas. Estoque final avaliado pelo custo das últimas entradas. Adequado a itens perecíveis.\n\n(9) UEPS (Último que Entra, Primeiro que Sai) — LIFO: o custo do material consumido é o das ÚLTIMAS entradas. Não é aceito pela legislação fiscal brasileira.\n\n(10) CUSTO MÉDIO (Média Ponderada Móvel): o custo de cada saída é a MÉDIA PONDERADA entre o custo do estoque inicial e o custo das entradas. Mais estável. Aceito pela legislação brasileira.\n\nINVENTÁRIO:\n\n(11) INVENTÁRIO ROTATIVO: contínuo e seletivo — a organização define um cronograma que cobre todos os itens no período fiscal. Não interrompe a operação.\n(12) INVENTÁRIO PERIÓDICO: realizado em PERÍODOS DETERMINADOS (ex.: encerramento do exercício fiscal). Pode ser geral (contagem de todo o estoque).\n(13) INVENTÁRIO GERAL: contagem física de TODOS os itens, em data específica.\n\nGESTÃO PATRIMONIAL:\n\nTOMBAMENTO: registro patrimonial que ATRIBUI NÚMERO ÚNICO ao bem (identificação). REGISTRO: inscrição em sistema. MOVIMENTAÇÃO: transferência entre setores. INVENTÁRIO PATRIMONIAL: conferência física. BAIXA: retirada definitiva (alienação, sinistro, obsolescência, furto). ALIENAÇÃO: transferência de propriedade a terceiro (venda, doação) — uma das causas de baixa. Requisitos da alienação de bem público: autorização legislativa, avaliação prévia, licitação (leilão).',
     exemplos: [
-      'Material de consumo: resma de papel, caneta, cartucho.',
-      'Material permanente: computador, mesa, impressora, veículo.',
-      'Estoque de segurança: manter 50 unidades extras de item crítico.',
-      'Ponto de pedido: quando o estoque chega a 30 unidades, dispara a compra.',
-      'Giro de estoque: 12 vezes/ano significa renovação mensal.',
-      'Tombamento: número de patrimônio afixado no bem.',
-      'Baixa patrimonial: descarte de computador obsoleto com registro.',
-      'Almoxarifado: setor que guarda e distribui materiais de consumo.'
+      'Curva ABC: em um almoxarifado, 10 itens (20%) representam 80% do valor em estoque → Classe A.',
+      'Curva XYZ: medicamentos de emergência são Z (críticos); materiais de escritório são X.',
+      'Ponto de pedido: consumo 30/dia, tempo 4 dias, segurança 60 → PP = 180 unidades.',
+      'Giro: consumo 2.400/ano, estoque médio 200 → giro = 12 (renova mensalmente).',
+      'LEC: equilíbrio entre custo de pedido e custo de armazenagem.',
+      'PEPS: primeiro lote que entrou é o primeiro a sair (custo do lote mais antigo).',
+      'UEPS: último lote que entrou é o primeiro a sair (custo mais recente). Não aceito fiscalmente.',
+      'Custo médio: cada saída usa a média ponderada entre entradas.',
+      'Inventário rotativo: cronograma contínuo, sem interromper a operação.',
+      'Inventário periódico: contagem no encerramento do exercício.',
+      'Tombamento: bem recebe número de patrimônio.',
+      'Baixa: descarte de bem obsoleto, com registro.'
     ],
     comparacoes: [
-      { termoA: 'Bem de consumo', termoB: 'Bem permanente', diferenca: 'CONSUMO: consumido com o uso ou vida útil curta (papel, caneta). PERMANENTE: durável, não se extingue com o uso (móveis, equipamentos, veículos). Permanentes são TOMBADOS; de consumo normalmente não.' },
-      { termoA: 'Estoque mínimo', termoB: 'Estoque de segurança', diferenca: 'MÍNIMO: quantidade-limite abaixo da qual não se deve operar. SEGURANÇA: parcela adicional para cobrir IMPREVISTOS. O de segurança é proteção extra contra incerteza.' },
-      { termoA: 'Ponto de pedido', termoB: 'Giro de estoque', diferenca: 'PONTO DE PEDIDO: nível que DISPARA a compra (consumo médio × tempo de reposição + estoque de segurança). GIRO: número de vezes que o estoque se RENOVA em um período (consumo / estoque médio). Um é gatilho; outro é indicador.' },
-      { termoA: 'Inventário', termoB: 'Tombamento', diferenca: 'INVENTÁRIO: contagem física para conciliar registros com a realidade. TOMBAMENTO: registro patrimonial que ATRIBUI número único ao bem.' },
-      { termoA: 'Alienação', termoB: 'Baixa patrimonial', diferenca: 'ALIENAÇÃO: transferência de propriedade a terceiro (venda, doação) — uma das causas. BAIXA: retirada definitiva do bem do patrimônio (por alienação, sinistro, obsolescência, furto).' }
+      { termoA: 'Curva ABC', termoB: 'Classificação XYZ', diferenca: 'ABC: critério de VALOR (quanto custa / quanto representa em R$). XYZ: critério de CRITICIDADE (quão essencial é o item). Combina-se: item A-Z = alto valor e alta criticidade (prioridade máxima de gestão).' },
+      { termoA: 'Ponto de pedido', termoB: 'Lote econômico de compras (LEC)', diferenca: 'PONTO DE PEDIDO: QUANDO comprar (nível de estoque que dispara a compra). LEC: QUANTO comprar (quantidade que minimiza custos totais). Complementares — um define o gatilho, o outro, o tamanho do pedido.' },
+      { termoA: 'Estoque mínimo', termoB: 'Estoque de segurança', diferenca: 'MÍNIMO: limite operacional (abaixo dele, a operação fica vulnerável). SEGURANÇA: colchão extra contra imprevistos. O mínimo é a base; o de segurança, a proteção adicional.' },
+      { termoA: 'PEPS', termoB: 'UEPS', diferenca: 'PEPS (FIFO): o custo do material consumido é o das PRIMEIRAS entradas. UEPS (LIFO): o custo é o das ÚLTIMAS entradas. PEPS é adequado a perecíveis; UEPS não é aceito pela legislação fiscal brasileira.' },
+      { termoA: 'Inventário rotativo', termoB: 'Inventário periódico', diferenca: 'ROTATIVO: contínuo e seletivo (cronograma cobre todos os itens no período, sem interromper a operação). PERIÓDICO: em datas fixas (ex.: encerramento do exercício), podendo ser geral. O rotativo é mais ágil; o periódico, mais tradicional.' },
+      { termoA: 'Tombamento', termoB: 'Inventário', diferenca: 'TOMBAMENTO: atribui número de patrimônio (identificação). INVENTÁRIO: conferência física (contagem e conciliação com registros). O primeiro individualiza; o segundo audita o conjunto.' },
+      { termoA: 'Bem de consumo', termoB: 'Bem permanente', diferenca: 'CONSUMO: consumido com o uso ou de vida útil curta (papel, caneta, combustível). PERMANENTE: durável, não se extingue com o uso (móveis, equipamentos, veículos) — em regra, tombado. Permanentes têm regime patrimonial; de consumo, de almoxarifado.' }
     ],
-    aplicacaoEmConcurso: 'Cobrança: diferença entre bem permanente e de consumo; cálculo/interpretação de ponto de pedido e giro; estoque mínimo x de segurança; tombamento. A banca costuma pedir associação conceito x exemplo e a fórmula do ponto de pedido.',
+    aplicacaoEmConcurso: 'Cobrança alta: cálculo/interpretação de ponto de pedido, giro e LEC; distinção entre estoque mínimo e de segurança; classificação ABC e XYZ; PEPS/UEPS/custo médio; inventário rotativo x periódico; tombamento, baixa e alienação. A banca costuma pedir associação conceito x exemplo e a fórmula do ponto de pedido. Temas como LEC e Curva ABC aparecem cada vez mais em provas de nível médio.',
     pegadinhas: [
       'Confundir estoque mínimo com estoque de segurança.',
-      'Classificar um bem durável como de consumo (ou vice-versa).',
-      'Trocar ponto de pedido com giro de estoque.',
-      'Achar que inventário e tombamento são a mesma coisa.',
-      'Dizer que toda saída de bem é baixa. Baixa é retirada definitiva.',
-      'Afirmar que almoxarifado guarda bens permanentes. Guarda MATERIAIS DE CONSUMO.'
+      'Trocar PEPS (primeiro que entra, primeiro que sai) com UEPS (último que entra, primeiro que sai).',
+      'Dizer que UEPS é aceito no Brasil. NÃO é.',
+      'Trocar LEC (quanto comprar) com ponto de pedido (quando comprar).',
+      'Confundir Curva ABC (valor) com XYZ (criticidade).',
+      'Achar que inventário rotativo é o mesmo que periódico. Um é contínuo; o outro, em datas fixas.',
+      'Dizer que toda saída de bem é baixa. Baixa é retirada DEFINITIVA.',
+      'Afirmar que almoxarifado guarda bens permanentes. Guarda MATERIAIS DE CONSUMO.',
+      'Dizer que a alienação de bem público dispensa licitação. Em regra, exige leilão.'
     ],
     errosComuns: [
-      'Decorar fórmulas sem entender o raciocínio.',
+      'Decorar fórmulas sem entender o raciocínio (PP, giro, LEC).',
       'Não associar conceitos a exemplos do dia a dia.',
-      'Confundir gestão de materiais com gestão patrimonial.'
+      'Confundir gestão de materiais com gestão patrimonial.',
+      'Não saber aplicar Curva ABC a um caso concreto.'
     ],
     resumo: [
-      'Administração de materiais: planejar, adquirir, armazenar e distribuir materiais.',
-      'Bem de consumo x bem permanente: durável ou não, tombado ou não.',
+      'Gestão de materiais: planejar, adquirir, armazenar e distribuir materiais.',
+      'Bem de consumo x permanente: durável ou não, tombado ou não.',
       'Estoque: mínimo, de segurança, ponto de pedido, giro, custos.',
-      'Ponto de pedido = consumo médio × tempo de reposição + estoque de segurança.',
+      'PP = consumo médio × tempo de reposição + estoque de segurança.',
       'Giro = consumo / estoque médio.',
-      'Tombamento: número de patrimônio. Inventário: conferência. Baixa: retirada definitiva.'
+      'LEC = √(2 × D × Cp / Ca) — minimiza custos de pedido + armazenagem.',
+      'Curva ABC: valor financeiro (A = 20% itens / 80% valor).',
+      'Curva XYZ: criticidade operacional (Z = crítico).',
+      'PEPS: custo do lote mais antigo. UEPS: custo do lote mais recente (não aceito). Custo médio: média ponderada.',
+      'Inventário: rotativo (contínuo) x periódico (datas fixas) x geral (tudo).',
+      'Tombamento: número de patrimônio. Inventário: conferência. Baixa: retirada definitiva.',
+      'Alienação de bem público: autorização legislativa + avaliação + leilão.'
     ],
     modoProfessor: {
-      explicarMaisSimples: 'Pense no estoque de uma cozinha. Se falta arroz, o prato não sai; se sobra demais, estraga. O administrador de materiais equilibra isso.',
-      outroExemplo: 'Um órgão consome 10 resmas/dia. Fornecedor entrega em 5 dias. Estoque de segurança é 30 resmas. Ponto de pedido = (10 × 5) + 30 = 80 resmas. Quando chega a 80, dispara a compra.',
-      compararConceitos: 'Bem de consumo x permanente. Estoque mínimo x de segurança. Ponto de pedido (gatilho) x giro (indicador). Inventário (contagem) x tombamento (identificação).',
-      mostrarPegadinha: 'Cuidado: "Estoque mínimo e de segurança são sinônimos". ERRADO. O de segurança é proteção extra contra imprevistos; o mínimo é limite operacional.',
-      comoApareceEmConcurso: 'Classificação de bens; fórmulas; conceitos de tombamento e baixa.',
+      explicarMaisSimples: 'Pense no estoque de uma cozinha. Se falta arroz, o prato não sai; se sobra demais, estraga. A Curva ABC mostra quais itens merecem mais atenção; o LEC diz quanto comprar; o ponto de pedido diz quando. E o patrimônio cuida dos bens duráveis (mesas, computadores), diferente dos consumíveis.',
+      outroExemplo: 'Uma UBS consome 10 resmas/dia. Fornecedor entrega em 5 dias. Segurança: 30 resmas. PP = (10×5) + 30 = 80. Quando o estoque chega a 80, dispara a compra. Se o consumo anual é 2.400 e o estoque médio é 200, o giro é 12 (renova mensalmente).',
+      compararConceitos: 'Bem de consumo x permanente. Estoque mínimo x de segurança. PP (quando) x LEC (quanto). ABC (valor) x XYZ (criticidade). PEPS x UEPS x custo médio. Inventário rotativo x periódico. Tombamento (identificação) x inventário (contagem) x baixa (retirada).',
+      mostrarPegadinha: 'Cuidado: "PEPS e UEPS são a mesma coisa". ERRADO. PEPS usa o custo do primeiro lote que entrou; UEPS, do último. E o UEPS não é aceito fiscalmente no Brasil.',
+      comoApareceEmConcurso: 'Classificação de bens; fórmulas (PP, giro, LEC); conceitos de tombamento, baixa, Curva ABC, XYZ; métodos de avaliação de estoque.',
       fazerPergunta: {
-        pergunta: 'Um computador é bem de consumo ou permanente?',
-        resposta: 'É BEM PERMANENTE — vida útil longa, não se extingue com o uso e é TOMBADO.'
+        pergunta: 'Qual a diferença entre ponto de pedido e LEC?',
+        resposta: 'PONTO DE PEDIDO define QUANDO comprar (nível de estoque que dispara a compra: PP = consumo médio × tempo de reposição + estoque de segurança). LEC define QUANTO comprar (quantidade que minimiza a soma dos custos de pedido e de armazenagem). Complementares.'
       }
     }
   },
@@ -580,59 +616,76 @@ window.LESSONS_ALTA = {
   'AP-14': {
     id: 'L-AP-14',
     moduloId: 'AP-14',
-    objetivo: 'Compreender os três grandes modelos de Administração Pública — patrimonialista, burocrático e gerencial —, compará-los e identificar suas marcas na evolução da Administração Pública brasileira. Situar as reformas administrativas (1936, 1967, 1995) e a EC 19/1998.',
+    objetivo: 'Compreender os três grandes modelos de Administração Pública — patrimonialista, burocrático e gerencial —, compará-los e identificar suas marcas na evolução brasileira. Dominar os temas CONTEMPORÂNEOS: governança pública, governabilidade, accountability, transparência, gestão por resultados, gestão de riscos, indicadores de desempenho, participação e controle social, e governo digital.',
     prerequisitos: ['AP-13'],
-    introducao: 'A Administração Pública brasileira não nasceu pronta: passou por modelos sucessivos, cada um respondendo aos problemas do anterior. Entender essa evolução é entender por que a Administração Pública hoje tem as características que tem — e por que questões de concurso cobram tanto essa comparação.',
-    explicacaoSimples: 'Imagine três jeitos de administrar uma repartição pública. No PATRIMONIALISMO, o governante confunde o público com o privado (usa o Estado como se fosse sua casa). Na BUROCRACIA, tudo é regra, papel e procedimento — o foco é não errar. Na ADMINISTRAÇÃO GERENCIAL, o foco é resultado, eficiência e satisfação do cidadão — com menos ênfase em procedimento e mais em desempenho.',
-    explicacaoTecnica: 'PATRIMONIALISMO: modelo pré-burocrático, marcado pela confusão entre o patrimônio público e o privado; cargos e funções são tratados como propriedade pessoal; não há distinção clara entre o público e o privado; o nepotismo e o clientelismo são a regra. BUROCRACIA (modelo weberiano): formalismo, impessoalidade, hierarquia, especialização, regras escritas, meritocracia no ingresso (concurso), separação entre o público e o privado. Marcou a Reforma de 1936 (criação do DASP) no Brasil. Apesar dos avanços, tornou-se sinônimo de "excesso de papel" e lentidão. ADMINISTRAÇÃO GERENCIAL (nova gestão pública): foco em resultados, eficiência, qualidade, satisfação do usuário-cidadão; descentralização; flexibilização; contratos de gestão; avaliação de desempenho; controle por resultados, não apenas por procedimentos. Marcou a Reforma de 1995 (Bresser-Pereira) e a EC 19/1998 (que inseriu a eficiência no art. 37 da CF). REFORMAS NO BRASIL: 1936 (criação do DASP — burocracia); 1967 (Decreto-Lei 200 — descentralização para autarquias e fundações); 1995 (Plano Diretor da Reforma do Aparelho do Estado — gerencial); EC 19/1998 (eficiência como princípio, fim do regime único — depois restaurado por decisão do STF, avaliação de desempenho, contrato de gestão).',
+    introducao: 'A Administração Pública brasileira não nasceu pronta: passou por modelos sucessivos. Hoje, convive com a burocracia e o gerencialismo — mas o debate contemporâneo vai além: fala de governança, accountability, gestão de riscos, governo digital. Este módulo cobre os modelos históricos E os temas que dominam os editais atuais.',
+    explicacaoSimples: 'Imagine três jeitos de administrar uma repartição. No PATRIMONIALISMO, o governante confunde o público com o privado. Na BUROCRACIA, tudo é regra e procedimento. Na ADMINISTRAÇÃO GERENCIAL, o foco é resultado e satisfação do cidadão. Hoje, o debate vai além: como garantir que a máquina pública funcione com TRANSPARÊNCIA (todo mundo vê o que acontece), RESPONSABILIZAÇÃO (quem decide presta contas — accountability), PARTICIPAÇÃO (o cidadão opina) e GOVERNANÇA (coordenação eficiente entre vários atores). E tudo isso na era digital.',
+    explicacaoTecnica: 'MODELOS HISTÓRICOS:\n\n(1) PATRIMONIALISMO: modelo pré-burocrático — confusão entre público e privado, pessoalidade, nepotismo, clientelismo. Cargos e bens tratados como propriedade do governante.\n\n(2) BUROCRACIA (Weber): impessoalidade, meritocracia (concurso), formalismo, regras escritas, hierarquia, especialização, separação público/privado. No Brasil, Reforma de 1936 (criação do DASP).\n\n(3) ADMINISTRAÇÃO GERENCIAL (nova gestão pública): foco em RESULTADOS, eficiência, qualidade, satisfação do usuário; descentralização, contratos de gestão, avaliação de desempenho. No Brasil, Reforma de 1995 (Bresser-Pereira) e EC 19/1998 (eficiência no art. 37).\n\nTEMAS CONTEMPORÂNEOS:\n\n(A) GOVERNANÇA PÚBLICA: conjunto de mecanismos de LIDERANÇA, ESTRATÉGIA e CONTROLE que garantem que a organização pública cumpra sua finalidade com efetividade, transparência e accountability. Envolve coordenação entre atores estatais e não estatais (redes, parcerias). Distingue-se da GOVERNANÇA CORPORATIVA (foco no setor privado).\n\n(B) GOVERNABILIDADE: capacidade POLÍTICA do governo de tomar decisões e implementá-las com legitimidade — depende da relação entre Executivo, Legislativo, Judiciário, sociedade civil e coalizões. É a "condição política" para governar.\n\n(C) ACCOUNTABILITY: dever de PRESTAR CONTAS e de se RESPONSABILIZAR pelos atos praticados. Envolve três dimensões: informação (transparência), justificação (explicar decisões) e punição (sanção por desvio). Pode ser vertical (cidadão → Estado), horizontal (entre Poderes) ou societal (sociedade civil organizada).\n\n(D) TRANSPARÊNCIA PÚBLICA: dever de divulgar informações sobre a atuação administrativa — ativa (proativa, sem solicitação) e passiva (por solicitação, via LAI — Lei 12.527/2011). Base constitucional: art. 5º, XXXIII; art. 37, caput (publicidade); art. 216, §2º.\n\n(E) GESTÃO POR RESULTADOS: modelo que orienta a atuação administrativa para o alcance de METAS e RESULTADOS mensuráveis. Ferramentas: indicadores, metas, contratos de gestão, avaliação de desempenho. Instrumentos legais: PPA, LDO, LOA, contratos de gestão.\n\n(F) GESTÃO DE RISCOS: processo de IDENTIFICAR, AVALIAR e MITIGAR riscos que possam comprometer os objetivos organizacionais. Referências: ISO 31000; no setor público, a Instrução Normativa 01/2016 (MP/CGU) e o Decreto 9.203/2017.\n\n(G) INDICADORES DE DESEMPENHO: métricas que medem EFICIÊNCIA (meios), EFICÁCIA (resultados) e EFETIVIDADE (impacto). Devem ser: específicos, mensuráveis, alcançáveis, relevantes e temporais (SMART). Ex.: taxa de evasão escolar, tempo médio de atendimento, índice de satisfação.\n\n(H) PARTICIPAÇÃO E CONTROLE SOCIAL: envolvimento do cidadão na formulação, implementação e fiscalização das políticas públicas. Mecanismos: conselhos gestores, audiências públicas, orçamento participativo, consultas públicas, ouvidorias, portais de transparência, ação popular.\n\n(I) GOVERNO DIGITAL: transformação digital do Estado, com uso de TIC para melhorar a prestação de serviços, a transparência e a participação. Referências: Decreto 8.638/2016 (Política de Governança Digital), Decreto 10.332/2020 (Estratégia de Governo Digital 2020-2022 e 2023-2026), Lei 14.129/2021 (Lei do Governo Digital).',
     exemplos: [
-      'Patrimonialismo: nomear parentes para cargos públicos por laços pessoais.',
-      'Patrimonialismo: confundir o dinheiro público com o do governante.',
-      'Burocracia: concurso público para ingresso, regras escritas, hierarquia formal.',
-      'Burocracia: processo com excesso de carimbos e etapas.',
-      'Administração gerencial: metas de desempenho, contratos de gestão.',
-      'Administração gerencial: avaliação por resultados e indicadores.',
-      'Reforma de 1936: criação do DASP.',
-      'Reforma de 1967: DL 200, descentralização.',
-      'Reforma de 1995: Plano Diretor (Bresser-Pereira), foco em resultados.',
-      'EC 19/1998: eficiência no caput do art. 37.'
+      'Patrimonialismo: prefeito nomeia parentes para cargos públicos por laços pessoais.',
+      'Burocracia: concurso público, regras escritas, hierarquia formal.',
+      'Gerencial: contratos de gestão, indicadores, avaliação de desempenho.',
+      'Governança: comitê intersetorial coordena saúde e educação para reduzir mortalidade infantil.',
+      'Governabilidade: coalizão política sustenta a aprovação de uma reforma no Legislativo.',
+      'Accountability: TCU presta contas à sociedade sobre as auditorias; gestor se justifica.',
+      'Transparência ativa: portal divulga salários e despesas sem precisar de pedido.',
+      'Transparência passiva: cidadão pede via LAI e recebe em 20 dias.',
+      'Gestão por resultados: contrato de gestão fixa metas anuais para hospital público.',
+      'Gestão de riscos: órgão mapeia riscos de fraude em licitações e cria controles.',
+      'Indicadores: taxa de mortalidade infantil, tempo de espera, IDEB, índice de satisfação.',
+      'Participação social: conselho de saúde aprova plano municipal.',
+      'Governo digital: gov.br unifica serviços; assinatura eletrônica; dados abertos.'
     ],
     comparacoes: [
-      { termoA: 'Patrimonialismo', termoB: 'Burocracia', diferenca: 'PATRIMONIALISMO: confusão público/privado, pessoalidade, nepotismo. BUROCRACIA: separação público/privado, impessoalidade, meritocracia, regras escritas. A burocracia é uma REAÇÃO ao patrimonialismo.' },
-      { termoA: 'Burocracia', termoB: 'Administração gerencial', diferenca: 'BUROCRACIA: foco em PROCEDIMENTOS — regras, formalismo, hierarquia, controle de meios. GERENCIAL: foco em RESULTADOS — eficiência, qualidade, satisfação do cidadão, controle de fins. A gerencial é uma reação aos excessos da burocracia.' },
-      { termoA: 'Administração gerencial', termoB: 'Governança', diferenca: 'GERENCIAL (nova gestão pública): foco na eficiência interna da Administração, com descentralização, contratos de gestão e avaliação de desempenho. GOVERNANÇA: conceito mais amplo — envolve a relação do Estado com a sociedade, transparência, participação, accountability e coordenação de redes. A gerencial é uma etapa; a governança é o horizonte atual.' },
-      { termoA: 'Reforma de 1936', termoB: 'Reforma de 1995', diferenca: '1936: introduziu a BUROCRACIA (criação do DASP), meritocracia, impessoalidade. 1995: introduziu a ADMINISTRAÇÃO GERENCIAL (Plano Diretor, Bresser-Pereira), descentralização, contratos de gestão, foco em resultados.' }
+      { termoA: 'Governança', termoB: 'Governabilidade', diferenca: 'GOVERNANÇA: mecanismos de liderança, estratégia e controle para a organização cumprir sua finalidade (capacidade de GESTÃO). GOVERNANÇA CORPORATIVA: foco no setor privado. GOVERNABILIDADE: capacidade POLÍTICA de decidir e implementar, com legitimidade (condição POLÍTICA). Uma é capacidade administrativa; a outra, política.' },
+      { termoA: 'Accountability', termoB: 'Transparência', diferenca: 'TRANSPARÊNCIA: divulgação de informações (dimensão INFORMATIVA da accountability). ACCOUNTABILITY: gênero que inclui transparência + JUSTIFICAÇÃO + RESPONSABILIZAÇÃO (sanção). Transparência é uma parte da accountability — não o todo.' },
+      { termoA: 'Transparência ativa', termoB: 'Transparência passiva', diferenca: 'ATIVA: divulgação proativa, sem solicitação (portais, dados abertos). PASSIVA: resposta a pedidos via LAI (Lei 12.527/2011), em até 20 dias, prorrogáveis por 10. Ambas são obrigatórias.' },
+      { termoA: 'Gestão por resultados', termoB: 'Gestão por processos', diferenca: 'POR RESULTADOS: foco em METAS e INDICADORES (o quê/quanto). POR PROCESSOS: foco no FLUXO de trabalho (como). Complementares: uma mede o resultado; a outra organiza a execução.' },
+      { termoA: 'Gestão de riscos', termoB: 'Controle interno', diferenca: 'CONTROLE INTERNO: conjunto de mecanismos de salvaguarda, conformidade e governança (art. 74, CF). GESTÃO DE RISCOS: PROCESSO de identificar, avaliar e mitigar riscos (parte do controle interno, com metodologia própria — ISO 31000). A gestão de riscos é uma ferramenta DO controle interno.' },
+      { termoA: 'Governo digital', termoB: 'Governança digital', diferenca: 'GOVERNO DIGITAL: transformação dos SERVIÇOS e da atuação do Estado com TIC (Lei 14.129/2021). GOVERNANÇA DIGITAL: estrutura de DECISÃO e supervisão sobre TIC (Decreto 8.638/2016 — comitês, políticas). Uma é o serviço; a outra, a governança sobre ele.' }
     ],
-    aplicacaoEmConcurso: 'Altíssima frequência: comparação entre os três modelos, características de cada um, e a correspondência com as reformas de 1936 (burocracia) e 1995 (gerencial). Também cai a EC 19/1998 (eficiência no art. 37). A banca costuma pedir a qual modelo pertence uma característica descrita.',
+    aplicacaoEmConcurso: 'Alta frequência: comparação entre os três modelos (patrimonialista x burocrático x gerencial); EC 19/1998 e Reforma de 1995; e, cada vez mais, TEMAS CONTEMPORÂNEOS: governança (com distinção de governabilidade), accountability (nas três dimensões), transparência (ativa x passiva; LAI), gestão por resultados (indicadores SMART), gestão de riscos (ISO 31000), participação social (conselhos, audiências) e governo digital (Lei 14.129/2021).',
     pegadinhas: [
-      'Dizer que a burocracia é o modelo atual. Ela foi superada pela gerencial (que não a eliminou por completo).',
-      'Confundir burocracia (procedimento) com administração gerencial (resultado).',
-      'Achar que o patrimonialismo foi extinto no Brasil. Ele resiste em práticas clientelistas.',
-      'Dizer que a reforma de 1995 eliminou a burocracia. Ela a manteve, mas acrescentou a lógica gerencial.',
-      'Confundir "administração gerencial" com "governança". Governança é mais ampla (relação Estado-sociedade).',
-      'Dizer que a EC 19/1998 inseriu a moralidade no art. 37. Ela inseriu a EFICIÊNCIA — a moralidade já estava no texto original.'
+      'Dizer que a burocracia é o modelo atual. Foi superada pela gerencial (que convive com ela).',
+      'Confundir governança (capacidade de gestão) com governabilidade (capacidade política).',
+      'Achar que accountability = transparência. É gênero: inclui transparência + justificação + punição.',
+      'Confundir transparência ativa (proativa) com passiva (por solicitação via LAI).',
+      'Dizer que gestão por resultados dispensa indicadores. Exige metas mensuráveis.',
+      'Confundir gestão de riscos com controle interno. A primeira é ferramenta da segunda.',
+      'Achar que participação social é facultativa. Em muitos setores, é obrigatória (saúde, assistência social).',
+      'Dizer que governo digital é só "digitalizar documentos". Envolve transformação de serviços, interoperabilidade e dados abertos.',
+      'Dizer que a EC 19/1998 inseriu a moralidade no art. 37. Inseriu a EFICIÊNCIA.'
     ],
     errosComuns: [
-      'Decorar os modelos sem associar às reformas.',
-      'Não conseguir classificar uma característica no modelo correto.',
-      'Confundir os focos: patrimonialismo (pessoal), burocracia (procedimento), gerencial (resultado).'
+      'Decorar os modelos sem associar às reformas (1936, 1967, 1995).',
+      'Confundir governança com governabilidade.',
+      'Reduzir accountability a "prestar contas" — sem a dimensão de responsabilização.',
+      'Não saber a diferença entre transparência ativa e passiva.',
+      'Ignorar os temas contemporâneos — cada vez mais cobrados em provas de nível médio e superior.'
     ],
     resumo: [
-      'Patrimonialismo: confusão público/privado, pessoalidade. Modelo pré-burocrático.',
-      'Burocracia: impessoalidade, meritocracia, regras escritas, hierarquia. Reforma de 1936.',
-      'Administração gerencial: resultados, eficiência, satisfação do cidadão. Reforma de 1995 e EC 19/1998.',
-      'Brasil: patrimonialismo → burocracia (1936) → gerencial (1995).',
-      'EC 19/1998: eficiência no caput do art. 37.'
+      'Patrimonialismo: confusão público/privado, pessoalidade.',
+      'Burocracia: impessoalidade, meritocracia, regras escritas (Reforma 1936 — DASP).',
+      'Gerencial: resultados, eficiência, satisfação do cidadão (Reforma 1995 + EC 19/1998).',
+      'Governança: mecanismos de liderança, estratégia e controle.',
+      'Governabilidade: capacidade política de decidir e implementar.',
+      'Accountability: transparência + justificação + responsabilização.',
+      'Transparência: ativa (proativa) e passiva (LAI — 20 dias, prorrogável por 10).',
+      'Gestão por resultados: metas e indicadores (SMART).',
+      'Gestão de riscos: identificar, avaliar, mitigar (ISO 31000).',
+      'Indicadores: eficiência, eficácia, efetividade.',
+      'Participação e controle social: conselhos, audiências, ouvidorias, ação popular.',
+      'Governo digital: Lei 14.129/2021; Decreto 10.332/2020 (Estratégia de Governo Digital).'
     ],
     modoProfessor: {
-      explicarMaisSimples: 'Três jeitos de administrar: no patrimonialismo, o governante trata o Estado como sua casa. Na burocracia, tudo é regra e papel. Na gerencial, o foco é resultado e satisfação do cidadão.',
-      outroExemplo: 'Um órgão que exige 20 carimbos para um alvará é marca da BUROCRACIA (foco em procedimento). Um órgão que define meta de emitir o alvará em 48h e mede o resultado é marca da ADMINISTRAÇÃO GERENCIAL. Um órgão que nomeia parentes e usa carros públicos para fins privados é marca do PATRIMONIALISMO.',
-      compararConceitos: 'Patrimonialismo = pessoal. Burocracia = procedimento. Gerencial = resultado. Reforma 1936 = burocracia. Reforma 1995 = gerencial. EC 19/1998 = eficiência no art. 37.',
-      mostrarPegadinha: 'Cuidado: "A burocracia é o modelo atual no Brasil". ERRADO. O modelo constitucional é o gerencial (EC 19/1998), embora práticas burocráticas persistam.',
-      comoApareceEmConcurso: 'Classificação de características em cada modelo e associação modelo x reforma.',
+      explicarMaisSimples: 'Três jeitos de administrar: no patrimonialismo, o governante trata o Estado como sua casa. Na burocracia, tudo é regra e papel. Na gerencial, o foco é resultado. Hoje, o debate vai além: como garantir transparência, participação, governança e serviços digitais.',
+      outroExemplo: 'Um órgão que exige 20 carimbos para um alvará é burocrático. Um órgão que define meta de 48h e mede o resultado é gerencial. Um órgão que publica salários no portal é transparente. Um órgão que responde pedido via LAI em 20 dias é transparente passivo. Um órgão que usa gov.br é governo digital.',
+      compararConceitos: 'Patrimonialismo (pessoal) → Burocracia (procedimento) → Gerencial (resultado). Governança (gestão) x governabilidade (política). Accountability (gênero) x transparência (parte). Ativa x passiva. Governo digital x governança digital.',
+      mostrarPegadinha: 'Cuidado: "Accountability é só transparência". ERRADO. Accountability inclui transparência + justificação + responsabilização (sanção). Transparência é uma parte do conceito.',
+      comoApareceEmConcurso: 'Classificação de características em cada modelo; associação modelo x reforma; temas contemporâneos (governança, accountability, transparência).',
       fazerPergunta: {
-        pergunta: 'A criação do DASP, em 1936, está associada a qual modelo de Administração Pública?',
-        resposta: 'Ao modelo BUROCRÁTICO — a Reforma de 1936 introduziu a burocracia weberiana no Brasil, com meritocracia, impessoalidade e regras escritas.'
+        pergunta: 'Qual a diferença entre governança e governabilidade?',
+        resposta: 'GOVERNANÇA é a capacidade de GESTÃO (liderança, estratégia, controle) para a organização cumprir sua finalidade. GOVERNABILIDADE é a capacidade POLÍTICA de decidir e implementar com legitimidade (relação entre Poderes, coalizões, sociedade). Uma é administrativa; a outra, política.'
       }
     }
   },
