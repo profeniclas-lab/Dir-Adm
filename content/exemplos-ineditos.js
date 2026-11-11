@@ -1046,4 +1046,26 @@ window.EXEMPLOS_INEDITOS = {
   'EX-REV-28-004':
     'Acerto com segurança → intervalo maior. Acerto com dúvida → intervalo intermediário. Erro → intervalo curto. O sistema sugere 3 dias para dúvida — nem tão curto quanto erro, nem tão longo quanto segurança. A adaptatividade considera o GRAU de confiança, não só o acerto binário.'
 
+  /* ============================================================
+     EXEMPLOS COMPLEMENTARES — QUESTÕES SEM EXEMPLO
+  ============================================================ */
+
+  'Q-REAL-DA-20-008':
+    'Uma empresa pública de transporte precisa manter regularidade, segurança, continuidade e modicidade na prestação do serviço. A exigência de que o serviço seja atualizado e eficiente também integra a ideia de serviço adequado. A efetividade, embora seja importante para avaliar impactos sociais, não aparece no rol do art. 6º, § 1º, da Lei 8.987/1995.',
+
+  'EX-ADM-02-001':
+    'Uma universidade estabelece a meta de reduzir o tempo de emissão de diplomas. Ao final do semestre, compara o prazo real com a meta e identifica atrasos. Essa comparação pertence ao controle. A decisão de reorganizar o fluxo de emissão para o próximo semestre mostra que o controle pode alimentar um novo planejamento.',
+
+  'EX-ADM-02-002':
+    'Uma secretaria organiza suas atividades por meio de planejamento, organização, direção e controle. Isso é o PODC. Quando precisa decidir sobre um pedido administrativo de um cidadão, deve observar o procedimento jurídico aplicável, com instrução, motivação e possibilidade de recurso. São conceitos diferentes, embora ambos façam parte da atividade administrativa.',
+
+  'EX-ADM-03-001':
+    'Um hospital público estabelece como objetivo diminuir o tempo de espera para consultas. A meta é definida no planejamento. O tempo médio de espera é medido por um indicador de controle. Quando o resultado fica abaixo do esperado, a gestão reorganiza os horários e o fluxo de atendimento.',
+
+  'EX-ADM-03-002':
+    'Uma prefeitura estabelece no BSC a meta de reduzir o tempo de resposta às solicitações dos cidadãos. Para alcançar esse objetivo, mapeia o processo de atendimento, identifica etapas desnecessárias e redistribui responsabilidades. O BSC indica o resultado desejado; a gestão por processos ajuda a organizar o caminho para alcançá-lo.',
+
+  'EX-ADM-04-001':
+    'Um município cria uma autarquia para administrar o serviço de saneamento. A autarquia passa a ter personalidade jurídica própria e integra a Administração Indireta. A Secretaria responsável pode exercer supervisão finalística, mas não existe hierarquia administrativa entre a Secretaria e a autarquia como ocorre entre órgãos da mesma pessoa jurídica.'
+
 };
