@@ -1668,22 +1668,22 @@ window.EXERCISE_EXTRA_QUESTIONS = [
     tipo: 'DIDATICA', area: 'DA', moduloId: 'DA-19',
     subtema: 'Extinção do ato em cenário',
     dificuldade: 3, prioridade: 'alta',
-    enunciado: 'Três permissões de uso de bem público são extintas em situações distintas: (i) o permissionário descumpre condição do termo; (ii) o prazo da permissão expira; (iii) uma nova permissão é editada, incompatível com a anterior. Sobre os institutos de extinção, é CORRETO afirmar que:',
+    enunciado: 'Três permissões de uso de bem público são extintas em situações distintas: (i) o permissionário descumpre condição do termo; (ii) uma lei nova proíbe a atividade antes autorizada, tornando a permissão incompatível com o ordenamento; (iii) o prazo previsto no próprio ato expira. Sobre os institutos de extinção, é CORRETO afirmar que:',
     alternativas: [
-      { id: 'A', texto: 'Os três casos são ANULAÇÃO, pois a permissão é ato precário.' },
-      { id: 'B', texto: '(i) CASSAÇÃO (descumprimento); (ii) CADUCIDADE (decurso de prazo); (iii) CONTRAPOSIÇÃO (ato novo que extingue o anterior). São formas de extinção distintas — nenhuma delas é anulação ou revogação.' },
-      { id: 'C', texto: 'Os três casos são REVOGAÇÃO, pois o permissionário não tem direito adquirido.' },
-      { id: 'D', texto: 'Os três casos são CONVALIDAÇÃO, pois a Administração pode corrigir o ato.' }
+      { id: 'A', texto: 'As três são ANULAÇÃO, pois o permissionário não tem direito adquirido.' },
+      { id: 'B', texto: '(i) CASSAÇÃO (descumprimento); (ii) CADUCIDADE (norma superveniente incompatível); (iii) EXTINÇÃO PELO ADVENTO DO TERMO FINAL (decurso de prazo do próprio ato). São três institutos distintos — nenhum deles é anulação ou revogação.' },
+      { id: 'C', texto: 'As três são REVOGAÇÃO, pois a permissão é ato precário.' },
+      { id: 'D', texto: 'As três são CONVALIDAÇÃO, pois a Administração pode corrigir o ato.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'Cassação = descumprimento. Caducidade = prazo. Contraposição = ato novo incompatível. Três institutos distintos, frequentemente confundidos.',
+      correta: 'Descumprimento = cassação. Norma nova incompatível = caducidade. Decurso de prazo = extinção pelo termo final. Três institutos distintos.',
       incorretas: { A: 'Anulação é por ilegalidade.', C: 'Revogação é por mérito.', D: 'Convalidação é correção de vício sanável.' },
-      conceitoCobrado: 'Extinção do ato — cassação, caducidade e contraposição',
-      pegadinha: 'Confundir os três institutos com anulação/revogação.',
+      conceitoCobrado: 'Extinção do ato — cassação, caducidade e termo final',
+      pegadinha: 'Confundir caducidade (norma nova) com termo final (decurso de prazo).',
       comoApareceEmConcurso: 'Cenário que exige classificar cada caso.'
     },
-    tags: ['cassação', 'caducidade', 'contraposição']
+    tags: ['cassação', 'caducidade', 'termo final']
   },
 
   /* ============================================================
