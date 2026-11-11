@@ -1,5 +1,5 @@
 /* ============================================================
-   MOTOR GENÉRICO — App de Estudos
+   MOTOR GENÉRICO — App de Estudo
    v2.0 — quatro melhorias pedagógicas integradas
 
    BLOCO 1: Cabeçalho, config, merge de conteúdo, estado persistido
