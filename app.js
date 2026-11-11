@@ -56,6 +56,12 @@ var PRIORITY_LABELS_SHORT = {
 
   var PEDAGOGICAL_CFG      = CFG.pedagogicalComments || {};
   var PEDAGOGICAL_FALLBACK = PEDAGOGICAL_CFG.fallbackSemExemplo || 'Exemplo inédito em produção para esta questão.';
+/* ---------- Gamificação ---------- */
+var GAMIF_CFG   = CFG.gamification || {};
+var XP_CFG      = GAMIF_CFG.xp || { acerto: 10, erro: 2, flashcardSabia: 5, flashcardDuvida: 3, flashcardNaoSabia: 1, exercicioBase: 50, exercicioBonus: 20, simuladoBase: 100, diagnostico: 30 };
+var GAMIF_META  = GAMIF_CFG.metaDiaria || 50;
+var GAMIF_NIVEIS = Array.isArray(GAMIF_CFG.niveis) && GAMIF_CFG.niveis.length ? GAMIF_CFG.niveis : [0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500];
+   
 
   /* ---------- Merge dinâmico dos arquivos de conteúdo ---------- */
   var LESSONS = {};
@@ -176,7 +182,18 @@ var PRIORITY_LABELS_SHORT = {
       if (!Array.isArray(q.historicoRevisoes)) q.historicoRevisoes = [];
       if (!Array.isArray(q.errosDetalhados)) q.errosDetalhados = [];
     }
-
+    if (!st.gamification || typeof st.gamification !== 'object') {
+      st.gamification = { xp: 0, streak: 0, melhorStreak: 0, ultimoDiaEstudo: null, xpHoje: 0, diaXPHoje: null, historicoXP: {} };
+    }
+    var g = st.gamification;
+    if (typeof g.xp !== 'number') g.xp = 0;
+    if (typeof g.streak !== 'number') g.streak = 0;
+    if (typeof g.melhorStreak !== 'number') g.melhorStreak = 0;
+    if (g.ultimoDiaEstudo === undefined) g.ultimoDiaEstudo = null;
+    if (typeof g.xpHoje !== 'number') g.xpHoje = 0;
+    if (g.diaXPHoje === undefined) g.diaXPHoje = null;
+    if (!g.historicoXP || typeof g.historicoXP !== 'object') g.historicoXP = {};
+     
     return st;
   }
 
@@ -189,6 +206,7 @@ var PRIORITY_LABELS_SHORT = {
       modules: {}, questions: {}, flashcards: {}, simulados: [],
       exercicios: {},
       stats: { questoesRespondidas: 0, acertos: 0, erros: 0, flashcardsEstudados: 0, simuladosRealizados: 0, tempoEstudoMin: 0 },
+      gamification: { xp: 0, streak: 0, melhorStreak: 0, ultimoDiaEstudo: null, xpHoje: 0, diaXPHoje: null, historicoXP: {} },
       lastScreen: 'dashboard'
     };
   }
@@ -632,6 +650,182 @@ var PRIORITY_LABELS_SHORT = {
     return arr;
   }
 
+    /* ============================================================
+     GAMIFICAÇÃO — XP, ofensiva, nível, meta
+     (paralela às estatísticas; não as altera)
+  ============================================================ */
+  function diaISO(d) {
+    if (!d) d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+  function diaAnteriorISO() {
+    var d = new Date(); d.setDate(d.getDate() - 1);
+    return diaISO(d);
+  }
+
+  function registerXP(quantidade) {
+    if (!AppState || !AppState.gamification) return;
+    if (!quantidade || quantidade <= 0) return;
+    var g = AppState.gamification;
+    var hoje = diaISO();
+
+    /* Reset do XP diário se mudou o dia */
+    if (g.diaXPHoje !== hoje) { g.xpHoje = 0; g.diaXPHoje = hoje; }
+
+    /* Soma XP */
+    g.xp += quantidade;
+    g.xpHoje += quantidade;
+    g.historicoXP[hoje] = (g.historicoXP[hoje] || 0) + quantidade;
+
+    /* Ofensiva (streak) */
+    if (g.ultimoDiaEstudo !== hoje) {
+      g.streak = (g.ultimoDiaEstudo === diaAnteriorISO()) ? (g.streak + 1) : 1;
+      if (g.streak > g.melhorStreak) g.melhorStreak = g.streak;
+      g.ultimoDiaEstudo = hoje;
+    }
+
+    saveState();
+  }
+
+  function getNivelInfo() {
+    var g = AppState.gamification || { xp: 0 };
+    var xp = g.xp || 0;
+    var nivelAtual = 1;
+    for (var i = 0; i < GAMIF_NIVEIS.length; i++) if (xp >= GAMIF_NIVEIS[i]) nivelAtual = i + 1;
+    var xpAtual = GAMIF_NIVEIS[nivelAtual - 1] || 0;
+    var xpProximo = (nivelAtual < GAMIF_NIVEIS.length) ? GAMIF_NIVEIS[nivelAtual] : null;
+    var progresso = 0;
+    if (xpProximo !== null && xpProximo > xpAtual) {
+      progresso = Math.round(((xp - xpAtual) / (xpProximo - xpAtual)) * 100);
+    } else if (xpProximo === null) {
+      progresso = 100;
+    }
+    return { nivel: nivelAtual, xp: xp, xpAtual: xpAtual, xpProximo: xpProximo, progresso: progresso };
+  }
+
+  function getXPHoje() {
+    var g = AppState.gamification;
+    if (!g) return 0;
+    return (g.diaXPHoje === diaISO()) ? (g.xpHoje || 0) : 0;
+  }
+
+  function renderGamificationWidget() {
+    var g = AppState.gamification || { xp: 0, streak: 0, melhorStreak: 0 };
+    var nivelInfo = getNivelInfo();
+    var xpHoje = getXPHoje();
+    var metaPct = Math.min(100, Math.round((xpHoje / GAMIF_META) * 100));
+    var faltamNivel = nivelInfo.xpProximo ? (nivelInfo.xpProximo - g.xp) : 0;
+
+    var html = '<div class="gamif-widget">';
+    html += '<div class="gamif-row">';
+    html += '<div class="gamif-stat"><span class="gamif-icon">🔥</span><span class="gamif-value">' + g.streak + '</span><span class="gamif-label">dia' + (g.streak === 1 ? '' : 's') + ' seguido' + (g.streak === 1 ? '' : 's') + '</span></div>';
+    html += '<div class="gamif-stat"><span class="gamif-icon">⭐</span><span class="gamif-value">' + g.xp + '</span><span class="gamif-label">XP total</span></div>';
+    html += '<div class="gamif-stat"><span class="gamif-icon">🏆</span><span class="gamif-value">Nível ' + nivelInfo.nivel + '</span><span class="gamif-label">' + (nivelInfo.xpProximo !== null ? faltamNivel + ' XP até o próximo' : 'Nível máximo') + '</span></div>';
+    html += '</div>';
+
+    html += '<div class="gamif-progress-row">';
+    html += '<span class="gamif-progress-label">Nível ' + nivelInfo.nivel + '</span>';
+    html += '<div class="gamif-progress-bar"><div class="gamif-progress-fill" style="width:' + nivelInfo.progresso + '%"></div></div>';
+    html += '<span class="gamif-progress-label">' + nivelInfo.progresso + '%</span>';
+    html += '</div>';
+
+    html += '<div class="gamif-progress-row">';
+    html += '<span class="gamif-progress-label">Meta hoje</span>';
+    html += '<div class="gamif-progress-bar"><div class="gamif-progress-fill meta" style="width:' + metaPct + '%"></div></div>';
+    html += '<span class="gamif-progress-label">' + xpHoje + '/' + GAMIF_META + ' XP</span>';
+    html += '</div>';
+
+    html += '</div>';
+    return html;
+  }
+     /* ============================================================
+     GAMIFICAÇÃO — XP, ofensiva, nível, meta
+     (paralela às estatísticas; não as altera)
+  ============================================================ */
+  function diaISO(d) {
+    if (!d) d = new Date();
+    return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  }
+  function diaAnteriorISO() {
+    var d = new Date(); d.setDate(d.getDate() - 1);
+    return diaISO(d);
+  }
+
+  function registerXP(quantidade) {
+    if (!AppState || !AppState.gamification) return;
+    if (!quantidade || quantidade <= 0) return;
+    var g = AppState.gamification;
+    var hoje = diaISO();
+
+    /* Reset do XP diário se mudou o dia */
+    if (g.diaXPHoje !== hoje) { g.xpHoje = 0; g.diaXPHoje = hoje; }
+
+    /* Soma XP */
+    g.xp += quantidade;
+    g.xpHoje += quantidade;
+    g.historicoXP[hoje] = (g.historicoXP[hoje] || 0) + quantidade;
+
+    /* Ofensiva (streak) */
+    if (g.ultimoDiaEstudo !== hoje) {
+      g.streak = (g.ultimoDiaEstudo === diaAnteriorISO()) ? (g.streak + 1) : 1;
+      if (g.streak > g.melhorStreak) g.melhorStreak = g.streak;
+      g.ultimoDiaEstudo = hoje;
+    }
+
+    saveState();
+  }
+
+  function getNivelInfo() {
+    var g = AppState.gamification || { xp: 0 };
+    var xp = g.xp || 0;
+    var nivelAtual = 1;
+    for (var i = 0; i < GAMIF_NIVEIS.length; i++) if (xp >= GAMIF_NIVEIS[i]) nivelAtual = i + 1;
+    var xpAtual = GAMIF_NIVEIS[nivelAtual - 1] || 0;
+    var xpProximo = (nivelAtual < GAMIF_NIVEIS.length) ? GAMIF_NIVEIS[nivelAtual] : null;
+    var progresso = 0;
+    if (xpProximo !== null && xpProximo > xpAtual) {
+      progresso = Math.round(((xp - xpAtual) / (xpProximo - xpAtual)) * 100);
+    } else if (xpProximo === null) {
+      progresso = 100;
+    }
+    return { nivel: nivelAtual, xp: xp, xpAtual: xpAtual, xpProximo: xpProximo, progresso: progresso };
+  }
+
+  function getXPHoje() {
+    var g = AppState.gamification;
+    if (!g) return 0;
+    return (g.diaXPHoje === diaISO()) ? (g.xpHoje || 0) : 0;
+  }
+
+  function renderGamificationWidget() {
+    var g = AppState.gamification || { xp: 0, streak: 0, melhorStreak: 0 };
+    var nivelInfo = getNivelInfo();
+    var xpHoje = getXPHoje();
+    var metaPct = Math.min(100, Math.round((xpHoje / GAMIF_META) * 100));
+    var faltamNivel = nivelInfo.xpProximo ? (nivelInfo.xpProximo - g.xp) : 0;
+
+    var html = '<div class="gamif-widget">';
+    html += '<div class="gamif-row">';
+    html += '<div class="gamif-stat"><span class="gamif-icon">🔥</span><span class="gamif-value">' + g.streak + '</span><span class="gamif-label">dia' + (g.streak === 1 ? '' : 's') + ' seguido' + (g.streak === 1 ? '' : 's') + '</span></div>';
+    html += '<div class="gamif-stat"><span class="gamif-icon">⭐</span><span class="gamif-value">' + g.xp + '</span><span class="gamif-label">XP total</span></div>';
+    html += '<div class="gamif-stat"><span class="gamif-icon">🏆</span><span class="gamif-value">Nível ' + nivelInfo.nivel + '</span><span class="gamif-label">' + (nivelInfo.xpProximo !== null ? faltamNivel + ' XP até o próximo' : 'Nível máximo') + '</span></div>';
+    html += '</div>';
+
+    html += '<div class="gamif-progress-row">';
+    html += '<span class="gamif-progress-label">Nível ' + nivelInfo.nivel + '</span>';
+    html += '<div class="gamif-progress-bar"><div class="gamif-progress-fill" style="width:' + nivelInfo.progresso + '%"></div></div>';
+    html += '<span class="gamif-progress-label">' + nivelInfo.progresso + '%</span>';
+    html += '</div>';
+
+    html += '<div class="gamif-progress-row">';
+    html += '<span class="gamif-progress-label">Meta hoje</span>';
+    html += '<div class="gamif-progress-bar"><div class="gamif-progress-fill meta" style="width:' + metaPct + '%"></div></div>';
+    html += '<span class="gamif-progress-label">' + xpHoje + '/' + GAMIF_META + ' XP</span>';
+    html += '</div>';
+
+    html += '</div>';
+    return html;
+  }
   /* ============================================================
      FILTROS DE QUESTÕES
   ============================================================ */
@@ -730,6 +924,7 @@ var PRIORITY_LABELS_SHORT = {
     var st = getModuleUserState(q.moduloId);
     if (st.status === 'nao_iniciado') st.status = 'em_estudo';
     st.ultimaAtividade = new Date().toISOString();
+    registerXP(correta ? XP_CFG.acerto : XP_CFG.erro);
     saveState();
 
     return {
@@ -812,6 +1007,8 @@ var PRIORITY_LABELS_SHORT = {
     AppState.stats.flashcardsEstudados += 1;
     var m = getModule(getFlashcard(fid).moduloId);
     if (m) { var ms = getModuleUserState(m.id); if (ms.status === 'nao_iniciado') ms.status = 'em_estudo'; ms.ultimaAtividade = new Date().toISOString(); }
+    var xpFC = level === 'sabia' ? XP_CFG.flashcardSabia : (level === 'duvida' ? XP_CFG.flashcardDuvida : XP_CFG.flashcardNaoSabia);
+    registerXP(xpFC);
     saveState(); nextFlashcardAuto();
   }
   function nextFlashcardAuto() {
@@ -923,6 +1120,7 @@ var PRIORITY_LABELS_SHORT = {
     };
     AppState.simulados.push(sim);
     AppState.stats.simuladosRealizados = (AppState.stats.simuladosRealizados || 0) + 1;
+    registerXP(XP_CFG.simuladoBase + Math.round(pct));
     saveState(); currentSimuladoId = sim.id; simuladoRunning = null;
     navigate('simulado-result'); renderNavBadges();
   }
@@ -1072,6 +1270,7 @@ for (var j = 0; j < MODULES.length && sugestoes.length < 4; j++) {
     var html = '';
     html += '<h1 class="page-title">Dashboard</h1>';
     html += '<p class="page-subtitle">Visão geral do seu progresso em ' + esc(APP_SUBTITLE || APP_NAME) + '. Dados salvos localmente no navegador.</p>';
+    html += renderGamificationWidget();
     html += '<div class="cards-grid">';
     html += statCard('Questões respondidas', stats.questoesRespondidas, qReal + ' reais · ' + qDid + ' didáticas');
     html += statCard('Taxa de acerto', taxa + '%', stats.acertos + ' acertos / ' + stats.erros + ' erros');
@@ -2802,6 +3001,8 @@ function moduleCardHtml(m) {
     checkModuleCompletion(modId);
 
     saveState();
+    var xpExercicio = XP_CFG.exercicioBase + (result.percentual >= MASTERY_THRESHOLD ? XP_CFG.exercicioBonus : 0);
+    registerXP(xpExercicio);
     window.__lastExercise = { moduleId: modId, result: result, items: exerciseRunning.items.slice(), respostas: Object.assign({}, exerciseRunning.respostas) };
     exerciseRunning = null;
     navigate('exercicio-result', { moduleId: modId });
@@ -3317,7 +3518,9 @@ function moduleCardHtml(m) {
     for (var i = 0; i < diag.itens.length; i++) if (!Object.prototype.hasOwnProperty.call(diagRunning.answers, diag.itens[i].id)) { window.alert('Existem itens não respondidos. Volte e complete.'); diagRunning.itemIndex = i; render(); return; }
     var result = computeDiagnosticResult(moduleId, diagRunning.answers);
     var st = getModuleUserState(moduleId);
+    var primeiraVezDiag = !st.diagnostico;
     st.diagnostico = { diagId: diag.id, answers: Object.assign({}, diagRunning.answers), result: result, completedAt: result.completedAt, tentativas: (st.diagnostico && st.diagnostico.tentativas ? st.diagnostico.tentativas : 0) + 1 };
+    if (primeiraVezDiag) registerXP(XP_CFG.diagnostico);
     st.dominioEstimado = result.dominioEstimado;
     st.ultimaAtividade = new Date().toISOString();
     checkModuleCompletion(moduleId);
