@@ -771,7 +771,7 @@ window.EXEMPLOS_INEDITOS = {
   'Q-DID-DA-19-001':
     'Anulação = ilegalidade, ex tunc, feita pela Administração (autotutela) E pelo Judiciário. Revogação = mérito, ex nunc, SÓ pela Administração (Súmulas 346 e 473). O Judiciário não revoga — só anula.',
   'Q-DID-DA-19-002':
-    'Cassação = descumprimento. Caducidade = decurso de prazo ou fato novo. Contraposição = ato novo que extingue o anterior. Nenhuma delas é anulação (ilegalidade) ou revogação (mérito).',
+    'Cassação = descumprimento. Caducidade = norma superveniente que torna o ato incompatível. Termo final = decurso de prazo do próprio ato. Contraposição = ato novo que extingue o anterior. A distinção mais fina é entre caducidade (norma nova) e termo final (prazo) — não são sinônimos.',
   'Q-DID-DA-19-003':
     'A presunção de legitimidade é RELATIVA (iuris tantum): o ato se presume válido até prova em contrário. Não é absoluta, nem definitiva. Admite prova contrária e controle.',
   'Q-DID-DA-19-004':
@@ -785,7 +785,7 @@ window.EXEMPLOS_INEDITOS = {
   'EX-DA-19-001':
     'Interdição: imperatividade (impõe-se) + autoexecutoriedade (executável sem Judiciário) + presunção de legitimidade (relativa). Multa: imperatividade + presunção, mas SEM autoexecutoriedade (cobrança judicial). Nem todo ato é autoexecutável.',
   'EX-DA-19-002':
-    'Descumprimento = cassação. Prazo = caducidade. Ato novo = contraposição. Três institutos distintos, todos de extinção do ato. Não confundir com anulação (ilegalidade) ou revogação (mérito).',
+    'Descumprimento = cassação. Norma nova incompatível = caducidade. Prazo esgotado = extinção pelo termo final. Ato novo que substitui = contraposição. Três institutos de extinção + um de substituição — não se confundem com anulação (ilegalidade) nem com revogação (mérito).',
   'EX-DA-19-003':
     'Aplicar sanção sem previsão legal viola legalidade e objeto (não há suporte normativo). Há excesso de poder. A moralidade não autoriza sanção — deve estar conjugada com a legalidade. Não há poder sancionatório sem lei.',
   'EX-DA-19-004':
@@ -888,7 +888,7 @@ window.EXEMPLOS_INEDITOS = {
   'Q-REAL-DA-23-008':
     'Anulação de ato após provocação do Judiciário é CONTROLE POSTERIOR (após a prática do ato). É controle JUDICIAL, não administrativo. O controle prévio é antes; o concomitante, durante.',
   'Q-DID-DA-23-001':
-    'INTERNO: dentro de cada Poder (Controladoria — art. 74). EXTERNO: Tribunais de Contas (art. 71). O interno é autocontrole; o externo é controle por outro órgão. Não confundir com controle social (cidadão/ouvidoria).',
+    'O controle interno é exercido dentro de cada Poder (Controladorias — art. 74). O controle externo é a cargo do Congresso Nacional, com o auxílio do TCU (art. 71, caput): o TCU é órgão auxiliar, não titular. Dizer que o TCU "exerce" o controle externo é impreciso — ele auxilia o Congresso.',
   'Q-DID-DA-23-002':
     'LEGALIDADE: Administração + Judiciário. MÉRITO: só Administração. O Judiciário não revê mérito (conveniência e oportunidade) — só legalidade. Súmula 473 do STF.',
   'Q-DID-DA-23-003':
@@ -898,7 +898,7 @@ window.EXEMPLOS_INEDITOS = {
   'Q-DID-DA-23-005':
     'Prazo decadencial para a Administração anular seus atos: 5 ANOS, salvo comprovada MÁ-FÉ (art. 54 da Lei 9.784/99). O prazo concretiza a segurança jurídica.',
   'EX-DA-23-001':
-    'Controladoria = interno (art. 74). TCU = externo (art. 71). Ouvidoria = social (participação do cidadão). Três dimensões complementares — não excludentes. A CF prevê articulação entre eles.',
+    'Controladoria = controle interno (art. 74). O controle externo é do Congresso Nacional, com auxílio do TCU (art. 71) — o TCU é o órgão técnico que realiza auditorias e emite pareceres, mas não titulariza o controle externo. Ouvidoria = controle social. Três dimensões complementares.',
   'EX-DA-23-002':
     'Autotutela permite anular ato ilegal, mas há prazo de 5 ANOS (art. 54 da Lei 9.784), salvo má-fé. Passados 7 anos, sem má-fé, o ato não pode mais ser anulado pela via administrativa — segurança jurídica prevalece.',
   'EX-DA-23-003':
@@ -922,7 +922,7 @@ window.EXEMPLOS_INEDITOS = {
   'Q-DID-DA-24-003':
     'IMPROBIDADE: dolo + gravidade. IRREGULARIDADE: falha formal/procedimental, que pode gerar sanções administrativas, mas não necessariamente improbidade. Nem toda irregularidade é improbidade.',
   'Q-DID-DA-24-004':
-    'A ação civil pública por improbidade é de competência do MINISTÉRIO PÚBLICO (art. 17). O cidadão pode representar, mas não ajuizar diretamente. Não cabe a qualquer pessoa jurídica nem apenas à União.',
+    'Após a Lei 14.230/2021, o art. 17 atribuía ao MP a legitimidade exclusiva. O STF (ADIs 7042 e 7043) restabeleceu a legitimidade CONCORRENTE das pessoas jurídicas interessadas (entes públicos lesados). O cidadão não ajuíza a ação — pode representar ao MP.',
   'Q-DID-DA-24-005':
     'Terceiros que concorram para o ato também podem ser responsabilizados (art. 3º). Ex.: empresário que paga propina a servidor. Não é necessário ser servidor público para responder por improbidade.',
   'EX-DA-24-001':
@@ -997,7 +997,7 @@ window.EXEMPLOS_INEDITOS = {
   'Q-DID-DA-27-002':
     'Desapropriação ORDINÁRIA exige indenização PRÉVIA, JUSTA e EM DINHEIRO (art. 5º, XXIV). Títulos são de hipóteses específicas (agrária, urbanística). Não é facultativa.',
   'Q-DID-DA-27-003':
-    'Desapropriação EXTRAORDINÁRIA (art. 243): cultivo ilegal de plantas psicotrópicas — indenização apenas das BENFEITORIAS ÚTEIS. Distinta da indenização (ordinária) e do confisco (indireta).',
+    'A expropriação do art. 243 é SEM qualquer indenização — o bem é destinado à reforma agrária ou a programas de habitação popular. Distinta da desapropriação-sanção (indenização em títulos) e da desapropriação indireta (tomada irregular, com direito a indenização).',
   'Q-DID-DA-27-004':
     'SERVIDÃO: ônus real, sem transferência. DESAPROPRIAÇÃO: transfere a propriedade, com indenização. A primeira restringe; a segunda retira.',
   'Q-DID-DA-27-005':
