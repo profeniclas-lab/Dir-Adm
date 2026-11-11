@@ -799,7 +799,7 @@ window.EXEMPLOS_INEDITOS = {
   'Q-DID-DA-20-001':
     'São princípios do serviço público: generalidade, continuidade, modicidade, regularidade, atualidade, segurança, cortesia, mutabilidade. LUCRAVIDADE não é — serviço público pode ser prestado com lucro, mas o princípio não é a lucratividade.',
 'Q-DID-DA-20-002':
-  'CONCESSÃO: delegação de serviço público formalizada por contrato, precedida de licitação e com prazo determinado. PERMISSÃO: delegação a título precário, também precedida de licitação, formalizada por contrato de adesão, conforme o art. 40 da Lei 8.987/1995. Não se deve ensinar a permissão de serviço público como simples ato unilateral. A autorização possui regimes próprios conforme o setor e não deve ser apresentada como uma terceira modalidade geral equivalente às duas anteriores sem contextualização.'
+  'CONCESSÃO: delegação de serviço público formalizada por contrato, precedida de licitação e com prazo determinado. PERMISSÃO: delegação a título precário, também precedida de licitação, formalizada por contrato de adesão, conforme o art. 40 da Lei 8.987/1995. Não se deve ensinar a permissão de serviço público como simples ato unilateral. A autorização possui regimes próprios conforme o setor e não deve ser apresentada como uma terceira modalidade geral equivalente às duas anteriores sem contextualização.',
   'Q-DID-DA-20-003':
     'A continuidade é a REGRA, mas admite exceções legais: razões técnicas/segurança, inadimplemento com aviso prévio, emergência. Não é absoluta. A interrupção sem justificativa viola o princípio.',
   'Q-DID-DA-20-004':
@@ -910,7 +910,7 @@ window.EXEMPLOS_INEDITOS = {
   'Q-REAL-DA-24-001':
     'A obrigação de reparar o dano é TRANSMISSÍVEL aos herdeiros, mas LIMITADA ao valor da herança ou do patrimônio transferido (art. 8º da Lei 8.429/92). Se o falecido não deixou patrimônio, o herdeiro não responde com seu próprio patrimônio.',
 'Q-REAL-DA-24-002':
-  'A Lei 14.230/2021 passou a exigir dolo para a configuração dos atos de improbidade administrativa. A divergência interpretativa sobre a lei, baseada em jurisprudência, deve ser analisada conforme o art. 1º, § 8º, da Lei 8.429/1992 e a interpretação constitucional dada pelo STF. Não basta afirmar genericamente que qualquer divergência baseada em jurisprudência não pacificada afasta a improbidade. É necessário observar os critérios definidos pelos Tribunais Superiores. Também é importante distinguir a mera voluntariedade da vontade livre e consciente de alcançar o resultado ilícito.'
+  'A Lei 14.230/2021 passou a exigir dolo para a configuração dos atos de improbidade administrativa. A divergência interpretativa sobre a lei, baseada em jurisprudência, deve ser analisada conforme o art. 1º, § 8º, da Lei 8.429/1992 e a interpretação constitucional dada pelo STF. Não basta afirmar genericamente que qualquer divergência baseada em jurisprudência não pacificada afasta a improbidade. É necessário observar os critérios definidos pelos Tribunais Superiores. Também é importante distinguir a mera voluntariedade da vontade livre e consciente de alcançar o resultado ilícito.',
   'Q-REAL-DA-24-003':
     'A aprovação das contas pelo TCU NÃO impede a aplicação de sanções por improbidade. As instâncias são INDEPENDENTES (art. 21 da Lei 8.429/92). O TCU aprova contas sob a ótica contábil; a improbidade analisa dolo e gravidade — independentes.',
   'Q-REAL-DA-24-008':
@@ -1044,7 +1044,7 @@ window.EXEMPLOS_INEDITOS = {
   'EX-REV-28-003':
     'Para resolver "confundo anulação com revogação", o melhor caminho é COMPARAR diretamente (tabela: ilegalidade x mérito, ex tunc x ex nunc, Administração + Judiciário x só Administração), fazer nova bateria focada e revisar espaçado. Reler a aula inteira é ineficiente — o problema está num ponto específico.',
   'EX-REV-28-004':
-    'Acerto com segurança → intervalo maior. Acerto com dúvida → intervalo intermediário. Erro → intervalo curto. O sistema sugere 3 dias para dúvida — nem tão curto quanto erro, nem tão longo quanto segurança. A adaptatividade considera o GRAU de confiança, não só o acerto binário.'
+    'Acerto com segurança → intervalo maior. Acerto com dúvida → intervalo intermediário. Erro → intervalo curto. O sistema sugere 3 dias para dúvida — nem tão curto quanto erro, nem tão longo quanto segurança. A adaptatividade considera o GRAU de confiança, não só o acerto binário.',
 
   /* ============================================================
      EXEMPLOS COMPLEMENTARES — QUESTÕES SEM EXEMPLO
