@@ -211,30 +211,85 @@ var GAMIF_NIVEIS = Array.isArray(GAMIF_CFG.niveis) && GAMIF_CFG.niveis.length ? 
     };
   }
 
-  function loadState() {
-    try {
-      var raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) return createDefaultState();
-      var parsed = JSON.parse(raw);
-      if (!parsed || typeof parsed !== 'object') return createDefaultState();
-      var base = createDefaultState();
-      var state = {
-        schemaVersion: SCHEMA_VERSION, appVersion: APP_VERSION,
-        createdAt: parsed.createdAt || base.createdAt,
-        updatedAt: parsed.updatedAt || base.updatedAt,
-        settings: Object.assign({}, base.settings, parsed.settings || {}),
-        modules: parsed.modules || {},
-        questions: parsed.questions || {},
-        flashcards: parsed.flashcards || {},
-        simulados: Array.isArray(parsed.simulados) ? parsed.simulados : [],
-        exercicios: (parsed.exercicios && typeof parsed.exercicios === 'object') ? parsed.exercicios : {},
-        stats: Object.assign({}, base.stats, parsed.stats || {}),
-        lastScreen: parsed.lastScreen || 'dashboard'
-      };
-      ensureExtendedState(state);
-      return state;
-    } catch (e) { console.error('Falha ao ler estado:', e); return createDefaultState(); }
+
+function loadState() {
+  try {
+    var raw = localStorage.getItem(STORAGE_KEY);
+
+    if (!raw) {
+      return createDefaultState();
+    }
+
+    var parsed = JSON.parse(raw);
+
+    if (!parsed || typeof parsed !== 'object') {
+      return createDefaultState();
+    }
+
+    var base = createDefaultState();
+
+    var state = {
+      schemaVersion: SCHEMA_VERSION,
+      appVersion: APP_VERSION,
+
+      createdAt: parsed.createdAt || base.createdAt,
+      updatedAt: parsed.updatedAt || base.updatedAt,
+
+      settings: Object.assign(
+        {},
+        base.settings,
+        parsed.settings || {}
+      ),
+
+      modules: parsed.modules || {},
+      questions: parsed.questions || {},
+      flashcards: parsed.flashcards || {},
+
+      simulados: Array.isArray(parsed.simulados)
+        ? parsed.simulados
+        : [],
+
+      exercicios:
+        (parsed.exercicios &&
+        typeof parsed.exercicios === 'object' &&
+        !Array.isArray(parsed.exercicios))
+          ? parsed.exercicios
+          : {},
+
+      stats: Object.assign(
+        {},
+        base.stats,
+        parsed.stats || {}
+      ),
+
+      // IMPORTANTE:
+      // Preserva os dados de gamificação já existentes.
+      gamification: Object.assign(
+        {},
+        base.gamification,
+        parsed.gamification || {}
+      ),
+
+      lastScreen: parsed.lastScreen || 'dashboard'
+    };
+
+    // Completa estruturas ausentes sem apagar
+    // os dados que já estavam armazenados.
+    ensureExtendedState(state);
+
+    return state;
+
+  } catch (e) {
+
+    console.error(
+      'Falha ao ler estado:',
+      e
+    );
+
+    return createDefaultState();
   }
+}
+
 
   function saveState() {
     if (!AppState) return;
@@ -412,18 +467,102 @@ var GAMIF_NIVEIS = Array.isArray(GAMIF_CFG.niveis) && GAMIF_CFG.niveis.length ? 
     }
     return out;
   }
-  function getUnresolvedErrors() {
-    /* Questões com pelo menos 1 erro detalhado ainda não marcado como resolvido. */
-    var out = [];
-    for (var i = 0; i < QUESTIONS.length; i++) {
-      var qs = AppState.questions[QUESTIONS[i].id];
-      if (!qs || !qs.errosDetalhados || !qs.errosDetalhados.length) continue;
-      for (var j = 0; j < qs.errosDetalhados.length; j++) {
-        if (!qs.errosDetalhados[j].resolvido) { out.push(QUESTIONS[i]); break; }
-      }
+
+/* ============================================================
+   ERROS NÃO RESOLVIDOS — PRIORIZAÇÃO
+
+   Prioridade:
+   1. Questões com mais erros ainda não resolvidos.
+   2. Questões com revisão atrasada.
+   3. Questões com erros mais recentes.
+============================================================ */
+
+function getUnresolvedErrors() {
+
+  var out = [];
+
+  for (var i = 0; i < QUESTIONS.length; i++) {
+
+    var q = QUESTIONS[i];
+
+    var qs = AppState.questions[q.id];
+
+    if (
+      !qs ||
+      !Array.isArray(qs.errosDetalhados) ||
+      qs.errosDetalhados.length === 0
+    ) {
+      continue;
     }
-    return out;
+
+    var pendentes = [];
+
+    for (
+      var j = 0;
+      j < qs.errosDetalhados.length;
+      j++
+    ) {
+
+      var erro = qs.errosDetalhados[j];
+
+      if (!erro.resolvido) {
+        pendentes.push(erro);
+      }
+
+    }
+
+    if (pendentes.length === 0) continue;
+
+    var dataUltimoErro =
+      pendentes[pendentes.length - 1].data;
+
+    var atraso = qs.proximaRevisao &&
+      isDue(qs.proximaRevisao)
+        ? Math.max(
+            0,
+            daysSince(qs.proximaRevisao)
+          )
+        : 0;
+
+    var recorrencia = pendentes.length;
+
+    // Pontuação de prioridade.
+    var prioridade =
+      (recorrencia * 10) +
+      (atraso * 2);
+
+    out.push({
+
+      question: q,
+
+      prioridade: prioridade,
+
+      recorrencia: recorrencia,
+
+      atraso: atraso,
+
+      dataUltimoErro: dataUltimoErro
+
+    });
+
   }
+
+  out.sort(function(a, b) {
+
+    if (b.prioridade !== a.prioridade) {
+      return b.prioridade - a.prioridade;
+    }
+
+    return new Date(b.dataUltimoErro) -
+           new Date(a.dataUltimoErro);
+
+  });
+
+  return out.map(function(item) {
+    return item.question;
+  });
+}
+
   function getRecurringErrorQuestions() {
     /* Questões com 2+ erros. */
     var out = [];
@@ -488,10 +627,29 @@ var GAMIF_NIVEIS = Array.isArray(GAMIF_CFG.niveis) && GAMIF_CFG.niveis.length ? 
   ============================================================ */
 
   /* Melhoria 4 — Exemplo inédito */
-  function getExemploInedito(qid) {
-    var txt = EXEMPLOS_INEDITOS[qid];
-    return (txt && String(txt).trim()) ? String(txt) : PEDAGOGICAL_FALLBACK;
+
+/* ============================================================
+   EXEMPLOS INÉDITOS
+
+   Não apresentar mensagem genérica como se fosse
+   um exemplo pedagógico já cadastrado.
+============================================================ */
+
+function getExemploInedito(qid) {
+
+  var txt = EXEMPLOS_INEDITOS[qid];
+
+  if (
+    !txt ||
+    typeof txt !== 'string' ||
+    !txt.trim()
+  ) {
+    return null;
   }
+
+  return txt.trim();
+}
+
 
   /* Melhoria 3 — Sugestão heurística de categoria de erro */
   function suggestErrorCategory(q, chosenId) {
@@ -510,29 +668,116 @@ var GAMIF_NIVEIS = Array.isArray(GAMIF_CFG.niveis) && GAMIF_CFG.niveis.length ? 
   }
 
   /* Melhoria 2 — Cálculo de intervalo adaptativo */
-  function computeAdaptiveInterval(qid, classificacao) {
-    var qs = getQuestionUserState(qid);
-    var q = getQuestion(qid);
-    if (!q) return 1;
-    var progression = ADAPTIVE_INTERVALOS[classificacao] || ADAPTIVE_INTERVALOS.desconhecimento || [1, 3, 7];
-    var idx = (typeof qs.intervaloAtual === 'number' && qs.intervaloAtual >= 0) ? qs.intervaloAtual : 0;
+
+/* ============================================================
+   REVISÃO ESPAÇADA ADAPTATIVA — VERSÃO CORRIGIDA
+
+   advance = true:
+   Registra uma nova tentativa e atualiza a progressão.
+
+   advance = false:
+   Apenas recalcula a revisão após uma reclassificação.
+   Não avança artificialmente a sequência.
+============================================================ */
+
+function computeAdaptiveInterval(qid, classificacao, advance) {
+
+  var qs = getQuestionUserState(qid);
+  var q = getQuestion(qid);
+
+  if (!q) return 1;
+
+  var progression =
+    ADAPTIVE_INTERVALOS[classificacao] ||
+    ADAPTIVE_INTERVALOS.desconhecimento ||
+    [1, 3, 7];
+
+  var idx = typeof qs.intervaloAtual === 'number'
+    ? qs.intervaloAtual
+    : -1;
+
+  // Nova tentativa: atualiza a progressão.
+  if (advance !== false) {
+
     if (classificacao === 'seguranca') {
-      idx = Math.min(idx + 1, progression.length - 1);
+
+      // Primeiro acerto seguro: índice 0 = 7 dias.
+      idx = Math.min(
+        Math.max(idx, -1) + 1,
+        progression.length - 1
+      );
+
     } else if (classificacao === 'duvida') {
-      if (qs.acertosConsecutivos >= 2) idx = Math.min(idx + 1, progression.length - 1);
+
+      // Com dúvida, a progressão é mais cautelosa.
+      if (qs.acertosConsecutivos >= 2) {
+
+        idx = Math.min(
+          Math.max(idx, 0) + 1,
+          progression.length - 1
+        );
+
+      } else {
+        idx = 0;
+      }
+
     } else {
+
+      // Erro: retorna ao primeiro intervalo.
       idx = 0;
+
     }
-    var baseDias = progression[idx];
-    var diffBonus = ADAPTIVE_DIFF_BONUS[q.dificuldade] || 0;
-    var dias = baseDias + diffBonus;
-    if (classificacao === 'seguranca' && qs.acertosConsecutivos >= ADAPTIVE_CONSEC_MIN) {
-      dias = Math.round(dias * ADAPTIVE_CONSEC_MULT);
+
+  } else {
+
+    // Reclassificação: não avança a sequência.
+    if (classificacao === 'seguranca') {
+
+      idx = Math.max(0, idx);
+
+    } else {
+
+      idx = 0;
+
     }
-    dias = Math.max(1, Math.min(dias, ADAPTIVE_MAX_DIAS));
-    qs.intervaloAtual = idx;
-    return dias;
+
   }
+
+  // Proteção contra índices inválidos.
+  idx = Math.max(
+    0,
+    Math.min(idx, progression.length - 1)
+  );
+
+  var baseDias = progression[idx];
+
+  var diffBonus =
+    ADAPTIVE_DIFF_BONUS[q.dificuldade] || 0;
+
+  var dias = baseDias + diffBonus;
+
+  // Bônus apenas para acertos seguros consecutivos.
+  if (
+    classificacao === 'seguranca' &&
+    qs.acertosConsecutivos >= ADAPTIVE_CONSEC_MIN
+  ) {
+
+    dias = Math.round(
+      dias * ADAPTIVE_CONSEC_MULT
+    );
+
+  }
+
+  dias = Math.max(
+    1,
+    Math.min(dias, ADAPTIVE_MAX_DIAS)
+  );
+
+  qs.intervaloAtual = idx;
+
+  return dias;
+}
+
 
   /* Melhoria 2 — Normalização de classificação */
   function normalizeClassification(correct, classificacao) {
@@ -593,7 +838,46 @@ var GAMIF_NIVEIS = Array.isArray(GAMIF_CFG.niveis) && GAMIF_CFG.niveis.length ? 
     for (var r = 0; r < result.length; r++) porNivel[result[r].nivel].push(result[r]);
     var final = [];
     for (var nv = 1; nv <= 4; nv++) final = final.concat(shuffleArray(porNivel[nv]));
-    return final;
+
+/* ============================================================
+   EMBARALHAMENTO DAS ALTERNATIVAS
+
+   Cria cópias das questões.
+   Não altera o banco original.
+
+   Os IDs das alternativas e o gabarito permanecem iguais.
+============================================================ */
+
+var saida = [];
+
+for (var x = 0; x < final.length; x++) {
+
+  var item = final[x];
+
+  // Cópia independente da questão.
+  var copiaQuestao = Object.assign(
+    {},
+    item.q
+  );
+
+  // Copia e embaralha as alternativas.
+  // O identificador original é preservado.
+  copiaQuestao.alternativas = shuffleArray(
+    (item.q.alternativas || []).slice()
+  );
+
+  saida.push({
+
+    q: copiaQuestao,
+
+    nivel: item.nivel
+
+  });
+
+}
+
+return saida;
+
   }
 
   /* Melhoria 1 — Classificação de desempenho no exercício */
@@ -858,83 +1142,292 @@ var GAMIF_NIVEIS = Array.isArray(GAMIF_CFG.niveis) && GAMIF_CFG.niveis.length ? 
   /* ============================================================
      SESSÃO DE QUESTÕES
   ============================================================ */
-  function startQuestionSession(ids, modo) {
-    var list;
-    if (ids && ids.length) list = ids.map(getQuestion).filter(Boolean);
-    else list = filterQuestions();
-    if (list.length === 0) { window.alert('Nenhuma questão disponível para esta sessão.'); return; }
-    var idsArr = shuffleArray(list.map(function (q) { return q.id; }));
-    questionRunning = { ids: idsArr, index: 0, respostas: {}, revealed: {}, startedAt: new Date().toISOString(), modo: modo || 'livre', classificacoes: {} };
-    navigate('questao-run');
+
+/* ============================================================
+   INÍCIO DE SESSÃO DE QUESTÕES
+
+   Sessões comuns:
+   Embaralham a ordem das questões.
+
+   Recuperação de erros:
+   Preserva a ordem de prioridade calculada pelo banco.
+============================================================ */
+
+function startQuestionSession(ids, modo) {
+
+  var list;
+
+  if (ids && ids.length) {
+
+    list = ids.map(function(id) {
+      return getQuestion(id);
+    }).filter(Boolean);
+
+  } else {
+
+    list = filterQuestions();
+
   }
+
+  if (list.length === 0) {
+
+    window.alert(
+      'Nenhuma questão disponível para esta sessão.'
+    );
+
+    return;
+
+  }
+
+  var idsArr = list.map(function(q) {
+    return q.id;
+  });
+
+  // Não embaralhar a recuperação de erros.
+  if (modo !== 'erros') {
+    idsArr = shuffleArray(idsArr);
+  }
+
+  questionRunning = {
+
+    ids: idsArr,
+
+    index: 0,
+
+    respostas: {},
+
+    revealed: {},
+
+    startedAt: new Date().toISOString(),
+
+    modo: modo || 'livre',
+
+    classificacoes: {}
+
+  };
+
+  navigate('questao-run');
+}
+
 
   /* Reformulado — Melhorias 2, 3 e 4 */
-  function commitQuestionAnswer(qid, altId, opts) {
-    opts = opts || {};
-    var q = getQuestion(qid); if (!q) return null;
-    var qs = getQuestionUserState(qid);
-    var correta = altId === q.gabarito;
-    var classificacao = normalizeClassification(correta, opts.classificacao);
 
-    qs.tentativas += 1;
-    if (correta) {
-      qs.acertos += 1;
-      qs.acertosConsecutivos = (qs.acertosConsecutivos || 0) + 1;
-    } else {
-      qs.erros += 1;
-      qs.acertosConsecutivos = 0;
-    }
-    qs.ultimaResposta = altId;
-    qs.ultimaCorreta = correta;
-    qs.ultimaTentativa = new Date().toISOString();
-    qs.ultimaClassificacao = classificacao;
-    qs.status = correta ? 'acerto' : 'erro';
+/* ============================================================
+   REGISTRO DE RESPOSTAS E BANCO DE ERROS
 
-    qs.historico.push({ data: qs.ultimaTentativa, resposta: altId, correta: correta, classificacao: classificacao });
-    if (qs.historico.length > 50) qs.historico = qs.historico.slice(-50);
+   Correções:
+   - Histórico preservado.
+   - Erros individuais não são apagados.
+   - Um acerto isolado não resolve todos os erros.
+   - Dois acertos consecutivos são necessários para
+     considerar o erro anterior superado.
+============================================================ */
 
-    /* Melhoria 3 — registro de erro detalhado */
-    if (!correta) {
-      var cat = opts.categoriaErro || suggestErrorCategory(q, altId);
-      qs.errosDetalhados.push({
-        data: qs.ultimaTentativa,
-        escolhida: altId,
-        correta: q.gabarito,
-        categoria: cat,
-        sugeridaPeloSistema: !opts.categoriaErro,
-        resolvido: false
-      });
-      if (qs.errosDetalhados.length > 50) qs.errosDetalhados = qs.errosDetalhados.slice(-50);
-    } else if (qs.errosDetalhados.length > 0) {
-      /* Acerto posterior → marcar todos os erros anteriores como resolvidos */
-      for (var i = 0; i < qs.errosDetalhados.length; i++) {
-        if (!qs.errosDetalhados[i].resolvido) qs.errosDetalhados[i].resolvido = true;
-      }
-    }
+function commitQuestionAnswer(qid, altId, opts) {
 
-    /* Melhoria 2 — intervalo adaptativo */
-    var dias = computeAdaptiveInterval(qid, classificacao);
-    qs.proximaRevisao = addDaysIso(dias);
-    qs.historicoRevisoes.push({ data: qs.ultimaTentativa, classificacao: classificacao, intervaloAplicado: dias });
-    if (qs.historicoRevisoes.length > 30) qs.historicoRevisoes = qs.historicoRevisoes.slice(-30);
+  opts = opts || {};
 
-    AppState.stats.questoesRespondidas += 1;
-    if (correta) AppState.stats.acertos += 1; else AppState.stats.erros += 1;
+  var q = getQuestion(qid);
 
-    var st = getModuleUserState(q.moduloId);
-    if (st.status === 'nao_iniciado') st.status = 'em_estudo';
-    st.ultimaAtividade = new Date().toISOString();
-    registerXP(correta ? XP_CFG.acerto : XP_CFG.erro);
-    saveState();
+  if (!q) return null;
 
-    return {
-      correta: correta,
-      classificacao: classificacao,
-      categoriaErro: !correta ? qs.errosDetalhados[qs.errosDetalhados.length - 1].categoria : null,
-      proximaRevisao: qs.proximaRevisao,
-      diasAteRevisao: dias
-    };
+  var qs = getQuestionUserState(qid);
+
+  var correta = altId === q.gabarito;
+
+  var classificacao = normalizeClassification(
+    correta,
+    opts.classificacao
+  );
+
+  var agora = new Date().toISOString();
+
+  qs.tentativas += 1;
+
+  if (correta) {
+
+    qs.acertos += 1;
+
+    qs.acertosConsecutivos =
+      (qs.acertosConsecutivos || 0) + 1;
+
+  } else {
+
+    qs.erros += 1;
+    qs.acertosConsecutivos = 0;
+
   }
+
+  qs.ultimaResposta = altId;
+  qs.ultimaCorreta = correta;
+  qs.ultimaTentativa = agora;
+  qs.ultimaClassificacao = classificacao;
+  qs.status = correta ? 'acerto' : 'erro';
+
+  // Histórico geral da questão.
+  qs.historico.push({
+    data: agora,
+    resposta: altId,
+    correta: correta,
+    classificacao: classificacao
+  });
+
+  if (qs.historico.length > 100) {
+    qs.historico = qs.historico.slice(-100);
+  }
+
+  // ==========================================================
+  // REGISTRO INDIVIDUAL DOS ERROS
+  // ==========================================================
+
+  if (!correta) {
+
+    // Um novo erro interrompe a sequência de recuperação
+    // dos erros anteriores ainda não resolvidos.
+    for (
+      var i = 0;
+      i < qs.errosDetalhados.length;
+      i++
+    ) {
+
+      var erroAnterior = qs.errosDetalhados[i];
+
+      if (!erroAnterior.resolvido) {
+        erroAnterior.acertosPosteriores = 0;
+      }
+
+    }
+
+    var cat =
+      opts.categoriaErro ||
+      suggestErrorCategory(q, altId);
+
+    qs.errosDetalhados.push({
+
+      data: agora,
+
+      escolhida: altId,
+
+      correta: q.gabarito,
+
+      categoria: cat,
+
+      sugeridaPeloSistema: !opts.categoriaErro,
+
+      resolvido: false,
+
+      acertosPosteriores: 0,
+
+      resolvidoEm: null
+
+    });
+
+    if (qs.errosDetalhados.length > 100) {
+      qs.errosDetalhados =
+        qs.errosDetalhados.slice(-100);
+    }
+
+  } else {
+
+    // Um acerto posterior é registrado em cada erro
+    // ainda não resolvido.
+    for (
+      var j = 0;
+      j < qs.errosDetalhados.length;
+      j++
+    ) {
+
+      var erro = qs.errosDetalhados[j];
+
+      if (erro.resolvido) continue;
+
+      erro.acertosPosteriores =
+        (erro.acertosPosteriores || 0) + 1;
+
+      // Exige dois acertos consecutivos.
+      if (qs.acertosConsecutivos >= 2) {
+
+        erro.resolvido = true;
+        erro.resolvidoEm = agora;
+
+      }
+
+    }
+
+  }
+
+  // ==========================================================
+  // REVISÃO ESPAÇADA
+  // ==========================================================
+
+  var dias = computeAdaptiveInterval(
+    qid,
+    classificacao,
+    true
+  );
+
+  qs.proximaRevisao = addDaysIso(dias);
+
+  qs.historicoRevisoes.push({
+
+    data: agora,
+
+    classificacao: classificacao,
+
+    intervaloAplicado: dias
+
+  });
+
+  if (qs.historicoRevisoes.length > 100) {
+    qs.historicoRevisoes =
+      qs.historicoRevisoes.slice(-100);
+  }
+
+  // ==========================================================
+  // ESTATÍSTICAS GERAIS
+  // ==========================================================
+
+  AppState.stats.questoesRespondidas += 1;
+
+  if (correta) {
+    AppState.stats.acertos += 1;
+  } else {
+    AppState.stats.erros += 1;
+  }
+
+  var st = getModuleUserState(q.moduloId);
+
+  if (st.status === 'nao_iniciado') {
+    st.status = 'em_estudo';
+  }
+
+  st.ultimaAtividade = agora;
+
+  registerXP(
+    correta ? XP_CFG.acerto : XP_CFG.erro
+  );
+
+  saveState();
+
+  return {
+
+    correta: correta,
+
+    classificacao: classificacao,
+
+    categoriaErro: !correta
+      ? qs.errosDetalhados[
+          qs.errosDetalhados.length - 1
+        ].categoria
+      : null,
+
+    proximaRevisao: qs.proximaRevisao,
+
+    diasAteRevisao: dias
+
+  };
+}
+
 
   function answerQuestion(altId) {
     if (!questionRunning) return;
@@ -948,22 +1441,66 @@ var GAMIF_NIVEIS = Array.isArray(GAMIF_CFG.niveis) && GAMIF_CFG.niveis.length ? 
   }
 
   /* Melhoria 2 — reclassificação pelo aluno */
-  function setQuestionClassification(qid, classificacao) {
-    if (!questionRunning) return;
-    var validos = ['seguranca', 'duvida', 'confusao', 'desconhecimento', 'interpretacao'];
-    if (validos.indexOf(classificacao) === -1) return;
-    var qs = getQuestionUserState(qid);
-    qs.ultimaClassificacao = classificacao;
-    /* Recalcular próxima revisão com base na nova classificação */
-    var dias = computeAdaptiveInterval(qid, classificacao);
-    qs.proximaRevisao = addDaysIso(dias);
-    if (qs.historicoRevisoes && qs.historicoRevisoes.length > 0) {
-      qs.historicoRevisoes[qs.historicoRevisoes.length - 1].classificacao = classificacao;
-      qs.historicoRevisoes[qs.historicoRevisoes.length - 1].intervaloAplicado = dias;
-    }
-    if (questionRunning) questionRunning.classificacoes[qid] = classificacao;
-    saveState(); render();
+
+/* ============================================================
+   RECLASSIFICAÇÃO MANUAL DA REVISÃO
+
+   A alteração da classificação não deve ser contabilizada
+   como uma nova tentativa nem avançar a progressão.
+============================================================ */
+
+function setQuestionClassification(qid, classificacao) {
+
+  if (!questionRunning) return;
+
+  var validos = [
+    'seguranca',
+    'duvida',
+    'confusao',
+    'desconhecimento',
+    'interpretacao'
+  ];
+
+  if (validos.indexOf(classificacao) === -1) {
+    return;
   }
+
+  var qs = getQuestionUserState(qid);
+
+  qs.ultimaClassificacao = classificacao;
+
+  // Recalcula sem avançar a sequência.
+  var dias = computeAdaptiveInterval(
+    qid,
+    classificacao,
+    false
+  );
+
+  qs.proximaRevisao = addDaysIso(dias);
+
+  if (
+    qs.historicoRevisoes &&
+    qs.historicoRevisoes.length > 0
+  ) {
+
+    var ultima =
+      qs.historicoRevisoes[
+        qs.historicoRevisoes.length - 1
+      ];
+
+    ultima.classificacao = classificacao;
+    ultima.intervaloAplicado = dias;
+    ultima.reclassificadaManualmente = true;
+
+  }
+
+  questionRunning.classificacoes[qid] =
+    classificacao;
+
+  saveState();
+  render();
+}
+
 
   /* Melhoria 3 — reclassificação da categoria do erro */
   function setQuestionErrorCategory(qid, categoria) {
@@ -1878,7 +2415,26 @@ function moduleCardHtml(m) {
       html += '<div class="explain-block"><h4>Como reconhecer em outras questões</h4><p>' + esc(ex.comoApareceEmConcurso || '') + '</p></div>';
 
       /* 4.2 — Exemplo inédito */
-      html += '<div class="explain-block example-inedito"><h4>💡 Exemplo inédito</h4><p>' + esc(exemploInedito) + '</p></div>';
+
+if (exemploInedito) {
+
+  html +=
+    '<div class="explain-block example-inedito">' +
+      '<h4>💡 Exemplo inédito</h4>' +
+      '<p>' + esc(exemploInedito) + '</p>' +
+    '</div>';
+
+} else {
+
+  html +=
+    '<div class="explain-block example-inedito">' +
+      '<h4>⚠️ Exemplo ainda não cadastrado</h4>' +
+      '<p>Este comentário precisa receber um exemplo ' +
+      'novo e específico para o conceito desta questão.</p>' +
+    '</div>';
+
+}
+
 
       /* Melhoria 2 — classificação */
       html += renderClassificationPicker(qid, currentClass);
@@ -2905,21 +3461,58 @@ function moduleCardHtml(m) {
     render();
   }
 
-  function setExerciseClassification(qid, cls) {
-    if (!exerciseRunning) return;
-    var validos = ['seguranca', 'duvida', 'confusao', 'desconhecimento', 'interpretacao'];
-    if (validos.indexOf(cls) === -1) return;
-    exerciseRunning.classificacoes[qid] = cls;
-    var qs = getQuestionUserState(qid);
-    qs.ultimaClassificacao = cls;
-    var dias = computeAdaptiveInterval(qid, cls);
-    qs.proximaRevisao = addDaysIso(dias);
-    if (qs.historicoRevisoes && qs.historicoRevisoes.length > 0) {
-      qs.historicoRevisoes[qs.historicoRevisoes.length - 1].classificacao = cls;
-      qs.historicoRevisoes[qs.historicoRevisoes.length - 1].intervaloAplicado = dias;
-    }
-    saveState(); render();
+
+function setExerciseClassification(qid, cls) {
+
+  if (!exerciseRunning) return;
+
+  var validos = [
+    'seguranca',
+    'duvida',
+    'confusao',
+    'desconhecimento',
+    'interpretacao'
+  ];
+
+  if (validos.indexOf(cls) === -1) {
+    return;
   }
+
+  exerciseRunning.classificacoes[qid] = cls;
+
+  var qs = getQuestionUserState(qid);
+
+  qs.ultimaClassificacao = cls;
+
+  // Reclassificar não é uma nova tentativa.
+  var dias = computeAdaptiveInterval(
+    qid,
+    cls,
+    false
+  );
+
+  qs.proximaRevisao = addDaysIso(dias);
+
+  if (
+    qs.historicoRevisoes &&
+    qs.historicoRevisoes.length > 0
+  ) {
+
+    var ultima =
+      qs.historicoRevisoes[
+        qs.historicoRevisoes.length - 1
+      ];
+
+    ultima.classificacao = cls;
+    ultima.intervaloAplicado = dias;
+    ultima.reclassificadaManualmente = true;
+
+  }
+
+  saveState();
+  render();
+}
+
 
   function nextExercise() {
     if (exerciseRunning && exerciseRunning.index < exerciseRunning.items.length - 1) {
@@ -3085,7 +3678,28 @@ function moduleCardHtml(m) {
       html += '<div class="explain-block"><h4>Conceito cobrado</h4><p>' + esc(ex.conceitoCobrado || '') + '</p></div>';
       if (ex.pegadinha) html += '<div class="explain-block"><h4>Pegadinha</h4><p>' + esc(ex.pegadinha) + '</p></div>';
       html += '<div class="explain-block"><h4>Como reconhecer em outras questões</h4><p>' + esc(ex.comoApareceEmConcurso || '') + '</p></div>';
-      html += '<div class="explain-block example-inedito"><h4>💡 Exemplo inédito</h4><p>' + esc(getExemploInedito(q.id)) + '</p></div>';
+
+var exemploExercicio = getExemploInedito(q.id);
+
+if (exemploExercicio) {
+
+  html +=
+    '<div class="explain-block example-inedito">' +
+      '<h4>💡 Exemplo inédito</h4>' +
+      '<p>' + esc(exemploExercicio) + '</p>' +
+    '</div>';
+
+} else {
+
+  html +=
+    '<div class="explain-block example-inedito">' +
+      '<h4>⚠️ Exemplo ainda não cadastrado</h4>' +
+      '<p>Este comentário precisa receber um exemplo ' +
+      'novo e específico para o conceito desta questão.</p>' +
+    '</div>';
+
+}
+
 
       /* Classificação opcional (mesmo seletor usado em questões) */
       html += renderClassificationPicker(q.id, cls);
