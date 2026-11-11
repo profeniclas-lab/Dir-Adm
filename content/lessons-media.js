@@ -362,64 +362,67 @@ window.LESSONS_MEDIA = {
   'DA-24': {
     id: 'L-DA-24',
     moduloId: 'DA-24',
-    objetivo: 'Compreender o conceito e o regime da improbidade administrativa (Lei 8.429/1992, com as alterações da Lei 14.230/2021): atos de improbidade, requisitos (dolo), categorias (enriquecimento ilícito, prejuízo ao erário e atentado a princípios), sanções e responsabilização.',
+    objetivo: 'Compreender o conceito e o regime da improbidade administrativa (Lei 8.429/1992, com as alterações da Lei 14.230/2021): atos de improbidade, requisito do dolo, categorias (enriquecimento ilícito, prejuízo ao erário e atentado a princípios), **sanções atualizadas**, legitimidade (MP e pessoas jurídicas interessadas) e responsabilização.',
     prerequisitos: ['DA-15', 'DA-17', 'DA-22'],
-    introducao: 'Improbidade administrativa é uma das matérias mais sensíveis do Direito Administrativo — porque pune o agente ímprobo, protege o patrimônio público e sofreu alterações legislativas profundas em 2021. A Lei 14.230/2021 reformulou o regime, especialmente ao exigir DOLO para todas as modalidades. É tema de alta incidência e de pegadinhas finas.',
-    explicacaoSimples: 'Improbidade é a conduta desonesta do agente público que viola os deveres de honestidade, imparcialidade e legalidade. Não é qualquer irregularidade — é uma conduta grave, que atenta contra a Administração. A Lei 8.429/92 define três grandes grupos de atos: os que geram enriquecimento ilícito, os que causam prejuízo ao erário e os que atentam contra os princípios da Administração. Após a Lei 14.230/2021, exige-se DOLO em todas as modalidades.',
-    explicacaoTecnica: 'IMPROBIDADE ADMINISTRATIVA é a conduta dolosa do agente público (ou de terceiro) que viola os deveres de honestidade, imparcialidade, legalidade e lealdade às instituições, causando enriquecimento ilícito, prejuízo ao erário ou atentado a princípios administrativos. REGIME: Lei 8.429/1992, alterada pela Lei 14.230/2021. MODALIDADES (após a Lei 14.230/2021): (a) ENRIQUECIMENTO ILÍCITO (art. 9º): auferir vantagem patrimonial indevida em razão do cargo; (b) PREJUÍZO AO ERÁRIO (art. 10): causar dano ao patrimônio público; (c) ATENTADO A PRINCÍPIOS (art. 11): violar os deveres de honestidade, imparcialidade, legalidade e lealdade às instituições (rol taxativo — não admite interpretação ampliativa). REQUISITO SUBJETIVO: DOLO (vontade livre e consciente) em TODAS as modalidades — a Lei 14.230/2021 eliminou a modalidade culposa. SANÇÕES (art. 12): (a) enriquecimento ilícito: perda dos bens, perda da função pública, suspensão dos direitos políticos de 8 a 14 anos, multa civil; (b) prejuízo ao erário: ressarcimento, perda da função, suspensão de 4 a 8 anos, multa; (c) atentado a princípios: perda da função, suspensão de 4 a 8 anos, multa (não há ressarcimento porque não há dano patrimonial). AÇÃO: ação civil pública por improbidade administrativa, ajuizada pelo MP. LEGITIMIDADE PASSIVA: agentes públicos e terceiros que induzam ou concorram para a prática do ato. PRESCRIÇÃO: 8 anos (regra geral).',
+    introducao: 'Improbidade administrativa é uma das matérias mais sensíveis do Direito Administrativo — porque pune o agente ímprobo, protege o patrimônio público e sofreu alterações legislativas profundas em 2021. A Lei 14.230/2021 reformulou o regime, especialmente ao exigir DOLO para todas as modalidades e ao reorganizar as sanções. Além disso, o STF restabeleceu a legitimidade concorrente das pessoas jurídicas interessadas. Esses pontos são os mais cobrados em prova.',
+    explicacaoSimples: 'Improbidade é a conduta desonesta do agente público que viola os deveres de honestidade, imparcialidade e legalidade. Não é qualquer irregularidade — é uma conduta grave, dolosa, que atenta contra a Administração. A Lei 8.429/92 define três grandes grupos de atos: os que geram enriquecimento ilícito, os que causam prejuízo ao erário e os que atentam contra os princípios da Administração. Após a Lei 14.230/2021, exige-se DOLO em todas as modalidades, e as sanções foram reorganizadas. E o STF decidiu que **não é só o MP que pode propor a ação** — as pessoas jurídicas interessadas também podem.',
+    explicacaoTecnica: 'IMPROBIDADE ADMINISTRATIVA é a conduta dolosa do agente público (ou de terceiro) que viola os deveres de honestidade, imparcialidade, legalidade e lealdade às instituições, causando enriquecimento ilícito, prejuízo ao erário ou atentado a princípios administrativos. REGIME: Lei 8.429/1992, alterada pela Lei 14.230/2021. MODALIDADES (após a Lei 14.230/2021): (a) ENRIQUECIMENTO ILÍCITO (art. 9º): auferir vantagem patrimonial indevida em razão do cargo; (b) PREJUÍZO AO ERÁRIO (art. 10): causar dano ao patrimônio público; (c) ATENTADO A PRINCÍPIOS (art. 11): violar os deveres de honestidade, imparcialidade, legalidade e lealdade às instituições (rol taxativo). REQUISITO SUBJETIVO: **DOLO** (vontade livre e consciente de alcançar o resultado ilícito) em TODAS as modalidades — a Lei 14.230/2021 eliminou a modalidade culposa. SANÇÕES (art. 12, com redação da Lei 14.230/2021): (a) ENRIQUECIMENTO ILÍCITO (art. 9º): perda dos bens ou valores acrescidos ilicitamente, perda da função pública, **suspensão dos direitos políticos até 14 anos**, multa civil equivalente ao valor do acréscimo patrimonial, proibição de contratar com o poder público pelo prazo não superior a 14 anos; (b) PREJUÍZO AO ERÁRIO (art. 10): perda dos bens ou valores acrescidos ilicitamente (se concorrer), perda da função pública, **suspensão dos direitos políticos até 12 anos**, multa civil equivalente ao valor do dano, proibição de contratar pelo prazo não superior a 12 anos; (c) ATENTADO A PRINCÍPIOS (art. 11): **multa civil de até 24 vezes o valor da remuneração** e **proibição de contratar pelo prazo não superior a 4 anos** — **NÃO há previsão de suspensão dos direitos políticos** para o art. 11. LEGITIMIDADE ATIVA: o art. 17 da Lei 8.429/92, na redação da Lei 14.230/2021, atribuía exclusivamente ao Ministério Público a legitimidade. O STF, nas ADIs 7042 e 7043, **restabeleceu a legitimidade concorrente e disjuntiva** entre o Ministério Público e as **pessoas jurídicas interessadas** (entes públicos lesados) para propor a ação de improbidade e celebrar acordos de não persecução civil. AÇÃO: civil pública por improbidade, com legitimidade concorrente (MP + pessoa jurídica interessada). LEGITIMIDADE PASSIVA: agentes públicos e terceiros que induzam ou concorram. PRESCRIÇÃO: 8 anos (regra geral).',
     exemplos: [
       'Enriquecimento ilícito: receber propina para favorecer empresa em licitação.',
       'Prejuízo ao erário: superfaturar obra pública.',
       'Atentado a princípios: nomear parente para cargo em comissão (nepotismo).',
       'Dolo: o agente sabia e quis a conduta ilícita.',
-      'Sanção — enriquecimento: perda dos bens, perda da função, suspensão 8 a 14 anos, multa.',
-      'Sanção — prejuízo ao erário: ressarcimento, perda da função, suspensão 4 a 8 anos, multa.',
-      'Sanção — atentado a princípios: perda da função, suspensão 4 a 8 anos, multa.',
-      'Ação: proposta pelo MP.',
+      'Sanção — enriquecimento (art. 9º): perda dos bens, perda da função, suspensão até 14 anos, multa, proibição de contratar até 14 anos.',
+      'Sanção — prejuízo ao erário (art. 10): perda dos bens (se concorrer), perda da função, suspensão até 12 anos, multa, proibição de contratar até 12 anos.',
+      'Sanção — atentado a princípios (art. 11): multa de até 24 vezes a remuneração, proibição de contratar até 4 anos. **Sem suspensão de direitos políticos.**',
+      'Legitimidade: MP e pessoa jurídica interessada (concorrente) podem propor a ação.',
+      'Ação: proposta pelo MP ou pela pessoa jurídica lesada.',
       'Terceiro: também pode ser responsabilizado se concorrer para o ato.'
     ],
     comparacoes: [
-      { termoA: 'Improbidade', termoB: 'Irregularidade administrativa', diferenca: 'IMPROBIDADE: conduta DOLOSA e GRAVE, que viola os deveres de honestidade e atenta contra a Administração — sujeita às sanções da Lei 8.429/92. IRREGULARIDADE: falha formal ou procedimental, que pode gerar sanções administrativas, mas não necessariamente improbidade. Nem toda irregularidade é improbidade; a improbidade exige DOLO e gravidade.' },
-      { termoA: 'Enriquecimento ilícito', termoB: 'Prejuízo ao erário', diferenca: 'ENRIQUECIMENTO: o agente aufere vantagem patrimonial indevida (há enriquecimento pessoal). PREJUÍZO AO ERÁRIO: o patrimônio público é lesado (há dano ao Estado), independentemente de enriquecimento do agente. As sanções são distintas: no enriquecimento, há perda dos bens; no prejuízo, há ressarcimento.' },
-      { termoA: 'Atentado a princípios', termoB: 'Enriquecimento ilícito', diferenca: 'ATENTADO A PRINCÍPIOS: viola deveres de honestidade, imparcialidade, legalidade e lealdade — NÃO exige dano patrimonial nem enriquecimento. ENRIQUECIMENTO: exige vantagem patrimonial indevida. As sanções do atentado a princípios são mais brandas do que as do enriquecimento.' },
-      { termoA: 'Regime anterior (culpa/dolo)', termoB: 'Regime atual (só dolo)', diferenca: 'ANTES da Lei 14.230/2021: admitia-se improbidade por culpa (nas modalidades de prejuízo ao erário e atentado a princípios). DEPOIS: exige-se DOLO em TODODAS as modalidades. A mudança é uma das mais cobradas em prova — e é pegadinha clássica.' },
-      { termoA: 'Sanções da improbidade', termoB: 'Sanções penais', diferenca: 'IMPROBIDADE: sanções civis e políticas (perda de bens, perda da função, suspensão de direitos políticos, multa), aplicadas pela Justiça Civil. PENAIS: sanções criminais (prisão, multa), aplicadas pela Justiça Penal. São regimes distintos — um ato pode gerar as duas responsabilizações, mas elas não se confundem.' }
+      { termoA: 'Enriquecimento ilícito (art. 9º)', termoB: 'Prejuízo ao erário (art. 10)', diferenca: 'ENRIQUECIMENTO: o agente aufere vantagem patrimonial indevida. PREJUÍZO AO ERÁRIO: o patrimônio público é lesado, independentemente de enriquecimento do agente. Sanções distintas: enriquecimento → suspensão até 14 anos; prejuízo → suspensão até 12 anos, com ressarcimento.' },
+      { termoA: 'Atentado a princípios (art. 11)', termoB: 'Enriquecimento ilícito (art. 9º)', diferenca: 'ATENTADO A PRINCÍPIOS: viola deveres de honestidade, imparcialidade, legalidade e lealdade — **não exige dano patrimonial nem enriquecimento**. Sanções: multa de até 24 vezes a remuneração e proibição de contratar até 4 anos — **sem suspensão de direitos políticos**. ENRIQUECIMENTO: exige vantagem patrimonial indevida, com sanções mais graves.' },
+      { termoA: 'Regime anterior (culpa/dolo)', termoB: 'Regime atual (só dolo)', diferenca: 'ANTES da Lei 14.230/2021: admitia-se improbidade por culpa nas modalidades de prejuízo ao erário e atentado a princípios. DEPOIS: exige-se **DOLO** em todas as modalidades. A modalidade culposa foi extinta.' },
+      { termoA: 'Legitimidade exclusiva do MP (lei)', termoB: 'Legitimidade concorrente (STF)', diferenca: 'A Lei 14.230/2021 atribuiu exclusividade ao MP. O STF (ADIs 7042 e 7043) **restabeleceu a legitimidade concorrente** das pessoas jurídicas interessadas (entes públicos lesados) para propor a ação e celebrar acordos de não persecução civil. O entendimento atual é o da **legitimidade concorrente**.' },
+      { termoA: 'Sanções da improbidade', termoB: 'Sanções penais', diferenca: 'IMPROBIDADE: sanções civis e políticas (perda de bens, perda da função, suspensão de direitos políticos, multa), aplicadas pela Justiça Civil. PENAIS: sanções criminais (prisão, multa), aplicadas pela Justiça Penal. Regimes distintos — podem coexistir.' }
     ],
-    aplicacaoEmConcurso: 'Altíssima frequência: modalidades (enriquecimento, prejuízo, atentado a princípios); exigência de dolo (após a Lei 14.230/2021); sanções; legitimidade do MP; prescrição. A banca ama: dizer que a improbidade admite culpa (não admite mais); confundir enriquecimento com prejuízo; trocar sanções; dizer que o particular não pode ser responsabilizado.',
+    aplicacaoEmConcurso: 'Altíssima frequência: modalidades; exigência de dolo (após a Lei 14.230/2021); **sanções atualizadas** (especialmente os limites de suspensão de direitos políticos: art. 9º até 14 anos; art. 10 até 12 anos; art. 11 sem suspensão); **legitimidade concorrente** (MP + pessoa jurídica interessada) após o STF; prescrição. A banca ama: dizer que a improbidade admite culpa (não admite mais); **trocar os limites de suspensão**; **dizer que o art. 11 prevê suspensão de direitos políticos** (não prevê); **dizer que só o MP pode propor a ação** (o STF restabeleceu a legitimidade concorrente).',
     pegadinhas: [
-      'Dizer que a improbidade admite culpa. NÃO — desde a Lei 14.230/2021, exige-se DOLO em todas as modalidades.',
-      'Confundir enriquecimento ilícito com prejuízo ao erário. Um exige vantagem pessoal; o outro, dano ao patrimônio público.',
+      'Dizer que a improbidade admite culpa. NÃO — desde a Lei 14.230/2021, exige-se DOLO.',
+      '**Dizer que o art. 10 (prejuízo ao erário) prevê suspensão de 4 a 8 anos**. ERRADO. A redação atual prevê **até 12 anos**.',
+      '**Dizer que o art. 11 (atentado a princípios) prevê suspensão de direitos políticos**. ERRADO. A redação atual **não prevê** essa sanção para o art. 11 — apenas multa e proibição de contratar.',
+      '**Dizer que o MP é o único legitimado para propor a ação**. ERRADO. O STF restabeleceu a legitimidade concorrente das pessoas jurídicas interessadas (ADIs 7042 e 7043).',
+      'Confundir enriquecimento ilícito com prejuízo ao erário.',
       'Dizer que o atentado a princípios exige dano patrimonial. NÃO exige.',
-      'Trocar as sanções de cada modalidade (ex.: suspensão de 8 a 14 anos é do enriquecimento).',
-      'Dizer que o terceiro não pode ser responsabilizado. PODE — se concorrer para o ato.',
-      'Achar que improbidade e crime são a mesma coisa. São regimes distintos (civil x penal).',
-      'Dizer que a ação de improbidade pode ser proposta por qualquer cidadão. NÃO — é do MP (ação civil pública).'
+      'Dizer que o terceiro não pode ser responsabilizado. PODE.',
+      'Achar que improbidade e crime são a mesma coisa.',
+      'Dizer que a ação de improbidade pode ser proposta por qualquer cidadão. NÃO — é do MP e da pessoa jurídica interessada.'
     ],
     errosComuns: [
       'Decorar as modalidades sem exemplos.',
       'Não saber da mudança da Lei 14.230/2021 (dolo em todas as modalidades).',
-      'Confundir improbidade com irregularidade administrativa.',
-      'Trocar as sanções de cada modalidade.'
+      '**Desatualizar-se sobre os limites de suspensão de direitos políticos e sobre a legitimidade concorrente**.',
+      'Confundir improbidade com irregularidade administrativa.'
     ],
     resumo: [
-      'Improbidade: conduta DOLOSA e GRAVE, que viola deveres de honestidade e atenta contra a Administração.',
+      'Improbidade: conduta DOLOSA e GRAVE que viola deveres de honestidade.',
       'Lei 8.429/1992, alterada pela Lei 14.230/2021.',
-      'Modalidades: enriquecimento ilícito, prejuízo ao erário e atentado a princípios.',
-      'DOLO exigido em todas as modalidades (Lei 14.230/2021).',
-      'Sanções: perda de bens/função, suspensão de direitos políticos, multa.',
-      'Ação: civil pública, proposta pelo MP.',
+      'Modalidades: enriquecimento ilícito (art. 9º), prejuízo ao erário (art. 10) e atentado a princípios (art. 11).',
+      'DOLO exigido em todas as modalidades.',
+      'Sanções (art. 12): art. 9º → suspensão até 14 anos; art. 10 → suspensão até 12 anos; art. 11 → multa até 24x a remuneração + proibição de contratar até 4 anos (SEM suspensão de direitos políticos).',
+      'Legitimidade: MP e pessoa jurídica interessada (concorrente) — STF, ADIs 7042 e 7043.',
       'Terceiro também pode ser responsabilizado.',
       'Prescrição: 8 anos (regra geral).'
     ],
     modoProfessor: {
-      explicarMaisSimples: 'Improbidade é a conduta DESONESTA do agente público — não é qualquer irregularidade. A Lei 8.429/92 divide em três grupos: enriquecimento ilícito, prejuízo ao erário e atentado a princípios. Depois da Lei 14.230/2021, só há improbidade se houver DOLO.',
-      outroExemplo: 'Um servidor recebe propina para favorecer empresa em licitação: ENRIQUECIMENTO ILÍCITO (vantagem pessoal). Um gestor superfatura obra pública: PREJUÍZO AO ERÁRIO (dano ao patrimônio público). Um prefeito nomeia parente para cargo em comissão: ATENTADO A PRINCÍPIOS (nepotismo, sem dano patrimonial direto).',
-      compararConceitos: 'Improbidade x irregularidade = dolo/gravidade x falha formal. Enriquecimento x prejuízo = vantagem pessoal x dano ao erário. Atentado a princípios x enriquecimento = sem dano patrimonial x com vantagem pessoal. Antes x depois da Lei 14.230/2021 = culpa/dolo x só dolo. Civil x penal = regimes distintos.',
-      mostrarPegadinha: 'Cuidado: "A improbidade admite culpa". ERRADO. Desde a Lei 14.230/2021, exige-se DOLO em todas as modalidades. A modalidade culposa foi extinta.',
-      comoApareceEmConcurso: 'Questões pedem modalidade, sanção, exigência de dolo e legitimidade do MP.',
+      explicarMaisSimples: 'Improbidade é a conduta DESONESTA do agente público — não é qualquer irregularidade. A Lei 8.429/92 divide em três grupos: enriquecimento ilícito, prejuízo ao erário e atentado a princípios. Depois da Lei 14.230/2021, só há improbidade se houver DOLO. E o STF decidiu que não é só o MP que pode propor a ação: a pessoa jurídica lesada também pode.',
+      outroExemplo: 'Um servidor recebe propina para favorecer empresa em licitação: ENRIQUECIMENTO ILÍCITO (art. 9º) — suspensão de direitos políticos até 14 anos. Um gestor superfatura obra: PREJUÍZO AO ERÁRIO (art. 10) — suspensão até 12 anos. Um prefeito nomeia parente: ATENTADO A PRINCÍPIOS (art. 11) — multa de até 24x a remuneração e proibição de contratar até 4 anos, **sem suspensão de direitos políticos**.',
+      compararConceitos: 'Improbidade x irregularidade = dolo/gravidade x falha formal. Enriquecimento x prejuízo = vantagem pessoal x dano ao erário. Atentado a princípios x enriquecimento = sem dano patrimonial x com vantagem. **Legitimidade exclusiva do MP (lei) x concorrente (STF)**. Sanções: art. 9º (até 14 anos) x art. 10 (até 12) x art. 11 (sem suspensão).',
+      mostrarPegadinha: 'Cuidado: "O art. 11 prevê suspensão de direitos políticos". ERRADO. A redação atual do art. 12, III, prevê apenas multa e proibição de contratar. E "só o MP pode propor a ação" também está ERRADO — o STF restabeleceu a legitimidade concorrente.',
+      comoApareceEmConcurso: 'Questões pedem modalidade, sanção atualizada, exigência de dolo e legitimidade.',
       fazerPergunta: {
-        pergunta: 'Um servidor, por negligência, causa dano ao erário. Ele pode ser responsabilizado por improbidade administrativa?',
-        resposta: 'NÃO, pela Lei 14.230/2021. A improbidade exige DOLO em todas as modalidades. A negligência (culpa) pode gerar outras responsabilizações (civil, administrativa), mas não improbidade. Antes de 2021, admitia-se culpa nas modalidades de prejuízo ao erário e atentado a princípios — o que foi alterado.'
+        pergunta: 'Quais são as sanções para o ato de improbidade do art. 11 (atentado a princípios) após a Lei 14.230/2021?',
+        resposta: 'Multa civil de até 24 vezes o valor da remuneração e proibição de contratar com o poder público pelo prazo não superior a 4 anos. **Não há previsão de suspensão dos direitos políticos** para o art. 11.'
       }
     }
   }
