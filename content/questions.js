@@ -3424,20 +3424,20 @@ window.QUESTIONS = [
     dificuldade: 3, prioridade: 'alta',
     enunciado: 'Sobre as formas de extinção do ato administrativo, é CORRETO afirmar que:',
     alternativas: [
-      { id: 'A', texto: 'Cassação: descumprimento; caducidade: prazo/fato; contraposição: ato novo que extingue o anterior.' },
-      { id: 'B', texto: 'Cassação: prazo; caducidade: descumprimento.' },
-      { id: 'C', texto: 'Contraposição: descumprimento.' },
-      { id: 'D', texto: 'São sinônimos.' }
+      { id: 'A', texto: 'Cassação, caducidade e contraposição são sinônimos: todas extinguem o ato por descumprimento.' },
+      { id: 'B', texto: 'CASSAÇÃO: descumprimento de condição pelo beneficiário. CADUCIDADE (ou decaimento): extinção em razão de NORMA JURÍDICA SUPERVENIENTE que torna incompatível a manutenção do ato. CONTRAPOSIÇÃO: ato novo que extingue o anterior por incompatibilidade.' },
+      { id: 'C', texto: 'CADUCIDADE é o simples decurso de prazo do próprio ato — extinção pelo advento do termo final.' },
+      { id: 'D', texto: 'Todas as três são hipóteses de anulação por ilegalidade.' }
     ],
-    gabarito: 'A',
+    gabarito: 'B',
     explicacao: {
-      correta: 'CASSAÇÃO: descumprimento de condição. CADUCIDADE: decurso de prazo ou mudança de fato. CONTRAPOSIÇÃO: ato novo que extingue o anterior por incompatibilidade.',
-      incorretas: { B: 'Inverte.', C: 'Inverte.', D: 'São distintos.' },
-      conceitoCobrado: 'Formas de extinção do ato',
-      pegadinha: 'Confundir as formas.',
-      comoApareceEmConcurso: 'Cobrança conceitual.'
+      correta: 'CASSAÇÃO: descumprimento. CADUCIDADE: norma superveniente incompatível. CONTRAPOSIÇÃO: ato novo que extingue o anterior. O simples decurso de prazo é EXTINÇÃO PELO TERMO FINAL — instituto distinto da caducidade.',
+      incorretas: { A: 'São institutos distintos.', C: 'Define erroneamente caducidade (o decurso de prazo é termo final).', D: 'Anulação é por ilegalidade — não se confunde com extinção.' },
+      conceitoCobrado: 'Extinção do ato — cassação, caducidade, termo final e contraposição',
+      pegadinha: 'Confundir caducidade (norma superveniente) com decurso de prazo (termo final).',
+      comoApareceEmConcurso: 'Cenário que exige distinguir as formas de extinção.'
     },
-    tags: ['cassação', 'caducidade', 'contraposição']
+    tags: ['cassação', 'caducidade', 'contraposição', 'termo final']
   },
   {
     id: 'Q-DID-DA-19-003',
@@ -4394,22 +4394,22 @@ window.QUESTIONS = [
     tipo: 'DIDATICA', area: 'DA', moduloId: 'DA-24',
     subtema: 'Legitimidade da ação de improbidade',
     dificuldade: 2, prioridade: 'media',
-    enunciado: 'Sobre a legitimidade para propor ação civil pública por improbidade administrativa, é CORRETO afirmar que:',
+    enunciado: 'Sobre a legitimidade para propor ação civil pública por improbidade administrativa, após a Lei 14.230/2021 e a jurisprudência do STF, é CORRETO afirmar que:',
     alternativas: [
       { id: 'A', texto: 'Qualquer cidadão pode ajuizar a ação diretamente.' },
-      { id: 'B', texto: 'A ação é de competência do MINISTÉRIO PÚBLICO — o cidadão pode representar, mas não ajuizar diretamente.' },
-      { id: 'C', texto: 'Qualquer pessoa jurídica pode ajuizar.' },
-      { id: 'D', texto: 'Só a União pode ajuizar.' }
+      { id: 'B', texto: 'A legitimidade é CONCORRENTE e DISJUNTIVA entre o MINISTÉRIO PÚBLICO e as PESSOAS JURÍDICAS INTERESSADAS (entes públicos lesados) — o STF, nas ADIs 7042 e 7043, restabeleceu a legitimidade das pessoas jurídicas interessadas, que a Lei 14.230/2021 havia suprimido. O cidadão não ajuíza diretamente, mas pode representar ao MP.' },
+      { id: 'C', texto: 'Só a União pode ajuizar a ação.' },
+      { id: 'D', texto: 'A legitimidade é exclusiva do Ministério Público, sem possibilidade de concorrência.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'A ação civil pública por improbidade é de competência do MINISTÉRIO PÚBLICO (art. 17 da Lei 8.429/1992). O cidadão pode representar, mas não ajuizar.',
-      incorretas: { A: 'Não cabe ao cidadão ajuizar.', C: 'Não.', D: 'Não é só a União.' },
-      conceitoCobrado: 'Legitimidade da ação de improbidade',
-      pegadinha: 'Achar que o cidadão pode ajuizar diretamente.',
-      comoApareceEmConcurso: 'Cobrança conceitual.'
+      correta: 'Após a Lei 14.230/2021, o art. 17 atribuía exclusividade ao MP. O STF (ADIs 7042 e 7043) restabeleceu a legitimidade concorrente das pessoas jurídicas interessadas. O cidadão não ajuíza diretamente — pode representar.',
+      incorretas: { A: 'O cidadão não ajuíza diretamente.', C: 'Não é só a União.', D: 'O STF restabeleceu a legitimidade concorrente.' },
+      conceitoCobrado: 'Legitimidade da ação de improbidade (MP + pessoa jurídica interessada)',
+      pegadinha: 'Dizer que o MP é o único legitimado.',
+      comoApareceEmConcurso: 'Cobrança atualizada, com base nas ADIs 7042 e 7043.'
     },
-    tags: ['improbidade', 'legitimidade', 'MP']
+    tags: ['improbidade', 'legitimidade', 'MP', 'pessoa jurídica interessada']
   },
   {
     id: 'Q-DID-DA-24-005',
@@ -4844,24 +4844,24 @@ window.QUESTIONS = [
   {
     id: 'Q-DID-DA-27-003',
     tipo: 'DIDATICA', area: 'DA', moduloId: 'DA-27',
-    subtema: 'Desapropriação extraordinária',
+    subtema: 'Desapropriação extraordinária (art. 243) x sancionatória x indireta',
     dificuldade: 3, prioridade: 'baixa',
-    enunciado: 'Sobre a desapropriação extraordinária (art. 243 da CF), é CORRETO afirmar que:',
+    enunciado: 'Sobre a expropriação prevista no art. 243 da CF (cultivo ilegal de plantas psicotrópicas ou exploração de trabalho escravo), é CORRETO afirmar que:',
     alternativas: [
-      { id: 'A', texto: 'É a mesma coisa que a desapropriação indireta (confisco).' },
-      { id: 'B', texto: 'Destina-se ao cultivo ilegal de plantas psicotrópicas, com indenização apenas das benfeitorias úteis.' },
-      { id: 'C', texto: 'Dispensa qualquer indenização.' },
-      { id: 'D', texto: 'É a mesma coisa que a desapropriação ordinária.' }
+      { id: 'A', texto: 'É a mesma coisa que a desapropriação indireta (tomada irregular da propriedade).' },
+      { id: 'B', texto: 'A expropriação do art. 243 é realizada SEM QUALQUER INDENIZAÇÃO ao proprietário, e o bem é destinado à reforma agrária e a programas de habitação popular. Não se confunde com a desapropriação-sanção por descumprimento da função social (indenização em títulos) nem com a desapropriação indireta (tomada irregular, que gera direito a indenização).' },
+      { id: 'C', texto: 'Exige indenização prévia, justa e em dinheiro, como a desapropriação ordinária.' },
+      { id: 'D', texto: 'Exige indenização apenas das benfeitorias úteis.' }
     ],
     gabarito: 'B',
     explicacao: {
-      correta: 'A DESAPROPRIAÇÃO EXTRAORDINÁRIA (art. 243) é para cultivo ilegal de plantas psicotrópicas, com indenização apenas das benfeitorias úteis.',
-      incorretas: { A: 'É distinta da indireta.', C: 'Há indenização das benfeitorias úteis.', D: 'É distinta da ordinária.' },
-      conceitoCobrado: 'Desapropriação extraordinária',
-      pegadinha: 'Confundir com ordinária ou indireta.',
-      comoApareceEmConcurso: 'Cobrança conceitual.'
+      correta: 'Art. 243: expropriação SEM qualquer indenização, destinada à reforma agrária ou a programas de habitação popular. Distinta da desapropriação-sanção (indenização em títulos) e da desapropriação indireta (tomada irregular, com direito a indenização).',
+      incorretas: { A: 'Não é desapropriação indireta — é expropriação regular, sem indenização.', C: 'Não exige indenização prévia.', D: 'Não há previsão de indenização das benfeitorias úteis — é sem qualquer indenização.' },
+      conceitoCobrado: 'Expropriação do art. 243 x desapropriação-sanção x indireta',
+      pegadinha: 'Dizer que o art. 243 prevê "indenização apenas das benfeitorias úteis" (não prevê — é sem qualquer indenização).',
+      comoApareceEmConcurso: 'Cobrança cada vez mais frequente da distinção entre os três institutos.'
     },
-    tags: ['desapropriação extraordinária', 'art. 243']
+    tags: ['desapropriação extraordinária', 'art. 243', 'expropriação']
   },
   {
     id: 'Q-DID-DA-27-004',
