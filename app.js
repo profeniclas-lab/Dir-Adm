@@ -3998,9 +3998,13 @@ if (exemploExercicio) {
     html += '</div>';
     html += '<p style="margin-top:12px;"><button class="btn btn-primary theme-btn" data-action="toggle-theme">' + esc(proximoLabel) + '</button></p>';
     html += '<h2 class="section-title">Backup completo</h2>';
-    html += '<div class="notice">Exporta o estado inteiro (progresso, questões vistas, flashcards, simulados, exercícios, tema). Útil para backup ou migração.</div>';
-    html += '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;"><button class="btn btn-primary" data-action="export-full-state">📤 Exportar backup completo</button></div>';
-    html += '<div class="io-box" style="margin-top:14px;"><h3><span>📥</span> Importar backup completo</h3><p>Cole o JSON gerado acima. O progresso atual será substituído <strong>somente após sua confirmação</strong>.</p>';
+    html += '<div class="notice">Exporta o estado inteiro (progresso, questões vistas, flashcards, simulados, exercícios, tema). Escolha <strong>JSON</strong> (arquivo estruturado) ou <strong>TXT</strong> (arquivo de texto simples — abre em qualquer editor). Você também pode usar <strong>Copiar backup</strong> para colar o conteúdo direto no campo de importação, sem precisar baixar arquivo.</div>';
+    html += '<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">';
+html += '<button class="btn btn-primary" data-action="export-full-state">📤 Exportar backup (JSON)</button>';
+html += '<button class="btn btn-primary" data-action="export-full-state-txt">📄 Exportar backup (TXT)</button>';
+html += '<button class="btn" data-action="copy-full-state">📋 Copiar backup para área de transferência</button>';
+html += '</div>';
+    html += '<div class="io-box" style="margin-top:14px;"><h3><span>📥</span> Importar backup completo</h3><p>Cole o conteúdo do backup (do arquivo <strong>.json</strong> ou <strong>.txt</strong>, ou do botão <strong>Copiar backup</strong>). O progresso atual será substituído <strong>somente após sua confirmação</strong>.</p>';
     html += '<textarea id="importFullStateTextarea" placeholder=\'{"exportedAt":"...","appVersion":"...","state":{...}}\'></textarea>';
     html += '<div class="io-actions"><button class="btn btn-primary" data-action="import-full-state">Validar e restaurar</button></div></div>';
     html += '<h2 class="section-title">Armazenamento</h2><div class="info-list">';
@@ -4150,6 +4154,66 @@ if (exemploExercicio) {
       exportedAt: new Date().toISOString(), appVersion: APP_VERSION, schemaVersion: SCHEMA_VERSION, tipo: 'BACKUP_COMPLETO', state: AppState
     });
   }
+function exportFullStateTxt() {
+    var filename = 'backup-' + APP_NAME.toLowerCase().replace(/\s+/g, '-') + '-' + new Date().toISOString().slice(0, 10) + '.txt';
+    var content = JSON.stringify({
+      exportedAt: new Date().toISOString(),
+      appVersion: APP_VERSION,
+      schemaVersion: SCHEMA_VERSION,
+      tipo: 'BACKUP_COMPLETO',
+      state: AppState
+    }, null, 2);
+    try {
+      var blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 200);
+    } catch (e) {
+      window.alert('Falha ao exportar TXT: ' + e.message);
+    }
+}
+
+function copyFullStateToClipboard() {
+    var content = JSON.stringify({
+      exportedAt: new Date().toISOString(),
+      appVersion: APP_VERSION,
+      schemaVersion: SCHEMA_VERSION,
+      tipo: 'BACKUP_COMPLETO',
+      state: AppState
+    }, null, 2);
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(content).then(function () {
+        window.alert('✓ Backup copiado para a área de transferência!\n\nAgora você pode colar (Ctrl+V) onde quiser: num arquivo de texto, num e-mail, no campo de importação, etc.');
+      }).catch(function () {
+        fallbackCopyToClipboard(content);
+      });
+    } else {
+      fallbackCopyToClipboard(content);
+    }
+}
+
+function fallbackCopyToClipboard(content) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = content;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      ta.style.top = '0';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      if (ok) window.alert('✓ Backup copiado para a área de transferência!');
+      else window.alert('Não foi possível copiar automaticamente. Use "Exportar backup (TXT)" e copie do arquivo.');
+    } catch (e) {
+      window.alert('Não foi possível copiar automaticamente. Use "Exportar backup (TXT)" e copie do arquivo.');
+    }
+}   
   function validateIncomingState(obj) {
     var erros = [];
     if (!obj || typeof obj !== 'object') return { erros: ['Arquivo inválido.'], state: null };
@@ -4312,6 +4376,8 @@ if (exemploExercicio) {
 
       case 'toggle-theme': toggleTheme(); break;
       case 'export-full-state': exportFullState(); break;
+case 'export-full-state-txt': exportFullStateTxt(); break;
+case 'copy-full-state': copyFullStateToClipboard(); break;
       case 'import-full-state': { var elFull = document.getElementById('importFullStateTextarea'); if (elFull) importFullStateFromText(elFull.value || ''); break; }
       case 'reset-progress': resetProgress(); break;
     }
