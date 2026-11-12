@@ -4235,15 +4235,30 @@ function fallbackCopyToClipboard(content) {
     var resumo = ['Módulos: ' + Object.keys(st.modules || {}).length, 'Questões vistas: ' + Object.keys(st.questions || {}).length, 'Flashcards vistos: ' + Object.keys(st.flashcards || {}).length, 'Simulados: ' + ((st.simulados && st.simulados.length) || 0), 'Exercícios: ' + Object.keys(st.exercicios || {}).length].join('\n');
     if (!window.confirm('Substituir o progresso atual pelo backup?\n\n' + resumo + '\n\nA ação não pode ser desfeita.')) return;
     var base = createDefaultState();
+    /* Merge robusto: preserva TODOS os campos do backup (incluindo gamification,
+       e quaisquer campos adicionados no futuro), sobre a base de defaults. */
     AppState = {
-      schemaVersion: SCHEMA_VERSION, appVersion: APP_VERSION,
-      createdAt: st.createdAt || base.createdAt, updatedAt: new Date().toISOString(),
+      schemaVersion: SCHEMA_VERSION,
+      appVersion: APP_VERSION,
+      createdAt: st.createdAt || base.createdAt,
+      updatedAt: new Date().toISOString(),
       settings: Object.assign({}, base.settings, st.settings || {}),
-      modules: st.modules || {}, questions: st.questions || {},
-      flashcards: st.flashcards || {}, simulados: Array.isArray(st.simulados) ? st.simulados : [],
+      modules: (st.modules && typeof st.modules === 'object') ? st.modules : {},
+      questions: (st.questions && typeof st.questions === 'object') ? st.questions : {},
+      flashcards: (st.flashcards && typeof st.flashcards === 'object') ? st.flashcards : {},
+      simulados: Array.isArray(st.simulados) ? st.simulados : [],
       exercicios: (st.exercicios && typeof st.exercicios === 'object') ? st.exercicios : {},
-      stats: Object.assign({}, base.stats, st.stats || {}), lastScreen: 'dashboard'
+      gamification: (st.gamification && typeof st.gamification === 'object') ? st.gamification : Object.assign({}, base.gamification),
+      stats: Object.assign({}, base.stats, st.stats || {}),
+      lastScreen: 'dashboard'
     };
+    /* Preserva campos extras que existam no backup mas não estão listados acima
+       (defensivo: se uma versão futura adicionar novos campos, eles sobrevivem). */
+    for (var k in st) {
+      if (!st.hasOwnProperty(k)) continue;
+      if (AppState.hasOwnProperty(k)) continue;
+      AppState[k] = st[k];
+    }
     ensureExtendedState(AppState);
     saveState(); applyTheme(AppState.settings && AppState.settings.theme);
     currentScreen = 'dashboard'; currentModuleId = null; currentLessonId = null;
