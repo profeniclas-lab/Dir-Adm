@@ -5203,28 +5203,32 @@ window.QUESTIONS = [
     },
     tags: ['objetivos']
   },
-  {
-    id: 'Q-DID-ADM-01-011',
-    tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-01',
-    subtema: 'Níveis hierárquicos (institucional, intermediário, operacional)',
-    dificuldade: 2, prioridade: 'alta',
-    enunciado: 'Relacione os níveis hierárquicos às suas características: 1. Nível institucional. 2. Nível intermediário. 3. Nível operacional. ( ) Composto pelos gestores/gerentes de departamentos; concentra-se no desdobramento da estratégia junto a clientes, fornecedores e colaboradores. ( ) Composto por colaboradores, corpo técnico e supervisores; responsável pela execução de tarefas planejadas, propondo correções e melhorias. ( ) Composto pela presidência e diretores; concentra-se na interação com o ambiente externo e em questões estratégicas. A sequência correta é:',
-    alternativas: [
-      { id: 'A', texto: '1, 2, 3.' },
-      { id: 'B', texto: '2, 3, 1.' },
-      { id: 'C', texto: '3, 1, 2.' },
-      { id: 'D', texto: '3, 2, 1.' }
-    ],
-    gabarito: 'B',
-    explicacao: {
-      correta: '2 = intermediário (gerentes, desdobramento da estratégia). 3 = operacional (execução, tarefas). 1 = institucional (presidência, diretores, ambiente externo). Sequência: 2 – 3 – 1.',
-      incorretas: { A: 'Inverte.', C: 'Inverte.', D: 'Inverte.' },
-      conceitoCobrado: 'Níveis hierárquicos',
-      pegadinha: 'Inverter os níveis.',
-      comoApareceEmConcurso: 'Associação.'
+{
+  id: 'Q-DID-ADM-01-011',
+  tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-01',
+  subtema: 'Níveis hierárquicos (institucional, intermediário, operacional)',
+  dificuldade: 2, prioridade: 'alta',
+  enunciado: 'Relacione os níveis hierárquicos às suas características: 1. Nível institucional. 2. Nível intermediário. 3. Nível operacional. ( ) Composto pelos gestores/gerentes de departamentos; concentra-se no desdobramento da estratégia junto a clientes, fornecedores e colaboradores. ( ) Composto por colaboradores, corpo técnico e supervisores; responsável pela execução de tarefas planejadas, propondo correções e melhorias. ( ) Composto pela presidência e diretores; concentra-se na interação com o ambiente externo e em questões estratégicas. A sequência correta é:',
+  alternativas: [
+    { id: 'A', texto: '1, 2, 3.' },
+    { id: 'B', texto: '2, 3, 1.' },
+    { id: 'C', texto: '3, 1, 2.' },
+    { id: 'D', texto: '3, 2, 1.' }
+  ],
+  gabarito: 'B',
+  explicacao: {
+    correta: '2 = intermediário (gerentes, desdobramento da estratégia). 3 = operacional (execução, tarefas). 1 = institucional (presidência, diretores, ambiente externo). Sequência: 2 – 3 – 1.',
+    incorretas: { 
+      A: 'Inverte.', 
+      C: 'Inverte.', 
+      D: 'Inverte.' 
     },
-    tags: ['níveis hierárquicos']
+    conceitoCobrado: 'Níveis hierárquicos',
+    pegadinha: 'Inverter os níveis.',
+    comoApareceEmConcurso: 'Associação.'
   },
+  tags: ['níveis hierárquicos']
+},
   {
     id: 'Q-REAL-ADM-02-009',
     tipo: 'DIDATICA', area: 'ADM', moduloId: 'ADM-02',
