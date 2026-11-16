@@ -3187,7 +3187,7 @@ window.DIAGNOSTICS_ALTA = {
             aplicacao: 'Também: hierárquico (a), disciplinar (b), polícia (c). A avocação é típica do hierárquico; a punição de servidor é típica do disciplinar; a limitação de direito do particular é típica da polícia. O critério é o destinatário: interno-servidor (hierárquico/disciplinar) x externo-particular (polícia).',
             desafio: 'Qual a diferença entre avocação e delegação? Ambas são manifestações do poder hierárquico — em que direção cada uma opera?'
           }
-        ],
+        },
         tags: ['poder hierárquico', 'poder disciplinar', 'poder de polícia', 'situação aplicada']
       },
 
