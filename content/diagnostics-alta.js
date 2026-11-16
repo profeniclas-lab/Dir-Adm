@@ -473,5 +473,466 @@ window.DIAGNOSTICS_ALTA = {
 
     ]
   }
+  ,
+
+  /* ============================================================
+     ADM-03 — Planejamento
+  ============================================================ */
+  'ADM-03': {
+    id: 'D-ADM-03',
+    moduloId: 'ADM-03',
+    itens: [
+
+      /* ---------- Item 1 — Formato 6 (EXCETO) — Dificuldade 1 ---------- */
+      {
+        id: 'D-ADM-03-01',
+        tipo: 'multipla_escolha',
+        formato: 'excecao',
+        dificuldade: 1,
+        subtopico: 'Elementos do planejamento (missão, visão, valores, objetivos, metas, planos)',
+        pergunta: 'Sobre os elementos do planejamento, assinale a alternativa INCORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'Missão é a razão de existir da organização, expressando o seu papel no presente.' },
+          { id: 'B', texto: 'Visão é o estado futuro desejado, indicando onde a organização quer chegar.' },
+          { id: 'C', texto: 'Valores são os princípios éticos e as crenças que orientam a conduta organizacional.' },
+          { id: 'D', texto: 'Objetivos são alvos quantificados com prazo definido, derivados das metas organizacionais.' },
+          { id: 'E', texto: 'Planos são documentos que formalizam estratégias e cursos de ação escolhidos.' }
+        ],
+        gabarito: 'D',
+        explicacao: 'A alternativa D é a INCORRETA. Objetivos são alvos amplos e qualitativos; METAS é que são quantificadas com prazo. A relação está invertida em D.',
+        explicacaoDetalhada: {
+          correta: 'A alternativa D está INCORRETA e, por isso, é a resposta. A relação está invertida: OBJETIVOS são alvos amplos e qualitativos (ex.: "melhorar o atendimento"); METAS são objetivos quantificados com prazo (ex.: "reduzir o tempo de espera em 30% até dezembro"). Dizer que objetivos derivam de metas inverte a lógica — são as metas que derivam dos objetivos.',
+          incorretas: {
+            A: 'A alternativa está correta e não deve ser marcada. Missão é a razão de existir no presente. Seria INCORRETA se dissesse que missão é o estado futuro desejado — isso é visão.',
+            B: 'A alternativa está correta e não deve ser marcada. Visão é o estado futuro desejado. Seria INCORRETA se dissesse que visão é a razão de existir — isso é missão.',
+            C: 'A alternativa está correta e não deve ser marcada. Valores são princípios éticos e crenças. Seria INCORRETA se dissesse que valores são metas de curto prazo — valores não são metas, são orientações.',
+            E: 'A alternativa está correta e não deve ser marcada. Planos formalizam estratégias e cursos de ação. Seria INCORRETA se dissesse que planos independem dos objetivos — planos são o "como" para atingir objetivos e metas.'
+          },
+          conceitoCobrado: 'Elementos do planejamento — distinção entre missão, visão, valores, objetivos, metas e planos',
+          pegadinha: 'A confusão mais comum é entre objetivo e meta (D inverte). Outra pegadinha frequente é entre missão e visão (A/B — se invertidos, ficam errados). Fixar: missão (presente) → visão (futuro) → valores (princípios) → objetivos (amplos/qualitativos) → metas (quantificadas/prazo) → planos (formalização).',
+          comoApareceEmConcurso: 'Bancas costumam trocar pares em uma única alternativa e manter os outros corretos. A "inversão" de definições é o padrão: missão↔visão, objetivo↔meta. É a questão mais recorrente do módulo.',
+          exemploInedito: {
+            contexto: 'Uma autarquia previdenciária declara: "Nossa missão é garantir aposentadorias com eficiência; nossa visão é ser referência nacional em gestão previdenciária até 2030; nosso objetivo é melhorar o atendimento; nossa meta é reduzir de 40 para 20 dias o tempo de concessão até dezembro; nosso plano de ação prevê digitalização do processo".',
+            aplicacao: 'Cada elemento cumpre uma função distinta: missão = razão de existir no presente; visão = futuro almejado; objetivo = alvo amplo e qualitativo; meta = objetivo quantificado e datado; plano = curso de ação formalizado. Se alguém dissesse que "a meta é melhorar o atendimento", inverteria objetivo e meta — exatamente o erro que a alternativa D reproduz.',
+            desafio: 'Reescreva a frase acima identificando cada elemento (missão, visão, objetivo, meta, plano). Se a organização dissesse "nossa meta é ser referência nacional até 2030", estaria usando o termo corretamente? Justifique.'
+          }
+        },
+        tags: ['planejamento', 'missão', 'visão', 'objetivo', 'meta']
+      },
+
+      /* ---------- Item 2 — C/E — Dificuldade 1 ---------- */
+      {
+        id: 'D-ADM-03-02',
+        tipo: 'verdadeiro_falso',
+        formato: 'certo_errado',
+        dificuldade: 1,
+        subtopico: 'Missão x visão',
+        pergunta: 'Missão é onde a organização quer chegar no futuro; visão é a razão de sua existência no presente.',
+        alternativas: [
+          { id: 'V', texto: 'Certo' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'A afirmação é FALSA. A relação está invertida: missão é a razão de existir (presente); visão é o estado futuro desejado (futuro).',
+        explicacaoDetalhada: {
+          correta: 'A afirmação é FALSA. A relação está invertida: MISSÃO é a razão de existir da organização, expressa o papel atual (presente). VISÃO é o estado futuro desejado, onde se quer chegar (futuro). A afirmação troca os dois conceitos.',
+          incorretas: {
+            V: 'A afirmação não é verdadeira. Ela troca missão por visão. Fixar a lógica: missão = "por que existimos hoje"; visão = "onde queremos chegar". A visão orienta o futuro; a missão justifica o presente. Inverter confunde o planejamento estratégico inteiro.'
+          },
+          conceitoCobrado: 'Distinção entre missão (presente) e visão (futuro)',
+          pegadinha: 'As palavras "futuro" e "presente" na afirmação entregam o erro a quem sabe o conteúdo, mas induzem ao erro a quem decorou apenas "missão e visão são elementos do planejamento" sem fixar qual é qual. É a pegadinha nº 1 do módulo.',
+          comoApareceEmConcurso: 'Bancas trocam missão/visão em C/E com frequência. Outra variação é trocar valores por missão, ou metas por visão. A dica é memorizar: "missão é o hoje; visão é o amanhã".',
+          exemploInedito: {
+            contexto: 'Um hospital público declara: "Nossa missão é salvar vidas com acolhimento; nossa visão é ser o hospital de referência do estado em 2030".',
+            aplicacao: 'A missão responde "o que fazemos hoje" — salvar vidas com acolhimento. A visão responde "onde queremos chegar" — ser referência em 2030. Se o hospital dissesse "nossa missão é ser referência em 2030", estaria usando o termo errado — isso é visão.',
+            desafio: 'Pense em uma organização pública que você conhece. Sem consultar, formule uma missão (presente) e uma visão (futuro) para ela. Verifique se trocou os conceitos.'
+          }
+        },
+        tags: ['planejamento', 'missão', 'visão']
+      },
+
+      /* ---------- Item 3 — Formato 2 (I, II, III) — Dificuldade 2 ---------- */
+      {
+        id: 'D-ADM-03-03',
+        tipo: 'multipla_escolha',
+        formato: 'afirmacoes_romanas',
+        dificuldade: 2,
+        subtopico: 'Análise SWOT e Balanced Scorecard (BSC)',
+        pergunta: 'Sobre a análise SWOT e o Balanced Scorecard (BSC), analise as afirmações a seguir:\n\nI. Na análise SWOT, forças e fraquezas são fatores internos (controláveis), enquanto oportunidades e ameaças são fatores externos (não controláveis).\nII. O BSC traduz a estratégia em quatro perspectivas: financeira, clientes, processos internos e aprendizado/crescimento, com objetivos, indicadores, metas e iniciativas.\nIII. No BSC aplicado ao setor público, a perspectiva "clientes" é idêntica à do setor privado, pois em ambos o objetivo central é o lucro.\n\nEstão corretas:',
+        alternativas: [
+          { id: 'A', texto: 'Apenas I.' },
+          { id: 'B', texto: 'Apenas II.' },
+          { id: 'C', texto: 'Apenas I e II.' },
+          { id: 'D', texto: 'Apenas II e III.' },
+          { id: 'E', texto: 'I, II e III.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A alternativa C está correta. I e II são verdadeiras; III é falsa (no setor público, "clientes" costuma ser adaptada para "sociedade" — o objetivo central não é o lucro).',
+        explicacaoDetalhada: {
+          correta: 'A alternativa C está correta. A afirmação I está certa: forças e fraquezas são fatores internos; oportunidades e ameaças são externos. A afirmação II também está certa: o BSC usa quatro perspectivas clássicas com objetivos, indicadores, metas e iniciativas. A afirmação III está INCORRETA: no setor público, a perspectiva "clientes" é adaptada para "sociedade", e o objetivo central não é o lucro.',
+          incorretas: {
+            A: 'A afirmação I está correta, mas a II também. O BSC tem, sim, as quatro perspectivas clássicas (financeira, clientes, processos internos, aprendizado/crescimento). Excluir a II é negar a estrutura do BSC.',
+            B: 'A afirmação II está correta, mas a I também. SWOT distingue fatores internos (forças e fraquezas) de externos (oportunidades e ameaças) — é o ponto central da ferramenta. Excluir a I é desconsiderar esse aspecto fundamental.',
+            D: 'A afirmação III é falsa — no setor público, "clientes" é adaptada para "sociedade"; o objetivo não é o lucro. Incluir a III como correta é o erro central desta alternativa. A II está correta, mas a III não.',
+            E: 'Não é possível aceitar as três. A afirmação III é o erro: o setor público adapta o BSC em razão do interesse público, não do lucro. Incluir a III como correta é o que torna esta alternativa errada.'
+          },
+          conceitoCobrado: 'SWOT (interno x externo) e BSC (quatro perspectivas + adaptação ao setor público)',
+          pegadinha: 'A afirmação III explora uma crença de que o BSC é "idêntico" em qualquer contexto. Na verdade, o setor público adapta a perspectiva "clientes" para "sociedade", e o objetivo central é o interesse público, não o lucro. É a pegadinha típica do módulo.',
+          comoApareceEmConcurso: 'Bancas combinam SWOT e BSC em uma única questão de afirmações romanas para testar dois conteúdos de uma vez. A estratégia é colocar 2 afirmações verdadeiras e 1 falsa em pontos-chave — geralmente a falsa é a que aplica indevidamente um conceito do setor privado ao setor público.',
+          exemploInedito: {
+            contexto: 'Uma Secretaria de Saúde aplica o BSC com quatro perspectivas: na "sociedade", reduzir mortalidade infantil; na "clientes", elevar a satisfação dos usuários; nos "processos internos", reduzir tempo de espera; no "aprendizado", capacitar enfermeiros.',
+            aplicacao: 'A Secretaria substituiu "financeira" pela perspectiva "sociedade" — típico do setor público. Se dissesse que a perspectiva "clientes" é igual à do privado (busca de lucro), erraria — aqui o "cliente" é o cidadão, e o objetivo é o interesse público. Isso é exatamente o que a afirmação III faz.',
+            desafio: 'Se você aplicasse o BSC a uma escola pública, que indicador usaria em cada perspectiva? Pense em um indicador para "sociedade", um para "clientes/usuários", um para "processos internos" e um para "aprendizado".'
+          }
+        },
+        tags: ['SWOT', 'BSC', 'afirmações romanas']
+      },
+
+      /* ---------- Item 4 — C/E — Dificuldade 2 ---------- */
+      {
+        id: 'D-ADM-03-04',
+        tipo: 'verdadeiro_falso',
+        formato: 'certo_errado',
+        dificuldade: 2,
+        subtopico: 'Objetivo x meta',
+        pergunta: 'Meta é um alvo mais amplo e qualitativo que objetivo; por isso, toda meta pressupõe um objetivo quantificado.',
+        alternativas: [
+          { id: 'V', texto: 'Certo' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'A afirmação é FALSA. A relação está invertida: objetivo é amplo e qualitativo; meta é o objetivo quantificado com prazo. Toda META pressupõe um OBJETIVO, não o contrário.',
+        explicacaoDetalhada: {
+          correta: 'A afirmação é FALSA. A relação está invertida. OBJETIVO é amplo e qualitativo (ex.: "melhorar o atendimento"). META é o objetivo quantificado com prazo (ex.: "reduzir o tempo de espera em 30% até dezembro"). Toda META pressupõe um OBJETIVO — não o contrário.',
+          incorretas: {
+            V: 'A afirmação não é verdadeira. Ela descreve a relação invertida: diz que "meta é ampla e qualitativa" (mas meta é quantificada e datada) e que "toda meta pressupõe um objetivo quantificado" (o correto é que toda meta pressupõe um objetivo amplo, e não quantificado). A dupla inversão torna a afirmação falsa.'
+          },
+          conceitoCobrado: 'Relação entre objetivo (amplo/qualitativo) e meta (quantificada/prazo)',
+          pegadinha: 'A afirmação tem DUAS inversões simultâneas: (1) troca as definições de objetivo e meta; (2) inverte a relação de pressuposição. Quem lê rápido pode concordar com "toda meta pressupõe um objetivo" — mas a palavra "quantificado" ao final torna a frase falsa, porque objetivo não é quantificado.',
+          comoApareceEmConcurso: 'Bancas gostam de inverter pares em C/E. A dica é sempre verificar cada termo separadamente: "meta = quantificada, prazo"; "objetivo = amplo, qualitativo". Se a afirmação mistura, é falsa.',
+          exemploInedito: {
+            contexto: 'Um órgão define como objetivo "melhorar a qualidade do atendimento" e, a partir dele, define a meta "elevar de 70% para 85% o índice de satisfação dos usuários até dezembro de 2025".',
+            aplicacao: 'O objetivo é amplo e qualitativo (melhorar); a meta é quantificada e datada (70% → 85% até dezembro). A meta deriva do objetivo — não o contrário. Se alguém dissesse "o objetivo é elevar de 70% para 85%", estaria usando "objetivo" no lugar de "meta".',
+            desafio: 'Dê um exemplo de objetivo e um de meta para uma escola pública. Qual dos dois é o mais amplo? Qual dos dois você consegue medir numericamente?'
+          }
+        },
+        tags: ['objetivo', 'meta']
+      },
+
+      /* ---------- Item 5 — Situação — Dificuldade 2 ---------- */
+      {
+        id: 'D-ADM-03-05',
+        tipo: 'situacao',
+        formato: 'multipla_escolha',
+        dificuldade: 2,
+        subtopico: 'Classificação de fatores na análise SWOT',
+        pergunta: 'Uma Secretaria de Meio Ambiente está realizando sua análise SWOT para o planejamento de 2026 e levantou quatro pontos: (1) ausência de sistema informatizado próprio para licenciamento; (2) anúncio de novos recursos federais para digitalização de serviços ambientais; (3) equipe técnica com 20 servidores concursados e estáveis; (4) alteração na legislação estadual que amplia exigências sem prever repasse de recursos. Esses pontos correspondem, respectivamente, a:',
+        alternativas: [
+          { id: 'A', texto: 'força, oportunidade, fraqueza e ameaça.' },
+          { id: 'B', texto: 'oportunidade, força, ameaça e fraqueza.' },
+          { id: 'C', texto: 'fraqueza, oportunidade, força e ameaça.' },
+          { id: 'D', texto: 'fraqueza, ameaça, força e oportunidade.' },
+          { id: 'E', texto: 'ameaça, fraqueza, oportunidade e força.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A alternativa C está correta. (1) ausência de sistema = fraqueza (interno negativo); (2) recursos federais = oportunidade (externo positivo); (3) equipe estável = força (interno positivo); (4) alteração legislativa = ameaça (externo negativo).',
+        explicacaoDetalhada: {
+          correta: 'A alternativa C está correta. (1) Ausência de sistema informatizado = FRAQUEZA (interno negativo). (2) Novos recursos federais = OPORTUNIDADE (externo positivo). (3) Equipe técnica estável = FORÇA (interno positivo). (4) Alteração legislativa sem repasse = AMEAÇA (externo negativo). A chave é sempre: interno (controlável) x externo (não controlável), positivo x negativo.',
+          incorretas: {
+            A: 'A alternativa começa errando: (1) ausência de sistema é fraqueza, não força. A "força" seria ter o sistema. Além disso, (3) equipe estável é força, não fraqueza. Erro duplo de classificação — a alternativa troca os dois primeiros e os dois últimos.',
+            B: 'A alternativa troca tudo: (1) ausência de sistema não é oportunidade (é fraqueza); (2) recursos federais não são força (são oportunidade, porque vêm de fora); (3) equipe estável não é ameaça (é força); (4) alteração legislativa não é fraqueza (é ameaça, porque vem de fora). Erro completo de leitura de interno x externo.',
+            D: 'A alternativa acerta (1) fraqueza e (3) força, mas erra (2) e (4): recursos federais são oportunidade (não ameaça); alteração legislativa é ameaça (não oportunidade). O erro está em confundir "externo positivo" com "externo negativo".',
+            E: 'A alternativa erra completamente: (1) ausência de sistema não é ameaça (é fraqueza interna); (2) recursos federais não são fraqueza (são oportunidade externa); (3) equipe estável não é oportunidade (é força interna); (4) alteração legislativa não é força (é ameaça externa). Inverte todos os quadrantes da SWOT.'
+          },
+          conceitoCobrado: 'Classificação de fatores na SWOT (interno x externo; positivo x negativo)',
+          pegadinha: 'A pegadinha é a distinção entre interno (controlável) e externo (não controlável). Muitos confundem "recurso" com "força" e "lei" com "fraqueza", mas o critério é a origem: se depende da organização, é interno; se vem do ambiente, é externo.',
+          comoApareceEmConcurso: 'Cenários com quatro pontos são clássicos para testar a classificação SWOT. A banca costuma misturar os quadrantes para verificar se o candidato domina o critério interno x externo, não apenas o rótulo "positivo x negativo".',
+          exemploInedito: {
+            contexto: 'Um instituto federal faz SWOT para 2026: (1) corpo docente com doutorado; (2) edital federal de apoio à pesquisa aplicada; (3) infraestrutura laboratorial defasada; (4) contingenciamento orçamentário anunciado.',
+            aplicacao: 'Classificação: (1) força (interno positivo); (2) oportunidade (externo positivo); (3) fraqueza (interno negativo); (4) ameaça (externo negativo). A regra é: quem controla? A própria organização (interno) ou o ambiente (externo)?',
+            desafio: 'Se você fosse gestor do instituto, em qual dos quatro pontos concentraria esforços de curto prazo? Justifique considerando o que a organização controla e o que não controla.'
+          }
+        },
+        tags: ['SWOT', 'situação aplicada']
+      },
+
+      /* ---------- Item 6 — Formato 3 (Associação) — Dificuldade 3 ---------- */
+      {
+        id: 'D-ADM-03-06',
+        tipo: 'multipla_escolha',
+        formato: 'associacao',
+        dificuldade: 3,
+        subtopico: 'Níveis de planejamento (estratégico, tático, operacional) x horizonte x características',
+        pergunta: 'Sobre os níveis de planejamento, associe corretamente cada NÍVEL ao HORIZONTE e à CARACTERÍSTICA correspondentes:\n\nColuna I — Nível\n1. Estratégico\n2. Tático\n3. Operacional\n\nColuna II — Horizonte e característica\n( ) Longo prazo; envolve a organização como um todo; define missão, visão e diretrizes.\n( ) Curto prazo; foco em tarefas cotidianas; detalha procedimentos e rotinas.\n( ) Médio prazo; foco setorial; desdobra diretrizes estratégicas para departamentos.',
+        alternativas: [
+          { id: 'A', texto: '1 – primeira; 2 – segunda; 3 – terceira.' },
+          { id: 'B', texto: '1 – segunda; 2 – primeira; 3 – terceira.' },
+          { id: 'C', texto: '1 – terceira; 2 – primeira; 3 – segunda.' },
+          { id: 'D', texto: '1 – primeira; 2 – terceira; 3 – segunda.' },
+          { id: 'E', texto: '1 – terceira; 2 – segunda; 3 – primeira.' }
+        ],
+        gabarito: 'D',
+        explicacao: 'A alternativa D está correta. Estratégico (1) → longo prazo e visão global (primeira); Tático (2) → médio prazo e foco setorial (terceira); Operacional (3) → curto prazo e tarefas cotidianas (segunda).',
+        explicacaoDetalhada: {
+          correta: 'A alternativa D está correta. Nível ESTRATÉGICO (1) → longo prazo; organização como um todo; missão, visão e diretrizes (primeira da Coluna II). Nível TÁTICO (2) → médio prazo; foco setorial; desdobra diretrizes para departamentos (terceira da Coluna II). Nível OPERACIONAL (3) → curto prazo; tarefas cotidianas; detalha procedimentos (segunda da Coluna II).',
+          incorretas: {
+            A: 'A alternativa erra (2) e (3): coloca o TÁTICO como "curto prazo e tarefas cotidianas" (isso é operacional) e o OPERACIONAL como "médio prazo e setorial" (isso é tático). O ESTRATÉGICO acerta. É o erro clássico de trocar tático por operacional.',
+            B: 'A alternativa erra (1) e (2): coloca o ESTRATÉGICO como "curto prazo" (é longo prazo) e o TÁTICO como "longo prazo e organização como um todo" (é médio prazo e setorial). Apenas o OPERACIONAL acerta. Erro duplo entre estratégico e tático.',
+            C: 'A alternativa erra as três correspondências: coloca o ESTRATÉGICO como operacional (curto prazo), o TÁTICO como estratégico (longo prazo) e o OPERACIONAL como tático (médio prazo). É a inversão completa da hierarquia.',
+            E: 'A alternativa coloca o ESTRATÉGICO como "curto prazo", o TÁTICO como "médio prazo" (este está correto) e o OPERACIONAL como "longo prazo". Só o do meio está certo; os extremos estão invertidos. É o distrator construído para quem só memorizou o nível tático.'
+          },
+          conceitoCobrado: 'Correspondência entre níveis de planejamento, horizonte temporal e características',
+          pegadinha: 'A associação de colunas exige que o candidato não apenas saiba os três níveis e as três características isoladamente, mas a CORRESPONDÊNCIA entre eles. A confusão mais comum é entre tático (médio/setorial) e operacional (curto/cotidiano) — ambos são "abaixo" do estratégico, mas com naturezas distintas.',
+          comoApareceEmConcurso: 'Bancas usam associação de colunas com níveis e características para testar a precisão. É comum embaralhar as colunas de modo que apenas uma combinação esteja integralmente correta.',
+          exemploInedito: {
+            contexto: 'Um instituto federal, em 2025, (1) define plano decenal de expansão de campi (estratégico); (2) fixa metas anuais por pró-reitoria (tático); (3) elabora cronograma semanal de manutenção dos laboratórios (operacional).',
+            aplicacao: 'O plano decenal é estratégico (longo prazo, visão global). As metas por pró-reitoria são táticas (médio prazo, setorial). O cronograma semanal é operacional (curto prazo, tarefas cotidianas). Se alguém dissesse que o plano decenal é tático, erraria — tático é o elo entre estratégico e operacional.',
+            desafio: 'Se você fosse diretor de um órgão público, qual dos três níveis exigiria mais tempo de dedicação sua? Por quê? Pense em como o dia a dia "puxa" o gestor para o operacional.'
+          }
+        },
+        tags: ['níveis de planejamento', 'estratégico', 'tático', 'operacional', 'associação']
+      },
+
+      /* ---------- Item 7 — Autoavaliação ---------- */
+      {
+        id: 'D-ADM-03-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Elementos do planejamento, SWOT, BSC e níveis de planejamento',
+        pergunta: 'Sem consultar, você consegue explicar os elementos do planejamento (missão, visão, valores, objetivos, metas, planos), diferenciar SWOT de BSC e associar os três níveis de planejamento (estratégico, tático e operacional) ao horizonte e ao escopo correspondentes?',
+        resposta: 'MISSÃO: razão de existir (presente). VISÃO: estado futuro desejado. VALORES: princípios de conduta. OBJETIVOS: alvos amplos e qualitativos. METAS: objetivos quantificados com prazo. PLANOS: documentos que formalizam as estratégias. SWOT: ferramenta de diagnóstico (interno: forças/fraquezas; externo: oportunidades/ameaças). BSC: ferramenta de gestão estratégica com quatro perspectivas (financeira, clientes, processos internos, aprendizado/crescimento) — no setor público, "clientes" costuma ser adaptada para "sociedade". NÍVEIS: estratégico (longo prazo, organização como um todo, define missão/visão/diretrizes); tático (médio prazo, foco setorial, desdobra o estratégico); operacional (curto prazo, tarefas cotidianas, detalha procedimentos). SWOT diagnostica; BSC executa e mede; os três níveis conectam presente e futuro.'
+      }
+
+    ]
+  },
+
+  /* ============================================================
+     ADM-04 — Organização
+  ============================================================ */
+  'ADM-04': {
+    id: 'D-ADM-04',
+    moduloId: 'ADM-04',
+    itens: [
+
+      /* ---------- Item 1 — Formato 6 (EXCETO) — Dificuldade 1 ---------- */
+      {
+        id: 'D-ADM-04-01',
+        tipo: 'multipla_escolha',
+        formato: 'excecao',
+        dificuldade: 1,
+        subtopico: 'Conceitos básicos da função organização (hierarquia, amplitude, delegação, departamentalização)',
+        pergunta: 'Sobre conceitos fundamentais da função organização, assinale a alternativa INCORRETA:',
+        alternativas: [
+          { id: 'A', texto: 'Hierarquia é a distribuição de autoridade em níveis, do topo à base, definindo quem responde a quem.' },
+          { id: 'B', texto: 'Amplitude de controle é o número de subordinados que um gestor pode supervisionar de forma eficaz.' },
+          { id: 'C', texto: 'Delegação transfere ao subordinado a responsabilidade final pela tarefa, eximindo o superior do acompanhamento.' },
+          { id: 'D', texto: 'Departamentalização é o agrupamento de atividades conforme um critério escolhido (função, cliente, região etc.).' },
+          { id: 'E', texto: 'Especialização é a divisão do trabalho em tarefas mais específicas, visando maior eficiência.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A alternativa C é a INCORRETA. A delegação transfere AUTORIDADE para executar a tarefa, mas a responsabilidade final permanece com o superior. Delegar não é eximir-se — é transferir a execução, mantendo o acompanhamento.',
+        explicacaoDetalhada: {
+          correta: 'A alternativa C está INCORRETA e, por isso, é a resposta. A delegação transfere AUTORIDADE (para executar) — mas a RESPONSABILIDADE FINAL permanece com quem delegou. O superior continua respondendo pelo resultado perante a organização e deve acompanhar a execução. Isso é o princípio da paridade autoridade-responsabilidade.',
+          incorretas: {
+            A: 'A alternativa está correta e não deve ser marcada. Hierarquia é distribuição de autoridade em níveis. Seria INCORRETA se dissesse que hierarquia é a distribuição de tarefas — isso é especialização.',
+            B: 'A alternativa está correta e não deve ser marcada. Amplitude de controle é o número de subordinados por gestor. Seria INCORRETA se dissesse que amplitude é o número de níveis hierárquicos — são conceitos relacionados, mas distintos.',
+            D: 'A alternativa está correta e não deve ser marcada. Departamentalização é agrupamento conforme critério. Seria INCORRETA se dissesse que departamentalização é a divisão do trabalho em tarefas — isso é especialização.',
+            E: 'A alternativa está correta e não deve ser marcada. Especialização é divisão do trabalho em tarefas específicas. Seria INCORRETA se dissesse que especialização é distribuição de autoridade — isso é hierarquia.'
+          },
+          conceitoCobrado: 'Conceitos básicos da função organização: hierarquia, amplitude, delegação, departamentalização, especialização',
+          pegadinha: 'A palavra "eximindo" em C é a armadilha. Delegar NÃO exime o superior — ele continua responsável. É o erro mais recorrente do módulo: confundir transferência de autoridade com transferência de responsabilidade.',
+          comoApareceEmConcurso: 'Bancas costumam apresentar definições corretas de hierarquia, amplitude, departamentalização e especialização, e trocar apenas a de delegação. É a questão clássica de "conceito trocado" no formato EXCETO.',
+          exemploInedito: {
+            contexto: 'Um diretor delega ao coordenador a assinatura de despachos de rotina. O coordenador assina um despacho com erro. A irregularidade é identificada pela auditoria.',
+            aplicacao: 'O coordenador responde pela execução, mas o diretor continua responsável perante a organização e os órgãos de controle. A delegação transferiu a autoridade para assinar, mas não transferiu a responsabilidade final. Isso ilustra exatamente por que a alternativa C está errada.',
+            desafio: 'Em uma autarquia, se um diretor delega ao subordinado a autorização de despesas e o subordinado comete irregularidade, quem responde perante o Tribunal de Contas? Apenas o subordinado? Ou ambos? Explique.'
+          }
+        },
+        tags: ['organização', 'delegação', 'hierarquia', 'amplitude', 'especialização']
+      },
+
+      /* ---------- Item 2 — C/E — Dificuldade 1 ---------- */
+      {
+        id: 'D-ADM-04-02',
+        tipo: 'verdadeiro_falso',
+        formato: 'certo_errado',
+        dificuldade: 1,
+        subtopico: 'Amplitude de controle x níveis hierárquicos',
+        pergunta: 'Quanto MAIOR a amplitude de controle (muitos subordinados por gestor), MAIOR será o número de níveis hierárquicos da organização.',
+        alternativas: [
+          { id: 'V', texto: 'Certo' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'A afirmação é FALSA. A relação é INVERSA: amplitude ampla (muitos subordinados por gestor) gera MENOS níveis hierárquicos (estrutura achatada). Amplitude estreita (poucos subordinados) gera MAIS níveis (estrutura verticalizada).',
+        explicacaoDetalhada: {
+          correta: 'A afirmação é FALSA. A relação é INVERSA. Amplitude AMPLA (muitos subordinados por gestor) gera MENOS níveis hierárquicos — estrutura achatada. Amplitude ESTREITA (poucos subordinados) gera MAIS níveis — estrutura verticalizada. Quanto maior a amplitude, mais "chata" a estrutura.',
+          incorretas: {
+            V: 'A afirmação não é verdadeira. Ela inverte a relação. Se um gestor supervisiona muitos subordinados (amplitude ampla), ele precisa de menos camadas hierárquicas para alcançar a base. Se super visiona poucos (amplitude estreita), a organização tende a ter mais camadas — cada gestor tem um "alcance" menor. A regra é: amplitude e número de níveis são INVERSAMENTE proporcionais.'
+          },
+          conceitoCobrado: 'Relação inversa entre amplitude de controle e número de níveis hierárquicos',
+          pegadinha: 'A intuição engana: "se cada gestor tem mais subordinados, preciso de mais chefes" — não. Amplitude ampla = menos chefes = menos níveis. A palavra "maior" no início e no final da frase tenta sugerir uma relação direta, quando é inversa.',
+          comoApareceEmConcurso: 'Bancas usam a relação inversa para testar se o candidato internalizou o conceito. A afirmação "amplitude maior, mais níveis" é quase sempre FALSA. A dica é desenhar mentalmente: 1 chefe com 20 subordinados → 2 níveis; 1 chefe com 2 subordinados (cada um com 2…) → 4-5 níveis.',
+          exemploInedito: {
+            contexto: 'Uma startup tem 1 CEO e 20 funcionários diretos — 2 níveis hierárquicos. Uma rede bancária tem CEO, 5 diretores, 25 gerentes regionais, 125 gerentes locais e 625 caixas — 5 níveis hierárquicos.',
+            aplicacao: 'A startup tem amplitude ampla (20 por gestor) e poucos níveis (2). O banco tem amplitude estreita (5 a 5) e muitos níveis (5). Confirma a relação inversa: quanto maior a amplitude, menos níveis; quanto menor a amplitude, mais níveis.',
+            desafio: 'Uma organização pública que quer "achatar" a estrutura deve aumentar ou diminuir a amplitude de controle? Que consequência isso traz para a sobrecarga dos gestores?'
+          }
+        },
+        tags: ['amplitude de controle', 'níveis hierárquicos']
+      },
+
+      /* ---------- Item 3 — Formato 1 (V/F sequência) — Dificuldade 2 ---------- */
+      {
+        id: 'D-ADM-04-03',
+        tipo: 'multipla_escolha',
+        formato: 'vf_sequencia',
+        dificuldade: 2,
+        subtopico: 'Centralização, descentralização, delegação e concentração/desconcentração',
+        pergunta: 'Sobre os conceitos de centralização, descentralização, delegação e concentração/desconcentração, analise as afirmações e assinale a sequência correta:\n\nI. Descentralização é ato pontual de transferência de autoridade para uma tarefa específica.\nII. Centralização concentra decisões na cúpula; descentralização as distribui pela organização, aproximando a decisão do problema.\nIII. Concentração e desconcentração referem-se à distribuição interna de competências entre órgãos da mesma pessoa jurídica, sem criar nova entidade.\nIV. A escolha entre centralizar e descentralizar é absoluta: a descentralização é sempre superior à centralização em qualquer contexto.',
+        alternativas: [
+          { id: 'A', texto: 'V – V – F – F.' },
+          { id: 'B', texto: 'F – V – V – F.' },
+          { id: 'C', texto: 'V – F – V – F.' },
+          { id: 'D', texto: 'F – V – F – V.' },
+          { id: 'E', texto: 'F – F – V – V.' }
+        ],
+        gabarito: 'B',
+        explicacao: 'A alternativa B está correta: I (F), II (V), III (V), IV (F). A I é falsa (descreve delegação, não descentralização). A IV é falsa (não há superioridade absoluta — depende do contexto).',
+        explicacaoDetalhada: {
+          correta: 'A alternativa B está correta: I (F), II (V), III (V), IV (F). A afirmação I é falsa — descreve a DELEGAÇÃO (ato pontual), não a descentralização (que é estrutural e permanente). A II é verdadeira — centralização concentra; descentralização distribui. A III é verdadeira — concentração/desconcentração tratam da distribuição interna entre órgãos da mesma pessoa jurídica. A IV é falsa — não há superioridade absoluta; centralização e descentralização são trade-offs.',
+          incorretas: {
+            A: 'A alternativa erra ao marcar I como verdadeira. A descentralização NÃO é ato pontual — é estrutural e permanente. O ato pontual é a delegação. Erra também ao marcar III como falsa — concentração/desconcentração tratam, sim, da distribuição interna entre órgãos da mesma pessoa jurídica.',
+            C: 'A alternativa erra ao marcar I como verdadeira (descentralização não é ato pontual) e ao marcar III como verdadeira (correto). Erra ainda ao marcar II como falsa (ela é verdadeira).',
+            D: 'A alternativa erra ao marcar IV como verdadeira. Não há superioridade absoluta da descentralização — depende do contexto, do tipo de decisão e da capacitação dos subordinados. Também erra ao marcar III como falsa (ela é verdadeira).',
+            E: 'A alternativa erra ao marcar II como falsa (ela é verdadeira) e IV como verdadeira (ela é falsa). O erro central é aceitar a ideia de que a descentralização é "sempre superior" — o que contraria a lógica de trade-off.'
+          },
+          conceitoCobrado: 'Distinção entre centralização, descentralização, delegação e concentração/desconcentração',
+          pegadinha: 'A afirmação I confunde DELEGAÇÃO (ato pontual) com DESCENTRALIZAÇÃO (estrutural). A IV explora a crença de que "descentralizar é sempre bom" — mas não há superioridade absoluta: centralização dá mais controle; descentralização, mais agilidade. Depende do contexto.',
+          comoApareceEmConcurso: 'O formato V/F sequência é usado para testar 4 pares de conceitos em uma única questão. A banca costuma colocar 1-2 afirmações que invertem pares (delegação x descentralização, concentração x descentralização) e 1 afirmação com juízo absoluto ("sempre", "nunca") — que quase sempre é falsa.',
+          exemploInedito: {
+            contexto: 'Em uma prefeitura: (1) o prefeito delega ao secretário a assinatura de um contrato específico; (2) a prefeitura cria quatro regionais administrativas para aproximar as decisões locais; (3) a secretaria divide suas atribuições entre coordenações internas sem criar nova pessoa jurídica.',
+            aplicacao: '(1) é DELEGAÇÃO (ato pontual); (2) é DESCENTRALIZAÇÃO (estrutural, aproxima decisão); (3) é DESCONCENTRAÇÃO (divisão interna, mesma pessoa jurídica). Não há hierarquia de valor entre os conceitos — cada um serve a um propósito.',
+            desafio: 'Por que não faz sentido dizer que "descentralização é sempre melhor que centralização"? Dê um exemplo de situação em que a centralização é a escolha mais adequada.'
+          }
+        },
+        tags: ['centralização', 'descentralização', 'delegação', 'concentração', 'vf sequência']
+      },
+
+      /* ---------- Item 4 — C/E — Dificuldade 2 ---------- */
+      {
+        id: 'D-ADM-04-04',
+        tipo: 'verdadeiro_falso',
+        formato: 'certo_errado',
+        dificuldade: 2,
+        subtopico: 'Delegação x responsabilidade',
+        pergunta: 'A delegação transfere ao subordinado a autoridade E a responsabilidade final pela tarefa, de modo que o superior deixa de responder pelo resultado.',
+        alternativas: [
+          { id: 'V', texto: 'Certo' },
+          { id: 'F', texto: 'Falso' }
+        ],
+        gabarito: 'F',
+        explicacao: 'A afirmação é FALSA. A delegação transfere a AUTORIDADE para executar, mas a RESPONSABILIDADE FINAL permanece com quem delegou. O superior continua respondendo pelo resultado.',
+        explicacaoDetalhada: {
+          correta: 'A afirmação é FALSA. A delegação transfere a AUTORIDADE (para executar a tarefa), mas a RESPONSABILIDADE FINAL permanece com quem delegou. O superior continua respondendo pelo resultado perante a organização e deve acompanhar a execução. É o princípio da paridade autoridade-responsabilidade.',
+          incorretas: {
+            V: 'A afirmação não é verdadeira. Ela duplica a transferência: diz que a delegação transfere autoridade E responsabilidade final. O correto é que transfere APENAS a autoridade — a responsabilidade final fica com o superior. Se o subordinado erra, ambos podem responder: o subordinado pela execução, o superior pela escolha e pelo acompanhamento.'
+          },
+          conceitoCobrado: 'Delegação — transferência de autoridade sem transferência de responsabilidade final',
+          pegadinha: 'A palavra "E" em "autoridade E responsabilidade" é a armadilha. Delega-se autoridade, não responsabilidade final. Quem delega continua responsável. É o erro mais recorrente do módulo.',
+          comoApareceEmConcurso: 'Bancas usam essa distorção para testar se o candidato domina o princípio. A afirmação "delegação transfere responsabilidade" é quase sempre FALSA. A dica é lembrar: "delega-se o fazer, não o responder".',
+          exemploInedito: {
+            contexto: 'Um coordenador delega ao estagiário a conferência de documentos de um processo. O estagiário confere errado e o processo é indeferido por vício formal. O cidadão reclama.',
+            aplicacao: 'O estagiário responde pela execução (erro na conferência), mas o coordenador responde pela escolha (delegou a tarefa a quem não tinha competência) e pelo acompanhamento (não supervisionou). A responsabilidade final é do coordenador, não do estagiário. A delegação não o eximiu.',
+            desafio: 'Em uma repartição pública, se um diretor delega a um servidor a elaboração de um parecer e o parecer contém erro jurídico, quem responde perante a Corregedoria? Apenas o servidor? Ou também o diretor? Justifique.'
+          }
+        },
+        tags: ['delegação', 'responsabilidade']
+      },
+
+      /* ---------- Item 5 — Situação — Dificuldade 2 ---------- */
+      {
+        id: 'D-ADM-04-05',
+        tipo: 'situacao',
+        formato: 'multipla_escolha',
+        dificuldade: 2,
+        subtopico: 'Identificação de estrutura organizacional em cenário',
+        pergunta: 'Uma empresa pública implanta uma estrutura em que cada engenheiro permanece vinculado à sua gerência funcional (Obras, TI, Operações), mas, simultaneamente, é alocado em um projeto transversal (digitalização do porto), respondendo a dois gestores: o gerente funcional da sua área de origem e o gerente do projeto. A estrutura resultante é:',
+        alternativas: [
+          { id: 'A', texto: 'linear, pois cada subordinado tem um único chefe, com comando único.' },
+          { id: 'B', texto: 'funcional, pois cada subordinado responde a múltiplos chefes especializados, sem dimensão de projeto.' },
+          { id: 'C', texto: 'matricial, pois combina a dimensão funcional com a dimensão de projeto, gerando dupla subordinação.' },
+          { id: 'D', texto: 'em rede, pois elimina a hierarquia formal e organiza-se por projetos autônomos.' },
+          { id: 'E', texto: 'linha-staff, pois a assessoria jurídica recomenda, mas não decide, e a linha decide.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A alternativa C está correta. A estrutura MATRICIAL combina a dimensão funcional (gerente da área) com a dimensão de projeto (gerente do projeto), gerando dupla subordinação e risco de conflito de ordens.',
+        explicacaoDetalhada: {
+          correta: 'A alternativa C está correta. A estrutura MATRICIAL combina a dimensão funcional (gerente da área de origem) com a dimensão de projeto (gerente do projeto transversal), gerando DUPLA SUBORDINAÇÃO. O principal risco é o CONFLITO DE ORDENS entre os dois gestores, exigindo coordenação clara.',
+          incorretas: {
+            A: 'A alternativa descreve a estrutura LINEAR — comando único, cada subordinado responde a um chefe. É o oposto do cenário: aqui cada engenheiro responde a DOIS gestores (funcional e de projeto). A linear não admite dupla subordinação.',
+            B: 'A alternativa descreve a estrutura FUNCIONAL — múltiplos chefes especializados, mas SEM a dimensão de projeto. O cenário inclui explicitamente a dimensão de projeto (digitalização do porto), o que caracteriza a matricial. A funcional pura não teria o gerente de projeto.',
+            D: 'A alternativa descreve a estrutura EM REDE — sem hierarquia formal, organizada por projetos autônomos. O cenário mantém a hierarquia funcional (gerência de Obras, TI, Operações) e acrescenta a dimensão de projeto. Não há eliminação da hierarquia.',
+            E: 'A alternativa descreve a estrutura LINHA-STAFF — assessoria que recomenda, sem autoridade formal, e linha que decide. O cenário não descreve assessoria: descreve dois gestores com autoridade sobre o mesmo subordinado. É a matricial, não a linha-staff.'
+          },
+          conceitoCobrado: 'Estrutura matricial — dupla subordinação, combinação entre dimensão funcional e de projeto',
+          pegadinha: 'A banca descreve o cenário sem dizer o nome "matricial" — o candidato precisa identificar pela característica (dupla subordinação entre funcional e projeto). A confusão mais comum é com a funcional (que também tem múltiplos chefes, mas sem a dimensão de projeto) ou com a linha-staff (que tem assessoria, não dupla chefia).',
+          comoApareceEmConcurso: 'Cenários aplicados são o padrão para testar estruturas organizacionais. A palavra-chave é "dupla subordinação" — se aparece, é matricial; se é "comando único", é linear; se é "múltiplos chefes especializados, sem projeto", é funcional.',
+          exemploInedito: {
+            contexto: 'Um instituto federal aloca professores-pesquisadores em seus departamentos de origem (Matemática, Física) e, simultaneamente, em projetos de pesquisa interdisciplinares. Cada professor responde ao chefe do departamento e ao coordenador do projeto.',
+            aplicacao: 'Também é estrutura matricial: dupla subordinação (departamento + projeto). O conflito de ordens pode ocorrer (ex.: o coordenador do projeto exige dedicação integral, enquanto o chefe do departamento exige aulas). Exige coordenação clara.',
+            desafio: 'Que mecanismos um gestor pode adotar para reduzir o conflito de ordens em uma estrutura matricial? Pense em dois ou três.'
+          }
+        },
+        tags: ['estrutura matricial', 'situação aplicada']
+      },
+
+      /* ---------- Item 6 — Formato 2 (I, II, III) — Dificuldade 3 ---------- */
+      {
+        id: 'D-ADM-04-06',
+        tipo: 'multipla_escolha',
+        formato: 'afirmacoes_romanas',
+        dificuldade: 3,
+        subtopico: 'Departamentalização — critérios de agrupamento',
+        pergunta: 'Sobre os critérios de departamentalização, analise as afirmações a seguir:\n\nI. Agrupar atividades por perfil do público atendido (crianças, adultos, idosos) é departamentalização por cliente.\nII. Agrupar atividades por localização geográfica (regionais Norte, Sul, Leste, Oeste) é departamentalização geográfica.\nIII. Agrupar atividades por etapas do processo produtivo (recebimento, triagem, análise, decisão) é departamentalização funcional.\n\nEstão corretas:',
+        alternativas: [
+          { id: 'A', texto: 'Apenas I.' },
+          { id: 'B', texto: 'Apenas II.' },
+          { id: 'C', texto: 'Apenas I e II.' },
+          { id: 'D', texto: 'Apenas II e III.' },
+          { id: 'E', texto: 'I, II e III.' }
+        ],
+        gabarito: 'C',
+        explicacao: 'A alternativa C está correta. I e II são verdadeiras; III é falsa (agrupar por etapas do processo é departamentalização POR PROCESSO, não funcional).',
+        explicacaoDetalhada: {
+          correta: 'A alternativa C está correta. A afirmação I está certa: agrupar por perfil do público é departamentalização por CLIENTE. A II também está certa: agrupar por localização é departamentalização GEOGRÁFICA. A III está INCORRETA: agrupar por etapas do processo produtivo é departamentalização POR PROCESSO, não funcional. A funcional agruparia por função desempenhada (compras, vendas, RH), não por etapas do processo.',
+          incorretas: {
+            A: 'A afirmação I está correta, mas a II também. Agrupar por localização geográfica é, sim, departamentalização geográfica. Excluir a II é negar um critério clássico.',
+            B: 'A afirmação II está correta, mas a I também. Agrupar por perfil do público é departamentalização por cliente — critério clássico. Excluir a I é negar outro critério clássico.',
+            D: 'A afirmação III é falsa — agrupar por etapas do processo é departamentalização POR PROCESSO, não funcional. Incluir a III como correta é o erro central desta alternativa. A II está correta, mas a III não.',
+            E: 'Não é possível aceitar as três. A afirmação III confunde departamentalização por PROCESSO com departamentalização FUNCIONAL. A funcional agrupa por função (compras, vendas, RH); a por processo agrupa por etapas (recebimento, triagem, análise). Incluir a III é o que torna a alternativa errada.'
+          },
+          conceitoCobrado: 'Critérios de departamentalização: por cliente, geográfica, funcional e por processo',
+          pegadinha: 'A confusão mais comum é entre departamentalização FUNCIONAL (por função: compras, vendas, RH) e POR PROCESSO (por etapas: recebimento, triagem, análise). A afirmação III usa "etapas do processo produtivo" e chama de funcional — erro clássico.',
+          comoApareceEmConcurso: 'Bancas testam a distinção entre critérios de departamentalização com afirmações que misturam exemplos corretos e um exemplo trocado. A estratégia é colocar 2 afirmações verdadeiras e 1 falsa em ponto-chave — geralmente a falsa é a que troca funcional por processo (ou por cliente).',
+          exemploInedito: {
+            contexto: 'Um hospital público organiza suas diretorias de quatro formas possíveis: (a) por especialidade (clínica médica, cirurgia, pediatria) — funcional; (b) por perfil do paciente (infantil, adulto, idoso) — por cliente; (c) por localização (unidade centro, unidade norte) — geográfica; (d) por etapa do atendimento (recepção, triagem, consulta, exames) — por processo.',
+            aplicacao: 'Cada critério tem uma lógica. O hospital pode combinar critérios (matricial) ou escolher um principal. A confusão da afirmação III está em chamar "funcional" o que é "por processo" — são critérios distintos, ainda que ambos organizem o fluxo de trabalho.',
+            desafio: 'Se você fosse gestor de um hospital público, qual critério de departamentalização escolheria como principal? Justifique considerando o tipo de atividade e o público atendido.'
+          }
+        },
+        tags: ['departamentalização', 'cliente', 'geográfica', 'funcional', 'processo', 'afirmações romanas']
+      },
+
+      /* ---------- Item 7 — Autoavaliação ---------- */
+      {
+        id: 'D-ADM-04-07',
+        tipo: 'autoavaliacao',
+        subtopico: 'Distinções fundamentais da função organização',
+        pergunta: 'Sem consultar, você consegue diferenciar centralização x descentralização, delegação x descentralização, concentração x desconcentração, amplitude de controle estreita x ampla e os principais tipos de estrutura (linear, funcional, linha-staff e matricial)?',
+        resposta: 'CENTRALIZAÇÃO x DESCENTRALIZAÇÃO: onde a decisão fica — cúpula x distribuída. DELEGAÇÃO x DESCENTRALIZAÇÃO: ato pontual de transferir autoridade (delegação) x transferência estrutural e permanente (descentralização); a delegação mantém a responsabilidade final com o superior. CONCENTRAÇÃO x DESCONCENTRAÇÃO: um único órgão executa (concentração) x divisão entre órgãos da MESMA pessoa jurídica (desconcentração — sem nova personalidade). AMPLITUDE ESTREITA x AMPLA: poucos subordinados por gestor → mais níveis hierárquicos (verticalizada) x muitos subordinados → menos níveis (achatada). ESTRUTURAS: linear (comando único, rápida, mas rígida); funcional (múltiplos chefes especializados, sem projeto); linha-staff (assessoria recomenda, linha decide); matricial (dupla subordinação — funcional + projeto, com risco de conflito de ordens).'
+      }
+
+    ]
+  }
 
 };
