@@ -23,7 +23,98 @@ export const DIAGNOSTICS = Object.freeze({
     { subtopicId: 'ADM-03-004', front: 'Uma equipe tem servidores experientes, sistemas antigos, recebe verba de programa externo e enfrenta mudança na demanda. Como classificar esses fatores na SWOT?', back: 'Forças e fraquezas são fatores internos: experiência da equipe (força) e sistemas antigos (fraqueza). Oportunidades e ameaças são externas: verba disponível (oportunidade) e mudança desfavorável da demanda (ameaça). A classificação depende do contexto.' },
     { subtopicId: 'ADM-03-005', front: 'Um gestor mede apenas o gasto mensal e afirma que isso basta para avaliar toda a estratégia. Como o Balanced Scorecard amplia essa visão?', back: 'O BSC traduz a estratégia em objetivos e indicadores articulados, considerando perspectivas além da financeira. No setor público, as perspectivas podem ser adaptadas à missão e ao valor entregue à sociedade; não há obrigação de copiar mecanicamente o modelo privado.' },
     { subtopicId: 'ADM-03-006', front: 'Um órgão mede quantos atendimentos realizou e também quantos cidadãos tiveram o problema resolvido. Qual a diferença entre esses indicadores e o papel do mapa estratégico?', back: 'Quantidade de atendimentos é um indicador de produção; resolução de demandas aproxima-se de resultado ou qualidade. Indicadores precisam refletir objetivos; o mapa estratégico representa relações entre objetivos, geralmente em lógica de causa e efeito, sem provar causalidade automaticamente.' }
-  ]
+  ],
+"ADM-04": [
+  {
+    "subtopicId": "ADM-04-001",
+    "front": "Por que separar atividades sem integrar informações pode aumentar filas?",
+    "back": "Divisão do trabalho especializa tarefas e exige coordenação. Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho."
+  },
+  {
+    "subtopicId": "ADM-04-002",
+    "front": "Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
+    "back": "Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. Uma chefia distribui demandas e acompanha prazos; cada servidor responde pelas tarefas sob sua atribuição."
+  },
+  {
+    "subtopicId": "ADM-04-003",
+    "front": "Por que uma equipe experiente pode admitir maior amplitude de controle?",
+    "back": "Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados."
+  },
+  {
+    "subtopicId": "ADM-04-004",
+    "front": "Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
+    "back": "Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. Uma rede de escolas deixa compras estratégicas na sede e permite ajustar horários de atendimento nas unidades."
+  },
+  {
+    "subtopicId": "ADM-04-005",
+    "front": "Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
+    "back": "Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia."
+  },
+  {
+    "subtopicId": "ADM-04-006",
+    "front": "Qual risco surge quando duas chefias dão prioridades incompatíveis?",
+    "back": "Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. Uma equipe de projeto responde ao gerente do projeto e mantém vínculo técnico com a coordenação de informática."
+  }
+],
+"ADM-05": [
+  {
+    "subtopicId": "ADM-05-001",
+    "front": "Como a percepção de justiça afeta a aceitação de uma mudança?",
+    "back": "Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina."
+  },
+  {
+    "subtopicId": "ADM-05-002",
+    "front": "Uma referência técnica pode liderar sem assinar decisões da chefia?",
+    "back": "Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. Uma servidora experiente orienta colegas sobre sistema novo sem ser superior hierárquica."
+  },
+  {
+    "subtopicId": "ADM-05-003",
+    "front": "Por que a urgência pode alterar o estilo de liderança adotado?",
+    "back": "Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores."
+  },
+  {
+    "subtopicId": "ADM-05-004",
+    "front": "Como a experiência da equipe altera o nível de orientação necessário?",
+    "back": "Teorias de liderança investigam traços, comportamentos e adequação às situações. Uma chefia oferece instrução detalhada a iniciantes e amplia autonomia quando a equipe ganha experiência."
+  },
+  {
+    "subtopicId": "ADM-05-005",
+    "front": "Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
+    "back": "Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento."
+  },
+  {
+    "subtopicId": "ADM-05-006",
+    "front": "Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
+    "back": "McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. Uma chefia amplia autonomia e oferece recursos porque acredita na capacidade da equipe de assumir compromissos."
+  }
+],
+"ADM-06": [
+  {
+    "subtopicId": "ADM-06-001",
+    "front": "O que fazer se a meta era irrealista desde o início?",
+    "back": "Controle compara resultados com padrões e orienta correções e aprendizagem. Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos."
+  },
+  {
+    "subtopicId": "ADM-06-002",
+    "front": "Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
+    "back": "Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. Um órgão mede tempo médio de atendimento e percentual de solicitações resolvidas, não apenas volume de senhas distribuídas."
+  },
+  {
+    "subtopicId": "ADM-06-003",
+    "front": "Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
+    "back": "Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados."
+  },
+  {
+    "subtopicId": "ADM-06-004",
+    "front": "Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
+    "back": "Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. Após reclamações de atrasos, a equipe identifica falha no fluxo de documentos, testa novo procedimento e acompanha os indicadores."
+  },
+  {
+    "subtopicId": "ADM-06-005",
+    "front": "Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
+    "back": "Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos."
+  }
+]
 });
 
 export function getDiagnosticCards(module) {

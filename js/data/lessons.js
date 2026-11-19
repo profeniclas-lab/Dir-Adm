@@ -198,5 +198,193 @@ export const LESSONS = {
     "reviewQuestion": "Qual a diferença entre indicador e mapa estratégico?",
     "reviewAnswer": "Indicador acompanha uma variável; mapa representa relações entre objetivos estratégicos."
   }
+,
+"ADM-04-001": {
+  "id": "ADM-04-001",
+  "objective": "Compreender divisão do trabalho especializa tarefas e exige coordenação, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Divisão do trabalho especializa tarefas e exige coordenação.",
+  "explanation": "A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho.",
+  "examTip": "Não confunda especialização com autonomia total de cada setor. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Divisão do trabalho especializa tarefas e exige coordenação. A estrutura formal distribui tarefas e relações de autoridade.",
+  "reviewQuestion": "Por que separar atividades sem integrar informações pode aumentar filas?",
+  "reviewAnswer": "A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. A divisão do trabalho pode aumentar especialização e eficiência."
+},
+"ADM-04-002": {
+  "id": "ADM-04-002",
+  "objective": "Compreender hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas.",
+  "explanation": "Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma chefia distribui demandas e acompanha prazos; cada servidor responde pelas tarefas sob sua atribuição.",
+  "examTip": "Autoridade formal não equivale a poder ilimitado. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. Hierarquia organiza relações formais entre níveis.",
+  "reviewQuestion": "Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
+  "reviewAnswer": "Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Autoridade deve respeitar competências e normas."
+},
+"ADM-04-003": {
+  "id": "ADM-04-003",
+  "objective": "Compreender delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados.",
+  "explanation": "Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados.",
+  "examTip": "Não confunda delegação administrativa com renúncia definitiva de competência. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. Delegar pode aproximar decisões da execução.",
+  "reviewQuestion": "Por que uma equipe experiente pode admitir maior amplitude de controle?",
+  "reviewAnswer": "Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude de controle depende da complexidade das tarefas."
+},
+"ADM-04-004": {
+  "id": "ADM-04-004",
+  "objective": "Compreender centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia.",
+  "explanation": "No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma rede de escolas deixa compras estratégicas na sede e permite ajustar horários de atendimento nas unidades.",
+  "examTip": "Descentralização organizacional não é sinônimo automático de criação de entidade da Administração Indireta. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. Centralização pode favorecer padronização de decisões.",
+  "reviewQuestion": "Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
+  "reviewAnswer": "No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Descentralização gerencial pode ampliar resposta às necessidades locais."
+},
+"ADM-04-005": {
+  "id": "ADM-04-005",
+  "objective": "Compreender departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo.",
+  "explanation": "Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia.",
+  "examTip": "A existência de várias unidades não indica, por si só, qual critério de agrupamento foi utilizado. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. Departamentalização funcional agrupa especialidades semelhantes.",
+  "reviewQuestion": "Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
+  "reviewAnswer": "Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Departamentalização geográfica considera territórios atendidos."
+},
+"ADM-04-006": {
+  "id": "ADM-04-006",
+  "objective": "Compreender organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas.",
+  "explanation": "A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma equipe de projeto responde ao gerente do projeto e mantém vínculo técnico com a coordenação de informática.",
+  "examTip": "Dupla coordenação na matriz não significa ausência de autoridade. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. Organogramas retratam principalmente relações formais.",
+  "reviewQuestion": "Qual risco surge quando duas chefias dão prioridades incompatíveis?",
+  "reviewAnswer": "A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Estrutura matricial combina dois critérios de coordenação."
+},
+"ADM-05-001": {
+  "id": "ADM-05-001",
+  "objective": "Compreender dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança.",
+  "explanation": "A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina.",
+  "examTip": "Não trate motivação e liderança como substitutas de planejamento e organização. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. Direção envolve orientar e mobilizar pessoas.",
+  "reviewQuestion": "Como a percepção de justiça afeta a aceitação de uma mudança?",
+  "reviewAnswer": "A direção conecta o planejamento às ações humanas. Comportamento organizacional considera indivíduos e grupos."
+},
+"ADM-05-002": {
+  "id": "ADM-05-002",
+  "objective": "Compreender liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos.",
+  "explanation": "Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma servidora experiente orienta colegas sobre sistema novo sem ser superior hierárquica.",
+  "examTip": "Liderança informal não concede competência legal para praticar atos reservados à chefia. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. Liderança pode existir sem cargo de chefia.",
+  "reviewQuestion": "Uma referência técnica pode liderar sem assinar decisões da chefia?",
+  "reviewAnswer": "Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Autoridade formal decorre de posição institucional."
+},
+"ADM-05-003": {
+  "id": "ADM-05-003",
+  "objective": "Compreender estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire), aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire).",
+  "explanation": "O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores.",
+  "examTip": "Democrático não significa ausência de direção; liberal não significa necessariamente confiança eficaz. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). Liderança autocrática concentra decisões.",
+  "reviewQuestion": "Por que a urgência pode alterar o estilo de liderança adotado?",
+  "reviewAnswer": "O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Liderança democrática favorece participação."
+},
+"ADM-05-004": {
+  "id": "ADM-05-004",
+  "objective": "Compreender teorias de liderança investigam traços, comportamentos e adequação às situações, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Teorias de liderança investigam traços, comportamentos e adequação às situações.",
+  "explanation": "Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma chefia oferece instrução detalhada a iniciantes e amplia autonomia quando a equipe ganha experiência.",
+  "examTip": "Não confunda traço pessoal com comportamento treinável ou ajuste ao contexto. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Teorias de liderança investigam traços, comportamentos e adequação às situações. Teorias de traços enfocam características pessoais.",
+  "reviewQuestion": "Como a experiência da equipe altera o nível de orientação necessário?",
+  "reviewAnswer": "Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Teorias comportamentais estudam condutas do líder."
+},
+"ADM-05-005": {
+  "id": "ADM-05-005",
+  "objective": "Compreender maslow propôs uma hierarquia de necessidades; herzberg distinguiu fatores higiênicos e motivacionais, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais.",
+  "explanation": "Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento.",
+  "examTip": "Salário é classificado por Herzberg como fator higiênico, não como motivador intrínseco. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. Maslow organiza necessidades em categorias hierarquizadas.",
+  "reviewQuestion": "Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
+  "reviewAnswer": "Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Herzberg diferencia fatores higiênicos e motivacionais."
+},
+"ADM-05-006": {
+  "id": "ADM-05-006",
+  "objective": "Compreender mcgregor contrapôs pressupostos gerenciais x e y; outras abordagens destacam expectativas e equidade, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade.",
+  "explanation": "A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. A aplicação concreta depende do desenho da organização e não apenas do nome atribuído ao modelo.",
+  "example": "Uma chefia amplia autonomia e oferece recursos porque acredita na capacidade da equipe de assumir compromissos.",
+  "examTip": "Não confunda Teoria Y com ausência de metas ou de acompanhamento. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. Teoria X pressupõe necessidade de controle mais intenso.",
+  "reviewQuestion": "Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
+  "reviewAnswer": "A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. Teoria Y admite iniciativa e responsabilidade em condições adequadas."
+},
+"ADM-06-001": {
+  "id": "ADM-06-001",
+  "objective": "Compreender controle compara resultados com padrões e orienta correções e aprendizagem, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Controle compara resultados com padrões e orienta correções e aprendizagem.",
+  "explanation": "O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. Na administração pública, princípios e competências legais continuam aplicáveis quando a questão tratar de atos ou órgãos públicos.",
+  "example": "Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos.",
+  "examTip": "Não confunda medir desempenho com completar todo o ciclo de controle. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Controle compara resultados com padrões e orienta correções e aprendizagem. Controle envolve padrões e medição de desempenho.",
+  "reviewQuestion": "O que fazer se a meta era irrealista desde o início?",
+  "reviewAnswer": "O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Comparação entre resultado e padrão ajuda identificar desvios."
+},
+"ADM-06-002": {
+  "id": "ADM-06-002",
+  "objective": "Compreender indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação.",
+  "explanation": "Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. Na administração pública, princípios e competências legais continuam aplicáveis quando a questão tratar de atos ou órgãos públicos.",
+  "example": "Um órgão mede tempo médio de atendimento e percentual de solicitações resolvidas, não apenas volume de senhas distribuídas.",
+  "examTip": "Produção elevada não demonstra automaticamente qualidade ou efetividade. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. Indicadores devem ter critérios claros de medição.",
+  "reviewQuestion": "Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
+  "reviewAnswer": "Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Metas servem como referência para interpretar resultados."
+},
+"ADM-06-003": {
+  "id": "ADM-06-003",
+  "objective": "Compreender controle preventivo ocorre antes, concomitante durante e posterior depois da execução, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Controle preventivo ocorre antes, concomitante durante e posterior depois da execução.",
+  "explanation": "O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. Na administração pública, princípios e competências legais continuam aplicáveis quando a questão tratar de atos ou órgãos públicos.",
+  "example": "Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados.",
+  "examTip": "Controle posterior não significa que toda correção seja impossível. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. Controle preventivo atua antes da execução.",
+  "reviewQuestion": "Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
+  "reviewAnswer": "O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. Controle concomitante acompanha a execução."
+},
+"ADM-06-004": {
+  "id": "ADM-06-004",
+  "objective": "Compreender ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente.",
+  "explanation": "Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. Na administração pública, princípios e competências legais continuam aplicáveis quando a questão tratar de atos ou órgãos públicos.",
+  "example": "Após reclamações de atrasos, a equipe identifica falha no fluxo de documentos, testa novo procedimento e acompanha os indicadores.",
+  "examTip": "Agir corretivamente não significa necessariamente punir alguém. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. Ação corretiva deve considerar causas dos desvios.",
+  "reviewQuestion": "Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
+  "reviewAnswer": "Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. PDCA articula planejamento, execução, verificação e ação."
+},
+"ADM-06-005": {
+  "id": "ADM-06-005",
+  "objective": "Compreender controle gerencial apoia a gestão; controle da administração pública envolve mecanismos internos, externos e sociais, aplicar o conteúdo em situações administrativas e distinguir erros frequentes em concursos.",
+  "concept": "Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais.",
+  "explanation": "O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade. Em concursos de nível médio, identifique primeiro o conceito central, depois observe o contexto e evite conclusões absolutas que eliminem condições e exceções. Na administração pública, princípios e competências legais continuam aplicáveis quando a questão tratar de atos ou órgãos públicos.",
+  "example": "Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos.",
+  "examTip": "Não confunda controle externo com fiscalização feita por qualquer unidade de outra secretaria. Questões podem comparar conceitos próximos ou pedir análise de uma situação de trabalho.",
+  "summary": "Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. Controle gerencial fornece informação para decisões administrativas.",
+  "reviewQuestion": "Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
+  "reviewAnswer": "O controle gerencial acompanha processos, metas e recursos para orientar decisões. Controle interno e externo possuem competências institucionais próprias."
+}
 };
 export const getLesson = id => LESSONS[id] || null;
