@@ -3,12 +3,14 @@ import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navi
 import { renderDashboard } from "./features/dashboard.js";
 import { renderModules } from "./features/modules.js";
 import { renderModuleDetail } from "./features/module-detail.js";
+import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiagnostic } from "./features/diagnostic.js";
 import { validateCatalog } from "./data/modules.js";
 
 const state = loadState();
 const mainElement = document.getElementById("main");
 const catalogErrors = validateCatalog();
 if (catalogErrors.length) console.error("[ADM-ESTUDO] Catálogo inválido:", catalogErrors);
+let activeView = 'module';
 
 function renderCurrentPage() {
   if (!mainElement) return;
@@ -19,44 +21,58 @@ function renderCurrentPage() {
     return;
   }
   switch (state.navigation.currentRoute) {
-    case "dashboard":
-      renderDashboard(mainElement, state);
-      break;
+    case "dashboard": renderDashboard(mainElement, state); break;
     case "modulos":
       if (state.navigation.selectedModuleId) {
-        renderModuleDetail(mainElement, state.navigation.selectedModuleId, state);
-      } else {
-        renderModules(mainElement);
-      }
+        if (activeView === 'diagnostic') renderDiagnostic(mainElement, state.navigation.selectedModuleId, state);
+        else renderModuleDetail(mainElement, state.navigation.selectedModuleId, state);
+      } else renderModules(mainElement);
       break;
     default:
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;
   }
 }
-
+function commitAndRender() { saveState(state); renderCurrentPage(); }
 function navigateTo(route) {
   state.navigation.currentRoute = route;
-  if (route === "modulos") state.navigation.selectedModuleId = null;
-  saveState(state);
-  renderCurrentPage();
+  activeView = 'module';
+  if (route === 'modulos') state.navigation.selectedModuleId = null;
+  commitAndRender();
 }
 
-document.addEventListener("click", event => {
-  const moduleButton = event.target.closest("[data-module-id]");
+document.addEventListener('click', event => {
+  const moduleButton = event.target.closest('[data-module-id]');
   if (moduleButton) {
-    state.navigation.currentRoute = "modulos";
+    state.navigation.currentRoute = 'modulos';
     state.navigation.selectedModuleId = moduleButton.dataset.moduleId;
-    saveState(state);
-    renderCurrentPage();
+    activeView = 'module';
+    commitAndRender(); return;
+  }
+  const action = event.target.closest('[data-action]')?.dataset.action;
+  if (action === 'modules-back') {
+    state.navigation.selectedModuleId = null; activeView = 'module'; commitAndRender(); return;
+  }
+  if (action === 'diagnostic-open') {
+    activeView = 'diagnostic'; renderCurrentPage(); return;
+  }
+  if (action === 'diagnostic-back') {
+    activeView = 'module'; renderCurrentPage(); return;
+  }
+  const choiceButton = event.target.closest('[data-diag-choice]');
+  if (choiceButton && state.navigation.selectedModuleId && activeView === 'diagnostic') {
+    if (saveDiagnosticAnswer(state, state.navigation.selectedModuleId, choiceButton.dataset.diagSubtopic, choiceButton.dataset.diagChoice)) commitAndRender();
     return;
   }
-  if (event.target.closest('[data-action="modules-back"]')) {
-    state.navigation.selectedModuleId = null;
-    saveState(state);
-    renderCurrentPage();
+  const editButton = event.target.closest('[data-diag-edit]');
+  if (editButton && state.navigation.selectedModuleId && activeView === 'diagnostic') {
+    renderDiagnosticEdit(mainElement, state.navigation.selectedModuleId, editButton.dataset.diagEdit, state); return;
+  }
+  if (action === 'diagnostic-reset' && activeView === 'diagnostic' && state.navigation.selectedModuleId) {
+    if (window.confirm('Deseja apagar as respostas deste diagnóstico e começar novamente?')) {
+      resetDiagnostic(state, state.navigation.selectedModuleId); commitAndRender();
+    }
   }
 });
-
 setupNavigation({ onNavigate: navigateTo });
 renderCurrentPage();
-console.info("[ADM-ESTUDO] Aplicação v2.0 inicializada; catálogo validado.");
+console.info('[ADM-ESTUDO] Aplicação v2.0: diagnóstico inicial habilitado nos primeiros três módulos.');
