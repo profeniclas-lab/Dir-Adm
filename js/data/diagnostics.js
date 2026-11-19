@@ -200,6 +200,92 @@ export const DIAGNOSTICS = Object.freeze({
     "front": "O plano de ação já definiu responsáveis e prazos. Como verificar se melhorou o serviço? Explique o raciocínio antes de virar o cartão.",
     "back": "Acompanhar um indicador de espera com método de medição consistente. 5W2H estrutura um plano de ação com o quê, por quê, onde, quando, quem, como e quanto custa; indicadores acompanham resultados ou processos. Preencher 5W2H não demonstra que uma ação funcionou; indicadores e acompanhamento permitem verificar efeitos."
   }
+],
+"ADM-10": [
+  {
+    "subtopicId": "ADM-10-001",
+    "front": "Qual a diferença entre classificar, especificar e codificar um material?",
+    "back": "Classificar agrupa itens; especificar descreve atributos técnicos; codificar atribui identificação padronizada. Um código não substitui uma especificação suficiente."
+  },
+  {
+    "subtopicId": "ADM-10-002",
+    "front": "O recebimento de materiais termina ao descarregar as caixas?",
+    "back": "Não. É necessário conferir documentos, quantidade e conformidade conforme o procedimento aplicável; armazenar envolve localização, conservação e rastreabilidade."
+  },
+  {
+    "subtopicId": "ADM-10-003",
+    "front": "Por que estoque elevado nem sempre é bom?",
+    "back": "Pode evitar faltas, mas aumenta custos de espaço, capital, perdas e obsolescência. O equilíbrio depende da demanda e do prazo de reposição."
+  },
+  {
+    "subtopicId": "ADM-10-004",
+    "front": "Diferencie estoque de segurança, ponto de pedido e giro.",
+    "back": "Estoque de segurança protege contra incertezas; ponto de pedido sinaliza a reposição considerando demanda e prazo; giro mede renovação do estoque em um período."
+  },
+  {
+    "subtopicId": "ADM-10-005",
+    "front": "Para que serve o inventário se o sistema já registra todos os itens?",
+    "back": "O inventário confronta quantidades físicas e registros, identifica divergências e subsidia apuração. Almoxarifado recebe, guarda e distribui materiais."
+  },
+  {
+    "subtopicId": "ADM-10-006",
+    "front": "Tombamento significa que um bem jamais poderá ser baixado?",
+    "back": "Não. Tombamento identifica e registra o bem; baixa retira-o do controle patrimonial segundo procedimento aplicável, não sendo sinônimo de descarte físico."
+  }
+],
+"ADM-11": [
+  {
+    "subtopicId": "ADM-11-001",
+    "front": "Diferencie processo, atividade, tarefa e procedimento.",
+    "back": "Processo articula atividades para transformar entradas em resultados; atividade reúne trabalhos; tarefa é ação específica; procedimento descreve como executar uma ação."
+  },
+  {
+    "subtopicId": "ADM-11-002",
+    "front": "Atendimento ao cidadão é sempre processo de apoio?",
+    "back": "Não. Processos finalísticos entregam valor ligado à missão institucional; processos de apoio oferecem meios. A classificação depende da finalidade do órgão."
+  },
+  {
+    "subtopicId": "ADM-11-003",
+    "front": "O que caracteriza a gestão por processos?",
+    "back": "Acompanha fluxos ponta a ponta e resultados entre setores, sem necessariamente eliminar departamentos; requer responsabilidades e indicadores ao longo do processo."
+  },
+  {
+    "subtopicId": "ADM-11-004",
+    "front": "Qual a diferença entre fluxograma e organograma?",
+    "back": "Fluxograma representa etapas, decisões e caminhos de um processo; organograma representa unidades e relações hierárquicas. Um processo pode atravessar vários setores."
+  },
+  {
+    "subtopicId": "ADM-11-005",
+    "front": "Como identificar um gargalo sem simplesmente culpar um setor?",
+    "back": "Examinar filas, tempos, capacidade e retrabalho. Gargalo é uma restrição ao fluxo; melhorar uma etapa não restritiva pode não reduzir o prazo total."
+  }
+],
+"ADM-12": [
+  {
+    "subtopicId": "ADM-12-001",
+    "front": "Qualidade no atendimento exige atender a todo pedido do cidadão?",
+    "back": "Não. Exige informação correta, respeito, clareza, acessibilidade e orientação, mesmo quando o pedido não pode ser deferido segundo as regras."
+  },
+  {
+    "subtopicId": "ADM-12-002",
+    "front": "Linguagem clara é a mesma coisa que informalidade excessiva?",
+    "back": "Não. Linguagem clara preserva precisão e compreensão; postura profissional inclui respeito, discrição e comunicação adequada ao público."
+  },
+  {
+    "subtopicId": "ADM-12-003",
+    "front": "Quais cuidados mudam entre atendimento presencial, telefônico e digital?",
+    "back": "Todos exigem orientação, registro adequado e proteção de dados; cada canal demanda recursos específicos de comunicação, confirmação de entendimento e acessibilidade."
+  },
+  {
+    "subtopicId": "ADM-12-004",
+    "front": "Atender todas as pessoas de modo idêntico garante acessibilidade?",
+    "back": "Não necessariamente. Barreiras distintas podem exigir adaptações razoáveis para assegurar acesso efetivo e equitativo."
+  },
+  {
+    "subtopicId": "ADM-12-005",
+    "front": "Como administrar conflitos sem prometer algo fora da competência do órgão?",
+    "back": "Escutar, esclarecer critérios, explicar limites e encaminhamentos e registrar quando cabível, respeitando regras e evitando privilégios."
+  }
 ]
 });
 
