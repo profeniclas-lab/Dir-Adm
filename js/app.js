@@ -5,7 +5,7 @@ import { renderModules } from "./features/modules.js";
 import { renderModuleDetail } from "./features/module-detail.js";
 import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiagnostic } from "./features/diagnostic.js";
 import { renderLesson, saveLessonProgress } from "./features/lessons.js";
-import { renderExercises, createExerciseSession, answerExercise, nextExercise } from "./features/exercises.js";
+import { renderExercises, createExerciseSession, answerExercise, assessExercise, nextExercise } from "./features/exercises.js";
 import { validateCatalog } from "./data/modules.js";
 
 const state = loadState();
@@ -62,7 +62,9 @@ document.addEventListener('click', event => {
   const rating=event.target.closest('[data-lesson-rating]');
   if(rating && activeView==='lesson' && lessonSubtopicId){if(saveLessonProgress(state,lessonSubtopicId,'rating',rating.dataset.lessonRating))commitAndRender();return;}
   const exerciseChoice=event.target.closest('[data-exercise-choice]');
-  if(exerciseChoice && activeView==='exercises'){const id=state.progress.exercises?.[state.navigation.selectedModuleId]?.ids?.find(qid=>!Number.isInteger(state.progress.exercises[state.navigation.selectedModuleId].answers[qid]));if(id&&answerExercise(state,state.navigation.selectedModuleId,id,Number(exerciseChoice.dataset.exerciseChoice)))commitAndRender();return;}
+  if(exerciseChoice && activeView==='exercises'){const session=state.progress.exercises?.[state.navigation.selectedModuleId];const id=session?.ids?.[session.cursor];if(id&&answerExercise(state,state.navigation.selectedModuleId,id,Number(exerciseChoice.dataset.exerciseChoice)))commitAndRender();return;}
+  const assess=event.target.closest('[data-exercise-assess]');
+  if(assess && activeView==='exercises'){const mid=state.navigation.selectedModuleId;const session=state.progress.exercises?.[mid];const id=session?.ids?.[session.cursor];if(id&&assessExercise(state,mid,id,assess.dataset.exerciseAssess))commitAndRender();return;}
   const action = event.target.closest('[data-action]')?.dataset.action;
   if(action==='exercise-open'){activeView='exercises';renderCurrentPage();return;}
   if(action==='exercise-back'){activeView='module';renderCurrentPage();return;}

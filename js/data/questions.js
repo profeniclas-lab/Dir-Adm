@@ -90,13 +90,13 @@ export const QUESTIONS = [
     "difficulty": "dificil",
     "stem": "Sobre administração de organizações, assinale a alternativa INCORRETA.",
     "options": [
+      "Pode envolver decisões em diferentes níveis.",
       "Pode ocorrer em organizações públicas e privadas.",
       "Relaciona recursos disponíveis a objetivos.",
       "Depende necessariamente da distribuição de lucros.",
-      "Inclui coordenação de atividades e pessoas.",
-      "Pode envolver decisões em diferentes níveis."
+      "Inclui coordenação de atividades e pessoas."
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Lucro não é requisito da administração; organizações sem fins lucrativos também administram recursos.",
     "concept": "Conceito de Administração e organizações",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -104,11 +104,11 @@ export const QUESTIONS = [
     "newExample": "Uma unidade de saúde administra escalas e materiais mesmo sem comercializar serviços.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “Pode envolver decisões em diferentes níveis.” não corresponde ao conjunto de condições descritas. Lucro não é requisito da administração; organizações sem fins lucrativos também administram recursos.",
       "Incorreta: a opção “Pode ocorrer em organizações públicas e privadas.” não corresponde ao conjunto de condições descritas. Lucro não é requisito da administração; organizações sem fins lucrativos também administram recursos.",
       "Incorreta: a opção “Relaciona recursos disponíveis a objetivos.” não corresponde ao conjunto de condições descritas. Lucro não é requisito da administração; organizações sem fins lucrativos também administram recursos.",
       "Correta: Lucro não é requisito da administração; organizações sem fins lucrativos também administram recursos.",
-      "Incorreta: a opção “Inclui coordenação de atividades e pessoas.” não corresponde ao conjunto de condições descritas. Lucro não é requisito da administração; organizações sem fins lucrativos também administram recursos.",
-      "Incorreta: a opção “Pode envolver decisões em diferentes níveis.” não corresponde ao conjunto de condições descritas. Lucro não é requisito da administração; organizações sem fins lucrativos também administram recursos."
+      "Incorreta: a opção “Inclui coordenação de atividades e pessoas.” não corresponde ao conjunto de condições descritas. Lucro não é requisito da administração; organizações sem fins lucrativos também administram recursos."
     ]
   },
   {
@@ -144,12 +144,12 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Um órgão dispõe de orçamento, servidores, computadores e relatórios. Qual classificação é mais adequada?",
     "options": [
+      "Informacionais, financeiros, humanos e materiais.",
       "Financeiros, humanos, materiais/tecnológicos e informacionais.",
       "Humanos, financeiros, humanos e patrimoniais.",
-      "Tecnológicos, materiais, financeiros e humanos.",
-      "Informacionais, financeiros, humanos e materiais."
+      "Tecnológicos, materiais, financeiros e humanos."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Orçamento é financeiro; servidores são humanos; equipamentos são materiais/tecnológicos; relatórios são informacionais.",
     "concept": "Recursos organizacionais",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -157,10 +157,10 @@ export const QUESTIONS = [
     "newExample": "Uma escola usa verba, professores, tablets e indicadores de evasão; identifique o papel de cada recurso.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “Informacionais, financeiros, humanos e materiais.” não corresponde ao conjunto de condições descritas. Orçamento é financeiro; servidores são humanos; equipamentos são materiais/tecnológicos; relatórios são informacionais.",
       "Correta: Orçamento é financeiro; servidores são humanos; equipamentos são materiais/tecnológicos; relatórios são informacionais.",
       "Incorreta: a opção “Humanos, financeiros, humanos e patrimoniais.” não corresponde ao conjunto de condições descritas. Orçamento é financeiro; servidores são humanos; equipamentos são materiais/tecnológicos; relatórios são informacionais.",
-      "Incorreta: a opção “Tecnológicos, materiais, financeiros e humanos.” não corresponde ao conjunto de condições descritas. Orçamento é financeiro; servidores são humanos; equipamentos são materiais/tecnológicos; relatórios são informacionais.",
-      "Incorreta: a opção “Informacionais, financeiros, humanos e materiais.” não corresponde ao conjunto de condições descritas. Orçamento é financeiro; servidores são humanos; equipamentos são materiais/tecnológicos; relatórios são informacionais."
+      "Incorreta: a opção “Tecnológicos, materiais, financeiros e humanos.” não corresponde ao conjunto de condições descritas. Orçamento é financeiro; servidores são humanos; equipamentos são materiais/tecnológicos; relatórios são informacionais."
     ]
   },
   {
@@ -202,13 +202,13 @@ export const QUESTIONS = [
     "difficulty": "dificil",
     "stem": "Julgue as afirmações e selecione a sequência correta (V/F).\nI. Informações confiáveis podem ser recurso estratégico.\nII. Pessoas são classificadas como recursos financeiros.\nIII. Equipamentos integram recursos materiais.\nIV. O orçamento não condiciona escolhas administrativas.",
     "options": [
+      "V – F – F – V",
       "V – F – V – F",
       "F – V – F – V",
       "V – V – F – F",
-      "F – F – V – V",
-      "V – F – F – V"
+      "F – F – V – V"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "I e III são verdadeiras; pessoas são recursos humanos, e limites orçamentários influenciam decisões.",
     "concept": "Recursos organizacionais",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -216,11 +216,11 @@ export const QUESTIONS = [
     "newExample": "Uma repartição com poucos recursos financeiros precisa priorizar compras, mesmo possuindo servidores qualificados.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “V – F – F – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; pessoas são recursos humanos, e limites orçamentários influenciam decisões.",
       "Correta: I e III são verdadeiras; pessoas são recursos humanos, e limites orçamentários influenciam decisões.",
       "Incorreta: a opção “F – V – F – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; pessoas são recursos humanos, e limites orçamentários influenciam decisões.",
       "Incorreta: a opção “V – V – F – F” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; pessoas são recursos humanos, e limites orçamentários influenciam decisões.",
-      "Incorreta: a opção “F – F – V – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; pessoas são recursos humanos, e limites orçamentários influenciam decisões.",
-      "Incorreta: a opção “V – F – F – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; pessoas são recursos humanos, e limites orçamentários influenciam decisões."
+      "Incorreta: a opção “F – F – V – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; pessoas são recursos humanos, e limites orçamentários influenciam decisões."
     ]
   },
   {
@@ -256,12 +256,12 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Um setor atingiu a meta de atendimentos, mas consumiu recursos acima do necessário. Ele foi:",
     "options": [
-      "Eficaz, mas não necessariamente eficiente.",
-      "Eficiente, mas necessariamente ineficaz.",
       "Efetivo, pois todo gasto adicional melhora impactos.",
-      "Produtivo, pois recursos não entram nessa análise."
+      "Produtivo, pois recursos não entram nessa análise.",
+      "Eficaz, mas não necessariamente eficiente.",
+      "Eficiente, mas necessariamente ineficaz."
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "A meta alcançada demonstra eficácia; o desperdício impede afirmar eficiência.",
     "concept": "Eficiência, eficácia, efetividade e produtividade",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -269,10 +269,10 @@ export const QUESTIONS = [
     "newExample": "Um mutirão conclui todos os cadastros, porém com horas extras evitáveis: separe resultado de uso de recursos.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
-      "Correta: A meta alcançada demonstra eficácia; o desperdício impede afirmar eficiência.",
-      "Incorreta: a opção “Eficiente, mas necessariamente ineficaz.” não corresponde ao conjunto de condições descritas. A meta alcançada demonstra eficácia; o desperdício impede afirmar eficiência.",
       "Incorreta: a opção “Efetivo, pois todo gasto adicional melhora impactos.” não corresponde ao conjunto de condições descritas. A meta alcançada demonstra eficácia; o desperdício impede afirmar eficiência.",
-      "Incorreta: a opção “Produtivo, pois recursos não entram nessa análise.” não corresponde ao conjunto de condições descritas. A meta alcançada demonstra eficácia; o desperdício impede afirmar eficiência."
+      "Incorreta: a opção “Produtivo, pois recursos não entram nessa análise.” não corresponde ao conjunto de condições descritas. A meta alcançada demonstra eficácia; o desperdício impede afirmar eficiência.",
+      "Correta: A meta alcançada demonstra eficácia; o desperdício impede afirmar eficiência.",
+      "Incorreta: a opção “Eficiente, mas necessariamente ineficaz.” não corresponde ao conjunto de condições descritas. A meta alcançada demonstra eficácia; o desperdício impede afirmar eficiência."
     ]
   },
   {
@@ -284,13 +284,13 @@ export const QUESTIONS = [
     "difficulty": "dificil",
     "stem": "Analise as afirmações e assinale a alternativa correta.\nI. Eficiência considera a relação entre recursos utilizados e resultados.\nII. Eficácia diz respeito ao alcance de objetivos estabelecidos.\nIII. Efetividade considera impactos ou efeitos concretos da ação.",
     "options": [
+      "Apenas III.",
       "Apenas I.",
       "Apenas II e III.",
       "Apenas I e II.",
-      "I, II e III.",
-      "Apenas III."
+      "I, II e III."
     ],
-    "answer": 3,
+    "answer": 4,
     "explanation": "As três afirmativas distinguem corretamente uso de recursos, alcance de metas e impacto produzido.",
     "concept": "Eficiência, eficácia, efetividade e produtividade",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -298,11 +298,11 @@ export const QUESTIONS = [
     "newExample": "Uma campanha pode cumprir a meta de palestras sem reduzir acidentes; eficácia de entrega não garante efetividade.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “Apenas III.” não corresponde ao conjunto de condições descritas. As três afirmativas distinguem corretamente uso de recursos, alcance de metas e impacto produzido.",
       "Incorreta: a opção “Apenas I.” não corresponde ao conjunto de condições descritas. As três afirmativas distinguem corretamente uso de recursos, alcance de metas e impacto produzido.",
       "Incorreta: a opção “Apenas II e III.” não corresponde ao conjunto de condições descritas. As três afirmativas distinguem corretamente uso de recursos, alcance de metas e impacto produzido.",
       "Incorreta: a opção “Apenas I e II.” não corresponde ao conjunto de condições descritas. As três afirmativas distinguem corretamente uso de recursos, alcance de metas e impacto produzido.",
-      "Correta: As três afirmativas distinguem corretamente uso de recursos, alcance de metas e impacto produzido.",
-      "Incorreta: a opção “Apenas III.” não corresponde ao conjunto de condições descritas. As três afirmativas distinguem corretamente uso de recursos, alcance de metas e impacto produzido."
+      "Correta: As três afirmativas distinguem corretamente uso de recursos, alcance de metas e impacto produzido."
     ]
   },
   {
@@ -368,12 +368,12 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Ao definir metas anuais e ações para alcançá-las, um gestor exerce principalmente a função de:",
     "options": [
-      "Planejamento.",
       "Organização.",
       "Direção.",
-      "Controle."
+      "Controle.",
+      "Planejamento."
     ],
-    "answer": 0,
+    "answer": 3,
     "explanation": "Planejar significa estabelecer objetivos e caminhos para alcançá-los; organizar distribui recursos, dirigir mobiliza pessoas e controlar acompanha resultados.",
     "concept": "Funções administrativas (PODC)",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -381,10 +381,10 @@ export const QUESTIONS = [
     "newExample": "Uma diretora estabelece reduzir filas em seis meses antes de definir a escala: a definição da meta é planejamento.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
-      "Correta: Planejar significa estabelecer objetivos e caminhos para alcançá-los; organizar distribui recursos, dirigir mobiliza pessoas e controlar acompanha resultados.",
       "Incorreta: a opção “Organização.” não corresponde ao conjunto de condições descritas. Planejar significa estabelecer objetivos e caminhos para alcançá-los; organizar distribui recursos, dirigir mobiliza pessoas e controlar acompanha resultados.",
       "Incorreta: a opção “Direção.” não corresponde ao conjunto de condições descritas. Planejar significa estabelecer objetivos e caminhos para alcançá-los; organizar distribui recursos, dirigir mobiliza pessoas e controlar acompanha resultados.",
-      "Incorreta: a opção “Controle.” não corresponde ao conjunto de condições descritas. Planejar significa estabelecer objetivos e caminhos para alcançá-los; organizar distribui recursos, dirigir mobiliza pessoas e controlar acompanha resultados."
+      "Incorreta: a opção “Controle.” não corresponde ao conjunto de condições descritas. Planejar significa estabelecer objetivos e caminhos para alcançá-los; organizar distribui recursos, dirigir mobiliza pessoas e controlar acompanha resultados.",
+      "Correta: Planejar significa estabelecer objetivos e caminhos para alcançá-los; organizar distribui recursos, dirigir mobiliza pessoas e controlar acompanha resultados."
     ]
   },
   {
@@ -396,13 +396,13 @@ export const QUESTIONS = [
     "difficulty": "dificil",
     "stem": "Associe os itens da Coluna II aos conceitos numerados da Coluna I e assinale a sequência correta.\n1. Planejamento\n2. Organização\n3. Direção\n4. Controle\n( ) Distribuir responsabilidades\n( ) Comparar resultados com metas\n( ) Motivar e orientar equipes\n( ) Definir objetivos",
     "options": [
+      "2 – 4 – 1 – 3",
       "2 – 4 – 3 – 1",
       "1 – 2 – 4 – 3",
       "2 – 3 – 4 – 1",
-      "4 – 2 – 3 – 1",
-      "2 – 4 – 1 – 3"
+      "4 – 2 – 3 – 1"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "Organizar distribui trabalho; controlar compara; dirigir orienta; planejar define objetivos.",
     "concept": "Funções administrativas (PODC)",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -410,11 +410,11 @@ export const QUESTIONS = [
     "newExample": "Ao criar um serviço digital, a chefia primeiro define meta, depois distribui tarefas, orienta a equipe e verifica resultados.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “2 – 4 – 1 – 3” não corresponde ao conjunto de condições descritas. Organizar distribui trabalho; controlar compara; dirigir orienta; planejar define objetivos.",
       "Correta: Organizar distribui trabalho; controlar compara; dirigir orienta; planejar define objetivos.",
       "Incorreta: a opção “1 – 2 – 4 – 3” não corresponde ao conjunto de condições descritas. Organizar distribui trabalho; controlar compara; dirigir orienta; planejar define objetivos.",
       "Incorreta: a opção “2 – 3 – 4 – 1” não corresponde ao conjunto de condições descritas. Organizar distribui trabalho; controlar compara; dirigir orienta; planejar define objetivos.",
-      "Incorreta: a opção “4 – 2 – 3 – 1” não corresponde ao conjunto de condições descritas. Organizar distribui trabalho; controlar compara; dirigir orienta; planejar define objetivos.",
-      "Incorreta: a opção “2 – 4 – 1 – 3” não corresponde ao conjunto de condições descritas. Organizar distribui trabalho; controlar compara; dirigir orienta; planejar define objetivos."
+      "Incorreta: a opção “4 – 2 – 3 – 1” não corresponde ao conjunto de condições descritas. Organizar distribui trabalho; controlar compara; dirigir orienta; planejar define objetivos."
     ]
   },
   {
@@ -426,13 +426,13 @@ export const QUESTIONS = [
     "difficulty": "dificil",
     "stem": "Julgue as afirmações e selecione a sequência correta (V/F).\nI. Planejamento define objetivos e ações.\nII. Organização é sinônimo de motivar subordinados.\nIII. Direção envolve liderança e comunicação.\nIV. Controle só ocorre antes da execução.",
     "options": [
+      "V – F – F – V",
+      "F – F – V – V",
       "V – F – V – F",
       "V – V – F – F",
-      "F – V – V – F",
-      "V – F – F – V",
-      "F – F – V – V"
+      "F – V – V – F"
     ],
-    "answer": 0,
+    "answer": 2,
     "explanation": "I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois.",
     "concept": "Funções administrativas (PODC)",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -440,11 +440,11 @@ export const QUESTIONS = [
     "newExample": "Uma repartição acompanha semanalmente filas enquanto executa o plano; isso é controle concomitante.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “V – F – F – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois.",
+      "Incorreta: a opção “F – F – V – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois.",
       "Correta: I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois.",
       "Incorreta: a opção “V – V – F – F” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois.",
-      "Incorreta: a opção “F – V – V – F” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois.",
-      "Incorreta: a opção “V – F – F – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois.",
-      "Incorreta: a opção “F – F – V – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois."
+      "Incorreta: a opção “F – V – V – F” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; motivar é direção e o controle pode ocorrer antes, durante e depois."
     ]
   },
   {
@@ -538,13 +538,13 @@ export const QUESTIONS = [
     "difficulty": "dificil",
     "stem": "Sobre níveis organizacionais, assinale a alternativa INCORRETA.",
     "options": [
+      "Há interação entre os diferentes níveis.",
       "Decisões estratégicas tendem a ter alcance institucional.",
       "Gestores táticos desdobram diretrizes em planos setoriais.",
       "Atividades operacionais incluem rotinas de execução.",
-      "Toda decisão operacional exige aprovação da alta direção.",
-      "Há interação entre os diferentes níveis."
+      "Toda decisão operacional exige aprovação da alta direção."
     ],
-    "answer": 3,
+    "answer": 4,
     "explanation": "Nem toda decisão operacional depende de aprovação estratégica; há delegação e autonomia conforme competências.",
     "concept": "Níveis organizacionais",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -552,11 +552,11 @@ export const QUESTIONS = [
     "newExample": "Uma equipe autorizada ajusta a ordem de atendimento sem solicitar deliberação da presidência.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “Há interação entre os diferentes níveis.” não corresponde ao conjunto de condições descritas. Nem toda decisão operacional depende de aprovação estratégica; há delegação e autonomia conforme competências.",
       "Incorreta: a opção “Decisões estratégicas tendem a ter alcance institucional.” não corresponde ao conjunto de condições descritas. Nem toda decisão operacional depende de aprovação estratégica; há delegação e autonomia conforme competências.",
       "Incorreta: a opção “Gestores táticos desdobram diretrizes em planos setoriais.” não corresponde ao conjunto de condições descritas. Nem toda decisão operacional depende de aprovação estratégica; há delegação e autonomia conforme competências.",
       "Incorreta: a opção “Atividades operacionais incluem rotinas de execução.” não corresponde ao conjunto de condições descritas. Nem toda decisão operacional depende de aprovação estratégica; há delegação e autonomia conforme competências.",
-      "Correta: Nem toda decisão operacional depende de aprovação estratégica; há delegação e autonomia conforme competências.",
-      "Incorreta: a opção “Há interação entre os diferentes níveis.” não corresponde ao conjunto de condições descritas. Nem toda decisão operacional depende de aprovação estratégica; há delegação e autonomia conforme competências."
+      "Correta: Nem toda decisão operacional depende de aprovação estratégica; há delegação e autonomia conforme competências."
     ]
   },
   {
@@ -592,12 +592,12 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Uma chefia medeia conflitos e facilita cooperação entre servidores. A habilidade mais diretamente mobilizada é:",
     "options": [
+      "Contábil.",
       "Humana.",
       "Técnica.",
-      "Conceitual.",
-      "Contábil."
+      "Conceitual."
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "A habilidade humana envolve comunicação, cooperação, liderança e relacionamento com pessoas.",
     "concept": "Habilidades do administrador",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -605,10 +605,10 @@ export const QUESTIONS = [
     "newExample": "Uma coordenadora ouve duas equipes e negocia um fluxo comum de trabalho.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “Contábil.” não corresponde ao conjunto de condições descritas. A habilidade humana envolve comunicação, cooperação, liderança e relacionamento com pessoas.",
       "Correta: A habilidade humana envolve comunicação, cooperação, liderança e relacionamento com pessoas.",
       "Incorreta: a opção “Técnica.” não corresponde ao conjunto de condições descritas. A habilidade humana envolve comunicação, cooperação, liderança e relacionamento com pessoas.",
-      "Incorreta: a opção “Conceitual.” não corresponde ao conjunto de condições descritas. A habilidade humana envolve comunicação, cooperação, liderança e relacionamento com pessoas.",
-      "Incorreta: a opção “Contábil.” não corresponde ao conjunto de condições descritas. A habilidade humana envolve comunicação, cooperação, liderança e relacionamento com pessoas."
+      "Incorreta: a opção “Conceitual.” não corresponde ao conjunto de condições descritas. A habilidade humana envolve comunicação, cooperação, liderança e relacionamento com pessoas."
     ]
   },
   {
@@ -650,13 +650,13 @@ export const QUESTIONS = [
     "difficulty": "dificil",
     "stem": "Julgue as afirmações e selecione a sequência correta (V/F).\nI. Habilidade técnica envolve domínio de métodos específicos.\nII. Habilidade humana só é relevante na alta direção.\nIII. Habilidade conceitual ajuda a perceber interdependências.\nIV. Um gestor precisa necessariamente usar apenas uma habilidade por vez.",
     "options": [
+      "F – F – V – V",
       "V – F – V – F",
       "V – V – F – F",
       "F – V – V – F",
-      "V – F – F – V",
-      "F – F – V – V"
+      "V – F – F – V"
     ],
-    "answer": 0,
+    "answer": 1,
     "explanation": "I e III são verdadeiras; habilidades humanas importam em todos os níveis e podem ser usadas simultaneamente.",
     "concept": "Habilidades do administrador",
     "trap": "Distinguir conceitos próximos e avaliar cada afirmação sem presumir que termos semelhantes são equivalentes.",
@@ -664,11 +664,11 @@ export const QUESTIONS = [
     "newExample": "Ao implantar um sistema, uma chefia usa conhecimento técnico, diálogo e visão de conjunto.",
     "challenge": "Qual elemento da situação permitiria distinguir esse conceito de outro próximo?",
     "optionComments": [
+      "Incorreta: a opção “F – F – V – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; habilidades humanas importam em todos os níveis e podem ser usadas simultaneamente.",
       "Correta: I e III são verdadeiras; habilidades humanas importam em todos os níveis e podem ser usadas simultaneamente.",
       "Incorreta: a opção “V – V – F – F” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; habilidades humanas importam em todos os níveis e podem ser usadas simultaneamente.",
       "Incorreta: a opção “F – V – V – F” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; habilidades humanas importam em todos os níveis e podem ser usadas simultaneamente.",
-      "Incorreta: a opção “V – F – F – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; habilidades humanas importam em todos os níveis e podem ser usadas simultaneamente.",
-      "Incorreta: a opção “F – F – V – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; habilidades humanas importam em todos os níveis e podem ser usadas simultaneamente."
+      "Incorreta: a opção “V – F – F – V” não corresponde ao conjunto de condições descritas. I e III são verdadeiras; habilidades humanas importam em todos os níveis e podem ser usadas simultaneamente."
     ]
   }
 ];
