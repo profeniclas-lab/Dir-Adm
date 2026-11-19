@@ -11,6 +11,8 @@ const mainElement = document.getElementById("main");
 const catalogErrors = validateCatalog();
 if (catalogErrors.length) console.error("[ADM-ESTUDO] Catálogo inválido:", catalogErrors);
 let activeView = 'module';
+let editSubtopicId = null;
+let cardFlipped = false;
 
 function renderCurrentPage() {
   if (!mainElement) return;
@@ -24,7 +26,7 @@ function renderCurrentPage() {
     case "dashboard": renderDashboard(mainElement, state); break;
     case "modulos":
       if (state.navigation.selectedModuleId) {
-        if (activeView === 'diagnostic') renderDiagnostic(mainElement, state.navigation.selectedModuleId, state);
+        if (activeView === 'diagnostic') renderDiagnostic(mainElement, state.navigation.selectedModuleId, state, { editSubtopicId, flipped: cardFlipped });
         else renderModuleDetail(mainElement, state.navigation.selectedModuleId, state);
       } else renderModules(mainElement);
       break;
@@ -33,9 +35,10 @@ function renderCurrentPage() {
   }
 }
 function commitAndRender() { saveState(state); renderCurrentPage(); }
+function resetCardView() { editSubtopicId = null; cardFlipped = false; }
 function navigateTo(route) {
   state.navigation.currentRoute = route;
-  activeView = 'module';
+  activeView = 'module'; resetCardView();
   if (route === 'modulos') state.navigation.selectedModuleId = null;
   commitAndRender();
 }
@@ -45,34 +48,35 @@ document.addEventListener('click', event => {
   if (moduleButton) {
     state.navigation.currentRoute = 'modulos';
     state.navigation.selectedModuleId = moduleButton.dataset.moduleId;
-    activeView = 'module';
+    activeView = 'module'; resetCardView();
     commitAndRender(); return;
   }
   const action = event.target.closest('[data-action]')?.dataset.action;
   if (action === 'modules-back') {
-    state.navigation.selectedModuleId = null; activeView = 'module'; commitAndRender(); return;
+    state.navigation.selectedModuleId = null; activeView = 'module'; resetCardView(); commitAndRender(); return;
   }
   if (action === 'diagnostic-open') {
-    activeView = 'diagnostic'; renderCurrentPage(); return;
+    activeView = 'diagnostic'; resetCardView(); renderCurrentPage(); return;
   }
   if (action === 'diagnostic-back') {
-    activeView = 'module'; renderCurrentPage(); return;
+    activeView = 'module'; resetCardView(); renderCurrentPage(); return;
   }
+  if (action === 'diag-flip' && activeView === 'diagnostic') { cardFlipped = !cardFlipped; renderCurrentPage(); return; }
   const choiceButton = event.target.closest('[data-diag-choice]');
   if (choiceButton && state.navigation.selectedModuleId && activeView === 'diagnostic') {
-    if (saveDiagnosticAnswer(state, state.navigation.selectedModuleId, choiceButton.dataset.diagSubtopic, choiceButton.dataset.diagChoice)) commitAndRender();
+    if (cardFlipped && saveDiagnosticAnswer(state, state.navigation.selectedModuleId, choiceButton.dataset.diagSubtopic, choiceButton.dataset.diagChoice)) { resetCardView(); commitAndRender(); }
     return;
   }
   const editButton = event.target.closest('[data-diag-edit]');
   if (editButton && state.navigation.selectedModuleId && activeView === 'diagnostic') {
-    renderDiagnosticEdit(mainElement, state.navigation.selectedModuleId, editButton.dataset.diagEdit, state); return;
+    editSubtopicId = editButton.dataset.diagEdit; cardFlipped = false; renderDiagnosticEdit(mainElement, state.navigation.selectedModuleId, editSubtopicId, state); return;
   }
   if (action === 'diagnostic-reset' && activeView === 'diagnostic' && state.navigation.selectedModuleId) {
     if (window.confirm('Deseja apagar as respostas deste diagnóstico e começar novamente?')) {
-      resetDiagnostic(state, state.navigation.selectedModuleId); commitAndRender();
+      resetDiagnostic(state, state.navigation.selectedModuleId); resetCardView(); commitAndRender();
     }
   }
 });
 setupNavigation({ onNavigate: navigateTo });
 renderCurrentPage();
-console.info('[ADM-ESTUDO] Aplicação v2.0: diagnóstico inicial habilitado nos primeiros três módulos.');
+console.info('[ADM-ESTUDO] Aplicação v2.0: flashcards diagnósticos habilitados apenas no ADM-01.');
