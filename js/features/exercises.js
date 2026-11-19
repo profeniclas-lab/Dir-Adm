@@ -1,6 +1,13 @@
 import { questionsForModule } from '../data/questions.js';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const abc=['A','B','C','D','E'];
+// Compatibilidade: tentativas antigas não possuem optionOrders.
+const orderFor=(session,q)=>{
+ const saved=session?.optionOrders?.[q.id];
+ return Array.isArray(saved)&&saved.length===q.options.length&&
+  new Set(saved).size===q.options.length&&saved.every(i=>Number.isInteger(i)&&i>=0&&i<q.options.length)
+  ?saved:q.options.map((_,i)=>i);
+};
 const REVIEW = Object.freeze({seguro:{days:7,label:'Acertei com segurança'},duvida:{days:3,label:'Acertei com dúvida'},chute:{days:1,label:'Acertei chutando'},desconhecimento:{days:1,label:'Errei por desconhecimento'},pegadinha:{days:2,label:'Errei por pegadinha'},interpretacao:{days:2,label:'Errei por interpretação'},desatencao:{days:3,label:'Errei por desatenção'}});
 const selfAssessOptions=(correct)=>correct?['seguro','duvida','chute']:['desconhecimento','pegadinha','interpretacao','desatencao'];
 const shuffle=a=>{const x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]];}return x;};
@@ -11,7 +18,13 @@ export function createExerciseSession(state,moduleId){
  if(!base.length||hard.length<6)return false;
  const shuffled=shuffle(hard).slice(0,6);
  const ids=[...base,...shuffled].map(q=>q.id);
- state.progress.exercises[moduleId]={ids,answers:{},assessments:{},cursor:0,startedAt:new Date().toISOString(),finishedAt:null};
+ // A permutação é criada uma única vez e persistida para toda a tentativa.
+ // Cada número aponta para o índice ORIGINAL no banco de questões.
+ const optionOrders=Object.fromEntries(ids.map(id=>{
+  const q=all.find(item=>item.id===id);
+  return [id,q.type==='ce'?[0,1]:shuffle(q.options.map((_,i)=>i))];
+ }));
+ state.progress.exercises[moduleId]={ids,optionOrders,answers:{},assessments:{},cursor:0,startedAt:new Date().toISOString(),finishedAt:null};
  return true;
 }
 export function exerciseSummary(state,moduleId){
@@ -57,10 +70,12 @@ export function renderExercises(main,moduleId,state){
  const cursor=Math.min(Math.max(Number(s.cursor)||0,0),s.ids.length-1);
  const current=all.find(x=>x.id===s.ids[cursor]);
  const selected=s.answers[current.id],answered=Number.isInteger(selected),assessed=!!s.assessments?.[current.id],idx=s.ids.indexOf(current.id);
- const comments=answered?`<section class="exercise-feedback" aria-live="polite"><h3>${selected===current.answer?'Resposta correta':'Resposta incorreta'} — gabarito ${current.type==='ce'?current.options[current.answer]:abc[current.answer]}</h3><p><strong>Fundamento:</strong> ${esc(current.explanation)}</p><h4>Comentários das alternativas</h4><ol type="A">${current.options.map((o,i)=>`<li><strong>${esc(o)}:</strong> ${esc(current.optionComments?.[i]||'Consulte o fundamento acima.')}</li>`).join('')}</ol><p><strong>Conceito:</strong> ${esc(current.concept)}</p><p><strong>Pegadinha:</strong> ${esc(current.trap)}</p><p><strong>Como aparece em concursos:</strong> ${esc(current.examTip)}</p><p><strong>Exemplo inédito:</strong> ${esc(current.newExample)}</p><p><strong>Desafio:</strong> ${esc(current.challenge)}</p></section>`:'';
+ const order=orderFor(s,current);
+ const displayedCorrect=order.indexOf(current.answer);
+ const comments=answered?`<section class="exercise-feedback" aria-live="polite"><h3>${selected===current.answer?'Resposta correta':'Resposta incorreta'} — gabarito ${current.type==='ce'?current.options[current.answer]:abc[displayedCorrect]}</h3><p><strong>Fundamento:</strong> ${esc(current.explanation)}</p><h4>Comentários das alternativas</h4><ol type="A">${order.map((originalIndex,displayIndex)=>`<li><strong>${esc(current.options[originalIndex])}:</strong> ${esc(current.optionComments?.[originalIndex]||'Consulte o fundamento acima.')}</li>`).join('')}</ol><p><strong>Conceito:</strong> ${esc(current.concept)}</p><p><strong>Pegadinha:</strong> ${esc(current.trap)}</p><p><strong>Como aparece em concursos:</strong> ${esc(current.examTip)}</p><p><strong>Exemplo inédito:</strong> ${esc(current.newExample)}</p><p><strong>Desafio:</strong> ${esc(current.challenge)}</p></section>`:'';
  const assessment=answered?`<section class="exercise-assessment"><h3>Como foi seu desempenho nesta questão?</h3><p>${selected===current.answer?'Você acertou.':'Você errou.'} Selecione o motivo para programar a revisão.</p>${assessed?`<p><strong>Registrado:</strong> ${esc(REVIEW[s.assessments[current.id].reason].label)} · revisão em ${s.assessments[current.id].intervalDays} dia(s).</p>`:`<div class="exercise-assessment-options">${selfAssessOptions(selected===current.answer).map(reason=>`<button type="button" class="btn" data-exercise-assess="${reason}">${esc(REVIEW[reason].label)}</button>`).join('')}</div>`}</section>`:'';
  const next=assessed&&!summary.finished?`<button class="btn btn-primary" data-action="exercise-next">Próxima questão</button>`:'';
- main.innerHTML=`<section class="exercise-panel"><button class="btn" data-action="exercise-back">← Voltar ao módulo</button><h1>Exercícios de aprendizagem — ADM-01</h1><p>${summary.answered}/${summary.total} respondidas · ${summary.correct} acertos ${summary.finished?'· Concluído':''}</p>${summary.finished?`<div class="notice"><strong>Resultado: ${summary.score}%</strong> (${summary.correct}/${summary.total}). Para nova seleção de questões difíceis, inicie outra tentativa.</div><button class="btn" data-action="exercise-restart">Nova tentativa</button>`:''}<article class="exercise-question"><p class="exercise-meta">${esc(current.subtopicId)} · ${current.difficulty==='media'?'Média':'Difícil'} · ${esc(current.type)} · questão ${idx+1} de ${s.ids.length}</p><h2>${esc(current.stem).replace(/\n/g,'<br>')}</h2><div class="exercise-options">${current.options.map((o,i)=>`<button type="button" class="exercise-option ${answered&&i===current.answer?'is-correct':''} ${answered&&i===selected&&selected!==current.answer?'is-wrong':''}" data-exercise-choice="${i}" ${answered||summary.finished?'disabled':''}><strong>${current.type==='ce'?'':abc[i]+') '}</strong>${esc(o)}</button>`).join('')}</div>${comments}${assessment}${next}</article></section>`;
+ main.innerHTML=`<section class="exercise-panel"><button class="btn" data-action="exercise-back">← Voltar ao módulo</button><h1>Exercícios de aprendizagem — ADM-01</h1><p>${summary.answered}/${summary.total} respondidas · ${summary.correct} acertos ${summary.finished?'· Concluído':''}</p>${summary.finished?`<div class="notice"><strong>Resultado: ${summary.score}%</strong> (${summary.correct}/${summary.total}). Para nova seleção de questões difíceis, inicie outra tentativa.</div><button class="btn" data-action="exercise-restart">Nova tentativa</button>`:''}<article class="exercise-question"><p class="exercise-meta">${esc(current.subtopicId)} · ${current.difficulty==='media'?'Média':'Difícil'} · ${esc(current.type)} · questão ${idx+1} de ${s.ids.length}</p><h2>${esc(current.stem).replace(/\n/g,'<br>')}</h2><div class="exercise-options">${order.map((originalIndex,displayIndex)=>`<button type="button" class="exercise-option ${answered&&originalIndex===current.answer?'is-correct':''} ${answered&&originalIndex===selected&&selected!==current.answer?'is-wrong':''}" data-exercise-choice="${originalIndex}" ${answered||summary.finished?'disabled':''}><strong>${current.type==='ce'?'':abc[displayIndex]+') '}</strong>${esc(current.options[originalIndex])}</button>`).join('')}</div>${comments}${assessment}${next}</article></section>`;
 }
 
 export function nextExercise(state,moduleId){const s=state.progress?.exercises?.[moduleId];if(!s||!s.assessments?.[s.ids[s.cursor]])return false;if(s.cursor<s.ids.length-1){s.cursor++;return true;}return false;}
