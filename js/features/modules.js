@@ -1,9 +1,10 @@
 import { AREAS, MODULES, getModuleById } from "../data/modules.js";
+import { moduleAchievement } from "./module-achievement.js";
 
 const PRIORITIES = { alta: "Alta", media: "Média", baixa: "Baixa" };
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[character]);
 
-export function renderModules(mainElement, { selectedModuleId = null } = {}) {
+export function renderModules(mainElement, state = {}, { selectedModuleId = null } = {}) {
   const selected = selectedModuleId ? getModuleById(selectedModuleId) : null;
   if (selected) {
     mainElement.innerHTML = `
@@ -31,7 +32,7 @@ export function renderModules(mainElement, { selectedModuleId = null } = {}) {
           <span class="mod-id">${escapeHtml(module.id)}</span>
           <span class="mod-info"><span class="mod-title">${escapeHtml(module.title)}</span>
             <span class="mod-area">${module.subtopics.length} subtópicos · ${escapeHtml(label)}</span></span>
-          <span class="mod-badges"><span class="mod-priority priority-${escapeHtml(module.priority)}">${escapeHtml(PRIORITIES[module.priority])}</span></span>
+          <span class="mod-badges"><span class="mod-priority priority-${escapeHtml(module.priority)}">${escapeHtml(PRIORITIES[module.priority])}</span><strong class="module-list-percentage">${moduleAchievement(state,module).hasData ? moduleAchievement(state,module).percentage+'%' : '—%'}</strong></span>
         </button>`).join("")}</div>`;
   }).join("");
 

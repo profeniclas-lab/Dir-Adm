@@ -34,7 +34,7 @@ function renderCurrentPage() {
         else if (activeView === 'lesson') renderLesson(mainElement, state.navigation.selectedModuleId, lessonSubtopicId, state, {showAnswer:lessonAnswerShown});
         else if (activeView === 'diagnostic') renderDiagnostic(mainElement, state.navigation.selectedModuleId, state, { editSubtopicId, flipped: cardFlipped });
         else renderModuleDetail(mainElement, state.navigation.selectedModuleId, state);
-      } else renderModules(mainElement);
+      } else renderModules(mainElement,state);
       break;
     default:
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;

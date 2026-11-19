@@ -1,5 +1,5 @@
 import { AREAS, getModuleById } from "../data/modules.js";
-import { calculatePartialAchievement } from "../core/progress.js";
+import { moduleAchievement } from "./module-achievement.js";
 import { getDiagnosticSummary } from "./diagnostic.js";
 import { getLesson } from "../data/lessons.js";
 import { exercisePool, exerciseSummary } from "./exercises.js";
@@ -26,7 +26,7 @@ export function renderModuleDetail(mainElement, moduleId, state) {
   if(stats){scores.lessonCompletion={available:true,score:stats.completionScore};if(stats.ratingScore!==null)scores.lessonSelfAssessment={available:true,score:stats.ratingScore};}
   const exercise=exerciseSummary(state,moduleId);
   if(exercise?.finished)scores.exercises={available:true,score:exercise.score};
-  const progress = calculatePartialAchievement(scores);
+  const progress = moduleAchievement(state,module);
   const progressLabel = progress.hasData ? `${progress.percentage}%` : "Ainda não calculado";
   mainElement.innerHTML = `
     <section class="module-detail" aria-labelledby="pageTitle">
