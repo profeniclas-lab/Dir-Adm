@@ -5,6 +5,7 @@ import { renderModules } from "./features/modules.js";
 import { renderModuleDetail } from "./features/module-detail.js";
 import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiagnostic } from "./features/diagnostic.js";
 import { renderLesson, saveLessonProgress } from "./features/lessons.js";
+import { renderExercises, createExerciseSession, answerExercise, nextExercise } from "./features/exercises.js";
 import { validateCatalog } from "./data/modules.js";
 
 const state = loadState();
@@ -29,7 +30,8 @@ function renderCurrentPage() {
     case "dashboard": renderDashboard(mainElement, state); break;
     case "modulos":
       if (state.navigation.selectedModuleId) {
-        if (activeView === 'lesson') renderLesson(mainElement, state.navigation.selectedModuleId, lessonSubtopicId, state, {showAnswer:lessonAnswerShown});
+        if (activeView === 'exercises') renderExercises(mainElement,state.navigation.selectedModuleId,state);
+        else if (activeView === 'lesson') renderLesson(mainElement, state.navigation.selectedModuleId, lessonSubtopicId, state, {showAnswer:lessonAnswerShown});
         else if (activeView === 'diagnostic') renderDiagnostic(mainElement, state.navigation.selectedModuleId, state, { editSubtopicId, flipped: cardFlipped });
         else renderModuleDetail(mainElement, state.navigation.selectedModuleId, state);
       } else renderModules(mainElement);
@@ -59,7 +61,13 @@ document.addEventListener('click', event => {
   if(openLesson && state.navigation.selectedModuleId){lessonSubtopicId=openLesson.dataset.lessonOpen;lessonAnswerShown=false;activeView='lesson';renderCurrentPage();return;}
   const rating=event.target.closest('[data-lesson-rating]');
   if(rating && activeView==='lesson' && lessonSubtopicId){if(saveLessonProgress(state,lessonSubtopicId,'rating',rating.dataset.lessonRating))commitAndRender();return;}
+  const exerciseChoice=event.target.closest('[data-exercise-choice]');
+  if(exerciseChoice && activeView==='exercises'){const id=state.progress.exercises?.[state.navigation.selectedModuleId]?.ids?.find(qid=>!Number.isInteger(state.progress.exercises[state.navigation.selectedModuleId].answers[qid]));if(id&&answerExercise(state,state.navigation.selectedModuleId,id,Number(exerciseChoice.dataset.exerciseChoice)))commitAndRender();return;}
   const action = event.target.closest('[data-action]')?.dataset.action;
+  if(action==='exercise-open'){activeView='exercises';renderCurrentPage();return;}
+  if(action==='exercise-back'){activeView='module';renderCurrentPage();return;}
+  if(action==='exercise-start'||action==='exercise-restart'){if(action==='exercise-restart'&&!window.confirm('Iniciar outra tentativa? A tentativa atual será substituída.'))return;if(createExerciseSession(state,state.navigation.selectedModuleId))commitAndRender();return;}
+  if(action==='exercise-next'){if(nextExercise(state,state.navigation.selectedModuleId))commitAndRender();return;}
   if(action==='lesson-back'){activeView='module';lessonSubtopicId=null;lessonAnswerShown=false;renderCurrentPage();return;}
   if(action==='lesson-toggle-answer' && activeView==='lesson'){lessonAnswerShown=!lessonAnswerShown;renderCurrentPage();return;}
   if(action==='lesson-complete' && activeView==='lesson' && lessonSubtopicId){if(saveLessonProgress(state,lessonSubtopicId,'complete'))commitAndRender();return;}

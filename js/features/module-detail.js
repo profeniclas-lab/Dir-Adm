@@ -2,6 +2,7 @@ import { AREAS, getModuleById } from "../data/modules.js";
 import { calculatePartialAchievement } from "../core/progress.js";
 import { getDiagnosticSummary } from "./diagnostic.js";
 import { getLesson } from "../data/lessons.js";
+import { exercisePool, exerciseSummary } from "./exercises.js";
 import { lessonStats } from "./lessons.js";
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[char]);
@@ -23,6 +24,8 @@ export function renderModuleDetail(mainElement, moduleId, state) {
   const stats = lessonStats(state,module);
   const scores = diagnostic?.completed ? { diagnostic: { available: true, score: diagnostic.score } } : {};
   if(stats){scores.lessonCompletion={available:true,score:stats.completionScore};if(stats.ratingScore!==null)scores.lessonSelfAssessment={available:true,score:stats.ratingScore};}
+  const exercise=exerciseSummary(state,moduleId);
+  if(exercise?.finished)scores.exercises={available:true,score:exercise.score};
   const progress = calculatePartialAchievement(scores);
   const progressLabel = progress.hasData ? `${progress.percentage}%` : "Ainda não calculado";
   mainElement.innerHTML = `
@@ -37,17 +40,18 @@ export function renderModuleDetail(mainElement, moduleId, state) {
       </section>
       ${stages.map((stage, index) => {
         const available = stage.id === 'diagnostic' && diagnostic;
-        const status = available ? (diagnostic.completed ? 'Concluído' : `${diagnostic.answered}/${diagnostic.total} respondidos`) : stage.id === 'lesson' && stats ? `${stats.completed}/${stats.total} estudadas` : 'Em preparação';
+        const status = available ? (diagnostic.completed ? 'Concluído' : `${diagnostic.answered}/${diagnostic.total} respondidos`) : stage.id === 'exercises' && exercisePool(moduleId).length ? (exercise?.finished ? 'Concluído' : exercise ? `${exercise.answered}/${exercise.total} respondidas` : 'Disponível') : stage.id === 'lesson' && stats ? `${stats.completed}/${stats.total} estudadas` : 'Em preparação';
         return `<section class="module-stage" aria-labelledby="stage-${index}">
           <div class="module-stage-heading"><h2 id="stage-${index}">${index + 1}. ${escapeHtml(stage.title)}</h2><span class="module-pending">${status}</span></div>
           <p>${escapeHtml(stage.description)}</p>
           ${available ? `<button type="button" class="btn btn-primary" data-action="diagnostic-open">${diagnostic.completed ? 'Rever diagnóstico' : diagnostic.answered ? 'Continuar diagnóstico' : 'Iniciar diagnóstico'}</button>` : ''}
+          ${stage.id === 'exercises' && exercisePool(moduleId).length ? `<button type="button" class="btn btn-primary" data-action="exercise-open">${exercise?.finished?'Rever resultado':exercise?'Continuar atividade':'Iniciar exercícios'}</button>` : ''}
           ${stage.id === 'lesson' ? `<h3>Aulas por subtópico</h3><ol class="module-subtopics">${module.subtopics.map(topic => `<li><span>${escapeHtml(topic.title)}</span>${getLesson(topic.id) ? `<button type="button" class="btn" data-lesson-open="${escapeHtml(topic.id)}">${state.progress?.lessons?.[topic.id]?.completed ? 'Rever aula ✓' : 'Estudar aula'}</button>` : '<small>Em preparação</small>'}</li>`).join('')}</ol>` : ''}
         </section>`;
       }).join('')}
       <section class="module-stage" aria-labelledby="moduleInfoTitle">
         <h2 id="moduleInfoTitle">Informações</h2>
-        <dl class="module-info-list"><div><dt>Identificador</dt><dd>${escapeHtml(module.id)}</dd></div><div><dt>Área</dt><dd>${escapeHtml(AREAS[module.area])}</dd></div><div><dt>Subtópicos</dt><dd>${module.subtopics.length}</dd></div><div><dt>Prioridade</dt><dd>${escapeHtml(module.priority)}</dd></div><div><dt>Atividades disponíveis</dt><dd>${[diagnostic?'Diagnóstico':null,stats?'Aulas':null].filter(Boolean).join(' e ')||'Nenhuma nesta etapa'}</dd></div><div><dt>Diagnóstico</dt><dd>${diagnostic ? `${diagnostic.answered}/${diagnostic.total} respostas` : 'Em preparação'}</dd></div></dl>
+        <dl class="module-info-list"><div><dt>Identificador</dt><dd>${escapeHtml(module.id)}</dd></div><div><dt>Área</dt><dd>${escapeHtml(AREAS[module.area])}</dd></div><div><dt>Subtópicos</dt><dd>${module.subtopics.length}</dd></div><div><dt>Prioridade</dt><dd>${escapeHtml(module.priority)}</dd></div><div><dt>Atividades disponíveis</dt><dd>${[diagnostic?'Diagnóstico':null,stats?'Aulas':null,exercisePool(moduleId).length?'Exercícios':null].filter(Boolean).join(' e ')||'Nenhuma nesta etapa'}</dd></div><div><dt>Diagnóstico</dt><dd>${diagnostic ? `${diagnostic.answered}/${diagnostic.total} respostas` : 'Em preparação'}</dd></div></dl>
       </section>
     </section>`;
 }
