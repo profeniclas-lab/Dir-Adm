@@ -114,6 +114,92 @@ export const DIAGNOSTICS = Object.freeze({
     "front": "Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "back": "Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos."
   }
+],
+  "ADM-07": [
+  {
+    "subtopicId": "ADM-07-001",
+    "front": "Ao identificar falhas de atendimento recorrentes, qual decisão revela gestão de pessoas integrada? Explique o raciocínio antes de virar o cartão.",
+    "back": "Investigar competências e condições de trabalho antes de planejar desenvolvimento. Gestão de pessoas articula políticas para atrair, integrar, desenvolver, reconhecer e acompanhar pessoas de acordo com objetivos organizacionais. Não se limita ao departamento de pessoal: rotinas de folha e registros são necessárias, mas não substituem decisões sobre competências e ambiente de trabalho."
+  },
+  {
+    "subtopicId": "ADM-07-002",
+    "front": "Qual ação corresponde à integração de novos servidores? Explique o raciocínio antes de virar o cartão.",
+    "back": "Apresentar rotinas, responsabilidades, canais de apoio e padrões de atendimento. Recrutamento busca atrair candidatos; seleção compara requisitos e perfis; integração apresenta atribuições, processos e cultura de trabalho. Na Administração Pública, o ingresso em cargo efetivo observa, como regra, concurso público; técnicas de recrutamento empresarial não substituem exigências constitucionais."
+  },
+  {
+    "subtopicId": "ADM-07-003",
+    "front": "O setor aprendeu um sistema, mas continua cometendo erros por falta de acesso. Qual decisão é mais adequada? Explique o raciocínio antes de virar o cartão.",
+    "back": "Corrigir a barreira de acesso e avaliar a aplicação prática do treinamento. Treinamento costuma focalizar competências necessárias ao desempenho atual; desenvolvimento amplia capacidades para desafios e responsabilidades futuras. Aprendizagem envolve aquisição e aplicação de conhecimentos; participar de curso não garante transferência para o trabalho."
+  },
+  {
+    "subtopicId": "ADM-07-004",
+    "front": "Como avaliar um atendente que resolve casos complexos com menos atendimentos diários? Explique o raciocínio antes de virar o cartão.",
+    "back": "Combinar indicadores quantitativos e qualitativos, considerando complexidade e critérios conhecidos. Avaliação de desempenho compara resultados e comportamentos observáveis com critérios previamente definidos; gestão por competências identifica conhecimentos, habilidades e atitudes requeridos. Avaliar não é apenas atribuir nota: critérios, evidências e devolutiva permitem decisões de desenvolvimento."
+  },
+  {
+    "subtopicId": "ADM-07-005",
+    "front": "O que indica melhoria do clima sem necessariamente alterar a cultura de imediato? Explique o raciocínio antes de virar o cartão.",
+    "back": "Aumento da percepção de apoio e diálogo após mudanças na liderança. Cultura reúne valores, pressupostos e práticas compartilhados; clima expressa percepções das pessoas sobre o ambiente de trabalho em determinado período. Clima pode mudar relativamente rápido; cultura tende a ser mais profunda e persistente, embora também possa mudar."
+  },
+  {
+    "subtopicId": "ADM-07-006",
+    "front": "Qual medida atua sobre uma causa estrutural de desgaste no trabalho? Explique o raciocínio antes de virar o cartão.",
+    "back": "Revisar carga de tarefas e condições físicas de execução do serviço. Qualidade de vida no trabalho envolve condições de trabalho, saúde, segurança, reconhecimento, equilíbrio e relações respeitosas. Ações recreativas podem ajudar, mas não substituem medidas estruturais sobre sobrecarga, ergonomia e organização do trabalho."
+  }
+],
+  "ADM-08": [
+  {
+    "subtopicId": "ADM-08-001",
+    "front": "Como reduzir erros causados por siglas desconhecidas em uma orientação? Explique o raciocínio antes de virar o cartão.",
+    "back": "Explicar termos e pedir confirmação de entendimento por meio de feedback. Comunicação envolve emissor, mensagem, canal, receptor, contexto e feedback; ruídos podem alterar a compreensão. Transmitir uma mensagem não garante entendimento; o feedback ajuda a verificar se o significado foi compartilhado."
+  },
+  {
+    "subtopicId": "ADM-08-002",
+    "front": "Qual exemplo caracteriza comunicação ascendente? Explique o raciocínio antes de virar o cartão.",
+    "back": "Um servidor informa à chefia dificuldades encontradas no atendimento. Comunicação formal segue canais instituídos; informal surge das interações cotidianas. Fluxos podem ser descendentes, ascendentes ou horizontais. Informal não significa necessariamente falsa; formal não significa necessariamente eficaz."
+  },
+  {
+    "subtopicId": "ADM-08-003",
+    "front": "Qual devolutiva favorece aprendizagem após um erro de protocolo? Explique o raciocínio antes de virar o cartão.",
+    "back": "Descrever o procedimento, ouvir o contexto e pactuar uma correção concreta. Feedback útil descreve comportamentos observáveis, seus efeitos e possibilidades de melhoria; escuta ativa busca compreender antes de responder. Feedback não se confunde com crítica pessoal; ouvir ativamente não significa concordar com tudo."
+  },
+  {
+    "subtopicId": "ADM-08-004",
+    "front": "Qual prática demonstra interdependência e colaboração entre setores? Explique o raciocínio antes de virar o cartão.",
+    "back": "Definir responsabilidades e pontos de repasse entre protocolo e arquivo. Equipes coordenam esforços em torno de objetivos comuns, com interdependência, responsabilidades definidas e comunicação. Estar no mesmo setor não garante trabalho em equipe; colaboração exige integração real das atividades."
+  },
+  {
+    "subtopicId": "ADM-08-005",
+    "front": "Qual abordagem enfrenta um conflito de agenda entre duas equipes? Explique o raciocínio antes de virar o cartão.",
+    "back": "Identificar necessidades de ambas e negociar critérios transparentes de uso. Conflitos surgem de interesses, percepções ou necessidades divergentes; negociação busca construir encaminhamentos aceitáveis com diálogo e critérios. Conflito não é sempre prejudicial: divergências bem tratadas podem revelar problemas e produzir melhorias."
+  }
+],
+  "ADM-09": [
+  {
+    "subtopicId": "ADM-09-001",
+    "front": "Qual medida melhora a qualidade sem afastar requisitos legais? Explique o raciocínio antes de virar o cartão.",
+    "back": "Simplificar orientações e reduzir etapas desnecessárias, mantendo exigências obrigatórias. Qualidade relaciona-se à capacidade de processos e serviços atenderem requisitos e necessidades legítimas dos usuários. No serviço público, satisfação do usuário importa, mas não autoriza descumprir regras de legalidade, equidade e interesse público."
+  },
+  {
+    "subtopicId": "ADM-09-002",
+    "front": "Qual iniciativa expressa melhoria contínua? Explique o raciocínio antes de virar o cartão.",
+    "back": "Medir retrabalho, corrigir sua causa e verificar o efeito da mudança. Gestão da qualidade total envolve compromisso organizacional amplo com processos, prevenção de falhas e foco no usuário; melhoria contínua busca aperfeiçoamentos sucessivos. Qualidade não depende apenas da inspeção final; prevenir erros ao longo do processo tende a ser mais eficaz."
+  },
+  {
+    "subtopicId": "ADM-09-003",
+    "front": "Após testar novo agendamento, a unidade compara o tempo de espera com a meta. Qual etapa é essa? Explique o raciocínio antes de virar o cartão.",
+    "back": "Check: verificar resultados e confrontá-los com o objetivo planejado. PDCA organiza melhoria em Planejar (Plan), Executar (Do), Verificar (Check) e Agir/Ajustar (Act). Verificar resultados não é o mesmo que executar; agir inclui padronizar melhorias eficazes ou corrigir desvios."
+  },
+  {
+    "subtopicId": "ADM-09-004",
+    "front": "Para levantar causas possíveis de atrasos antes de investigá-las, qual ferramenta é adequada? Explique o raciocínio antes de virar o cartão.",
+    "back": "Diagrama de Ishikawa, seguido de verificação das hipóteses levantadas. O diagrama de Ishikawa organiza possíveis causas de um problema; o gráfico de Pareto ordena categorias por frequência ou impacto para orientar prioridades. Ishikawa não prova causalidade sozinho; Pareto não determina automaticamente a causa-raiz."
+  },
+  {
+    "subtopicId": "ADM-09-005",
+    "front": "O plano de ação já definiu responsáveis e prazos. Como verificar se melhorou o serviço? Explique o raciocínio antes de virar o cartão.",
+    "back": "Acompanhar um indicador de espera com método de medição consistente. 5W2H estrutura um plano de ação com o quê, por quê, onde, quando, quem, como e quanto custa; indicadores acompanham resultados ou processos. Preencher 5W2H não demonstra que uma ação funcionou; indicadores e acompanhamento permitem verificar efeitos."
+  }
 ]
 });
 
