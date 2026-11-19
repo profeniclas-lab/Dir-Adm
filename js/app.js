@@ -4,6 +4,7 @@ import { renderDashboard } from "./features/dashboard.js";
 import { renderModules } from "./features/modules.js";
 import { renderModuleDetail } from "./features/module-detail.js";
 import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiagnostic } from "./features/diagnostic.js";
+import { renderLesson, saveLessonProgress } from "./features/lessons.js";
 import { validateCatalog } from "./data/modules.js";
 
 const state = loadState();
@@ -11,6 +12,8 @@ const mainElement = document.getElementById("main");
 const catalogErrors = validateCatalog();
 if (catalogErrors.length) console.error("[ADM-ESTUDO] Catálogo inválido:", catalogErrors);
 let activeView = 'module';
+let lessonSubtopicId = null;
+let lessonAnswerShown = false;
 let editSubtopicId = null;
 let cardFlipped = false;
 
@@ -26,7 +29,8 @@ function renderCurrentPage() {
     case "dashboard": renderDashboard(mainElement, state); break;
     case "modulos":
       if (state.navigation.selectedModuleId) {
-        if (activeView === 'diagnostic') renderDiagnostic(mainElement, state.navigation.selectedModuleId, state, { editSubtopicId, flipped: cardFlipped });
+        if (activeView === 'lesson') renderLesson(mainElement, state.navigation.selectedModuleId, lessonSubtopicId, state, {showAnswer:lessonAnswerShown});
+        else if (activeView === 'diagnostic') renderDiagnostic(mainElement, state.navigation.selectedModuleId, state, { editSubtopicId, flipped: cardFlipped });
         else renderModuleDetail(mainElement, state.navigation.selectedModuleId, state);
       } else renderModules(mainElement);
       break;
@@ -38,7 +42,7 @@ function commitAndRender() { saveState(state); renderCurrentPage(); }
 function resetCardView() { editSubtopicId = null; cardFlipped = false; }
 function navigateTo(route) {
   state.navigation.currentRoute = route;
-  activeView = 'module'; resetCardView();
+  activeView = 'module'; lessonSubtopicId=null;lessonAnswerShown=false; resetCardView();
   if (route === 'modulos') state.navigation.selectedModuleId = null;
   commitAndRender();
 }
@@ -48,18 +52,25 @@ document.addEventListener('click', event => {
   if (moduleButton) {
     state.navigation.currentRoute = 'modulos';
     state.navigation.selectedModuleId = moduleButton.dataset.moduleId;
-    activeView = 'module'; resetCardView();
+    activeView = 'module'; lessonSubtopicId=null;lessonAnswerShown=false; resetCardView();
     commitAndRender(); return;
   }
+  const openLesson=event.target.closest('[data-lesson-open]');
+  if(openLesson && state.navigation.selectedModuleId){lessonSubtopicId=openLesson.dataset.lessonOpen;lessonAnswerShown=false;activeView='lesson';renderCurrentPage();return;}
+  const rating=event.target.closest('[data-lesson-rating]');
+  if(rating && activeView==='lesson' && lessonSubtopicId){if(saveLessonProgress(state,lessonSubtopicId,'rating',rating.dataset.lessonRating))commitAndRender();return;}
   const action = event.target.closest('[data-action]')?.dataset.action;
+  if(action==='lesson-back'){activeView='module';lessonSubtopicId=null;lessonAnswerShown=false;renderCurrentPage();return;}
+  if(action==='lesson-toggle-answer' && activeView==='lesson'){lessonAnswerShown=!lessonAnswerShown;renderCurrentPage();return;}
+  if(action==='lesson-complete' && activeView==='lesson' && lessonSubtopicId){if(saveLessonProgress(state,lessonSubtopicId,'complete'))commitAndRender();return;}
   if (action === 'modules-back') {
-    state.navigation.selectedModuleId = null; activeView = 'module'; resetCardView(); commitAndRender(); return;
+    state.navigation.selectedModuleId = null; activeView = 'module'; lessonSubtopicId=null;lessonAnswerShown=false; resetCardView(); commitAndRender(); return;
   }
   if (action === 'diagnostic-open') {
     activeView = 'diagnostic'; resetCardView(); renderCurrentPage(); return;
   }
   if (action === 'diagnostic-back') {
-    activeView = 'module'; resetCardView(); renderCurrentPage(); return;
+    activeView = 'module'; lessonSubtopicId=null;lessonAnswerShown=false; resetCardView(); renderCurrentPage(); return;
   }
   if (action === 'diag-flip' && activeView === 'diagnostic') { cardFlipped = !cardFlipped; renderCurrentPage(); return; }
   const choiceButton = event.target.closest('[data-diag-choice]');
