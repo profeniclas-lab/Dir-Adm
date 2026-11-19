@@ -2,6 +2,7 @@ import { loadState, saveState } from "./core/storage.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
 import { renderModules } from "./features/modules.js";
+import { renderModuleDetail } from "./features/module-detail.js";
 import { validateCatalog } from "./data/modules.js";
 
 const state = loadState();
@@ -22,7 +23,11 @@ function renderCurrentPage() {
       renderDashboard(mainElement, state);
       break;
     case "modulos":
-      renderModules(mainElement, { selectedModuleId: state.navigation.selectedModuleId });
+      if (state.navigation.selectedModuleId) {
+        renderModuleDetail(mainElement, state.navigation.selectedModuleId, state);
+      } else {
+        renderModules(mainElement);
+      }
       break;
     default:
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;
