@@ -1,5 +1,6 @@
 import { renderReviewInsights } from '../core/review-insights.js';
 import { buildUnifiedReviewQueue } from '../core/spaced-review.js';
+import { prioritizeDueReviews, reviewPrioritySummary } from '../core/review-priorities.js';
 import { MODULES } from '../data/modules.js';
 import { questionsForModule } from '../data/questions.js';
 import { getDiagnosticCards } from '../data/diagnostics.js';
@@ -16,7 +17,7 @@ function catalog() {
 /** Renderiza a agenda sem modificar o estado; apenas itens vencidos recebem ação de revisão. */
 export function renderUnifiedReviewList(main,state) {
  const all = buildUnifiedReviewQueue(state), now=Date.now(), {questions,cards}=catalog();
- const due=all.filter(x=>Date.parse(x.dueAt)<=now), future=all.filter(x=>Date.parse(x.dueAt)>now);
+ const due=prioritizeDueReviews(all.filter(x=>Date.parse(x.dueAt)<=now),state,now), future=all.filter(x=>Date.parse(x.dueAt)>now);
  const questionDue=due.filter(x=>x.kind==='question'), cardDue=due.filter(x=>x.kind==='flashcard');
  const rows = (items,expired) => items.map(item=>{
   const data=item.kind==='question'?questions.get(item.itemId):cards.get(item.itemId);
@@ -29,6 +30,9 @@ export function renderUnifiedReviewList(main,state) {
  main.innerHTML=`<section class="module-detail"><h1 class="page-title">Revisão espaçada unificada</h1><p class="page-subtitle">Uma entrada por questão ou flashcard; os agendamentos originais são preservados.</p>
  <div class="cards-grid"><article class="stat-card"><div class="stat-label">Vencidas</div><div class="stat-value">${due.length}</div></article><article class="stat-card"><div class="stat-label">Questões vencidas</div><div class="stat-value">${questionDue.length}</div></article><article class="stat-card"><div class="stat-label">Flashcards vencidos</div><div class="stat-value">${cardDue.length}</div></article><article class="stat-card"><div class="stat-label">Futuras</div><div class="stat-value">${future.length}</div></article></div>
  ${renderReviewInsights(state)}
+ <div class="module-card" style="margin:12px 0;padding:16px"><h3>Prioridade de estudo</h3>
+ <p>Alta prioridade: ${reviewPrioritySummary(all,state,now).high} · Média: ${reviewPrioritySummary(all,state,now).medium} · Próximos 7 dias: ${reviewPrioritySummary(all,state,now).next7}</p>
+ <p>Sugestão para a próxima sessão: até ${reviewPrioritySummary(all,state,now).suggested} revisões vencidas, começando pelas mais urgentes. A ordem não modifica as datas agendadas.</p></div>
  <h2>Revisões pendentes</h2>${due.length?rows(due,true):'<div class="notice">Nenhuma revisão vencida no momento.</div>'}
  <h2>Próximas revisões</h2>${future.length?rows(future,false):'<p>Nenhum agendamento futuro.</p>'}</section>`;
 }
