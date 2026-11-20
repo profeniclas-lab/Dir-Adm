@@ -2,6 +2,7 @@ import { scheduleAdaptiveReview } from '../core/adaptive-review.js';
 import { MODULES } from '../data/modules.js';
 import { renderErrorAnalysis } from '../core/error-intelligence.js';
 import { renderErrorRecovery } from '../core/error-recovery.js';
+import { renderErrorOverview } from '../core/error-overview.js';
 import { renderErrorReinforcement } from '../core/error-reinforcement.js';
 import { questionsForModule } from '../data/questions.js';
 
@@ -32,6 +33,7 @@ export function renderReviewList(main,state,mode){
  <p class="page-subtitle">${mode==='revisao'?`${counts.due} revisão(ões) vencida(s) · ${counts.scheduled} programada(s)`:`${counts.errors} registro(s) de erro`}</p>
  <p>${mode==='revisao'?'Responda às questões previstas para hoje ou anteriores. A próxima revisão será agendada conforme sua autoavaliação.':'Refaça as questões em que houve erro. Um acerto não apaga automaticamente o histórico; você pode remover um registro manualmente.'}</p>
  ${missing>0?`<div class="notice">${missing} registro(s) sem questão correspondente no banco atual. Nenhum dado foi apagado.</div>`:''}
+ ${mode==='erros'?renderErrorOverview(state):''}
  ${mode==='erros'?renderErrorAnalysis(state):''}
  ${mode==='erros'?renderErrorRecovery(state):''}
  ${mode==='erros'?renderErrorReinforcement(state):''}
