@@ -549,6 +549,87 @@ export const DIAGNOSTICS = Object.freeze({
     "front": "Qual é a distinção central em alterações, sanções e responsabilidades? Dê um exemplo.",
     "back": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei. Exemplo: Um contratado atrasa entrega; o órgão apura o fato e avalia providências e eventual sanção segundo a lei."
   }
+],
+"DA-22": [
+  {
+    "subtopicId": "DA-22-001",
+    "front": "Como aplicar fundamentos da responsabilidade estatal a uma situação de órgão público?",
+    "back": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado. Exemplo: Veículo oficial causa dano durante serviço: apuram-se dano e nexo com a atuação estatal."
+  },
+  {
+    "subtopicId": "DA-22-002",
+    "front": "Como aplicar responsabilidade objetiva e teoria do risco administrativo a uma situação de órgão público?",
+    "back": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal. Exemplo: Agente em serviço danifica veículo de terceiro; a vítima não precisa provar culpa do agente, mas deve demonstrar os demais requisitos."
+  },
+  {
+    "subtopicId": "DA-22-003",
+    "front": "Como aplicar responsabilidade por omissão e hipóteses de responsabilidade subjetiva a uma situação de órgão público?",
+    "back": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias. Exemplo: Pessoa sob custódia estatal sofre dano: o dever específico de proteção é decisivo para a análise."
+  },
+  {
+    "subtopicId": "DA-22-004",
+    "front": "Como aplicar excludentes e atenuantes a uma situação de órgão público?",
+    "back": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso. Exemplo: Condutor particular contribui para colisão com veículo oficial; a participação de cada causa deve ser analisada."
+  },
+  {
+    "subtopicId": "DA-22-005",
+    "front": "Como aplicar ação regressiva a uma situação de órgão público?",
+    "back": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso. Exemplo: Após indenizar terceiro, a entidade avalia regresso contra servidor cuja culpa foi demonstrada."
+  }
+],
+"DA-23": [
+  {
+    "subtopicId": "DA-23-001",
+    "front": "Como aplicar controle interno e externo a uma situação de órgão público?",
+    "back": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais. Exemplo: Controladoria acompanha execução orçamentária; Legislativo exerce controle externo com auxílio do Tribunal de Contas."
+  },
+  {
+    "subtopicId": "DA-23-002",
+    "front": "Como aplicar controle administrativo e autotutela a uma situação de órgão público?",
+    "back": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos. Exemplo: Órgão identifica ato ilegal e inicia revisão com respeito ao contraditório quando exigido."
+  },
+  {
+    "subtopicId": "DA-23-003",
+    "front": "Como aplicar controle legislativo e tribunais de contas a uma situação de órgão público?",
+    "back": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial. Exemplo: Comissão legislativa examina contas públicas com suporte técnico do Tribunal de Contas."
+  },
+  {
+    "subtopicId": "DA-23-004",
+    "front": "Como aplicar controle judicial a uma situação de órgão público?",
+    "back": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade. Exemplo: Decisão administrativa discriminatória pode ser controlada judicialmente por violar a impessoalidade."
+  },
+  {
+    "subtopicId": "DA-23-005",
+    "front": "Como aplicar recursos e instrumentos de controle a uma situação de órgão público?",
+    "back": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social. Exemplo: Cidadão apresenta recurso contra decisão administrativa e acompanha sua tramitação."
+  }
+],
+"DA-24": [
+  {
+    "subtopicId": "DA-24-001",
+    "front": "Como aplicar lei 8.429/1992 e alterações a uma situação de órgão público?",
+    "back": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável. Exemplo: Ao estudar caso de 2025, o candidato consulta a redação atualizada da lei, não apenas apostila antiga."
+  },
+  {
+    "subtopicId": "DA-24-002",
+    "front": "Como aplicar atos de improbidade e requisitos a uma situação de órgão público?",
+    "back": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal. Exemplo: Contratação irregular exige apurar conduta, enquadramento legal e elemento subjetivo, sem presunção automática de improbidade."
+  },
+  {
+    "subtopicId": "DA-24-003",
+    "front": "Como aplicar dolo e responsabilização a uma situação de órgão público?",
+    "back": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica. Exemplo: Erro administrativo por negligência pode gerar outras consequências, mas não é por si só improbidade dolosa."
+  },
+  {
+    "subtopicId": "DA-24-004",
+    "front": "Como aplicar sanções e procedimentos a uma situação de órgão público?",
+    "back": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração. Exemplo: Decisão judicial considera a categoria do ato e os parâmetros legais de sanção."
+  },
+  {
+    "subtopicId": "DA-24-005",
+    "front": "Como aplicar distinções entre improbidade e outras irregularidades a uma situação de órgão público?",
+    "back": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma. Exemplo: Servidor descumpre procedimento sem dolo: pode haver apuração disciplinar, sem enquadramento automático na lei de improbidade."
+  }
 ]
 });
 

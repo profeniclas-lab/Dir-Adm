@@ -12827,6 +12827,1666 @@ export const QUESTIONS = [
     "examTip": "Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
     "newExample": "Um contratado atrasa entrega; o órgão apura o fato e avalia providências e eventual sanção segundo a lei.",
     "challenge": "Corrija esta afirmação e justifique: Toda alteração contratual dispensa motivação e observância de limites legais."
+  },
+  {
+    "id": "Q-DA-22-001-01",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-001",
+    "topic": "Fundamentos da responsabilidade estatal",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+      "Incorreta: A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública."
+    ],
+    "explanation": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+    "concept": "Fundamentos da responsabilidade estatal",
+    "trap": "Não aceite a generalização: Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Veículo oficial causa dano durante serviço: apuram-se dano e nexo com a atuação estatal.",
+    "challenge": "Explique o erro desta proposição: A responsabilidade estatal dispensa sempre demonstrar qualquer relação entre conduta e dano."
+  },
+  {
+    "id": "Q-DA-22-001-02",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-001",
+    "topic": "Fundamentos da responsabilidade estatal",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre fundamentos da responsabilidade estatal, assinale a alternativa CORRETA.",
+    "options": [
+      "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.",
+      "A responsabilidade estatal dispensa sempre demonstrar qualquer relação entre conduta e dano."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+      "Incorreta: Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar. A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+      "Incorreta: A responsabilidade estatal dispensa sempre demonstrar qualquer relação entre conduta e dano. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado."
+    ],
+    "explanation": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+    "concept": "Fundamentos da responsabilidade estatal",
+    "trap": "Não aceite a generalização: Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Veículo oficial causa dano durante serviço: apuram-se dano e nexo com a atuação estatal.",
+    "challenge": "Explique o erro desta proposição: A responsabilidade estatal dispensa sempre demonstrar qualquer relação entre conduta e dano."
+  },
+  {
+    "id": "Q-DA-22-001-03",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-001",
+    "topic": "Fundamentos da responsabilidade estatal",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.\nII. Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.\nIII. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.\nEstá correto o que se afirma em:",
+    "options": [
+      "I, II e III",
+      "III apenas",
+      "I apenas",
+      "I e III apenas",
+      "II apenas"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: II é falsa. Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.",
+      "Incompleta: I também é verdadeira. A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+      "Incompleta: III também é verdadeira. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+      "Correta: I e III são verdadeiras; II é falsa. A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+      "Incorreta: II é falsa. Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar."
+    ],
+    "explanation": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+    "concept": "Fundamentos da responsabilidade estatal",
+    "trap": "Não aceite a generalização: Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Veículo oficial causa dano durante serviço: apuram-se dano e nexo com a atuação estatal.",
+    "challenge": "Explique o erro desta proposição: A responsabilidade estatal dispensa sempre demonstrar qualquer relação entre conduta e dano."
+  },
+  {
+    "id": "Q-DA-22-001-04",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-001",
+    "topic": "Fundamentos da responsabilidade estatal",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre fundamentos da responsabilidade estatal, todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "A aplicação do instituto depende de pressupostos e limites jurídicos.",
+      "A responsabilidade estatal dispensa sempre demonstrar qualquer relação entre conduta e dano.",
+      "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+      "Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Verdadeira: os limites do ordenamento são relevantes.",
+      "Falsa, portanto é a exceção: A responsabilidade estatal dispensa sempre demonstrar qualquer relação entre conduta e dano. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+      "Verdadeira: A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+      "Verdadeira: Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado."
+    ],
+    "explanation": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+    "concept": "Fundamentos da responsabilidade estatal",
+    "trap": "Não aceite a generalização: Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Veículo oficial causa dano durante serviço: apuram-se dano e nexo com a atuação estatal.",
+    "challenge": "Explique o erro desta proposição: A responsabilidade estatal dispensa sempre demonstrar qualquer relação entre conduta e dano."
+  },
+  {
+    "id": "Q-DA-22-002-01",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-002",
+    "topic": "Responsabilidade objetiva e teoria do risco administrativo",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade.",
+      "Correta: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade."
+    ],
+    "explanation": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+    "concept": "Responsabilidade objetiva e teoria do risco administrativo",
+    "trap": "Não aceite a generalização: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Agente em serviço danifica veículo de terceiro; a vítima não precisa provar culpa do agente, mas deve demonstrar os demais requisitos.",
+    "challenge": "Explique o erro desta proposição: A teoria do risco administrativo equivale ao risco integral em todas as situações."
+  },
+  {
+    "id": "Q-DA-22-002-02",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-002",
+    "topic": "Responsabilidade objetiva e teoria do risco administrativo",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre responsabilidade objetiva e teoria do risco administrativo, assinale a alternativa CORRETA.",
+    "options": [
+      "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "A teoria do risco administrativo equivale ao risco integral em todas as situações.",
+      "Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+      "Incorreta: A teoria do risco administrativo equivale ao risco integral em todas as situações. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+      "Incorreta: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade."
+    ],
+    "explanation": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+    "concept": "Responsabilidade objetiva e teoria do risco administrativo",
+    "trap": "Não aceite a generalização: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Agente em serviço danifica veículo de terceiro; a vítima não precisa provar culpa do agente, mas deve demonstrar os demais requisitos.",
+    "challenge": "Explique o erro desta proposição: A teoria do risco administrativo equivale ao risco integral em todas as situações."
+  },
+  {
+    "id": "Q-DA-22-002-03",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-002",
+    "topic": "Responsabilidade objetiva e teoria do risco administrativo",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as proposições:\n1. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade.\n2. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.\n3. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.\n4. A teoria do risco administrativo equivale ao risco integral em todas as situações.\nQual é a sequência V/F?",
+    "options": [
+      "F-V-F-V",
+      "F-F-V-V",
+      "V-F-F-V",
+      "V-F-V-F",
+      "V-V-F-F"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: a sequência é V-F-V-F. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. A teoria do risco administrativo equivale ao risco integral em todas as situações.",
+      "Incorreta: a sequência é V-F-V-F. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. A teoria do risco administrativo equivale ao risco integral em todas as situações.",
+      "Incorreta: a sequência é V-F-V-F. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. A teoria do risco administrativo equivale ao risco integral em todas as situações.",
+      "Correta: 1 e 3 são verdadeiras; 2 e 4 são falsas. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+      "Incorreta: a sequência é V-F-V-F. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. A teoria do risco administrativo equivale ao risco integral em todas as situações."
+    ],
+    "explanation": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+    "concept": "Responsabilidade objetiva e teoria do risco administrativo",
+    "trap": "Não aceite a generalização: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Agente em serviço danifica veículo de terceiro; a vítima não precisa provar culpa do agente, mas deve demonstrar os demais requisitos.",
+    "challenge": "Explique o erro desta proposição: A teoria do risco administrativo equivale ao risco integral em todas as situações."
+  },
+  {
+    "id": "Q-DA-22-002-04",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-002",
+    "topic": "Responsabilidade objetiva e teoria do risco administrativo",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada proposição a V (válida) ou F (falsa):\nI. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade.\nII. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.\nIII. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.\nIV. A teoria do risco administrativo equivale ao risco integral em todas as situações.\nQual é a sequência?",
+    "options": [
+      "V-F-V-F",
+      "V-V-F-F",
+      "F-V-F-V",
+      "V-F-F-V",
+      "F-F-V-V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III válidas; II e IV falsas. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+      "Incorreta: II e IV não são válidas. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. A teoria do risco administrativo equivale ao risco integral em todas as situações.",
+      "Incorreta: II e IV não são válidas. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. A teoria do risco administrativo equivale ao risco integral em todas as situações.",
+      "Incorreta: II e IV não são válidas. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. A teoria do risco administrativo equivale ao risco integral em todas as situações.",
+      "Incorreta: II e IV não são válidas. Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. A teoria do risco administrativo equivale ao risco integral em todas as situações."
+    ],
+    "explanation": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+    "concept": "Responsabilidade objetiva e teoria do risco administrativo",
+    "trap": "Não aceite a generalização: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Agente em serviço danifica veículo de terceiro; a vítima não precisa provar culpa do agente, mas deve demonstrar os demais requisitos.",
+    "challenge": "Explique o erro desta proposição: A teoria do risco administrativo equivale ao risco integral em todas as situações."
+  },
+  {
+    "id": "Q-DA-22-003-01",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-003",
+    "topic": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
+      "Incorreta: Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção."
+    ],
+    "explanation": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+    "concept": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
+    "trap": "Não aceite a generalização: Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Pessoa sob custódia estatal sofre dano: o dever específico de proteção é decisivo para a análise.",
+    "challenge": "Explique o erro desta proposição: A simples existência de um dever abstrato de segurança transforma todo evento danoso em responsabilidade automática."
+  },
+  {
+    "id": "Q-DA-22-003-02",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-003",
+    "topic": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre responsabilidade por omissão e hipóteses de responsabilidade subjetiva, assinale a alternativa CORRETA.",
+    "options": [
+      "A simples existência de um dever abstrato de segurança transforma todo evento danoso em responsabilidade automática.",
+      "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
+      "Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A simples existência de um dever abstrato de segurança transforma todo evento danoso em responsabilidade automática. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+      "Correta: Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
+      "Incorreta: Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir. Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias."
+    ],
+    "explanation": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+    "concept": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
+    "trap": "Não aceite a generalização: Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Pessoa sob custódia estatal sofre dano: o dever específico de proteção é decisivo para a análise.",
+    "challenge": "Explique o erro desta proposição: A simples existência de um dever abstrato de segurança transforma todo evento danoso em responsabilidade automática."
+  },
+  {
+    "id": "Q-DA-22-003-03",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-003",
+    "topic": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.\nII. Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.\nIII. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.\nEstá correto o que se afirma em:",
+    "options": [
+      "I, II e III",
+      "I apenas",
+      "III apenas",
+      "I e III apenas",
+      "II apenas"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: II é falsa. Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+      "Incompleta: III também é verdadeira. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+      "Incompleta: I também é verdadeira. Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
+      "Correta: I e III são verdadeiras; II é falsa. Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+      "Incorreta: II é falsa. Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir."
+    ],
+    "explanation": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+    "concept": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
+    "trap": "Não aceite a generalização: Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Pessoa sob custódia estatal sofre dano: o dever específico de proteção é decisivo para a análise.",
+    "challenge": "Explique o erro desta proposição: A simples existência de um dever abstrato de segurança transforma todo evento danoso em responsabilidade automática."
+  },
+  {
+    "id": "Q-DA-22-003-04",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-003",
+    "topic": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um servidor precisa avaliar a seguinte situação: Pessoa sob custódia estatal sofre dano: o dever específico de proteção é decisivo para a análise. Qual conclusão é juridicamente adequada?",
+    "options": [
+      "A existência de interesse público dispensa qualquer fundamentação jurídica.",
+      "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
+      "Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+      "A simples existência de um dever abstrato de segurança transforma todo evento danoso em responsabilidade automática."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a atuação pública depende de fundamentação e requisitos legais. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+      "Correta: Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+      "Incorreta: Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+      "Incorreta: A simples existência de um dever abstrato de segurança transforma todo evento danoso em responsabilidade automática."
+    ],
+    "explanation": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+    "concept": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
+    "trap": "Não aceite a generalização: Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Pessoa sob custódia estatal sofre dano: o dever específico de proteção é decisivo para a análise.",
+    "challenge": "Explique o erro desta proposição: A simples existência de um dever abstrato de segurança transforma todo evento danoso em responsabilidade automática."
+  },
+  {
+    "id": "Q-DA-22-004-01",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-004",
+    "topic": "Excludentes e atenuantes",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado. Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal.",
+      "Incorreta: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado. Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal."
+    ],
+    "explanation": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+    "concept": "Excludentes e atenuantes",
+    "trap": "Não aceite a generalização: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Condutor particular contribui para colisão com veículo oficial; a participação de cada causa deve ser analisada.",
+    "challenge": "Explique o erro desta proposição: Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade."
+  },
+  {
+    "id": "Q-DA-22-004-02",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-004",
+    "topic": "Excludentes e atenuantes",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre excludentes e atenuantes, assinale a alternativa CORRETA.",
+    "options": [
+      "Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.",
+      "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+      "Incorreta: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado. Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal.",
+      "Correta: Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal."
+    ],
+    "explanation": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+    "concept": "Excludentes e atenuantes",
+    "trap": "Não aceite a generalização: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Condutor particular contribui para colisão com veículo oficial; a participação de cada causa deve ser analisada.",
+    "challenge": "Explique o erro desta proposição: Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade."
+  },
+  {
+    "id": "Q-DA-22-004-03",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-004",
+    "topic": "Excludentes e atenuantes",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as proposições:\n1. Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal.\n2. A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.\n3. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.\n4. Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade.\nQual é a sequência V/F?",
+    "options": [
+      "V-V-F-F",
+      "V-F-V-F",
+      "F-V-F-V",
+      "V-F-F-V",
+      "F-F-V-V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a sequência é V-F-V-F. A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado. Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade.",
+      "Correta: 1 e 3 são verdadeiras; 2 e 4 são falsas. Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+      "Incorreta: a sequência é V-F-V-F. A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado. Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade.",
+      "Incorreta: a sequência é V-F-V-F. A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado. Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade.",
+      "Incorreta: a sequência é V-F-V-F. A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado. Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade."
+    ],
+    "explanation": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+    "concept": "Excludentes e atenuantes",
+    "trap": "Não aceite a generalização: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Condutor particular contribui para colisão com veículo oficial; a participação de cada causa deve ser analisada.",
+    "challenge": "Explique o erro desta proposição: Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade."
+  },
+  {
+    "id": "Q-DA-22-004-04",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-004",
+    "topic": "Excludentes e atenuantes",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre excludentes e atenuantes, todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+      "A aplicação do instituto depende de pressupostos e limites jurídicos.",
+      "Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade.",
+      "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Verdadeira: Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+      "Verdadeira: os limites do ordenamento são relevantes.",
+      "Falsa, portanto é a exceção: Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+      "Verdadeira: Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal."
+    ],
+    "explanation": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+    "concept": "Excludentes e atenuantes",
+    "trap": "Não aceite a generalização: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Condutor particular contribui para colisão com veículo oficial; a participação de cada causa deve ser analisada.",
+    "challenge": "Explique o erro desta proposição: Caso fortuito e força maior afastam responsabilidade de forma automática, sem examinar o nexo e o risco da atividade."
+  },
+  {
+    "id": "Q-DA-22-005-01",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-005",
+    "topic": "Ação regressiva",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.",
+      "Incorreta: A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa."
+    ],
+    "explanation": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+    "concept": "Ação regressiva",
+    "trap": "Não aceite a generalização: A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Após indenizar terceiro, a entidade avalia regresso contra servidor cuja culpa foi demonstrada.",
+    "challenge": "Explique o erro desta proposição: A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente."
+  },
+  {
+    "id": "Q-DA-22-005-02",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-005",
+    "topic": "Ação regressiva",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre ação regressiva, assinale a alternativa CORRETA.",
+    "options": [
+      "A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente.",
+      "A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+      "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+      "Incorreta: A ação regressiva contra agente público dispensa comprovar dolo ou culpa. A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.",
+      "Correta: A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso."
+    ],
+    "explanation": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+    "concept": "Ação regressiva",
+    "trap": "Não aceite a generalização: A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Após indenizar terceiro, a entidade avalia regresso contra servidor cuja culpa foi demonstrada.",
+    "challenge": "Explique o erro desta proposição: A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente."
+  },
+  {
+    "id": "Q-DA-22-005-03",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-005",
+    "topic": "Ação regressiva",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.\nII. A ação regressiva contra agente público dispensa comprovar dolo ou culpa.\nIII. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.\nEstá correto o que se afirma em:",
+    "options": [
+      "I e III apenas",
+      "I, II e III",
+      "II apenas",
+      "I apenas",
+      "III apenas"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras; II é falsa. A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+      "Incorreta: II é falsa. A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+      "Incorreta: II é falsa. A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+      "Incompleta: III também é verdadeira. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+      "Incompleta: I também é verdadeira. A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa."
+    ],
+    "explanation": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+    "concept": "Ação regressiva",
+    "trap": "Não aceite a generalização: A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Após indenizar terceiro, a entidade avalia regresso contra servidor cuja culpa foi demonstrada.",
+    "challenge": "Explique o erro desta proposição: A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente."
+  },
+  {
+    "id": "Q-DA-22-005-04",
+    "moduleId": "DA-22",
+    "subtopicId": "DA-22-005",
+    "topic": "Ação regressiva",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada proposição a V (válida) ou F (falsa):\nI. A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.\nII. A ação regressiva contra agente público dispensa comprovar dolo ou culpa.\nIII. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.\nIV. A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente.\nQual é a sequência?",
+    "options": [
+      "V-F-F-V",
+      "V-V-F-F",
+      "F-F-V-V",
+      "V-F-V-F",
+      "F-V-F-V"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: II e IV não são válidas. A ação regressiva contra agente público dispensa comprovar dolo ou culpa. A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente.",
+      "Incorreta: II e IV não são válidas. A ação regressiva contra agente público dispensa comprovar dolo ou culpa. A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente.",
+      "Incorreta: II e IV não são válidas. A ação regressiva contra agente público dispensa comprovar dolo ou culpa. A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente.",
+      "Correta: I e III válidas; II e IV falsas. A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+      "Incorreta: II e IV não são válidas. A ação regressiva contra agente público dispensa comprovar dolo ou culpa. A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente."
+    ],
+    "explanation": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+    "concept": "Ação regressiva",
+    "trap": "Não aceite a generalização: A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Após indenizar terceiro, a entidade avalia regresso contra servidor cuja culpa foi demonstrada.",
+    "challenge": "Explique o erro desta proposição: A vítima só pode cobrar indenização do Estado depois de vencer ação contra o agente."
+  },
+  {
+    "id": "Q-DA-23-001-01",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-001",
+    "topic": "Controle interno e externo",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário. Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes.",
+      "Incorreta: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário. Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes."
+    ],
+    "explanation": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+    "concept": "Controle interno e externo",
+    "trap": "Não aceite a generalização: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Controladoria acompanha execução orçamentária; Legislativo exerce controle externo com auxílio do Tribunal de Contas.",
+    "challenge": "Explique o erro desta proposição: Controle externo elimina a necessidade de controles internos na administração."
+  },
+  {
+    "id": "Q-DA-23-001-02",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-001",
+    "topic": "Controle interno e externo",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre controle interno e externo, assinale a alternativa CORRETA.",
+    "options": [
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "Controle externo elimina a necessidade de controles internos na administração.",
+      "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes.",
+      "Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+      "Incorreta: Controle externo elimina a necessidade de controles internos na administração. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+      "Correta: Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes.",
+      "Incorreta: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário. Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes."
+    ],
+    "explanation": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+    "concept": "Controle interno e externo",
+    "trap": "Não aceite a generalização: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Controladoria acompanha execução orçamentária; Legislativo exerce controle externo com auxílio do Tribunal de Contas.",
+    "challenge": "Explique o erro desta proposição: Controle externo elimina a necessidade de controles internos na administração."
+  },
+  {
+    "id": "Q-DA-23-001-03",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-001",
+    "topic": "Controle interno e externo",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as proposições:\n1. Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes.\n2. Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário.\n3. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.\n4. Controle externo elimina a necessidade de controles internos na administração.\nQual é a sequência V/F?",
+    "options": [
+      "F-F-V-V",
+      "V-V-F-F",
+      "V-F-V-F",
+      "V-F-F-V",
+      "F-V-F-V"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: a sequência é V-F-V-F. Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário. Controle externo elimina a necessidade de controles internos na administração.",
+      "Incorreta: a sequência é V-F-V-F. Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário. Controle externo elimina a necessidade de controles internos na administração.",
+      "Correta: 1 e 3 são verdadeiras; 2 e 4 são falsas. Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+      "Incorreta: a sequência é V-F-V-F. Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário. Controle externo elimina a necessidade de controles internos na administração.",
+      "Incorreta: a sequência é V-F-V-F. Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário. Controle externo elimina a necessidade de controles internos na administração."
+    ],
+    "explanation": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+    "concept": "Controle interno e externo",
+    "trap": "Não aceite a generalização: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Controladoria acompanha execução orçamentária; Legislativo exerce controle externo com auxílio do Tribunal de Contas.",
+    "challenge": "Explique o erro desta proposição: Controle externo elimina a necessidade de controles internos na administração."
+  },
+  {
+    "id": "Q-DA-23-001-04",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-001",
+    "topic": "Controle interno e externo",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um servidor precisa avaliar a seguinte situação: Controladoria acompanha execução orçamentária; Legislativo exerce controle externo com auxílio do Tribunal de Contas. Qual conclusão é juridicamente adequada?",
+    "options": [
+      "A existência de interesse público dispensa qualquer fundamentação jurídica.",
+      "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes.",
+      "Controle externo elimina a necessidade de controles internos na administração.",
+      "Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a atuação pública depende de fundamentação e requisitos legais. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+      "Correta: Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+      "Incorreta: Controle externo elimina a necessidade de controles internos na administração.",
+      "Incorreta: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário."
+    ],
+    "explanation": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+    "concept": "Controle interno e externo",
+    "trap": "Não aceite a generalização: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Controladoria acompanha execução orçamentária; Legislativo exerce controle externo com auxílio do Tribunal de Contas.",
+    "challenge": "Explique o erro desta proposição: Controle externo elimina a necessidade de controles internos na administração."
+  },
+  {
+    "id": "Q-DA-23-002-01",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-002",
+    "topic": "Controle administrativo e autotutela",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+      "Incorreta: Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos."
+    ],
+    "explanation": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+    "concept": "Controle administrativo e autotutela",
+    "trap": "Não aceite a generalização: A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Órgão identifica ato ilegal e inicia revisão com respeito ao contraditório quando exigido.",
+    "challenge": "Explique o erro desta proposição: A revogação de ato administrativo decorre necessariamente de ilegalidade."
+  },
+  {
+    "id": "Q-DA-23-002-02",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-002",
+    "topic": "Controle administrativo e autotutela",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre controle administrativo e autotutela, assinale a alternativa CORRETA.",
+    "options": [
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.",
+      "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+      "A revogação de ato administrativo decorre necessariamente de ilegalidade."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+      "Incorreta: A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva. Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+      "Correta: Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+      "Incorreta: A revogação de ato administrativo decorre necessariamente de ilegalidade. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos."
+    ],
+    "explanation": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+    "concept": "Controle administrativo e autotutela",
+    "trap": "Não aceite a generalização: A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Órgão identifica ato ilegal e inicia revisão com respeito ao contraditório quando exigido.",
+    "challenge": "Explique o erro desta proposição: A revogação de ato administrativo decorre necessariamente de ilegalidade."
+  },
+  {
+    "id": "Q-DA-23-002-03",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-002",
+    "topic": "Controle administrativo e autotutela",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.\nII. A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.\nIII. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.\nEstá correto o que se afirma em:",
+    "options": [
+      "I apenas",
+      "II apenas",
+      "I e III apenas",
+      "III apenas",
+      "I, II e III"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incompleta: III também é verdadeira. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+      "Incorreta: II é falsa. A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.",
+      "Correta: I e III são verdadeiras; II é falsa. Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+      "Incompleta: I também é verdadeira. Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+      "Incorreta: II é falsa. A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva."
+    ],
+    "explanation": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+    "concept": "Controle administrativo e autotutela",
+    "trap": "Não aceite a generalização: A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Órgão identifica ato ilegal e inicia revisão com respeito ao contraditório quando exigido.",
+    "challenge": "Explique o erro desta proposição: A revogação de ato administrativo decorre necessariamente de ilegalidade."
+  },
+  {
+    "id": "Q-DA-23-002-04",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-002",
+    "topic": "Controle administrativo e autotutela",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre controle administrativo e autotutela, todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+      "A revogação de ato administrativo decorre necessariamente de ilegalidade.",
+      "A aplicação do instituto depende de pressupostos e limites jurídicos.",
+      "Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Verdadeira: Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+      "Falsa, portanto é a exceção: A revogação de ato administrativo decorre necessariamente de ilegalidade. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+      "Verdadeira: os limites do ordenamento são relevantes.",
+      "Verdadeira: Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos."
+    ],
+    "explanation": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+    "concept": "Controle administrativo e autotutela",
+    "trap": "Não aceite a generalização: A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Órgão identifica ato ilegal e inicia revisão com respeito ao contraditório quando exigido.",
+    "challenge": "Explique o erro desta proposição: A revogação de ato administrativo decorre necessariamente de ilegalidade."
+  },
+  {
+    "id": "Q-DA-23-003-01",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-003",
+    "topic": "Controle legislativo e Tribunais de Contas",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União.",
+      "Incorreta: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União."
+    ],
+    "explanation": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+    "concept": "Controle legislativo e Tribunais de Contas",
+    "trap": "Não aceite a generalização: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Comissão legislativa examina contas públicas com suporte técnico do Tribunal de Contas.",
+    "challenge": "Explique o erro desta proposição: O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal."
+  },
+  {
+    "id": "Q-DA-23-003-02",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-003",
+    "topic": "Controle legislativo e Tribunais de Contas",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre controle legislativo e tribunais de contas, assinale a alternativa CORRETA.",
+    "options": [
+      "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União.",
+      "O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União.",
+      "Incorreta: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+      "Incorreta: O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial."
+    ],
+    "explanation": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+    "concept": "Controle legislativo e Tribunais de Contas",
+    "trap": "Não aceite a generalização: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Comissão legislativa examina contas públicas com suporte técnico do Tribunal de Contas.",
+    "challenge": "Explique o erro desta proposição: O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal."
+  },
+  {
+    "id": "Q-DA-23-003-03",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-003",
+    "topic": "Controle legislativo e Tribunais de Contas",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as proposições:\n1. O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União.\n2. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.\n3. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.\n4. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal.\nQual é a sequência V/F?",
+    "options": [
+      "V-V-F-F",
+      "V-F-F-V",
+      "V-F-V-F",
+      "F-F-V-V",
+      "F-V-F-V"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: a sequência é V-F-V-F. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal.",
+      "Incorreta: a sequência é V-F-V-F. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal.",
+      "Correta: 1 e 3 são verdadeiras; 2 e 4 são falsas. O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+      "Incorreta: a sequência é V-F-V-F. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal.",
+      "Incorreta: a sequência é V-F-V-F. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal."
+    ],
+    "explanation": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+    "concept": "Controle legislativo e Tribunais de Contas",
+    "trap": "Não aceite a generalização: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Comissão legislativa examina contas públicas com suporte técnico do Tribunal de Contas.",
+    "challenge": "Explique o erro desta proposição: O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal."
+  },
+  {
+    "id": "Q-DA-23-003-04",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-003",
+    "topic": "Controle legislativo e Tribunais de Contas",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada proposição a V (válida) ou F (falsa):\nI. O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União.\nII. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.\nIII. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.\nIV. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal.\nQual é a sequência?",
+    "options": [
+      "F-F-V-V",
+      "V-V-F-F",
+      "V-F-V-F",
+      "F-V-F-V",
+      "V-F-F-V"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: II e IV não são válidas. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal.",
+      "Incorreta: II e IV não são válidas. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal.",
+      "Correta: I e III válidas; II e IV falsas. O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+      "Incorreta: II e IV não são válidas. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal.",
+      "Incorreta: II e IV não são válidas. O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns. O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal."
+    ],
+    "explanation": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+    "concept": "Controle legislativo e Tribunais de Contas",
+    "trap": "Não aceite a generalização: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Comissão legislativa examina contas públicas com suporte técnico do Tribunal de Contas.",
+    "challenge": "Explique o erro desta proposição: O auxílio do Tribunal de Contas transforma o Legislativo em subordinado administrativo do tribunal."
+  },
+  {
+    "id": "Q-DA-23-004-01",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-004",
+    "topic": "Controle judicial",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa.",
+      "Correta: O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa."
+    ],
+    "explanation": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+    "concept": "Controle judicial",
+    "trap": "Não aceite a generalização: O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Decisão administrativa discriminatória pode ser controlada judicialmente por violar a impessoalidade.",
+    "challenge": "Explique o erro desta proposição: A existência de discricionariedade torna o ato imune a qualquer controle judicial."
+  },
+  {
+    "id": "Q-DA-23-004-02",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-004",
+    "topic": "Controle judicial",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre controle judicial, assinale a alternativa CORRETA.",
+    "options": [
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "A existência de discricionariedade torna o ato imune a qualquer controle judicial.",
+      "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa.",
+      "O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+      "Incorreta: A existência de discricionariedade torna o ato imune a qualquer controle judicial. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+      "Correta: O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa.",
+      "Incorreta: O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal. O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa."
+    ],
+    "explanation": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+    "concept": "Controle judicial",
+    "trap": "Não aceite a generalização: O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Decisão administrativa discriminatória pode ser controlada judicialmente por violar a impessoalidade.",
+    "challenge": "Explique o erro desta proposição: A existência de discricionariedade torna o ato imune a qualquer controle judicial."
+  },
+  {
+    "id": "Q-DA-23-004-03",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-004",
+    "topic": "Controle judicial",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa.\nII. O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal.\nIII. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.\nEstá correto o que se afirma em:",
+    "options": [
+      "I e III apenas",
+      "I apenas",
+      "III apenas",
+      "II apenas",
+      "I, II e III"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras; II é falsa. O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+      "Incompleta: III também é verdadeira. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+      "Incompleta: I também é verdadeira. O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa.",
+      "Incorreta: II é falsa. O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal.",
+      "Incorreta: II é falsa. O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal."
+    ],
+    "explanation": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+    "concept": "Controle judicial",
+    "trap": "Não aceite a generalização: O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Decisão administrativa discriminatória pode ser controlada judicialmente por violar a impessoalidade.",
+    "challenge": "Explique o erro desta proposição: A existência de discricionariedade torna o ato imune a qualquer controle judicial."
+  },
+  {
+    "id": "Q-DA-23-004-04",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-004",
+    "topic": "Controle judicial",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um servidor precisa avaliar a seguinte situação: Decisão administrativa discriminatória pode ser controlada judicialmente por violar a impessoalidade. Qual conclusão é juridicamente adequada?",
+    "options": [
+      "A existência de interesse público dispensa qualquer fundamentação jurídica.",
+      "A existência de discricionariedade torna o ato imune a qualquer controle judicial.",
+      "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa.",
+      "O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: a atuação pública depende de fundamentação e requisitos legais. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+      "Incorreta: A existência de discricionariedade torna o ato imune a qualquer controle judicial.",
+      "Correta: O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+      "Incorreta: O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal."
+    ],
+    "explanation": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+    "concept": "Controle judicial",
+    "trap": "Não aceite a generalização: O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Decisão administrativa discriminatória pode ser controlada judicialmente por violar a impessoalidade.",
+    "challenge": "Explique o erro desta proposição: A existência de discricionariedade torna o ato imune a qualquer controle judicial."
+  },
+  {
+    "id": "Q-DA-23-005-01",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-005",
+    "topic": "Recursos e instrumentos de controle",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Todo recurso administrativo possui necessariamente efeito suspensivo automático.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Todo recurso administrativo possui necessariamente efeito suspensivo automático. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.",
+      "Correta: Todo recurso administrativo possui necessariamente efeito suspensivo automático. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável."
+    ],
+    "explanation": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+    "concept": "Recursos e instrumentos de controle",
+    "trap": "Não aceite a generalização: Todo recurso administrativo possui necessariamente efeito suspensivo automático.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Cidadão apresenta recurso contra decisão administrativa e acompanha sua tramitação.",
+    "challenge": "Explique o erro desta proposição: A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial."
+  },
+  {
+    "id": "Q-DA-23-005-02",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-005",
+    "topic": "Recursos e instrumentos de controle",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre recursos e instrumentos de controle, assinale a alternativa CORRETA.",
+    "options": [
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.",
+      "Todo recurso administrativo possui necessariamente efeito suspensivo automático.",
+      "A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+      "Correta: Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.",
+      "Incorreta: Todo recurso administrativo possui necessariamente efeito suspensivo automático. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.",
+      "Incorreta: A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social."
+    ],
+    "explanation": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+    "concept": "Recursos e instrumentos de controle",
+    "trap": "Não aceite a generalização: Todo recurso administrativo possui necessariamente efeito suspensivo automático.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Cidadão apresenta recurso contra decisão administrativa e acompanha sua tramitação.",
+    "challenge": "Explique o erro desta proposição: A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial."
+  },
+  {
+    "id": "Q-DA-23-005-03",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-005",
+    "topic": "Recursos e instrumentos de controle",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as proposições:\n1. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.\n2. Todo recurso administrativo possui necessariamente efeito suspensivo automático.\n3. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.\n4. A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial.\nQual é a sequência V/F?",
+    "options": [
+      "F-V-F-V",
+      "V-V-F-F",
+      "V-F-F-V",
+      "V-F-V-F",
+      "F-F-V-V"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: a sequência é V-F-V-F. Todo recurso administrativo possui necessariamente efeito suspensivo automático. A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial.",
+      "Incorreta: a sequência é V-F-V-F. Todo recurso administrativo possui necessariamente efeito suspensivo automático. A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial.",
+      "Incorreta: a sequência é V-F-V-F. Todo recurso administrativo possui necessariamente efeito suspensivo automático. A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial.",
+      "Correta: 1 e 3 são verdadeiras; 2 e 4 são falsas. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+      "Incorreta: a sequência é V-F-V-F. Todo recurso administrativo possui necessariamente efeito suspensivo automático. A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial."
+    ],
+    "explanation": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+    "concept": "Recursos e instrumentos de controle",
+    "trap": "Não aceite a generalização: Todo recurso administrativo possui necessariamente efeito suspensivo automático.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Cidadão apresenta recurso contra decisão administrativa e acompanha sua tramitação.",
+    "challenge": "Explique o erro desta proposição: A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial."
+  },
+  {
+    "id": "Q-DA-23-005-04",
+    "moduleId": "DA-23",
+    "subtopicId": "DA-23-005",
+    "topic": "Recursos e instrumentos de controle",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre recursos e instrumentos de controle, todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.",
+      "Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+      "A aplicação do instituto depende de pressupostos e limites jurídicos.",
+      "A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Verdadeira: Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.",
+      "Verdadeira: Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+      "Verdadeira: os limites do ordenamento são relevantes.",
+      "Falsa, portanto é a exceção: A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social."
+    ],
+    "explanation": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+    "concept": "Recursos e instrumentos de controle",
+    "trap": "Não aceite a generalização: Todo recurso administrativo possui necessariamente efeito suspensivo automático.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Cidadão apresenta recurso contra decisão administrativa e acompanha sua tramitação.",
+    "challenge": "Explique o erro desta proposição: A interposição de recurso administrativo elimina em qualquer caso a possibilidade de controle judicial."
+  },
+  {
+    "id": "Q-DA-24-001-01",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-001",
+    "topic": "Lei 8.429/1992 e alterações",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.",
+      "Correta: A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021."
+    ],
+    "explanation": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.",
+    "concept": "Lei 8.429/1992 e alterações",
+    "trap": "Não aceite a generalização: A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Ao estudar caso de 2025, o candidato consulta a redação atualizada da lei, não apenas apostila antiga.",
+    "challenge": "Explique o erro desta proposição: Qualquer violação formal de regra administrativa é automaticamente improbidade."
+  },
+  {
+    "id": "Q-DA-24-001-02",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-001",
+    "topic": "Lei 8.429/1992 e alterações",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre lei 8.429/1992 e alterações, assinale a alternativa CORRETA.",
+    "options": [
+      "A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+      "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.",
+      "Qualquer violação formal de regra administrativa é automaticamente improbidade.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores. A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.",
+      "Correta: A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.",
+      "Incorreta: Qualquer violação formal de regra administrativa é automaticamente improbidade. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável."
+    ],
+    "explanation": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.",
+    "concept": "Lei 8.429/1992 e alterações",
+    "trap": "Não aceite a generalização: A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Ao estudar caso de 2025, o candidato consulta a redação atualizada da lei, não apenas apostila antiga.",
+    "challenge": "Explique o erro desta proposição: Qualquer violação formal de regra administrativa é automaticamente improbidade."
+  },
+  {
+    "id": "Q-DA-24-001-03",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-001",
+    "topic": "Lei 8.429/1992 e alterações",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.\nII. A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.\nIII. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.\nEstá correto o que se afirma em:",
+    "options": [
+      "I e III apenas",
+      "II apenas",
+      "I, II e III",
+      "III apenas",
+      "I apenas"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras; II é falsa. A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.",
+      "Incorreta: II é falsa. A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+      "Incorreta: II é falsa. A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+      "Incompleta: I também é verdadeira. A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.",
+      "Incompleta: III também é verdadeira. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável."
+    ],
+    "explanation": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.",
+    "concept": "Lei 8.429/1992 e alterações",
+    "trap": "Não aceite a generalização: A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Ao estudar caso de 2025, o candidato consulta a redação atualizada da lei, não apenas apostila antiga.",
+    "challenge": "Explique o erro desta proposição: Qualquer violação formal de regra administrativa é automaticamente improbidade."
+  },
+  {
+    "id": "Q-DA-24-001-04",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-001",
+    "topic": "Lei 8.429/1992 e alterações",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada proposição a V (válida) ou F (falsa):\nI. A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.\nII. A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.\nIII. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.\nIV. Qualquer violação formal de regra administrativa é automaticamente improbidade.\nQual é a sequência?",
+    "options": [
+      "V-V-F-F",
+      "V-F-V-F",
+      "F-V-F-V",
+      "V-F-F-V",
+      "F-F-V-V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: II e IV não são válidas. A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores. Qualquer violação formal de regra administrativa é automaticamente improbidade.",
+      "Correta: I e III válidas; II e IV falsas. A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.",
+      "Incorreta: II e IV não são válidas. A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores. Qualquer violação formal de regra administrativa é automaticamente improbidade.",
+      "Incorreta: II e IV não são válidas. A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores. Qualquer violação formal de regra administrativa é automaticamente improbidade.",
+      "Incorreta: II e IV não são válidas. A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores. Qualquer violação formal de regra administrativa é automaticamente improbidade."
+    ],
+    "explanation": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.",
+    "concept": "Lei 8.429/1992 e alterações",
+    "trap": "Não aceite a generalização: A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Ao estudar caso de 2025, o candidato consulta a redação atualizada da lei, não apenas apostila antiga.",
+    "challenge": "Explique o erro desta proposição: Qualquer violação formal de regra administrativa é automaticamente improbidade."
+  },
+  {
+    "id": "Q-DA-24-002-01",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-002",
+    "topic": "Atos de improbidade e requisitos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos.",
+      "Correta: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos."
+    ],
+    "explanation": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+    "concept": "Atos de improbidade e requisitos",
+    "trap": "Não aceite a generalização: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Contratação irregular exige apurar conduta, enquadramento legal e elemento subjetivo, sem presunção automática de improbidade.",
+    "challenge": "Explique o erro desta proposição: As três categorias de improbidade têm necessariamente elementos e consequências idênticos."
+  },
+  {
+    "id": "Q-DA-24-002-02",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-002",
+    "topic": "Atos de improbidade e requisitos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre atos de improbidade e requisitos, assinale a alternativa CORRETA.",
+    "options": [
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos.",
+      "Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+      "As três categorias de improbidade têm necessariamente elementos e consequências idênticos."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+      "Correta: A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos.",
+      "Incorreta: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos.",
+      "Incorreta: As três categorias de improbidade têm necessariamente elementos e consequências idênticos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal."
+    ],
+    "explanation": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+    "concept": "Atos de improbidade e requisitos",
+    "trap": "Não aceite a generalização: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Contratação irregular exige apurar conduta, enquadramento legal e elemento subjetivo, sem presunção automática de improbidade.",
+    "challenge": "Explique o erro desta proposição: As três categorias de improbidade têm necessariamente elementos e consequências idênticos."
+  },
+  {
+    "id": "Q-DA-24-002-03",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-002",
+    "topic": "Atos de improbidade e requisitos",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as proposições:\n1. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos.\n2. Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.\n3. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.\n4. As três categorias de improbidade têm necessariamente elementos e consequências idênticos.\nQual é a sequência V/F?",
+    "options": [
+      "V-V-F-F",
+      "V-F-F-V",
+      "F-F-V-V",
+      "F-V-F-V",
+      "V-F-V-F"
+    ],
+    "answer": 4,
+    "optionComments": [
+      "Incorreta: a sequência é V-F-V-F. Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. As três categorias de improbidade têm necessariamente elementos e consequências idênticos.",
+      "Incorreta: a sequência é V-F-V-F. Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. As três categorias de improbidade têm necessariamente elementos e consequências idênticos.",
+      "Incorreta: a sequência é V-F-V-F. Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. As três categorias de improbidade têm necessariamente elementos e consequências idênticos.",
+      "Incorreta: a sequência é V-F-V-F. Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. As três categorias de improbidade têm necessariamente elementos e consequências idênticos.",
+      "Correta: 1 e 3 são verdadeiras; 2 e 4 são falsas. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal."
+    ],
+    "explanation": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+    "concept": "Atos de improbidade e requisitos",
+    "trap": "Não aceite a generalização: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Contratação irregular exige apurar conduta, enquadramento legal e elemento subjetivo, sem presunção automática de improbidade.",
+    "challenge": "Explique o erro desta proposição: As três categorias de improbidade têm necessariamente elementos e consequências idênticos."
+  },
+  {
+    "id": "Q-DA-24-002-04",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-002",
+    "topic": "Atos de improbidade e requisitos",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um servidor precisa avaliar a seguinte situação: Contratação irregular exige apurar conduta, enquadramento legal e elemento subjetivo, sem presunção automática de improbidade. Qual conclusão é juridicamente adequada?",
+    "options": [
+      "A existência de interesse público dispensa qualquer fundamentação jurídica.",
+      "Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+      "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos.",
+      "As três categorias de improbidade têm necessariamente elementos e consequências idênticos."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: a atuação pública depende de fundamentação e requisitos legais. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+      "Incorreta: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+      "Correta: A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+      "Incorreta: As três categorias de improbidade têm necessariamente elementos e consequências idênticos."
+    ],
+    "explanation": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+    "concept": "Atos de improbidade e requisitos",
+    "trap": "Não aceite a generalização: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Contratação irregular exige apurar conduta, enquadramento legal e elemento subjetivo, sem presunção automática de improbidade.",
+    "challenge": "Explique o erro desta proposição: As três categorias de improbidade têm necessariamente elementos e consequências idênticos."
+  },
+  {
+    "id": "Q-DA-24-003-01",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-003",
+    "topic": "Dolo e responsabilização",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
+      "Incorreta: Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais."
+    ],
+    "explanation": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+    "concept": "Dolo e responsabilização",
+    "trap": "Não aceite a generalização: A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Erro administrativo por negligência pode gerar outras consequências, mas não é por si só improbidade dolosa.",
+    "challenge": "Explique o erro desta proposição: Basta que o agente tenha assinado um documento para se presumir dolo de improbidade."
+  },
+  {
+    "id": "Q-DA-24-003-02",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-003",
+    "topic": "Dolo e responsabilização",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre dolo e responsabilização, assinale a alternativa CORRETA.",
+    "options": [
+      "A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+      "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
+      "Basta que o agente tenha assinado um documento para se presumir dolo de improbidade.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade. Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
+      "Correta: Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
+      "Incorreta: Basta que o agente tenha assinado um documento para se presumir dolo de improbidade. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica."
+    ],
+    "explanation": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+    "concept": "Dolo e responsabilização",
+    "trap": "Não aceite a generalização: A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Erro administrativo por negligência pode gerar outras consequências, mas não é por si só improbidade dolosa.",
+    "challenge": "Explique o erro desta proposição: Basta que o agente tenha assinado um documento para se presumir dolo de improbidade."
+  },
+  {
+    "id": "Q-DA-24-003-03",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-003",
+    "topic": "Dolo e responsabilização",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.\nII. A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.\nIII. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.\nEstá correto o que se afirma em:",
+    "options": [
+      "I, II e III",
+      "II apenas",
+      "I e III apenas",
+      "I apenas",
+      "III apenas"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: II é falsa. A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+      "Incorreta: II é falsa. A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+      "Correta: I e III são verdadeiras; II é falsa. Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+      "Incompleta: III também é verdadeira. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+      "Incompleta: I também é verdadeira. Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais."
+    ],
+    "explanation": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+    "concept": "Dolo e responsabilização",
+    "trap": "Não aceite a generalização: A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Erro administrativo por negligência pode gerar outras consequências, mas não é por si só improbidade dolosa.",
+    "challenge": "Explique o erro desta proposição: Basta que o agente tenha assinado um documento para se presumir dolo de improbidade."
+  },
+  {
+    "id": "Q-DA-24-003-04",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-003",
+    "topic": "Dolo e responsabilização",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre dolo e responsabilização, todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "A aplicação do instituto depende de pressupostos e limites jurídicos.",
+      "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
+      "O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+      "Basta que o agente tenha assinado um documento para se presumir dolo de improbidade."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Verdadeira: os limites do ordenamento são relevantes.",
+      "Verdadeira: Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
+      "Verdadeira: O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+      "Falsa, portanto é a exceção: Basta que o agente tenha assinado um documento para se presumir dolo de improbidade. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica."
+    ],
+    "explanation": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+    "concept": "Dolo e responsabilização",
+    "trap": "Não aceite a generalização: A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Erro administrativo por negligência pode gerar outras consequências, mas não é por si só improbidade dolosa.",
+    "challenge": "Explique o erro desta proposição: Basta que o agente tenha assinado um documento para se presumir dolo de improbidade."
+  },
+  {
+    "id": "Q-DA-24-004-01",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-004",
+    "topic": "Sanções e procedimentos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei.",
+      "Correta: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei."
+    ],
+    "explanation": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+    "concept": "Sanções e procedimentos",
+    "trap": "Não aceite a generalização: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Decisão judicial considera a categoria do ato e os parâmetros legais de sanção.",
+    "challenge": "Explique o erro desta proposição: Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos."
+  },
+  {
+    "id": "Q-DA-24-004-02",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-004",
+    "topic": "Sanções e procedimentos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre sanções e procedimentos, assinale a alternativa CORRETA.",
+    "options": [
+      "Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.",
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei.",
+      "A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+      "Correta: Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei.",
+      "Incorreta: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei."
+    ],
+    "explanation": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+    "concept": "Sanções e procedimentos",
+    "trap": "Não aceite a generalização: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Decisão judicial considera a categoria do ato e os parâmetros legais de sanção.",
+    "challenge": "Explique o erro desta proposição: Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos."
+  },
+  {
+    "id": "Q-DA-24-004-03",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-004",
+    "topic": "Sanções e procedimentos",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as proposições:\n1. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei.\n2. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.\n3. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.\n4. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.\nQual é a sequência V/F?",
+    "options": [
+      "V-V-F-F",
+      "V-F-V-F",
+      "V-F-F-V",
+      "F-F-V-V",
+      "F-V-F-V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a sequência é V-F-V-F. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.",
+      "Correta: 1 e 3 são verdadeiras; 2 e 4 são falsas. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+      "Incorreta: a sequência é V-F-V-F. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.",
+      "Incorreta: a sequência é V-F-V-F. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.",
+      "Incorreta: a sequência é V-F-V-F. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos."
+    ],
+    "explanation": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+    "concept": "Sanções e procedimentos",
+    "trap": "Não aceite a generalização: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Decisão judicial considera a categoria do ato e os parâmetros legais de sanção.",
+    "challenge": "Explique o erro desta proposição: Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos."
+  },
+  {
+    "id": "Q-DA-24-004-04",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-004",
+    "topic": "Sanções e procedimentos",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada proposição a V (válida) ou F (falsa):\nI. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei.\nII. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.\nIII. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.\nIV. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.\nQual é a sequência?",
+    "options": [
+      "F-F-V-V",
+      "V-F-F-V",
+      "V-F-V-F",
+      "V-V-F-F",
+      "F-V-F-V"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: II e IV não são válidas. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.",
+      "Incorreta: II e IV não são válidas. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.",
+      "Correta: I e III válidas; II e IV falsas. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+      "Incorreta: II e IV não são válidas. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos.",
+      "Incorreta: II e IV não são válidas. A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos."
+    ],
+    "explanation": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+    "concept": "Sanções e procedimentos",
+    "trap": "Não aceite a generalização: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Decisão judicial considera a categoria do ato e os parâmetros legais de sanção.",
+    "challenge": "Explique o erro desta proposição: Toda irregularidade administrativa impõe necessariamente perda de função pública e suspensão de direitos políticos."
+  },
+  {
+    "id": "Q-DA-24-005-01",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-005",
+    "topic": "Distinções entre improbidade e outras irregularidades",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.",
+      "Correta: Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão."
+    ],
+    "explanation": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+    "concept": "Distinções entre improbidade e outras irregularidades",
+    "trap": "Não aceite a generalização: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Servidor descumpre procedimento sem dolo: pode haver apuração disciplinar, sem enquadramento automático na lei de improbidade.",
+    "challenge": "Explique o erro desta proposição: Se a conduta não configurar improbidade, estará automaticamente livre de toda responsabilidade administrativa ou civil."
+  },
+  {
+    "id": "Q-DA-24-005-02",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-005",
+    "topic": "Distinções entre improbidade e outras irregularidades",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre distinções entre improbidade e outras irregularidades, assinale a alternativa CORRETA.",
+    "options": [
+      "A interpretação jurídica dispensa examinar pressupostos e limites legais.",
+      "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.",
+      "Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
+      "Se a conduta não configurar improbidade, estará automaticamente livre de toda responsabilidade administrativa ou civil."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: o contexto jurídico e os requisitos são essenciais. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+      "Correta: Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.",
+      "Incorreta: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade. Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.",
+      "Incorreta: Se a conduta não configurar improbidade, estará automaticamente livre de toda responsabilidade administrativa ou civil. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma."
+    ],
+    "explanation": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+    "concept": "Distinções entre improbidade e outras irregularidades",
+    "trap": "Não aceite a generalização: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Servidor descumpre procedimento sem dolo: pode haver apuração disciplinar, sem enquadramento automático na lei de improbidade.",
+    "challenge": "Explique o erro desta proposição: Se a conduta não configurar improbidade, estará automaticamente livre de toda responsabilidade administrativa ou civil."
+  },
+  {
+    "id": "Q-DA-24-005-03",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-005",
+    "topic": "Distinções entre improbidade e outras irregularidades",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.\nII. Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.\nIII. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.\nEstá correto o que se afirma em:",
+    "options": [
+      "III apenas",
+      "I apenas",
+      "I e III apenas",
+      "I, II e III",
+      "II apenas"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incompleta: I também é verdadeira. Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.",
+      "Incompleta: III também é verdadeira. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+      "Correta: I e III são verdadeiras; II é falsa. Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+      "Incorreta: II é falsa. Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
+      "Incorreta: II é falsa. Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade."
+    ],
+    "explanation": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+    "concept": "Distinções entre improbidade e outras irregularidades",
+    "trap": "Não aceite a generalização: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Servidor descumpre procedimento sem dolo: pode haver apuração disciplinar, sem enquadramento automático na lei de improbidade.",
+    "challenge": "Explique o erro desta proposição: Se a conduta não configurar improbidade, estará automaticamente livre de toda responsabilidade administrativa ou civil."
+  },
+  {
+    "id": "Q-DA-24-005-04",
+    "moduleId": "DA-24",
+    "subtopicId": "DA-24-005",
+    "topic": "Distinções entre improbidade e outras irregularidades",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um servidor precisa avaliar a seguinte situação: Servidor descumpre procedimento sem dolo: pode haver apuração disciplinar, sem enquadramento automático na lei de improbidade. Qual conclusão é juridicamente adequada?",
+    "options": [
+      "A existência de interesse público dispensa qualquer fundamentação jurídica.",
+      "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.",
+      "Se a conduta não configurar improbidade, estará automaticamente livre de toda responsabilidade administrativa ou civil.",
+      "Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a atuação pública depende de fundamentação e requisitos legais. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+      "Correta: Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+      "Incorreta: Se a conduta não configurar improbidade, estará automaticamente livre de toda responsabilidade administrativa ou civil.",
+      "Incorreta: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade."
+    ],
+    "explanation": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+    "concept": "Distinções entre improbidade e outras irregularidades",
+    "trap": "Não aceite a generalização: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
+    "examTip": "Identifique pressupostos, limites e exceções previstos no regime jurídico.",
+    "newExample": "Servidor descumpre procedimento sem dolo: pode haver apuração disciplinar, sem enquadramento automático na lei de improbidade.",
+    "challenge": "Explique o erro desta proposição: Se a conduta não configurar improbidade, estará automaticamente livre de toda responsabilidade administrativa ou civil."
   }
 ];
 export const questionsForModule = id => QUESTIONS.filter(q=>q.moduleId===id);

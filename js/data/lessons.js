@@ -1275,6 +1275,171 @@ export const LESSONS = {
   "summary": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei.",
   "reviewQuestion": "Por que é incorreta a afirmação: A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública.",
   "reviewAnswer": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei. Um contratado atrasa entrega; o órgão apura o fato e avalia providências e eventual sanção segundo a lei."
+},
+"DA-22-001": {
+  "id": "DA-22-001",
+  "objective": "Compreender fundamentos da responsabilidade estatal e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
+  "explanation": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. O regime de responsabilidade depende da natureza da atuação e do nexo causal.",
+  "example": "Veículo oficial causa dano durante serviço: apuram-se dano e nexo com a atuação estatal.",
+  "examTip": "Atenção à afirmação incorreta: Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.",
+  "summary": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+  "reviewQuestion": "Por que é incorreto afirmar: Toda ocorrência de dano perto de um órgão público gera automaticamente dever de indenizar.",
+  "reviewAnswer": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado."
+},
+"DA-22-002": {
+  "id": "DA-22-002",
+  "objective": "Compreender responsabilidade objetiva e teoria do risco administrativo e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade.",
+  "explanation": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. O regime de responsabilidade depende da natureza da atuação e do nexo causal.",
+  "example": "Agente em serviço danifica veículo de terceiro; a vítima não precisa provar culpa do agente, mas deve demonstrar os demais requisitos.",
+  "examTip": "Atenção à afirmação incorreta: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.",
+  "summary": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+  "reviewQuestion": "Por que é incorreto afirmar: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal.",
+  "reviewAnswer": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal."
+},
+"DA-22-003": {
+  "id": "DA-22-003",
+  "objective": "Compreender responsabilidade por omissão e hipóteses de responsabilidade subjetiva e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
+  "explanation": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. O regime de responsabilidade depende da natureza da atuação e do nexo causal.",
+  "example": "Pessoa sob custódia estatal sofre dano: o dever específico de proteção é decisivo para a análise.",
+  "examTip": "Atenção à afirmação incorreta: Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+  "summary": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+  "reviewQuestion": "Por que é incorreto afirmar: Toda omissão estatal segue obrigatoriamente a mesma regra, independentemente de dever específico de agir.",
+  "reviewAnswer": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias."
+},
+"DA-22-004": {
+  "id": "DA-22-004",
+  "objective": "Compreender excludentes e atenuantes e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal.",
+  "explanation": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. O regime de responsabilidade depende da natureza da atuação e do nexo causal.",
+  "example": "Condutor particular contribui para colisão com veículo oficial; a participação de cada causa deve ser analisada.",
+  "examTip": "Atenção à afirmação incorreta: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.",
+  "summary": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso.",
+  "reviewQuestion": "Por que é incorreto afirmar: A culpa concorrente da vítima sempre exclui integralmente a responsabilidade do Estado.",
+  "reviewAnswer": "Culpa exclusiva da vítima pode romper o nexo causal e afastar a responsabilidade estatal. Culpa concorrente pode influenciar a repartição da indenização conforme o caso."
+},
+"DA-22-005": {
+  "id": "DA-22-005",
+  "objective": "Compreender ação regressiva e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.",
+  "explanation": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. O regime de responsabilidade depende da natureza da atuação e do nexo causal.",
+  "example": "Após indenizar terceiro, a entidade avalia regresso contra servidor cuja culpa foi demonstrada.",
+  "examTip": "Atenção à afirmação incorreta: A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+  "summary": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+  "reviewQuestion": "Por que é incorreto afirmar: A ação regressiva contra agente público dispensa comprovar dolo ou culpa.",
+  "reviewAnswer": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso."
+},
+"DA-23-001": {
+  "id": "DA-23-001",
+  "objective": "Compreender controle interno e externo e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes.",
+  "explanation": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. Os limites constitucionais e legais são indispensáveis para avaliar a atuação administrativa.",
+  "example": "Controladoria acompanha execução orçamentária; Legislativo exerce controle externo com auxílio do Tribunal de Contas.",
+  "examTip": "Atenção à afirmação incorreta: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário.",
+  "summary": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais.",
+  "reviewQuestion": "Por que é incorreto afirmar: Controle interno é sinônimo de fiscalização exercida exclusivamente pelo Poder Judiciário.",
+  "reviewAnswer": "Controle interno é exercido no âmbito da própria estrutura de cada Poder, enquanto o externo envolve órgãos constitucionalmente competentes. Os Poderes mantêm sistemas de controle interno e há controle externo segundo competências constitucionais."
+},
+"DA-23-002": {
+  "id": "DA-23-002",
+  "objective": "Compreender controle administrativo e autotutela e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
+  "explanation": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. Os limites constitucionais e legais são indispensáveis para avaliar a atuação administrativa.",
+  "example": "Órgão identifica ato ilegal e inicia revisão com respeito ao contraditório quando exigido.",
+  "examTip": "Atenção à afirmação incorreta: A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.",
+  "summary": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+  "reviewQuestion": "Por que é incorreto afirmar: A Administração somente pode invalidar seus próprios atos após sentença judicial definitiva.",
+  "reviewAnswer": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos."
+},
+"DA-23-003": {
+  "id": "DA-23-003",
+  "objective": "Compreender controle legislativo e tribunais de contas e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União.",
+  "explanation": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. Os limites constitucionais e legais são indispensáveis para avaliar a atuação administrativa.",
+  "example": "Comissão legislativa examina contas públicas com suporte técnico do Tribunal de Contas.",
+  "examTip": "Atenção à afirmação incorreta: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.",
+  "summary": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial.",
+  "reviewQuestion": "Por que é incorreto afirmar: O Tribunal de Contas da União integra o Poder Judiciário e julga crimes comuns.",
+  "reviewAnswer": "O controle externo federal é exercido pelo Congresso Nacional com auxílio do Tribunal de Contas da União. Tribunais de Contas exercem competências de fiscalização contábil, financeira, orçamentária, operacional e patrimonial."
+},
+"DA-23-004": {
+  "id": "DA-23-004",
+  "objective": "Compreender controle judicial e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa.",
+  "explanation": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. Os limites constitucionais e legais são indispensáveis para avaliar a atuação administrativa.",
+  "example": "Decisão administrativa discriminatória pode ser controlada judicialmente por violar a impessoalidade.",
+  "examTip": "Atenção à afirmação incorreta: O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal.",
+  "summary": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade.",
+  "reviewQuestion": "Por que é incorreto afirmar: O juiz pode substituir livremente toda escolha administrativa legítima por sua preferência pessoal.",
+  "reviewAnswer": "O controle judicial pode examinar legalidade e compatibilidade constitucional da atuação administrativa. O controle judicial de discricionariedade considera limites jurídicos, inclusive motivação e proporcionalidade."
+},
+"DA-23-005": {
+  "id": "DA-23-005",
+  "objective": "Compreender recursos e instrumentos de controle e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.",
+  "explanation": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. Os limites constitucionais e legais são indispensáveis para avaliar a atuação administrativa.",
+  "example": "Cidadão apresenta recurso contra decisão administrativa e acompanha sua tramitação.",
+  "examTip": "Atenção à afirmação incorreta: Todo recurso administrativo possui necessariamente efeito suspensivo automático.",
+  "summary": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+  "reviewQuestion": "Por que é incorreto afirmar: Todo recurso administrativo possui necessariamente efeito suspensivo automático.",
+  "reviewAnswer": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social."
+},
+"DA-24-001": {
+  "id": "DA-24-001",
+  "objective": "Compreender lei 8.429/1992 e alterações e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021.",
+  "explanation": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. A tipificação, o elemento subjetivo e o devido processo devem ser considerados em conjunto.",
+  "example": "Ao estudar caso de 2025, o candidato consulta a redação atualizada da lei, não apenas apostila antiga.",
+  "examTip": "Atenção à afirmação incorreta: A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+  "summary": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável.",
+  "reviewQuestion": "Por que é incorreto afirmar: A redação original da Lei 8.429/1992 pode ser aplicada sem considerar as alterações legislativas posteriores.",
+  "reviewAnswer": "A Lei 8.429/1992 disciplina atos de improbidade, com mudanças relevantes introduzidas pela Lei 14.230/2021. A análise de improbidade deve considerar a tipificação legal vigente e o regime temporal aplicável."
+},
+"DA-24-002": {
+  "id": "DA-24-002",
+  "objective": "Compreender atos de improbidade e requisitos e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos.",
+  "explanation": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. A tipificação, o elemento subjetivo e o devido processo devem ser considerados em conjunto.",
+  "example": "Contratação irregular exige apurar conduta, enquadramento legal e elemento subjetivo, sem presunção automática de improbidade.",
+  "examTip": "Atenção à afirmação incorreta: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+  "summary": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+  "reviewQuestion": "Por que é incorreto afirmar: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade.",
+  "reviewAnswer": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal."
+},
+"DA-24-003": {
+  "id": "DA-24-003",
+  "objective": "Compreender dolo e responsabilização e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
+  "explanation": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. A tipificação, o elemento subjetivo e o devido processo devem ser considerados em conjunto.",
+  "example": "Erro administrativo por negligência pode gerar outras consequências, mas não é por si só improbidade dolosa.",
+  "examTip": "Atenção à afirmação incorreta: A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+  "summary": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+  "reviewQuestion": "Por que é incorreto afirmar: A mera culpa simples basta, como regra atual, para configurar qualquer ato de improbidade.",
+  "reviewAnswer": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica."
+},
+"DA-24-004": {
+  "id": "DA-24-004",
+  "objective": "Compreender sanções e procedimentos e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei.",
+  "explanation": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. A tipificação, o elemento subjetivo e o devido processo devem ser considerados em conjunto.",
+  "example": "Decisão judicial considera a categoria do ato e os parâmetros legais de sanção.",
+  "examTip": "Atenção à afirmação incorreta: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.",
+  "summary": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+  "reviewQuestion": "Por que é incorreto afirmar: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público.",
+  "reviewAnswer": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração."
+},
+"DA-24-005": {
+  "id": "DA-24-005",
+  "objective": "Compreender distinções entre improbidade e outras irregularidades e distinguir a regra de generalizações incorretas em provas de concursos.",
+  "concept": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão.",
+  "explanation": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma. A análise deve identificar a norma ou categoria jurídica aplicável, seus pressupostos e as consequências. Não se deve transformar uma regra contextual em afirmação absoluta. A tipificação, o elemento subjetivo e o devido processo devem ser considerados em conjunto.",
+  "example": "Servidor descumpre procedimento sem dolo: pode haver apuração disciplinar, sem enquadramento automático na lei de improbidade.",
+  "examTip": "Atenção à afirmação incorreta: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
+  "summary": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
+  "reviewQuestion": "Por que é incorreto afirmar: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
+  "reviewAnswer": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma."
 }
 };
 export const getLesson = id => LESSONS[id] || null;
