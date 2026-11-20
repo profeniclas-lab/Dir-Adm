@@ -31,7 +31,7 @@ export function calculatePartialAchievement(scores = {}) {
 
   return {
     percentage: availableWeight
-      ? Math.round((earned / availableWeight) * 100)
+      ? Math.round(earned)
       : null,
     earnedWeightedPoints: Math.round(earned * 100) / 100,
     availableWeight,
@@ -42,5 +42,6 @@ export function calculatePartialAchievement(scores = {}) {
 
 export function isModuleCompleted(achievement, threshold = 75) {
   return Number.isFinite(achievement?.percentage) &&
+    achievement.availableWeight === 100 &&
     achievement.percentage >= threshold;
 }
