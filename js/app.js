@@ -7,6 +7,7 @@ import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiag
 import { renderLesson, saveLessonProgress } from "./features/lessons.js";
 import { renderExercises, createExerciseSession, answerExercise, assessExercise, nextExercise } from "./features/exercises.js";
 import { validateCatalog } from "./data/modules.js";
+import { renderStatistics } from "./features/estatisticas.js";
 import { renderFlashcards, changeFlashFilter, startFlashStudy, flipFlashStudy, rateFlashStudy, restartFlashStudy } from "./features/flashcards.js";
 import { renderQuestionBank, updateBankFilter, startBankSession, answerBankQuestion, nextBankQuestion, closeBankSession } from "./features/banco-questoes.js";
 import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSimulado, closeSimulado, cancelSimulado } from "./features/simulados.js";
@@ -33,6 +34,7 @@ function renderCurrentPage() {
   }
   switch (state.navigation.currentRoute) {
     case "dashboard": renderDashboard(mainElement, state); break;
+    case "estatisticas": renderStatistics(mainElement,state); break;
     case "flashcards": renderFlashcards(mainElement,state); break;
     case "banco-questoes": renderQuestionBank(mainElement,state); break;
     case "simulados": renderSimulados(mainElement,state); break;
@@ -73,6 +75,10 @@ document.addEventListener('change', event => {
   if(control&&changeFlashFilter(state,control.dataset.flashFilter,control.value))commitAndRender();
 });
 document.addEventListener('click', event => {
+  if(state.navigation.currentRoute==='estatisticas'){
+    const btn=event.target.closest('[data-stats-module]');
+    if(btn){state.navigation.selectedModuleId=btn.dataset.statsModule;state.navigation.currentRoute='modulos';activeView='module';commitAndRender();return;}
+  }
   if(state.navigation.currentRoute==='flashcards'){
     if(event.target.closest('[data-flash-start]')){if(startFlashStudy(state))commitAndRender();return;}
     if(event.target.closest('[data-flash-flip]')){if(flipFlashStudy(state))commitAndRender();return;}
