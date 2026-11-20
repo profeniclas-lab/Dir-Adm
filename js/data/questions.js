@@ -2020,7 +2020,7 @@ export const QUESTIONS = [
     "id": "Q-ADM-04-001-01",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-001",
-    "topic": "ADM-04-001",
+    "topic": "Divisão do trabalho especializa tarefas e exige coordenação",
     "type": "ce",
     "difficulty": "media",
     "stem": "A especialização dispensa mecanismos de coordenação.",
@@ -2036,18 +2036,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho. Aplique a distinção: Por que separar atividades sem integrar informações pode aumentar filas?",
     "challenge": "Por que separar atividades sem integrar informações pode aumentar filas?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: A estrutura formal distribui tarefas e relações de autoridade. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade.",
-      "Correta: A afirmação é falsa porque A estrutura formal distribui tarefas e relações de autoridade. A estrutura formal distribui tarefas e relações de autoridade. A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: A estrutura formal distribui tarefas e relações de autoridade. A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum.",
+      "Alternativa indicada pelo gabarito. A estrutura formal distribui tarefas e relações de autoridade. A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum."
     ]
   },
   {
     "id": "Q-ADM-04-001-02",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-001",
-    "topic": "ADM-04-001",
+    "topic": "Divisão do trabalho especializa tarefas e exige coordenação",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre divisão do trabalho especializa tarefas e exige coordenação, assinale a alternativa CORRETA.",
     "options": [
       "A estrutura formal distribui tarefas e relações de autoridade.",
       "A especialização dispensa mecanismos de coordenação.",
@@ -2062,20 +2062,20 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho. Aplique a distinção: Por que separar atividades sem integrar informações pode aumentar filas?",
     "challenge": "Por que separar atividades sem integrar informações pode aumentar filas?",
     "optionComments": [
-      "Correta: A estrutura formal distribui tarefas e relações de autoridade. Divisão do trabalho especializa tarefas e exige coordenação. A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum.",
-      "Incorreta: A especialização dispensa mecanismos de coordenação. Contraria: A estrutura formal distribui tarefas e relações de autoridade. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade.",
-      "Incorreta: A estrutura formal corresponde apenas às relações de amizade. Contraria: A divisão do trabalho pode aumentar especialização e eficiência. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade.",
-      "Incorreta: Dividir tarefas elimina a necessidade de objetivos comuns. Contraria: A coordenação integra atividades de unidades distintas. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade."
+      "Alternativa indicada pelo gabarito. Divisão do trabalho especializa tarefas e exige coordenação. A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum.",
+      "Alternativa incorreta. Compare a afirmação «A especialização dispensa mecanismos de coordenação.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: Divisão do trabalho especializa tarefas e exige coordenação. A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum.",
+      "Alternativa incorreta. Compare a afirmação «A estrutura formal corresponde apenas às relações de amizade.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: Divisão do trabalho especializa tarefas e exige coordenação. A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum.",
+      "Alternativa incorreta. Compare a afirmação «Dividir tarefas elimina a necessidade de objetivos comuns.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: Divisão do trabalho especializa tarefas e exige coordenação. A estrutura organizacional define como tarefas, autoridade e comunicação são distribuídas. Especialização pode melhorar destreza e padronização, mas especialização excessiva fragmenta processos e dificulta a visão do usuário. Coordenação integra as unidades para alcançar um resultado comum."
     ]
   },
   {
     "id": "Q-ADM-04-001-03",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-001",
-    "topic": "ADM-04-001",
+    "topic": "Divisão do trabalho especializa tarefas e exige coordenação",
     "type": "exceto",
     "difficulty": "dificil",
-    "stem": "Assinale a alternativa INCORRETA sobre o tema.",
+    "stem": "Considerando o conceito de divisão do trabalho especializa tarefas e exige coordenação, assinale a alternativa INCORRETA.",
     "options": [
       "A estrutura formal distribui tarefas e relações de autoridade.",
       "A divisão do trabalho pode aumentar especialização e eficiência.",
@@ -2090,17 +2090,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho. Aplique a distinção: Por que separar atividades sem integrar informações pode aumentar filas?",
     "challenge": "Por que separar atividades sem integrar informações pode aumentar filas?",
     "optionComments": [
-      "Incorreta: A estrutura formal distribui tarefas e relações de autoridade. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade.",
-      "Incorreta: A divisão do trabalho pode aumentar especialização e eficiência. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade.",
-      "Correta: A estrutura formal corresponde apenas às relações de amizade. O correto é: A estrutura formal distribui tarefas e relações de autoridade. A estrutura formal corresponde apenas às relações de amizade. É incorreta. Divisão do trabalho especializa tarefas e exige coordenação.",
-      "Incorreta: A coordenação integra atividades de unidades distintas. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade."
+      "Alternativa incorreta. Compare a afirmação «A estrutura formal distribui tarefas e relações de autoridade.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: A estrutura formal corresponde apenas às relações de amizade. É incorreta. Divisão do trabalho especializa tarefas e exige coordenação.",
+      "Alternativa incorreta. Compare a afirmação «A divisão do trabalho pode aumentar especialização e eficiência.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: A estrutura formal corresponde apenas às relações de amizade. É incorreta. Divisão do trabalho especializa tarefas e exige coordenação.",
+      "Alternativa indicada pelo gabarito. A estrutura formal corresponde apenas às relações de amizade. É incorreta. Divisão do trabalho especializa tarefas e exige coordenação.",
+      "Alternativa incorreta. Compare a afirmação «A coordenação integra atividades de unidades distintas.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: A estrutura formal corresponde apenas às relações de amizade. É incorreta. Divisão do trabalho especializa tarefas e exige coordenação."
     ]
   },
   {
     "id": "Q-ADM-04-001-04",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-001",
-    "topic": "ADM-04-001",
+    "topic": "Divisão do trabalho especializa tarefas e exige coordenação",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -2118,17 +2118,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho. Aplique a distinção: Por que separar atividades sem integrar informações pode aumentar filas?",
     "challenge": "Por que separar atividades sem integrar informações pode aumentar filas?",
     "optionComments": [
-      "Correta: A coordenação integra atividades de unidades distintas. A coordenação integra atividades de unidades distintas. Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho.",
-      "Incorreta: Dividir tarefas elimina a necessidade de objetivos comuns. Não decorre do conceito. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade.",
-      "Incorreta: A especialização dispensa mecanismos de coordenação. Generaliza indevidamente. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade.",
-      "Incorreta: A estrutura formal corresponde apenas às relações de amizade. Confunde características. A compreensão adequada é: A estrutura formal distribui tarefas e relações de autoridade."
+      "Alternativa indicada pelo gabarito. A coordenação integra atividades de unidades distintas. Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho.",
+      "Alternativa incorreta. Compare a afirmação «Dividir tarefas elimina a necessidade de objetivos comuns.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: A coordenação integra atividades de unidades distintas. Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho.",
+      "Alternativa incorreta. Compare a afirmação «A especialização dispensa mecanismos de coordenação.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: A coordenação integra atividades de unidades distintas. Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho.",
+      "Alternativa incorreta. Compare a afirmação «A estrutura formal corresponde apenas às relações de amizade.» com o princípio: Divisão do trabalho especializa tarefas e exige coordenação. A explicação da resposta correta é: A coordenação integra atividades de unidades distintas. Uma unidade de atendimento separa triagem, análise e entrega; precisa de comunicação entre as etapas para evitar retrabalho."
     ]
   },
   {
     "id": "Q-ADM-04-002-01",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-002",
-    "topic": "ADM-04-002",
+    "topic": "Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas",
     "type": "ce",
     "difficulty": "media",
     "stem": "A hierarquia legitima qualquer ordem, mesmo ilegal.",
@@ -2144,18 +2144,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia distribui demandas e acompanha prazos; cada servidor responde pelas tarefas sob sua atribuição. Aplique a distinção: Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
     "challenge": "Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Hierarquia organiza relações formais entre níveis. A compreensão adequada é: Hierarquia organiza relações formais entre níveis.",
-      "Correta: A afirmação é falsa porque Hierarquia organiza relações formais entre níveis. Hierarquia organiza relações formais entre níveis. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: Hierarquia organiza relações formais entre níveis. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
+      "Alternativa indicada pelo gabarito. Hierarquia organiza relações formais entre níveis. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais."
     ]
   },
   {
     "id": "Q-ADM-04-002-02",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-002",
-    "topic": "ADM-04-002",
+    "topic": "Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas, assinale a alternativa CORRETA.",
     "options": [
       "Hierarquia organiza relações formais entre níveis.",
       "A hierarquia legitima qualquer ordem, mesmo ilegal.",
@@ -2170,17 +2170,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia distribui demandas e acompanha prazos; cada servidor responde pelas tarefas sob sua atribuição. Aplique a distinção: Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
     "challenge": "Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
     "optionComments": [
-      "Correta: Hierarquia organiza relações formais entre níveis. Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
-      "Incorreta: A hierarquia legitima qualquer ordem, mesmo ilegal. Contraria: Hierarquia organiza relações formais entre níveis. A compreensão adequada é: Hierarquia organiza relações formais entre níveis.",
-      "Incorreta: Responsabilidade desaparece quando existe supervisão. Contraria: Autoridade deve respeitar competências e normas. A compreensão adequada é: Hierarquia organiza relações formais entre níveis.",
-      "Incorreta: Autoridade formal decorre exclusivamente de carisma pessoal. Contraria: Responsabilidade envolve dever de executar e prestar contas. A compreensão adequada é: Hierarquia organiza relações formais entre níveis."
+      "Alternativa indicada pelo gabarito. Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
+      "Alternativa incorreta. Compare a afirmação «A hierarquia legitima qualquer ordem, mesmo ilegal.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
+      "Alternativa incorreta. Compare a afirmação «Responsabilidade desaparece quando existe supervisão.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
+      "Alternativa incorreta. Compare a afirmação «Autoridade formal decorre exclusivamente de carisma pessoal.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais."
     ]
   },
   {
     "id": "Q-ADM-04-002-03",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-002",
-    "topic": "ADM-04-002",
+    "topic": "Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas",
     "type": "afirmacoes",
     "difficulty": "dificil",
     "stem": "Analise as afirmações:\nI. Hierarquia organiza relações formais entre níveis.\nII. Autoridade deve respeitar competências e normas.\nIII. Autoridade formal decorre exclusivamente de carisma pessoal.\nQuais estão corretas?",
@@ -2199,18 +2199,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia distribui demandas e acompanha prazos; cada servidor responde pelas tarefas sob sua atribuição. Aplique a distinção: Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
     "challenge": "Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
     "optionComments": [
-      "Incorreta: Ignora a II, que também é verdadeira. A compreensão adequada é: Hierarquia organiza relações formais entre níveis.",
-      "Correta: I e II são corretas, III contraria o conceito. I e II são verdadeiras; III é falsa porque Responsabilidade envolve dever de executar e prestar contas.",
-      "Incorreta: Inclui III, que é falsa, e exclui I. A compreensão adequada é: Hierarquia organiza relações formais entre níveis.",
-      "Incorreta: Inclui III, que é falsa. A compreensão adequada é: Hierarquia organiza relações formais entre níveis.",
-      "Incorreta: Considera verdadeira apenas III, que é falsa. A compreensão adequada é: Hierarquia organiza relações formais entre níveis."
+      "Alternativa incorreta. Compare a afirmação «Apenas I.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Responsabilidade envolve dever de executar e prestar contas.",
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras; III é falsa porque Responsabilidade envolve dever de executar e prestar contas.",
+      "Alternativa incorreta. Compare a afirmação «Apenas II e III.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Responsabilidade envolve dever de executar e prestar contas.",
+      "Alternativa incorreta. Compare a afirmação «I, II e III.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Responsabilidade envolve dever de executar e prestar contas.",
+      "Alternativa incorreta. Compare a afirmação «Apenas III.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Responsabilidade envolve dever de executar e prestar contas."
     ]
   },
   {
     "id": "Q-ADM-04-002-04",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-002",
-    "topic": "ADM-04-002",
+    "topic": "Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Ao revisar procedimentos, qual conclusão deve ser adotada para evitar um erro conceitual?",
@@ -2228,17 +2228,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia distribui demandas e acompanha prazos; cada servidor responde pelas tarefas sob sua atribuição. Aplique a distinção: Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
     "challenge": "Uma ordem fora da competência institucional torna-se válida por vir da chefia?",
     "optionComments": [
-      "Correta: Autoridade deve respeitar competências e normas. Autoridade deve respeitar competências e normas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
-      "Incorreta: Responsabilidade desaparece quando existe supervisão. Confunde a finalidade. A compreensão adequada é: Hierarquia organiza relações formais entre níveis.",
-      "Incorreta: Autoridade formal decorre exclusivamente de carisma pessoal. Não respeita os limites. A compreensão adequada é: Hierarquia organiza relações formais entre níveis.",
-      "Incorreta: A hierarquia legitima qualquer ordem, mesmo ilegal. Elimina condição importante. A compreensão adequada é: Hierarquia organiza relações formais entre níveis."
+      "Alternativa indicada pelo gabarito. Autoridade deve respeitar competências e normas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
+      "Alternativa incorreta. Compare a afirmação «Responsabilidade desaparece quando existe supervisão.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: Autoridade deve respeitar competências e normas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
+      "Alternativa incorreta. Compare a afirmação «Autoridade formal decorre exclusivamente de carisma pessoal.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: Autoridade deve respeitar competências e normas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais.",
+      "Alternativa incorreta. Compare a afirmação «A hierarquia legitima qualquer ordem, mesmo ilegal.» com o princípio: Hierarquia estabelece níveis de autoridade; responsabilidade acompanha o dever de executar e prestar contas. A explicação da resposta correta é: Autoridade deve respeitar competências e normas. Autoridade formal é o direito institucional de orientar decisões dentro das competências atribuídas. Responsabilidade envolve assumir deveres e responder pela execução. A hierarquia organiza relações de subordinação, mas não autoriza ordens ilegais nem elimina responsabilidades individuais."
     ]
   },
   {
     "id": "Q-ADM-04-003-01",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-003",
-    "topic": "ADM-04-003",
+    "topic": "Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados",
     "type": "ce",
     "difficulty": "media",
     "stem": "Delegar elimina todo dever de supervisão da chefia.",
@@ -2254,18 +2254,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados. Aplique a distinção: Por que uma equipe experiente pode admitir maior amplitude de controle?",
     "challenge": "Por que uma equipe experiente pode admitir maior amplitude de controle?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Delegar pode aproximar decisões da execução. A compreensão adequada é: Delegar pode aproximar decisões da execução.",
-      "Correta: A afirmação é falsa porque Delegar pode aproximar decisões da execução. Delegar pode aproximar decisões da execução. Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: Delegar pode aproximar decisões da execução. Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais.",
+      "Alternativa indicada pelo gabarito. Delegar pode aproximar decisões da execução. Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais."
     ]
   },
   {
     "id": "Q-ADM-04-003-02",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-003",
-    "topic": "ADM-04-003",
+    "topic": "Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados, assinale a alternativa CORRETA.",
     "options": [
       "Delegar pode aproximar decisões da execução.",
       "Delegar elimina todo dever de supervisão da chefia.",
@@ -2280,17 +2280,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados. Aplique a distinção: Por que uma equipe experiente pode admitir maior amplitude de controle?",
     "challenge": "Por que uma equipe experiente pode admitir maior amplitude de controle?",
     "optionComments": [
-      "Correta: Delegar pode aproximar decisões da execução. Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais.",
-      "Incorreta: Delegar elimina todo dever de supervisão da chefia. Contraria: Delegar pode aproximar decisões da execução. A compreensão adequada é: Delegar pode aproximar decisões da execução.",
-      "Incorreta: A amplitude ideal é sempre a maior possível. Contraria: A amplitude de controle depende da complexidade das tarefas. A compreensão adequada é: Delegar pode aproximar decisões da execução.",
-      "Incorreta: Qualquer competência pública pode ser delegada sem restrições. Contraria: Delegação requer limites claros e acompanhamento. A compreensão adequada é: Delegar pode aproximar decisões da execução."
+      "Alternativa indicada pelo gabarito. Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais.",
+      "Alternativa incorreta. Compare a afirmação «Delegar elimina todo dever de supervisão da chefia.» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais.",
+      "Alternativa incorreta. Compare a afirmação «A amplitude ideal é sempre a maior possível.» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais.",
+      "Alternativa incorreta. Compare a afirmação «Qualquer competência pública pode ser delegada sem restrições.» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. Delegar permite distribuir decisões e tarefas, mas não significa transferir toda a responsabilidade da chefia ou abandonar o acompanhamento. A amplitude adequada depende da complexidade das tarefas, da autonomia da equipe e dos meios de coordenação. No setor público, a delegação de competência exige observar regras e vedações legais."
     ]
   },
   {
     "id": "Q-ADM-04-003-03",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-003",
-    "topic": "ADM-04-003",
+    "topic": "Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados",
     "type": "sequencia",
     "difficulty": "dificil",
     "stem": "Julgue as afirmações e selecione a sequência V/F:\nI. Delegar pode aproximar decisões da execução.\nII. A amplitude de controle depende da complexidade das tarefas.\nIII. Delegar elimina todo dever de supervisão da chefia.\nIV. A amplitude ideal é sempre a maior possível.",
@@ -2309,18 +2309,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados. Aplique a distinção: Por que uma equipe experiente pode admitir maior amplitude de controle?",
     "challenge": "Por que uma equipe experiente pode admitir maior amplitude de controle?",
     "optionComments": [
-      "Correta: Sequência correta: duas proposições válidas e duas falsas. I e II são verdadeiras, III e IV falsas. Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados.",
-      "Incorreta: A segunda afirmação é verdadeira e a terceira é falsa. A compreensão adequada é: Delegar pode aproximar decisões da execução.",
-      "Incorreta: A primeira é verdadeira e a quarta é falsa. A compreensão adequada é: Delegar pode aproximar decisões da execução.",
-      "Incorreta: A terceira afirmação é falsa. A compreensão adequada é: Delegar pode aproximar decisões da execução.",
-      "Incorreta: As duas primeiras afirmações são verdadeiras. A compreensão adequada é: Delegar pode aproximar decisões da execução."
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras, III e IV falsas. Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados.",
+      "Alternativa incorreta. Compare a afirmação «V – F – V – F» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados.",
+      "Alternativa incorreta. Compare a afirmação «F – V – V – F» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados.",
+      "Alternativa incorreta. Compare a afirmação «V – V – V – F» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados.",
+      "Alternativa incorreta. Compare a afirmação «F – F – V – V» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados."
     ]
   },
   {
     "id": "Q-ADM-04-003-04",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-003",
-    "topic": "ADM-04-003",
+    "topic": "Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -2338,17 +2338,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados. Aplique a distinção: Por que uma equipe experiente pode admitir maior amplitude de controle?",
     "challenge": "Por que uma equipe experiente pode admitir maior amplitude de controle?",
     "optionComments": [
-      "Correta: Delegação requer limites claros e acompanhamento. Delegação requer limites claros e acompanhamento. Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados.",
-      "Incorreta: Qualquer competência pública pode ser delegada sem restrições. Não decorre do conceito. A compreensão adequada é: Delegar pode aproximar decisões da execução.",
-      "Incorreta: Delegar elimina todo dever de supervisão da chefia. Generaliza indevidamente. A compreensão adequada é: Delegar pode aproximar decisões da execução.",
-      "Incorreta: A amplitude ideal é sempre a maior possível. Confunde características. A compreensão adequada é: Delegar pode aproximar decisões da execução."
+      "Alternativa indicada pelo gabarito. Delegação requer limites claros e acompanhamento. Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados.",
+      "Alternativa incorreta. Compare a afirmação «Qualquer competência pública pode ser delegada sem restrições.» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: Delegação requer limites claros e acompanhamento. Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados.",
+      "Alternativa incorreta. Compare a afirmação «Delegar elimina todo dever de supervisão da chefia.» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: Delegação requer limites claros e acompanhamento. Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados.",
+      "Alternativa incorreta. Compare a afirmação «A amplitude ideal é sempre a maior possível.» com o princípio: Delegação transfere o exercício de atribuições nos limites permitidos; amplitude de controle é o número de subordinados diretamente supervisionados. A explicação da resposta correta é: Delegação requer limites claros e acompanhamento. Uma coordenadora autoriza supervisores a decidir escalas dentro das regras e mantém acompanhamento dos resultados."
     ]
   },
   {
     "id": "Q-ADM-04-004-01",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-004",
-    "topic": "ADM-04-004",
+    "topic": "Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia",
     "type": "ce",
     "difficulty": "media",
     "stem": "Descentralizar sempre elimina necessidade de coordenação.",
@@ -2364,18 +2364,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma rede de escolas deixa compras estratégicas na sede e permite ajustar horários de atendimento nas unidades. Aplique a distinção: Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
     "challenge": "Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Centralização pode favorecer padronização de decisões. A compreensão adequada é: Centralização pode favorecer padronização de decisões.",
-      "Correta: A afirmação é falsa porque Centralização pode favorecer padronização de decisões. Centralização pode favorecer padronização de decisões. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Centralização pode favorecer padronização de decisões. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
+      "Alternativa indicada pelo gabarito. Centralização pode favorecer padronização de decisões. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica."
     ]
   },
   {
     "id": "Q-ADM-04-004-02",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-004",
-    "topic": "ADM-04-004",
+    "topic": "Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia, assinale a alternativa CORRETA.",
     "options": [
       "Centralização pode favorecer padronização de decisões.",
       "Descentralizar sempre elimina necessidade de coordenação.",
@@ -2390,20 +2390,20 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma rede de escolas deixa compras estratégicas na sede e permite ajustar horários de atendimento nas unidades. Aplique a distinção: Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
     "challenge": "Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
     "optionComments": [
-      "Correta: Centralização pode favorecer padronização de decisões. Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
-      "Incorreta: Descentralizar sempre elimina necessidade de coordenação. Contraria: Centralização pode favorecer padronização de decisões. A compreensão adequada é: Centralização pode favorecer padronização de decisões.",
-      "Incorreta: Centralizar necessariamente torna toda decisão mais rápida. Contraria: Descentralização gerencial pode ampliar resposta às necessidades locais. A compreensão adequada é: Centralização pode favorecer padronização de decisões.",
-      "Incorreta: Descentralização gerencial e descentralização jurídica são expressões idênticas. Contraria: A escolha depende de risco, contexto e objetivos. A compreensão adequada é: Centralização pode favorecer padronização de decisões."
+      "Alternativa indicada pelo gabarito. Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
+      "Alternativa incorreta. Compare a afirmação «Descentralizar sempre elimina necessidade de coordenação.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
+      "Alternativa incorreta. Compare a afirmação «Centralizar necessariamente torna toda decisão mais rápida.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
+      "Alternativa incorreta. Compare a afirmação «Descentralização gerencial e descentralização jurídica são expressões idênticas.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica."
     ]
   },
   {
     "id": "Q-ADM-04-004-03",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-004",
-    "topic": "ADM-04-004",
+    "topic": "Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia",
     "type": "exceto",
     "difficulty": "dificil",
-    "stem": "Assinale a alternativa INCORRETA sobre o tema.",
+    "stem": "Considerando o conceito de centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia, assinale a alternativa INCORRETA.",
     "options": [
       "Centralização pode favorecer padronização de decisões.",
       "Descentralização gerencial pode ampliar resposta às necessidades locais.",
@@ -2418,17 +2418,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma rede de escolas deixa compras estratégicas na sede e permite ajustar horários de atendimento nas unidades. Aplique a distinção: Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
     "challenge": "Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
     "optionComments": [
-      "Incorreta: Centralização pode favorecer padronização de decisões. A compreensão adequada é: Centralização pode favorecer padronização de decisões.",
-      "Incorreta: Descentralização gerencial pode ampliar resposta às necessidades locais. A compreensão adequada é: Centralização pode favorecer padronização de decisões.",
-      "Correta: Centralizar necessariamente torna toda decisão mais rápida. O correto é: Centralização pode favorecer padronização de decisões. Centralizar necessariamente torna toda decisão mais rápida. É incorreta. Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia.",
-      "Incorreta: A escolha depende de risco, contexto e objetivos. A compreensão adequada é: Centralização pode favorecer padronização de decisões."
+      "Alternativa incorreta. Compare a afirmação «Centralização pode favorecer padronização de decisões.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Centralizar necessariamente torna toda decisão mais rápida. É incorreta. Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia.",
+      "Alternativa incorreta. Compare a afirmação «Descentralização gerencial pode ampliar resposta às necessidades locais.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Centralizar necessariamente torna toda decisão mais rápida. É incorreta. Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia.",
+      "Alternativa indicada pelo gabarito. Centralizar necessariamente torna toda decisão mais rápida. É incorreta. Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia.",
+      "Alternativa incorreta. Compare a afirmação «A escolha depende de risco, contexto e objetivos.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Centralizar necessariamente torna toda decisão mais rápida. É incorreta. Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia."
     ]
   },
   {
     "id": "Q-ADM-04-004-04",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-004",
-    "topic": "ADM-04-004",
+    "topic": "Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Ao revisar procedimentos, qual conclusão deve ser adotada para evitar um erro conceitual?",
@@ -2446,17 +2446,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma rede de escolas deixa compras estratégicas na sede e permite ajustar horários de atendimento nas unidades. Aplique a distinção: Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
     "challenge": "Qual decisão deve ser uniforme e qual pode ser adaptada pela unidade?",
     "optionComments": [
-      "Correta: Descentralização gerencial pode ampliar resposta às necessidades locais. Descentralização gerencial pode ampliar resposta às necessidades locais. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
-      "Incorreta: Centralizar necessariamente torna toda decisão mais rápida. Confunde a finalidade. A compreensão adequada é: Centralização pode favorecer padronização de decisões.",
-      "Incorreta: Descentralização gerencial e descentralização jurídica são expressões idênticas. Não respeita os limites. A compreensão adequada é: Centralização pode favorecer padronização de decisões.",
-      "Incorreta: Descentralizar sempre elimina necessidade de coordenação. Elimina condição importante. A compreensão adequada é: Centralização pode favorecer padronização de decisões."
+      "Alternativa indicada pelo gabarito. Descentralização gerencial pode ampliar resposta às necessidades locais. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
+      "Alternativa incorreta. Compare a afirmação «Centralizar necessariamente torna toda decisão mais rápida.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Descentralização gerencial pode ampliar resposta às necessidades locais. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
+      "Alternativa incorreta. Compare a afirmação «Descentralização gerencial e descentralização jurídica são expressões idênticas.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Descentralização gerencial pode ampliar resposta às necessidades locais. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica.",
+      "Alternativa incorreta. Compare a afirmação «Descentralizar sempre elimina necessidade de coordenação.» com o princípio: Centralização concentra decisões em níveis superiores; descentralização distribui decisões ou execução para unidades com maior autonomia. A explicação da resposta correta é: Descentralização gerencial pode ampliar resposta às necessidades locais. No estudo de estruturas organizacionais, centralizar favorece uniformidade e controle direto, enquanto descentralizar pode aumentar agilidade e adaptação local. Ambas têm custos e benefícios. No Direito Administrativo, descentralização administrativa tem sentido jurídico próprio, distinto de desconcentração dentro da mesma pessoa jurídica."
     ]
   },
   {
     "id": "Q-ADM-04-005-01",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-005",
-    "topic": "ADM-04-005",
+    "topic": "Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo",
     "type": "ce",
     "difficulty": "media",
     "stem": "Departamentalização geográfica agrupa exclusivamente cargos iguais.",
@@ -2472,18 +2472,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia. Aplique a distinção: Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
     "challenge": "Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Departamentalização funcional agrupa especialidades semelhantes. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes.",
-      "Correta: A afirmação é falsa porque Departamentalização funcional agrupa especialidades semelhantes. Departamentalização funcional agrupa especialidades semelhantes. Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: Departamentalização funcional agrupa especialidades semelhantes. Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento.",
+      "Alternativa indicada pelo gabarito. Departamentalização funcional agrupa especialidades semelhantes. Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento."
     ]
   },
   {
     "id": "Q-ADM-04-005-02",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-005",
-    "topic": "ADM-04-005",
+    "topic": "Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo, assinale a alternativa CORRETA.",
     "options": [
       "Departamentalização funcional agrupa especialidades semelhantes.",
       "Departamentalização geográfica agrupa exclusivamente cargos iguais.",
@@ -2498,17 +2498,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia. Aplique a distinção: Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
     "challenge": "Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
     "optionComments": [
-      "Correta: Departamentalização funcional agrupa especialidades semelhantes. Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento.",
-      "Incorreta: Departamentalização geográfica agrupa exclusivamente cargos iguais. Contraria: Departamentalização funcional agrupa especialidades semelhantes. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes.",
-      "Incorreta: Departamentalização funcional sempre elimina conflitos entre setores. Contraria: Departamentalização geográfica considera territórios atendidos. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes.",
-      "Incorreta: Departamentalização por clientela é definida apenas pela localização física. Contraria: Departamentalização por clientela considera perfis de usuários. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes."
+      "Alternativa indicada pelo gabarito. Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento.",
+      "Alternativa incorreta. Compare a afirmação «Departamentalização geográfica agrupa exclusivamente cargos iguais.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento.",
+      "Alternativa incorreta. Compare a afirmação «Departamentalização funcional sempre elimina conflitos entre setores.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento.",
+      "Alternativa incorreta. Compare a afirmação «Departamentalização por clientela é definida apenas pela localização física.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. Agrupar por função reúne especialidades semelhantes, como pessoal e finanças. Por território aproxima a gestão de regiões; por clientela considera públicos atendidos; por processo acompanha etapas do trabalho. Nenhum critério é universalmente superior. Cada escolha cria vantagens de especialização e riscos de isolamento."
     ]
   },
   {
     "id": "Q-ADM-04-005-03",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-005",
-    "topic": "ADM-04-005",
+    "topic": "Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo",
     "type": "afirmacoes",
     "difficulty": "dificil",
     "stem": "Analise as afirmações:\nI. Departamentalização funcional agrupa especialidades semelhantes.\nII. Departamentalização geográfica considera territórios atendidos.\nIII. Departamentalização por clientela é definida apenas pela localização física.\nQuais estão corretas?",
@@ -2527,18 +2527,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia. Aplique a distinção: Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
     "challenge": "Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
     "optionComments": [
-      "Incorreta: Ignora a II, que também é verdadeira. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes.",
-      "Correta: I e II são corretas, III contraria o conceito. I e II são verdadeiras; III é falsa porque Departamentalização por clientela considera perfis de usuários.",
-      "Incorreta: Inclui III, que é falsa, e exclui I. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes.",
-      "Incorreta: Inclui III, que é falsa. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes.",
-      "Incorreta: Considera verdadeira apenas III, que é falsa. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes."
+      "Alternativa incorreta. Compare a afirmação «Apenas I.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Departamentalização por clientela considera perfis de usuários.",
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras; III é falsa porque Departamentalização por clientela considera perfis de usuários.",
+      "Alternativa incorreta. Compare a afirmação «Apenas II e III.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Departamentalização por clientela considera perfis de usuários.",
+      "Alternativa incorreta. Compare a afirmação «I, II e III.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Departamentalização por clientela considera perfis de usuários.",
+      "Alternativa incorreta. Compare a afirmação «Apenas III.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Departamentalização por clientela considera perfis de usuários."
     ]
   },
   {
     "id": "Q-ADM-04-005-04",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-005",
-    "topic": "ADM-04-005",
+    "topic": "Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -2556,17 +2556,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia. Aplique a distinção: Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
     "challenge": "Que critério predomina em uma equipe dedicada a idosos e outra a estudantes?",
     "optionComments": [
-      "Correta: Departamentalização por clientela considera perfis de usuários. Departamentalização por clientela considera perfis de usuários. Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia.",
-      "Incorreta: Departamentalização por clientela é definida apenas pela localização física. Não decorre do conceito. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes.",
-      "Incorreta: Departamentalização geográfica agrupa exclusivamente cargos iguais. Generaliza indevidamente. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes.",
-      "Incorreta: Departamentalização funcional sempre elimina conflitos entre setores. Confunde características. A compreensão adequada é: Departamentalização funcional agrupa especialidades semelhantes."
+      "Alternativa indicada pelo gabarito. Departamentalização por clientela considera perfis de usuários. Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia.",
+      "Alternativa incorreta. Compare a afirmação «Departamentalização por clientela é definida apenas pela localização física.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: Departamentalização por clientela considera perfis de usuários. Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia.",
+      "Alternativa incorreta. Compare a afirmação «Departamentalização geográfica agrupa exclusivamente cargos iguais.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: Departamentalização por clientela considera perfis de usuários. Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia.",
+      "Alternativa incorreta. Compare a afirmação «Departamentalização funcional sempre elimina conflitos entre setores.» com o princípio: Departamentalização agrupa atividades segundo critérios como função, produto, clientela, território ou processo. A explicação da resposta correta é: Departamentalização por clientela considera perfis de usuários. Um órgão cria unidades regionais para atender localidades distintas e mantém setor central de tecnologia."
     ]
   },
   {
     "id": "Q-ADM-04-006-01",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-006",
-    "topic": "ADM-04-006",
+    "topic": "Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas",
     "type": "ce",
     "difficulty": "media",
     "stem": "Organograma descreve integralmente vínculos informais.",
@@ -2582,18 +2582,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma equipe de projeto responde ao gerente do projeto e mantém vínculo técnico com a coordenação de informática. Aplique a distinção: Qual risco surge quando duas chefias dão prioridades incompatíveis?",
     "challenge": "Qual risco surge quando duas chefias dão prioridades incompatíveis?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Organogramas retratam principalmente relações formais. A compreensão adequada é: Organogramas retratam principalmente relações formais.",
-      "Correta: A afirmação é falsa porque Organogramas retratam principalmente relações formais. Organogramas retratam principalmente relações formais. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: Organogramas retratam principalmente relações formais. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
+      "Alternativa indicada pelo gabarito. Organogramas retratam principalmente relações formais. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações."
     ]
   },
   {
     "id": "Q-ADM-04-006-02",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-006",
-    "topic": "ADM-04-006",
+    "topic": "Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas, assinale a alternativa CORRETA.",
     "options": [
       "Organogramas retratam principalmente relações formais.",
       "Organograma descreve integralmente vínculos informais.",
@@ -2608,17 +2608,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma equipe de projeto responde ao gerente do projeto e mantém vínculo técnico com a coordenação de informática. Aplique a distinção: Qual risco surge quando duas chefias dão prioridades incompatíveis?",
     "challenge": "Qual risco surge quando duas chefias dão prioridades incompatíveis?",
     "optionComments": [
-      "Correta: Organogramas retratam principalmente relações formais. Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
-      "Incorreta: Organograma descreve integralmente vínculos informais. Contraria: Organogramas retratam principalmente relações formais. A compreensão adequada é: Organogramas retratam principalmente relações formais.",
-      "Incorreta: Estrutura matricial proíbe coordenação por projetos. Contraria: Estrutura matricial combina dois critérios de coordenação. A compreensão adequada é: Organogramas retratam principalmente relações formais.",
-      "Incorreta: Estrutura funcional organiza exclusivamente por região. Contraria: Estrutura funcional reúne pessoas por especialidade. A compreensão adequada é: Organogramas retratam principalmente relações formais."
+      "Alternativa indicada pelo gabarito. Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
+      "Alternativa incorreta. Compare a afirmação «Organograma descreve integralmente vínculos informais.» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
+      "Alternativa incorreta. Compare a afirmação «Estrutura matricial proíbe coordenação por projetos.» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
+      "Alternativa incorreta. Compare a afirmação «Estrutura funcional organiza exclusivamente por região.» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações."
     ]
   },
   {
     "id": "Q-ADM-04-006-03",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-006",
-    "topic": "ADM-04-006",
+    "topic": "Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas",
     "type": "sequencia",
     "difficulty": "dificil",
     "stem": "Julgue as afirmações e selecione a sequência V/F:\nI. Organogramas retratam principalmente relações formais.\nII. Estrutura matricial combina dois critérios de coordenação.\nIII. Organograma descreve integralmente vínculos informais.\nIV. Estrutura matricial proíbe coordenação por projetos.",
@@ -2637,18 +2637,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma equipe de projeto responde ao gerente do projeto e mantém vínculo técnico com a coordenação de informática. Aplique a distinção: Qual risco surge quando duas chefias dão prioridades incompatíveis?",
     "challenge": "Qual risco surge quando duas chefias dão prioridades incompatíveis?",
     "optionComments": [
-      "Correta: Sequência correta: duas proposições válidas e duas falsas. I e II são verdadeiras, III e IV falsas. Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas.",
-      "Incorreta: A segunda afirmação é verdadeira e a terceira é falsa. A compreensão adequada é: Organogramas retratam principalmente relações formais.",
-      "Incorreta: A primeira é verdadeira e a quarta é falsa. A compreensão adequada é: Organogramas retratam principalmente relações formais.",
-      "Incorreta: A terceira afirmação é falsa. A compreensão adequada é: Organogramas retratam principalmente relações formais.",
-      "Incorreta: As duas primeiras afirmações são verdadeiras. A compreensão adequada é: Organogramas retratam principalmente relações formais."
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras, III e IV falsas. Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas.",
+      "Alternativa incorreta. Compare a afirmação «V – F – V – F» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas.",
+      "Alternativa incorreta. Compare a afirmação «F – V – V – F» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas.",
+      "Alternativa incorreta. Compare a afirmação «V – V – V – F» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas.",
+      "Alternativa incorreta. Compare a afirmação «F – F – V – V» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas."
     ]
   },
   {
     "id": "Q-ADM-04-006-04",
     "moduleId": "ADM-04",
     "subtopicId": "ADM-04-006",
-    "topic": "ADM-04-006",
+    "topic": "Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Ao revisar procedimentos, qual conclusão deve ser adotada para evitar um erro conceitual?",
@@ -2666,17 +2666,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma equipe de projeto responde ao gerente do projeto e mantém vínculo técnico com a coordenação de informática. Aplique a distinção: Qual risco surge quando duas chefias dão prioridades incompatíveis?",
     "challenge": "Qual risco surge quando duas chefias dão prioridades incompatíveis?",
     "optionComments": [
-      "Correta: Estrutura matricial combina dois critérios de coordenação. Estrutura matricial combina dois critérios de coordenação. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
-      "Incorreta: Estrutura matricial proíbe coordenação por projetos. Confunde a finalidade. A compreensão adequada é: Organogramas retratam principalmente relações formais.",
-      "Incorreta: Estrutura funcional organiza exclusivamente por região. Não respeita os limites. A compreensão adequada é: Organogramas retratam principalmente relações formais.",
-      "Incorreta: Organograma descreve integralmente vínculos informais. Elimina condição importante. A compreensão adequada é: Organogramas retratam principalmente relações formais."
+      "Alternativa indicada pelo gabarito. Estrutura matricial combina dois critérios de coordenação. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
+      "Alternativa incorreta. Compare a afirmação «Estrutura matricial proíbe coordenação por projetos.» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: Estrutura matricial combina dois critérios de coordenação. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
+      "Alternativa incorreta. Compare a afirmação «Estrutura funcional organiza exclusivamente por região.» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: Estrutura matricial combina dois critérios de coordenação. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações.",
+      "Alternativa incorreta. Compare a afirmação «Organograma descreve integralmente vínculos informais.» com o princípio: Organograma representa relações formais; estruturas funcional, divisional e matricial combinam autoridade de formas distintas. A explicação da resposta correta é: Estrutura matricial combina dois critérios de coordenação. A estrutura funcional agrupa especialidades; a divisional organiza unidades por produtos, serviços, mercados ou territórios; a matricial combina dois eixos de coordenação, frequentemente função e projeto. Na matriz pode haver dupla referência gerencial, o que exige clareza de responsabilidades. O organograma não mostra toda a rede informal de relações."
     ]
   },
   {
     "id": "Q-ADM-05-001-01",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-001",
-    "topic": "ADM-05-001",
+    "topic": "Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança",
     "type": "ce",
     "difficulty": "media",
     "stem": "Dirigir equivale apenas a fiscalizar resultados finais.",
@@ -2692,18 +2692,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina. Aplique a distinção: Como a percepção de justiça afeta a aceitação de uma mudança?",
     "challenge": "Como a percepção de justiça afeta a aceitação de uma mudança?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Direção envolve orientar e mobilizar pessoas. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas.",
-      "Correta: A afirmação é falsa porque Direção envolve orientar e mobilizar pessoas. Direção envolve orientar e mobilizar pessoas. A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Direção envolve orientar e mobilizar pessoas. A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens.",
+      "Alternativa indicada pelo gabarito. Direção envolve orientar e mobilizar pessoas. A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens."
     ]
   },
   {
     "id": "Q-ADM-05-001-02",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-001",
-    "topic": "ADM-05-001",
+    "topic": "Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança, assinale a alternativa CORRETA.",
     "options": [
       "Direção envolve orientar e mobilizar pessoas.",
       "Dirigir equivale apenas a fiscalizar resultados finais.",
@@ -2718,20 +2718,20 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina. Aplique a distinção: Como a percepção de justiça afeta a aceitação de uma mudança?",
     "challenge": "Como a percepção de justiça afeta a aceitação de uma mudança?",
     "optionComments": [
-      "Correta: Direção envolve orientar e mobilizar pessoas. Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens.",
-      "Incorreta: Dirigir equivale apenas a fiscalizar resultados finais. Contraria: Direção envolve orientar e mobilizar pessoas. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas.",
-      "Incorreta: Comportamento organizacional ignora relações informais. Contraria: Comportamento organizacional considera indivíduos e grupos. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas.",
-      "Incorreta: A comunicação é irrelevante quando existem normas escritas. Contraria: Comunicação clara pode facilitar implementação de mudanças. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas."
+      "Alternativa indicada pelo gabarito. Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens.",
+      "Alternativa incorreta. Compare a afirmação «Dirigir equivale apenas a fiscalizar resultados finais.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens.",
+      "Alternativa incorreta. Compare a afirmação «Comportamento organizacional ignora relações informais.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens.",
+      "Alternativa incorreta. Compare a afirmação «A comunicação é irrelevante quando existem normas escritas.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A direção conecta o planejamento às ações humanas. Comportamento organizacional analisa atitudes, grupos, cultura e relações no trabalho. Pessoas não reagem apenas a regras formais: percepções de justiça, reconhecimento e comunicação também afetam cooperação. Direção não se reduz a dar ordens."
     ]
   },
   {
     "id": "Q-ADM-05-001-03",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-001",
-    "topic": "ADM-05-001",
+    "topic": "Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança",
     "type": "exceto",
     "difficulty": "dificil",
-    "stem": "Assinale a alternativa INCORRETA sobre o tema.",
+    "stem": "Considerando o conceito de dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança, assinale a alternativa INCORRETA.",
     "options": [
       "Direção envolve orientar e mobilizar pessoas.",
       "Comportamento organizacional considera indivíduos e grupos.",
@@ -2746,17 +2746,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina. Aplique a distinção: Como a percepção de justiça afeta a aceitação de uma mudança?",
     "challenge": "Como a percepção de justiça afeta a aceitação de uma mudança?",
     "optionComments": [
-      "Incorreta: Direção envolve orientar e mobilizar pessoas. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas.",
-      "Incorreta: Comportamento organizacional considera indivíduos e grupos. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas.",
-      "Correta: Comportamento organizacional ignora relações informais. O correto é: Direção envolve orientar e mobilizar pessoas. Comportamento organizacional ignora relações informais. É incorreta. Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança.",
-      "Incorreta: Comunicação clara pode facilitar implementação de mudanças. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas."
+      "Alternativa incorreta. Compare a afirmação «Direção envolve orientar e mobilizar pessoas.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Comportamento organizacional ignora relações informais. É incorreta. Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança.",
+      "Alternativa incorreta. Compare a afirmação «Comportamento organizacional considera indivíduos e grupos.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Comportamento organizacional ignora relações informais. É incorreta. Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança.",
+      "Alternativa indicada pelo gabarito. Comportamento organizacional ignora relações informais. É incorreta. Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança.",
+      "Alternativa incorreta. Compare a afirmação «Comunicação clara pode facilitar implementação de mudanças.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Comportamento organizacional ignora relações informais. É incorreta. Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança."
     ]
   },
   {
     "id": "Q-ADM-05-001-04",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-001",
-    "topic": "ADM-05-001",
+    "topic": "Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -2774,17 +2774,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina. Aplique a distinção: Como a percepção de justiça afeta a aceitação de uma mudança?",
     "challenge": "Como a percepção de justiça afeta a aceitação de uma mudança?",
     "optionComments": [
-      "Correta: Comunicação clara pode facilitar implementação de mudanças. Comunicação clara pode facilitar implementação de mudanças. Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina.",
-      "Incorreta: A comunicação é irrelevante quando existem normas escritas. Não decorre do conceito. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas.",
-      "Incorreta: Dirigir equivale apenas a fiscalizar resultados finais. Generaliza indevidamente. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas.",
-      "Incorreta: Comportamento organizacional ignora relações informais. Confunde características. A compreensão adequada é: Direção envolve orientar e mobilizar pessoas."
+      "Alternativa indicada pelo gabarito. Comunicação clara pode facilitar implementação de mudanças. Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina.",
+      "Alternativa incorreta. Compare a afirmação «A comunicação é irrelevante quando existem normas escritas.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Comunicação clara pode facilitar implementação de mudanças. Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina.",
+      "Alternativa incorreta. Compare a afirmação «Dirigir equivale apenas a fiscalizar resultados finais.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Comunicação clara pode facilitar implementação de mudanças. Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina.",
+      "Alternativa incorreta. Compare a afirmação «Comportamento organizacional ignora relações informais.» com o princípio: Dirigir significa mobilizar pessoas para executar planos, envolvendo comunicação, orientação e liderança. A explicação da resposta correta é: Comunicação clara pode facilitar implementação de mudanças. Uma chefia explica a finalidade de novo protocolo, escuta dificuldades e acompanha a adoção da rotina."
     ]
   },
   {
     "id": "Q-ADM-05-002-01",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-002",
-    "topic": "ADM-05-002",
+    "topic": "Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos",
     "type": "ce",
     "difficulty": "media",
     "stem": "Somente chefes formalmente nomeados exercem liderança.",
@@ -2800,18 +2800,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma servidora experiente orienta colegas sobre sistema novo sem ser superior hierárquica. Aplique a distinção: Uma referência técnica pode liderar sem assinar decisões da chefia?",
     "challenge": "Uma referência técnica pode liderar sem assinar decisões da chefia?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Liderança pode existir sem cargo de chefia. A compreensão adequada é: Liderança pode existir sem cargo de chefia.",
-      "Correta: A afirmação é falsa porque Liderança pode existir sem cargo de chefia. Liderança pode existir sem cargo de chefia. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: Liderança pode existir sem cargo de chefia. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
+      "Alternativa indicada pelo gabarito. Liderança pode existir sem cargo de chefia. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas."
     ]
   },
   {
     "id": "Q-ADM-05-002-02",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-002",
-    "topic": "ADM-05-002",
+    "topic": "Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos, assinale a alternativa CORRETA.",
     "options": [
       "Liderança pode existir sem cargo de chefia.",
       "Somente chefes formalmente nomeados exercem liderança.",
@@ -2826,17 +2826,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma servidora experiente orienta colegas sobre sistema novo sem ser superior hierárquica. Aplique a distinção: Uma referência técnica pode liderar sem assinar decisões da chefia?",
     "challenge": "Uma referência técnica pode liderar sem assinar decisões da chefia?",
     "optionComments": [
-      "Correta: Liderança pode existir sem cargo de chefia. Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
-      "Incorreta: Somente chefes formalmente nomeados exercem liderança. Contraria: Liderança pode existir sem cargo de chefia. A compreensão adequada é: Liderança pode existir sem cargo de chefia.",
-      "Incorreta: Poder de especialista depende exclusivamente de punições. Contraria: Autoridade formal decorre de posição institucional. A compreensão adequada é: Liderança pode existir sem cargo de chefia.",
-      "Incorreta: Influência informal autoriza praticar atos fora da competência legal. Contraria: Conhecimento técnico pode ser fonte de influência. A compreensão adequada é: Liderança pode existir sem cargo de chefia."
+      "Alternativa indicada pelo gabarito. Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
+      "Alternativa incorreta. Compare a afirmação «Somente chefes formalmente nomeados exercem liderança.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
+      "Alternativa incorreta. Compare a afirmação «Poder de especialista depende exclusivamente de punições.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
+      "Alternativa incorreta. Compare a afirmação «Influência informal autoriza praticar atos fora da competência legal.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas."
     ]
   },
   {
     "id": "Q-ADM-05-002-03",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-002",
-    "topic": "ADM-05-002",
+    "topic": "Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos",
     "type": "afirmacoes",
     "difficulty": "dificil",
     "stem": "Analise as afirmações:\nI. Liderança pode existir sem cargo de chefia.\nII. Autoridade formal decorre de posição institucional.\nIII. Influência informal autoriza praticar atos fora da competência legal.\nQuais estão corretas?",
@@ -2855,18 +2855,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma servidora experiente orienta colegas sobre sistema novo sem ser superior hierárquica. Aplique a distinção: Uma referência técnica pode liderar sem assinar decisões da chefia?",
     "challenge": "Uma referência técnica pode liderar sem assinar decisões da chefia?",
     "optionComments": [
-      "Incorreta: Ignora a II, que também é verdadeira. A compreensão adequada é: Liderança pode existir sem cargo de chefia.",
-      "Correta: I e II são corretas, III contraria o conceito. I e II são verdadeiras; III é falsa porque Conhecimento técnico pode ser fonte de influência.",
-      "Incorreta: Inclui III, que é falsa, e exclui I. A compreensão adequada é: Liderança pode existir sem cargo de chefia.",
-      "Incorreta: Inclui III, que é falsa. A compreensão adequada é: Liderança pode existir sem cargo de chefia.",
-      "Incorreta: Considera verdadeira apenas III, que é falsa. A compreensão adequada é: Liderança pode existir sem cargo de chefia."
+      "Alternativa incorreta. Compare a afirmação «Apenas I.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Conhecimento técnico pode ser fonte de influência.",
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras; III é falsa porque Conhecimento técnico pode ser fonte de influência.",
+      "Alternativa incorreta. Compare a afirmação «Apenas II e III.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Conhecimento técnico pode ser fonte de influência.",
+      "Alternativa incorreta. Compare a afirmação «I, II e III.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Conhecimento técnico pode ser fonte de influência.",
+      "Alternativa incorreta. Compare a afirmação «Apenas III.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Conhecimento técnico pode ser fonte de influência."
     ]
   },
   {
     "id": "Q-ADM-05-002-04",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-002",
-    "topic": "ADM-05-002",
+    "topic": "Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Ao revisar procedimentos, qual conclusão deve ser adotada para evitar um erro conceitual?",
@@ -2884,17 +2884,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma servidora experiente orienta colegas sobre sistema novo sem ser superior hierárquica. Aplique a distinção: Uma referência técnica pode liderar sem assinar decisões da chefia?",
     "challenge": "Uma referência técnica pode liderar sem assinar decisões da chefia?",
     "optionComments": [
-      "Correta: Autoridade formal decorre de posição institucional. Autoridade formal decorre de posição institucional. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
-      "Incorreta: Poder de especialista depende exclusivamente de punições. Confunde a finalidade. A compreensão adequada é: Liderança pode existir sem cargo de chefia.",
-      "Incorreta: Influência informal autoriza praticar atos fora da competência legal. Não respeita os limites. A compreensão adequada é: Liderança pode existir sem cargo de chefia.",
-      "Incorreta: Somente chefes formalmente nomeados exercem liderança. Elimina condição importante. A compreensão adequada é: Liderança pode existir sem cargo de chefia."
+      "Alternativa indicada pelo gabarito. Autoridade formal decorre de posição institucional. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
+      "Alternativa incorreta. Compare a afirmação «Poder de especialista depende exclusivamente de punições.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: Autoridade formal decorre de posição institucional. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
+      "Alternativa incorreta. Compare a afirmação «Influência informal autoriza praticar atos fora da competência legal.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: Autoridade formal decorre de posição institucional. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas.",
+      "Alternativa incorreta. Compare a afirmação «Somente chefes formalmente nomeados exercem liderança.» com o princípio: Liderança é influência sobre pessoas; autoridade formal decorre do cargo; poder é capacidade de influenciar comportamentos. A explicação da resposta correta é: Autoridade formal decorre de posição institucional. Uma pessoa pode influenciar colegas por conhecimento técnico ou confiança sem ocupar chefia. Poder legítimo se relaciona ao cargo; poder de especialista, ao domínio de conhecimento; poder de referência, à identificação. O uso da autoridade deve respeitar normas e a dignidade das pessoas."
     ]
   },
   {
     "id": "Q-ADM-05-003-01",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-003",
-    "topic": "ADM-05-003",
+    "topic": "Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire)",
     "type": "ce",
     "difficulty": "media",
     "stem": "Estilo democrático exige que o líder nunca decida.",
@@ -2910,18 +2910,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores. Aplique a distinção: Por que a urgência pode alterar o estilo de liderança adotado?",
     "challenge": "Por que a urgência pode alterar o estilo de liderança adotado?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Liderança autocrática concentra decisões. A compreensão adequada é: Liderança autocrática concentra decisões.",
-      "Correta: A afirmação é falsa porque Liderança autocrática concentra decisões. Liderança autocrática concentra decisões. O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: Liderança autocrática concentra decisões. O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória.",
+      "Alternativa indicada pelo gabarito. Liderança autocrática concentra decisões. O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória."
     ]
   },
   {
     "id": "Q-ADM-05-003-02",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-003",
-    "topic": "ADM-05-003",
+    "topic": "Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire)",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire), assinale a alternativa CORRETA.",
     "options": [
       "Liderança autocrática concentra decisões.",
       "Estilo democrático exige que o líder nunca decida.",
@@ -2936,17 +2936,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores. Aplique a distinção: Por que a urgência pode alterar o estilo de liderança adotado?",
     "challenge": "Por que a urgência pode alterar o estilo de liderança adotado?",
     "optionComments": [
-      "Correta: Liderança autocrática concentra decisões. Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória.",
-      "Incorreta: Estilo democrático exige que o líder nunca decida. Contraria: Liderança autocrática concentra decisões. A compreensão adequada é: Liderança autocrática concentra decisões.",
-      "Incorreta: Estilo autocrático equivale a delegar todas as decisões. Contraria: Liderança democrática favorece participação. A compreensão adequada é: Liderança autocrática concentra decisões.",
-      "Incorreta: Estilo liberal implica supervisão intensa de cada passo. Contraria: Liderança liberal concede ampla autonomia. A compreensão adequada é: Liderança autocrática concentra decisões."
+      "Alternativa indicada pelo gabarito. Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória.",
+      "Alternativa incorreta. Compare a afirmação «Estilo democrático exige que o líder nunca decida.» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória.",
+      "Alternativa incorreta. Compare a afirmação «Estilo autocrático equivale a delegar todas as decisões.» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória.",
+      "Alternativa incorreta. Compare a afirmação «Estilo liberal implica supervisão intensa de cada passo.» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). O autocrático concentra decisões no líder; o democrático incentiva participação; o liberal concede elevada liberdade à equipe. Nenhum estilo é automaticamente adequado a toda situação: urgência, maturidade do grupo e natureza da tarefa influenciam os resultados. Participação não elimina a responsabilidade decisória."
     ]
   },
   {
     "id": "Q-ADM-05-003-03",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-003",
-    "topic": "ADM-05-003",
+    "topic": "Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire)",
     "type": "sequencia",
     "difficulty": "dificil",
     "stem": "Julgue as afirmações e selecione a sequência V/F:\nI. Liderança autocrática concentra decisões.\nII. Liderança democrática favorece participação.\nIII. Estilo democrático exige que o líder nunca decida.\nIV. Estilo autocrático equivale a delegar todas as decisões.",
@@ -2965,18 +2965,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores. Aplique a distinção: Por que a urgência pode alterar o estilo de liderança adotado?",
     "challenge": "Por que a urgência pode alterar o estilo de liderança adotado?",
     "optionComments": [
-      "Correta: Sequência correta: duas proposições válidas e duas falsas. I e II são verdadeiras, III e IV falsas. Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire).",
-      "Incorreta: A segunda afirmação é verdadeira e a terceira é falsa. A compreensão adequada é: Liderança autocrática concentra decisões.",
-      "Incorreta: A primeira é verdadeira e a quarta é falsa. A compreensão adequada é: Liderança autocrática concentra decisões.",
-      "Incorreta: A terceira afirmação é falsa. A compreensão adequada é: Liderança autocrática concentra decisões.",
-      "Incorreta: As duas primeiras afirmações são verdadeiras. A compreensão adequada é: Liderança autocrática concentra decisões."
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras, III e IV falsas. Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire).",
+      "Alternativa incorreta. Compare a afirmação «V – F – V – F» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire).",
+      "Alternativa incorreta. Compare a afirmação «F – V – V – F» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire).",
+      "Alternativa incorreta. Compare a afirmação «V – V – V – F» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire).",
+      "Alternativa incorreta. Compare a afirmação «F – F – V – V» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire)."
     ]
   },
   {
     "id": "Q-ADM-05-003-04",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-003",
-    "topic": "ADM-05-003",
+    "topic": "Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire)",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -2994,17 +2994,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores. Aplique a distinção: Por que a urgência pode alterar o estilo de liderança adotado?",
     "challenge": "Por que a urgência pode alterar o estilo de liderança adotado?",
     "optionComments": [
-      "Correta: Liderança liberal concede ampla autonomia. Liderança liberal concede ampla autonomia. Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores.",
-      "Incorreta: Estilo liberal implica supervisão intensa de cada passo. Não decorre do conceito. A compreensão adequada é: Liderança autocrática concentra decisões.",
-      "Incorreta: Estilo democrático exige que o líder nunca decida. Generaliza indevidamente. A compreensão adequada é: Liderança autocrática concentra decisões.",
-      "Incorreta: Estilo autocrático equivale a delegar todas as decisões. Confunde características. A compreensão adequada é: Liderança autocrática concentra decisões."
+      "Alternativa indicada pelo gabarito. Liderança liberal concede ampla autonomia. Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores.",
+      "Alternativa incorreta. Compare a afirmação «Estilo liberal implica supervisão intensa de cada passo.» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: Liderança liberal concede ampla autonomia. Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores.",
+      "Alternativa incorreta. Compare a afirmação «Estilo democrático exige que o líder nunca decida.» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: Liderança liberal concede ampla autonomia. Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores.",
+      "Alternativa incorreta. Compare a afirmação «Estilo autocrático equivale a delegar todas as decisões.» com o princípio: Estilos clássicos de liderança incluem autocrático, democrático e liberal (laissez-faire). A explicação da resposta correta é: Liderança liberal concede ampla autonomia. Em uma emergência operacional, a chefia decide rapidamente; ao redesenhar o atendimento, consulta servidores."
     ]
   },
   {
     "id": "Q-ADM-05-004-01",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-004",
-    "topic": "ADM-05-004",
+    "topic": "Teorias de liderança investigam traços, comportamentos e adequação às situações",
     "type": "ce",
     "difficulty": "media",
     "stem": "Teorias situacionais defendem um estilo único para todos.",
@@ -3020,18 +3020,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia oferece instrução detalhada a iniciantes e amplia autonomia quando a equipe ganha experiência. Aplique a distinção: Como a experiência da equipe altera o nível de orientação necessário?",
     "challenge": "Como a experiência da equipe altera o nível de orientação necessário?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Teorias de traços enfocam características pessoais. A compreensão adequada é: Teorias de traços enfocam características pessoais.",
-      "Correta: A afirmação é falsa porque Teorias de traços enfocam características pessoais. Teorias de traços enfocam características pessoais. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias de traços enfocam características pessoais. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
+      "Alternativa indicada pelo gabarito. Teorias de traços enfocam características pessoais. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal."
     ]
   },
   {
     "id": "Q-ADM-05-004-02",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-004",
-    "topic": "ADM-05-004",
+    "topic": "Teorias de liderança investigam traços, comportamentos e adequação às situações",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre teorias de liderança investigam traços, comportamentos e adequação às situações, assinale a alternativa CORRETA.",
     "options": [
       "Teorias de traços enfocam características pessoais.",
       "Teorias situacionais defendem um estilo único para todos.",
@@ -3046,20 +3046,20 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia oferece instrução detalhada a iniciantes e amplia autonomia quando a equipe ganha experiência. Aplique a distinção: Como a experiência da equipe altera o nível de orientação necessário?",
     "challenge": "Como a experiência da equipe altera o nível de orientação necessário?",
     "optionComments": [
-      "Correta: Teorias de traços enfocam características pessoais. Teorias de liderança investigam traços, comportamentos e adequação às situações. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
-      "Incorreta: Teorias situacionais defendem um estilo único para todos. Contraria: Teorias de traços enfocam características pessoais. A compreensão adequada é: Teorias de traços enfocam características pessoais.",
-      "Incorreta: Teorias comportamentais explicam liderança apenas por herança genética. Contraria: Teorias comportamentais estudam condutas do líder. A compreensão adequada é: Teorias de traços enfocam características pessoais.",
-      "Incorreta: Teorias de traços se concentram exclusivamente em tarefas executadas. Contraria: Teorias situacionais consideram características do contexto. A compreensão adequada é: Teorias de traços enfocam características pessoais."
+      "Alternativa indicada pelo gabarito. Teorias de liderança investigam traços, comportamentos e adequação às situações. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
+      "Alternativa incorreta. Compare a afirmação «Teorias situacionais defendem um estilo único para todos.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias de liderança investigam traços, comportamentos e adequação às situações. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
+      "Alternativa incorreta. Compare a afirmação «Teorias comportamentais explicam liderança apenas por herança genética.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias de liderança investigam traços, comportamentos e adequação às situações. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
+      "Alternativa incorreta. Compare a afirmação «Teorias de traços se concentram exclusivamente em tarefas executadas.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias de liderança investigam traços, comportamentos e adequação às situações. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal."
     ]
   },
   {
     "id": "Q-ADM-05-004-03",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-004",
-    "topic": "ADM-05-004",
+    "topic": "Teorias de liderança investigam traços, comportamentos e adequação às situações",
     "type": "exceto",
     "difficulty": "dificil",
-    "stem": "Assinale a alternativa INCORRETA sobre o tema.",
+    "stem": "Considerando o conceito de teorias de liderança investigam traços, comportamentos e adequação às situações, assinale a alternativa INCORRETA.",
     "options": [
       "Teorias de traços enfocam características pessoais.",
       "Teorias comportamentais estudam condutas do líder.",
@@ -3074,17 +3074,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia oferece instrução detalhada a iniciantes e amplia autonomia quando a equipe ganha experiência. Aplique a distinção: Como a experiência da equipe altera o nível de orientação necessário?",
     "challenge": "Como a experiência da equipe altera o nível de orientação necessário?",
     "optionComments": [
-      "Incorreta: Teorias de traços enfocam características pessoais. A compreensão adequada é: Teorias de traços enfocam características pessoais.",
-      "Incorreta: Teorias comportamentais estudam condutas do líder. A compreensão adequada é: Teorias de traços enfocam características pessoais.",
-      "Correta: Teorias comportamentais explicam liderança apenas por herança genética. O correto é: Teorias de traços enfocam características pessoais. Teorias comportamentais explicam liderança apenas por herança genética. É incorreta. Teorias de liderança investigam traços, comportamentos e adequação às situações.",
-      "Incorreta: Teorias situacionais consideram características do contexto. A compreensão adequada é: Teorias de traços enfocam características pessoais."
+      "Alternativa incorreta. Compare a afirmação «Teorias de traços enfocam características pessoais.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias comportamentais explicam liderança apenas por herança genética. É incorreta. Teorias de liderança investigam traços, comportamentos e adequação às situações.",
+      "Alternativa incorreta. Compare a afirmação «Teorias comportamentais estudam condutas do líder.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias comportamentais explicam liderança apenas por herança genética. É incorreta. Teorias de liderança investigam traços, comportamentos e adequação às situações.",
+      "Alternativa indicada pelo gabarito. Teorias comportamentais explicam liderança apenas por herança genética. É incorreta. Teorias de liderança investigam traços, comportamentos e adequação às situações.",
+      "Alternativa incorreta. Compare a afirmação «Teorias situacionais consideram características do contexto.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias comportamentais explicam liderança apenas por herança genética. É incorreta. Teorias de liderança investigam traços, comportamentos e adequação às situações."
     ]
   },
   {
     "id": "Q-ADM-05-004-04",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-004",
-    "topic": "ADM-05-004",
+    "topic": "Teorias de liderança investigam traços, comportamentos e adequação às situações",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Ao revisar procedimentos, qual conclusão deve ser adotada para evitar um erro conceitual?",
@@ -3102,17 +3102,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia oferece instrução detalhada a iniciantes e amplia autonomia quando a equipe ganha experiência. Aplique a distinção: Como a experiência da equipe altera o nível de orientação necessário?",
     "challenge": "Como a experiência da equipe altera o nível de orientação necessário?",
     "optionComments": [
-      "Correta: Teorias comportamentais estudam condutas do líder. Teorias comportamentais estudam condutas do líder. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
-      "Incorreta: Teorias comportamentais explicam liderança apenas por herança genética. Confunde a finalidade. A compreensão adequada é: Teorias de traços enfocam características pessoais.",
-      "Incorreta: Teorias de traços se concentram exclusivamente em tarefas executadas. Não respeita os limites. A compreensão adequada é: Teorias de traços enfocam características pessoais.",
-      "Incorreta: Teorias situacionais defendem um estilo único para todos. Elimina condição importante. A compreensão adequada é: Teorias de traços enfocam características pessoais."
+      "Alternativa indicada pelo gabarito. Teorias comportamentais estudam condutas do líder. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
+      "Alternativa incorreta. Compare a afirmação «Teorias comportamentais explicam liderança apenas por herança genética.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias comportamentais estudam condutas do líder. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
+      "Alternativa incorreta. Compare a afirmação «Teorias de traços se concentram exclusivamente em tarefas executadas.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias comportamentais estudam condutas do líder. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal.",
+      "Alternativa incorreta. Compare a afirmação «Teorias situacionais defendem um estilo único para todos.» com o princípio: Teorias de liderança investigam traços, comportamentos e adequação às situações. A explicação da resposta correta é: Teorias comportamentais estudam condutas do líder. Abordagens de traços procuraram características pessoais associadas à liderança; teorias comportamentais analisam o que líderes fazem; teorias contingenciais e situacionais consideram contexto e características da equipe. Modelos diferentes não devem ser tratados como se defendessem a mesma explicação. Uma abordagem situacional não prescreve um único comportamento universal."
     ]
   },
   {
     "id": "Q-ADM-05-005-01",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-005",
-    "topic": "ADM-05-005",
+    "topic": "Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais",
     "type": "ce",
     "difficulty": "media",
     "stem": "Herzberg considera condições físicas sempre motivadores intrínsecos.",
@@ -3128,18 +3128,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento. Aplique a distinção: Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
     "challenge": "Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Maslow organiza necessidades em categorias hierarquizadas. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas.",
-      "Correta: A afirmação é falsa porque Maslow organiza necessidades em categorias hierarquizadas. Maslow organiza necessidades em categorias hierarquizadas. Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: Maslow organiza necessidades em categorias hierarquizadas. Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada.",
+      "Alternativa indicada pelo gabarito. Maslow organiza necessidades em categorias hierarquizadas. Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada."
     ]
   },
   {
     "id": "Q-ADM-05-005-02",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-005",
-    "topic": "ADM-05-005",
+    "topic": "Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais, assinale a alternativa CORRETA.",
     "options": [
       "Maslow organiza necessidades em categorias hierarquizadas.",
       "Herzberg considera condições físicas sempre motivadores intrínsecos.",
@@ -3154,17 +3154,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento. Aplique a distinção: Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
     "challenge": "Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
     "optionComments": [
-      "Correta: Maslow organiza necessidades em categorias hierarquizadas. Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada.",
-      "Incorreta: Herzberg considera condições físicas sempre motivadores intrínsecos. Contraria: Maslow organiza necessidades em categorias hierarquizadas. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas.",
-      "Incorreta: Maslow defende que toda pessoa satisfaz necessidades em ordem idêntica e invariável. Contraria: Herzberg diferencia fatores higiênicos e motivacionais. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas.",
-      "Incorreta: Eliminar insatisfação garante automaticamente alta motivação. Contraria: Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas."
+      "Alternativa indicada pelo gabarito. Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada.",
+      "Alternativa incorreta. Compare a afirmação «Herzberg considera condições físicas sempre motivadores intrínsecos.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada.",
+      "Alternativa incorreta. Compare a afirmação «Maslow defende que toda pessoa satisfaz necessidades em ordem idêntica e invariável.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada.",
+      "Alternativa incorreta. Compare a afirmação «Eliminar insatisfação garante automaticamente alta motivação.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. Na teoria de Maslow, necessidades fisiológicas, segurança, sociais, estima e autorrealização são categorias clássicas; a ordem rígida não deve ser tratada como lei universal comprovada. Para Herzberg, fatores higiênicos, como condições e políticas, tendem a evitar insatisfação; motivadores, como reconhecimento e realização, relacionam-se à satisfação. Ausência de insatisfação não equivale automaticamente a motivação elevada."
     ]
   },
   {
     "id": "Q-ADM-05-005-03",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-005",
-    "topic": "ADM-05-005",
+    "topic": "Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais",
     "type": "afirmacoes",
     "difficulty": "dificil",
     "stem": "Analise as afirmações:\nI. Maslow organiza necessidades em categorias hierarquizadas.\nII. Herzberg diferencia fatores higiênicos e motivacionais.\nIII. Eliminar insatisfação garante automaticamente alta motivação.\nQuais estão corretas?",
@@ -3183,18 +3183,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento. Aplique a distinção: Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
     "challenge": "Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
     "optionComments": [
-      "Incorreta: Ignora a II, que também é verdadeira. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas.",
-      "Correta: I e II são corretas, III contraria o conceito. I e II são verdadeiras; III é falsa porque Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada.",
-      "Incorreta: Inclui III, que é falsa, e exclui I. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas.",
-      "Incorreta: Inclui III, que é falsa. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas.",
-      "Incorreta: Considera verdadeira apenas III, que é falsa. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas."
+      "Alternativa incorreta. Compare a afirmação «Apenas I.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada.",
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras; III é falsa porque Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada.",
+      "Alternativa incorreta. Compare a afirmação «Apenas II e III.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada.",
+      "Alternativa incorreta. Compare a afirmação «I, II e III.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada.",
+      "Alternativa incorreta. Compare a afirmação «Apenas III.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada."
     ]
   },
   {
     "id": "Q-ADM-05-005-04",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-005",
-    "topic": "ADM-05-005",
+    "topic": "Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -3212,17 +3212,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento. Aplique a distinção: Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
     "challenge": "Por que um ambiente confortável pode não gerar entusiasmo com o trabalho?",
     "optionComments": [
-      "Correta: Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada. Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada. Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento.",
-      "Incorreta: Eliminar insatisfação garante automaticamente alta motivação. Não decorre do conceito. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas.",
-      "Incorreta: Herzberg considera condições físicas sempre motivadores intrínsecos. Generaliza indevidamente. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas.",
-      "Incorreta: Maslow defende que toda pessoa satisfaz necessidades em ordem idêntica e invariável. Confunde características. A compreensão adequada é: Maslow organiza necessidades em categorias hierarquizadas."
+      "Alternativa indicada pelo gabarito. Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada. Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento.",
+      "Alternativa incorreta. Compare a afirmação «Eliminar insatisfação garante automaticamente alta motivação.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada. Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento.",
+      "Alternativa incorreta. Compare a afirmação «Herzberg considera condições físicas sempre motivadores intrínsecos.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada. Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento.",
+      "Alternativa incorreta. Compare a afirmação «Maslow defende que toda pessoa satisfaz necessidades em ordem idêntica e invariável.» com o princípio: Maslow propôs uma hierarquia de necessidades; Herzberg distinguiu fatores higiênicos e motivacionais. A explicação da resposta correta é: Melhorar condições pode reduzir insatisfação sem garantir satisfação elevada. Um setor melhora iluminação e equipamentos, reduz queixas, mas ainda precisa oferecer tarefas significativas e reconhecimento."
     ]
   },
   {
     "id": "Q-ADM-05-006-01",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-006",
-    "topic": "ADM-05-006",
+    "topic": "McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade",
     "type": "ce",
     "difficulty": "media",
     "stem": "Teoria Y elimina a necessidade de objetivos.",
@@ -3238,18 +3238,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia amplia autonomia e oferece recursos porque acredita na capacidade da equipe de assumir compromissos. Aplique a distinção: Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
     "challenge": "Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Teoria X pressupõe necessidade de controle mais intenso. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso.",
-      "Correta: A afirmação é falsa porque Teoria X pressupõe necessidade de controle mais intenso. Teoria X pressupõe necessidade de controle mais intenso. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: Teoria X pressupõe necessidade de controle mais intenso. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
+      "Alternativa indicada pelo gabarito. Teoria X pressupõe necessidade de controle mais intenso. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos."
     ]
   },
   {
     "id": "Q-ADM-05-006-02",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-006",
-    "topic": "ADM-05-006",
+    "topic": "McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre mcGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade, assinale a alternativa CORRETA.",
     "options": [
       "Teoria X pressupõe necessidade de controle mais intenso.",
       "Teoria Y elimina a necessidade de objetivos.",
@@ -3264,17 +3264,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia amplia autonomia e oferece recursos porque acredita na capacidade da equipe de assumir compromissos. Aplique a distinção: Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
     "challenge": "Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
     "optionComments": [
-      "Correta: Teoria X pressupõe necessidade de controle mais intenso. McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
-      "Incorreta: Teoria Y elimina a necessidade de objetivos. Contraria: Teoria X pressupõe necessidade de controle mais intenso. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso.",
-      "Incorreta: Teoria X e Y são diagnósticos imutáveis de personalidade. Contraria: Teoria Y admite iniciativa e responsabilidade em condições adequadas. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso.",
-      "Incorreta: Equidade trata apenas do valor absoluto do salário, sem comparações. Contraria: Expectativa e equidade ajudam a explicar percepções sobre esforço e recompensas. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso."
+      "Alternativa indicada pelo gabarito. McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
+      "Alternativa incorreta. Compare a afirmação «Teoria Y elimina a necessidade de objetivos.» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
+      "Alternativa incorreta. Compare a afirmação «Teoria X e Y são diagnósticos imutáveis de personalidade.» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
+      "Alternativa incorreta. Compare a afirmação «Equidade trata apenas do valor absoluto do salário, sem comparações.» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos."
     ]
   },
   {
     "id": "Q-ADM-05-006-03",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-006",
-    "topic": "ADM-05-006",
+    "topic": "McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade",
     "type": "sequencia",
     "difficulty": "dificil",
     "stem": "Julgue as afirmações e selecione a sequência V/F:\nI. Teoria X pressupõe necessidade de controle mais intenso.\nII. Teoria Y admite iniciativa e responsabilidade em condições adequadas.\nIII. Teoria Y elimina a necessidade de objetivos.\nIV. Teoria X e Y são diagnósticos imutáveis de personalidade.",
@@ -3293,18 +3293,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia amplia autonomia e oferece recursos porque acredita na capacidade da equipe de assumir compromissos. Aplique a distinção: Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
     "challenge": "Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
     "optionComments": [
-      "Correta: Sequência correta: duas proposições válidas e duas falsas. I e II são verdadeiras, III e IV falsas. McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade.",
-      "Incorreta: A segunda afirmação é verdadeira e a terceira é falsa. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso.",
-      "Incorreta: A primeira é verdadeira e a quarta é falsa. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso.",
-      "Incorreta: A terceira afirmação é falsa. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso.",
-      "Incorreta: As duas primeiras afirmações são verdadeiras. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso."
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras, III e IV falsas. McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade.",
+      "Alternativa incorreta. Compare a afirmação «V – F – V – F» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade.",
+      "Alternativa incorreta. Compare a afirmação «F – V – V – F» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade.",
+      "Alternativa incorreta. Compare a afirmação «V – V – V – F» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade.",
+      "Alternativa incorreta. Compare a afirmação «F – F – V – V» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade."
     ]
   },
   {
     "id": "Q-ADM-05-006-04",
     "moduleId": "ADM-05",
     "subtopicId": "ADM-05-006",
-    "topic": "ADM-05-006",
+    "topic": "McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Ao revisar procedimentos, qual conclusão deve ser adotada para evitar um erro conceitual?",
@@ -3322,17 +3322,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma chefia amplia autonomia e oferece recursos porque acredita na capacidade da equipe de assumir compromissos. Aplique a distinção: Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
     "challenge": "Por que uma recompensa valiosa pode não motivar se a pessoa acha impossível alcançá-la?",
     "optionComments": [
-      "Correta: Teoria Y admite iniciativa e responsabilidade em condições adequadas. Teoria Y admite iniciativa e responsabilidade em condições adequadas. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
-      "Incorreta: Teoria X e Y são diagnósticos imutáveis de personalidade. Confunde a finalidade. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso.",
-      "Incorreta: Equidade trata apenas do valor absoluto do salário, sem comparações. Não respeita os limites. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso.",
-      "Incorreta: Teoria Y elimina a necessidade de objetivos. Elimina condição importante. A compreensão adequada é: Teoria X pressupõe necessidade de controle mais intenso."
+      "Alternativa indicada pelo gabarito. Teoria Y admite iniciativa e responsabilidade em condições adequadas. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
+      "Alternativa incorreta. Compare a afirmação «Teoria X e Y são diagnósticos imutáveis de personalidade.» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: Teoria Y admite iniciativa e responsabilidade em condições adequadas. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
+      "Alternativa incorreta. Compare a afirmação «Equidade trata apenas do valor absoluto do salário, sem comparações.» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: Teoria Y admite iniciativa e responsabilidade em condições adequadas. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos.",
+      "Alternativa incorreta. Compare a afirmação «Teoria Y elimina a necessidade de objetivos.» com o princípio: McGregor contrapôs pressupostos gerenciais X e Y; outras abordagens destacam expectativas e equidade. A explicação da resposta correta é: Teoria Y admite iniciativa e responsabilidade em condições adequadas. A Teoria X supõe que pessoas tendem a evitar trabalho e precisam de controle; a Teoria Y admite que trabalho pode ser natural e que pessoas podem assumir responsabilidades em condições adequadas. São pressupostos sobre gestão, não classificações fixas de indivíduos. A teoria da expectativa relaciona esforço, desempenho e recompensas valorizadas; equidade envolve comparação percebida de contribuições e retornos."
     ]
   },
   {
     "id": "Q-ADM-06-001-01",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-001",
-    "topic": "ADM-06-001",
+    "topic": "Controle compara resultados com padrões e orienta correções e aprendizagem",
     "type": "ce",
     "difficulty": "media",
     "stem": "Controle se resume a aplicar sanções aos servidores.",
@@ -3348,18 +3348,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos. Aplique a distinção: O que fazer se a meta era irrealista desde o início?",
     "challenge": "O que fazer se a meta era irrealista desde o início?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Controle envolve padrões e medição de desempenho. A compreensão adequada é: Controle envolve padrões e medição de desempenho.",
-      "Correta: A afirmação é falsa porque Controle envolve padrões e medição de desempenho. Controle envolve padrões e medição de desempenho. O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Controle envolve padrões e medição de desempenho. O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos.",
+      "Alternativa indicada pelo gabarito. Controle envolve padrões e medição de desempenho. O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos."
     ]
   },
   {
     "id": "Q-ADM-06-001-02",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-001",
-    "topic": "ADM-06-001",
+    "topic": "Controle compara resultados com padrões e orienta correções e aprendizagem",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre controle compara resultados com padrões e orienta correções e aprendizagem, assinale a alternativa CORRETA.",
     "options": [
       "Controle envolve padrões e medição de desempenho.",
       "Controle se resume a aplicar sanções aos servidores.",
@@ -3374,20 +3374,20 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos. Aplique a distinção: O que fazer se a meta era irrealista desde o início?",
     "challenge": "O que fazer se a meta era irrealista desde o início?",
     "optionComments": [
-      "Correta: Controle envolve padrões e medição de desempenho. Controle compara resultados com padrões e orienta correções e aprendizagem. O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos.",
-      "Incorreta: Controle se resume a aplicar sanções aos servidores. Contraria: Controle envolve padrões e medição de desempenho. A compreensão adequada é: Controle envolve padrões e medição de desempenho.",
-      "Incorreta: Medir resultados dispensa comparar com objetivos. Contraria: Comparação entre resultado e padrão ajuda identificar desvios. A compreensão adequada é: Controle envolve padrões e medição de desempenho.",
-      "Incorreta: Padrões definidos nunca devem ser reavaliados. Contraria: Ações corretivas podem modificar processos ou padrões inadequados. A compreensão adequada é: Controle envolve padrões e medição de desempenho."
+      "Alternativa indicada pelo gabarito. Controle compara resultados com padrões e orienta correções e aprendizagem. O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos.",
+      "Alternativa incorreta. Compare a afirmação «Controle se resume a aplicar sanções aos servidores.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Controle compara resultados com padrões e orienta correções e aprendizagem. O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos.",
+      "Alternativa incorreta. Compare a afirmação «Medir resultados dispensa comparar com objetivos.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Controle compara resultados com padrões e orienta correções e aprendizagem. O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos.",
+      "Alternativa incorreta. Compare a afirmação «Padrões definidos nunca devem ser reavaliados.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Controle compara resultados com padrões e orienta correções e aprendizagem. O processo de controle normalmente envolve estabelecer padrões, medir desempenho, comparar resultados e agir diante de desvios relevantes. Pode retroalimentar planejamento e organização. Controle não é apenas punição nem garante que toda diferença seja falha: padrões inadequados também precisam ser revistos."
     ]
   },
   {
     "id": "Q-ADM-06-001-03",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-001",
-    "topic": "ADM-06-001",
+    "topic": "Controle compara resultados com padrões e orienta correções e aprendizagem",
     "type": "exceto",
     "difficulty": "dificil",
-    "stem": "Assinale a alternativa INCORRETA sobre o tema.",
+    "stem": "Considerando o conceito de controle compara resultados com padrões e orienta correções e aprendizagem, assinale a alternativa INCORRETA.",
     "options": [
       "Controle envolve padrões e medição de desempenho.",
       "Comparação entre resultado e padrão ajuda identificar desvios.",
@@ -3402,17 +3402,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos. Aplique a distinção: O que fazer se a meta era irrealista desde o início?",
     "challenge": "O que fazer se a meta era irrealista desde o início?",
     "optionComments": [
-      "Incorreta: Controle envolve padrões e medição de desempenho. A compreensão adequada é: Controle envolve padrões e medição de desempenho.",
-      "Incorreta: Comparação entre resultado e padrão ajuda identificar desvios. A compreensão adequada é: Controle envolve padrões e medição de desempenho.",
-      "Correta: Medir resultados dispensa comparar com objetivos. O correto é: Controle envolve padrões e medição de desempenho. Medir resultados dispensa comparar com objetivos. É incorreta. Controle compara resultados com padrões e orienta correções e aprendizagem.",
-      "Incorreta: Ações corretivas podem modificar processos ou padrões inadequados. A compreensão adequada é: Controle envolve padrões e medição de desempenho."
+      "Alternativa incorreta. Compare a afirmação «Controle envolve padrões e medição de desempenho.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Medir resultados dispensa comparar com objetivos. É incorreta. Controle compara resultados com padrões e orienta correções e aprendizagem.",
+      "Alternativa incorreta. Compare a afirmação «Comparação entre resultado e padrão ajuda identificar desvios.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Medir resultados dispensa comparar com objetivos. É incorreta. Controle compara resultados com padrões e orienta correções e aprendizagem.",
+      "Alternativa indicada pelo gabarito. Medir resultados dispensa comparar com objetivos. É incorreta. Controle compara resultados com padrões e orienta correções e aprendizagem.",
+      "Alternativa incorreta. Compare a afirmação «Ações corretivas podem modificar processos ou padrões inadequados.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Medir resultados dispensa comparar com objetivos. É incorreta. Controle compara resultados com padrões e orienta correções e aprendizagem."
     ]
   },
   {
     "id": "Q-ADM-06-001-04",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-001",
-    "topic": "ADM-06-001",
+    "topic": "Controle compara resultados com padrões e orienta correções e aprendizagem",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -3430,17 +3430,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos. Aplique a distinção: O que fazer se a meta era irrealista desde o início?",
     "challenge": "O que fazer se a meta era irrealista desde o início?",
     "optionComments": [
-      "Correta: Ações corretivas podem modificar processos ou padrões inadequados. Ações corretivas podem modificar processos ou padrões inadequados. Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos.",
-      "Incorreta: Padrões definidos nunca devem ser reavaliados. Não decorre do conceito. A compreensão adequada é: Controle envolve padrões e medição de desempenho.",
-      "Incorreta: Controle se resume a aplicar sanções aos servidores. Generaliza indevidamente. A compreensão adequada é: Controle envolve padrões e medição de desempenho.",
-      "Incorreta: Medir resultados dispensa comparar com objetivos. Confunde características. A compreensão adequada é: Controle envolve padrões e medição de desempenho."
+      "Alternativa indicada pelo gabarito. Ações corretivas podem modificar processos ou padrões inadequados. Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos.",
+      "Alternativa incorreta. Compare a afirmação «Padrões definidos nunca devem ser reavaliados.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Ações corretivas podem modificar processos ou padrões inadequados. Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos.",
+      "Alternativa incorreta. Compare a afirmação «Controle se resume a aplicar sanções aos servidores.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Ações corretivas podem modificar processos ou padrões inadequados. Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos.",
+      "Alternativa incorreta. Compare a afirmação «Medir resultados dispensa comparar com objetivos.» com o princípio: Controle compara resultados com padrões e orienta correções e aprendizagem. A explicação da resposta correta é: Ações corretivas podem modificar processos ou padrões inadequados. Uma biblioteca compara prazo médio de empréstimo com a meta e ajusta o fluxo quando surgem atrasos."
     ]
   },
   {
     "id": "Q-ADM-06-002-01",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-002",
-    "topic": "ADM-06-002",
+    "topic": "Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação",
     "type": "ce",
     "difficulty": "media",
     "stem": "Um indicador isolado prova a causa de qualquer resultado.",
@@ -3456,18 +3456,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um órgão mede tempo médio de atendimento e percentual de solicitações resolvidas, não apenas volume de senhas distribuídas. Aplique a distinção: Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
     "challenge": "Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Indicadores devem ter critérios claros de medição. A compreensão adequada é: Indicadores devem ter critérios claros de medição.",
-      "Correta: A afirmação é falsa porque Indicadores devem ter critérios claros de medição. Indicadores devem ter critérios claros de medição. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: Indicadores devem ter critérios claros de medição. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
+      "Alternativa indicada pelo gabarito. Indicadores devem ter critérios claros de medição. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados."
     ]
   },
   {
     "id": "Q-ADM-06-002-02",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-002",
-    "topic": "ADM-06-002",
+    "topic": "Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação, assinale a alternativa CORRETA.",
     "options": [
       "Indicadores devem ter critérios claros de medição.",
       "Um indicador isolado prova a causa de qualquer resultado.",
@@ -3482,17 +3482,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um órgão mede tempo médio de atendimento e percentual de solicitações resolvidas, não apenas volume de senhas distribuídas. Aplique a distinção: Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
     "challenge": "Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
     "optionComments": [
-      "Correta: Indicadores devem ter critérios claros de medição. Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
-      "Incorreta: Um indicador isolado prova a causa de qualquer resultado. Contraria: Indicadores devem ter critérios claros de medição. A compreensão adequada é: Indicadores devem ter critérios claros de medição.",
-      "Incorreta: Meta e indicador são sempre expressões equivalentes. Contraria: Metas servem como referência para interpretar resultados. A compreensão adequada é: Indicadores devem ter critérios claros de medição.",
-      "Incorreta: Quanto maior o número de atendimentos, melhor a qualidade necessariamente. Contraria: Indicadores de volume e de qualidade podem se complementar. A compreensão adequada é: Indicadores devem ter critérios claros de medição."
+      "Alternativa indicada pelo gabarito. Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
+      "Alternativa incorreta. Compare a afirmação «Um indicador isolado prova a causa de qualquer resultado.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
+      "Alternativa incorreta. Compare a afirmação «Meta e indicador são sempre expressões equivalentes.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
+      "Alternativa incorreta. Compare a afirmação «Quanto maior o número de atendimentos, melhor a qualidade necessariamente.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados."
     ]
   },
   {
     "id": "Q-ADM-06-002-03",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-002",
-    "topic": "ADM-06-002",
+    "topic": "Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação",
     "type": "afirmacoes",
     "difficulty": "dificil",
     "stem": "Analise as afirmações:\nI. Indicadores devem ter critérios claros de medição.\nII. Metas servem como referência para interpretar resultados.\nIII. Quanto maior o número de atendimentos, melhor a qualidade necessariamente.\nQuais estão corretas?",
@@ -3511,18 +3511,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um órgão mede tempo médio de atendimento e percentual de solicitações resolvidas, não apenas volume de senhas distribuídas. Aplique a distinção: Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
     "challenge": "Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
     "optionComments": [
-      "Incorreta: Ignora a II, que também é verdadeira. A compreensão adequada é: Indicadores devem ter critérios claros de medição.",
-      "Correta: I e II são corretas, III contraria o conceito. I e II são verdadeiras; III é falsa porque Indicadores de volume e de qualidade podem se complementar.",
-      "Incorreta: Inclui III, que é falsa, e exclui I. A compreensão adequada é: Indicadores devem ter critérios claros de medição.",
-      "Incorreta: Inclui III, que é falsa. A compreensão adequada é: Indicadores devem ter critérios claros de medição.",
-      "Incorreta: Considera verdadeira apenas III, que é falsa. A compreensão adequada é: Indicadores devem ter critérios claros de medição."
+      "Alternativa incorreta. Compare a afirmação «Apenas I.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Indicadores de volume e de qualidade podem se complementar.",
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras; III é falsa porque Indicadores de volume e de qualidade podem se complementar.",
+      "Alternativa incorreta. Compare a afirmação «Apenas II e III.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Indicadores de volume e de qualidade podem se complementar.",
+      "Alternativa incorreta. Compare a afirmação «I, II e III.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Indicadores de volume e de qualidade podem se complementar.",
+      "Alternativa incorreta. Compare a afirmação «Apenas III.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Indicadores de volume e de qualidade podem se complementar."
     ]
   },
   {
     "id": "Q-ADM-06-002-04",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-002",
-    "topic": "ADM-06-002",
+    "topic": "Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Ao revisar procedimentos, qual conclusão deve ser adotada para evitar um erro conceitual?",
@@ -3540,17 +3540,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Um órgão mede tempo médio de atendimento e percentual de solicitações resolvidas, não apenas volume de senhas distribuídas. Aplique a distinção: Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
     "challenge": "Como evitar que uma meta de velocidade incentive atendimentos incompletos?",
     "optionComments": [
-      "Correta: Metas servem como referência para interpretar resultados. Metas servem como referência para interpretar resultados. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
-      "Incorreta: Meta e indicador são sempre expressões equivalentes. Confunde a finalidade. A compreensão adequada é: Indicadores devem ter critérios claros de medição.",
-      "Incorreta: Quanto maior o número de atendimentos, melhor a qualidade necessariamente. Não respeita os limites. A compreensão adequada é: Indicadores devem ter critérios claros de medição.",
-      "Incorreta: Um indicador isolado prova a causa de qualquer resultado. Elimina condição importante. A compreensão adequada é: Indicadores devem ter critérios claros de medição."
+      "Alternativa indicada pelo gabarito. Metas servem como referência para interpretar resultados. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
+      "Alternativa incorreta. Compare a afirmação «Meta e indicador são sempre expressões equivalentes.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: Metas servem como referência para interpretar resultados. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
+      "Alternativa incorreta. Compare a afirmação «Quanto maior o número de atendimentos, melhor a qualidade necessariamente.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: Metas servem como referência para interpretar resultados. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados.",
+      "Alternativa incorreta. Compare a afirmação «Um indicador isolado prova a causa de qualquer resultado.» com o princípio: Indicadores são medidas de desempenho; padrões e metas fornecem referências para avaliação. A explicação da resposta correta é: Metas servem como referência para interpretar resultados. Indicadores precisam de definição, fonte, periodicidade e unidade de medida. Indicadores de processo acompanham como o trabalho ocorre; de produto medem entregas; de resultado observam mudanças alcançadas. Um número isolado não prova causalidade nem qualidade. A avaliação deve considerar contexto, tendências e possíveis efeitos não desejados."
     ]
   },
   {
     "id": "Q-ADM-06-003-01",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-003",
-    "topic": "ADM-06-003",
+    "topic": "Controle preventivo ocorre antes, concomitante durante e posterior depois da execução",
     "type": "ce",
     "difficulty": "media",
     "stem": "Controle preventivo acontece apenas depois do encerramento.",
@@ -3566,18 +3566,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados. Aplique a distinção: Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
     "challenge": "Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Controle preventivo atua antes da execução. A compreensão adequada é: Controle preventivo atua antes da execução.",
-      "Correta: A afirmação é falsa porque Controle preventivo atua antes da execução. Controle preventivo atua antes da execução. O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: Controle preventivo atua antes da execução. O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador.",
+      "Alternativa indicada pelo gabarito. Controle preventivo atua antes da execução. O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador."
     ]
   },
   {
     "id": "Q-ADM-06-003-02",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-003",
-    "topic": "ADM-06-003",
+    "topic": "Controle preventivo ocorre antes, concomitante durante e posterior depois da execução",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre controle preventivo ocorre antes, concomitante durante e posterior depois da execução, assinale a alternativa CORRETA.",
     "options": [
       "Controle preventivo atua antes da execução.",
       "Controle preventivo acontece apenas depois do encerramento.",
@@ -3592,17 +3592,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados. Aplique a distinção: Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
     "challenge": "Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
     "optionComments": [
-      "Correta: Controle preventivo atua antes da execução. Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador.",
-      "Incorreta: Controle preventivo acontece apenas depois do encerramento. Contraria: Controle preventivo atua antes da execução. A compreensão adequada é: Controle preventivo atua antes da execução.",
-      "Incorreta: Controle concomitante dispensa observar o trabalho em andamento. Contraria: Controle concomitante acompanha a execução. A compreensão adequada é: Controle preventivo atua antes da execução.",
-      "Incorreta: Controle posterior é definido por ser sempre realizado por órgão externo. Contraria: Controle posterior examina atividades já realizadas. A compreensão adequada é: Controle preventivo atua antes da execução."
+      "Alternativa indicada pelo gabarito. Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador.",
+      "Alternativa incorreta. Compare a afirmação «Controle preventivo acontece apenas depois do encerramento.» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador.",
+      "Alternativa incorreta. Compare a afirmação «Controle concomitante dispensa observar o trabalho em andamento.» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador.",
+      "Alternativa incorreta. Compare a afirmação «Controle posterior é definido por ser sempre realizado por órgão externo.» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. O controle preventivo procura evitar falhas antecipadamente, como conferência de requisitos antes de contratar. O concomitante acompanha a atividade enquanto ocorre, permitindo intervenção rápida. O posterior examina atos e resultados já realizados. Os três momentos podem ser combinados e não se confundem com a identidade do órgão controlador."
     ]
   },
   {
     "id": "Q-ADM-06-003-03",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-003",
-    "topic": "ADM-06-003",
+    "topic": "Controle preventivo ocorre antes, concomitante durante e posterior depois da execução",
     "type": "sequencia",
     "difficulty": "dificil",
     "stem": "Julgue as afirmações e selecione a sequência V/F:\nI. Controle preventivo atua antes da execução.\nII. Controle concomitante acompanha a execução.\nIII. Controle preventivo acontece apenas depois do encerramento.\nIV. Controle concomitante dispensa observar o trabalho em andamento.",
@@ -3621,18 +3621,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados. Aplique a distinção: Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
     "challenge": "Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
     "optionComments": [
-      "Correta: Sequência correta: duas proposições válidas e duas falsas. I e II são verdadeiras, III e IV falsas. Controle preventivo ocorre antes, concomitante durante e posterior depois da execução.",
-      "Incorreta: A segunda afirmação é verdadeira e a terceira é falsa. A compreensão adequada é: Controle preventivo atua antes da execução.",
-      "Incorreta: A primeira é verdadeira e a quarta é falsa. A compreensão adequada é: Controle preventivo atua antes da execução.",
-      "Incorreta: A terceira afirmação é falsa. A compreensão adequada é: Controle preventivo atua antes da execução.",
-      "Incorreta: As duas primeiras afirmações são verdadeiras. A compreensão adequada é: Controle preventivo atua antes da execução."
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras, III e IV falsas. Controle preventivo ocorre antes, concomitante durante e posterior depois da execução.",
+      "Alternativa incorreta. Compare a afirmação «V – F – V – F» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Controle preventivo ocorre antes, concomitante durante e posterior depois da execução.",
+      "Alternativa incorreta. Compare a afirmação «F – V – V – F» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Controle preventivo ocorre antes, concomitante durante e posterior depois da execução.",
+      "Alternativa incorreta. Compare a afirmação «V – V – V – F» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Controle preventivo ocorre antes, concomitante durante e posterior depois da execução.",
+      "Alternativa incorreta. Compare a afirmação «F – F – V – V» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: I e II são verdadeiras, III e IV falsas. Controle preventivo ocorre antes, concomitante durante e posterior depois da execução."
     ]
   },
   {
     "id": "Q-ADM-06-003-04",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-003",
-    "topic": "ADM-06-003",
+    "topic": "Controle preventivo ocorre antes, concomitante durante e posterior depois da execução",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -3650,17 +3650,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados. Aplique a distinção: Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
     "challenge": "Qual tipo de controle permite corrigir uma entrega enquanto ainda ocorre?",
     "optionComments": [
-      "Correta: Controle posterior examina atividades já realizadas. Controle posterior examina atividades já realizadas. Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados.",
-      "Incorreta: Controle posterior é definido por ser sempre realizado por órgão externo. Não decorre do conceito. A compreensão adequada é: Controle preventivo atua antes da execução.",
-      "Incorreta: Controle preventivo acontece apenas depois do encerramento. Generaliza indevidamente. A compreensão adequada é: Controle preventivo atua antes da execução.",
-      "Incorreta: Controle concomitante dispensa observar o trabalho em andamento. Confunde características. A compreensão adequada é: Controle preventivo atua antes da execução."
+      "Alternativa indicada pelo gabarito. Controle posterior examina atividades já realizadas. Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados.",
+      "Alternativa incorreta. Compare a afirmação «Controle posterior é definido por ser sempre realizado por órgão externo.» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: Controle posterior examina atividades já realizadas. Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados.",
+      "Alternativa incorreta. Compare a afirmação «Controle preventivo acontece apenas depois do encerramento.» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: Controle posterior examina atividades já realizadas. Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados.",
+      "Alternativa incorreta. Compare a afirmação «Controle concomitante dispensa observar o trabalho em andamento.» com o princípio: Controle preventivo ocorre antes, concomitante durante e posterior depois da execução. A explicação da resposta correta é: Controle posterior examina atividades já realizadas. Antes de publicar edital, a equipe revisa requisitos; durante o contrato, fiscaliza entregas; depois, avalia resultados."
     ]
   },
   {
     "id": "Q-ADM-06-004-01",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-004",
-    "topic": "ADM-06-004",
+    "topic": "Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente",
     "type": "ce",
     "difficulty": "media",
     "stem": "Ação corretiva eficaz sempre dispensa análise de causa.",
@@ -3676,18 +3676,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Após reclamações de atrasos, a equipe identifica falha no fluxo de documentos, testa novo procedimento e acompanha os indicadores. Aplique a distinção: Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
     "challenge": "Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Ação corretiva deve considerar causas dos desvios. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios.",
-      "Correta: A afirmação é falsa porque Ação corretiva deve considerar causas dos desvios. Ação corretiva deve considerar causas dos desvios. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: Ação corretiva deve considerar causas dos desvios. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
+      "Alternativa indicada pelo gabarito. Ação corretiva deve considerar causas dos desvios. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único."
     ]
   },
   {
     "id": "Q-ADM-06-004-02",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-004",
-    "topic": "ADM-06-004",
+    "topic": "Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente, assinale a alternativa CORRETA.",
     "options": [
       "Ação corretiva deve considerar causas dos desvios.",
       "Ação corretiva eficaz sempre dispensa análise de causa.",
@@ -3702,20 +3702,20 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Após reclamações de atrasos, a equipe identifica falha no fluxo de documentos, testa novo procedimento e acompanha os indicadores. Aplique a distinção: Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
     "challenge": "Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
     "optionComments": [
-      "Correta: Ação corretiva deve considerar causas dos desvios. Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
-      "Incorreta: Ação corretiva eficaz sempre dispensa análise de causa. Contraria: Ação corretiva deve considerar causas dos desvios. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios.",
-      "Incorreta: PDCA termina definitivamente após uma única execução. Contraria: PDCA articula planejamento, execução, verificação e ação. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios.",
-      "Incorreta: Melhoria contínua equivale exclusivamente a aumentar metas. Contraria: Melhoria contínua requer acompanhar resultados de mudanças. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios."
+      "Alternativa indicada pelo gabarito. Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
+      "Alternativa incorreta. Compare a afirmação «Ação corretiva eficaz sempre dispensa análise de causa.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
+      "Alternativa incorreta. Compare a afirmação «PDCA termina definitivamente após uma única execução.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
+      "Alternativa incorreta. Compare a afirmação «Melhoria contínua equivale exclusivamente a aumentar metas.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único."
     ]
   },
   {
     "id": "Q-ADM-06-004-03",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-004",
-    "topic": "ADM-06-004",
+    "topic": "Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente",
     "type": "exceto",
     "difficulty": "dificil",
-    "stem": "Assinale a alternativa INCORRETA sobre o tema.",
+    "stem": "Considerando o conceito de ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente, assinale a alternativa INCORRETA.",
     "options": [
       "Ação corretiva deve considerar causas dos desvios.",
       "PDCA articula planejamento, execução, verificação e ação.",
@@ -3730,17 +3730,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Após reclamações de atrasos, a equipe identifica falha no fluxo de documentos, testa novo procedimento e acompanha os indicadores. Aplique a distinção: Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
     "challenge": "Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
     "optionComments": [
-      "Incorreta: Ação corretiva deve considerar causas dos desvios. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios.",
-      "Incorreta: PDCA articula planejamento, execução, verificação e ação. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios.",
-      "Correta: PDCA termina definitivamente após uma única execução. O correto é: Ação corretiva deve considerar causas dos desvios. PDCA termina definitivamente após uma única execução. É incorreta. Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente.",
-      "Incorreta: Melhoria contínua requer acompanhar resultados de mudanças. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios."
+      "Alternativa incorreta. Compare a afirmação «Ação corretiva deve considerar causas dos desvios.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: PDCA termina definitivamente após uma única execução. É incorreta. Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente.",
+      "Alternativa incorreta. Compare a afirmação «PDCA articula planejamento, execução, verificação e ação.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: PDCA termina definitivamente após uma única execução. É incorreta. Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente.",
+      "Alternativa indicada pelo gabarito. PDCA termina definitivamente após uma única execução. É incorreta. Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente.",
+      "Alternativa incorreta. Compare a afirmação «Melhoria contínua requer acompanhar resultados de mudanças.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: PDCA termina definitivamente após uma única execução. É incorreta. Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente."
     ]
   },
   {
     "id": "Q-ADM-06-004-04",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-004",
-    "topic": "ADM-06-004",
+    "topic": "Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Ao revisar procedimentos, qual conclusão deve ser adotada para evitar um erro conceitual?",
@@ -3758,17 +3758,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Após reclamações de atrasos, a equipe identifica falha no fluxo de documentos, testa novo procedimento e acompanha os indicadores. Aplique a distinção: Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
     "challenge": "Por que trocar um formulário sem investigar a causa pode não resolver atrasos?",
     "optionComments": [
-      "Correta: PDCA articula planejamento, execução, verificação e ação. PDCA articula planejamento, execução, verificação e ação. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
-      "Incorreta: PDCA termina definitivamente após uma única execução. Confunde a finalidade. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios.",
-      "Incorreta: Melhoria contínua equivale exclusivamente a aumentar metas. Não respeita os limites. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios.",
-      "Incorreta: Ação corretiva eficaz sempre dispensa análise de causa. Elimina condição importante. A compreensão adequada é: Ação corretiva deve considerar causas dos desvios."
+      "Alternativa indicada pelo gabarito. PDCA articula planejamento, execução, verificação e ação. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
+      "Alternativa incorreta. Compare a afirmação «PDCA termina definitivamente após uma única execução.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: PDCA articula planejamento, execução, verificação e ação. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
+      "Alternativa incorreta. Compare a afirmação «Melhoria contínua equivale exclusivamente a aumentar metas.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: PDCA articula planejamento, execução, verificação e ação. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único.",
+      "Alternativa incorreta. Compare a afirmação «Ação corretiva eficaz sempre dispensa análise de causa.» com o princípio: Ação corretiva enfrenta desvios; melhoria contínua procura aperfeiçoar processos de modo recorrente. A explicação da resposta correta é: PDCA articula planejamento, execução, verificação e ação. Ao detectar desvio, a gestão deve investigar causas antes de escolher medidas. Corrigir sintoma sem eliminar causa pode repetir o problema. O ciclo PDCA organiza planejar, executar, verificar e agir, estimulando aprendizagem e padronização de melhorias eficazes. O ciclo é iterativo, não evento único."
     ]
   },
   {
     "id": "Q-ADM-06-005-01",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-005",
-    "topic": "ADM-06-005",
+    "topic": "Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais",
     "type": "ce",
     "difficulty": "media",
     "stem": "Controle gerencial substitui todas as exigências legais.",
@@ -3784,18 +3784,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos. Aplique a distinção: Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "challenge": "Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "optionComments": [
-      "Incorreta: A afirmação contraria o conceito: Controle gerencial fornece informação para decisões administrativas. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas.",
-      "Correta: A afirmação é falsa porque Controle gerencial fornece informação para decisões administrativas. Controle gerencial fornece informação para decisões administrativas. O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade."
+      "Alternativa incorreta. Compare a afirmação «CERTO» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: Controle gerencial fornece informação para decisões administrativas. O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade.",
+      "Alternativa indicada pelo gabarito. Controle gerencial fornece informação para decisões administrativas. O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade."
     ]
   },
   {
     "id": "Q-ADM-06-005-02",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-005",
-    "topic": "ADM-06-005",
+    "topic": "Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais",
     "type": "classica",
     "difficulty": "media",
-    "stem": "Considerando o tema, assinale a afirmação CORRETA.",
+    "stem": "Sobre controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais, assinale a alternativa CORRETA.",
     "options": [
       "Controle gerencial fornece informação para decisões administrativas.",
       "Controle gerencial substitui todas as exigências legais.",
@@ -3810,17 +3810,17 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos. Aplique a distinção: Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "challenge": "Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "optionComments": [
-      "Correta: Controle gerencial fornece informação para decisões administrativas. Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade.",
-      "Incorreta: Controle gerencial substitui todas as exigências legais. Contraria: Controle gerencial fornece informação para decisões administrativas. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas.",
-      "Incorreta: Controle externo é sempre feito pela chefia imediata. Contraria: Controle interno e externo possuem competências institucionais próprias. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas.",
-      "Incorreta: Controle social exclui o acesso dos cidadãos a informações públicas. Contraria: Controle social envolve participação e fiscalização pela sociedade. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas."
+      "Alternativa indicada pelo gabarito. Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade.",
+      "Alternativa incorreta. Compare a afirmação «Controle gerencial substitui todas as exigências legais.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade.",
+      "Alternativa incorreta. Compare a afirmação «Controle externo é sempre feito pela chefia imediata.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade.",
+      "Alternativa incorreta. Compare a afirmação «Controle social exclui o acesso dos cidadãos a informações públicas.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. O controle gerencial acompanha processos, metas e recursos para orientar decisões. Na Administração Pública, há controle interno em cada Poder e controle externo exercido conforme a Constituição, com papel relevante do Legislativo e dos tribunais de contas. O controle social envolve acompanhamento e participação da sociedade. Esses mecanismos têm fundamentos e competências distintos; controle gerencial não substitui o controle de legalidade."
     ]
   },
   {
     "id": "Q-ADM-06-005-03",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-005",
-    "topic": "ADM-06-005",
+    "topic": "Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais",
     "type": "afirmacoes",
     "difficulty": "dificil",
     "stem": "Analise as afirmações:\nI. Controle gerencial fornece informação para decisões administrativas.\nII. Controle interno e externo possuem competências institucionais próprias.\nIII. Controle social exclui o acesso dos cidadãos a informações públicas.\nQuais estão corretas?",
@@ -3839,18 +3839,18 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos. Aplique a distinção: Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "challenge": "Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "optionComments": [
-      "Incorreta: Ignora a II, que também é verdadeira. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas.",
-      "Correta: I e II são corretas, III contraria o conceito. I e II são verdadeiras; III é falsa porque Controle social envolve participação e fiscalização pela sociedade.",
-      "Incorreta: Inclui III, que é falsa, e exclui I. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas.",
-      "Incorreta: Inclui III, que é falsa. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas.",
-      "Incorreta: Considera verdadeira apenas III, que é falsa. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas."
+      "Alternativa incorreta. Compare a afirmação «Apenas I.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Controle social envolve participação e fiscalização pela sociedade.",
+      "Alternativa indicada pelo gabarito. I e II são verdadeiras; III é falsa porque Controle social envolve participação e fiscalização pela sociedade.",
+      "Alternativa incorreta. Compare a afirmação «Apenas II e III.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Controle social envolve participação e fiscalização pela sociedade.",
+      "Alternativa incorreta. Compare a afirmação «I, II e III.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Controle social envolve participação e fiscalização pela sociedade.",
+      "Alternativa incorreta. Compare a afirmação «Apenas III.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: I e II são verdadeiras; III é falsa porque Controle social envolve participação e fiscalização pela sociedade."
     ]
   },
   {
     "id": "Q-ADM-06-005-04",
     "moduleId": "ADM-06",
     "subtopicId": "ADM-06-005",
-    "topic": "ADM-06-005",
+    "topic": "Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais",
     "type": "classica",
     "difficulty": "dificil",
     "stem": "Uma unidade precisa decidir como aplicar o conteúdo em um caso concreto. Qual proposição oferece a orientação tecnicamente correta?",
@@ -3868,10 +3868,10 @@ export const QUESTIONS = [
     "newExample": "Em outro contexto: Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos. Aplique a distinção: Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "challenge": "Por que cumprir uma meta não dispensa verificar legalidade do gasto?",
     "optionComments": [
-      "Correta: Controle social envolve participação e fiscalização pela sociedade. Controle social envolve participação e fiscalização pela sociedade. Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos.",
-      "Incorreta: Controle social exclui o acesso dos cidadãos a informações públicas. Não decorre do conceito. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas.",
-      "Incorreta: Controle gerencial substitui todas as exigências legais. Generaliza indevidamente. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas.",
-      "Incorreta: Controle externo é sempre feito pela chefia imediata. Confunde características. A compreensão adequada é: Controle gerencial fornece informação para decisões administrativas."
+      "Alternativa indicada pelo gabarito. Controle social envolve participação e fiscalização pela sociedade. Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos.",
+      "Alternativa incorreta. Compare a afirmação «Controle social exclui o acesso dos cidadãos a informações públicas.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: Controle social envolve participação e fiscalização pela sociedade. Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos.",
+      "Alternativa incorreta. Compare a afirmação «Controle gerencial substitui todas as exigências legais.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: Controle social envolve participação e fiscalização pela sociedade. Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos.",
+      "Alternativa incorreta. Compare a afirmação «Controle externo é sempre feito pela chefia imediata.» com o princípio: Controle gerencial apoia a gestão; controle da Administração Pública envolve mecanismos internos, externos e sociais. A explicação da resposta correta é: Controle social envolve participação e fiscalização pela sociedade. Uma secretaria monitora gastos e metas; órgão de controle interno verifica procedimentos; cidadãos acompanham dados públicos."
     ]
   },
   {
@@ -5738,10 +5738,10 @@ export const QUESTIONS = [
     "newExample": "Um almoxarifado agrupa canetas como material de expediente, descreve tipo de tinta e ponta para a compra e atribui um código de estoque a cada item padronizado.",
     "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
     "optionComments": [
-      "Incorreta como resposta ao comando: esta proposição é verdadeira. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
-      "Correta como resposta ao comando INCORRETA: Dois materiais da mesma classe devem possuir obrigatoriamente a mesma especificação técnica. A compreensão adequada é: Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
-      "Incorreta como resposta ao comando: a análise contextual é necessária. Classificação organiza grupos; especificação define requisitos; codificação identifica itens.",
-      "Incorreta como resposta ao comando: esta proposição é verdadeira. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico."
+      "Alternativa incorreta. Compare a afirmação «Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.» com o princípio: Classificação, especificação e codificação de materiais A explicação da resposta correta é: Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+      "Alternativa indicada pelo gabarito. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+      "Alternativa incorreta. Compare a afirmação «A aplicação depende das condições e da finalidade administrativa.» com o princípio: Classificação, especificação e codificação de materiais A explicação da resposta correta é: Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+      "Alternativa incorreta. Compare a afirmação «Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.» com o princípio: Classificação, especificação e codificação de materiais A explicação da resposta correta é: Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados."
     ]
   },
   {
@@ -6070,10 +6070,10 @@ export const QUESTIONS = [
     "newExample": "Se um órgão consome 10 caixas por dia e o fornecedor leva cinco dias, precisa cobrir 50 caixas durante o prazo, além da reserva calculada para incertezas.",
     "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
     "optionComments": [
-      "Incorreta como resposta ao comando: esta proposição é verdadeira. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
-      "Incorreta como resposta ao comando: a análise contextual é necessária. Reserva protege; ponto aciona compra; giro descreve movimentação.",
-      "Incorreta como resposta ao comando: esta proposição é verdadeira. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
-      "Correta como resposta ao comando INCORRETA: Giro elevado comprova, isoladamente, que não haverá ruptura de estoque. A compreensão adequada é: O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada."
+      "Alternativa incorreta. Compare a afirmação «O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.» com o princípio: Estoque de segurança, ponto de pedido e giro A explicação da resposta correta é: O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+      "Alternativa incorreta. Compare a afirmação «A aplicação depende das condições e da finalidade administrativa.» com o princípio: Estoque de segurança, ponto de pedido e giro A explicação da resposta correta é: O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+      "Alternativa incorreta. Compare a afirmação «O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.» com o princípio: Estoque de segurança, ponto de pedido e giro A explicação da resposta correta é: O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+      "Alternativa indicada pelo gabarito. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança."
     ]
   },
   {
