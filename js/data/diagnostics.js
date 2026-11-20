@@ -367,6 +367,97 @@ export const DIAGNOSTICS = Object.freeze({
     "front": "Como você diferenciaria os conceitos centrais de autotutela, segurança jurídica e continuidade em uma situação concreta?",
     "back": "Autotutela permite à Administração revisar seus atos nos limites do ordenamento. Segurança jurídica valoriza estabilidade e proteção da confiança legítima. Exemplo: Uma administração identifica ilegalidade em ato anterior e examina sua anulação, respeitando garantias aplicáveis."
   }
+],
+"DA-16": [
+  {
+    "subtopicId": "DA-16-001",
+    "front": "Qual a diferença ou limite essencial de administração direta e órgãos públicos? Dê um exemplo de concurso.",
+    "back": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes. Exemplo: Uma secretaria estadual atua em nome do próprio estado, não como pessoa jurídica distinta."
+  },
+  {
+    "subtopicId": "DA-16-002",
+    "front": "Qual a diferença ou limite essencial de autarquias e fundações públicas? Dê um exemplo de concurso.",
+    "back": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise. Exemplo: Uma autarquia previdenciária tem personalidade própria e se sujeita à supervisão finalística prevista em lei."
+  },
+  {
+    "subtopicId": "DA-16-003",
+    "front": "Qual a diferença ou limite essencial de empresas públicas e sociedades de economia mista? Dê um exemplo de concurso.",
+    "back": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal. Exemplo: Uma estatal que presta serviço público possui personalidade de direito privado, sem se confundir com órgão."
+  },
+  {
+    "subtopicId": "DA-16-004",
+    "front": "Qual a diferença ou limite essencial de centralização e descentralização? Dê um exemplo de concurso.",
+    "back": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico. Exemplo: Um município presta serviço por secretaria e descentraliza outra atividade a autarquia."
+  },
+  {
+    "subtopicId": "DA-16-005",
+    "front": "Qual a diferença ou limite essencial de concentração e desconcentração? Dê um exemplo de concurso.",
+    "back": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica. Exemplo: Um ministério cria unidades regionais sem constituir novas pessoas jurídicas."
+  },
+  {
+    "subtopicId": "DA-16-006",
+    "front": "Qual a diferença ou limite essencial de entidades e vínculos de supervisão? Dê um exemplo de concurso.",
+    "back": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos. Exemplo: Um ministério acompanha metas de autarquia vinculada, sem dirigir cada ato como chefia interna."
+  }
+],
+"DA-17": [
+  {
+    "subtopicId": "DA-17-001",
+    "front": "Qual a diferença ou limite essencial de conceito e classificação de agentes públicos? Dê um exemplo de concurso.",
+    "back": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração. Exemplo: Um mesário convocado pode exercer função pública temporária sem ocupar cargo efetivo."
+  },
+  {
+    "subtopicId": "DA-17-002",
+    "front": "Qual a diferença ou limite essencial de cargo, emprego e função pública? Dê um exemplo de concurso.",
+    "back": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais. Exemplo: Uma empresa pública contrata empregado público, enquanto autarquia pode prover cargo estatutário."
+  },
+  {
+    "subtopicId": "DA-17-003",
+    "front": "Qual a diferença ou limite essencial de ingresso, provimento e vacância? Dê um exemplo de concurso.",
+    "back": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais. Exemplo: Após concurso, candidata é nomeada e toma posse conforme regras; exoneração posterior gera vacância."
+  },
+  {
+    "subtopicId": "DA-17-004",
+    "front": "Qual a diferença ou limite essencial de direitos, deveres e proibições? Dê um exemplo de concurso.",
+    "back": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais. Exemplo: Servidor estadual consulta seu estatuto próprio antes de presumir licença prevista em lei federal."
+  },
+  {
+    "subtopicId": "DA-17-005",
+    "front": "Qual a diferença ou limite essencial de responsabilidades e acumulação? Dê um exemplo de concurso.",
+    "back": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários. Exemplo: Uma professora verifica se o segundo cargo é acumulável constitucionalmente e se os horários são compatíveis."
+  },
+  {
+    "subtopicId": "DA-17-006",
+    "front": "Qual a diferença ou limite essencial de regimes jurídicos e legislação aplicável? Dê um exemplo de concurso.",
+    "back": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal. Exemplo: Antes de responder sobre licença de servidor do RN, o candidato identifica o regime local aplicável."
+  }
+],
+"DA-18": [
+  {
+    "subtopicId": "DA-18-001",
+    "front": "Qual a diferença ou limite essencial de poder hierárquico? Dê um exemplo de concurso.",
+    "back": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas. Exemplo: Uma chefia redistribui tarefas entre unidades subordinadas dentro de suas competências."
+  },
+  {
+    "subtopicId": "DA-18-002",
+    "front": "Qual a diferença ou limite essencial de poder disciplinar? Dê um exemplo de concurso.",
+    "back": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes. Exemplo: A administração instaura procedimento adequado para apurar possível infração funcional."
+  },
+  {
+    "subtopicId": "DA-18-003",
+    "front": "Qual a diferença ou limite essencial de poder regulamentar e normativo? Dê um exemplo de concurso.",
+    "back": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos. Exemplo: Um decreto detalha procedimentos de execução de lei sem inovar contra seu conteúdo."
+  },
+  {
+    "subtopicId": "DA-18-004",
+    "front": "Qual a diferença ou limite essencial de poder de polícia? Dê um exemplo de concurso.",
+    "back": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle. Exemplo: Fiscalização sanitária verifica requisitos de funcionamento de estabelecimento conforme a lei."
+  },
+  {
+    "subtopicId": "DA-18-005",
+    "front": "Qual a diferença ou limite essencial de abuso de poder: excesso e desvio de finalidade? Dê um exemplo de concurso.",
+    "back": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei. Exemplo: Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato."
+  }
 ]
 });
 

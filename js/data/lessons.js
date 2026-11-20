@@ -901,6 +901,193 @@ export const LESSONS = {
   "summary": "Autotutela permite à Administração revisar seus atos nos limites do ordenamento. Segurança jurídica valoriza estabilidade e proteção da confiança legítima.",
   "reviewQuestion": "Por que a seguinte afirmação está incorreta: Revogação e anulação são idênticas quanto aos fundamentos e aos efeitos.",
   "reviewAnswer": "Autotutela permite à Administração revisar seus atos nos limites do ordenamento. Segurança jurídica valoriza estabilidade e proteção da confiança legítima. Uma administração identifica ilegalidade em ato anterior e examina sua anulação, respeitando garantias aplicáveis."
+},
+"DA-16-001": {
+  "id": "DA-16-001",
+  "objective": "Compreender administração direta e órgãos públicos, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria.",
+  "explanation": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Uma secretaria estadual atua em nome do próprio estado, não como pessoa jurídica distinta.",
+  "examTip": "A banca pode afirmar indevidamente: Todo órgão público possui personalidade jurídica própria e patrimônio autônomo. Também é incorreto afirmar: A secretaria municipal é entidade autônoma da administração indireta.",
+  "summary": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+  "reviewQuestion": "Por que está errada a afirmação: Todo órgão público possui personalidade jurídica própria e patrimônio autônomo.",
+  "reviewAnswer": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes. Exemplo: Uma secretaria estadual atua em nome do próprio estado, não como pessoa jurídica distinta."
+},
+"DA-16-002": {
+  "id": "DA-16-002",
+  "objective": "Compreender autarquias e fundações públicas, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica.",
+  "explanation": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Uma autarquia previdenciária tem personalidade própria e se sujeita à supervisão finalística prevista em lei.",
+  "examTip": "A banca pode afirmar indevidamente: Autarquias são criadas por registro privado, sem lei específica. Também é incorreto afirmar: Toda fundação pública possui obrigatoriamente personalidade de direito privado.",
+  "summary": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+  "reviewQuestion": "Por que está errada a afirmação: Autarquias são criadas por registro privado, sem lei específica.",
+  "reviewAnswer": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise. Exemplo: Uma autarquia previdenciária tem personalidade própria e se sujeita à supervisão finalística prevista em lei."
+},
+"DA-16-003": {
+  "id": "DA-16-003",
+  "objective": "Compreender empresas públicas e sociedades de economia mista, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito.",
+  "explanation": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Uma estatal que presta serviço público possui personalidade de direito privado, sem se confundir com órgão.",
+  "examTip": "A banca pode afirmar indevidamente: Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora. Também é incorreto afirmar: Empresa pública e sociedade de economia mista são órgãos da administração direta.",
+  "summary": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+  "reviewQuestion": "Por que está errada a afirmação: Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora.",
+  "reviewAnswer": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal. Exemplo: Uma estatal que presta serviço público possui personalidade de direito privado, sem se confundir com órgão."
+},
+"DA-16-004": {
+  "id": "DA-16-004",
+  "objective": "Compreender centralização e descentralização, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos.",
+  "explanation": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Um município presta serviço por secretaria e descentraliza outra atividade a autarquia.",
+  "examTip": "A banca pode afirmar indevidamente: Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica. Também é incorreto afirmar: Criar departamentos internos equivale sempre à criação de entidades descentralizadas.",
+  "summary": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+  "reviewQuestion": "Por que está errada a afirmação: Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+  "reviewAnswer": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico. Exemplo: Um município presta serviço por secretaria e descentraliza outra atividade a autarquia."
+},
+"DA-16-005": {
+  "id": "DA-16-005",
+  "objective": "Compreender concentração e desconcentração, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica.",
+  "explanation": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Um ministério cria unidades regionais sem constituir novas pessoas jurídicas.",
+  "examTip": "A banca pode afirmar indevidamente: Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Também é incorreto afirmar: Concentração é sinônimo de concessão de serviço público a particular.",
+  "summary": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.",
+  "reviewQuestion": "Por que está errada a afirmação: Desconcentração cria necessariamente nova pessoa jurídica na administração indireta.",
+  "reviewAnswer": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica. Exemplo: Um ministério cria unidades regionais sem constituir novas pessoas jurídicas."
+},
+"DA-16-006": {
+  "id": "DA-16-006",
+  "objective": "Compreender entidades e vínculos de supervisão, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+  "explanation": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Um ministério acompanha metas de autarquia vinculada, sem dirigir cada ato como chefia interna.",
+  "examTip": "A banca pode afirmar indevidamente: O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério. Também é incorreto afirmar: A administração indireta está dispensada de qualquer controle público por ter autonomia.",
+  "summary": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+  "reviewQuestion": "Por que está errada a afirmação: O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+  "reviewAnswer": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos. Exemplo: Um ministério acompanha metas de autarquia vinculada, sem dirigir cada ato como chefia interna."
+},
+"DA-17-001": {
+  "id": "DA-17-001",
+  "objective": "Compreender conceito e classificação de agentes públicos, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.",
+  "explanation": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. Em matérias de servidores, normas federais não devem ser automaticamente transpostas ao Rio Grande do Norte.",
+  "example": "Um mesário convocado pode exercer função pública temporária sem ocupar cargo efetivo.",
+  "examTip": "A banca pode afirmar indevidamente: Somente ocupantes de cargo efetivo podem ser considerados agentes públicos. Também é incorreto afirmar: Todo agente público possui vínculo estatutário e remuneração permanente.",
+  "summary": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.",
+  "reviewQuestion": "Por que está errada a afirmação: Somente ocupantes de cargo efetivo podem ser considerados agentes públicos.",
+  "reviewAnswer": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração. Exemplo: Um mesário convocado pode exercer função pública temporária sem ocupar cargo efetivo."
+},
+"DA-17-002": {
+  "id": "DA-17-002",
+  "objective": "Compreender cargo, emprego e função pública, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio.",
+  "explanation": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. Em matérias de servidores, normas federais não devem ser automaticamente transpostas ao Rio Grande do Norte.",
+  "example": "Uma empresa pública contrata empregado público, enquanto autarquia pode prover cargo estatutário.",
+  "examTip": "A banca pode afirmar indevidamente: Emprego público e cargo público são expressões idênticas em todos os regimes. Também é incorreto afirmar: Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado.",
+  "summary": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+  "reviewQuestion": "Por que está errada a afirmação: Emprego público e cargo público são expressões idênticas em todos os regimes.",
+  "reviewAnswer": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais. Exemplo: Uma empresa pública contrata empregado público, enquanto autarquia pode prover cargo estatutário."
+},
+"DA-17-003": {
+  "id": "DA-17-003",
+  "objective": "Compreender ingresso, provimento e vacância, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.",
+  "explanation": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. Em matérias de servidores, normas federais não devem ser automaticamente transpostas ao Rio Grande do Norte.",
+  "example": "Após concurso, candidata é nomeada e toma posse conforme regras; exoneração posterior gera vacância.",
+  "examTip": "A banca pode afirmar indevidamente: Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso. Também é incorreto afirmar: Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar.",
+  "summary": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.",
+  "reviewQuestion": "Por que está errada a afirmação: Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso.",
+  "reviewAnswer": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais. Exemplo: Após concurso, candidata é nomeada e toma posse conforme regras; exoneração posterior gera vacância."
+},
+"DA-17-004": {
+  "id": "DA-17-004",
+  "objective": "Compreender direitos, deveres e proibições, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais.",
+  "explanation": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. Em matérias de servidores, normas federais não devem ser automaticamente transpostas ao Rio Grande do Norte.",
+  "example": "Servidor estadual consulta seu estatuto próprio antes de presumir licença prevista em lei federal.",
+  "examTip": "A banca pode afirmar indevidamente: As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual. Também é incorreto afirmar: Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento.",
+  "summary": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+  "reviewQuestion": "Por que está errada a afirmação: As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.",
+  "reviewAnswer": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais. Exemplo: Servidor estadual consulta seu estatuto próprio antes de presumir licença prevista em lei federal."
+},
+"DA-17-005": {
+  "id": "DA-17-005",
+  "objective": "Compreender responsabilidades e acumulação, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera.",
+  "explanation": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. Em matérias de servidores, normas federais não devem ser automaticamente transpostas ao Rio Grande do Norte.",
+  "example": "Uma professora verifica se o segundo cargo é acumulável constitucionalmente e se os horários são compatíveis.",
+  "examTip": "A banca pode afirmar indevidamente: Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. Também é incorreto afirmar: A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+  "summary": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.",
+  "reviewQuestion": "Por que está errada a afirmação: Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento.",
+  "reviewAnswer": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários. Exemplo: Uma professora verifica se o segundo cargo é acumulável constitucionalmente e se os horários são compatíveis."
+},
+"DA-17-006": {
+  "id": "DA-17-006",
+  "objective": "Compreender regimes jurídicos e legislação aplicável, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente.",
+  "explanation": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. Em matérias de servidores, normas federais não devem ser automaticamente transpostas ao Rio Grande do Norte.",
+  "example": "Antes de responder sobre licença de servidor do RN, o candidato identifica o regime local aplicável.",
+  "examTip": "A banca pode afirmar indevidamente: A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios. Também é incorreto afirmar: Empregados públicos e servidores estatutários possuem necessariamente o mesmo vínculo jurídico.",
+  "summary": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+  "reviewQuestion": "Por que está errada a afirmação: A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.",
+  "reviewAnswer": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal. Exemplo: Antes de responder sobre licença de servidor do RN, o candidato identifica o regime local aplicável."
+},
+"DA-18-001": {
+  "id": "DA-18-001",
+  "objective": "Compreender poder hierárquico, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
+  "explanation": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Uma chefia redistribui tarefas entre unidades subordinadas dentro de suas competências.",
+  "examTip": "A banca pode afirmar indevidamente: Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação. Também é incorreto afirmar: A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.",
+  "summary": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+  "reviewQuestion": "Por que está errada a afirmação: Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação.",
+  "reviewAnswer": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas. Exemplo: Uma chefia redistribui tarefas entre unidades subordinadas dentro de suas competências."
+},
+"DA-18-002": {
+  "id": "DA-18-002",
+  "objective": "Compreender poder disciplinar, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais.",
+  "explanation": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "A administração instaura procedimento adequado para apurar possível infração funcional.",
+  "examTip": "A banca pode afirmar indevidamente: Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. Também é incorreto afirmar: A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa.",
+  "summary": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+  "reviewQuestion": "Por que está errada a afirmação: Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+  "reviewAnswer": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes. Exemplo: A administração instaura procedimento adequado para apurar possível infração funcional."
+},
+"DA-18-003": {
+  "id": "DA-18-003",
+  "objective": "Compreender poder regulamentar e normativo, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+  "explanation": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Um decreto detalha procedimentos de execução de lei sem inovar contra seu conteúdo.",
+  "examTip": "A banca pode afirmar indevidamente: Regulamento executivo pode contrariar livremente a lei que pretende executar. Também é incorreto afirmar: Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa.",
+  "summary": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
+  "reviewQuestion": "Por que está errada a afirmação: Regulamento executivo pode contrariar livremente a lei que pretende executar.",
+  "reviewAnswer": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos. Exemplo: Um decreto detalha procedimentos de execução de lei sem inovar contra seu conteúdo."
+},
+"DA-18-004": {
+  "id": "DA-18-004",
+  "objective": "Compreender poder de polícia, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
+  "explanation": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Fiscalização sanitária verifica requisitos de funcionamento de estabelecimento conforme a lei.",
+  "examTip": "A banca pode afirmar indevidamente: Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal. Também é incorreto afirmar: Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese.",
+  "summary": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
+  "reviewQuestion": "Por que está errada a afirmação: Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+  "reviewAnswer": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle. Exemplo: Fiscalização sanitária verifica requisitos de funcionamento de estabelecimento conforme a lei."
+},
+"DA-18-005": {
+  "id": "DA-18-005",
+  "objective": "Compreender abuso de poder: excesso e desvio de finalidade, identificar limites jurídicos e aplicar a distinção em provas de nível médio.",
+  "concept": "Excesso de poder ocorre quando agente extrapola limites de competência.",
+  "explanation": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei. A análise de concursos exige reconhecer a natureza da pessoa jurídica ou do vínculo, verificar a competência e identificar a norma aplicável. A distinção não se resolve apenas pelo nome do órgão ou do cargo. Evite generalizações e observe as exceções legais quando existirem. A validade de cada atuação depende do contexto jurídico concreto.",
+  "example": "Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato.",
+  "examTip": "A banca pode afirmar indevidamente: Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Também é incorreto afirmar: Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
+  "summary": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+  "reviewQuestion": "Por que está errada a afirmação: Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência.",
+  "reviewAnswer": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei. Exemplo: Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato."
 }
 };
 export const getLesson = id => LESSONS[id] || null;

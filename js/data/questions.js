@@ -9063,6 +9063,1888 @@ export const QUESTIONS = [
     "examTip": "Diferencie a regra jurídica ou administrativa de afirmações absolutas que a distorcem.",
     "newExample": "Uma administração identifica ilegalidade em ato anterior e examina sua anulação, respeitando garantias aplicáveis.",
     "challenge": "Identifique a falha conceitual da afirmação: Continuidade do serviço público autoriza ignorar direitos e controles legais."
+  },
+  {
+    "id": "Q-DA-16-001-01",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-001",
+    "topic": "Administração direta e órgãos públicos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Errado seria marcar esta opção: Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria.",
+      "Correto: Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria."
+    ],
+    "explanation": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+    "concept": "Administração direta e órgãos públicos",
+    "trap": "Todo órgão público possui personalidade jurídica própria e patrimônio autônomo.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma secretaria estadual atua em nome do próprio estado, não como pessoa jurídica distinta.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A secretaria municipal é entidade autônoma da administração indireta."
+  },
+  {
+    "id": "Q-DA-16-001-02",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-001",
+    "topic": "Administração direta e órgãos públicos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre administração direta e órgãos públicos.",
+    "options": [
+      "Todo órgão público possui personalidade jurídica própria e patrimônio autônomo.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "A secretaria municipal é entidade autônoma da administração indireta.",
+      "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: Todo órgão público possui personalidade jurídica própria e patrimônio autônomo. Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria.",
+      "Incorreta: os limites jurídicos importam. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+      "Incorreta: A secretaria municipal é entidade autônoma da administração indireta. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+      "Correta: Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria."
+    ],
+    "explanation": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+    "concept": "Administração direta e órgãos públicos",
+    "trap": "Todo órgão público possui personalidade jurídica própria e patrimônio autônomo.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma secretaria estadual atua em nome do próprio estado, não como pessoa jurídica distinta.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A secretaria municipal é entidade autônoma da administração indireta."
+  },
+  {
+    "id": "Q-DA-16-001-03",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-001",
+    "topic": "Administração direta e órgãos públicos",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria.\nII. Todo órgão público possui personalidade jurídica própria e patrimônio autônomo.\nIII. Órgãos são centros de competências e podem integrar diferentes Poderes.\nIV. A secretaria municipal é entidade autônoma da administração indireta.\nMarque a sequência correta.",
+    "options": [
+      "V – F – F – V",
+      "V – V – F – F",
+      "V – F – V – F",
+      "F – V – F – V",
+      "F – F – V – V"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: I e III verdadeiras, II e IV falsas. Todo órgão público possui personalidade jurídica própria e patrimônio autônomo. A secretaria municipal é entidade autônoma da administração indireta.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Todo órgão público possui personalidade jurídica própria e patrimônio autônomo. A secretaria municipal é entidade autônoma da administração indireta.",
+      "Correta: I e III verdadeiras, II e IV falsas. Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Todo órgão público possui personalidade jurídica própria e patrimônio autônomo. A secretaria municipal é entidade autônoma da administração indireta.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Todo órgão público possui personalidade jurídica própria e patrimônio autônomo. A secretaria municipal é entidade autônoma da administração indireta."
+    ],
+    "explanation": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+    "concept": "Administração direta e órgãos públicos",
+    "trap": "Todo órgão público possui personalidade jurídica própria e patrimônio autônomo.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma secretaria estadual atua em nome do próprio estado, não como pessoa jurídica distinta.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A secretaria municipal é entidade autônoma da administração indireta."
+  },
+  {
+    "id": "Q-DA-16-001-04",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-001",
+    "topic": "Administração direta e órgãos públicos",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "A secretaria municipal é entidade autônoma da administração indireta.",
+      "A interpretação exige atenção ao regime jurídico e aos limites aplicáveis.",
+      "Órgãos são centros de competências e podem integrar diferentes Poderes.",
+      "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "É a exceção: A secretaria municipal é entidade autônoma da administração indireta. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+      "Verdadeira: as regras dependem do contexto e dos limites.",
+      "Verdadeira: Órgãos são centros de competências e podem integrar diferentes Poderes.",
+      "Verdadeira: Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria."
+    ],
+    "explanation": "Órgãos integram pessoas políticas e, em regra, não possuem personalidade jurídica própria. Órgãos são centros de competências e podem integrar diferentes Poderes.",
+    "concept": "Administração direta e órgãos públicos",
+    "trap": "Todo órgão público possui personalidade jurídica própria e patrimônio autônomo.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma secretaria estadual atua em nome do próprio estado, não como pessoa jurídica distinta.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A secretaria municipal é entidade autônoma da administração indireta."
+  },
+  {
+    "id": "Q-DA-16-002-01",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-002",
+    "topic": "Autarquias e fundações públicas",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Autarquias são criadas por registro privado, sem lei específica.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreto: Autarquias são criadas por registro privado, sem lei específica. Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica.",
+      "Correto marcar ERRADO: Autarquias são criadas por registro privado, sem lei específica. Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica."
+    ],
+    "explanation": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+    "concept": "Autarquias e fundações públicas",
+    "trap": "Autarquias são criadas por registro privado, sem lei específica.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma autarquia previdenciária tem personalidade própria e se sujeita à supervisão finalística prevista em lei.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda fundação pública possui obrigatoriamente personalidade de direito privado."
+  },
+  {
+    "id": "Q-DA-16-002-02",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-002",
+    "topic": "Autarquias e fundações públicas",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre autarquias e fundações públicas.",
+    "options": [
+      "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "Toda fundação pública possui obrigatoriamente personalidade de direito privado.",
+      "Autarquias são criadas por registro privado, sem lei específica."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica.",
+      "Incorreta: os limites jurídicos importam. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+      "Incorreta: Toda fundação pública possui obrigatoriamente personalidade de direito privado. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+      "Incorreta: Autarquias são criadas por registro privado, sem lei específica. Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica."
+    ],
+    "explanation": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+    "concept": "Autarquias e fundações públicas",
+    "trap": "Autarquias são criadas por registro privado, sem lei específica.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma autarquia previdenciária tem personalidade própria e se sujeita à supervisão finalística prevista em lei.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda fundação pública possui obrigatoriamente personalidade de direito privado."
+  },
+  {
+    "id": "Q-DA-16-002-03",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-002",
+    "topic": "Autarquias e fundações públicas",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as proposições:\nI. Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica.\nII. Autarquias são criadas por registro privado, sem lei específica.\nIII. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.\nQuais estão corretas?",
+    "options": [
+      "Somente I",
+      "Somente I e III",
+      "I, II e III",
+      "Somente II e III",
+      "Somente III"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incompleta: III também está correta. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+      "Correta: I e III são verdadeiras. Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+      "Falsa: II está incorreta. Autarquias são criadas por registro privado, sem lei específica.",
+      "Falsa: II está incorreta. Autarquias são criadas por registro privado, sem lei específica.",
+      "Incompleta: I também está correta. Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica."
+    ],
+    "explanation": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+    "concept": "Autarquias e fundações públicas",
+    "trap": "Autarquias são criadas por registro privado, sem lei específica.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma autarquia previdenciária tem personalidade própria e se sujeita à supervisão finalística prevista em lei.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda fundação pública possui obrigatoriamente personalidade de direito privado."
+  },
+  {
+    "id": "Q-DA-16-002-04",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-002",
+    "topic": "Autarquias e fundações públicas",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (verdadeira) e F (falsa):\nI. Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica.\nII. Autarquias são criadas por registro privado, sem lei específica.\nIII. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.\nIV. Toda fundação pública possui obrigatoriamente personalidade de direito privado.\nQual sequência está correta?",
+    "options": [
+      "V – F – V – F",
+      "F – V – F – V",
+      "V – V – F – F",
+      "F – F – V – V",
+      "V – F – F – V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III verdadeiras; II e IV falsas. Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+      "Incorreta: II e IV são falsas. Autarquias são criadas por registro privado, sem lei específica. Toda fundação pública possui obrigatoriamente personalidade de direito privado.",
+      "Incorreta: II e IV são falsas. Autarquias são criadas por registro privado, sem lei específica. Toda fundação pública possui obrigatoriamente personalidade de direito privado.",
+      "Incorreta: II e IV são falsas. Autarquias são criadas por registro privado, sem lei específica. Toda fundação pública possui obrigatoriamente personalidade de direito privado.",
+      "Incorreta: II e IV são falsas. Autarquias são criadas por registro privado, sem lei específica. Toda fundação pública possui obrigatoriamente personalidade de direito privado."
+    ],
+    "explanation": "Autarquias são pessoas jurídicas de direito público criadas diretamente por lei específica. A instituição de fundações públicas segue o regime constitucional aplicável e sua natureza jurídica exige análise.",
+    "concept": "Autarquias e fundações públicas",
+    "trap": "Autarquias são criadas por registro privado, sem lei específica.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma autarquia previdenciária tem personalidade própria e se sujeita à supervisão finalística prevista em lei.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda fundação pública possui obrigatoriamente personalidade de direito privado."
+  },
+  {
+    "id": "Q-DA-16-003-01",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-003",
+    "topic": "Empresas públicas e sociedades de economia mista",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correto: Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito.",
+      "Errado seria marcar esta opção: Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito."
+    ],
+    "explanation": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+    "concept": "Empresas públicas e sociedades de economia mista",
+    "trap": "Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma estatal que presta serviço público possui personalidade de direito privado, sem se confundir com órgão.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Empresa pública e sociedade de economia mista são órgãos da administração direta."
+  },
+  {
+    "id": "Q-DA-16-003-02",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-003",
+    "topic": "Empresas públicas e sociedades de economia mista",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre empresas públicas e sociedades de economia mista.",
+    "options": [
+      "Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "Empresa pública e sociedade de economia mista são órgãos da administração direta.",
+      "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora. Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito.",
+      "Incorreta: os limites jurídicos importam. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+      "Incorreta: Empresa pública e sociedade de economia mista são órgãos da administração direta. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+      "Correta: Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito."
+    ],
+    "explanation": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+    "concept": "Empresas públicas e sociedades de economia mista",
+    "trap": "Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma estatal que presta serviço público possui personalidade de direito privado, sem se confundir com órgão.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Empresa pública e sociedade de economia mista são órgãos da administração direta."
+  },
+  {
+    "id": "Q-DA-16-003-03",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-003",
+    "topic": "Empresas públicas e sociedades de economia mista",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito.\nII. Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora.\nIII. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.\nIV. Empresa pública e sociedade de economia mista são órgãos da administração direta.\nMarque a sequência correta.",
+    "options": [
+      "V – F – F – V",
+      "V – V – F – F",
+      "F – V – F – V",
+      "F – F – V – V",
+      "V – F – V – F"
+    ],
+    "answer": 4,
+    "optionComments": [
+      "Incorreta: I e III verdadeiras, II e IV falsas. Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora. Empresa pública e sociedade de economia mista são órgãos da administração direta.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora. Empresa pública e sociedade de economia mista são órgãos da administração direta.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora. Empresa pública e sociedade de economia mista são órgãos da administração direta.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora. Empresa pública e sociedade de economia mista são órgãos da administração direta.",
+      "Correta: I e III verdadeiras, II e IV falsas. Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal."
+    ],
+    "explanation": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+    "concept": "Empresas públicas e sociedades de economia mista",
+    "trap": "Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma estatal que presta serviço público possui personalidade de direito privado, sem se confundir com órgão.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Empresa pública e sociedade de economia mista são órgãos da administração direta."
+  },
+  {
+    "id": "Q-DA-16-003-04",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-003",
+    "topic": "Empresas públicas e sociedades de economia mista",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Em um caso prático sobre empresas públicas e sociedades de economia mista, qual afirmação está INCORRETA?",
+    "options": [
+      "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito.",
+      "Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+      "Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora.",
+      "O enquadramento depende dos requisitos jurídicos aplicáveis."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Verdadeira: Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito.",
+      "Verdadeira: Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+      "Incorreta, portanto é a resposta: Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora. Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito.",
+      "Verdadeira: é necessário observar as normas aplicáveis."
+    ],
+    "explanation": "Empresa pública admite capital integralmente público e pode adotar formas societárias admitidas em direito. Sociedade de economia mista é constituída sob a forma de sociedade anônima e possui controle estatal.",
+    "concept": "Empresas públicas e sociedades de economia mista",
+    "trap": "Sociedade de economia mista pode assumir qualquer forma societária e não exige participação estatal controladora.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma estatal que presta serviço público possui personalidade de direito privado, sem se confundir com órgão.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Empresa pública e sociedade de economia mista são órgãos da administração direta."
+  },
+  {
+    "id": "Q-DA-16-004-01",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-004",
+    "topic": "Centralização e descentralização",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreto: Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica. Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos.",
+      "Correto marcar ERRADO: Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica. Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos."
+    ],
+    "explanation": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+    "concept": "Centralização e descentralização",
+    "trap": "Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um município presta serviço por secretaria e descentraliza outra atividade a autarquia.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Criar departamentos internos equivale sempre à criação de entidades descentralizadas."
+  },
+  {
+    "id": "Q-DA-16-004-02",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-004",
+    "topic": "Centralização e descentralização",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre centralização e descentralização.",
+    "options": [
+      "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+      "Criar departamentos internos equivale sempre à criação de entidades descentralizadas."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos.",
+      "Incorreta: os limites jurídicos importam. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+      "Incorreta: Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica. Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos.",
+      "Incorreta: Criar departamentos internos equivale sempre à criação de entidades descentralizadas. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico."
+    ],
+    "explanation": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+    "concept": "Centralização e descentralização",
+    "trap": "Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um município presta serviço por secretaria e descentraliza outra atividade a autarquia.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Criar departamentos internos equivale sempre à criação de entidades descentralizadas."
+  },
+  {
+    "id": "Q-DA-16-004-03",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-004",
+    "topic": "Centralização e descentralização",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as proposições:\nI. Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos.\nII. Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.\nIII. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.\nQuais estão corretas?",
+    "options": [
+      "Somente II e III",
+      "I, II e III",
+      "Somente I e III",
+      "Somente III",
+      "Somente I"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Falsa: II está incorreta. Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+      "Falsa: II está incorreta. Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+      "Correta: I e III são verdadeiras. Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+      "Incompleta: I também está correta. Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos.",
+      "Incompleta: III também está correta. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico."
+    ],
+    "explanation": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+    "concept": "Centralização e descentralização",
+    "trap": "Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um município presta serviço por secretaria e descentraliza outra atividade a autarquia.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Criar departamentos internos equivale sempre à criação de entidades descentralizadas."
+  },
+  {
+    "id": "Q-DA-16-004-04",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-004",
+    "topic": "Centralização e descentralização",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "Criar departamentos internos equivale sempre à criação de entidades descentralizadas.",
+      "A interpretação exige atenção ao regime jurídico e aos limites aplicáveis.",
+      "Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+      "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "É a exceção: Criar departamentos internos equivale sempre à criação de entidades descentralizadas. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+      "Verdadeira: as regras dependem do contexto e dos limites.",
+      "Verdadeira: Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+      "Verdadeira: Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos."
+    ],
+    "explanation": "Centralização ocorre quando a própria pessoa política desempenha atividade por seus órgãos. Descentralização envolve atribuição de execução a outra pessoa jurídica, conforme o instrumento jurídico.",
+    "concept": "Centralização e descentralização",
+    "trap": "Descentralização é apenas a distribuição de tarefas entre órgãos da mesma pessoa jurídica.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um município presta serviço por secretaria e descentraliza outra atividade a autarquia.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Criar departamentos internos equivale sempre à criação de entidades descentralizadas."
+  },
+  {
+    "id": "Q-DA-16-005-01",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-005",
+    "topic": "Concentração e desconcentração",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Errado seria marcar esta opção: Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica.",
+      "Correto: Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica."
+    ],
+    "explanation": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.",
+    "concept": "Concentração e desconcentração",
+    "trap": "Desconcentração cria necessariamente nova pessoa jurídica na administração indireta.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um ministério cria unidades regionais sem constituir novas pessoas jurídicas.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Concentração é sinônimo de concessão de serviço público a particular."
+  },
+  {
+    "id": "Q-DA-16-005-02",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-005",
+    "topic": "Concentração e desconcentração",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre concentração e desconcentração.",
+    "options": [
+      "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica.",
+      "Desconcentração cria necessariamente nova pessoa jurídica na administração indireta.",
+      "Concentração é sinônimo de concessão de serviço público a particular.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica.",
+      "Incorreta: Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica.",
+      "Incorreta: Concentração é sinônimo de concessão de serviço público a particular. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.",
+      "Incorreta: os limites jurídicos importam. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica."
+    ],
+    "explanation": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.",
+    "concept": "Concentração e desconcentração",
+    "trap": "Desconcentração cria necessariamente nova pessoa jurídica na administração indireta.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um ministério cria unidades regionais sem constituir novas pessoas jurídicas.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Concentração é sinônimo de concessão de serviço público a particular."
+  },
+  {
+    "id": "Q-DA-16-005-03",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-005",
+    "topic": "Concentração e desconcentração",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica.\nII. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta.\nIII. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.\nIV. Concentração é sinônimo de concessão de serviço público a particular.\nMarque a sequência correta.",
+    "options": [
+      "F – F – V – V",
+      "V – F – V – F",
+      "V – F – F – V",
+      "V – V – F – F",
+      "F – V – F – V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: I e III verdadeiras, II e IV falsas. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Concentração é sinônimo de concessão de serviço público a particular.",
+      "Correta: I e III verdadeiras, II e IV falsas. Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Concentração é sinônimo de concessão de serviço público a particular.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Concentração é sinônimo de concessão de serviço público a particular.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Concentração é sinônimo de concessão de serviço público a particular."
+    ],
+    "explanation": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.",
+    "concept": "Concentração e desconcentração",
+    "trap": "Desconcentração cria necessariamente nova pessoa jurídica na administração indireta.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um ministério cria unidades regionais sem constituir novas pessoas jurídicas.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Concentração é sinônimo de concessão de serviço público a particular."
+  },
+  {
+    "id": "Q-DA-16-005-04",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-005",
+    "topic": "Concentração e desconcentração",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (verdadeira) e F (falsa):\nI. Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica.\nII. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta.\nIII. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.\nIV. Concentração é sinônimo de concessão de serviço público a particular.\nQual sequência está correta?",
+    "options": [
+      "V – V – F – F",
+      "V – F – V – F",
+      "V – F – F – V",
+      "F – F – V – V",
+      "F – V – F – V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: II e IV são falsas. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Concentração é sinônimo de concessão de serviço público a particular.",
+      "Correta: I e III verdadeiras; II e IV falsas. Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.",
+      "Incorreta: II e IV são falsas. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Concentração é sinônimo de concessão de serviço público a particular.",
+      "Incorreta: II e IV são falsas. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Concentração é sinônimo de concessão de serviço público a particular.",
+      "Incorreta: II e IV são falsas. Desconcentração cria necessariamente nova pessoa jurídica na administração indireta. Concentração é sinônimo de concessão de serviço público a particular."
+    ],
+    "explanation": "Desconcentração distribui competências internamente entre órgãos de uma mesma pessoa jurídica. Concentração reúne atribuições em menor número de órgãos da mesma pessoa jurídica.",
+    "concept": "Concentração e desconcentração",
+    "trap": "Desconcentração cria necessariamente nova pessoa jurídica na administração indireta.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um ministério cria unidades regionais sem constituir novas pessoas jurídicas.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Concentração é sinônimo de concessão de serviço público a particular."
+  },
+  {
+    "id": "Q-DA-16-006-01",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-006",
+    "topic": "Entidades e vínculos de supervisão",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreto: O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério. Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+      "Correto marcar ERRADO: O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério. Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos."
+    ],
+    "explanation": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+    "concept": "Entidades e vínculos de supervisão",
+    "trap": "O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um ministério acompanha metas de autarquia vinculada, sem dirigir cada ato como chefia interna.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A administração indireta está dispensada de qualquer controle público por ter autonomia."
+  },
+  {
+    "id": "Q-DA-16-006-02",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-006",
+    "topic": "Entidades e vínculos de supervisão",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre entidades e vínculos de supervisão.",
+    "options": [
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+      "O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+      "A administração indireta está dispensada de qualquer controle público por ter autonomia."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: os limites jurídicos importam. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+      "Correta: Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+      "Incorreta: O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério. Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+      "Incorreta: A administração indireta está dispensada de qualquer controle público por ter autonomia. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos."
+    ],
+    "explanation": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+    "concept": "Entidades e vínculos de supervisão",
+    "trap": "O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um ministério acompanha metas de autarquia vinculada, sem dirigir cada ato como chefia interna.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A administração indireta está dispensada de qualquer controle público por ter autonomia."
+  },
+  {
+    "id": "Q-DA-16-006-03",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-006",
+    "topic": "Entidades e vínculos de supervisão",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as proposições:\nI. Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.\nII. O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.\nIII. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.\nQuais estão corretas?",
+    "options": [
+      "Somente III",
+      "Somente I e III",
+      "I, II e III",
+      "Somente II e III",
+      "Somente I"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incompleta: I também está correta. Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+      "Correta: I e III são verdadeiras. Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+      "Falsa: II está incorreta. O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+      "Falsa: II está incorreta. O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+      "Incompleta: III também está correta. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos."
+    ],
+    "explanation": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+    "concept": "Entidades e vínculos de supervisão",
+    "trap": "O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um ministério acompanha metas de autarquia vinculada, sem dirigir cada ato como chefia interna.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A administração indireta está dispensada de qualquer controle público por ter autonomia."
+  },
+  {
+    "id": "Q-DA-16-006-04",
+    "moduleId": "DA-16",
+    "subtopicId": "DA-16-006",
+    "topic": "Entidades e vínculos de supervisão",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Em um caso prático sobre entidades e vínculos de supervisão, qual afirmação está INCORRETA?",
+    "options": [
+      "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+      "A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+      "O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+      "O enquadramento depende dos requisitos jurídicos aplicáveis."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Verdadeira: Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+      "Verdadeira: A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+      "Incorreta, portanto é a resposta: O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério. Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos.",
+      "Verdadeira: é necessário observar as normas aplicáveis."
+    ],
+    "explanation": "Entidades da administração indireta têm personalidade jurídica própria e se submetem aos controles legalmente previstos. A vinculação para controle finalístico não se confunde com subordinação hierárquica típica entre órgãos.",
+    "concept": "Entidades e vínculos de supervisão",
+    "trap": "O vínculo de supervisão ministerial transforma autarquia em órgão subordinado hierarquicamente ao ministério.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um ministério acompanha metas de autarquia vinculada, sem dirigir cada ato como chefia interna.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A administração indireta está dispensada de qualquer controle público por ter autonomia."
+  },
+  {
+    "id": "Q-DA-17-001-01",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-001",
+    "topic": "Conceito e classificação de agentes públicos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correto: Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.",
+      "Errado seria marcar esta opção: Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis."
+    ],
+    "explanation": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.",
+    "concept": "Conceito e classificação de agentes públicos",
+    "trap": "Somente ocupantes de cargo efetivo podem ser considerados agentes públicos.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um mesário convocado pode exercer função pública temporária sem ocupar cargo efetivo.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Todo agente público possui vínculo estatutário e remuneração permanente."
+  },
+  {
+    "id": "Q-DA-17-001-02",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-001",
+    "topic": "Conceito e classificação de agentes públicos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre conceito e classificação de agentes públicos.",
+    "options": [
+      "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "Somente ocupantes de cargo efetivo podem ser considerados agentes públicos.",
+      "Todo agente público possui vínculo estatutário e remuneração permanente."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.",
+      "Incorreta: os limites jurídicos importam. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.",
+      "Incorreta: Somente ocupantes de cargo efetivo podem ser considerados agentes públicos. Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.",
+      "Incorreta: Todo agente público possui vínculo estatutário e remuneração permanente. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração."
+    ],
+    "explanation": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.",
+    "concept": "Conceito e classificação de agentes públicos",
+    "trap": "Somente ocupantes de cargo efetivo podem ser considerados agentes públicos.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um mesário convocado pode exercer função pública temporária sem ocupar cargo efetivo.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Todo agente público possui vínculo estatutário e remuneração permanente."
+  },
+  {
+    "id": "Q-DA-17-001-03",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-001",
+    "topic": "Conceito e classificação de agentes públicos",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.\nII. Somente ocupantes de cargo efetivo podem ser considerados agentes públicos.\nIII. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.\nIV. Todo agente público possui vínculo estatutário e remuneração permanente.\nMarque a sequência correta.",
+    "options": [
+      "V – F – V – F",
+      "F – F – V – V",
+      "V – V – F – F",
+      "F – V – F – V",
+      "V – F – F – V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III verdadeiras, II e IV falsas. Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Somente ocupantes de cargo efetivo podem ser considerados agentes públicos. Todo agente público possui vínculo estatutário e remuneração permanente.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Somente ocupantes de cargo efetivo podem ser considerados agentes públicos. Todo agente público possui vínculo estatutário e remuneração permanente.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Somente ocupantes de cargo efetivo podem ser considerados agentes públicos. Todo agente público possui vínculo estatutário e remuneração permanente.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Somente ocupantes de cargo efetivo podem ser considerados agentes públicos. Todo agente público possui vínculo estatutário e remuneração permanente."
+    ],
+    "explanation": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.",
+    "concept": "Conceito e classificação de agentes públicos",
+    "trap": "Somente ocupantes de cargo efetivo podem ser considerados agentes públicos.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um mesário convocado pode exercer função pública temporária sem ocupar cargo efetivo.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Todo agente público possui vínculo estatutário e remuneração permanente."
+  },
+  {
+    "id": "Q-DA-17-001-04",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-001",
+    "topic": "Conceito e classificação de agentes públicos",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.",
+      "Todo agente público possui vínculo estatutário e remuneração permanente.",
+      "A interpretação exige atenção ao regime jurídico e aos limites aplicáveis.",
+      "A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Verdadeira: Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis.",
+      "É a exceção: Todo agente público possui vínculo estatutário e remuneração permanente. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.",
+      "Verdadeira: as regras dependem do contexto e dos limites.",
+      "Verdadeira: A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração."
+    ],
+    "explanation": "Agente público é categoria ampla que abrange quem exerce função estatal, mesmo transitoriamente, nas hipóteses jurídicas cabíveis. A classificação doutrinária pode distinguir agentes políticos, servidores e particulares em colaboração.",
+    "concept": "Conceito e classificação de agentes públicos",
+    "trap": "Somente ocupantes de cargo efetivo podem ser considerados agentes públicos.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um mesário convocado pode exercer função pública temporária sem ocupar cargo efetivo.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Todo agente público possui vínculo estatutário e remuneração permanente."
+  },
+  {
+    "id": "Q-DA-17-002-01",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-002",
+    "topic": "Cargo, emprego e função pública",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Emprego público e cargo público são expressões idênticas em todos os regimes.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreto: Emprego público e cargo público são expressões idênticas em todos os regimes. Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio.",
+      "Correto marcar ERRADO: Emprego público e cargo público são expressões idênticas em todos os regimes. Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio."
+    ],
+    "explanation": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+    "concept": "Cargo, emprego e função pública",
+    "trap": "Emprego público e cargo público são expressões idênticas em todos os regimes.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma empresa pública contrata empregado público, enquanto autarquia pode prover cargo estatutário.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado."
+  },
+  {
+    "id": "Q-DA-17-002-02",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-002",
+    "topic": "Cargo, emprego e função pública",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre cargo, emprego e função pública.",
+    "options": [
+      "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio.",
+      "Emprego público e cargo público são expressões idênticas em todos os regimes.",
+      "Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio.",
+      "Incorreta: Emprego público e cargo público são expressões idênticas em todos os regimes. Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio.",
+      "Incorreta: Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+      "Incorreta: os limites jurídicos importam. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais."
+    ],
+    "explanation": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+    "concept": "Cargo, emprego e função pública",
+    "trap": "Emprego público e cargo público são expressões idênticas em todos os regimes.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma empresa pública contrata empregado público, enquanto autarquia pode prover cargo estatutário.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado."
+  },
+  {
+    "id": "Q-DA-17-002-03",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-002",
+    "topic": "Cargo, emprego e função pública",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as proposições:\nI. Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio.\nII. Emprego público e cargo público são expressões idênticas em todos os regimes.\nIII. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.\nQuais estão corretas?",
+    "options": [
+      "I, II e III",
+      "Somente I",
+      "Somente II e III",
+      "Somente I e III",
+      "Somente III"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Falsa: II está incorreta. Emprego público e cargo público são expressões idênticas em todos os regimes.",
+      "Incompleta: III também está correta. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+      "Falsa: II está incorreta. Emprego público e cargo público são expressões idênticas em todos os regimes.",
+      "Correta: I e III são verdadeiras. Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+      "Incompleta: I também está correta. Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio."
+    ],
+    "explanation": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+    "concept": "Cargo, emprego e função pública",
+    "trap": "Emprego público e cargo público são expressões idênticas em todos os regimes.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma empresa pública contrata empregado público, enquanto autarquia pode prover cargo estatutário.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado."
+  },
+  {
+    "id": "Q-DA-17-002-04",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-002",
+    "topic": "Cargo, emprego e função pública",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (verdadeira) e F (falsa):\nI. Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio.\nII. Emprego público e cargo público são expressões idênticas em todos os regimes.\nIII. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.\nIV. Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado.\nQual sequência está correta?",
+    "options": [
+      "F – F – V – V",
+      "F – V – F – V",
+      "V – F – V – F",
+      "V – V – F – F",
+      "V – F – F – V"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: II e IV são falsas. Emprego público e cargo público são expressões idênticas em todos os regimes. Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado.",
+      "Incorreta: II e IV são falsas. Emprego público e cargo público são expressões idênticas em todos os regimes. Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado.",
+      "Correta: I e III verdadeiras; II e IV falsas. Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+      "Incorreta: II e IV são falsas. Emprego público e cargo público são expressões idênticas em todos os regimes. Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado.",
+      "Incorreta: II e IV são falsas. Emprego público e cargo público são expressões idênticas em todos os regimes. Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado."
+    ],
+    "explanation": "Cargo público é unidade de atribuições criada nos termos da lei e vinculada a regime jurídico próprio. Emprego público costuma relacionar-se a vínculo contratual regido pela CLT, observadas normas constitucionais.",
+    "concept": "Cargo, emprego e função pública",
+    "trap": "Emprego público e cargo público são expressões idênticas em todos os regimes.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma empresa pública contrata empregado público, enquanto autarquia pode prover cargo estatutário.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda função pública corresponde necessariamente a cargo efetivo previamente ocupado."
+  },
+  {
+    "id": "Q-DA-17-003-01",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-003",
+    "topic": "Ingresso, provimento e vacância",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correto: A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.",
+      "Errado seria marcar esta opção: A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais."
+    ],
+    "explanation": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.",
+    "concept": "Ingresso, provimento e vacância",
+    "trap": "Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Após concurso, candidata é nomeada e toma posse conforme regras; exoneração posterior gera vacância.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar."
+  },
+  {
+    "id": "Q-DA-17-003-02",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-003",
+    "topic": "Ingresso, provimento e vacância",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre ingresso, provimento e vacância.",
+    "options": [
+      "Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.",
+      "Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.",
+      "Incorreta: os limites jurídicos importam. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.",
+      "Correta: A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.",
+      "Incorreta: Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso. A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais."
+    ],
+    "explanation": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.",
+    "concept": "Ingresso, provimento e vacância",
+    "trap": "Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Após concurso, candidata é nomeada e toma posse conforme regras; exoneração posterior gera vacância.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar."
+  },
+  {
+    "id": "Q-DA-17-003-03",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-003",
+    "topic": "Ingresso, provimento e vacância",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.\nII. Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso.\nIII. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.\nIV. Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar.\nMarque a sequência correta.",
+    "options": [
+      "V – F – F – V",
+      "V – F – V – F",
+      "F – V – F – V",
+      "V – V – F – F",
+      "F – F – V – V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: I e III verdadeiras, II e IV falsas. Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso. Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar.",
+      "Correta: I e III verdadeiras, II e IV falsas. A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso. Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso. Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso. Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar."
+    ],
+    "explanation": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.",
+    "concept": "Ingresso, provimento e vacância",
+    "trap": "Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Após concurso, candidata é nomeada e toma posse conforme regras; exoneração posterior gera vacância.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar."
+  },
+  {
+    "id": "Q-DA-17-003-04",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-003",
+    "topic": "Ingresso, provimento e vacância",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Em um caso prático sobre ingresso, provimento e vacância, qual afirmação está INCORRETA?",
+    "options": [
+      "Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso.",
+      "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.",
+      "O enquadramento depende dos requisitos jurídicos aplicáveis.",
+      "Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Incorreta, portanto é a resposta: Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso. A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.",
+      "Verdadeira: A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais.",
+      "Verdadeira: é necessário observar as normas aplicáveis.",
+      "Verdadeira: Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais."
+    ],
+    "explanation": "A investidura em cargo ou emprego público depende, em regra, de aprovação prévia em concurso, ressalvadas exceções constitucionais. Provimento refere-se ao preenchimento do cargo; vacância, à desocupação nas hipóteses legais.",
+    "concept": "Ingresso, provimento e vacância",
+    "trap": "Qualquer cargo efetivo pode ser preenchido por livre nomeação sem concurso.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Após concurso, candidata é nomeada e toma posse conforme regras; exoneração posterior gera vacância.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Exoneração e demissão são sempre sinônimos e pressupõem infração disciplinar."
+  },
+  {
+    "id": "Q-DA-17-004-01",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-004",
+    "topic": "Direitos, deveres e proibições",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreto: As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual. Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais.",
+      "Correto marcar ERRADO: As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual. Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais."
+    ],
+    "explanation": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+    "concept": "Direitos, deveres e proibições",
+    "trap": "As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Servidor estadual consulta seu estatuto próprio antes de presumir licença prevista em lei federal.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento."
+  },
+  {
+    "id": "Q-DA-17-004-02",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-004",
+    "topic": "Direitos, deveres e proibições",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre direitos, deveres e proibições.",
+    "options": [
+      "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais.",
+      "Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais.",
+      "Incorreta: Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+      "Incorreta: os limites jurídicos importam. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+      "Incorreta: As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual. Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais."
+    ],
+    "explanation": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+    "concept": "Direitos, deveres e proibições",
+    "trap": "As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Servidor estadual consulta seu estatuto próprio antes de presumir licença prevista em lei federal.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento."
+  },
+  {
+    "id": "Q-DA-17-004-03",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-004",
+    "topic": "Direitos, deveres e proibições",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as proposições:\nI. Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais.\nII. As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.\nIII. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.\nQuais estão corretas?",
+    "options": [
+      "Somente I",
+      "Somente II e III",
+      "I, II e III",
+      "Somente I e III",
+      "Somente III"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incompleta: III também está correta. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+      "Falsa: II está incorreta. As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.",
+      "Falsa: II está incorreta. As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.",
+      "Correta: I e III são verdadeiras. Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+      "Incompleta: I também está correta. Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais."
+    ],
+    "explanation": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+    "concept": "Direitos, deveres e proibições",
+    "trap": "As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Servidor estadual consulta seu estatuto próprio antes de presumir licença prevista em lei federal.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento."
+  },
+  {
+    "id": "Q-DA-17-004-04",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-004",
+    "topic": "Direitos, deveres e proibições",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento.",
+      "A interpretação exige atenção ao regime jurídico e aos limites aplicáveis.",
+      "Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+      "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "É a exceção: Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+      "Verdadeira: as regras dependem do contexto e dos limites.",
+      "Verdadeira: Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+      "Verdadeira: Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais."
+    ],
+    "explanation": "Direitos e deveres dos servidores dependem do regime jurídico aplicável e das normas constitucionais. Deveres funcionais podem incluir zelo, urbanidade e observância de ordens legais.",
+    "concept": "Direitos, deveres e proibições",
+    "trap": "As regras da Lei 8.112/1990 aplicam-se automaticamente a todo servidor municipal e estadual.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Servidor estadual consulta seu estatuto próprio antes de presumir licença prevista em lei federal.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Uma ordem manifestamente ilegal deve ser cumprida sem qualquer questionamento."
+  },
+  {
+    "id": "Q-DA-17-005-01",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-005",
+    "topic": "Responsabilidades e acumulação",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Errado seria marcar esta opção: Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera.",
+      "Correto: Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera."
+    ],
+    "explanation": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.",
+    "concept": "Responsabilidades e acumulação",
+    "trap": "Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma professora verifica se o segundo cargo é acumulável constitucionalmente e se os horários são compatíveis.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos."
+  },
+  {
+    "id": "Q-DA-17-005-02",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-005",
+    "topic": "Responsabilidades e acumulação",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre responsabilidades e acumulação.",
+    "options": [
+      "Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+      "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera.",
+      "Incorreta: os limites jurídicos importam. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.",
+      "Incorreta: A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.",
+      "Correta: Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera."
+    ],
+    "explanation": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.",
+    "concept": "Responsabilidades e acumulação",
+    "trap": "Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma professora verifica se o segundo cargo é acumulável constitucionalmente e se os horários são compatíveis.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos."
+  },
+  {
+    "id": "Q-DA-17-005-03",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-005",
+    "topic": "Responsabilidades e acumulação",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera.\nII. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento.\nIII. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.\nIV. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.\nMarque a sequência correta.",
+    "options": [
+      "V – F – F – V",
+      "F – V – F – V",
+      "V – V – F – F",
+      "F – F – V – V",
+      "V – F – V – F"
+    ],
+    "answer": 4,
+    "optionComments": [
+      "Incorreta: I e III verdadeiras, II e IV falsas. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+      "Correta: I e III verdadeiras, II e IV falsas. Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários."
+    ],
+    "explanation": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.",
+    "concept": "Responsabilidades e acumulação",
+    "trap": "Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma professora verifica se o segundo cargo é acumulável constitucionalmente e se os horários são compatíveis.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos."
+  },
+  {
+    "id": "Q-DA-17-005-04",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-005",
+    "topic": "Responsabilidades e acumulação",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (verdadeira) e F (falsa):\nI. Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera.\nII. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento.\nIII. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.\nIV. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.\nQual sequência está correta?",
+    "options": [
+      "V – F – V – F",
+      "F – F – V – V",
+      "V – V – F – F",
+      "F – V – F – V",
+      "V – F – F – V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III verdadeiras; II e IV falsas. Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.",
+      "Incorreta: II e IV são falsas. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+      "Incorreta: II e IV são falsas. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+      "Incorreta: II e IV são falsas. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos.",
+      "Incorreta: II e IV são falsas. Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento. A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos."
+    ],
+    "explanation": "Responsabilidades civil, penal e administrativa podem coexistir, respeitados os requisitos de cada esfera. Acumulação remunerada de cargos depende das exceções constitucionais e da compatibilidade de horários.",
+    "concept": "Responsabilidades e acumulação",
+    "trap": "Toda absolvição penal extingue automaticamente qualquer responsabilidade administrativa, sem distinção de fundamento.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma professora verifica se o segundo cargo é acumulável constitucionalmente e se os horários são compatíveis.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A compatibilidade de horários, sozinha, autoriza acumular quaisquer três cargos públicos."
+  },
+  {
+    "id": "Q-DA-17-006-01",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-006",
+    "topic": "Regimes jurídicos e legislação aplicável",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreto: A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios. O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente.",
+      "Correto marcar ERRADO: A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios. O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente."
+    ],
+    "explanation": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+    "concept": "Regimes jurídicos e legislação aplicável",
+    "trap": "A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Antes de responder sobre licença de servidor do RN, o candidato identifica o regime local aplicável.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Empregados públicos e servidores estatutários possuem necessariamente o mesmo vínculo jurídico."
+  },
+  {
+    "id": "Q-DA-17-006-02",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-006",
+    "topic": "Regimes jurídicos e legislação aplicável",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre regimes jurídicos e legislação aplicável.",
+    "options": [
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente.",
+      "Empregados públicos e servidores estatutários possuem necessariamente o mesmo vínculo jurídico.",
+      "A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: os limites jurídicos importam. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+      "Correta: O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente.",
+      "Incorreta: Empregados públicos e servidores estatutários possuem necessariamente o mesmo vínculo jurídico. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+      "Incorreta: A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios. O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente."
+    ],
+    "explanation": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+    "concept": "Regimes jurídicos e legislação aplicável",
+    "trap": "A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Antes de responder sobre licença de servidor do RN, o candidato identifica o regime local aplicável.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Empregados públicos e servidores estatutários possuem necessariamente o mesmo vínculo jurídico."
+  },
+  {
+    "id": "Q-DA-17-006-03",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-006",
+    "topic": "Regimes jurídicos e legislação aplicável",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as proposições:\nI. O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente.\nII. A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.\nIII. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.\nQuais estão corretas?",
+    "options": [
+      "Somente I e III",
+      "I, II e III",
+      "Somente II e III",
+      "Somente III",
+      "Somente I"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras. O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+      "Falsa: II está incorreta. A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.",
+      "Falsa: II está incorreta. A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.",
+      "Incompleta: I também está correta. O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente.",
+      "Incompleta: III também está correta. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal."
+    ],
+    "explanation": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+    "concept": "Regimes jurídicos e legislação aplicável",
+    "trap": "A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Antes de responder sobre licença de servidor do RN, o candidato identifica o regime local aplicável.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Empregados públicos e servidores estatutários possuem necessariamente o mesmo vínculo jurídico."
+  },
+  {
+    "id": "Q-DA-17-006-04",
+    "moduleId": "DA-17",
+    "subtopicId": "DA-17-006",
+    "topic": "Regimes jurídicos e legislação aplicável",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Em um caso prático sobre regimes jurídicos e legislação aplicável, qual afirmação está INCORRETA?",
+    "options": [
+      "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente.",
+      "Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+      "O enquadramento depende dos requisitos jurídicos aplicáveis.",
+      "A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Verdadeira: O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente.",
+      "Verdadeira: Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+      "Verdadeira: é necessário observar as normas aplicáveis.",
+      "Incorreta, portanto é a resposta: A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios. O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente."
+    ],
+    "explanation": "O regime jurídico depende do ente, da entidade, do vínculo e da legislação pertinente. Para cargos estaduais do RN, a legislação local deve ser consultada, sem confusão com o estatuto federal.",
+    "concept": "Regimes jurídicos e legislação aplicável",
+    "trap": "A Lei 8.112/1990 rege indistintamente todos os agentes públicos de estados e municípios.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Antes de responder sobre licença de servidor do RN, o candidato identifica o regime local aplicável.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Empregados públicos e servidores estatutários possuem necessariamente o mesmo vínculo jurídico."
+  },
+  {
+    "id": "Q-DA-18-001-01",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-001",
+    "topic": "Poder hierárquico",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correto: Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
+      "Errado seria marcar esta opção: Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada."
+    ],
+    "explanation": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+    "concept": "Poder hierárquico",
+    "trap": "Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma chefia redistribui tarefas entre unidades subordinadas dentro de suas competências.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal."
+  },
+  {
+    "id": "Q-DA-18-001-02",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-001",
+    "topic": "Poder hierárquico",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre poder hierárquico.",
+    "options": [
+      "Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação.",
+      "A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.",
+      "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação. Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
+      "Incorreta: A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+      "Correta: Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
+      "Incorreta: os limites jurídicos importam. Delegação e avocação de competências obedecem a limites legais e não são irrestritas."
+    ],
+    "explanation": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+    "concept": "Poder hierárquico",
+    "trap": "Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma chefia redistribui tarefas entre unidades subordinadas dentro de suas competências.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal."
+  },
+  {
+    "id": "Q-DA-18-001-03",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-001",
+    "topic": "Poder hierárquico",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.\nII. Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação.\nIII. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.\nIV. A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.\nMarque a sequência correta.",
+    "options": [
+      "V – V – F – F",
+      "F – F – V – V",
+      "F – V – F – V",
+      "V – F – F – V",
+      "V – F – V – F"
+    ],
+    "answer": 4,
+    "optionComments": [
+      "Incorreta: I e III verdadeiras, II e IV falsas. Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação. A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação. A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação. A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação. A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.",
+      "Correta: I e III verdadeiras, II e IV falsas. Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas."
+    ],
+    "explanation": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+    "concept": "Poder hierárquico",
+    "trap": "Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma chefia redistribui tarefas entre unidades subordinadas dentro de suas competências.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal."
+  },
+  {
+    "id": "Q-DA-18-001-04",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-001",
+    "topic": "Poder hierárquico",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+      "A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.",
+      "A interpretação exige atenção ao regime jurídico e aos limites aplicáveis.",
+      "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Verdadeira: Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+      "É a exceção: A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+      "Verdadeira: as regras dependem do contexto e dos limites.",
+      "Verdadeira: Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada."
+    ],
+    "explanation": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+    "concept": "Poder hierárquico",
+    "trap": "Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Uma chefia redistribui tarefas entre unidades subordinadas dentro de suas competências.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal."
+  },
+  {
+    "id": "Q-DA-18-002-01",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-002",
+    "topic": "Poder disciplinar",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correto marcar ERRADO: Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais.",
+      "Incorreto: Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais."
+    ],
+    "explanation": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+    "concept": "Poder disciplinar",
+    "trap": "Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "A administração instaura procedimento adequado para apurar possível infração funcional.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa."
+  },
+  {
+    "id": "Q-DA-18-002-02",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-002",
+    "topic": "Poder disciplinar",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre poder disciplinar.",
+    "options": [
+      "Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+      "A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais.",
+      "Incorreta: A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+      "Incorreta: os limites jurídicos importam. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+      "Correta: Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais."
+    ],
+    "explanation": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+    "concept": "Poder disciplinar",
+    "trap": "Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "A administração instaura procedimento adequado para apurar possível infração funcional.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa."
+  },
+  {
+    "id": "Q-DA-18-002-03",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-002",
+    "topic": "Poder disciplinar",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as proposições:\nI. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais.\nII. Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.\nIII. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.\nQuais estão corretas?",
+    "options": [
+      "Somente II e III",
+      "I, II e III",
+      "Somente III",
+      "Somente I e III",
+      "Somente I"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Falsa: II está incorreta. Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+      "Falsa: II está incorreta. Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+      "Incompleta: I também está correta. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais.",
+      "Correta: I e III são verdadeiras. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+      "Incompleta: III também está correta. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes."
+    ],
+    "explanation": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+    "concept": "Poder disciplinar",
+    "trap": "Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "A administração instaura procedimento adequado para apurar possível infração funcional.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa."
+  },
+  {
+    "id": "Q-DA-18-002-04",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-002",
+    "topic": "Poder disciplinar",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (verdadeira) e F (falsa):\nI. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais.\nII. Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.\nIII. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.\nIV. A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa.\nQual sequência está correta?",
+    "options": [
+      "F – V – F – V",
+      "V – F – V – F",
+      "F – F – V – V",
+      "V – V – F – F",
+      "V – F – F – V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: II e IV são falsas. Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa.",
+      "Correta: I e III verdadeiras; II e IV falsas. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+      "Incorreta: II e IV são falsas. Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa.",
+      "Incorreta: II e IV são falsas. Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa.",
+      "Incorreta: II e IV são falsas. Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa."
+    ],
+    "explanation": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+    "concept": "Poder disciplinar",
+    "trap": "Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "A administração instaura procedimento adequado para apurar possível infração funcional.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa."
+  },
+  {
+    "id": "Q-DA-18-003-01",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-003",
+    "topic": "Poder regulamentar e normativo",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correto: Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+      "Errado seria marcar esta opção: Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais."
+    ],
+    "explanation": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
+    "concept": "Poder regulamentar e normativo",
+    "trap": "Regulamento executivo pode contrariar livremente a lei que pretende executar.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um decreto detalha procedimentos de execução de lei sem inovar contra seu conteúdo.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa."
+  },
+  {
+    "id": "Q-DA-18-003-02",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-003",
+    "topic": "Poder regulamentar e normativo",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre poder regulamentar e normativo.",
+    "options": [
+      "Regulamento executivo pode contrariar livremente a lei que pretende executar.",
+      "Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa.",
+      "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: Regulamento executivo pode contrariar livremente a lei que pretende executar. Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+      "Incorreta: Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
+      "Correta: Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+      "Incorreta: os limites jurídicos importam. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos."
+    ],
+    "explanation": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
+    "concept": "Poder regulamentar e normativo",
+    "trap": "Regulamento executivo pode contrariar livremente a lei que pretende executar.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um decreto detalha procedimentos de execução de lei sem inovar contra seu conteúdo.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa."
+  },
+  {
+    "id": "Q-DA-18-003-03",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-003",
+    "topic": "Poder regulamentar e normativo",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.\nII. Regulamento executivo pode contrariar livremente a lei que pretende executar.\nIII. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.\nIV. Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa.\nMarque a sequência correta.",
+    "options": [
+      "V – F – V – F",
+      "V – F – F – V",
+      "V – V – F – F",
+      "F – F – V – V",
+      "F – V – F – V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III verdadeiras, II e IV falsas. Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Regulamento executivo pode contrariar livremente a lei que pretende executar. Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Regulamento executivo pode contrariar livremente a lei que pretende executar. Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Regulamento executivo pode contrariar livremente a lei que pretende executar. Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Regulamento executivo pode contrariar livremente a lei que pretende executar. Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa."
+    ],
+    "explanation": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
+    "concept": "Poder regulamentar e normativo",
+    "trap": "Regulamento executivo pode contrariar livremente a lei que pretende executar.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um decreto detalha procedimentos de execução de lei sem inovar contra seu conteúdo.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa."
+  },
+  {
+    "id": "Q-DA-18-003-04",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-003",
+    "topic": "Poder regulamentar e normativo",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Em um caso prático sobre poder regulamentar e normativo, qual afirmação está INCORRETA?",
+    "options": [
+      "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+      "O enquadramento depende dos requisitos jurídicos aplicáveis.",
+      "Regulamento executivo pode contrariar livremente a lei que pretende executar.",
+      "Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Verdadeira: Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+      "Verdadeira: é necessário observar as normas aplicáveis.",
+      "Incorreta, portanto é a resposta: Regulamento executivo pode contrariar livremente a lei que pretende executar. Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
+      "Verdadeira: Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos."
+    ],
+    "explanation": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
+    "concept": "Poder regulamentar e normativo",
+    "trap": "Regulamento executivo pode contrariar livremente a lei que pretende executar.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Um decreto detalha procedimentos de execução de lei sem inovar contra seu conteúdo.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa."
+  },
+  {
+    "id": "Q-DA-18-004-01",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-004",
+    "topic": "Poder de polícia",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correto marcar ERRADO: Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal. Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
+      "Incorreto: Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal. Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos."
+    ],
+    "explanation": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
+    "concept": "Poder de polícia",
+    "trap": "Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Fiscalização sanitária verifica requisitos de funcionamento de estabelecimento conforme a lei.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese."
+  },
+  {
+    "id": "Q-DA-18-004-02",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-004",
+    "topic": "Poder de polícia",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre poder de polícia.",
+    "options": [
+      "Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese.",
+      "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
+      "Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
+      "Correta: Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
+      "Incorreta: Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal. Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
+      "Incorreta: os limites jurídicos importam. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle."
+    ],
+    "explanation": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
+    "concept": "Poder de polícia",
+    "trap": "Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Fiscalização sanitária verifica requisitos de funcionamento de estabelecimento conforme a lei.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese."
+  },
+  {
+    "id": "Q-DA-18-004-03",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-004",
+    "topic": "Poder de polícia",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as proposições:\nI. Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.\nII. Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.\nIII. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.\nQuais estão corretas?",
+    "options": [
+      "Somente I e III",
+      "I, II e III",
+      "Somente II e III",
+      "Somente III",
+      "Somente I"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras. Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
+      "Falsa: II está incorreta. Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+      "Falsa: II está incorreta. Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+      "Incompleta: I também está correta. Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
+      "Incompleta: III também está correta. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle."
+    ],
+    "explanation": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
+    "concept": "Poder de polícia",
+    "trap": "Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Fiscalização sanitária verifica requisitos de funcionamento de estabelecimento conforme a lei.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese."
+  },
+  {
+    "id": "Q-DA-18-004-04",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-004",
+    "topic": "Poder de polícia",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Todas as afirmações são corretas, EXCETO:",
+    "options": [
+      "A interpretação exige atenção ao regime jurídico e aos limites aplicáveis.",
+      "Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese.",
+      "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
+      "Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Verdadeira: as regras dependem do contexto e dos limites.",
+      "É a exceção: Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
+      "Verdadeira: Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
+      "Verdadeira: Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle."
+    ],
+    "explanation": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
+    "concept": "Poder de polícia",
+    "trap": "Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Fiscalização sanitária verifica requisitos de funcionamento de estabelecimento conforme a lei.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese."
+  },
+  {
+    "id": "Q-DA-18-005-01",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-005",
+    "topic": "Abuso de poder: excesso e desvio de finalidade",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Excesso de poder ocorre quando agente extrapola limites de competência.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correto: Excesso de poder ocorre quando agente extrapola limites de competência.",
+      "Errado seria marcar esta opção: Excesso de poder ocorre quando agente extrapola limites de competência."
+    ],
+    "explanation": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+    "concept": "Abuso de poder: excesso e desvio de finalidade",
+    "trap": "Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Se o agente é competente, qualquer finalidade pessoal torna o ato válido."
+  },
+  {
+    "id": "Q-DA-18-005-02",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-005",
+    "topic": "Abuso de poder: excesso e desvio de finalidade",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Assinale a alternativa CORRETA sobre abuso de poder: excesso e desvio de finalidade.",
+    "options": [
+      "Excesso de poder ocorre quando agente extrapola limites de competência.",
+      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
+      "Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Excesso de poder ocorre quando agente extrapola limites de competência.",
+      "Incorreta: os limites jurídicos importam. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+      "Incorreta: Se o agente é competente, qualquer finalidade pessoal torna o ato válido. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+      "Incorreta: Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Excesso de poder ocorre quando agente extrapola limites de competência."
+    ],
+    "explanation": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+    "concept": "Abuso de poder: excesso e desvio de finalidade",
+    "trap": "Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Se o agente é competente, qualquer finalidade pessoal torna o ato válido."
+  },
+  {
+    "id": "Q-DA-18-005-03",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-005",
+    "topic": "Abuso de poder: excesso e desvio de finalidade",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue V ou F:\nI. Excesso de poder ocorre quando agente extrapola limites de competência.\nII. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência.\nIII. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.\nIV. Se o agente é competente, qualquer finalidade pessoal torna o ato válido.\nMarque a sequência correta.",
+    "options": [
+      "V – F – F – V",
+      "F – F – V – V",
+      "V – F – V – F",
+      "V – V – F – F",
+      "F – V – F – V"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: I e III verdadeiras, II e IV falsas. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
+      "Correta: I e III verdadeiras, II e IV falsas. Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
+      "Incorreta: I e III verdadeiras, II e IV falsas. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Se o agente é competente, qualquer finalidade pessoal torna o ato válido."
+    ],
+    "explanation": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+    "concept": "Abuso de poder: excesso e desvio de finalidade",
+    "trap": "Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Se o agente é competente, qualquer finalidade pessoal torna o ato válido."
+  },
+  {
+    "id": "Q-DA-18-005-04",
+    "moduleId": "DA-18",
+    "subtopicId": "DA-18-005",
+    "topic": "Abuso de poder: excesso e desvio de finalidade",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (verdadeira) e F (falsa):\nI. Excesso de poder ocorre quando agente extrapola limites de competência.\nII. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência.\nIII. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.\nIV. Se o agente é competente, qualquer finalidade pessoal torna o ato válido.\nQual sequência está correta?",
+    "options": [
+      "V – F – V – F",
+      "V – V – F – F",
+      "F – F – V – V",
+      "V – F – F – V",
+      "F – V – F – V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III verdadeiras; II e IV falsas. Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+      "Incorreta: II e IV são falsas. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
+      "Incorreta: II e IV são falsas. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
+      "Incorreta: II e IV são falsas. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
+      "Incorreta: II e IV são falsas. Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Se o agente é competente, qualquer finalidade pessoal torna o ato válido."
+    ],
+    "explanation": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+    "concept": "Abuso de poder: excesso e desvio de finalidade",
+    "trap": "Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência.",
+    "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
+    "newExample": "Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato.",
+    "challenge": "Explique por que a seguinte afirmação é falsa: Se o agente é competente, qualquer finalidade pessoal torna o ato válido."
   }
 ];
 export const questionsForModule = id => QUESTIONS.filter(q=>q.moduleId===id);
