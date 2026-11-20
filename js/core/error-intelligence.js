@@ -1,3 +1,4 @@
+import { renderErrorHistory } from './error-history.js';
 const obj=x=>x&&typeof x==='object'&&!Array.isArray(x)?x:{};
 export function errorAnalysis(state){
  const p=obj(state?.progress),h=obj(p.questionHistory),a=obj(p.adaptiveReview);
@@ -21,6 +22,7 @@ export function renderErrorAnalysis(state){
  const section=(title,rows)=>`<h3>${title}</h3>${rows.length?`<ul>${rows.slice(0,12).map(x=>`<li>${esc(x.name)}: ${x.total} questão(ões), ${x.recurrent} recorrente(s)</li>`).join('')}</ul>`:'<p>Sem registros.</p>'}`;
  return `<section class="module-card" style="padding:16px;margin:16px 0"><h2>Mapa de dificuldades</h2>
  <p>${d.items.length} questão(ões) com erro; ${d.items.filter(x=>x.lapses>=2).length} com reincidência.</p>
+ ${renderErrorHistory(state)}
  ${section('Por módulo',d.modules)}${section('Por subtópico',d.subtopics)}${section('Por causa',d.reasons)}
  <p>Dados históricos incompletos são indicados como não classificados. Este painel não modifica o progresso.</p></section>`;
 }

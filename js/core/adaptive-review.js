@@ -1,4 +1,5 @@
 /** Fase 14, lote 4 — intervalos progressivos, por item, sem alterar o esquema do estado. */
+import { recordErrorAttempt } from './error-history.js';
 const DAY = 86400000;
 const GOOD = new Set(['seguro','sei','acerto_banco']);
 const PARTIAL = new Set(['duvida','pegadinha','interpretacao']);
@@ -27,6 +28,7 @@ export function scheduleAdaptiveReview(state, kind, id, rating, options={}) {
   const record={kind,itemId:String(id),streak,lapses,attempts:(Number(previous.attempts)||0)+1,
     rating,intervalDays:days,dueAt,updatedAt:now.toISOString()};
   p.adaptiveReview[key]=record;
+  recordErrorAttempt(state,kind,id,rating,record);
   return record;
 }
 /** Dados resumidos para painéis futuros; sem efeito colateral. */
