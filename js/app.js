@@ -7,6 +7,7 @@ import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiag
 import { renderLesson, saveLessonProgress } from "./features/lessons.js";
 import { renderExercises, createExerciseSession, answerExercise, assessExercise, nextExercise } from "./features/exercises.js";
 import { validateCatalog } from "./data/modules.js";
+import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
 const state = loadState();
 const mainElement = document.getElementById("main");
@@ -17,6 +18,7 @@ let lessonSubtopicId = null;
 let lessonAnswerShown = false;
 let editSubtopicId = null;
 let cardFlipped = false;
+let reviewQuestionId = null;
 
 function renderCurrentPage() {
   if (!mainElement) return;
@@ -28,6 +30,11 @@ function renderCurrentPage() {
   }
   switch (state.navigation.currentRoute) {
     case "dashboard": renderDashboard(mainElement, state); break;
+    case "revisao":
+    case "erros":
+      if(reviewQuestionId)renderReviewQuestion(mainElement,state,state.navigation.currentRoute,reviewQuestionId);
+      else renderReviewList(mainElement,state,state.navigation.currentRoute);
+      break;
     case "modulos":
       if (state.navigation.selectedModuleId) {
         if (activeView === 'exercises') renderExercises(mainElement,state.navigation.selectedModuleId,state);
@@ -44,12 +51,24 @@ function commitAndRender() { saveState(state); renderCurrentPage(); }
 function resetCardView() { editSubtopicId = null; cardFlipped = false; }
 function navigateTo(route) {
   state.navigation.currentRoute = route;
-  activeView = 'module'; lessonSubtopicId=null;lessonAnswerShown=false; resetCardView();
+  activeView = 'module'; lessonSubtopicId=null;lessonAnswerShown=false; resetCardView();reviewQuestionId=null;
   if (route === 'modulos') state.navigation.selectedModuleId = null;
   commitAndRender();
 }
 
 document.addEventListener('click', event => {
+  if(state.navigation.currentRoute==='revisao'||state.navigation.currentRoute==='erros'){
+    const open=event.target.closest('[data-review-open]');
+    if(open){if(beginReview(state,open.dataset.reviewOpen)){reviewQuestionId=open.dataset.reviewOpen;commitAndRender();}return;}
+    const back=event.target.closest('[data-review-back]');
+    if(back){reviewQuestionId=null;renderCurrentPage();return;}
+    const choice=event.target.closest('[data-review-choice]');
+    if(choice&&reviewQuestionId){if(answerReview(state,reviewQuestionId,Number(choice.dataset.reviewChoice)))commitAndRender();return;}
+    const assess=event.target.closest('[data-review-assess]');
+    if(assess&&reviewQuestionId){if(assessReview(state,reviewQuestionId,assess.dataset.reviewAssess))commitAndRender();return;}
+    const remove=event.target.closest('[data-review-remove]');
+    if(remove){if(window.confirm('Remover esta questão do banco de erros? O histórico de respostas será mantido.')&&removeError(state,remove.dataset.reviewRemove))commitAndRender();return;}
+  }
   const moduleButton = event.target.closest('[data-module-id]');
   if (moduleButton) {
     state.navigation.currentRoute = 'modulos';
