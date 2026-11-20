@@ -1440,6 +1440,171 @@ export const LESSONS = {
   "summary": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma.",
   "reviewQuestion": "Por que é incorreto afirmar: Qualquer descumprimento de prazo administrativo configura necessariamente ato de improbidade.",
   "reviewAnswer": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma."
+},
+"DA-25-001": {
+  "id": "DA-25-001",
+  "objective": "Compreender fundamentos e princípios da lei 9.784/1999, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "A Lei 9.784/1999 rege, como regra, o processo administrativo federal.",
+  "explanation": "A Lei 9.784/1999 disciplina o processo administrativo no âmbito da Administração Pública federal. Seus princípios incluem legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público e eficiência. A aplicação a estados e municípios exige atenção às normas próprias e à jurisprudência pertinente.",
+  "example": "Em processo federal sancionador, o interessado deve poder conhecer e contestar elementos relevantes.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: A Lei 9.784/1999 é automaticamente a única lei processual administrativa de todos os municípios.",
+  "summary": "A Lei 9.784/1999 rege, como regra, o processo administrativo federal. O contraditório e a ampla defesa integram os princípios relevantes ao processo administrativo.",
+  "reviewQuestion": "Por que é falsa a afirmação: A Lei 9.784/1999 é automaticamente a única lei processual administrativa de todos os municípios.",
+  "reviewAnswer": "A Lei 9.784/1999 rege, como regra, o processo administrativo federal. O contraditório e a ampla defesa integram os princípios relevantes ao processo administrativo. Em processo federal sancionador, o interessado deve poder conhecer e contestar elementos relevantes."
+},
+"DA-25-002": {
+  "id": "DA-25-002",
+  "objective": "Compreender direitos e deveres dos administrados, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "O interessado pode apresentar documentos antes da decisão, observadas as regras do processo.",
+  "explanation": "O art. 3º da Lei 9.784/1999 prevê, entre outros, o direito de ser tratado com respeito, ter ciência da tramitação, vista dos autos e obtenção de cópias, além de formular alegações e apresentar documentos antes da decisão. O art. 4º impõe deveres de expor fatos conforme a verdade, proceder com lealdade, urbanidade e boa-fé, não agir temerariamente e prestar informações solicitadas. Direitos processuais convivem com deveres de cooperação.",
+  "example": "Uma pessoa consulta o andamento do processo e apresenta documento pertinente antes da decisão.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: O interessado pode alterar livremente os fatos apresentados sem dever de veracidade.",
+  "summary": "O interessado pode apresentar documentos antes da decisão, observadas as regras do processo. A lei impõe aos administrados deveres de lealdade, urbanidade e boa-fé.",
+  "reviewQuestion": "Por que é falsa a afirmação: O interessado pode alterar livremente os fatos apresentados sem dever de veracidade.",
+  "reviewAnswer": "O interessado pode apresentar documentos antes da decisão, observadas as regras do processo. A lei impõe aos administrados deveres de lealdade, urbanidade e boa-fé. Uma pessoa consulta o andamento do processo e apresenta documento pertinente antes da decisão."
+},
+"DA-25-003": {
+  "id": "DA-25-003",
+  "objective": "Compreender competência, delegação e avocação, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "A decisão de recursos administrativos não pode ser delegada conforme a Lei 9.784/1999.",
+  "explanation": "A competência administrativa é irrenunciável e deve ser exercida pelos órgãos aos quais foi atribuída, ressalvadas delegação e avocação legalmente admitidas. Pela Lei 9.784/1999, não podem ser delegadas a edição de atos normativos, a decisão de recursos administrativos e matérias de competência exclusiva. A avocação é excepcional, temporária e depende de motivos relevantes devidamente justificados, em relação a órgão hierarquicamente inferior.",
+  "example": "Um dirigente avalia delegar ato rotineiro, mas não pode delegar a decisão de recurso administrativo.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Toda competência administrativa pode ser delegada sem exceções.",
+  "summary": "A decisão de recursos administrativos não pode ser delegada conforme a Lei 9.784/1999. A avocação é excepcional, temporária e exige justificativa relevante.",
+  "reviewQuestion": "Por que é falsa a afirmação: Toda competência administrativa pode ser delegada sem exceções.",
+  "reviewAnswer": "A decisão de recursos administrativos não pode ser delegada conforme a Lei 9.784/1999. A avocação é excepcional, temporária e exige justificativa relevante. Um dirigente avalia delegar ato rotineiro, mas não pode delegar a decisão de recurso administrativo."
+},
+"DA-25-004": {
+  "id": "DA-25-004",
+  "objective": "Compreender impedimento e suspeição, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "O agente impedido deve comunicar a circunstância e abster-se de atuar.",
+  "explanation": "Impedimento envolve situações objetivas previstas na Lei 9.784/1999, como interesse direto ou indireto na matéria e participação em certas condições no processo. Suspeição pode ser arguida por amizade íntima ou inimizade notória com interessado ou pessoas indicadas na lei. O agente impedido deve comunicar o fato e abster-se de atuar; a omissão constitui falta grave. A distinção protege a imparcialidade da decisão.",
+  "example": "Servidor que tem interesse pessoal direto na decisão informa o impedimento e não atua.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Amizade íntima com interessado nunca pode justificar suspeição.",
+  "summary": "O agente impedido deve comunicar a circunstância e abster-se de atuar. Impedimento e suspeição buscam resguardar imparcialidade administrativa.",
+  "reviewQuestion": "Por que é falsa a afirmação: Amizade íntima com interessado nunca pode justificar suspeição.",
+  "reviewAnswer": "O agente impedido deve comunicar a circunstância e abster-se de atuar. Impedimento e suspeição buscam resguardar imparcialidade administrativa. Servidor que tem interesse pessoal direto na decisão informa o impedimento e não atua."
+},
+"DA-25-005": {
+  "id": "DA-25-005",
+  "objective": "Compreender fases, instrução e decisão, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "A Administração tem dever de emitir decisão expressa nos processos de sua competência.",
+  "explanation": "A instrução busca reunir elementos para uma decisão motivada e juridicamente adequada, admitindo provas e diligências pertinentes nos limites legais. O interessado tem direitos de participação e manifestação, especialmente quando a decisão possa afetá-lo. Encerrada a instrução, a Administração deve decidir expressamente nos processos e solicitações de sua competência. A Lei 9.784/1999 estabelece prazo de até trinta dias para decidir após a conclusão da instrução, salvo prorrogação por igual período expressamente motivada.",
+  "example": "Após concluir a instrução, o órgão decide motivadamente e observa os prazos aplicáveis.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: A Administração pode deixar indefinidamente sem decisão processo cuja instrução esteja concluída.",
+  "summary": "A Administração tem dever de emitir decisão expressa nos processos de sua competência. A instrução serve para reunir elementos relevantes à decisão administrativa.",
+  "reviewQuestion": "Por que é falsa a afirmação: A Administração pode deixar indefinidamente sem decisão processo cuja instrução esteja concluída.",
+  "reviewAnswer": "A Administração tem dever de emitir decisão expressa nos processos de sua competência. A instrução serve para reunir elementos relevantes à decisão administrativa. Após concluir a instrução, o órgão decide motivadamente e observa os prazos aplicáveis."
+},
+"DA-25-006": {
+  "id": "DA-25-006",
+  "objective": "Compreender recursos, revisão e prazos, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "O recurso administrativo pode versar sobre legalidade e mérito, nos termos legais.",
+  "explanation": "Na Lei 9.784/1999, o recurso administrativo pode questionar razões de legalidade e de mérito, observadas as hipóteses e regras aplicáveis. Como regra, o prazo para interposição é de dez dias, salvo disposição legal específica, contado da ciência ou divulgação oficial da decisão. O recurso tramita, em regra, no máximo por três instâncias administrativas, salvo disposição legal diversa. A revisão de processo sancionador, quando surgirem fatos novos ou circunstâncias relevantes, não pode resultar agravamento da sanção.",
+  "example": "Interessado apresenta recurso tempestivo contra decisão administrativa e fundamenta sua discordância.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: A revisão de processo sancionador pode sempre agravar a sanção aplicada.",
+  "summary": "O recurso administrativo pode versar sobre legalidade e mérito, nos termos legais. O prazo recursal geral da Lei 9.784/1999 é de dez dias, salvo disposição específica.",
+  "reviewQuestion": "Por que é falsa a afirmação: A revisão de processo sancionador pode sempre agravar a sanção aplicada.",
+  "reviewAnswer": "O recurso administrativo pode versar sobre legalidade e mérito, nos termos legais. O prazo recursal geral da Lei 9.784/1999 é de dez dias, salvo disposição específica. Interessado apresenta recurso tempestivo contra decisão administrativa e fundamenta sua discordância."
+},
+"DA-26-001": {
+  "id": "DA-26-001",
+  "objective": "Compreender conceito e classificação dos bens públicos, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "Bens pertencentes a pessoas jurídicas de direito público interno são públicos nos termos do art. 98 do Código Civil.",
+  "explanation": "O Código Civil, art. 98, considera públicos os bens do domínio nacional pertencentes às pessoas jurídicas de direito público interno; os demais são particulares, seja qual for a pessoa a que pertençam. O art. 99 distingue bens de uso comum do povo, de uso especial e dominicais. Bens pertencentes a empresas estatais de direito privado exigem análise do regime aplicável e não se enquadram automaticamente na definição civil de bens públicos.",
+  "example": "Um prédio de autarquia e uma praça municipal podem ser bens públicos de categorias distintas.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Todo bem de sociedade de economia mista é automaticamente bem público pelo art. 98 do Código Civil.",
+  "summary": "Bens pertencentes a pessoas jurídicas de direito público interno são públicos nos termos do art. 98 do Código Civil. O Código Civil distingue bens de uso comum, uso especial e dominicais.",
+  "reviewQuestion": "Por que é falsa a afirmação: Todo bem de sociedade de economia mista é automaticamente bem público pelo art. 98 do Código Civil.",
+  "reviewAnswer": "Bens pertencentes a pessoas jurídicas de direito público interno são públicos nos termos do art. 98 do Código Civil. O Código Civil distingue bens de uso comum, uso especial e dominicais. Um prédio de autarquia e uma praça municipal podem ser bens públicos de categorias distintas."
+},
+"DA-26-002": {
+  "id": "DA-26-002",
+  "objective": "Compreender bens de uso comum, uso especial e dominicais, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "Uma praça pública é exemplo típico de bem de uso comum do povo.",
+  "explanation": "Bens de uso comum do povo incluem, em regra, ruas, praças e rios. Bens de uso especial são afetados a serviço ou estabelecimento administrativo, como edifícios de repartições. Dominicais compõem o patrimônio das pessoas jurídicas de direito público como objeto de direito pessoal ou real, sem afetação ao uso comum ou especial. A afetação influencia o regime de alienação e utilização.",
+  "example": "Uma antiga área pública sem destinação administrativa pode ser classificada como dominical.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Um edifício onde funciona repartição é necessariamente bem dominical sem afetação.",
+  "summary": "Uma praça pública é exemplo típico de bem de uso comum do povo. Prédio destinado ao funcionamento de repartição é exemplo de bem de uso especial.",
+  "reviewQuestion": "Por que é falsa a afirmação: Um edifício onde funciona repartição é necessariamente bem dominical sem afetação.",
+  "reviewAnswer": "Uma praça pública é exemplo típico de bem de uso comum do povo. Prédio destinado ao funcionamento de repartição é exemplo de bem de uso especial. Uma antiga área pública sem destinação administrativa pode ser classificada como dominical."
+},
+"DA-26-003": {
+  "id": "DA-26-003",
+  "objective": "Compreender características e regime jurídico, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "Bens públicos não podem ser adquiridos por usucapião.",
+  "explanation": "Bens públicos são imprescritíveis, ou seja, não podem ser adquiridos por usucapião, conforme Constituição e Código Civil. Bens de uso comum e de uso especial são inalienáveis enquanto conservarem essa qualificação; os dominicais podem ser alienados, observadas as exigências legais. A impenhorabilidade dos bens públicos decorre do regime jurídico de execução contra a Fazenda Pública. A categoria do bem e sua afetação importam para a solução.",
+  "example": "Uma área dominical pode ser alienada se cumpridos os requisitos legais pertinentes.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Bens públicos de uso especial podem ser vendidos livremente enquanto afetados ao serviço.",
+  "summary": "Bens públicos não podem ser adquiridos por usucapião. Bens dominicais podem ser alienados desde que observadas as exigências legais.",
+  "reviewQuestion": "Por que é falsa a afirmação: Bens públicos de uso especial podem ser vendidos livremente enquanto afetados ao serviço.",
+  "reviewAnswer": "Bens públicos não podem ser adquiridos por usucapião. Bens dominicais podem ser alienados desde que observadas as exigências legais. Uma área dominical pode ser alienada se cumpridos os requisitos legais pertinentes."
+},
+"DA-26-004": {
+  "id": "DA-26-004",
+  "objective": "Compreender uso e alienação dos bens públicos, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "A alienação de bens públicos exige observar a categoria do bem e requisitos legais.",
+  "explanation": "O uso de bens públicos pode ocorrer de forma geral ou especial, conforme a destinação e os instrumentos jurídicos aplicáveis. Alienação depende da natureza do bem, da desafetação quando exigível e do cumprimento dos requisitos legais, inclusive as regras pertinentes da Lei 14.133/2021. Não é correto afirmar que todo bem público é absolutamente inalienável, nem que a Administração pode vender qualquer bem livremente.",
+  "example": "Antes de alienar um imóvel público, o órgão verifica a afetação e o procedimento legal.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Todo bem público é absolutamente inalienável em qualquer circunstância.",
+  "summary": "A alienação de bens públicos exige observar a categoria do bem e requisitos legais. A destinação pública do bem pode limitar sua disponibilidade para alienação.",
+  "reviewQuestion": "Por que é falsa a afirmação: Todo bem público é absolutamente inalienável em qualquer circunstância.",
+  "reviewAnswer": "A alienação de bens públicos exige observar a categoria do bem e requisitos legais. A destinação pública do bem pode limitar sua disponibilidade para alienação. Antes de alienar um imóvel público, o órgão verifica a afetação e o procedimento legal."
+},
+"DA-27-001": {
+  "id": "DA-27-001",
+  "objective": "Compreender desapropriação, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "A desapropriação pode transferir compulsoriamente a propriedade nas hipóteses legais.",
+  "explanation": "A desapropriação é intervenção estatal que, nas hipóteses constitucionais e legais, transfere compulsoriamente propriedade ao Poder Público ou beneficiário autorizado, mediante procedimento e indenização conforme o regime específico. A regra geral constitucional prevê indenização justa, prévia e em dinheiro, ressalvadas exceções constitucionais. Não se confunde com mera restrição de uso: implica perda compulsória da propriedade.",
+  "example": "O município desapropria imóvel para obra pública, observando fundamento legal e indenização aplicável.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Desapropriação e limitação administrativa são idênticas porque ambas sempre transferem domínio.",
+  "summary": "A desapropriação pode transferir compulsoriamente a propriedade nas hipóteses legais. A regra geral constitucional exige indenização justa, prévia e em dinheiro, ressalvadas exceções.",
+  "reviewQuestion": "Por que é falsa a afirmação: Desapropriação e limitação administrativa são idênticas porque ambas sempre transferem domínio.",
+  "reviewAnswer": "A desapropriação pode transferir compulsoriamente a propriedade nas hipóteses legais. A regra geral constitucional exige indenização justa, prévia e em dinheiro, ressalvadas exceções. O município desapropria imóvel para obra pública, observando fundamento legal e indenização aplicável."
+},
+"DA-27-002": {
+  "id": "DA-27-002",
+  "objective": "Compreender servidão administrativa, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "A servidão administrativa pode impor ônus específico sem transferir a propriedade do imóvel.",
+  "explanation": "Servidão administrativa é ônus real imposto a imóvel para viabilizar atividade ou serviço de interesse público, sem necessariamente transferir a propriedade. Pode exigir indenização quando causar prejuízo ao proprietário, conforme o caso. Diferencia-se da desapropriação pela permanência do domínio com o particular e da limitação geral por gravar imóvel determinado para finalidade pública.",
+  "example": "Faixa de passagem de rede pública atravessa terreno privado com restrições específicas de uso.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: A servidão administrativa sempre transfere integralmente o domínio ao Estado.",
+  "summary": "A servidão administrativa pode impor ônus específico sem transferir a propriedade do imóvel. Prejuízos decorrentes da servidão podem ensejar indenização conforme as circunstâncias.",
+  "reviewQuestion": "Por que é falsa a afirmação: A servidão administrativa sempre transfere integralmente o domínio ao Estado.",
+  "reviewAnswer": "A servidão administrativa pode impor ônus específico sem transferir a propriedade do imóvel. Prejuízos decorrentes da servidão podem ensejar indenização conforme as circunstâncias. Faixa de passagem de rede pública atravessa terreno privado com restrições específicas de uso."
+},
+"DA-27-003": {
+  "id": "DA-27-003",
+  "objective": "Compreender requisição administrativa, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "A requisição administrativa pressupõe iminente perigo público.",
+  "explanation": "A requisição administrativa permite uso compulsório de bens e serviços particulares em situação de iminente perigo público, nos termos do art. 5º, XXV, da Constituição. É assegurada indenização ulterior se houver dano. O pressuposto constitucional é a urgência ligada ao perigo público, não mera conveniência administrativa. Não equivale à desapropriação, pois não visa à transferência definitiva do domínio.",
+  "example": "Em emergência com perigo público iminente, autoridade utiliza temporariamente recurso particular nos limites constitucionais.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: A requisição administrativa autoriza apropriação definitiva de qualquer imóvel por conveniência rotineira.",
+  "summary": "A requisição administrativa pressupõe iminente perigo público. A Constituição assegura indenização ulterior se houver dano na requisição.",
+  "reviewQuestion": "Por que é falsa a afirmação: A requisição administrativa autoriza apropriação definitiva de qualquer imóvel por conveniência rotineira.",
+  "reviewAnswer": "A requisição administrativa pressupõe iminente perigo público. A Constituição assegura indenização ulterior se houver dano na requisição. Em emergência com perigo público iminente, autoridade utiliza temporariamente recurso particular nos limites constitucionais."
+},
+"DA-27-004": {
+  "id": "DA-27-004",
+  "objective": "Compreender ocupação temporária, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "A ocupação temporária não implica, por si só, transferência definitiva da propriedade.",
+  "explanation": "Ocupação temporária consiste no uso transitório de imóvel particular para atender necessidade vinculada à execução de atividade ou obra pública, observadas as hipóteses e requisitos legais. Não implica necessariamente transferência da propriedade. A indenização depende do fundamento normativo e dos prejuízos, não devendo ser tratada como regra uniforme para todas as hipóteses. Distingue-se da requisição pelo fundamento e pelo contexto de aplicação.",
+  "example": "Área particular é usada transitoriamente como apoio à execução de obra pública conforme requisitos legais.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Toda ocupação temporária equivale a desapropriação definitiva do imóvel.",
+  "summary": "A ocupação temporária não implica, por si só, transferência definitiva da propriedade. A ocupação temporária deve respeitar fundamento e condições legais.",
+  "reviewQuestion": "Por que é falsa a afirmação: Toda ocupação temporária equivale a desapropriação definitiva do imóvel.",
+  "reviewAnswer": "A ocupação temporária não implica, por si só, transferência definitiva da propriedade. A ocupação temporária deve respeitar fundamento e condições legais. Área particular é usada transitoriamente como apoio à execução de obra pública conforme requisitos legais."
+},
+"DA-27-005": {
+  "id": "DA-27-005",
+  "objective": "Compreender limitações administrativas e tombamento, reconhecer seus limites legais e aplicar o conceito em questões de concursos.",
+  "concept": "Limitações administrativas podem estabelecer restrições gerais de uso da propriedade.",
+  "explanation": "Limitações administrativas são restrições gerais e abstratas ao uso da propriedade, impostas por normas de interesse público, como regras urbanísticas. Tombamento é instrumento de proteção do patrimônio cultural, com deveres e restrições específicos para o bem protegido, sem transferência automática do domínio. As duas técnicas têm fundamentos e efeitos distintos; indenização não é automática em toda restrição, dependendo do regime e do dano.",
+  "example": "Imóvel histórico é tombado e continua pertencendo ao particular, sujeito às restrições de proteção.",
+  "examTip": "Não aceite afirmações absolutas sem verificar o regime jurídico: Tombamento transfere automaticamente a propriedade do bem protegido ao Estado.",
+  "summary": "Limitações administrativas podem estabelecer restrições gerais de uso da propriedade. Tombamento visa à proteção do patrimônio cultural sem exigir transferência do domínio.",
+  "reviewQuestion": "Por que é falsa a afirmação: Tombamento transfere automaticamente a propriedade do bem protegido ao Estado.",
+  "reviewAnswer": "Limitações administrativas podem estabelecer restrições gerais de uso da propriedade. Tombamento visa à proteção do patrimônio cultural sem exigir transferência do domínio. Imóvel histórico é tombado e continua pertencendo ao particular, sujeito às restrições de proteção."
 }
 };
 export const getLesson = id => LESSONS[id] || null;

@@ -630,6 +630,87 @@ export const DIAGNOSTICS = Object.freeze({
     "front": "Como aplicar distinções entre improbidade e outras irregularidades a uma situação de órgão público?",
     "back": "Improbidade administrativa não se confunde automaticamente com mera ilegalidade, infração disciplinar ou erro de gestão. Uma mesma conduta pode ser examinada em esferas distintas, observados os requisitos próprios de cada uma. Exemplo: Servidor descumpre procedimento sem dolo: pode haver apuração disciplinar, sem enquadramento automático na lei de improbidade."
   }
+],
+"DA-25": [
+  {
+    "subtopicId": "DA-25-001",
+    "front": "Explique fundamentos e princípios da lei 9.784/1999 e diferencie sua aplicação de um conceito próximo.",
+    "back": "A Lei 9.784/1999 rege, como regra, o processo administrativo federal. O contraditório e a ampla defesa integram os princípios relevantes ao processo administrativo. Exemplo: Em processo federal sancionador, o interessado deve poder conhecer e contestar elementos relevantes."
+  },
+  {
+    "subtopicId": "DA-25-002",
+    "front": "Explique direitos e deveres dos administrados e diferencie sua aplicação de um conceito próximo.",
+    "back": "O interessado pode apresentar documentos antes da decisão, observadas as regras do processo. A lei impõe aos administrados deveres de lealdade, urbanidade e boa-fé. Exemplo: Uma pessoa consulta o andamento do processo e apresenta documento pertinente antes da decisão."
+  },
+  {
+    "subtopicId": "DA-25-003",
+    "front": "Explique competência, delegação e avocação e diferencie sua aplicação de um conceito próximo.",
+    "back": "A decisão de recursos administrativos não pode ser delegada conforme a Lei 9.784/1999. A avocação é excepcional, temporária e exige justificativa relevante. Exemplo: Um dirigente avalia delegar ato rotineiro, mas não pode delegar a decisão de recurso administrativo."
+  },
+  {
+    "subtopicId": "DA-25-004",
+    "front": "Explique impedimento e suspeição e diferencie sua aplicação de um conceito próximo.",
+    "back": "O agente impedido deve comunicar a circunstância e abster-se de atuar. Impedimento e suspeição buscam resguardar imparcialidade administrativa. Exemplo: Servidor que tem interesse pessoal direto na decisão informa o impedimento e não atua."
+  },
+  {
+    "subtopicId": "DA-25-005",
+    "front": "Explique fases, instrução e decisão e diferencie sua aplicação de um conceito próximo.",
+    "back": "A Administração tem dever de emitir decisão expressa nos processos de sua competência. A instrução serve para reunir elementos relevantes à decisão administrativa. Exemplo: Após concluir a instrução, o órgão decide motivadamente e observa os prazos aplicáveis."
+  },
+  {
+    "subtopicId": "DA-25-006",
+    "front": "Explique recursos, revisão e prazos e diferencie sua aplicação de um conceito próximo.",
+    "back": "O recurso administrativo pode versar sobre legalidade e mérito, nos termos legais. O prazo recursal geral da Lei 9.784/1999 é de dez dias, salvo disposição específica. Exemplo: Interessado apresenta recurso tempestivo contra decisão administrativa e fundamenta sua discordância."
+  }
+],
+"DA-26": [
+  {
+    "subtopicId": "DA-26-001",
+    "front": "Explique conceito e classificação dos bens públicos e diferencie sua aplicação de um conceito próximo.",
+    "back": "Bens pertencentes a pessoas jurídicas de direito público interno são públicos nos termos do art. 98 do Código Civil. O Código Civil distingue bens de uso comum, uso especial e dominicais. Exemplo: Um prédio de autarquia e uma praça municipal podem ser bens públicos de categorias distintas."
+  },
+  {
+    "subtopicId": "DA-26-002",
+    "front": "Explique bens de uso comum, uso especial e dominicais e diferencie sua aplicação de um conceito próximo.",
+    "back": "Uma praça pública é exemplo típico de bem de uso comum do povo. Prédio destinado ao funcionamento de repartição é exemplo de bem de uso especial. Exemplo: Uma antiga área pública sem destinação administrativa pode ser classificada como dominical."
+  },
+  {
+    "subtopicId": "DA-26-003",
+    "front": "Explique características e regime jurídico e diferencie sua aplicação de um conceito próximo.",
+    "back": "Bens públicos não podem ser adquiridos por usucapião. Bens dominicais podem ser alienados desde que observadas as exigências legais. Exemplo: Uma área dominical pode ser alienada se cumpridos os requisitos legais pertinentes."
+  },
+  {
+    "subtopicId": "DA-26-004",
+    "front": "Explique uso e alienação dos bens públicos e diferencie sua aplicação de um conceito próximo.",
+    "back": "A alienação de bens públicos exige observar a categoria do bem e requisitos legais. A destinação pública do bem pode limitar sua disponibilidade para alienação. Exemplo: Antes de alienar um imóvel público, o órgão verifica a afetação e o procedimento legal."
+  }
+],
+"DA-27": [
+  {
+    "subtopicId": "DA-27-001",
+    "front": "Explique desapropriação e diferencie sua aplicação de um conceito próximo.",
+    "back": "A desapropriação pode transferir compulsoriamente a propriedade nas hipóteses legais. A regra geral constitucional exige indenização justa, prévia e em dinheiro, ressalvadas exceções. Exemplo: O município desapropria imóvel para obra pública, observando fundamento legal e indenização aplicável."
+  },
+  {
+    "subtopicId": "DA-27-002",
+    "front": "Explique servidão administrativa e diferencie sua aplicação de um conceito próximo.",
+    "back": "A servidão administrativa pode impor ônus específico sem transferir a propriedade do imóvel. Prejuízos decorrentes da servidão podem ensejar indenização conforme as circunstâncias. Exemplo: Faixa de passagem de rede pública atravessa terreno privado com restrições específicas de uso."
+  },
+  {
+    "subtopicId": "DA-27-003",
+    "front": "Explique requisição administrativa e diferencie sua aplicação de um conceito próximo.",
+    "back": "A requisição administrativa pressupõe iminente perigo público. A Constituição assegura indenização ulterior se houver dano na requisição. Exemplo: Em emergência com perigo público iminente, autoridade utiliza temporariamente recurso particular nos limites constitucionais."
+  },
+  {
+    "subtopicId": "DA-27-004",
+    "front": "Explique ocupação temporária e diferencie sua aplicação de um conceito próximo.",
+    "back": "A ocupação temporária não implica, por si só, transferência definitiva da propriedade. A ocupação temporária deve respeitar fundamento e condições legais. Exemplo: Área particular é usada transitoriamente como apoio à execução de obra pública conforme requisitos legais."
+  },
+  {
+    "subtopicId": "DA-27-005",
+    "front": "Explique limitações administrativas e tombamento e diferencie sua aplicação de um conceito próximo.",
+    "back": "Limitações administrativas podem estabelecer restrições gerais de uso da propriedade. Tombamento visa à proteção do patrimônio cultural sem exigir transferência do domínio. Exemplo: Imóvel histórico é tombado e continua pertencendo ao particular, sujeito às restrições de proteção."
+  }
 ]
 });
 
