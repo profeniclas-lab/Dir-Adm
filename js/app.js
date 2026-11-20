@@ -1,4 +1,6 @@
+import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
+import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
 import { renderModules } from "./features/modules.js";
@@ -14,6 +16,7 @@ import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSim
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
 const state = loadState();
+refreshUnifiedReviewQueue(state);
 const mainElement = document.getElementById("main");
 const catalogErrors = validateCatalog();
 if (catalogErrors.length) console.error("[ADM-ESTUDO] Catálogo inválido:", catalogErrors);
@@ -41,6 +44,7 @@ function renderCurrentPage() {
     case "revisao":
     case "erros":
       if(reviewQuestionId)renderReviewQuestion(mainElement,state,state.navigation.currentRoute,reviewQuestionId);
+      else if(state.navigation.currentRoute==='revisao')renderUnifiedReviewList(mainElement,state);
       else renderReviewList(mainElement,state,state.navigation.currentRoute);
       break;
     case "modulos":
@@ -55,7 +59,7 @@ function renderCurrentPage() {
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;
   }
 }
-function commitAndRender() { saveState(state); renderCurrentPage(); }
+function commitAndRender() { refreshUnifiedReviewQueue(state); saveState(state); renderCurrentPage(); }
 function resetCardView() { editSubtopicId = null; cardFlipped = false; }
 function navigateTo(route) {
   state.navigation.currentRoute = route;
@@ -105,6 +109,16 @@ document.addEventListener('click', event => {
     if(event.target.closest('[data-sim-finish]')){if(finishSimulado(state))commitAndRender();return;}
     if(event.target.closest('[data-sim-close]')){if(closeSimulado(state))commitAndRender();return;}
     if(event.target.closest('[data-sim-cancel]')){if(window.confirm('Cancelar este simulado? As respostas desta tentativa serão descartadas.')&&cancelSimulado(state))commitAndRender();return;}
+  }
+  if(state.navigation.currentRoute==='revisao'){
+    const flash=event.target.closest('[data-unified-flash-open]');
+    if(flash){
+      const id=flash.dataset.unifiedFlashOpen;
+      state.progress.flashcardStudy??={filters:{area:'todas',module:'todos',mode:'todos'},session:null};
+      if(state.progress.flashcardStudy.session){window.alert('Existe uma sessão de flashcards em andamento. Conclua-a antes de abrir uma revisão específica.');return;}
+      state.progress.flashcardStudy.session={ids:[id],cursor:0,flipped:false,startedAt:new Date().toISOString()};
+      state.navigation.currentRoute='flashcards';reviewQuestionId=null;commitAndRender();return;
+    }
   }
   if(state.navigation.currentRoute==='revisao'||state.navigation.currentRoute==='erros'){
     const open=event.target.closest('[data-review-open]');
