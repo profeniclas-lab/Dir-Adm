@@ -458,6 +458,97 @@ export const DIAGNOSTICS = Object.freeze({
     "front": "Qual a diferença ou limite essencial de abuso de poder: excesso e desvio de finalidade? Dê um exemplo de concurso.",
     "back": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei. Exemplo: Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato."
   }
+],
+"DA-19": [
+  {
+    "subtopicId": "DA-19-001",
+    "front": "Qual é a distinção central em conceito e elementos do ato administrativo? Dê um exemplo.",
+    "back": "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado. Exemplo: Uma autorização administrativa produz efeitos jurídicos; a simples execução material de uma limpeza não é, por si, o mesmo ato."
+  },
+  {
+    "subtopicId": "DA-19-002",
+    "front": "Qual é a distinção central em competência, finalidade, forma, motivo e objeto? Dê um exemplo.",
+    "back": "Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato.. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido. Exemplo: Uma licença emitida por autoridade incompetente pode conter motivo verdadeiro, mas ainda apresentar vício de competência."
+  },
+  {
+    "subtopicId": "DA-19-003",
+    "front": "Qual é a distinção central em atributos dos atos administrativos? Dê um exemplo.",
+    "back": "Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário. Exemplo: Uma certidão não impõe obrigação ao destinatário; uma ordem de polícia pode ter caráter imperativo."
+  },
+  {
+    "subtopicId": "DA-19-004",
+    "front": "Qual é a distinção central em classificações e espécies? Dê um exemplo.",
+    "back": "A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo. Exemplo: Uma instrução de serviço organiza atividades internas; uma multa administrativa decorre do exercício de competência sancionatória."
+  },
+  {
+    "subtopicId": "DA-19-005",
+    "front": "Qual é a distinção central em anulação, revogação e convalidação? Dê um exemplo.",
+    "back": "Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido. Exemplo: Um ato discricionário válido deixa de atender ao interesse público: pode ser revogado quando presentes os requisitos jurídicos."
+  },
+  {
+    "subtopicId": "DA-19-006",
+    "front": "Qual é a distinção central em outras formas de extinção dos atos? Dê um exemplo.",
+    "back": "Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade. Exemplo: Uma autorização condicionada pode ser cassada se o beneficiário deixa de cumprir requisito essencial."
+  }
+],
+"DA-20": [
+  {
+    "subtopicId": "DA-20-001",
+    "front": "Qual é a distinção central em conceito e princípios dos serviços públicos? Dê um exemplo.",
+    "back": "Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável. Exemplo: Uma concessionária deve manter padrões de qualidade e informar interrupções nas condições legais."
+  },
+  {
+    "subtopicId": "DA-20-002",
+    "front": "Qual é a distinção central em classificação e formas de prestação? Dê um exemplo.",
+    "back": "Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público. Exemplo: Um município delega a operação de transporte coletivo a empresa, mantendo deveres de fiscalização."
+  },
+  {
+    "subtopicId": "DA-20-003",
+    "front": "Qual é a distinção central em concessão e permissão? Dê um exemplo.",
+    "back": "Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física. Exemplo: Uma empresa vence licitação para operar transporte urbano por prazo determinado, sujeita a contrato e fiscalização."
+  },
+  {
+    "subtopicId": "DA-20-004",
+    "front": "Qual é a distinção central em autorização e outras formas de delegação? Dê um exemplo.",
+    "back": "Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável. Exemplo: Determinada atividade econômica regulada pode depender de autorização setorial sem ser concessão de serviço público."
+  },
+  {
+    "subtopicId": "DA-20-005",
+    "front": "Qual é a distinção central em direitos dos usuários e serviço adequado? Dê um exemplo.",
+    "back": "A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso. Exemplo: Um usuário registra reclamação fundamentada sobre interrupções recorrentes e recebe encaminhamento pelo canal competente."
+  }
+],
+"DA-21": [
+  {
+    "subtopicId": "DA-21-001",
+    "front": "Qual é a distinção central em fundamentos e princípios da lei 14.133/2021? Dê um exemplo.",
+    "back": "A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021. Exemplo: Uma prefeitura prepara estudo técnico preliminar e define critérios objetivos antes de publicar edital."
+  },
+  {
+    "subtopicId": "DA-21-002",
+    "front": "Qual é a distinção central em fases e modalidades da licitação? Dê um exemplo.",
+    "back": "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021. Exemplo: Um órgão utiliza pregão para adquirir bens comuns, observando a disciplina legal pertinente."
+  },
+  {
+    "subtopicId": "DA-21-003",
+    "front": "Qual é a distinção central em critérios de julgamento? Dê um exemplo.",
+    "back": "A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento. Exemplo: Em uma contratação de bens comuns, a administração avalia propostas pelo critério legal definido e verifica especificações mínimas."
+  },
+  {
+    "subtopicId": "DA-21-004",
+    "front": "Qual é a distinção central em contratação direta: dispensa e inexigibilidade? Dê um exemplo.",
+    "back": "Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual. Exemplo: Uma hipótese legal de dispensa não autoriza automaticamente escolher fornecedor sem justificativas."
+  },
+  {
+    "subtopicId": "DA-21-005",
+    "front": "Qual é a distinção central em contratos administrativos e fiscalização? Dê um exemplo.",
+    "back": "Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes. Exemplo: Um fiscal registra atraso na entrega e comunica a autoridade competente para providências."
+  },
+  {
+    "subtopicId": "DA-21-006",
+    "front": "Qual é a distinção central em alterações, sanções e responsabilidades? Dê um exemplo.",
+    "back": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei. Exemplo: Um contratado atrasa entrega; o órgão apura o fato e avalia providências e eventual sanção segundo a lei."
+  }
 ]
 });
 

@@ -10945,6 +10945,1888 @@ export const QUESTIONS = [
     "examTip": "Compare afirmações absolutas com os limites constitucionais e legais.",
     "newExample": "Fiscal competente aplica sanção para perseguir desafeto: a finalidade desviada compromete o ato.",
     "challenge": "Explique por que a seguinte afirmação é falsa: Se o agente é competente, qualquer finalidade pessoal torna o ato válido."
+  },
+  {
+    "id": "Q-DA-19-001-01",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-001",
+    "topic": "Conceito e elementos do ato administrativo",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto..",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.",
+      "Incorreta: Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito. O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.."
+    ],
+    "explanation": "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado. A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+    "concept": "Conceito e elementos do ato administrativo",
+    "trap": "Não aceite generalizações: Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito.",
+    "examTip": "A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+    "newExample": "Uma autorização administrativa produz efeitos jurídicos; a simples execução material de uma limpeza não é, por si, o mesmo ato.",
+    "challenge": "Corrija esta afirmação e justifique: Todo fato material da Administração possui necessariamente os cinco elementos de um ato administrativo."
+  },
+  {
+    "id": "Q-DA-19-001-02",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-001",
+    "topic": "Conceito e elementos do ato administrativo",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando conceito e elementos do ato administrativo, assinale a alternativa CORRETA.",
+    "options": [
+      "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto..",
+      "Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito.",
+      "Todo fato material da Administração possui necessariamente os cinco elementos de um ato administrativo.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto..",
+      "Incorreta: Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito. O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto..",
+      "Incorreta: Todo fato material da Administração possui necessariamente os cinco elementos de um ato administrativo. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.",
+      "Incorreta: condições jurídicas são indispensáveis. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado."
+    ],
+    "explanation": "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado. A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+    "concept": "Conceito e elementos do ato administrativo",
+    "trap": "Não aceite generalizações: Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito.",
+    "examTip": "A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+    "newExample": "Uma autorização administrativa produz efeitos jurídicos; a simples execução material de uma limpeza não é, por si, o mesmo ato.",
+    "challenge": "Corrija esta afirmação e justifique: Todo fato material da Administração possui necessariamente os cinco elementos de um ato administrativo."
+  },
+  {
+    "id": "Q-DA-19-001-03",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-001",
+    "topic": "Conceito e elementos do ato administrativo",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto..\nII. Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito.\nIII. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.\nAssinale a combinação correta.",
+    "options": [
+      "I apenas",
+      "I e III apenas",
+      "I, II e III",
+      "III apenas",
+      "II apenas"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incompleta: III também é verdadeira. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.",
+      "Correta: I e III são verdadeiras, II é falsa. O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.",
+      "Incorreta: II é falsa. Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito.",
+      "Incompleta: I também é verdadeira. O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto..",
+      "Incorreta: II é falsa. Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito."
+    ],
+    "explanation": "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado. A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+    "concept": "Conceito e elementos do ato administrativo",
+    "trap": "Não aceite generalizações: Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito.",
+    "examTip": "A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+    "newExample": "Uma autorização administrativa produz efeitos jurídicos; a simples execução material de uma limpeza não é, por si, o mesmo ato.",
+    "challenge": "Corrija esta afirmação e justifique: Todo fato material da Administração possui necessariamente os cinco elementos de um ato administrativo."
+  },
+  {
+    "id": "Q-DA-19-001-04",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-001",
+    "topic": "Conceito e elementos do ato administrativo",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Assinale a alternativa INCORRETA sobre conceito e elementos do ato administrativo.",
+    "options": [
+      "O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.",
+      "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto..",
+      "Todo fato material da Administração possui necessariamente os cinco elementos de um ato administrativo.",
+      "A aplicação depende do regime jurídico e das circunstâncias concretas."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Verdadeira, não atende ao comando: O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.",
+      "Verdadeira, não atende ao comando: O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto..",
+      "Incorreta, atende ao comando: Todo fato material da Administração possui necessariamente os cinco elementos de um ato administrativo. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.",
+      "Verdadeira, não atende ao comando: análise contextual é necessária. A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material."
+    ],
+    "explanation": "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado. A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+    "concept": "Conceito e elementos do ato administrativo",
+    "trap": "Não aceite generalizações: Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito.",
+    "examTip": "A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+    "newExample": "Uma autorização administrativa produz efeitos jurídicos; a simples execução material de uma limpeza não é, por si, o mesmo ato.",
+    "challenge": "Corrija esta afirmação e justifique: Todo fato material da Administração possui necessariamente os cinco elementos de um ato administrativo."
+  },
+  {
+    "id": "Q-DA-19-002-01",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-002",
+    "topic": "Competência, finalidade, forma, motivo e objeto",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato..",
+      "Incorreta: Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato.. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido."
+    ],
+    "explanation": "Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato.. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido. Distinguir os cinco elementos permite localizar o vício com precisão; motivo não é sinônimo de motivação.",
+    "concept": "Competência, finalidade, forma, motivo e objeto",
+    "trap": "Não aceite generalizações: O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção.",
+    "examTip": "Distinguir os cinco elementos permite localizar o vício com precisão; motivo não é sinônimo de motivação.",
+    "newExample": "Uma licença emitida por autoridade incompetente pode conter motivo verdadeiro, mas ainda apresentar vício de competência.",
+    "challenge": "Corrija esta afirmação e justifique: A competência do agente é livremente escolhida conforme sua conveniência pessoal."
+  },
+  {
+    "id": "Q-DA-19-002-02",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-002",
+    "topic": "Competência, finalidade, forma, motivo e objeto",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando competência, finalidade, forma, motivo e objeto, assinale a alternativa CORRETA.",
+    "options": [
+      "Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato..",
+      "O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "A competência do agente é livremente escolhida conforme sua conveniência pessoal."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato..",
+      "Incorreta: O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato..",
+      "Incorreta: condições jurídicas são indispensáveis. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido.",
+      "Incorreta: A competência do agente é livremente escolhida conforme sua conveniência pessoal. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido."
+    ],
+    "explanation": "Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato.. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido. Distinguir os cinco elementos permite localizar o vício com precisão; motivo não é sinônimo de motivação.",
+    "concept": "Competência, finalidade, forma, motivo e objeto",
+    "trap": "Não aceite generalizações: O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção.",
+    "examTip": "Distinguir os cinco elementos permite localizar o vício com precisão; motivo não é sinônimo de motivação.",
+    "newExample": "Uma licença emitida por autoridade incompetente pode conter motivo verdadeiro, mas ainda apresentar vício de competência.",
+    "challenge": "Corrija esta afirmação e justifique: A competência do agente é livremente escolhida conforme sua conveniência pessoal."
+  },
+  {
+    "id": "Q-DA-19-002-03",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-002",
+    "topic": "Competência, finalidade, forma, motivo e objeto",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações como V ou F:\nI. Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato..\nII. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção.\nIII. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido.\nIV. A competência do agente é livremente escolhida conforme sua conveniência pessoal.\nAssinale a sequência correta.",
+    "options": [
+      "F-F-V-V",
+      "F-V-F-V",
+      "V-V-F-F",
+      "V-F-V-F",
+      "V-F-F-V"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: II e IV são falsas. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. A competência do agente é livremente escolhida conforme sua conveniência pessoal.",
+      "Incorreta: II e IV são falsas. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. A competência do agente é livremente escolhida conforme sua conveniência pessoal.",
+      "Incorreta: II e IV são falsas. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. A competência do agente é livremente escolhida conforme sua conveniência pessoal.",
+      "Correta: I e III são verdadeiras. Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato.. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido.",
+      "Incorreta: II e IV são falsas. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. A competência do agente é livremente escolhida conforme sua conveniência pessoal."
+    ],
+    "explanation": "Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato.. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido. Distinguir os cinco elementos permite localizar o vício com precisão; motivo não é sinônimo de motivação.",
+    "concept": "Competência, finalidade, forma, motivo e objeto",
+    "trap": "Não aceite generalizações: O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção.",
+    "examTip": "Distinguir os cinco elementos permite localizar o vício com precisão; motivo não é sinônimo de motivação.",
+    "newExample": "Uma licença emitida por autoridade incompetente pode conter motivo verdadeiro, mas ainda apresentar vício de competência.",
+    "challenge": "Corrija esta afirmação e justifique: A competência do agente é livremente escolhida conforme sua conveniência pessoal."
+  },
+  {
+    "id": "Q-DA-19-002-04",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-002",
+    "topic": "Competência, finalidade, forma, motivo e objeto",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (afirmação juridicamente válida) e F (afirmação falsa):\nI. Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato..\nII. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção.\nIII. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido.\nIV. A competência do agente é livremente escolhida conforme sua conveniência pessoal.\nQual a sequência?",
+    "options": [
+      "V-F-F-V",
+      "F-F-V-V",
+      "F-V-F-V",
+      "V-V-F-F",
+      "V-F-V-F"
+    ],
+    "answer": 4,
+    "optionComments": [
+      "Incorreta: a classificação correta é V-F-V-F. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. A competência do agente é livremente escolhida conforme sua conveniência pessoal.",
+      "Incorreta: a classificação correta é V-F-V-F. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. A competência do agente é livremente escolhida conforme sua conveniência pessoal.",
+      "Incorreta: a classificação correta é V-F-V-F. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. A competência do agente é livremente escolhida conforme sua conveniência pessoal.",
+      "Incorreta: a classificação correta é V-F-V-F. O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção. A competência do agente é livremente escolhida conforme sua conveniência pessoal.",
+      "Correta: I e III válidas, II e IV falsas. Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato.. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido."
+    ],
+    "explanation": "Competência identifica quem pode praticar o ato; finalidade é o resultado público juridicamente previsto; forma é a exteriorização; motivo são pressupostos de fato e direito; objeto é o efeito jurídico imediato.. Motivo corresponde aos pressupostos de fato e de direito, enquanto objeto é o conteúdo jurídico produzido. Distinguir os cinco elementos permite localizar o vício com precisão; motivo não é sinônimo de motivação.",
+    "concept": "Competência, finalidade, forma, motivo e objeto",
+    "trap": "Não aceite generalizações: O motivo do ato equivale sempre à finalidade pública, sem qualquer distinção.",
+    "examTip": "Distinguir os cinco elementos permite localizar o vício com precisão; motivo não é sinônimo de motivação.",
+    "newExample": "Uma licença emitida por autoridade incompetente pode conter motivo verdadeiro, mas ainda apresentar vício de competência.",
+    "challenge": "Corrija esta afirmação e justifique: A competência do agente é livremente escolhida conforme sua conveniência pessoal."
+  },
+  {
+    "id": "Q-DA-19-003-01",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-003",
+    "topic": "Atributos dos atos administrativos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário.",
+      "Incorreta: Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção. Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos."
+    ],
+    "explanation": "Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+    "concept": "Atributos dos atos administrativos",
+    "trap": "Não aceite generalizações: Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção.",
+    "examTip": "A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+    "newExample": "Uma certidão não impõe obrigação ao destinatário; uma ordem de polícia pode ter caráter imperativo.",
+    "challenge": "Corrija esta afirmação e justifique: A presunção de legitimidade impede qualquer controle judicial sobre o ato."
+  },
+  {
+    "id": "Q-DA-19-003-02",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-003",
+    "topic": "Atributos dos atos administrativos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando atributos dos atos administrativos, assinale a alternativa CORRETA.",
+    "options": [
+      "A presunção de legitimidade impede qualquer controle judicial sobre o ato.",
+      "Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A presunção de legitimidade impede qualquer controle judicial sobre o ato. A presunção de legitimidade é relativa e admite prova em contrário.",
+      "Correta: Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos.",
+      "Incorreta: condições jurídicas são indispensáveis. A presunção de legitimidade é relativa e admite prova em contrário.",
+      "Incorreta: Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção. Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos."
+    ],
+    "explanation": "Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+    "concept": "Atributos dos atos administrativos",
+    "trap": "Não aceite generalizações: Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção.",
+    "examTip": "A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+    "newExample": "Uma certidão não impõe obrigação ao destinatário; uma ordem de polícia pode ter caráter imperativo.",
+    "challenge": "Corrija esta afirmação e justifique: A presunção de legitimidade impede qualquer controle judicial sobre o ato."
+  },
+  {
+    "id": "Q-DA-19-003-03",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-003",
+    "topic": "Atributos dos atos administrativos",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos.\nII. Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção.\nIII. A presunção de legitimidade é relativa e admite prova em contrário.\nAssinale a combinação correta.",
+    "options": [
+      "I, II e III",
+      "I e III apenas",
+      "II apenas",
+      "III apenas",
+      "I apenas"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: II é falsa. Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção.",
+      "Correta: I e III são verdadeiras, II é falsa. Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário.",
+      "Incorreta: II é falsa. Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção.",
+      "Incompleta: I também é verdadeira. Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos.",
+      "Incompleta: III também é verdadeira. A presunção de legitimidade é relativa e admite prova em contrário."
+    ],
+    "explanation": "Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+    "concept": "Atributos dos atos administrativos",
+    "trap": "Não aceite generalizações: Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção.",
+    "examTip": "A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+    "newExample": "Uma certidão não impõe obrigação ao destinatário; uma ordem de polícia pode ter caráter imperativo.",
+    "challenge": "Corrija esta afirmação e justifique: A presunção de legitimidade impede qualquer controle judicial sobre o ato."
+  },
+  {
+    "id": "Q-DA-19-003-04",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-003",
+    "topic": "Atributos dos atos administrativos",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um órgão público examina a seguinte situação: Uma certidão não impõe obrigação ao destinatário; uma ordem de polícia pode ter caráter imperativo. Qual interpretação é compatível com atributos dos atos administrativos?",
+    "options": [
+      "A situação confirma que A presunção de legitimidade impede qualquer controle judicial sobre o ato.",
+      "A situação exige aplicar a distinção: Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos.",
+      "O caso dispensa verificar os pressupostos legais, pois é suficiente a intenção do agente.",
+      "A situação demonstra que Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A presunção de legitimidade impede qualquer controle judicial sobre o ato. A presunção de legitimidade é relativa e admite prova em contrário.",
+      "Correta: Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário.",
+      "Incorreta: a intenção isolada não substitui requisitos legais. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+      "Incorreta: Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos."
+    ],
+    "explanation": "Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+    "concept": "Atributos dos atos administrativos",
+    "trap": "Não aceite generalizações: Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção.",
+    "examTip": "A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+    "newExample": "Uma certidão não impõe obrigação ao destinatário; uma ordem de polícia pode ter caráter imperativo.",
+    "challenge": "Corrija esta afirmação e justifique: A presunção de legitimidade impede qualquer controle judicial sobre o ato."
+  },
+  {
+    "id": "Q-DA-19-004-01",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-004",
+    "topic": "Classificações e espécies",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Um ato enunciativo tem sempre natureza de sanção administrativa.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Um ato enunciativo tem sempre natureza de sanção administrativa. A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos.",
+      "Incorreta: A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo."
+    ],
+    "explanation": "A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo. Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato.",
+    "concept": "Classificações e espécies",
+    "trap": "Não aceite generalizações: Um ato enunciativo tem sempre natureza de sanção administrativa.",
+    "examTip": "Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato.",
+    "newExample": "Uma instrução de serviço organiza atividades internas; uma multa administrativa decorre do exercício de competência sancionatória.",
+    "challenge": "Corrija esta afirmação e justifique: Todos os atos administrativos pertencem a uma única categoria de classificação possível."
+  },
+  {
+    "id": "Q-DA-19-004-02",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-004",
+    "topic": "Classificações e espécies",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando classificações e espécies, assinale a alternativa CORRETA.",
+    "options": [
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos.",
+      "Um ato enunciativo tem sempre natureza de sanção administrativa.",
+      "Todos os atos administrativos pertencem a uma única categoria de classificação possível."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: condições jurídicas são indispensáveis. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo.",
+      "Correta: A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos.",
+      "Incorreta: Um ato enunciativo tem sempre natureza de sanção administrativa. A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos.",
+      "Incorreta: Todos os atos administrativos pertencem a uma única categoria de classificação possível. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo."
+    ],
+    "explanation": "A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo. Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato.",
+    "concept": "Classificações e espécies",
+    "trap": "Não aceite generalizações: Um ato enunciativo tem sempre natureza de sanção administrativa.",
+    "examTip": "Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato.",
+    "newExample": "Uma instrução de serviço organiza atividades internas; uma multa administrativa decorre do exercício de competência sancionatória.",
+    "challenge": "Corrija esta afirmação e justifique: Todos os atos administrativos pertencem a uma única categoria de classificação possível."
+  },
+  {
+    "id": "Q-DA-19-004-03",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-004",
+    "topic": "Classificações e espécies",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações como V ou F:\nI. A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos.\nII. Um ato enunciativo tem sempre natureza de sanção administrativa.\nIII. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo.\nIV. Todos os atos administrativos pertencem a uma única categoria de classificação possível.\nAssinale a sequência correta.",
+    "options": [
+      "V-F-F-V",
+      "F-F-V-V",
+      "V-F-V-F",
+      "V-V-F-F",
+      "F-V-F-V"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: II e IV são falsas. Um ato enunciativo tem sempre natureza de sanção administrativa. Todos os atos administrativos pertencem a uma única categoria de classificação possível.",
+      "Incorreta: II e IV são falsas. Um ato enunciativo tem sempre natureza de sanção administrativa. Todos os atos administrativos pertencem a uma única categoria de classificação possível.",
+      "Correta: I e III são verdadeiras. A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo.",
+      "Incorreta: II e IV são falsas. Um ato enunciativo tem sempre natureza de sanção administrativa. Todos os atos administrativos pertencem a uma única categoria de classificação possível.",
+      "Incorreta: II e IV são falsas. Um ato enunciativo tem sempre natureza de sanção administrativa. Todos os atos administrativos pertencem a uma única categoria de classificação possível."
+    ],
+    "explanation": "A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo. Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato.",
+    "concept": "Classificações e espécies",
+    "trap": "Não aceite generalizações: Um ato enunciativo tem sempre natureza de sanção administrativa.",
+    "examTip": "Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato.",
+    "newExample": "Uma instrução de serviço organiza atividades internas; uma multa administrativa decorre do exercício de competência sancionatória.",
+    "challenge": "Corrija esta afirmação e justifique: Todos os atos administrativos pertencem a uma única categoria de classificação possível."
+  },
+  {
+    "id": "Q-DA-19-004-04",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-004",
+    "topic": "Classificações e espécies",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Assinale a alternativa INCORRETA sobre classificações e espécies.",
+    "options": [
+      "Todos os atos administrativos pertencem a uma única categoria de classificação possível.",
+      "Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo.",
+      "A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos.",
+      "A aplicação depende do regime jurídico e das circunstâncias concretas."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Incorreta, atende ao comando: Todos os atos administrativos pertencem a uma única categoria de classificação possível. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo.",
+      "Verdadeira, não atende ao comando: Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo.",
+      "Verdadeira, não atende ao comando: A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos.",
+      "Verdadeira, não atende ao comando: análise contextual é necessária. Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato."
+    ],
+    "explanation": "A classificação pode considerar destinatários, alcance, formação da vontade, efeitos e grau de liberdade; espécies doutrinárias usuais incluem atos normativos, ordinatórios, negociais, enunciativos e punitivos. Uma certidão pode ser tratada como ato enunciativo; uma penalidade disciplinar, como ato punitivo. Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato.",
+    "concept": "Classificações e espécies",
+    "trap": "Não aceite generalizações: Um ato enunciativo tem sempre natureza de sanção administrativa.",
+    "examTip": "Classificar exige identificar o critério utilizado, e não decorar uma lista sem relacioná-la aos efeitos do ato.",
+    "newExample": "Uma instrução de serviço organiza atividades internas; uma multa administrativa decorre do exercício de competência sancionatória.",
+    "challenge": "Corrija esta afirmação e justifique: Todos os atos administrativos pertencem a uma única categoria de classificação possível."
+  },
+  {
+    "id": "Q-DA-19-005-01",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-005",
+    "topic": "Anulação, revogação e convalidação",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado. Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos.",
+      "Correta: Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido."
+    ],
+    "explanation": "Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido. A convalidação não sana indiscriminadamente qualquer vício; atenção a competência, forma e prejuízo a terceiros.",
+    "concept": "Anulação, revogação e convalidação",
+    "trap": "Não aceite generalizações: Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado.",
+    "examTip": "A convalidação não sana indiscriminadamente qualquer vício; atenção a competência, forma e prejuízo a terceiros.",
+    "newExample": "Um ato discricionário válido deixa de atender ao interesse público: pode ser revogado quando presentes os requisitos jurídicos.",
+    "challenge": "Corrija esta afirmação e justifique: O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes."
+  },
+  {
+    "id": "Q-DA-19-005-02",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-005",
+    "topic": "Anulação, revogação e convalidação",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando anulação, revogação e convalidação, assinale a alternativa CORRETA.",
+    "options": [
+      "O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes.",
+      "Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos.",
+      "Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido.",
+      "Correta: Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos.",
+      "Incorreta: Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado. Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos.",
+      "Incorreta: condições jurídicas são indispensáveis. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido."
+    ],
+    "explanation": "Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido. A convalidação não sana indiscriminadamente qualquer vício; atenção a competência, forma e prejuízo a terceiros.",
+    "concept": "Anulação, revogação e convalidação",
+    "trap": "Não aceite generalizações: Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado.",
+    "examTip": "A convalidação não sana indiscriminadamente qualquer vício; atenção a competência, forma e prejuízo a terceiros.",
+    "newExample": "Um ato discricionário válido deixa de atender ao interesse público: pode ser revogado quando presentes os requisitos jurídicos.",
+    "challenge": "Corrija esta afirmação e justifique: O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes."
+  },
+  {
+    "id": "Q-DA-19-005-03",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-005",
+    "topic": "Anulação, revogação e convalidação",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos.\nII. Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado.\nIII. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido.\nAssinale a combinação correta.",
+    "options": [
+      "I apenas",
+      "I e III apenas",
+      "I, II e III",
+      "III apenas",
+      "II apenas"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incompleta: III também é verdadeira. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido.",
+      "Correta: I e III são verdadeiras, II é falsa. Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido.",
+      "Incorreta: II é falsa. Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado.",
+      "Incompleta: I também é verdadeira. Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos.",
+      "Incorreta: II é falsa. Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado."
+    ],
+    "explanation": "Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido. A convalidação não sana indiscriminadamente qualquer vício; atenção a competência, forma e prejuízo a terceiros.",
+    "concept": "Anulação, revogação e convalidação",
+    "trap": "Não aceite generalizações: Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado.",
+    "examTip": "A convalidação não sana indiscriminadamente qualquer vício; atenção a competência, forma e prejuízo a terceiros.",
+    "newExample": "Um ato discricionário válido deixa de atender ao interesse público: pode ser revogado quando presentes os requisitos jurídicos.",
+    "challenge": "Corrija esta afirmação e justifique: O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes."
+  },
+  {
+    "id": "Q-DA-19-005-04",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-005",
+    "topic": "Anulação, revogação e convalidação",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (afirmação juridicamente válida) e F (afirmação falsa):\nI. Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos.\nII. Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado.\nIII. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido.\nIV. O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes.\nQual a sequência?",
+    "options": [
+      "V-V-F-F",
+      "V-F-V-F",
+      "V-F-F-V",
+      "F-V-F-V",
+      "F-F-V-V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a classificação correta é V-F-V-F. Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado. O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes.",
+      "Correta: I e III válidas, II e IV falsas. Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido.",
+      "Incorreta: a classificação correta é V-F-V-F. Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado. O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes.",
+      "Incorreta: a classificação correta é V-F-V-F. Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado. O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes.",
+      "Incorreta: a classificação correta é V-F-V-F. Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado. O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes."
+    ],
+    "explanation": "Anulação desfaz ato ilegal; revogação retira ato válido por conveniência e oportunidade, quando juridicamente cabível; convalidação pode sanar determinados vícios, respeitados limites legais e direitos. A anulação se relaciona a ilegalidade; a revogação, ao mérito administrativo de ato válido. A convalidação não sana indiscriminadamente qualquer vício; atenção a competência, forma e prejuízo a terceiros.",
+    "concept": "Anulação, revogação e convalidação",
+    "trap": "Não aceite generalizações: Revogação é a forma ordinária de corrigir qualquer ilegalidade, inclusive ato vinculado.",
+    "examTip": "A convalidação não sana indiscriminadamente qualquer vício; atenção a competência, forma e prejuízo a terceiros.",
+    "newExample": "Um ato discricionário válido deixa de atender ao interesse público: pode ser revogado quando presentes os requisitos jurídicos.",
+    "challenge": "Corrija esta afirmação e justifique: O Poder Judiciário revoga atos administrativos exclusivamente por considerá-los inconvenientes."
+  },
+  {
+    "id": "Q-DA-19-006-01",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-006",
+    "topic": "Outras formas de extinção dos atos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Cassação e caducidade são sempre sinônimos de revogação por conveniência.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade.",
+      "Correta: Cassação e caducidade são sempre sinônimos de revogação por conveniência. Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação."
+    ],
+    "explanation": "Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+    "concept": "Outras formas de extinção dos atos",
+    "trap": "Não aceite generalizações: Cassação e caducidade são sempre sinônimos de revogação por conveniência.",
+    "examTip": "Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+    "newExample": "Uma autorização condicionada pode ser cassada se o beneficiário deixa de cumprir requisito essencial.",
+    "challenge": "Corrija esta afirmação e justifique: Todo ato extinto deve ser considerado ilegal desde sua origem."
+  },
+  {
+    "id": "Q-DA-19-006-02",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-006",
+    "topic": "Outras formas de extinção dos atos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando outras formas de extinção dos atos, assinale a alternativa CORRETA.",
+    "options": [
+      "Cassação e caducidade são sempre sinônimos de revogação por conveniência.",
+      "Todo ato extinto deve ser considerado ilegal desde sua origem.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: Cassação e caducidade são sempre sinônimos de revogação por conveniência. Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação.",
+      "Incorreta: Todo ato extinto deve ser considerado ilegal desde sua origem. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade.",
+      "Incorreta: condições jurídicas são indispensáveis. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade.",
+      "Correta: Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação."
+    ],
+    "explanation": "Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+    "concept": "Outras formas de extinção dos atos",
+    "trap": "Não aceite generalizações: Cassação e caducidade são sempre sinônimos de revogação por conveniência.",
+    "examTip": "Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+    "newExample": "Uma autorização condicionada pode ser cassada se o beneficiário deixa de cumprir requisito essencial.",
+    "challenge": "Corrija esta afirmação e justifique: Todo ato extinto deve ser considerado ilegal desde sua origem."
+  },
+  {
+    "id": "Q-DA-19-006-03",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-006",
+    "topic": "Outras formas de extinção dos atos",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações como V ou F:\nI. Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação.\nII. Cassação e caducidade são sempre sinônimos de revogação por conveniência.\nIII. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade.\nIV. Todo ato extinto deve ser considerado ilegal desde sua origem.\nAssinale a sequência correta.",
+    "options": [
+      "F-V-F-V",
+      "V-F-V-F",
+      "F-F-V-V",
+      "V-F-F-V",
+      "V-V-F-F"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: II e IV são falsas. Cassação e caducidade são sempre sinônimos de revogação por conveniência. Todo ato extinto deve ser considerado ilegal desde sua origem.",
+      "Correta: I e III são verdadeiras. Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade.",
+      "Incorreta: II e IV são falsas. Cassação e caducidade são sempre sinônimos de revogação por conveniência. Todo ato extinto deve ser considerado ilegal desde sua origem.",
+      "Incorreta: II e IV são falsas. Cassação e caducidade são sempre sinônimos de revogação por conveniência. Todo ato extinto deve ser considerado ilegal desde sua origem.",
+      "Incorreta: II e IV são falsas. Cassação e caducidade são sempre sinônimos de revogação por conveniência. Todo ato extinto deve ser considerado ilegal desde sua origem."
+    ],
+    "explanation": "Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+    "concept": "Outras formas de extinção dos atos",
+    "trap": "Não aceite generalizações: Cassação e caducidade são sempre sinônimos de revogação por conveniência.",
+    "examTip": "Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+    "newExample": "Uma autorização condicionada pode ser cassada se o beneficiário deixa de cumprir requisito essencial.",
+    "challenge": "Corrija esta afirmação e justifique: Todo ato extinto deve ser considerado ilegal desde sua origem."
+  },
+  {
+    "id": "Q-DA-19-006-04",
+    "moduleId": "DA-19",
+    "subtopicId": "DA-19-006",
+    "topic": "Outras formas de extinção dos atos",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um órgão público examina a seguinte situação: Uma autorização condicionada pode ser cassada se o beneficiário deixa de cumprir requisito essencial. Qual interpretação é compatível com outras formas de extinção dos atos?",
+    "options": [
+      "A situação demonstra que Cassação e caducidade são sempre sinônimos de revogação por conveniência.",
+      "A situação exige aplicar a distinção: Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação.",
+      "A situação confirma que Todo ato extinto deve ser considerado ilegal desde sua origem.",
+      "O caso dispensa verificar os pressupostos legais, pois é suficiente a intenção do agente."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Cassação e caducidade são sempre sinônimos de revogação por conveniência. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+      "Correta: Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade.",
+      "Incorreta: Todo ato extinto deve ser considerado ilegal desde sua origem. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade.",
+      "Incorreta: a intenção isolada não substitui requisitos legais. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento."
+    ],
+    "explanation": "Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+    "concept": "Outras formas de extinção dos atos",
+    "trap": "Não aceite generalizações: Cassação e caducidade são sempre sinônimos de revogação por conveniência.",
+    "examTip": "Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+    "newExample": "Uma autorização condicionada pode ser cassada se o beneficiário deixa de cumprir requisito essencial.",
+    "challenge": "Corrija esta afirmação e justifique: Todo ato extinto deve ser considerado ilegal desde sua origem."
+  },
+  {
+    "id": "Q-DA-20-001-01",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-001",
+    "topic": "Conceito e princípios dos serviços públicos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada. Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida.",
+      "Correta: Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável."
+    ],
+    "explanation": "Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável. Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação.",
+    "concept": "Conceito e princípios dos serviços públicos",
+    "trap": "Não aceite generalizações: O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada.",
+    "examTip": "Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação.",
+    "newExample": "Uma concessionária deve manter padrões de qualidade e informar interrupções nas condições legais.",
+    "challenge": "Corrija esta afirmação e justifique: Serviço público é necessariamente gratuito e executado apenas por servidores estatutários."
+  },
+  {
+    "id": "Q-DA-20-001-02",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-001",
+    "topic": "Conceito e princípios dos serviços públicos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando conceito e princípios dos serviços públicos, assinale a alternativa CORRETA.",
+    "options": [
+      "O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "Serviço público é necessariamente gratuito e executado apenas por servidores estatutários.",
+      "Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada. Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida.",
+      "Incorreta: condições jurídicas são indispensáveis. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável.",
+      "Incorreta: Serviço público é necessariamente gratuito e executado apenas por servidores estatutários. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável.",
+      "Correta: Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida."
+    ],
+    "explanation": "Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável. Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação.",
+    "concept": "Conceito e princípios dos serviços públicos",
+    "trap": "Não aceite generalizações: O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada.",
+    "examTip": "Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação.",
+    "newExample": "Uma concessionária deve manter padrões de qualidade e informar interrupções nas condições legais.",
+    "challenge": "Corrija esta afirmação e justifique: Serviço público é necessariamente gratuito e executado apenas por servidores estatutários."
+  },
+  {
+    "id": "Q-DA-20-001-03",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-001",
+    "topic": "Conceito e princípios dos serviços públicos",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida.\nII. O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada.\nIII. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável.\nAssinale a combinação correta.",
+    "options": [
+      "I, II e III",
+      "III apenas",
+      "II apenas",
+      "I apenas",
+      "I e III apenas"
+    ],
+    "answer": 4,
+    "optionComments": [
+      "Incorreta: II é falsa. O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada.",
+      "Incompleta: I também é verdadeira. Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida.",
+      "Incorreta: II é falsa. O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada.",
+      "Incompleta: III também é verdadeira. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável.",
+      "Correta: I e III são verdadeiras, II é falsa. Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável."
+    ],
+    "explanation": "Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável. Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação.",
+    "concept": "Conceito e princípios dos serviços públicos",
+    "trap": "Não aceite generalizações: O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada.",
+    "examTip": "Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação.",
+    "newExample": "Uma concessionária deve manter padrões de qualidade e informar interrupções nas condições legais.",
+    "challenge": "Corrija esta afirmação e justifique: Serviço público é necessariamente gratuito e executado apenas por servidores estatutários."
+  },
+  {
+    "id": "Q-DA-20-001-04",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-001",
+    "topic": "Conceito e princípios dos serviços públicos",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Assinale a alternativa INCORRETA sobre conceito e princípios dos serviços públicos.",
+    "options": [
+      "Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida.",
+      "Serviço público é necessariamente gratuito e executado apenas por servidores estatutários.",
+      "A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável.",
+      "A aplicação depende do regime jurídico e das circunstâncias concretas."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Verdadeira, não atende ao comando: Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida.",
+      "Incorreta, atende ao comando: Serviço público é necessariamente gratuito e executado apenas por servidores estatutários. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável.",
+      "Verdadeira, não atende ao comando: A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável.",
+      "Verdadeira, não atende ao comando: análise contextual é necessária. Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação."
+    ],
+    "explanation": "Serviço público é atividade destinada à satisfação de necessidades coletivas sob responsabilidade estatal e regime jurídico pertinente, com prestação direta ou delegada quando admitida. A prestação adequada deve observar padrões de regularidade, segurança e eficiência, conforme a disciplina aplicável. Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação.",
+    "concept": "Conceito e princípios dos serviços públicos",
+    "trap": "Não aceite generalizações: O princípio da continuidade torna absolutamente impossível qualquer interrupção legalmente autorizada.",
+    "examTip": "Continuidade não significa ausência de toda interrupção: verifique hipóteses e requisitos previstos na legislação.",
+    "newExample": "Uma concessionária deve manter padrões de qualidade e informar interrupções nas condições legais.",
+    "challenge": "Corrija esta afirmação e justifique: Serviço público é necessariamente gratuito e executado apenas por servidores estatutários."
+  },
+  {
+    "id": "Q-DA-20-002-01",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-002",
+    "topic": "Classificação e formas de prestação",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação.",
+      "Incorreta: Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público."
+    ],
+    "explanation": "Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público. Diferencie titularidade, execução, regulação e fiscalização antes de classificar a situação.",
+    "concept": "Classificação e formas de prestação",
+    "trap": "Não aceite generalizações: A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular.",
+    "examTip": "Diferencie titularidade, execução, regulação e fiscalização antes de classificar a situação.",
+    "newExample": "Um município delega a operação de transporte coletivo a empresa, mantendo deveres de fiscalização.",
+    "challenge": "Corrija esta afirmação e justifique: Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta."
+  },
+  {
+    "id": "Q-DA-20-002-02",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-002",
+    "topic": "Classificação e formas de prestação",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando classificação e formas de prestação, assinale a alternativa CORRETA.",
+    "options": [
+      "Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular.",
+      "Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público.",
+      "Incorreta: condições jurídicas são indispensáveis. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público.",
+      "Incorreta: A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação.",
+      "Correta: Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação."
+    ],
+    "explanation": "Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público. Diferencie titularidade, execução, regulação e fiscalização antes de classificar a situação.",
+    "concept": "Classificação e formas de prestação",
+    "trap": "Não aceite generalizações: A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular.",
+    "examTip": "Diferencie titularidade, execução, regulação e fiscalização antes de classificar a situação.",
+    "newExample": "Um município delega a operação de transporte coletivo a empresa, mantendo deveres de fiscalização.",
+    "challenge": "Corrija esta afirmação e justifique: Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta."
+  },
+  {
+    "id": "Q-DA-20-002-03",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-002",
+    "topic": "Classificação e formas de prestação",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações como V ou F:\nI. Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação.\nII. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular.\nIII. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público.\nIV. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.\nAssinale a sequência correta.",
+    "options": [
+      "F-V-F-V",
+      "V-V-F-F",
+      "F-F-V-V",
+      "V-F-F-V",
+      "V-F-V-F"
+    ],
+    "answer": 4,
+    "optionComments": [
+      "Incorreta: II e IV são falsas. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.",
+      "Incorreta: II e IV são falsas. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.",
+      "Incorreta: II e IV são falsas. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.",
+      "Incorreta: II e IV são falsas. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.",
+      "Correta: I e III são verdadeiras. Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público."
+    ],
+    "explanation": "Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público. Diferencie titularidade, execução, regulação e fiscalização antes de classificar a situação.",
+    "concept": "Classificação e formas de prestação",
+    "trap": "Não aceite generalizações: A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular.",
+    "examTip": "Diferencie titularidade, execução, regulação e fiscalização antes de classificar a situação.",
+    "newExample": "Um município delega a operação de transporte coletivo a empresa, mantendo deveres de fiscalização.",
+    "challenge": "Corrija esta afirmação e justifique: Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta."
+  },
+  {
+    "id": "Q-DA-20-002-04",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-002",
+    "topic": "Classificação e formas de prestação",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (afirmação juridicamente válida) e F (afirmação falsa):\nI. Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação.\nII. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular.\nIII. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público.\nIV. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.\nQual a sequência?",
+    "options": [
+      "V-V-F-F",
+      "V-F-V-F",
+      "F-V-F-V",
+      "V-F-F-V",
+      "F-F-V-V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a classificação correta é V-F-V-F. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.",
+      "Correta: I e III válidas, II e IV falsas. Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público.",
+      "Incorreta: a classificação correta é V-F-V-F. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.",
+      "Incorreta: a classificação correta é V-F-V-F. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta.",
+      "Incorreta: a classificação correta é V-F-V-F. A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular. Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta."
+    ],
+    "explanation": "Serviços podem ser prestados diretamente por entes e entidades administrativas ou por delegatários, conforme Constituição e legislação. A execução indireta pode ocorrer sem afastar a responsabilidade regulatória e fiscalizatória do poder público. Diferencie titularidade, execução, regulação e fiscalização antes de classificar a situação.",
+    "concept": "Classificação e formas de prestação",
+    "trap": "Não aceite generalizações: A delegação da prestação transfere sempre a titularidade constitucional do serviço ao particular.",
+    "examTip": "Diferencie titularidade, execução, regulação e fiscalização antes de classificar a situação.",
+    "newExample": "Um município delega a operação de transporte coletivo a empresa, mantendo deveres de fiscalização.",
+    "challenge": "Corrija esta afirmação e justifique: Todo serviço prestado ao cidadão é necessariamente realizado por órgão da administração direta."
+  },
+  {
+    "id": "Q-DA-20-003-01",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-003",
+    "topic": "Concessão e permissão",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal. Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco.",
+      "Correta: Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física."
+    ],
+    "explanation": "Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física. Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+    "concept": "Concessão e permissão",
+    "trap": "Não aceite generalizações: Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal.",
+    "examTip": "Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+    "newExample": "Uma empresa vence licitação para operar transporte urbano por prazo determinado, sujeita a contrato e fiscalização.",
+    "challenge": "Corrija esta afirmação e justifique: A permissão de serviço público é necessariamente outorgada apenas a autarquias."
+  },
+  {
+    "id": "Q-DA-20-003-02",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-003",
+    "topic": "Concessão e permissão",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando concessão e permissão, assinale a alternativa CORRETA.",
+    "options": [
+      "Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco.",
+      "A permissão de serviço público é necessariamente outorgada apenas a autarquias."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal. Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco.",
+      "Incorreta: condições jurídicas são indispensáveis. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física.",
+      "Correta: Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco.",
+      "Incorreta: A permissão de serviço público é necessariamente outorgada apenas a autarquias. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física."
+    ],
+    "explanation": "Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física. Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+    "concept": "Concessão e permissão",
+    "trap": "Não aceite generalizações: Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal.",
+    "examTip": "Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+    "newExample": "Uma empresa vence licitação para operar transporte urbano por prazo determinado, sujeita a contrato e fiscalização.",
+    "challenge": "Corrija esta afirmação e justifique: A permissão de serviço público é necessariamente outorgada apenas a autarquias."
+  },
+  {
+    "id": "Q-DA-20-003-03",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-003",
+    "topic": "Concessão e permissão",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco.\nII. Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal.\nIII. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física.\nAssinale a combinação correta.",
+    "options": [
+      "III apenas",
+      "I e III apenas",
+      "I apenas",
+      "I, II e III",
+      "II apenas"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incompleta: I também é verdadeira. Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco.",
+      "Correta: I e III são verdadeiras, II é falsa. Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física.",
+      "Incompleta: III também é verdadeira. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física.",
+      "Incorreta: II é falsa. Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal.",
+      "Incorreta: II é falsa. Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal."
+    ],
+    "explanation": "Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física. Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+    "concept": "Concessão e permissão",
+    "trap": "Não aceite generalizações: Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal.",
+    "examTip": "Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+    "newExample": "Uma empresa vence licitação para operar transporte urbano por prazo determinado, sujeita a contrato e fiscalização.",
+    "challenge": "Corrija esta afirmação e justifique: A permissão de serviço público é necessariamente outorgada apenas a autarquias."
+  },
+  {
+    "id": "Q-DA-20-003-04",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-003",
+    "topic": "Concessão e permissão",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um órgão público examina a seguinte situação: Uma empresa vence licitação para operar transporte urbano por prazo determinado, sujeita a contrato e fiscalização. Qual interpretação é compatível com concessão e permissão?",
+    "options": [
+      "O caso dispensa verificar os pressupostos legais, pois é suficiente a intenção do agente.",
+      "A situação demonstra que Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal.",
+      "A situação confirma que A permissão de serviço público é necessariamente outorgada apenas a autarquias.",
+      "A situação exige aplicar a distinção: Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: a intenção isolada não substitui requisitos legais. Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+      "Incorreta: Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal. Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+      "Incorreta: A permissão de serviço público é necessariamente outorgada apenas a autarquias. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física.",
+      "Correta: Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física."
+    ],
+    "explanation": "Nos termos gerais da Lei 8.987/1995, concessão de serviço público é delegação mediante licitação, por prazo determinado, a pessoa jurídica ou consórcio que demonstre capacidade, por sua conta e risco. A concessão, na disciplina geral, envolve pessoa jurídica ou consórcio, e a permissão pode alcançar pessoa física. Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+    "concept": "Concessão e permissão",
+    "trap": "Não aceite generalizações: Concessão e permissão dispensam licitação como regra e não admitem fiscalização estatal.",
+    "examTip": "Não confunda a permissão de serviço público da Lei 8.987/1995 com o uso informal do termo permissão em outras matérias.",
+    "newExample": "Uma empresa vence licitação para operar transporte urbano por prazo determinado, sujeita a contrato e fiscalização.",
+    "challenge": "Corrija esta afirmação e justifique: A permissão de serviço público é necessariamente outorgada apenas a autarquias."
+  },
+  {
+    "id": "Q-DA-20-004-01",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-004",
+    "topic": "Autorização e outras formas de delegação",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995. Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição.",
+      "Incorreta: Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável."
+    ],
+    "explanation": "Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável. Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico.",
+    "concept": "Autorização e outras formas de delegação",
+    "trap": "Não aceite generalizações: Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995.",
+    "examTip": "Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico.",
+    "newExample": "Determinada atividade econômica regulada pode depender de autorização setorial sem ser concessão de serviço público.",
+    "challenge": "Corrija esta afirmação e justifique: Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa."
+  },
+  {
+    "id": "Q-DA-20-004-02",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-004",
+    "topic": "Autorização e outras formas de delegação",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando autorização e outras formas de delegação, assinale a alternativa CORRETA.",
+    "options": [
+      "Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995.",
+      "Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995. Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição.",
+      "Incorreta: Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável.",
+      "Incorreta: condições jurídicas são indispensáveis. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável.",
+      "Correta: Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição."
+    ],
+    "explanation": "Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável. Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico.",
+    "concept": "Autorização e outras formas de delegação",
+    "trap": "Não aceite generalizações: Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995.",
+    "examTip": "Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico.",
+    "newExample": "Determinada atividade econômica regulada pode depender de autorização setorial sem ser concessão de serviço público.",
+    "challenge": "Corrija esta afirmação e justifique: Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa."
+  },
+  {
+    "id": "Q-DA-20-004-03",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-004",
+    "topic": "Autorização e outras formas de delegação",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações como V ou F:\nI. Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição.\nII. Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995.\nIII. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável.\nIV. Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa.\nAssinale a sequência correta.",
+    "options": [
+      "F-V-F-V",
+      "F-F-V-V",
+      "V-F-V-F",
+      "V-F-F-V",
+      "V-V-F-F"
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: II e IV são falsas. Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995. Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa.",
+      "Incorreta: II e IV são falsas. Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995. Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa.",
+      "Correta: I e III são verdadeiras. Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável.",
+      "Incorreta: II e IV são falsas. Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995. Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa.",
+      "Incorreta: II e IV são falsas. Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995. Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa."
+    ],
+    "explanation": "Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável. Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico.",
+    "concept": "Autorização e outras formas de delegação",
+    "trap": "Não aceite generalizações: Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995.",
+    "examTip": "Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico.",
+    "newExample": "Determinada atividade econômica regulada pode depender de autorização setorial sem ser concessão de serviço público.",
+    "challenge": "Corrija esta afirmação e justifique: Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa."
+  },
+  {
+    "id": "Q-DA-20-004-04",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-004",
+    "topic": "Autorização e outras formas de delegação",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Assinale a alternativa INCORRETA sobre autorização e outras formas de delegação.",
+    "options": [
+      "Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa.",
+      "Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição.",
+      "A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável.",
+      "A aplicação depende do regime jurídico e das circunstâncias concretas."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Incorreta, atende ao comando: Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável.",
+      "Verdadeira, não atende ao comando: Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição.",
+      "Verdadeira, não atende ao comando: A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável.",
+      "Verdadeira, não atende ao comando: análise contextual é necessária. Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico."
+    ],
+    "explanation": "Autorização é instrumento utilizado em hipóteses legalmente previstas, com regimes variados conforme o setor e a Constituição. A natureza e os efeitos da autorização devem ser examinados conforme a legislação setorial aplicável. Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico.",
+    "concept": "Autorização e outras formas de delegação",
+    "trap": "Não aceite generalizações: Toda autorização administrativa constitui necessariamente concessão de serviço público regida pela Lei 8.987/1995.",
+    "examTip": "Em questões de prova, observe o setor e a lei citada; o rótulo isolado não resolve o regime jurídico.",
+    "newExample": "Determinada atividade econômica regulada pode depender de autorização setorial sem ser concessão de serviço público.",
+    "challenge": "Corrija esta afirmação e justifique: Autorização dispensa sempre qualquer requisito legal ou fiscalização administrativa."
+  },
+  {
+    "id": "Q-DA-20-005-01",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-005",
+    "topic": "Direitos dos usuários e serviço adequado",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.",
+      "Incorreta: O usuário de serviço público não possui direito de receber informações ou apresentar manifestações. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos."
+    ],
+    "explanation": "A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso. A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+    "concept": "Direitos dos usuários e serviço adequado",
+    "trap": "Não aceite generalizações: O usuário de serviço público não possui direito de receber informações ou apresentar manifestações.",
+    "examTip": "A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+    "newExample": "Um usuário registra reclamação fundamentada sobre interrupções recorrentes e recebe encaminhamento pelo canal competente.",
+    "challenge": "Corrija esta afirmação e justifique: A qualidade de serviço delegado depende exclusivamente do lucro da concessionária."
+  },
+  {
+    "id": "Q-DA-20-005-02",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-005",
+    "topic": "Direitos dos usuários e serviço adequado",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando direitos dos usuários e serviço adequado, assinale a alternativa CORRETA.",
+    "options": [
+      "A qualidade de serviço delegado depende exclusivamente do lucro da concessionária.",
+      "O usuário de serviço público não possui direito de receber informações ou apresentar manifestações.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: A qualidade de serviço delegado depende exclusivamente do lucro da concessionária. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.",
+      "Incorreta: O usuário de serviço público não possui direito de receber informações ou apresentar manifestações. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos.",
+      "Incorreta: condições jurídicas são indispensáveis. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.",
+      "Correta: A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos."
+    ],
+    "explanation": "A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso. A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+    "concept": "Direitos dos usuários e serviço adequado",
+    "trap": "Não aceite generalizações: O usuário de serviço público não possui direito de receber informações ou apresentar manifestações.",
+    "examTip": "A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+    "newExample": "Um usuário registra reclamação fundamentada sobre interrupções recorrentes e recebe encaminhamento pelo canal competente.",
+    "challenge": "Corrija esta afirmação e justifique: A qualidade de serviço delegado depende exclusivamente do lucro da concessionária."
+  },
+  {
+    "id": "Q-DA-20-005-03",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-005",
+    "topic": "Direitos dos usuários e serviço adequado",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos.\nII. O usuário de serviço público não possui direito de receber informações ou apresentar manifestações.\nIII. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.\nAssinale a combinação correta.",
+    "options": [
+      "I, II e III",
+      "I apenas",
+      "III apenas",
+      "I e III apenas",
+      "II apenas"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: II é falsa. O usuário de serviço público não possui direito de receber informações ou apresentar manifestações.",
+      "Incompleta: III também é verdadeira. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.",
+      "Incompleta: I também é verdadeira. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos.",
+      "Correta: I e III são verdadeiras, II é falsa. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.",
+      "Incorreta: II é falsa. O usuário de serviço público não possui direito de receber informações ou apresentar manifestações."
+    ],
+    "explanation": "A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso. A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+    "concept": "Direitos dos usuários e serviço adequado",
+    "trap": "Não aceite generalizações: O usuário de serviço público não possui direito de receber informações ou apresentar manifestações.",
+    "examTip": "A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+    "newExample": "Um usuário registra reclamação fundamentada sobre interrupções recorrentes e recebe encaminhamento pelo canal competente.",
+    "challenge": "Corrija esta afirmação e justifique: A qualidade de serviço delegado depende exclusivamente do lucro da concessionária."
+  },
+  {
+    "id": "Q-DA-20-005-04",
+    "moduleId": "DA-20",
+    "subtopicId": "DA-20-005",
+    "topic": "Direitos dos usuários e serviço adequado",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (afirmação juridicamente válida) e F (afirmação falsa):\nI. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos.\nII. O usuário de serviço público não possui direito de receber informações ou apresentar manifestações.\nIII. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.\nIV. A qualidade de serviço delegado depende exclusivamente do lucro da concessionária.\nQual a sequência?",
+    "options": [
+      "F-V-F-V",
+      "V-F-V-F",
+      "V-F-F-V",
+      "F-F-V-V",
+      "V-V-F-F"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a classificação correta é V-F-V-F. O usuário de serviço público não possui direito de receber informações ou apresentar manifestações. A qualidade de serviço delegado depende exclusivamente do lucro da concessionária.",
+      "Correta: I e III válidas, II e IV falsas. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.",
+      "Incorreta: a classificação correta é V-F-V-F. O usuário de serviço público não possui direito de receber informações ou apresentar manifestações. A qualidade de serviço delegado depende exclusivamente do lucro da concessionária.",
+      "Incorreta: a classificação correta é V-F-V-F. O usuário de serviço público não possui direito de receber informações ou apresentar manifestações. A qualidade de serviço delegado depende exclusivamente do lucro da concessionária.",
+      "Incorreta: a classificação correta é V-F-V-F. O usuário de serviço público não possui direito de receber informações ou apresentar manifestações. A qualidade de serviço delegado depende exclusivamente do lucro da concessionária."
+    ],
+    "explanation": "A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso. A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+    "concept": "Direitos dos usuários e serviço adequado",
+    "trap": "Não aceite generalizações: O usuário de serviço público não possui direito de receber informações ou apresentar manifestações.",
+    "examTip": "A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+    "newExample": "Um usuário registra reclamação fundamentada sobre interrupções recorrentes e recebe encaminhamento pelo canal competente.",
+    "challenge": "Corrija esta afirmação e justifique: A qualidade de serviço delegado depende exclusivamente do lucro da concessionária."
+  },
+  {
+    "id": "Q-DA-21-001-01",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-001",
+    "topic": "Fundamentos e princípios da Lei 14.133/2021",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021.",
+      "Correta: A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações. A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas."
+    ],
+    "explanation": "A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+    "concept": "Fundamentos e princípios da Lei 14.133/2021",
+    "trap": "Não aceite generalizações: A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações.",
+    "examTip": "Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+    "newExample": "Uma prefeitura prepara estudo técnico preliminar e define critérios objetivos antes de publicar edital.",
+    "challenge": "Corrija esta afirmação e justifique: Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações."
+  },
+  {
+    "id": "Q-DA-21-001-02",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-001",
+    "topic": "Fundamentos e princípios da Lei 14.133/2021",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando fundamentos e princípios da lei 14.133/2021, assinale a alternativa CORRETA.",
+    "options": [
+      "A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações.",
+      "A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações. A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas.",
+      "Correta: A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas.",
+      "Incorreta: condições jurídicas são indispensáveis. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021.",
+      "Incorreta: Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021."
+    ],
+    "explanation": "A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+    "concept": "Fundamentos e princípios da Lei 14.133/2021",
+    "trap": "Não aceite generalizações: A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações.",
+    "examTip": "Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+    "newExample": "Uma prefeitura prepara estudo técnico preliminar e define critérios objetivos antes de publicar edital.",
+    "challenge": "Corrija esta afirmação e justifique: Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações."
+  },
+  {
+    "id": "Q-DA-21-001-03",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-001",
+    "topic": "Fundamentos e princípios da Lei 14.133/2021",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações como V ou F:\nI. A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas.\nII. A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações.\nIII. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021.\nIV. Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações.\nAssinale a sequência correta.",
+    "options": [
+      "V-F-V-F",
+      "V-F-F-V",
+      "F-F-V-V",
+      "V-V-F-F",
+      "F-V-F-V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras. A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021.",
+      "Incorreta: II e IV são falsas. A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações. Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações.",
+      "Incorreta: II e IV são falsas. A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações. Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações.",
+      "Incorreta: II e IV são falsas. A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações. Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações.",
+      "Incorreta: II e IV são falsas. A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações. Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações."
+    ],
+    "explanation": "A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+    "concept": "Fundamentos e princípios da Lei 14.133/2021",
+    "trap": "Não aceite generalizações: A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações.",
+    "examTip": "Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+    "newExample": "Uma prefeitura prepara estudo técnico preliminar e define critérios objetivos antes de publicar edital.",
+    "challenge": "Corrija esta afirmação e justifique: Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações."
+  },
+  {
+    "id": "Q-DA-21-001-04",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-001",
+    "topic": "Fundamentos e princípios da Lei 14.133/2021",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um órgão público examina a seguinte situação: Uma prefeitura prepara estudo técnico preliminar e define critérios objetivos antes de publicar edital. Qual interpretação é compatível com fundamentos e princípios da lei 14.133/2021?",
+    "options": [
+      "A situação confirma que Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações.",
+      "O caso dispensa verificar os pressupostos legais, pois é suficiente a intenção do agente.",
+      "A situação exige aplicar a distinção: A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas.",
+      "A situação demonstra que A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021.",
+      "Incorreta: a intenção isolada não substitui requisitos legais. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+      "Correta: A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021.",
+      "Incorreta: A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal."
+    ],
+    "explanation": "A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+    "concept": "Fundamentos e princípios da Lei 14.133/2021",
+    "trap": "Não aceite generalizações: A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações.",
+    "examTip": "Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+    "newExample": "Uma prefeitura prepara estudo técnico preliminar e define critérios objetivos antes de publicar edital.",
+    "challenge": "Corrija esta afirmação e justifique: Toda sociedade de economia mista segue obrigatoriamente a Lei 14.133/2021 como regime geral de suas licitações."
+  },
+  {
+    "id": "Q-DA-21-002-01",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-002",
+    "topic": "Fases e modalidades da licitação",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021.",
+      "Incorreta: Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021. A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação."
+    ],
+    "explanation": "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021. Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+    "concept": "Fases e modalidades da licitação",
+    "trap": "Não aceite generalizações: Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021.",
+    "examTip": "Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+    "newExample": "Um órgão utiliza pregão para adquirir bens comuns, observando a disciplina legal pertinente.",
+    "challenge": "Corrija esta afirmação e justifique: A fase de habilitação jamais pode anteceder a de julgamento, mesmo com motivação legal."
+  },
+  {
+    "id": "Q-DA-21-002-02",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-002",
+    "topic": "Fases e modalidades da licitação",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando fases e modalidades da licitação, assinale a alternativa CORRETA.",
+    "options": [
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021.",
+      "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação.",
+      "A fase de habilitação jamais pode anteceder a de julgamento, mesmo com motivação legal."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: condições jurídicas são indispensáveis. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021.",
+      "Incorreta: Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021. A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação.",
+      "Correta: A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação.",
+      "Incorreta: A fase de habilitação jamais pode anteceder a de julgamento, mesmo com motivação legal. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021."
+    ],
+    "explanation": "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021. Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+    "concept": "Fases e modalidades da licitação",
+    "trap": "Não aceite generalizações: Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021.",
+    "examTip": "Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+    "newExample": "Um órgão utiliza pregão para adquirir bens comuns, observando a disciplina legal pertinente.",
+    "challenge": "Corrija esta afirmação e justifique: A fase de habilitação jamais pode anteceder a de julgamento, mesmo com motivação legal."
+  },
+  {
+    "id": "Q-DA-21-002-03",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-002",
+    "topic": "Fases e modalidades da licitação",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação.\nII. Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021.\nIII. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021.\nAssinale a combinação correta.",
+    "options": [
+      "I, II e III",
+      "I e III apenas",
+      "I apenas",
+      "II apenas",
+      "III apenas"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: II é falsa. Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021.",
+      "Correta: I e III são verdadeiras, II é falsa. A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021.",
+      "Incompleta: III também é verdadeira. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021.",
+      "Incorreta: II é falsa. Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021.",
+      "Incompleta: I também é verdadeira. A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação."
+    ],
+    "explanation": "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021. Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+    "concept": "Fases e modalidades da licitação",
+    "trap": "Não aceite generalizações: Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021.",
+    "examTip": "Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+    "newExample": "Um órgão utiliza pregão para adquirir bens comuns, observando a disciplina legal pertinente.",
+    "challenge": "Corrija esta afirmação e justifique: A fase de habilitação jamais pode anteceder a de julgamento, mesmo com motivação legal."
+  },
+  {
+    "id": "Q-DA-21-002-04",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-002",
+    "topic": "Fases e modalidades da licitação",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Assinale a alternativa INCORRETA sobre fases e modalidades da licitação.",
+    "options": [
+      "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação.",
+      "O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021.",
+      "A aplicação depende do regime jurídico e das circunstâncias concretas.",
+      "A fase de habilitação jamais pode anteceder a de julgamento, mesmo com motivação legal."
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Verdadeira, não atende ao comando: A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação.",
+      "Verdadeira, não atende ao comando: O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021.",
+      "Verdadeira, não atende ao comando: análise contextual é necessária. Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+      "Incorreta, atende ao comando: A fase de habilitação jamais pode anteceder a de julgamento, mesmo com motivação legal. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021."
+    ],
+    "explanation": "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021. Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+    "concept": "Fases e modalidades da licitação",
+    "trap": "Não aceite generalizações: Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021.",
+    "examTip": "Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+    "newExample": "Um órgão utiliza pregão para adquirir bens comuns, observando a disciplina legal pertinente.",
+    "challenge": "Corrija esta afirmação e justifique: A fase de habilitação jamais pode anteceder a de julgamento, mesmo com motivação legal."
+  },
+  {
+    "id": "Q-DA-21-003-01",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-003",
+    "topic": "Critérios de julgamento",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento.",
+      "Correta: Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico."
+    ],
+    "explanation": "A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento. A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+    "concept": "Critérios de julgamento",
+    "trap": "Não aceite generalizações: Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021.",
+    "examTip": "A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+    "newExample": "Em uma contratação de bens comuns, a administração avalia propostas pelo critério legal definido e verifica especificações mínimas.",
+    "challenge": "Corrija esta afirmação e justifique: O menor preço permite contratar proposta que não atende às exigências do edital."
+  },
+  {
+    "id": "Q-DA-21-003-02",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-003",
+    "topic": "Critérios de julgamento",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando critérios de julgamento, assinale a alternativa CORRETA.",
+    "options": [
+      "Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021.",
+      "A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "O menor preço permite contratar proposta que não atende às exigências do edital."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico.",
+      "Correta: A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico.",
+      "Incorreta: condições jurídicas são indispensáveis. Maior desconto e maior retorno econômico integram os critérios legais de julgamento.",
+      "Incorreta: O menor preço permite contratar proposta que não atende às exigências do edital. Maior desconto e maior retorno econômico integram os critérios legais de julgamento."
+    ],
+    "explanation": "A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento. A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+    "concept": "Critérios de julgamento",
+    "trap": "Não aceite generalizações: Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021.",
+    "examTip": "A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+    "newExample": "Em uma contratação de bens comuns, a administração avalia propostas pelo critério legal definido e verifica especificações mínimas.",
+    "challenge": "Corrija esta afirmação e justifique: O menor preço permite contratar proposta que não atende às exigências do edital."
+  },
+  {
+    "id": "Q-DA-21-003-03",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-003",
+    "topic": "Critérios de julgamento",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações como V ou F:\nI. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico.\nII. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021.\nIII. Maior desconto e maior retorno econômico integram os critérios legais de julgamento.\nIV. O menor preço permite contratar proposta que não atende às exigências do edital.\nAssinale a sequência correta.",
+    "options": [
+      "V-F-V-F",
+      "V-V-F-F",
+      "V-F-F-V",
+      "F-V-F-V",
+      "F-F-V-V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento.",
+      "Incorreta: II e IV são falsas. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. O menor preço permite contratar proposta que não atende às exigências do edital.",
+      "Incorreta: II e IV são falsas. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. O menor preço permite contratar proposta que não atende às exigências do edital.",
+      "Incorreta: II e IV são falsas. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. O menor preço permite contratar proposta que não atende às exigências do edital.",
+      "Incorreta: II e IV são falsas. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. O menor preço permite contratar proposta que não atende às exigências do edital."
+    ],
+    "explanation": "A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento. A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+    "concept": "Critérios de julgamento",
+    "trap": "Não aceite generalizações: Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021.",
+    "examTip": "A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+    "newExample": "Em uma contratação de bens comuns, a administração avalia propostas pelo critério legal definido e verifica especificações mínimas.",
+    "challenge": "Corrija esta afirmação e justifique: O menor preço permite contratar proposta que não atende às exigências do edital."
+  },
+  {
+    "id": "Q-DA-21-003-04",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-003",
+    "topic": "Critérios de julgamento",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (afirmação juridicamente válida) e F (afirmação falsa):\nI. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico.\nII. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021.\nIII. Maior desconto e maior retorno econômico integram os critérios legais de julgamento.\nIV. O menor preço permite contratar proposta que não atende às exigências do edital.\nQual a sequência?",
+    "options": [
+      "F-F-V-V",
+      "V-F-V-F",
+      "V-V-F-F",
+      "F-V-F-V",
+      "V-F-F-V"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: a classificação correta é V-F-V-F. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. O menor preço permite contratar proposta que não atende às exigências do edital.",
+      "Correta: I e III válidas, II e IV falsas. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento.",
+      "Incorreta: a classificação correta é V-F-V-F. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. O menor preço permite contratar proposta que não atende às exigências do edital.",
+      "Incorreta: a classificação correta é V-F-V-F. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. O menor preço permite contratar proposta que não atende às exigências do edital.",
+      "Incorreta: a classificação correta é V-F-V-F. Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. O menor preço permite contratar proposta que não atende às exigências do edital."
+    ],
+    "explanation": "A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento. A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+    "concept": "Critérios de julgamento",
+    "trap": "Não aceite generalizações: Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021.",
+    "examTip": "A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+    "newExample": "Em uma contratação de bens comuns, a administração avalia propostas pelo critério legal definido e verifica especificações mínimas.",
+    "challenge": "Corrija esta afirmação e justifique: O menor preço permite contratar proposta que não atende às exigências do edital."
+  },
+  {
+    "id": "Q-DA-21-004-01",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-004",
+    "topic": "Contratação direta: dispensa e inexigibilidade",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Contratação direta é exceção à licitação e exige processo instruído e justificativas legais.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual.",
+      "Incorreta: A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal. Contratação direta é exceção à licitação e exige processo instruído e justificativas legais."
+    ],
+    "explanation": "Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+    "concept": "Contratação direta: dispensa e inexigibilidade",
+    "trap": "Não aceite generalizações: A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.",
+    "examTip": "Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+    "newExample": "Uma hipótese legal de dispensa não autoriza automaticamente escolher fornecedor sem justificativas.",
+    "challenge": "Corrija esta afirmação e justifique: Contratação direta dispensa toda justificativa de preço e escolha do contratado."
+  },
+  {
+    "id": "Q-DA-21-004-02",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-004",
+    "topic": "Contratação direta: dispensa e inexigibilidade",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando contratação direta: dispensa e inexigibilidade, assinale a alternativa CORRETA.",
+    "options": [
+      "A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.",
+      "Contratação direta dispensa toda justificativa de preço e escolha do contratado.",
+      "Contratação direta é exceção à licitação e exige processo instruído e justificativas legais.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei."
+    ],
+    "answer": 2,
+    "optionComments": [
+      "Incorreta: A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal. Contratação direta é exceção à licitação e exige processo instruído e justificativas legais.",
+      "Incorreta: Contratação direta dispensa toda justificativa de preço e escolha do contratado. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual.",
+      "Correta: Contratação direta é exceção à licitação e exige processo instruído e justificativas legais.",
+      "Incorreta: condições jurídicas são indispensáveis. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual."
+    ],
+    "explanation": "Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+    "concept": "Contratação direta: dispensa e inexigibilidade",
+    "trap": "Não aceite generalizações: A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.",
+    "examTip": "Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+    "newExample": "Uma hipótese legal de dispensa não autoriza automaticamente escolher fornecedor sem justificativas.",
+    "challenge": "Corrija esta afirmação e justifique: Contratação direta dispensa toda justificativa de preço e escolha do contratado."
+  },
+  {
+    "id": "Q-DA-21-004-03",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-004",
+    "topic": "Contratação direta: dispensa e inexigibilidade",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. Contratação direta é exceção à licitação e exige processo instruído e justificativas legais.\nII. A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.\nIII. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual.\nAssinale a combinação correta.",
+    "options": [
+      "I e III apenas",
+      "I, II e III",
+      "I apenas",
+      "II apenas",
+      "III apenas"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras, II é falsa. Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual.",
+      "Incorreta: II é falsa. A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.",
+      "Incompleta: III também é verdadeira. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual.",
+      "Incorreta: II é falsa. A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.",
+      "Incompleta: I também é verdadeira. Contratação direta é exceção à licitação e exige processo instruído e justificativas legais."
+    ],
+    "explanation": "Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+    "concept": "Contratação direta: dispensa e inexigibilidade",
+    "trap": "Não aceite generalizações: A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.",
+    "examTip": "Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+    "newExample": "Uma hipótese legal de dispensa não autoriza automaticamente escolher fornecedor sem justificativas.",
+    "challenge": "Corrija esta afirmação e justifique: Contratação direta dispensa toda justificativa de preço e escolha do contratado."
+  },
+  {
+    "id": "Q-DA-21-004-04",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-004",
+    "topic": "Contratação direta: dispensa e inexigibilidade",
+    "type": "classica",
+    "difficulty": "dificil",
+    "stem": "Um órgão público examina a seguinte situação: Uma hipótese legal de dispensa não autoriza automaticamente escolher fornecedor sem justificativas. Qual interpretação é compatível com contratação direta: dispensa e inexigibilidade?",
+    "options": [
+      "A situação confirma que Contratação direta dispensa toda justificativa de preço e escolha do contratado.",
+      "A situação exige aplicar a distinção: Contratação direta é exceção à licitação e exige processo instruído e justificativas legais.",
+      "A situação demonstra que A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.",
+      "O caso dispensa verificar os pressupostos legais, pois é suficiente a intenção do agente."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Contratação direta dispensa toda justificativa de preço e escolha do contratado. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual.",
+      "Correta: Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual.",
+      "Incorreta: A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+      "Incorreta: a intenção isolada não substitui requisitos legais. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos."
+    ],
+    "explanation": "Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+    "concept": "Contratação direta: dispensa e inexigibilidade",
+    "trap": "Não aceite generalizações: A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal.",
+    "examTip": "Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+    "newExample": "Uma hipótese legal de dispensa não autoriza automaticamente escolher fornecedor sem justificativas.",
+    "challenge": "Corrija esta afirmação e justifique: Contratação direta dispensa toda justificativa de preço e escolha do contratado."
+  },
+  {
+    "id": "Q-DA-21-005-01",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-005",
+    "topic": "Contratos administrativos e fiscalização",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes.",
+      "Correta: Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução. Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais."
+    ],
+    "explanation": "Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes. Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+    "concept": "Contratos administrativos e fiscalização",
+    "trap": "Não aceite generalizações: Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução.",
+    "examTip": "Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+    "newExample": "Um fiscal registra atraso na entrega e comunica a autoridade competente para providências.",
+    "challenge": "Corrija esta afirmação e justifique: Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo."
+  },
+  {
+    "id": "Q-DA-21-005-02",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-005",
+    "topic": "Contratos administrativos e fiscalização",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando contratos administrativos e fiscalização, assinale a alternativa CORRETA.",
+    "options": [
+      "Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais.",
+      "Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo.",
+      "Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução.",
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais.",
+      "Incorreta: Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes.",
+      "Incorreta: Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução. Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais.",
+      "Incorreta: condições jurídicas são indispensáveis. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes."
+    ],
+    "explanation": "Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes. Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+    "concept": "Contratos administrativos e fiscalização",
+    "trap": "Não aceite generalizações: Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução.",
+    "examTip": "Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+    "newExample": "Um fiscal registra atraso na entrega e comunica a autoridade competente para providências.",
+    "challenge": "Corrija esta afirmação e justifique: Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo."
+  },
+  {
+    "id": "Q-DA-21-005-03",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-005",
+    "topic": "Contratos administrativos e fiscalização",
+    "type": "sequencia",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações como V ou F:\nI. Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais.\nII. Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução.\nIII. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes.\nIV. Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo.\nAssinale a sequência correta.",
+    "options": [
+      "V-F-V-F",
+      "V-V-F-F",
+      "F-V-F-V",
+      "F-F-V-V",
+      "V-F-F-V"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras. Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes.",
+      "Incorreta: II e IV são falsas. Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução. Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo.",
+      "Incorreta: II e IV são falsas. Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução. Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo.",
+      "Incorreta: II e IV são falsas. Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução. Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo.",
+      "Incorreta: II e IV são falsas. Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução. Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo."
+    ],
+    "explanation": "Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes. Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+    "concept": "Contratos administrativos e fiscalização",
+    "trap": "Não aceite generalizações: Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução.",
+    "examTip": "Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+    "newExample": "Um fiscal registra atraso na entrega e comunica a autoridade competente para providências.",
+    "challenge": "Corrija esta afirmação e justifique: Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo."
+  },
+  {
+    "id": "Q-DA-21-005-04",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-005",
+    "topic": "Contratos administrativos e fiscalização",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Assinale a alternativa INCORRETA sobre contratos administrativos e fiscalização.",
+    "options": [
+      "Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo.",
+      "A aplicação depende do regime jurídico e das circunstâncias concretas.",
+      "A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes.",
+      "Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais."
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Incorreta, atende ao comando: Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes.",
+      "Verdadeira, não atende ao comando: análise contextual é necessária. Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+      "Verdadeira, não atende ao comando: A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes.",
+      "Verdadeira, não atende ao comando: Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais."
+    ],
+    "explanation": "Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes. Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+    "concept": "Contratos administrativos e fiscalização",
+    "trap": "Não aceite generalizações: Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução.",
+    "examTip": "Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+    "newExample": "Um fiscal registra atraso na entrega e comunica a autoridade competente para providências.",
+    "challenge": "Corrija esta afirmação e justifique: Toda irregularidade de execução pode ser ignorada quando o preço contratado é baixo."
+  },
+  {
+    "id": "Q-DA-21-006-01",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-006",
+    "topic": "Alterações, sanções e responsabilidades",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública. A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções.",
+      "Correta: A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei."
+    ],
+    "explanation": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei. Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
+    "concept": "Alterações, sanções e responsabilidades",
+    "trap": "Não aceite generalizações: A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública.",
+    "examTip": "Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
+    "newExample": "Um contratado atrasa entrega; o órgão apura o fato e avalia providências e eventual sanção segundo a lei.",
+    "challenge": "Corrija esta afirmação e justifique: Toda alteração contratual dispensa motivação e observância de limites legais."
+  },
+  {
+    "id": "Q-DA-21-006-02",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-006",
+    "topic": "Alterações, sanções e responsabilidades",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Considerando alterações, sanções e responsabilidades, assinale a alternativa CORRETA.",
+    "options": [
+      "A análise jurídica dispensa o contexto, a competência e as condições previstas em lei.",
+      "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções.",
+      "Toda alteração contratual dispensa motivação e observância de limites legais.",
+      "A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública."
+    ],
+    "answer": 1,
+    "optionComments": [
+      "Incorreta: condições jurídicas são indispensáveis. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei.",
+      "Correta: A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções.",
+      "Incorreta: Toda alteração contratual dispensa motivação e observância de limites legais. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei.",
+      "Incorreta: A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública. A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções."
+    ],
+    "explanation": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei. Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
+    "concept": "Alterações, sanções e responsabilidades",
+    "trap": "Não aceite generalizações: A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública.",
+    "examTip": "Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
+    "newExample": "Um contratado atrasa entrega; o órgão apura o fato e avalia providências e eventual sanção segundo a lei.",
+    "challenge": "Corrija esta afirmação e justifique: Toda alteração contratual dispensa motivação e observância de limites legais."
+  },
+  {
+    "id": "Q-DA-21-006-03",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-006",
+    "topic": "Alterações, sanções e responsabilidades",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Analise as afirmações:\nI. A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções.\nII. A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública.\nIII. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei.\nAssinale a combinação correta.",
+    "options": [
+      "I e III apenas",
+      "III apenas",
+      "I, II e III",
+      "I apenas",
+      "II apenas"
+    ],
+    "answer": 0,
+    "optionComments": [
+      "Correta: I e III são verdadeiras, II é falsa. A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei.",
+      "Incompleta: I também é verdadeira. A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções.",
+      "Incorreta: II é falsa. A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública.",
+      "Incompleta: III também é verdadeira. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei.",
+      "Incorreta: II é falsa. A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública."
+    ],
+    "explanation": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei. Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
+    "concept": "Alterações, sanções e responsabilidades",
+    "trap": "Não aceite generalizações: A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública.",
+    "examTip": "Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
+    "newExample": "Um contratado atrasa entrega; o órgão apura o fato e avalia providências e eventual sanção segundo a lei.",
+    "challenge": "Corrija esta afirmação e justifique: Toda alteração contratual dispensa motivação e observância de limites legais."
+  },
+  {
+    "id": "Q-DA-21-006-04",
+    "moduleId": "DA-21",
+    "subtopicId": "DA-21-006",
+    "topic": "Alterações, sanções e responsabilidades",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe V (afirmação juridicamente válida) e F (afirmação falsa):\nI. A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções.\nII. A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública.\nIII. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei.\nIV. Toda alteração contratual dispensa motivação e observância de limites legais.\nQual a sequência?",
+    "options": [
+      "V-F-F-V",
+      "V-V-F-F",
+      "F-V-F-V",
+      "V-F-V-F",
+      "F-F-V-V"
+    ],
+    "answer": 3,
+    "optionComments": [
+      "Incorreta: a classificação correta é V-F-V-F. A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública. Toda alteração contratual dispensa motivação e observância de limites legais.",
+      "Incorreta: a classificação correta é V-F-V-F. A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública. Toda alteração contratual dispensa motivação e observância de limites legais.",
+      "Incorreta: a classificação correta é V-F-V-F. A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública. Toda alteração contratual dispensa motivação e observância de limites legais.",
+      "Correta: I e III válidas, II e IV falsas. A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei.",
+      "Incorreta: a classificação correta é V-F-V-F. A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública. Toda alteração contratual dispensa motivação e observância de limites legais."
+    ],
+    "explanation": "A Lei 14.133/2021 disciplina alterações contratuais, equilíbrio econômico-financeiro, extinção e sanções. A aplicação de sanções depende de tipificação, competência e garantias procedimentais previstas em lei. Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
+    "concept": "Alterações, sanções e responsabilidades",
+    "trap": "Não aceite generalizações: A Administração pode impor qualquer sanção sem processo e sem assegurar defesa quando a contratação é pública.",
+    "examTip": "Não confunda possibilidade de alteração unilateral com poder ilimitado ou afastamento do equilíbrio econômico-financeiro.",
+    "newExample": "Um contratado atrasa entrega; o órgão apura o fato e avalia providências e eventual sanção segundo a lei.",
+    "challenge": "Corrija esta afirmação e justifique: Toda alteração contratual dispensa motivação e observância de limites legais."
   }
 ];
 export const questionsForModule = id => QUESTIONS.filter(q=>q.moduleId===id);
