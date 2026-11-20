@@ -1,5 +1,6 @@
 import { renderReviewInsights } from '../core/review-insights.js';
 import { buildUnifiedReviewQueue } from '../core/spaced-review.js';
+import { renderReviewConsistency } from '../core/review-consistency.js';
 import { prioritizeDueReviews, reviewPrioritySummary } from '../core/review-priorities.js';
 import { MODULES } from '../data/modules.js';
 import { questionsForModule } from '../data/questions.js';
@@ -33,6 +34,7 @@ export function renderUnifiedReviewList(main,state) {
  <div class="module-card" style="margin:12px 0;padding:16px"><h3>Prioridade de estudo</h3>
  <p>Alta prioridade: ${reviewPrioritySummary(all,state,now).high} · Média: ${reviewPrioritySummary(all,state,now).medium} · Próximos 7 dias: ${reviewPrioritySummary(all,state,now).next7}</p>
  <p>Sugestão para a próxima sessão: até ${reviewPrioritySummary(all,state,now).suggested} revisões vencidas, começando pelas mais urgentes. A ordem não modifica as datas agendadas.</p></div>
+ ${renderReviewConsistency(state)}
  <h2>Revisões pendentes</h2>${due.length?rows(due,true):'<div class="notice">Nenhuma revisão vencida no momento.</div>'}
  <h2>Próximas revisões</h2>${future.length?rows(future,false):'<p>Nenhum agendamento futuro.</p>'}</section>`;
 }
