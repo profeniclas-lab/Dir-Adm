@@ -1,5 +1,6 @@
 import { MODULES, AREAS } from '../data/modules.js';
 import { questionsForModule } from '../data/questions.js';
+import { selectBalancedQuestions, balancedSelectionSummary } from '../core/simulado-balance.js';
 
 const esc = x => String(x ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -25,8 +26,9 @@ export function startSimulado(state,area,count){
  const data=ensure(state),size=Number(count);if(data.active||!Number.isInteger(size)||size<1||size>40)return {ok:false,message:'Quantidade inválida ou já existe um simulado em andamento.'};
  const pool=bank().filter(q=>area==='todas'||q.area===area);
  if(pool.length<size)return {ok:false,message:`Existem somente ${pool.length} questões válidas para esta seleção. Escolha uma quantidade menor ou outra área.`};
- const selected=shuffle(pool).slice(0,size);
- data.active={id:'SIM-'+Date.now(),area,ids:selected.map(q=>q.id),orders:Object.fromEntries(selected.map(q=>[q.id,q.type==='ce'?q.options.map((_,i)=>i):shuffle(q.options.map((_,i)=>i))])),answers:{},cursor:0,startedAt:new Date().toISOString(),finishedAt:null};
+ const selected=selectBalancedQuestions(pool,size);
+ const distribution=balancedSelectionSummary(selected);
+ data.active={distribution,id:'SIM-'+Date.now(),area,ids:selected.map(q=>q.id),orders:Object.fromEntries(selected.map(q=>[q.id,q.type==='ce'?q.options.map((_,i)=>i):shuffle(q.options.map((_,i)=>i))])),answers:{},cursor:0,startedAt:new Date().toISOString(),finishedAt:null};
  return {ok:true};
 }
 export function answerSimulado(state,qid,choice){const s=ensure(state).active,q=byId().get(qid);if(!s||s.finishedAt||!s.ids.includes(qid)||!valid(q)||Number.isInteger(s.answers[qid])||!Number.isInteger(choice)||choice<0||choice>=q.options.length)return false;s.answers[qid]=choice;return true;}
