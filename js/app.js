@@ -7,6 +7,7 @@ import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiag
 import { renderLesson, saveLessonProgress } from "./features/lessons.js";
 import { renderExercises, createExerciseSession, answerExercise, assessExercise, nextExercise } from "./features/exercises.js";
 import { validateCatalog } from "./data/modules.js";
+import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSimulado, closeSimulado, cancelSimulado } from "./features/simulados.js";
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
 const state = loadState();
@@ -30,6 +31,7 @@ function renderCurrentPage() {
   }
   switch (state.navigation.currentRoute) {
     case "dashboard": renderDashboard(mainElement, state); break;
+    case "simulados": renderSimulados(mainElement,state); break;
     case "revisao":
     case "erros":
       if(reviewQuestionId)renderReviewQuestion(mainElement,state,state.navigation.currentRoute,reviewQuestionId);
@@ -57,6 +59,17 @@ function navigateTo(route) {
 }
 
 document.addEventListener('click', event => {
+  if(state.navigation.currentRoute==='simulados'){
+    const start=event.target.closest('[data-sim-start]');
+    if(start){const area=document.getElementById('sim-area')?.value||'todas';const count=document.getElementById('sim-count')?.value||'20';const result=startSimulado(state,area,count);if(result.ok)commitAndRender();else window.alert(result.message);return;}
+    const choice=event.target.closest('[data-sim-choice]');
+    if(choice){const session=state.progress?.simulados?.active;const id=session?.ids?.[session.cursor];if(id&&answerSimulado(state,id,Number(choice.dataset.simChoice)))commitAndRender();return;}
+    const move=event.target.closest('[data-sim-move]');
+    if(move){if(moveSimulado(state,Number(move.dataset.simMove)))commitAndRender();return;}
+    if(event.target.closest('[data-sim-finish]')){if(finishSimulado(state))commitAndRender();return;}
+    if(event.target.closest('[data-sim-close]')){if(closeSimulado(state))commitAndRender();return;}
+    if(event.target.closest('[data-sim-cancel]')){if(window.confirm('Cancelar este simulado? As respostas desta tentativa serão descartadas.')&&cancelSimulado(state))commitAndRender();return;}
+  }
   if(state.navigation.currentRoute==='revisao'||state.navigation.currentRoute==='erros'){
     const open=event.target.closest('[data-review-open]');
     if(open){if(beginReview(state,open.dataset.reviewOpen)){reviewQuestionId=open.dataset.reviewOpen;commitAndRender();}return;}
