@@ -1,6 +1,7 @@
 /** Fase 14, lote 2: registra eventos de questões na agenda unificada.
  * Não altera schema, não elimina histórico e não duplica entradas por ID.
  */
+import { scheduleAdaptiveReview } from './adaptive-review.js';
 import { refreshUnifiedReviewQueue } from './spaced-review.js';
 const DAY = 86400000;
 const obj = value => value && typeof value === 'object' && !Array.isArray(value) ? value : {};
@@ -12,7 +13,8 @@ export function recordBankReview(state, question, choice) {
   const p = state.progress;
   const now = new Date();
   const correct = choice === question.answer;
-  const intervalDays = correct ? 7 : 1;
+  const adaptive = scheduleAdaptiveReview(state, 'question', question.id, correct ? 'acerto_banco' : 'erro_banco');
+  const intervalDays = adaptive.intervalDays;
   const dueAt = new Date(now.getTime() + intervalDays * DAY).toISOString();
   const updatedAt = now.toISOString();
   const id = question.id;
