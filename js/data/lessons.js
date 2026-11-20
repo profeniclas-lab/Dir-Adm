@@ -560,6 +560,182 @@ export const LESSONS = {
     "summary": "5W2H estrutura um plano de ação com o quê, por quê, onde, quando, quem, como e quanto custa; indicadores acompanham resultados ou processos. Preencher 5W2H não demonstra que uma ação funcionou; indicadores e acompanhamento permitem verificar efeitos.",
     "reviewQuestion": "O plano de ação já definiu responsáveis e prazos. Como verificar se melhorou o serviço?",
     "reviewAnswer": "Acompanhar um indicador de espera com método de medição consistente."
-  }
+  },
+  "ADM-10-001": {
+  "id": "ADM-10-001",
+  "objective": "Compreender classificação, especificação e codificação de materiais, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Classificar é agrupar itens por critérios úteis à gestão; especificar é descrever requisitos técnicos; codificar é atribuir identificador inequívoco.",
+  "explanation": "A classificação pode considerar consumo, criticidade, perecibilidade e aplicação. A especificação precisa conter características verificáveis e suficientes para selecionar um item adequado, sem restringir injustificadamente a competição. A codificação facilita registros, consultas e rastreamento, mas não substitui a descrição técnica. É possível que dois materiais pertençam à mesma classe e ainda exijam especificações diferentes.",
+  "example": "Um almoxarifado agrupa canetas como material de expediente, descreve tipo de tinta e ponta para a compra e atribui um código de estoque a cada item padronizado.",
+  "examTip": "Confundir codificação com classificação; um número identificador não descreve, por si só, a qualidade do item.",
+  "summary": "Classificação organiza grupos; especificação define requisitos; codificação identifica itens.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em classificação, especificação e codificação de materiais e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Classificação organiza grupos; especificação define requisitos; codificação identifica itens. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-10-002": {
+  "id": "ADM-10-002",
+  "objective": "Compreender compras, recebimento e armazenagem, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "A gestão de suprimentos conecta identificação da necessidade, aquisição, recebimento, conferência e guarda dos materiais.",
+  "explanation": "A necessidade deve ser dimensionada antes da compra. No recebimento, a conferência documental verifica o pedido e a documentação; a quantitativa verifica unidades; a qualitativa examina a conformidade com requisitos técnicos. A aceitação definitiva depende das regras aplicáveis e não deve ser presumida pelo simples descarregamento. Na armazenagem, localização, conservação, segurança e rastreabilidade evitam perdas e atrasos.",
+  "example": "Uma escola recebe 30 monitores: confere a quantidade, testa as especificações e registra a localização de guarda antes da distribuição.",
+  "examTip": "A entrega física não equivale automaticamente ao recebimento definitivo ou à aceitação da conformidade.",
+  "summary": "Comprar, receber e armazenar são etapas distintas e articuladas.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em compras, recebimento e armazenagem e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Comprar, receber e armazenar são etapas distintas e articuladas. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-10-003": {
+  "id": "ADM-10-003",
+  "objective": "Compreender gestão e controle de estoques, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Controlar estoques é equilibrar disponibilidade de materiais, continuidade do serviço e custos de manutenção.",
+  "explanation": "A falta de itens essenciais pode interromper serviços; o excesso imobiliza recursos, ocupa espaço e eleva riscos de perdas e obsolescência. A gestão utiliza registros de entradas e saídas, consumo histórico, prazos de reposição, criticidade e inventários. Os parâmetros devem refletir a variabilidade real da demanda; não existe nível ótimo universal para todos os materiais.",
+  "example": "Um posto de saúde mantém reserva maior de um insumo crítico e compra materiais de baixa demanda em lotes menores, considerando prazos de fornecimento.",
+  "examTip": "Afirmar que o melhor estoque é sempre o maior ou sempre o menor ignora custos e riscos.",
+  "summary": "A meta é disponibilidade com uso racional dos recursos.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em gestão e controle de estoques e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: A meta é disponibilidade com uso racional dos recursos. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-10-004": {
+  "id": "ADM-10-004",
+  "objective": "Compreender estoque de segurança, ponto de pedido e giro, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Estoque de segurança é reserva para incertezas; ponto de pedido indica o momento de repor; giro mede renovação em um período.",
+  "explanation": "Em um modelo simples com consumo e prazo constantes, o ponto de pedido corresponde ao consumo esperado durante o prazo de reposição, acrescido do estoque de segurança. Na prática, variações de demanda e atrasos exigem cautela. Giro de estoque relaciona o consumo ou custo dos itens movimentados ao estoque médio, conforme a metodologia adotada. Giro alto não é automaticamente bom se gerar rupturas.",
+  "example": "Se um órgão consome 10 caixas por dia e o fornecedor leva cinco dias, precisa cobrir 50 caixas durante o prazo, além da reserva calculada para incertezas.",
+  "examTip": "Confundir ponto de pedido com quantidade a comprar ou interpretar giro elevado como prova isolada de eficiência.",
+  "summary": "Reserva protege; ponto aciona compra; giro descreve movimentação.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em estoque de segurança, ponto de pedido e giro e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Reserva protege; ponto aciona compra; giro descreve movimentação. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-10-005": {
+  "id": "ADM-10-005",
+  "objective": "Compreender inventário e almoxarifado, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Inventário confronta registros com bens efetivamente existentes; almoxarifado administra fluxos e guarda de materiais.",
+  "explanation": "O inventário pode ser periódico, rotativo ou realizado em ocasiões específicas, conforme regras internas. Diferenças exigem investigação: erros de registro, movimentação não lançada, avarias ou perdas. O almoxarifado organiza recebimento, endereçamento, conservação, distribuição e controle. Corrigir o sistema sem investigar a causa da divergência reduz a confiabilidade futura.",
+  "example": "Ao contar caixas de papel, a equipe encontra 80 unidades físicas e 90 registradas: deve apurar a diferença antes de simplesmente ajustar o saldo.",
+  "examTip": "Inventário não é sinônimo de compra nem apenas contagem sem conciliação.",
+  "summary": "Contar, comparar, apurar e regularizar são passos diferentes.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em inventário e almoxarifado e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Contar, comparar, apurar e regularizar são passos diferentes. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-10-006": {
+  "id": "ADM-10-006",
+  "objective": "Compreender bens patrimoniais: registro, tombamento e baixa, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Gestão patrimonial acompanha bens permanentes desde incorporação e identificação até movimentação e eventual baixa.",
+  "explanation": "O registro documenta dados essenciais do bem; o tombamento atribui identificação patrimonial conforme procedimentos da instituição. Transferências, manutenção, localização e responsabilidade pela guarda devem ser acompanhadas. A baixa é a retirada do registro patrimonial mediante causa e procedimento adequados; não significa necessariamente descarte imediato. Critérios de material permanente e consumo dependem das normas contábeis e administrativas aplicáveis.",
+  "example": "Um computador é identificado com número patrimonial, transferido entre setores mediante registro e posteriormente baixado por procedimento formal quando não integra mais o patrimônio.",
+  "examTip": "Tombamento não torna o bem inalienável; baixa não se confunde com simples mudança de sala.",
+  "summary": "Registro, identificação, movimentação e baixa compõem o ciclo patrimonial.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em bens patrimoniais: registro, tombamento e baixa e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Registro, identificação, movimentação e baixa compõem o ciclo patrimonial. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-11-001": {
+  "id": "ADM-11-001",
+  "objective": "Compreender processos, atividades, tarefas e procedimentos, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Processo transforma entradas em resultados por meio de atividades articuladas; tarefa é ação específica e procedimento descreve como executar.",
+  "explanation": "A visão de processos mostra como o trabalho se conecta para produzir valor. Uma atividade reúne ações relacionadas, enquanto tarefas detalham operações concretas. Procedimentos padronizam a forma de execução, mas não substituem o entendimento do objetivo e do resultado. A granularidade dessas categorias pode variar conforme o método de mapeamento adotado.",
+  "example": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
+  "examTip": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
+  "summary": "Processo integra; atividade agrupa; tarefa executa; procedimento orienta.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em processos, atividades, tarefas e procedimentos e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Processo integra; atividade agrupa; tarefa executa; procedimento orienta. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-11-002": {
+  "id": "ADM-11-002",
+  "objective": "Compreender processos finalísticos e de apoio, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Processos finalísticos contribuem diretamente para a entrega ligada à missão; processos de apoio fornecem recursos e condições.",
+  "explanation": "O enquadramento depende da missão da organização. Em uma universidade, ensino e certificação podem integrar processos finalísticos, enquanto manutenção predial e compras geralmente apoiam esses serviços. Processos de gestão definem diretrizes e monitoram desempenho. Um mesmo tipo de atividade pode ser finalístico em uma instituição e apoio em outra.",
+  "example": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
+  "examTip": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
+  "summary": "Finalístico entrega valor à missão; apoio sustenta a entrega.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em processos finalísticos e de apoio e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Finalístico entrega valor à missão; apoio sustenta a entrega. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-11-003": {
+  "id": "ADM-11-003",
+  "objective": "Compreender gestão por processos, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Gestão por processos coordena fluxos de trabalho ponta a ponta, além das fronteiras entre departamentos.",
+  "explanation": "A abordagem identifica entradas, clientes ou usuários, responsáveis, interfaces, resultados e indicadores. Busca reduzir retrabalho e atrasos entre setores. Não exige eliminar hierarquias ou organogramas: a estrutura funcional pode coexistir com responsáveis pelo processo. A melhoria depende de acompanhar o resultado global, e não apenas metas isoladas de cada unidade.",
+  "example": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
+  "examTip": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
+  "summary": "A unidade de análise é o fluxo que gera o resultado.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em gestão por processos e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: A unidade de análise é o fluxo que gera o resultado. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-11-004": {
+  "id": "ADM-11-004",
+  "objective": "Compreender mapeamento e fluxogramas, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Mapear processos é representar etapas, decisões, responsáveis e fluxos; fluxograma é uma das ferramentas visuais possíveis.",
+  "explanation": "Um mapa permite visualizar início, entradas, atividades, decisões, esperas, saídas e pontos de controle. Símbolos devem seguir convenção consistente e ser compreensíveis aos usuários. Fluxogramas mostram sequência e ramificações, enquanto organogramas mostram estrutura e relações hierárquicas. O mapeamento deve retratar o processo real, não apenas o procedimento idealizado.",
+  "example": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
+  "examTip": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
+  "summary": "Mapear revela fluxo, decisões e oportunidades de melhoria.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em mapeamento e fluxogramas e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Mapear revela fluxo, decisões e oportunidades de melhoria. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-11-005": {
+  "id": "ADM-11-005",
+  "objective": "Compreender gargalos e melhoria de processos, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Gargalo é uma restrição que limita a capacidade ou a velocidade do fluxo global.",
+  "explanation": "Para localizar gargalos, observam-se filas, tempos de espera, capacidade, retrabalho e variabilidade. Melhorar uma etapa sem restrição pode apenas aumentar o acúmulo adiante. É útil testar mudanças, medir o efeito e revisar procedimentos. O gargalo pode mudar de lugar depois da intervenção, por isso o monitoramento deve continuar.",
+  "example": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
+  "examTip": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
+  "summary": "Melhoria efetiva considera o fluxo inteiro.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em gargalos e melhoria de processos e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Melhoria efetiva considera o fluxo inteiro. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-12-001": {
+  "id": "ADM-12-001",
+  "objective": "Compreender qualidade e princípios do atendimento ao cidadão, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Atendimento de qualidade combina informação correta, respeito, acessibilidade, clareza e encaminhamento adequado.",
+  "explanation": "A satisfação imediata não é o único critério: um pedido pode ser indeferido corretamente, desde que haja explicação clara e tratamento digno. O atendimento deve observar regras de impessoalidade, eficiência, transparência e proteção de dados quando aplicáveis. É importante distinguir o que o servidor pode resolver, o que deve encaminhar e quais prazos ou canais devem ser informados.",
+  "example": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
+  "examTip": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
+  "summary": "Atender bem é orientar com correção e respeito.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em qualidade e princípios do atendimento ao cidadão e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Atender bem é orientar com correção e respeito. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-12-002": {
+  "id": "ADM-12-002",
+  "objective": "Compreender comunicação e postura profissional, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Comunicação profissional busca compreensão mútua com clareza, precisão, escuta e respeito.",
+  "explanation": "O emissor deve ajustar vocabulário ao público sem alterar o conteúdo técnico. Escuta ativa envolve atenção, confirmação do entendimento e perguntas pertinentes. Tom agressivo, jargões desnecessários e promessas vagas criam ruído. Impessoalidade não significa frieza: é possível ser acolhedor sem favorecer pessoas ou revelar informações protegidas.",
+  "example": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
+  "examTip": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
+  "summary": "Clareza e respeito são compatíveis com rigor institucional.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em comunicação e postura profissional e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Clareza e respeito são compatíveis com rigor institucional. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-12-003": {
+  "id": "ADM-12-003",
+  "objective": "Compreender atendimento presencial, telefônico e digital, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Cada canal de atendimento exige adaptação da comunicação, identificação adequada e registro confiável.",
+  "explanation": "No presencial, organização de filas, sinalização e acessibilidade são importantes; no telefone, confirmar dados e resumir orientações evita mal-entendidos; no digital, instruções objetivas e navegação acessível reduzem barreiras. Em qualquer canal, devem ser observadas regras de privacidade, autenticação e encaminhamento. Não se deve solicitar ou expor dados além do necessário.",
+  "example": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
+  "examTip": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
+  "summary": "Canal muda a forma, não os deveres essenciais.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em atendimento presencial, telefônico e digital e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Canal muda a forma, não os deveres essenciais. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-12-004": {
+  "id": "ADM-12-004",
+  "objective": "Compreender acessibilidade e atendimento inclusivo, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Atendimento inclusivo remove barreiras para que diferentes pessoas tenham acesso efetivo ao serviço.",
+  "explanation": "Barreiras podem ser arquitetônicas, comunicacionais, tecnológicas ou atitudinais. Recursos acessíveis, linguagem compreensível, apoio adequado e adaptações razoáveis podem ser necessários. Equidade não equivale a privilégio: busca condições reais de acesso. As obrigações concretas devem respeitar a legislação aplicável, como a Lei Brasileira de Inclusão, sem inventar procedimentos universais.",
+  "example": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
+  "examTip": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
+  "summary": "Igual respeito pode exigir meios diferentes de acesso.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em acessibilidade e atendimento inclusivo e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Igual respeito pode exigir meios diferentes de acesso. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+  "ADM-12-005": {
+  "id": "ADM-12-005",
+  "objective": "Compreender gestão de conflitos e relações interpessoais, aplicar o conteúdo a situações administrativas e identificar erros frequentes em concursos.",
+  "concept": "Conflitos surgem de interesses, percepções ou necessidades divergentes e podem ser administrados com escuta e critérios objetivos.",
+  "explanation": "A gestão adequada distingue fatos de interpretações, esclarece regras e procura soluções dentro das competências institucionais. Escuta ativa, linguagem não acusatória, registro quando necessário e encaminhamento responsável reduzem escaladas. Nem toda divergência permite negociação: exigências legais e direitos de terceiros não podem ser afastados por conveniência. Conflitos também podem revelar falhas no processo.",
+  "example": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
+  "examTip": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
+  "summary": "Resolver conflitos exige respeito, critérios e limites institucionais.",
+  "reviewQuestion": "Explique com suas palavras a distinção principal estudada em gestão de conflitos e relações interpessoais e apresente uma situação diferente do exemplo.",
+  "reviewAnswer": "Uma boa resposta deve demonstrar: Resolver conflitos exige respeito, critérios e limites institucionais. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+}
 };
 export const getLesson = id => LESSONS[id] || null;
