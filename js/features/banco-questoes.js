@@ -1,4 +1,5 @@
 import { MODULES, AREAS } from '../data/modules.js';
+import { recordBankReview } from '../core/review-events.js';
 import { questionsForModule } from '../data/questions.js';
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -11,7 +12,7 @@ function matches(q,f){return (f.area==='todas'||q.area===f.area)&&(f.moduleId===
 const types = {ce:'Certo ou Errado',classica:'Múltipla escolha',vf:'Verdadeiro/Falso',combinacao:'Combinação',associacao:'Associação',lacunas:'Lacunas',exceto:'EXCETO'};
 export function updateBankFilter(state,key,value){const data=store(state);if(data.session)return false;if(!['area','moduleId','difficulty'].includes(key))return false;const f={...data.filter,[key]:value};if(key==='area')f.moduleId='todos';if(!['todas',...Object.keys(AREAS)].includes(f.area))return false;if(f.moduleId!=='todos'&&!MODULES.some(m=>m.id===f.moduleId&&(f.area==='todas'||m.area===f.area)))return false;if(!['todas','media','dificil','facil'].includes(f.difficulty))return false;data.filter=f;return true;}
 export function startBankSession(state){const data=store(state);if(data.session)return false;const available=shuffle(bank().filter(q=>matches(q,data.filter)));if(!available.length)return false;data.session={ids:available.map(q=>q.id),cursor:0,answers:{},orders:Object.fromEntries(available.map(q=>[q.id,q.type==='ce'?q.options.map((_,i)=>i):shuffle(q.options.map((_,i)=>i))])),startedAt:new Date().toISOString()};return true;}
-export function answerBankQuestion(state,id,answer){const s=store(state).session,q=get(id);if(!s||s.ids[s.cursor]!==id||!q||Object.hasOwn(s.answers,id)||!Number.isInteger(answer)||answer<0||answer>=q.options.length)return false;s.answers[id]=answer;return true;}
+export function answerBankQuestion(state,id,answer){const s=store(state).session,q=get(id);if(!s||s.ids[s.cursor]!==id||!q||Object.hasOwn(s.answers,id)||!Number.isInteger(answer)||answer<0||answer>=q.options.length)return false;s.answers[id]=answer;recordBankReview(state,q,answer);return true;}
 export function nextBankQuestion(state){const s=store(state).session;if(!s||!Object.hasOwn(s.answers,s.ids[s.cursor])||s.cursor>=s.ids.length-1)return false;s.cursor++;return true;}
 export function closeBankSession(state){const d=store(state);if(!d.session)return false;d.session=null;return true;}
 export function renderQuestionBank(main,state){const d=store(state),all=bank(),s=d.session;

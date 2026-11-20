@@ -1,4 +1,5 @@
 import { questionsForModule } from '../data/questions.js';
+import { syncExerciseReview } from '../core/review-events.js';
 import { getModuleById } from '../data/modules.js';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const abc=['A','B','C','D','E'];
@@ -75,6 +76,7 @@ export function assessExercise(state,moduleId,qid,reason){
  state.progress.questionHistory??={};state.progress.questionHistory[qid]={...(state.progress.questionHistory[qid]||{}),assessment:reason,reviewAt:due.toISOString(),intervalDays:REVIEW[reason].days,updatedAt:now.toISOString()};
  // A fila usa o mesmo identificador da questão e é atualizada a cada nova tentativa.
  state.progress.reviewSchedule??={};state.progress.reviewSchedule[qid]={questionId:qid,moduleId,subtopicId:q.subtopicId,reason,correct,intervalDays:REVIEW[reason].days,dueAt:due.toISOString(),updatedAt:now.toISOString()};
+ syncExerciseReview(state);
  if(s.ids.every(id=>Number.isInteger(s.answers[id])&&!!s.assessments[id]))s.finishedAt=now.toISOString();
  return true;
 }
