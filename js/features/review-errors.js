@@ -1,3 +1,4 @@
+import { scheduleAdaptiveReview } from '../core/adaptive-review.js';
 import { MODULES } from '../data/modules.js';
 import { questionsForModule } from '../data/questions.js';
 
@@ -63,12 +64,13 @@ export function assessReview(state,id,reason){
  if(!a||!q||!Number.isInteger(a.answer)||a.assessment||!Object.hasOwn(interval,reason))return false;
  const correct=a.answer===q.answer;
  if(!((correct?['seguro','duvida','chute']:['desconhecimento','pegadinha','interpretacao','desatencao']).includes(reason)))return false;
- const now=new Date(),next=new Date(now.getTime()+interval[reason]*86400000);
+ const adaptive=scheduleAdaptiveReview(state,'question',id,reason);
+ const now=new Date(),next=new Date(adaptive.dueAt);
  a.assessment=reason;a.completedAt=now.toISOString();
  state.progress.reviewSchedule??={};
- state.progress.reviewSchedule[id]={questionId:id,moduleId:q.moduleId||q.subtopicId?.slice(0,5),subtopicId:q.subtopicId,reason,correct,intervalDays:interval[reason],dueAt:next.toISOString(),updatedAt:now.toISOString()};
+ state.progress.reviewSchedule[id]={questionId:id,moduleId:q.moduleId||q.subtopicId?.slice(0,5),subtopicId:q.subtopicId,reason,correct,intervalDays:adaptive.intervalDays,dueAt:next.toISOString(),updatedAt:now.toISOString()};
  state.progress.questionHistory??={};
- state.progress.questionHistory[id]={...(state.progress.questionHistory[id]||{}),lastAnswer:a.answer,correct,assessment:reason,reviewAt:next.toISOString(),intervalDays:interval[reason],updatedAt:now.toISOString()};
+ state.progress.questionHistory[id]={...(state.progress.questionHistory[id]||{}),lastAnswer:a.answer,correct,assessment:reason,reviewAt:next.toISOString(),intervalDays:adaptive.intervalDays,updatedAt:now.toISOString()};
  if(!correct){state.progress.errors??=[];if(!state.progress.errors.some(x=>x.questionId===id))state.progress.errors.push({questionId:id,moduleId:q.moduleId||q.subtopicId?.slice(0,5),subtopicId:q.subtopicId,createdAt:now.toISOString()});}
  return true;
 }

@@ -1,3 +1,4 @@
+import { scheduleAdaptiveReview } from '../core/adaptive-review.js';
 import { questionsForModule } from '../data/questions.js';
 import { syncExerciseReview } from '../core/review-events.js';
 import { getModuleById } from '../data/modules.js';
@@ -71,11 +72,12 @@ export function assessExercise(state,moduleId,qid,reason){
  if(!s||!q||s.finishedAt||s.ids[s.cursor]!==qid||!Number.isInteger(s.answers?.[qid])||s.assessments?.[qid]||!REVIEW[reason])return false;
  const correct=s.answers[qid]===q.answer;
  if(!selfAssessOptions(correct).includes(reason))return false;
- const now=new Date(),due=new Date(now.getTime()+REVIEW[reason].days*86400000);
- s.assessments??={};s.assessments[qid]={reason,correct,assessedAt:now.toISOString(),reviewAt:due.toISOString(),intervalDays:REVIEW[reason].days};
- state.progress.questionHistory??={};state.progress.questionHistory[qid]={...(state.progress.questionHistory[qid]||{}),assessment:reason,reviewAt:due.toISOString(),intervalDays:REVIEW[reason].days,updatedAt:now.toISOString()};
+ const adaptive=scheduleAdaptiveReview(state,'question',qid,reason);
+ const now=new Date(),due=new Date(adaptive.dueAt);
+ s.assessments??={};s.assessments[qid]={reason,correct,assessedAt:now.toISOString(),reviewAt:due.toISOString(),intervalDays:adaptive.intervalDays};
+ state.progress.questionHistory??={};state.progress.questionHistory[qid]={...(state.progress.questionHistory[qid]||{}),assessment:reason,reviewAt:due.toISOString(),intervalDays:adaptive.intervalDays,updatedAt:now.toISOString()};
  // A fila usa o mesmo identificador da questão e é atualizada a cada nova tentativa.
- state.progress.reviewSchedule??={};state.progress.reviewSchedule[qid]={questionId:qid,moduleId,subtopicId:q.subtopicId,reason,correct,intervalDays:REVIEW[reason].days,dueAt:due.toISOString(),updatedAt:now.toISOString()};
+ state.progress.reviewSchedule??={};state.progress.reviewSchedule[qid]={questionId:qid,moduleId,subtopicId:q.subtopicId,reason,correct,intervalDays:adaptive.intervalDays,dueAt:due.toISOString(),updatedAt:now.toISOString()};
  syncExerciseReview(state);
  if(s.ids.every(id=>Number.isInteger(s.answers[id])&&!!s.assessments[id]))s.finishedAt=now.toISOString();
  return true;

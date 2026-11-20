@@ -1,3 +1,4 @@
+import { scheduleAdaptiveReview } from '../core/adaptive-review.js';
 import { MODULES, AREAS } from '../data/modules.js';
 import { getDiagnosticCards } from '../data/diagnostics.js';
 
@@ -97,7 +98,8 @@ export function rateFlashStudy(state,rating){
  const s=ensure(state),session=s.session;
  if(!session||!session.flipped||!Object.hasOwn(ratings,rating))return false;
  const id=session.ids[session.cursor],now=new Date(),old=state.progress.flashcards[id]||{};
- state.progress.flashcards[id]={...old,rating,attempts:(old.attempts||0)+1,updatedAt:now.toISOString(),dueAt:new Date(now.getTime()+ratings[rating].days*DAY).toISOString()};
+ const adaptive=scheduleAdaptiveReview(state,'flashcard',id,rating);
+ state.progress.flashcards[id]={...old,rating,attempts:(old.attempts||0)+1,updatedAt:now.toISOString(),dueAt:adaptive.dueAt};
  if(session.cursor+1>=session.ids.length)s.session=null;
  else {session.cursor++;session.flipped=false;}
  return true;
