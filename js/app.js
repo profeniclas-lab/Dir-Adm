@@ -7,6 +7,7 @@ import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiag
 import { renderLesson, saveLessonProgress } from "./features/lessons.js";
 import { renderExercises, createExerciseSession, answerExercise, assessExercise, nextExercise } from "./features/exercises.js";
 import { validateCatalog } from "./data/modules.js";
+import { renderFlashcards, changeFlashFilter, startFlashStudy, flipFlashStudy, rateFlashStudy, restartFlashStudy } from "./features/flashcards.js";
 import { renderQuestionBank, updateBankFilter, startBankSession, answerBankQuestion, nextBankQuestion, closeBankSession } from "./features/banco-questoes.js";
 import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSimulado, closeSimulado, cancelSimulado } from "./features/simulados.js";
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
@@ -32,6 +33,7 @@ function renderCurrentPage() {
   }
   switch (state.navigation.currentRoute) {
     case "dashboard": renderDashboard(mainElement, state); break;
+    case "flashcards": renderFlashcards(mainElement,state); break;
     case "banco-questoes": renderQuestionBank(mainElement,state); break;
     case "simulados": renderSimulados(mainElement,state); break;
     case "revisao":
@@ -65,7 +67,20 @@ document.addEventListener('change', event => {
   const select=event.target.closest('[data-bank-filter]');
   if(select&&updateBankFilter(state,select.dataset.bankFilter,select.value))commitAndRender();
 });
+document.addEventListener('change', event => {
+  if(state.navigation.currentRoute!=='flashcards')return;
+  const control=event.target.closest('[data-flash-filter]');
+  if(control&&changeFlashFilter(state,control.dataset.flashFilter,control.value))commitAndRender();
+});
 document.addEventListener('click', event => {
+  if(state.navigation.currentRoute==='flashcards'){
+    if(event.target.closest('[data-flash-start]')){if(startFlashStudy(state))commitAndRender();return;}
+    if(event.target.closest('[data-flash-flip]')){if(flipFlashStudy(state))commitAndRender();return;}
+    const rating=event.target.closest('[data-flash-rate]');
+    if(rating){if(rateFlashStudy(state,rating.dataset.flashRate))commitAndRender();return;}
+    if(event.target.closest('[data-flash-close]')){navigateTo('modulos');return;}
+    if(event.target.closest('[data-flash-restart]')){if(window.confirm('Recomeçar a seleção de cartões? As avaliações já salvas serão mantidas.')&&restartFlashStudy(state))commitAndRender();return;}
+  }
   if(state.navigation.currentRoute==='banco-questoes'){
     const action=event.target.closest('[data-action]')?.dataset.action;
     if(action==='bank-start'){if(startBankSession(state))commitAndRender();return;}
