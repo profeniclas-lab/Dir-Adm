@@ -1,5 +1,6 @@
 import { scheduleAdaptiveReview } from '../core/adaptive-review.js';
 import { MODULES } from '../data/modules.js';
+import { renderErrorAnalysis } from '../core/error-intelligence.js';
 import { questionsForModule } from '../data/questions.js';
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -29,6 +30,7 @@ export function renderReviewList(main,state,mode){
  <p class="page-subtitle">${mode==='revisao'?`${counts.due} revisão(ões) vencida(s) · ${counts.scheduled} programada(s)`:`${counts.errors} registro(s) de erro`}</p>
  <p>${mode==='revisao'?'Responda às questões previstas para hoje ou anteriores. A próxima revisão será agendada conforme sua autoavaliação.':'Refaça as questões em que houve erro. Um acerto não apaga automaticamente o histórico; você pode remover um registro manualmente.'}</p>
  ${missing>0?`<div class="notice">${missing} registro(s) sem questão correspondente no banco atual. Nenhum dado foi apagado.</div>`:''}
+ ${mode==='erros'?renderErrorAnalysis(state):''}
  ${items.length?`<div class="module-list">${items.map(({q,record})=>`<article class="module-card" style="display:block;margin-bottom:12px"><strong>${escapeHtml(q.subtopicId||q.moduleId||'Questão')}</strong><p>${escapeHtml(q.stem).slice(0,240)}</p><button type="button" class="btn btn-primary" data-review-open="${escapeHtml(q.id)}">Responder novamente</button>${mode==='erros'?` <button type="button" class="btn" data-review-remove="${escapeHtml(q.id)}">Remover do banco de erros</button>`:''}</article>`).join('')}</div>`:'<div class="notice">Nenhuma questão disponível nesta lista no momento.</div>'}
  </section>`;
 }
