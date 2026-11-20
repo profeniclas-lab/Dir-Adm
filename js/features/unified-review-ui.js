@@ -1,3 +1,4 @@
+import { renderReviewInsights } from '../core/review-insights.js';
 import { buildUnifiedReviewQueue } from '../core/spaced-review.js';
 import { MODULES } from '../data/modules.js';
 import { questionsForModule } from '../data/questions.js';
@@ -27,6 +28,7 @@ export function renderUnifiedReviewList(main,state) {
  }).join('');
  main.innerHTML=`<section class="module-detail"><h1 class="page-title">Revisão espaçada unificada</h1><p class="page-subtitle">Uma entrada por questão ou flashcard; os agendamentos originais são preservados.</p>
  <div class="cards-grid"><article class="stat-card"><div class="stat-label">Vencidas</div><div class="stat-value">${due.length}</div></article><article class="stat-card"><div class="stat-label">Questões vencidas</div><div class="stat-value">${questionDue.length}</div></article><article class="stat-card"><div class="stat-label">Flashcards vencidos</div><div class="stat-value">${cardDue.length}</div></article><article class="stat-card"><div class="stat-label">Futuras</div><div class="stat-value">${future.length}</div></article></div>
+ ${renderReviewInsights(state)}
  <h2>Revisões pendentes</h2>${due.length?rows(due,true):'<div class="notice">Nenhuma revisão vencida no momento.</div>'}
  <h2>Próximas revisões</h2>${future.length?rows(future,false):'<p>Nenhum agendamento futuro.</p>'}</section>`;
 }
