@@ -5633,6 +5633,1776 @@ export const QUESTIONS = [
     "topic": "Ferramentas: 5W2H e indicadores",
     "concept": "Ferramentas: 5W2H e indicadores",
     "examTip": "Em concursos, o conteúdo pode ser cobrado por distinção conceitual e aplicação a situações de órgãos públicos. Preencher 5W2H não demonstra que uma ação funcionou; indicadores e acompanhamento permitem verificar efeitos."
+  },
+  {
+    "id": "Q-ADM-10-001-01",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-001",
+    "topic": "ADM-10-001 — Classificação, especificação e codificação de materiais",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "explanation": "Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+    "concept": "Classificação, especificação e codificação de materiais",
+    "trap": "Confundir codificação com classificação; um número identificador não descreve, por si só, a qualidade do item.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um almoxarifado agrupa canetas como material de expediente, descreve tipo de tinta e ponta para a compra e atribui um código de estoque a cada item padronizado.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "A afirmação é correta: Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+      "A afirmação é incorreta: Uma codificação numérica, por si só, substitui a especificação técnica necessária à aquisição. A compreensão correta é: Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-001-02",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-001",
+    "topic": "ADM-10-001 — Classificação, especificação e codificação de materiais",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre classificação, especificação e codificação de materiais, assinale a alternativa CORRETA.",
+    "options": [
+      "Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+      "Dois materiais da mesma classe devem possuir obrigatoriamente a mesma especificação técnica.",
+      "Uma codificação numérica, por si só, substitui a especificação técnica necessária à aquisição.",
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço."
+    ],
+    "answer": 0,
+    "explanation": "Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+    "concept": "Classificação, especificação e codificação de materiais",
+    "trap": "Confundir codificação com classificação; um número identificador não descreve, por si só, a qualidade do item.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um almoxarifado agrupa canetas como material de expediente, descreve tipo de tinta e ponta para a compra e atribui um código de estoque a cada item padronizado.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Correta: Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. A classificação pode considerar consumo, criticidade, perecibilidade e aplicação. A especificação precisa conter características verificáveis e suficientes para seleciona",
+      "Incorreta: Dois materiais da mesma classe devem possuir obrigatoriamente a mesma especificação técnica. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+      "Incorreta: Uma codificação numérica, por si só, substitui a especificação técnica necessária à aquisição. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-001-03",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-001",
+    "topic": "ADM-10-001 — Classificação, especificação e codificação de materiais",
+    "type": "vfseq",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações sobre classificação, especificação e codificação de materiais:\nI. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.\nII. Uma codificação numérica, por si só, substitui a especificação técnica necessária à aquisição.\nIII. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.\nIV. Dois materiais da mesma classe devem possuir obrigatoriamente a mesma especificação técnica.\nAssinale a sequência correta.",
+    "options": [
+      "V – F – F – V",
+      "V – V – F – F",
+      "F – V – F – V",
+      "F – F – V – V",
+      "V – F – V – F"
+    ],
+    "answer": 4,
+    "explanation": "Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+    "concept": "Classificação, especificação e codificação de materiais",
+    "trap": "Confundir codificação com classificação; um número identificador não descreve, por si só, a qualidade do item.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um almoxarifado agrupa canetas como material de expediente, descreve tipo de tinta e ponta para a compra e atribui um código de estoque a cada item padronizado.",
+    "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
+    "optionComments": [
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+      "Correta: I e III verdadeiras (Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.); II e IV falsas (Uma codificação numérica, por si só, substitui a especificação técnica necessária à aquisição. Dois materiais da mesma classe devem possuir obrigatoriamente a mesma especificação técnica.)."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-001-04",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-001",
+    "topic": "ADM-10-001 — Classificação, especificação e codificação de materiais",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre classificação, especificação e codificação de materiais, assinale a alternativa INCORRETA.",
+    "options": [
+      "Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+      "Dois materiais da mesma classe devem possuir obrigatoriamente a mesma especificação técnica.",
+      "A aplicação depende das condições e da finalidade administrativa.",
+      "Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico."
+    ],
+    "answer": 1,
+    "explanation": "Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+    "concept": "Classificação, especificação e codificação de materiais",
+    "trap": "Confundir codificação com classificação; um número identificador não descreve, por si só, a qualidade do item.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um almoxarifado agrupa canetas como material de expediente, descreve tipo de tinta e ponta para a compra e atribui um código de estoque a cada item padronizado.",
+    "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
+    "optionComments": [
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Classificar agrupa materiais segundo critérios de gestão, enquanto codificar atribui identificadores padronizados.",
+      "Correta como resposta ao comando INCORRETA: Dois materiais da mesma classe devem possuir obrigatoriamente a mesma especificação técnica. A compreensão adequada é: Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico.",
+      "Incorreta como resposta ao comando: a análise contextual é necessária. Classificação organiza grupos; especificação define requisitos; codificação identifica itens.",
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Especificar um item exige características verificáveis adequadas à necessidade, e não apenas seu nome genérico."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-002-01",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-002",
+    "topic": "ADM-10-002 — Compras, recebimento e armazenagem",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "explanation": "Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.",
+    "concept": "Compras, recebimento e armazenagem",
+    "trap": "A entrega física não equivale automaticamente ao recebimento definitivo ou à aceitação da conformidade.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma escola recebe 30 monitores: confere a quantidade, testa as especificações e registra a localização de guarda antes da distribuição.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "Marcar CERTO seria equivocado: A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação. Em vez disso: Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica.",
+      "ERRADO é adequado: A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação. A distinção é: Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-002-02",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-002",
+    "topic": "ADM-10-002 — Compras, recebimento e armazenagem",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre compras, recebimento e armazenagem, assinale a alternativa CORRETA.",
+    "options": [
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "A conferência de nota fiscal dispensa examinar o material efetivamente entregue.",
+      "A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação.",
+      "Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica."
+    ],
+    "answer": 3,
+    "explanation": "Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.",
+    "concept": "Compras, recebimento e armazenagem",
+    "trap": "A entrega física não equivale automaticamente ao recebimento definitivo ou à aceitação da conformidade.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma escola recebe 30 monitores: confere a quantidade, testa as especificações e registra a localização de guarda antes da distribuição.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.",
+      "Incorreta: A conferência de nota fiscal dispensa examinar o material efetivamente entregue. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.",
+      "Incorreta: A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação. Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica.",
+      "Correta: Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica. A necessidade deve ser dimensionada antes da compra. No recebimento, a conferência documental verifica o pedido e a documentação; a quantitativa verifica unidades; a qual"
+    ]
+  },
+  {
+    "id": "Q-ADM-10-002-03",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-002",
+    "topic": "ADM-10-002 — Compras, recebimento e armazenagem",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as afirmações sobre compras, recebimento e armazenagem:\nI. Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica.\nII. A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação.\nIII. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.\nQuais estão corretas?",
+    "options": [
+      "Apenas I e III",
+      "Apenas I",
+      "I, II e III",
+      "Apenas II e III",
+      "Apenas III"
+    ],
+    "answer": 0,
+    "explanation": "Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.",
+    "concept": "Compras, recebimento e armazenagem",
+    "trap": "A entrega física não equivale automaticamente ao recebimento definitivo ou à aceitação da conformidade.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma escola recebe 30 monitores: confere a quantidade, testa as especificações e registra a localização de guarda antes da distribuição.",
+    "challenge": "Qual condição distingue II das afirmações corretas?",
+    "optionComments": [
+      "Correta: I e III são verdadeiras; II é falsa. Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.",
+      "Incorreta: omite III, que também é verdadeira. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.",
+      "Incorreta: II é falsa. A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação.",
+      "Incorreta: II é falsa. A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação. Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica.",
+      "Incorreta: omite I, que também é verdadeira. Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-002-04",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-002",
+    "topic": "ADM-10-002 — Compras, recebimento e armazenagem",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada enunciado à classificação adequada:\nI. Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica.\nII. A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação.\nIII. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.\nIV. A conferência de nota fiscal dispensa examinar o material efetivamente entregue.\nColuna II: V = proposição tecnicamente válida; F = proposição tecnicamente falsa. Assinale a sequência de I a IV.",
+    "options": [
+      "F – F – V – V",
+      "F – V – F – V",
+      "V – F – F – V",
+      "V – V – F – F",
+      "V – F – V – F"
+    ],
+    "answer": 4,
+    "explanation": "Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos.",
+    "concept": "Compras, recebimento e armazenagem",
+    "trap": "A entrega física não equivale automaticamente ao recebimento definitivo ou à aceitação da conformidade.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma escola recebe 30 monitores: confere a quantidade, testa as especificações e registra a localização de guarda antes da distribuição.",
+    "challenge": "Que critério conceitual permite classificar II como falsa?",
+    "optionComments": [
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação. A conferência de nota fiscal dispensa examinar o material efetivamente entregue.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação. A conferência de nota fiscal dispensa examinar o material efetivamente entregue.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação. A conferência de nota fiscal dispensa examinar o material efetivamente entregue.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. A descarga física dos volumes comprova automaticamente o recebimento definitivo e a aceitação. A conferência de nota fiscal dispensa examinar o material efetivamente entregue.",
+      "Correta: I e III são válidas; II e IV contêm generalizações ou confusões. Recebimento quantitativo verifica quantidades, enquanto o qualitativo verifica conformidade técnica. Armazenagem exige conservação, localização e rastreabilidade dos materiais recebidos."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-003-01",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-003",
+    "topic": "ADM-10-003 — Gestão e controle de estoques",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "explanation": "O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+    "concept": "Gestão e controle de estoques",
+    "trap": "Afirmar que o melhor estoque é sempre o maior ou sempre o menor ignora custos e riscos.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um posto de saúde mantém reserva maior de um insumo crítico e compra materiais de baixa demanda em lotes menores, considerando prazos de fornecimento.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "A afirmação é correta: O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção.",
+      "A afirmação é incorreta: Quanto maior o estoque, melhor a gestão, independentemente de perdas e obsolescência. A compreensão correta é: O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-003-02",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-003",
+    "topic": "ADM-10-003 — Gestão e controle de estoques",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre gestão e controle de estoques, assinale a alternativa CORRETA.",
+    "options": [
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Reduzir o estoque a zero é sempre a solução mais eficiente para qualquer item.",
+      "O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção.",
+      "Quanto maior o estoque, melhor a gestão, independentemente de perdas e obsolescência."
+    ],
+    "answer": 2,
+    "explanation": "O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+    "concept": "Gestão e controle de estoques",
+    "trap": "Afirmar que o melhor estoque é sempre o maior ou sempre o menor ignora custos e riscos.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um posto de saúde mantém reserva maior de um insumo crítico e compra materiais de baixa demanda em lotes menores, considerando prazos de fornecimento.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+      "Incorreta: Reduzir o estoque a zero é sempre a solução mais eficiente para qualquer item. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+      "Correta: O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. A falta de itens essenciais pode interromper serviços; o excesso imobiliza recursos, ocupa espaço e eleva riscos de perdas e obsolescência. A gestão utiliza registros de ",
+      "Incorreta: Quanto maior o estoque, melhor a gestão, independentemente de perdas e obsolescência. O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-003-03",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-003",
+    "topic": "ADM-10-003 — Gestão e controle de estoques",
+    "type": "vfseq",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações sobre gestão e controle de estoques:\nI. O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção.\nII. Quanto maior o estoque, melhor a gestão, independentemente de perdas e obsolescência.\nIII. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.\nIV. Reduzir o estoque a zero é sempre a solução mais eficiente para qualquer item.\nAssinale a sequência correta.",
+    "options": [
+      "F – V – F – V",
+      "V – V – F – F",
+      "V – F – F – V",
+      "F – F – V – V",
+      "V – F – V – F"
+    ],
+    "answer": 4,
+    "explanation": "O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+    "concept": "Gestão e controle de estoques",
+    "trap": "Afirmar que o melhor estoque é sempre o maior ou sempre o menor ignora custos e riscos.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um posto de saúde mantém reserva maior de um insumo crítico e compra materiais de baixa demanda em lotes menores, considerando prazos de fornecimento.",
+    "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
+    "optionComments": [
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+      "Correta: I e III verdadeiras (O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.); II e IV falsas (Quanto maior o estoque, melhor a gestão, independentemente de perdas e obsolescência. Reduzir o estoque a zero é sempre a solução mais eficiente para qualquer item.)."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-003-04",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-003",
+    "topic": "ADM-10-003 — Gestão e controle de estoques",
+    "type": "lacunas",
+    "difficulty": "dificil",
+    "stem": "Complete as lacunas considerando a aplicação prática: em gestão e controle de estoques, a análise deve conciliar ______ e ______, sem tratar os dois aspectos como sinônimos.",
+    "options": [
+      "disponibilidade / custos",
+      "disponibilidade / disponibilidade",
+      "custos / custos",
+      "improvisação / ausência de critérios"
+    ],
+    "answer": 0,
+    "explanation": "O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+    "concept": "Gestão e controle de estoques",
+    "trap": "Afirmar que o melhor estoque é sempre o maior ou sempre o menor ignora custos e riscos.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um posto de saúde mantém reserva maior de um insumo crítico e compra materiais de baixa demanda em lotes menores, considerando prazos de fornecimento.",
+    "challenge": "Como os dois conceitos se manifestam em outra rotina administrativa?",
+    "optionComments": [
+      "Correta: a relação entre disponibilidade e custos é relevante. O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+      "Incorreta: repete disponibilidade e omite custos, igualmente relevante. Consumo, prazo de reposição e criticidade influenciam os parâmetros de estoque.",
+      "Incorreta: repete custos e omite disponibilidade, essencial à análise. O controle de estoque busca equilibrar continuidade do serviço e custos de manutenção.",
+      "Incorreta: ausência de critérios não é princípio técnico de gestão. A meta é disponibilidade com uso racional dos recursos."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-004-01",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-004",
+    "topic": "ADM-10-004 — Estoque de segurança, ponto de pedido e giro",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Estoque de segurança e ponto de pedido designam necessariamente a mesma quantidade.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "explanation": "O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+    "concept": "Estoque de segurança, ponto de pedido e giro",
+    "trap": "Confundir ponto de pedido com quantidade a comprar ou interpretar giro elevado como prova isolada de eficiência.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Se um órgão consome 10 caixas por dia e o fornecedor leva cinco dias, precisa cobrir 50 caixas durante o prazo, além da reserva calculada para incertezas.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "Marcar CERTO seria equivocado: Estoque de segurança e ponto de pedido designam necessariamente a mesma quantidade. Em vez disso: O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+      "ERRADO é adequado: Estoque de segurança e ponto de pedido designam necessariamente a mesma quantidade. A distinção é: O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-004-02",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-004",
+    "topic": "ADM-10-004 — Estoque de segurança, ponto de pedido e giro",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre estoque de segurança, ponto de pedido e giro, assinale a alternativa CORRETA.",
+    "options": [
+      "Giro elevado comprova, isoladamente, que não haverá ruptura de estoque.",
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Estoque de segurança e ponto de pedido designam necessariamente a mesma quantidade.",
+      "O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança."
+    ],
+    "answer": 3,
+    "explanation": "O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+    "concept": "Estoque de segurança, ponto de pedido e giro",
+    "trap": "Confundir ponto de pedido com quantidade a comprar ou interpretar giro elevado como prova isolada de eficiência.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Se um órgão consome 10 caixas por dia e o fornecedor leva cinco dias, precisa cobrir 50 caixas durante o prazo, além da reserva calculada para incertezas.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: Giro elevado comprova, isoladamente, que não haverá ruptura de estoque. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+      "Incorreta: Estoque de segurança e ponto de pedido designam necessariamente a mesma quantidade. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+      "Correta: O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança. Em um modelo simples com consumo e prazo constantes, o ponto de pedido corresponde ao consumo esperado durante o prazo de reposição, acrescido do estoque de segurança. Na"
+    ]
+  },
+  {
+    "id": "Q-ADM-10-004-03",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-004",
+    "topic": "ADM-10-004 — Estoque de segurança, ponto de pedido e giro",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as afirmações sobre estoque de segurança, ponto de pedido e giro:\nI. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.\nII. Estoque de segurança e ponto de pedido designam necessariamente a mesma quantidade.\nIII. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.\nQuais estão corretas?",
+    "options": [
+      "Apenas II e III",
+      "Apenas I e III",
+      "Apenas I",
+      "I, II e III",
+      "Apenas III"
+    ],
+    "answer": 1,
+    "explanation": "O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+    "concept": "Estoque de segurança, ponto de pedido e giro",
+    "trap": "Confundir ponto de pedido com quantidade a comprar ou interpretar giro elevado como prova isolada de eficiência.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Se um órgão consome 10 caixas por dia e o fornecedor leva cinco dias, precisa cobrir 50 caixas durante o prazo, além da reserva calculada para incertezas.",
+    "challenge": "Qual condição distingue II das afirmações corretas?",
+    "optionComments": [
+      "Incorreta: II é falsa. Estoque de segurança e ponto de pedido designam necessariamente a mesma quantidade. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+      "Correta: I e III são verdadeiras; II é falsa. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+      "Incorreta: omite III, que também é verdadeira. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+      "Incorreta: II é falsa. Estoque de segurança e ponto de pedido designam necessariamente a mesma quantidade.",
+      "Incorreta: omite I, que também é verdadeira. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-004-04",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-004",
+    "topic": "ADM-10-004 — Estoque de segurança, ponto de pedido e giro",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre estoque de segurança, ponto de pedido e giro, assinale a alternativa INCORRETA.",
+    "options": [
+      "O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+      "A aplicação depende das condições e da finalidade administrativa.",
+      "O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+      "Giro elevado comprova, isoladamente, que não haverá ruptura de estoque."
+    ],
+    "answer": 3,
+    "explanation": "O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+    "concept": "Estoque de segurança, ponto de pedido e giro",
+    "trap": "Confundir ponto de pedido com quantidade a comprar ou interpretar giro elevado como prova isolada de eficiência.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Se um órgão consome 10 caixas por dia e o fornecedor leva cinco dias, precisa cobrir 50 caixas durante o prazo, além da reserva calculada para incertezas.",
+    "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
+    "optionComments": [
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. O ponto de pedido considera a demanda durante a reposição e, quando cabível, o estoque de segurança.",
+      "Incorreta como resposta ao comando: a análise contextual é necessária. Reserva protege; ponto aciona compra; giro descreve movimentação.",
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada.",
+      "Correta como resposta ao comando INCORRETA: Giro elevado comprova, isoladamente, que não haverá ruptura de estoque. A compreensão adequada é: O giro indica renovação do estoque em determinado período, conforme a metodologia utilizada."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-005-01",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-005",
+    "topic": "ADM-10-005 — Inventário e almoxarifado",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Inventário compara quantidades físicas com registros e exige apuração das divergências.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "explanation": "Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+    "concept": "Inventário e almoxarifado",
+    "trap": "Inventário não é sinônimo de compra nem apenas contagem sem conciliação.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Ao contar caixas de papel, a equipe encontra 80 unidades físicas e 90 registradas: deve apurar a diferença antes de simplesmente ajustar o saldo.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "A afirmação é correta: Inventário compara quantidades físicas com registros e exige apuração das divergências.",
+      "A afirmação é incorreta: Identificada uma divergência, basta alterar o sistema sem investigar sua origem. A compreensão correta é: Inventário compara quantidades físicas com registros e exige apuração das divergências."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-005-02",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-005",
+    "topic": "ADM-10-005 — Inventário e almoxarifado",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre inventário e almoxarifado, assinale a alternativa CORRETA.",
+    "options": [
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Inventário compara quantidades físicas com registros e exige apuração das divergências.",
+      "Inventário é exclusivamente uma atividade de compra de novos materiais.",
+      "Identificada uma divergência, basta alterar o sistema sem investigar sua origem."
+    ],
+    "answer": 1,
+    "explanation": "Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+    "concept": "Inventário e almoxarifado",
+    "trap": "Inventário não é sinônimo de compra nem apenas contagem sem conciliação.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Ao contar caixas de papel, a equipe encontra 80 unidades físicas e 90 registradas: deve apurar a diferença antes de simplesmente ajustar o saldo.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+      "Correta: Inventário compara quantidades físicas com registros e exige apuração das divergências. O inventário pode ser periódico, rotativo ou realizado em ocasiões específicas, conforme regras internas. Diferenças exigem investigação: erros de registro, movimentação ",
+      "Incorreta: Inventário é exclusivamente uma atividade de compra de novos materiais. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+      "Incorreta: Identificada uma divergência, basta alterar o sistema sem investigar sua origem. Inventário compara quantidades físicas com registros e exige apuração das divergências."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-005-03",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-005",
+    "topic": "ADM-10-005 — Inventário e almoxarifado",
+    "type": "vfseq",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações sobre inventário e almoxarifado:\nI. Inventário compara quantidades físicas com registros e exige apuração das divergências.\nII. Identificada uma divergência, basta alterar o sistema sem investigar sua origem.\nIII. O almoxarifado controla recebimento, guarda e distribuição de materiais.\nIV. Inventário é exclusivamente uma atividade de compra de novos materiais.\nAssinale a sequência correta.",
+    "options": [
+      "F – V – F – V",
+      "V – F – F – V",
+      "F – F – V – V",
+      "V – V – F – F",
+      "V – F – V – F"
+    ],
+    "answer": 4,
+    "explanation": "Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+    "concept": "Inventário e almoxarifado",
+    "trap": "Inventário não é sinônimo de compra nem apenas contagem sem conciliação.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Ao contar caixas de papel, a equipe encontra 80 unidades físicas e 90 registradas: deve apurar a diferença antes de simplesmente ajustar o saldo.",
+    "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
+    "optionComments": [
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+      "Correta: I e III verdadeiras (Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.); II e IV falsas (Identificada uma divergência, basta alterar o sistema sem investigar sua origem. Inventário é exclusivamente uma atividade de compra de novos materiais.)."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-005-04",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-005",
+    "topic": "ADM-10-005 — Inventário e almoxarifado",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada enunciado à classificação adequada:\nI. Inventário compara quantidades físicas com registros e exige apuração das divergências.\nII. Identificada uma divergência, basta alterar o sistema sem investigar sua origem.\nIII. O almoxarifado controla recebimento, guarda e distribuição de materiais.\nIV. Inventário é exclusivamente uma atividade de compra de novos materiais.\nColuna II: V = proposição tecnicamente válida; F = proposição tecnicamente falsa. Assinale a sequência de I a IV.",
+    "options": [
+      "V – F – F – V",
+      "F – F – V – V",
+      "V – F – V – F",
+      "F – V – F – V",
+      "V – V – F – F"
+    ],
+    "answer": 2,
+    "explanation": "Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+    "concept": "Inventário e almoxarifado",
+    "trap": "Inventário não é sinônimo de compra nem apenas contagem sem conciliação.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Ao contar caixas de papel, a equipe encontra 80 unidades físicas e 90 registradas: deve apurar a diferença antes de simplesmente ajustar o saldo.",
+    "challenge": "Que critério conceitual permite classificar II como falsa?",
+    "optionComments": [
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Identificada uma divergência, basta alterar o sistema sem investigar sua origem. Inventário é exclusivamente uma atividade de compra de novos materiais.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Identificada uma divergência, basta alterar o sistema sem investigar sua origem. Inventário é exclusivamente uma atividade de compra de novos materiais.",
+      "Correta: I e III são válidas; II e IV contêm generalizações ou confusões. Inventário compara quantidades físicas com registros e exige apuração das divergências. O almoxarifado controla recebimento, guarda e distribuição de materiais.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Identificada uma divergência, basta alterar o sistema sem investigar sua origem. Inventário é exclusivamente uma atividade de compra de novos materiais.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Identificada uma divergência, basta alterar o sistema sem investigar sua origem. Inventário é exclusivamente uma atividade de compra de novos materiais."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-006-01",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-006",
+    "topic": "ADM-10-006 — Bens patrimoniais: registro, tombamento e baixa",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Um bem tombado nunca pode ser baixado do patrimônio.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "explanation": "Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+    "concept": "Bens patrimoniais: registro, tombamento e baixa",
+    "trap": "Tombamento não torna o bem inalienável; baixa não se confunde com simples mudança de sala.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um computador é identificado com número patrimonial, transferido entre setores mediante registro e posteriormente baixado por procedimento formal quando não integra mais o patrimônio.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "ERRADO é adequado: Um bem tombado nunca pode ser baixado do patrimônio. A distinção é: Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais.",
+      "Marcar CERTO seria equivocado: Um bem tombado nunca pode ser baixado do patrimônio. Em vez disso: Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-006-02",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-006",
+    "topic": "ADM-10-006 — Bens patrimoniais: registro, tombamento e baixa",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre bens patrimoniais: registro, tombamento e baixa, assinale a alternativa CORRETA.",
+    "options": [
+      "Baixa patrimonial significa necessariamente descarte físico imediato do bem.",
+      "Um bem tombado nunca pode ser baixado do patrimônio.",
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais."
+    ],
+    "answer": 3,
+    "explanation": "Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+    "concept": "Bens patrimoniais: registro, tombamento e baixa",
+    "trap": "Tombamento não torna o bem inalienável; baixa não se confunde com simples mudança de sala.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um computador é identificado com número patrimonial, transferido entre setores mediante registro e posteriormente baixado por procedimento formal quando não integra mais o patrimônio.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: Baixa patrimonial significa necessariamente descarte físico imediato do bem. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+      "Incorreta: Um bem tombado nunca pode ser baixado do patrimônio. Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais.",
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+      "Correta: Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais. O registro documenta dados essenciais do bem; o tombamento atribui identificação patrimonial conforme procedimentos da instituição. Transferências, manutenção, localizaçã"
+    ]
+  },
+  {
+    "id": "Q-ADM-10-006-03",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-006",
+    "topic": "ADM-10-006 — Bens patrimoniais: registro, tombamento e baixa",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as afirmações sobre bens patrimoniais: registro, tombamento e baixa:\nI. Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais.\nII. Um bem tombado nunca pode ser baixado do patrimônio.\nIII. Transferências de bens entre setores devem ser acompanhadas por registros adequados.\nQuais estão corretas?",
+    "options": [
+      "I, II e III",
+      "Apenas I",
+      "Apenas I e III",
+      "Apenas III",
+      "Apenas II e III"
+    ],
+    "answer": 2,
+    "explanation": "Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+    "concept": "Bens patrimoniais: registro, tombamento e baixa",
+    "trap": "Tombamento não torna o bem inalienável; baixa não se confunde com simples mudança de sala.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um computador é identificado com número patrimonial, transferido entre setores mediante registro e posteriormente baixado por procedimento formal quando não integra mais o patrimônio.",
+    "challenge": "Qual condição distingue II das afirmações corretas?",
+    "optionComments": [
+      "Incorreta: II é falsa. Um bem tombado nunca pode ser baixado do patrimônio.",
+      "Incorreta: omite III, que também é verdadeira. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+      "Correta: I e III são verdadeiras; II é falsa. Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+      "Incorreta: omite I, que também é verdadeira. Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais.",
+      "Incorreta: II é falsa. Um bem tombado nunca pode ser baixado do patrimônio. Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais."
+    ]
+  },
+  {
+    "id": "Q-ADM-10-006-04",
+    "moduleId": "ADM-10",
+    "subtopicId": "ADM-10-006",
+    "topic": "ADM-10-006 — Bens patrimoniais: registro, tombamento e baixa",
+    "type": "lacunas",
+    "difficulty": "dificil",
+    "stem": "Complete as lacunas considerando a aplicação prática: em bens patrimoniais: registro, tombamento e baixa, a análise deve conciliar ______ e ______, sem tratar os dois aspectos como sinônimos.",
+    "options": [
+      "baixa / baixa",
+      "identificação / baixa",
+      "identificação / identificação",
+      "improvisação / ausência de critérios"
+    ],
+    "answer": 1,
+    "explanation": "Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+    "concept": "Bens patrimoniais: registro, tombamento e baixa",
+    "trap": "Tombamento não torna o bem inalienável; baixa não se confunde com simples mudança de sala.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um computador é identificado com número patrimonial, transferido entre setores mediante registro e posteriormente baixado por procedimento formal quando não integra mais o patrimônio.",
+    "challenge": "Como os dois conceitos se manifestam em outra rotina administrativa?",
+    "optionComments": [
+      "Incorreta: repete baixa e omite identificação, essencial à análise. Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais.",
+      "Correta: a relação entre identificação e baixa é relevante. Tombamento identifica e registra bens patrimoniais conforme os procedimentos institucionais. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+      "Incorreta: repete identificação e omite baixa, igualmente relevante. Transferências de bens entre setores devem ser acompanhadas por registros adequados.",
+      "Incorreta: ausência de critérios não é princípio técnico de gestão. Registro, identificação, movimentação e baixa compõem o ciclo patrimonial."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-001-01",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-001",
+    "topic": "ADM-11-001 — Processos, atividades, tarefas e procedimentos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Processo reúne atividades articuladas para transformar entradas em resultados.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "explanation": "Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+    "concept": "Processos, atividades, tarefas e procedimentos",
+    "trap": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "A afirmação é correta: Processo reúne atividades articuladas para transformar entradas em resultados.",
+      "A afirmação é incorreta: Uma tarefa isolada corresponde necessariamente a todo o processo organizacional. A compreensão correta é: Processo reúne atividades articuladas para transformar entradas em resultados."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-001-02",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-001",
+    "topic": "ADM-11-001 — Processos, atividades, tarefas e procedimentos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre processos, atividades, tarefas e procedimentos, assinale a alternativa CORRETA.",
+    "options": [
+      "Atividade e procedimento são termos sempre intercambiáveis, sem diferença de função.",
+      "Processo reúne atividades articuladas para transformar entradas em resultados.",
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Uma tarefa isolada corresponde necessariamente a todo o processo organizacional."
+    ],
+    "answer": 1,
+    "explanation": "Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+    "concept": "Processos, atividades, tarefas e procedimentos",
+    "trap": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: Atividade e procedimento são termos sempre intercambiáveis, sem diferença de função. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Correta: Processo reúne atividades articuladas para transformar entradas em resultados. A visão de processos mostra como o trabalho se conecta para produzir valor. Uma atividade reúne ações relacionadas, enquanto tarefas detalham operações concretas. Procedi",
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Incorreta: Uma tarefa isolada corresponde necessariamente a todo o processo organizacional. Processo reúne atividades articuladas para transformar entradas em resultados."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-001-03",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-001",
+    "topic": "ADM-11-001 — Processos, atividades, tarefas e procedimentos",
+    "type": "vfseq",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações sobre processos, atividades, tarefas e procedimentos:\nI. Processo reúne atividades articuladas para transformar entradas em resultados.\nII. Uma tarefa isolada corresponde necessariamente a todo o processo organizacional.\nIII. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.\nIV. Atividade e procedimento são termos sempre intercambiáveis, sem diferença de função.\nAssinale a sequência correta.",
+    "options": [
+      "V – V – F – F",
+      "V – F – V – F",
+      "F – F – V – V",
+      "F – V – F – V",
+      "V – F – F – V"
+    ],
+    "answer": 1,
+    "explanation": "Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+    "concept": "Processos, atividades, tarefas e procedimentos",
+    "trap": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
+    "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
+    "optionComments": [
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Correta: I e III verdadeiras (Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.); II e IV falsas (Uma tarefa isolada corresponde necessariamente a todo o processo organizacional. Atividade e procedimento são termos sempre intercambiáveis, sem diferença de função.).",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-001-04",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-001",
+    "topic": "ADM-11-001 — Processos, atividades, tarefas e procedimentos",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre processos, atividades, tarefas e procedimentos, assinale a alternativa INCORRETA.",
+    "options": [
+      "Processo reúne atividades articuladas para transformar entradas em resultados.",
+      "Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Atividade e procedimento são termos sempre intercambiáveis, sem diferença de função.",
+      "A aplicação depende das condições e da finalidade administrativa."
+    ],
+    "answer": 2,
+    "explanation": "Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica. Processo reúne atividades articuladas para transformar entradas em resultados.",
+    "concept": "Processos, atividades, tarefas e procedimentos",
+    "trap": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
+    "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
+    "optionComments": [
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Processo reúne atividades articuladas para transformar entradas em resultados.",
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Correta como resposta ao comando INCORRETA: Atividade e procedimento são termos sempre intercambiáveis, sem diferença de função. A compreensão adequada é: Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Incorreta como resposta ao comando: a análise contextual é necessária. Processo integra; atividade agrupa; tarefa executa; procedimento orienta."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-002-01",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-002",
+    "topic": "ADM-11-002 — Processos finalísticos e de apoio",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Compras são necessariamente o processo finalístico principal de qualquer órgão.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "explanation": "Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+    "concept": "Processos finalísticos e de apoio",
+    "trap": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "ERRADO é adequado: Compras são necessariamente o processo finalístico principal de qualquer órgão. A distinção é: Processos finalísticos se relacionam diretamente à missão institucional.",
+      "Marcar CERTO seria equivocado: Compras são necessariamente o processo finalístico principal de qualquer órgão. Em vez disso: Processos finalísticos se relacionam diretamente à missão institucional."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-002-02",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-002",
+    "topic": "ADM-11-002 — Processos finalísticos e de apoio",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre processos finalísticos e de apoio, assinale a alternativa CORRETA.",
+    "options": [
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Processos finalísticos se relacionam diretamente à missão institucional.",
+      "A classificação de um processo independe da missão da organização.",
+      "Compras são necessariamente o processo finalístico principal de qualquer órgão."
+    ],
+    "answer": 1,
+    "explanation": "Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+    "concept": "Processos finalísticos e de apoio",
+    "trap": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+      "Correta: Processos finalísticos se relacionam diretamente à missão institucional. O enquadramento depende da missão da organização. Em uma universidade, ensino e certificação podem integrar processos finalísticos, enquanto manutenção predial e compras ",
+      "Incorreta: A classificação de um processo independe da missão da organização. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+      "Incorreta: Compras são necessariamente o processo finalístico principal de qualquer órgão. Processos finalísticos se relacionam diretamente à missão institucional."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-002-03",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-002",
+    "topic": "ADM-11-002 — Processos finalísticos e de apoio",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as afirmações sobre processos finalísticos e de apoio:\nI. Processos finalísticos se relacionam diretamente à missão institucional.\nII. Compras são necessariamente o processo finalístico principal de qualquer órgão.\nIII. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.\nQuais estão corretas?",
+    "options": [
+      "Apenas I",
+      "Apenas III",
+      "Apenas II e III",
+      "I, II e III",
+      "Apenas I e III"
+    ],
+    "answer": 4,
+    "explanation": "Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+    "concept": "Processos finalísticos e de apoio",
+    "trap": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
+    "challenge": "Qual condição distingue II das afirmações corretas?",
+    "optionComments": [
+      "Incorreta: omite III, que também é verdadeira. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+      "Incorreta: omite I, que também é verdadeira. Processos finalísticos se relacionam diretamente à missão institucional.",
+      "Incorreta: II é falsa. Compras são necessariamente o processo finalístico principal de qualquer órgão. Processos finalísticos se relacionam diretamente à missão institucional.",
+      "Incorreta: II é falsa. Compras são necessariamente o processo finalístico principal de qualquer órgão.",
+      "Correta: I e III são verdadeiras; II é falsa. Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-002-04",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-002",
+    "topic": "ADM-11-002 — Processos finalísticos e de apoio",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada enunciado à classificação adequada:\nI. Processos finalísticos se relacionam diretamente à missão institucional.\nII. Compras são necessariamente o processo finalístico principal de qualquer órgão.\nIII. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.\nIV. A classificação de um processo independe da missão da organização.\nColuna II: V = proposição tecnicamente válida; F = proposição tecnicamente falsa. Assinale a sequência de I a IV.",
+    "options": [
+      "V – V – F – F",
+      "F – F – V – V",
+      "F – V – F – V",
+      "V – F – V – F",
+      "V – F – F – V"
+    ],
+    "answer": 3,
+    "explanation": "Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+    "concept": "Processos finalísticos e de apoio",
+    "trap": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
+    "challenge": "Que critério conceitual permite classificar II como falsa?",
+    "optionComments": [
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Compras são necessariamente o processo finalístico principal de qualquer órgão. A classificação de um processo independe da missão da organização.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Compras são necessariamente o processo finalístico principal de qualquer órgão. A classificação de um processo independe da missão da organização.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Compras são necessariamente o processo finalístico principal de qualquer órgão. A classificação de um processo independe da missão da organização.",
+      "Correta: I e III são válidas; II e IV contêm generalizações ou confusões. Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Compras são necessariamente o processo finalístico principal de qualquer órgão. A classificação de um processo independe da missão da organização."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-003-01",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-003",
+    "topic": "ADM-11-003 — Gestão por processos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "explanation": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+    "concept": "Gestão por processos",
+    "trap": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "A afirmação é incorreta: Adotar gestão por processos exige eliminar toda hierarquia funcional. A compreensão correta é: Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos.",
+      "A afirmação é correta: Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-003-02",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-003",
+    "topic": "ADM-11-003 — Gestão por processos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre gestão por processos, assinale a alternativa CORRETA.",
+    "options": [
+      "O desempenho isolado de cada departamento garante o melhor resultado do processo completo.",
+      "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos.",
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Adotar gestão por processos exige eliminar toda hierarquia funcional."
+    ],
+    "answer": 1,
+    "explanation": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+    "concept": "Gestão por processos",
+    "trap": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: O desempenho isolado de cada departamento garante o melhor resultado do processo completo. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+      "Correta: Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. A abordagem identifica entradas, clientes ou usuários, responsáveis, interfaces, resultados e indicadores. Busca reduzir retrabalho e atrasos entre setores. Não exige eli",
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+      "Incorreta: Adotar gestão por processos exige eliminar toda hierarquia funcional. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-003-03",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-003",
+    "topic": "ADM-11-003 — Gestão por processos",
+    "type": "vfseq",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações sobre gestão por processos:\nI. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos.\nII. Adotar gestão por processos exige eliminar toda hierarquia funcional.\nIII. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.\nIV. O desempenho isolado de cada departamento garante o melhor resultado do processo completo.\nAssinale a sequência correta.",
+    "options": [
+      "V – F – F – V",
+      "F – F – V – V",
+      "V – F – V – F",
+      "F – V – F – V",
+      "V – V – F – F"
+    ],
+    "answer": 2,
+    "explanation": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+    "concept": "Gestão por processos",
+    "trap": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
+    "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
+    "optionComments": [
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+      "Correta: I e III verdadeiras (Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.); II e IV falsas (Adotar gestão por processos exige eliminar toda hierarquia funcional. O desempenho isolado de cada departamento garante o melhor resultado do processo completo.).",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-003-04",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-003",
+    "topic": "ADM-11-003 — Gestão por processos",
+    "type": "lacunas",
+    "difficulty": "dificil",
+    "stem": "Complete as lacunas considerando a aplicação prática: em gestão por processos, a análise deve conciliar ______ e ______, sem tratar os dois aspectos como sinônimos.",
+    "options": [
+      "fluxo / departamentos",
+      "departamentos / departamentos",
+      "fluxo / fluxo",
+      "improvisação / ausência de critérios"
+    ],
+    "answer": 0,
+    "explanation": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+    "concept": "Gestão por processos",
+    "trap": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
+    "challenge": "Como os dois conceitos se manifestam em outra rotina administrativa?",
+    "optionComments": [
+      "Correta: a relação entre fluxo e departamentos é relevante. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+      "Incorreta: repete departamentos e omite fluxo, essencial à análise. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos.",
+      "Incorreta: repete fluxo e omite departamentos, igualmente relevante. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+      "Incorreta: ausência de critérios não é princípio técnico de gestão. A unidade de análise é o fluxo que gera o resultado."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-004-01",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-004",
+    "topic": "ADM-11-004 — Mapeamento e fluxogramas",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "explanation": "Fluxogramas representam sequências de atividades e decisões de um processo. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+    "concept": "Mapeamento e fluxogramas",
+    "trap": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "ERRADO é adequado: Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho. A distinção é: Fluxogramas representam sequências de atividades e decisões de um processo.",
+      "Marcar CERTO seria equivocado: Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho. Em vez disso: Fluxogramas representam sequências de atividades e decisões de um processo."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-004-02",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-004",
+    "topic": "ADM-11-004 — Mapeamento e fluxogramas",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre mapeamento e fluxogramas, assinale a alternativa CORRETA.",
+    "options": [
+      "Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho.",
+      "Um fluxograma visualmente organizado dispensa validação com quem executa as atividades.",
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Fluxogramas representam sequências de atividades e decisões de um processo."
+    ],
+    "answer": 3,
+    "explanation": "Fluxogramas representam sequências de atividades e decisões de um processo. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+    "concept": "Mapeamento e fluxogramas",
+    "trap": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho. Fluxogramas representam sequências de atividades e decisões de um processo.",
+      "Incorreta: Um fluxograma visualmente organizado dispensa validação com quem executa as atividades. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+      "Correta: Fluxogramas representam sequências de atividades e decisões de um processo. Um mapa permite visualizar início, entradas, atividades, decisões, esperas, saídas e pontos de controle. Símbolos devem seguir convenção consistente e ser compreensíveis "
+    ]
+  },
+  {
+    "id": "Q-ADM-11-004-03",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-004",
+    "topic": "ADM-11-004 — Mapeamento e fluxogramas",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as afirmações sobre mapeamento e fluxogramas:\nI. Fluxogramas representam sequências de atividades e decisões de um processo.\nII. Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho.\nIII. Mapear o processo real pode revelar retornos, esperas e retrabalho.\nQuais estão corretas?",
+    "options": [
+      "I, II e III",
+      "Apenas I e III",
+      "Apenas I",
+      "Apenas II e III",
+      "Apenas III"
+    ],
+    "answer": 1,
+    "explanation": "Fluxogramas representam sequências de atividades e decisões de um processo. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+    "concept": "Mapeamento e fluxogramas",
+    "trap": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
+    "challenge": "Qual condição distingue II das afirmações corretas?",
+    "optionComments": [
+      "Incorreta: II é falsa. Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho.",
+      "Correta: I e III são verdadeiras; II é falsa. Fluxogramas representam sequências de atividades e decisões de um processo. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+      "Incorreta: omite III, que também é verdadeira. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+      "Incorreta: II é falsa. Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho. Fluxogramas representam sequências de atividades e decisões de um processo.",
+      "Incorreta: omite I, que também é verdadeira. Fluxogramas representam sequências de atividades e decisões de um processo."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-004-04",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-004",
+    "topic": "ADM-11-004 — Mapeamento e fluxogramas",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre mapeamento e fluxogramas, assinale a alternativa INCORRETA.",
+    "options": [
+      "Fluxogramas representam sequências de atividades e decisões de um processo.",
+      "A aplicação depende das condições e da finalidade administrativa.",
+      "Um fluxograma visualmente organizado dispensa validação com quem executa as atividades.",
+      "Mapear o processo real pode revelar retornos, esperas e retrabalho."
+    ],
+    "answer": 2,
+    "explanation": "Mapear o processo real pode revelar retornos, esperas e retrabalho. Fluxogramas representam sequências de atividades e decisões de um processo.",
+    "concept": "Mapeamento e fluxogramas",
+    "trap": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
+    "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
+    "optionComments": [
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Fluxogramas representam sequências de atividades e decisões de um processo.",
+      "Incorreta como resposta ao comando: a análise contextual é necessária. Mapear revela fluxo, decisões e oportunidades de melhoria.",
+      "Correta como resposta ao comando INCORRETA: Um fluxograma visualmente organizado dispensa validação com quem executa as atividades. A compreensão adequada é: Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Mapear o processo real pode revelar retornos, esperas e retrabalho."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-005-01",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-005",
+    "topic": "ADM-11-005 — Gargalos e melhoria de processos",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "explanation": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+    "concept": "Gargalos e melhoria de processos",
+    "trap": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "A afirmação é correta: Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo.",
+      "A afirmação é incorreta: A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas. A compreensão correta é: Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-005-02",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-005",
+    "topic": "ADM-11-005 — Gargalos e melhoria de processos",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre gargalos e melhoria de processos, assinale a alternativa CORRETA.",
+    "options": [
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas.",
+      "Depois de eliminar um gargalo, o processo deixa de exigir monitoramento.",
+      "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo."
+    ],
+    "answer": 3,
+    "explanation": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+    "concept": "Gargalos e melhoria de processos",
+    "trap": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+      "Incorreta: A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo.",
+      "Incorreta: Depois de eliminar um gargalo, o processo deixa de exigir monitoramento. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+      "Correta: Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Para localizar gargalos, observam-se filas, tempos de espera, capacidade, retrabalho e variabilidade. Melhorar uma etapa sem restrição pode apenas aumentar o acúmulo adia"
+    ]
+  },
+  {
+    "id": "Q-ADM-11-005-03",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-005",
+    "topic": "ADM-11-005 — Gargalos e melhoria de processos",
+    "type": "vfseq",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações sobre gargalos e melhoria de processos:\nI. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo.\nII. A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas.\nIII. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.\nIV. Depois de eliminar um gargalo, o processo deixa de exigir monitoramento.\nAssinale a sequência correta.",
+    "options": [
+      "V – F – F – V",
+      "V – V – F – F",
+      "F – V – F – V",
+      "V – F – V – F",
+      "F – F – V – V"
+    ],
+    "answer": 3,
+    "explanation": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+    "concept": "Gargalos e melhoria de processos",
+    "trap": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
+    "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
+    "optionComments": [
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+      "Correta: I e III verdadeiras (Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.); II e IV falsas (A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas. Depois de eliminar um gargalo, o processo deixa de exigir monitoramento.).",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante."
+    ]
+  },
+  {
+    "id": "Q-ADM-11-005-04",
+    "moduleId": "ADM-11",
+    "subtopicId": "ADM-11-005",
+    "topic": "ADM-11-005 — Gargalos e melhoria de processos",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada enunciado à classificação adequada:\nI. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo.\nII. A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas.\nIII. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.\nIV. Depois de eliminar um gargalo, o processo deixa de exigir monitoramento.\nColuna II: V = proposição tecnicamente válida; F = proposição tecnicamente falsa. Assinale a sequência de I a IV.",
+    "options": [
+      "V – V – F – F",
+      "V – F – F – V",
+      "V – F – V – F",
+      "F – F – V – V",
+      "F – V – F – V"
+    ],
+    "answer": 2,
+    "explanation": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+    "concept": "Gargalos e melhoria de processos",
+    "trap": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
+    "challenge": "Que critério conceitual permite classificar II como falsa?",
+    "optionComments": [
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas. Depois de eliminar um gargalo, o processo deixa de exigir monitoramento.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas. Depois de eliminar um gargalo, o processo deixa de exigir monitoramento.",
+      "Correta: I e III são válidas; II e IV contêm generalizações ou confusões. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas. Depois de eliminar um gargalo, o processo deixa de exigir monitoramento.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas. Depois de eliminar um gargalo, o processo deixa de exigir monitoramento."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-001-01",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-001",
+    "topic": "ADM-12-001 — Qualidade e princípios do atendimento ao cidadão",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "explanation": "Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+    "concept": "Qualidade e princípios do atendimento ao cidadão",
+    "trap": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "Marcar CERTO seria equivocado: Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais. Em vez disso: Atendimento de qualidade inclui informação correta, respeito e orientação adequada.",
+      "ERRADO é adequado: Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais. A distinção é: Atendimento de qualidade inclui informação correta, respeito e orientação adequada."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-001-02",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-001",
+    "topic": "ADM-12-001 — Qualidade e princípios do atendimento ao cidadão",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre qualidade e princípios do atendimento ao cidadão, assinale a alternativa CORRETA.",
+    "options": [
+      "Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais.",
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Atendimento de qualidade inclui informação correta, respeito e orientação adequada.",
+      "A satisfação imediata do usuário é o único critério para avaliar o atendimento público."
+    ],
+    "answer": 2,
+    "explanation": "Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+    "concept": "Qualidade e princípios do atendimento ao cidadão",
+    "trap": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais. Atendimento de qualidade inclui informação correta, respeito e orientação adequada.",
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+      "Correta: Atendimento de qualidade inclui informação correta, respeito e orientação adequada. A satisfação imediata não é o único critério: um pedido pode ser indeferido corretamente, desde que haja explicação clara e tratamento digno. O atendimento deve observar ",
+      "Incorreta: A satisfação imediata do usuário é o único critério para avaliar o atendimento público. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-001-03",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-001",
+    "topic": "ADM-12-001 — Qualidade e princípios do atendimento ao cidadão",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as afirmações sobre qualidade e princípios do atendimento ao cidadão:\nI. Atendimento de qualidade inclui informação correta, respeito e orientação adequada.\nII. Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais.\nIII. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.\nQuais estão corretas?",
+    "options": [
+      "Apenas I",
+      "Apenas III",
+      "I, II e III",
+      "Apenas II e III",
+      "Apenas I e III"
+    ],
+    "answer": 4,
+    "explanation": "Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+    "concept": "Qualidade e princípios do atendimento ao cidadão",
+    "trap": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
+    "challenge": "Qual condição distingue II das afirmações corretas?",
+    "optionComments": [
+      "Incorreta: omite III, que também é verdadeira. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+      "Incorreta: omite I, que também é verdadeira. Atendimento de qualidade inclui informação correta, respeito e orientação adequada.",
+      "Incorreta: II é falsa. Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais.",
+      "Incorreta: II é falsa. Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais. Atendimento de qualidade inclui informação correta, respeito e orientação adequada.",
+      "Correta: I e III são verdadeiras; II é falsa. Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-001-04",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-001",
+    "topic": "ADM-12-001 — Qualidade e princípios do atendimento ao cidadão",
+    "type": "lacunas",
+    "difficulty": "dificil",
+    "stem": "Complete as lacunas considerando a aplicação prática: em qualidade e princípios do atendimento ao cidadão, a análise deve conciliar ______ e ______, sem tratar os dois aspectos como sinônimos.",
+    "options": [
+      "improvisação / ausência de critérios",
+      "clareza / legalidade",
+      "clareza / clareza",
+      "legalidade / legalidade"
+    ],
+    "answer": 1,
+    "explanation": "Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+    "concept": "Qualidade e princípios do atendimento ao cidadão",
+    "trap": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
+    "challenge": "Como os dois conceitos se manifestam em outra rotina administrativa?",
+    "optionComments": [
+      "Incorreta: ausência de critérios não é princípio técnico de gestão. Atender bem é orientar com correção e respeito.",
+      "Correta: a relação entre clareza e legalidade é relevante. Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+      "Incorreta: repete clareza e omite legalidade, igualmente relevante. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+      "Incorreta: repete legalidade e omite clareza, essencial à análise. Atendimento de qualidade inclui informação correta, respeito e orientação adequada."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-002-01",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-002",
+    "topic": "ADM-12-002 — Comunicação e postura profissional",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Linguagem clara adapta a comunicação ao público sem sacrificar precisão.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 1,
+    "explanation": "Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+    "concept": "Comunicação e postura profissional",
+    "trap": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "A afirmação é incorreta: Empregar jargões técnicos desnecessários é sempre sinal de atendimento mais profissional. A compreensão correta é: Linguagem clara adapta a comunicação ao público sem sacrificar precisão.",
+      "A afirmação é correta: Linguagem clara adapta a comunicação ao público sem sacrificar precisão."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-002-02",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-002",
+    "topic": "ADM-12-002 — Comunicação e postura profissional",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre comunicação e postura profissional, assinale a alternativa CORRETA.",
+    "options": [
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Empregar jargões técnicos desnecessários é sempre sinal de atendimento mais profissional.",
+      "Linguagem clara adapta a comunicação ao público sem sacrificar precisão.",
+      "Impessoalidade exige tratamento frio e impede qualquer acolhimento ao usuário."
+    ],
+    "answer": 2,
+    "explanation": "Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+    "concept": "Comunicação e postura profissional",
+    "trap": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+      "Incorreta: Empregar jargões técnicos desnecessários é sempre sinal de atendimento mais profissional. Linguagem clara adapta a comunicação ao público sem sacrificar precisão.",
+      "Correta: Linguagem clara adapta a comunicação ao público sem sacrificar precisão. O emissor deve ajustar vocabulário ao público sem alterar o conteúdo técnico. Escuta ativa envolve atenção, confirmação do entendimento e perguntas pertinentes. Tom agres",
+      "Incorreta: Impessoalidade exige tratamento frio e impede qualquer acolhimento ao usuário. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-002-03",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-002",
+    "topic": "ADM-12-002 — Comunicação e postura profissional",
+    "type": "vfseq",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações sobre comunicação e postura profissional:\nI. Linguagem clara adapta a comunicação ao público sem sacrificar precisão.\nII. Empregar jargões técnicos desnecessários é sempre sinal de atendimento mais profissional.\nIII. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.\nIV. Impessoalidade exige tratamento frio e impede qualquer acolhimento ao usuário.\nAssinale a sequência correta.",
+    "options": [
+      "V – V – F – F",
+      "V – F – V – F",
+      "V – F – F – V",
+      "F – V – F – V",
+      "F – F – V – V"
+    ],
+    "answer": 1,
+    "explanation": "Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+    "concept": "Comunicação e postura profissional",
+    "trap": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
+    "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
+    "optionComments": [
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+      "Correta: I e III verdadeiras (Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.); II e IV falsas (Empregar jargões técnicos desnecessários é sempre sinal de atendimento mais profissional. Impessoalidade exige tratamento frio e impede qualquer acolhimento ao usuário.).",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-002-04",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-002",
+    "topic": "ADM-12-002 — Comunicação e postura profissional",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre comunicação e postura profissional, assinale a alternativa INCORRETA.",
+    "options": [
+      "Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+      "A aplicação depende das condições e da finalidade administrativa.",
+      "Impessoalidade exige tratamento frio e impede qualquer acolhimento ao usuário.",
+      "Linguagem clara adapta a comunicação ao público sem sacrificar precisão."
+    ],
+    "answer": 2,
+    "explanation": "Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes. Linguagem clara adapta a comunicação ao público sem sacrificar precisão.",
+    "concept": "Comunicação e postura profissional",
+    "trap": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
+    "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
+    "optionComments": [
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+      "Incorreta como resposta ao comando: a análise contextual é necessária. Clareza e respeito são compatíveis com rigor institucional.",
+      "Correta como resposta ao comando INCORRETA: Impessoalidade exige tratamento frio e impede qualquer acolhimento ao usuário. A compreensão adequada é: Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Linguagem clara adapta a comunicação ao público sem sacrificar precisão."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-003-01",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-003",
+    "topic": "ADM-12-003 — Atendimento presencial, telefônico e digital",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Atendimento digital dispensa cuidado com dados pessoais porque não é presencial.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 1,
+    "explanation": "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+    "concept": "Atendimento presencial, telefônico e digital",
+    "trap": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "Marcar CERTO seria equivocado: Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. Em vez disso: Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis.",
+      "ERRADO é adequado: Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. A distinção é: Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-003-02",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-003",
+    "topic": "ADM-12-003 — Atendimento presencial, telefônico e digital",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre atendimento presencial, telefônico e digital, assinale a alternativa CORRETA.",
+    "options": [
+      "Atendimento digital dispensa cuidado com dados pessoais porque não é presencial.",
+      "O registro do atendimento só é relevante quando realizado presencialmente.",
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis."
+    ],
+    "answer": 3,
+    "explanation": "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+    "concept": "Atendimento presencial, telefônico e digital",
+    "trap": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis.",
+      "Incorreta: O registro do atendimento só é relevante quando realizado presencialmente. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+      "Correta: Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. No presencial, organização de filas, sinalização e acessibilidade são importantes; no telefone, confirmar dados e resumir orientações evita mal-entendidos; no digital, in"
+    ]
+  },
+  {
+    "id": "Q-ADM-12-003-03",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-003",
+    "topic": "ADM-12-003 — Atendimento presencial, telefônico e digital",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as afirmações sobre atendimento presencial, telefônico e digital:\nI. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis.\nII. Atendimento digital dispensa cuidado com dados pessoais porque não é presencial.\nIII. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.\nQuais estão corretas?",
+    "options": [
+      "I, II e III",
+      "Apenas III",
+      "Apenas II e III",
+      "Apenas I e III",
+      "Apenas I"
+    ],
+    "answer": 3,
+    "explanation": "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+    "concept": "Atendimento presencial, telefônico e digital",
+    "trap": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
+    "challenge": "Qual condição distingue II das afirmações corretas?",
+    "optionComments": [
+      "Incorreta: II é falsa. Atendimento digital dispensa cuidado com dados pessoais porque não é presencial.",
+      "Incorreta: omite I, que também é verdadeira. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis.",
+      "Incorreta: II é falsa. Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis.",
+      "Correta: I e III são verdadeiras; II é falsa. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+      "Incorreta: omite III, que também é verdadeira. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-003-04",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-003",
+    "topic": "ADM-12-003 — Atendimento presencial, telefônico e digital",
+    "type": "associacao",
+    "difficulty": "dificil",
+    "stem": "Associe cada enunciado à classificação adequada:\nI. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis.\nII. Atendimento digital dispensa cuidado com dados pessoais porque não é presencial.\nIII. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.\nIV. O registro do atendimento só é relevante quando realizado presencialmente.\nColuna II: V = proposição tecnicamente válida; F = proposição tecnicamente falsa. Assinale a sequência de I a IV.",
+    "options": [
+      "V – V – F – F",
+      "F – V – F – V",
+      "V – F – V – F",
+      "F – F – V – V",
+      "V – F – F – V"
+    ],
+    "answer": 2,
+    "explanation": "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+    "concept": "Atendimento presencial, telefônico e digital",
+    "trap": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
+    "challenge": "Que critério conceitual permite classificar II como falsa?",
+    "optionComments": [
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. O registro do atendimento só é relevante quando realizado presencialmente.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. O registro do atendimento só é relevante quando realizado presencialmente.",
+      "Correta: I e III são válidas; II e IV contêm generalizações ou confusões. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. O registro do atendimento só é relevante quando realizado presencialmente.",
+      "Incorreta: classifica equivocadamente ao menos uma proposição; I e III são válidas e II e IV são falsas. Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. O registro do atendimento só é relevante quando realizado presencialmente."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-004-01",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-004",
+    "topic": "ADM-12-004 — Acessibilidade e atendimento inclusivo",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas.",
+    "options": [
+      "CERTO",
+      "ERRADO"
+    ],
+    "answer": 0,
+    "explanation": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+    "concept": "Acessibilidade e atendimento inclusivo",
+    "trap": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "A afirmação é correta: Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas.",
+      "A afirmação é incorreta: Oferecer exatamente o mesmo meio de atendimento a todos elimina qualquer barreira. A compreensão correta é: Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-004-02",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-004",
+    "topic": "ADM-12-004 — Acessibilidade e atendimento inclusivo",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre acessibilidade e atendimento inclusivo, assinale a alternativa CORRETA.",
+    "options": [
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Oferecer exatamente o mesmo meio de atendimento a todos elimina qualquer barreira.",
+      "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas.",
+      "Atendimento inclusivo significa dispensar indistintamente todas as regras do serviço."
+    ],
+    "answer": 2,
+    "explanation": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+    "concept": "Acessibilidade e atendimento inclusivo",
+    "trap": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+      "Incorreta: Oferecer exatamente o mesmo meio de atendimento a todos elimina qualquer barreira. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas.",
+      "Correta: Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Barreiras podem ser arquitetônicas, comunicacionais, tecnológicas ou atitudinais. Recursos acessíveis, linguagem compreensível, apoio adequado e adaptações razoáveis pode",
+      "Incorreta: Atendimento inclusivo significa dispensar indistintamente todas as regras do serviço. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-004-03",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-004",
+    "topic": "ADM-12-004 — Acessibilidade e atendimento inclusivo",
+    "type": "vfseq",
+    "difficulty": "dificil",
+    "stem": "Julgue as afirmações sobre acessibilidade e atendimento inclusivo:\nI. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas.\nII. Oferecer exatamente o mesmo meio de atendimento a todos elimina qualquer barreira.\nIII. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.\nIV. Atendimento inclusivo significa dispensar indistintamente todas as regras do serviço.\nAssinale a sequência correta.",
+    "options": [
+      "F – V – F – V",
+      "V – F – F – V",
+      "F – F – V – V",
+      "V – F – V – F",
+      "V – V – F – F"
+    ],
+    "answer": 3,
+    "explanation": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+    "concept": "Acessibilidade e atendimento inclusivo",
+    "trap": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
+    "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
+    "optionComments": [
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+      "Correta: I e III verdadeiras (Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.); II e IV falsas (Oferecer exatamente o mesmo meio de atendimento a todos elimina qualquer barreira. Atendimento inclusivo significa dispensar indistintamente todas as regras do serviço.).",
+      "Incorreta: a sequência não reconhece simultaneamente que I e III são verdadeiras e II e IV falsas. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-004-04",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-004",
+    "topic": "ADM-12-004 — Acessibilidade e atendimento inclusivo",
+    "type": "lacunas",
+    "difficulty": "dificil",
+    "stem": "Complete as lacunas considerando a aplicação prática: em acessibilidade e atendimento inclusivo, a análise deve conciliar ______ e ______, sem tratar os dois aspectos como sinônimos.",
+    "options": [
+      "acesso / acesso",
+      "improvisação / ausência de critérios",
+      "barreiras / barreiras",
+      "barreiras / acesso"
+    ],
+    "answer": 3,
+    "explanation": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+    "concept": "Acessibilidade e atendimento inclusivo",
+    "trap": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
+    "challenge": "Como os dois conceitos se manifestam em outra rotina administrativa?",
+    "optionComments": [
+      "Incorreta: repete acesso e omite barreiras, essencial à análise. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas.",
+      "Incorreta: ausência de critérios não é princípio técnico de gestão. Igual respeito pode exigir meios diferentes de acesso.",
+      "Incorreta: repete barreiras e omite acesso, igualmente relevante. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+      "Correta: a relação entre barreiras e acesso é relevante. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-005-01",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-005",
+    "topic": "ADM-12-005 — Gestão de conflitos e relações interpessoais",
+    "type": "ce",
+    "difficulty": "media",
+    "stem": "Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente.",
+    "options": [
+      "ERRADO",
+      "CERTO"
+    ],
+    "answer": 0,
+    "explanation": "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
+    "concept": "Gestão de conflitos e relações interpessoais",
+    "trap": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
+    "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
+    "optionComments": [
+      "ERRADO é adequado: Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente. A distinção é: Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
+      "Marcar CERTO seria equivocado: Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente. Em vez disso: Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-005-02",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-005",
+    "topic": "ADM-12-005 — Gestão de conflitos e relações interpessoais",
+    "type": "classica",
+    "difficulty": "media",
+    "stem": "Sobre gestão de conflitos e relações interpessoais, assinale a alternativa CORRETA.",
+    "options": [
+      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Negociar no serviço público autoriza criar privilégios pessoais sem fundamento.",
+      "Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente.",
+      "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais."
+    ],
+    "answer": 3,
+    "explanation": "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
+    "concept": "Gestão de conflitos e relações interpessoais",
+    "trap": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
+    "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
+    "optionComments": [
+      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
+      "Incorreta: Negociar no serviço público autoriza criar privilégios pessoais sem fundamento. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
+      "Incorreta: Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
+      "Correta: Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. A gestão adequada distingue fatos de interpretações, esclarece regras e procura soluções dentro das competências institucionais. Escuta ativa, linguagem não acusatória, r"
+    ]
+  },
+  {
+    "id": "Q-ADM-12-005-03",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-005",
+    "topic": "ADM-12-005 — Gestão de conflitos e relações interpessoais",
+    "type": "afirmacoes",
+    "difficulty": "dificil",
+    "stem": "Considere as afirmações sobre gestão de conflitos e relações interpessoais:\nI. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.\nII. Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente.\nIII. Explicar limites de competência e encaminhamentos evita promessas indevidas.\nQuais estão corretas?",
+    "options": [
+      "I, II e III",
+      "Apenas I e III",
+      "Apenas II e III",
+      "Apenas III",
+      "Apenas I"
+    ],
+    "answer": 1,
+    "explanation": "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
+    "concept": "Gestão de conflitos e relações interpessoais",
+    "trap": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
+    "challenge": "Qual condição distingue II das afirmações corretas?",
+    "optionComments": [
+      "Incorreta: II é falsa. Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente.",
+      "Correta: I e III são verdadeiras; II é falsa. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
+      "Incorreta: II é falsa. Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
+      "Incorreta: omite I, que também é verdadeira. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
+      "Incorreta: omite III, que também é verdadeira. Explicar limites de competência e encaminhamentos evita promessas indevidas."
+    ]
+  },
+  {
+    "id": "Q-ADM-12-005-04",
+    "moduleId": "ADM-12",
+    "subtopicId": "ADM-12-005",
+    "topic": "ADM-12-005 — Gestão de conflitos e relações interpessoais",
+    "type": "exceto",
+    "difficulty": "dificil",
+    "stem": "Sobre gestão de conflitos e relações interpessoais, assinale a alternativa INCORRETA.",
+    "options": [
+      "Negociar no serviço público autoriza criar privilégios pessoais sem fundamento.",
+      "A aplicação depende das condições e da finalidade administrativa.",
+      "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
+      "Explicar limites de competência e encaminhamentos evita promessas indevidas."
+    ],
+    "answer": 0,
+    "explanation": "Explicar limites de competência e encaminhamentos evita promessas indevidas. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
+    "concept": "Gestão de conflitos e relações interpessoais",
+    "trap": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
+    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "newExample": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
+    "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
+    "optionComments": [
+      "Correta como resposta ao comando INCORRETA: Negociar no serviço público autoriza criar privilégios pessoais sem fundamento. A compreensão adequada é: Explicar limites de competência e encaminhamentos evita promessas indevidas.",
+      "Incorreta como resposta ao comando: a análise contextual é necessária. Resolver conflitos exige respeito, critérios e limites institucionais.",
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
+      "Incorreta como resposta ao comando: esta proposição é verdadeira. Explicar limites de competência e encaminhamentos evita promessas indevidas."
+    ]
   }
 ];
 export const questionsForModule = id => QUESTIONS.filter(q=>q.moduleId===id);
