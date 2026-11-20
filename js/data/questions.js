@@ -10406,8 +10406,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correto: Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
-      "Errado seria marcar esta opção: Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada."
+      "Correto. Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
+      "Incorreto marcar ERRADO. Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas."
     ],
     "explanation": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
     "concept": "Poder hierárquico",
@@ -10428,14 +10428,14 @@ export const QUESTIONS = [
       "Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação.",
       "A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal.",
       "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
-      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites."
+      "A vinculação de uma autarquia ao ente instituidor cria subordinação hierárquica integral entre seus agentes."
     ],
     "answer": 2,
     "optionComments": [
       "Incorreta: Existe hierarquia direta entre administração central e qualquer autarquia apenas por vinculação. Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
       "Incorreta: A hierarquia autoriza superior a ordenar prática de ato manifestamente ilegal. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
       "Correta: Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada.",
-      "Incorreta: os limites jurídicos importam. Delegação e avocação de competências obedecem a limites legais e não são irrestritas."
+      "Incorreta: A vinculação de uma autarquia ao ente instituidor cria subordinação hierárquica integral entre seus agentes. Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas."
     ],
     "explanation": "Poder hierárquico organiza, coordena e distribui funções dentro de estrutura administrativa hierarquizada. Delegação e avocação de competências obedecem a limites legais e não são irrestritas.",
     "concept": "Poder hierárquico",
@@ -10537,14 +10537,14 @@ export const QUESTIONS = [
     "options": [
       "Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração.",
       "A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa.",
-      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "A aplicação de sanção disciplinar dispensa a identificação da infração e a observância do procedimento legal.",
       "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais."
     ],
     "answer": 3,
     "optionComments": [
       "Incorreta: Poder disciplinar permite punir qualquer cidadão sem vínculo especial com a administração. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais.",
       "Incorreta: A chefia pode aplicar qualquer penalidade sem apuração ou possibilidade de defesa. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
-      "Incorreta: os limites jurídicos importam. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
+      "Incorreta: A aplicação de sanção disciplinar dispensa a identificação da infração e a observância do procedimento legal. Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
       "Correta: Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais."
     ],
     "explanation": "Poder disciplinar permite apurar e sancionar infrações funcionais ou de pessoas submetidas a vínculo especial, nos termos legais. A aplicação de sanção exige respeito ao devido processo e às garantias pertinentes.",
@@ -10628,8 +10628,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correto: Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
-      "Errado seria marcar esta opção: Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais."
+      "Correto. Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
+      "Incorreto marcar ERRADO. Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos."
     ],
     "explanation": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
     "concept": "Poder regulamentar e normativo",
@@ -10650,14 +10650,14 @@ export const QUESTIONS = [
       "Regulamento executivo pode contrariar livremente a lei que pretende executar.",
       "Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa.",
       "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
-      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites."
+      "Um regulamento de execução pode inovar livremente na ordem jurídica, mesmo sem fundamento legal."
     ],
     "answer": 2,
     "optionComments": [
       "Incorreta: Regulamento executivo pode contrariar livremente a lei que pretende executar. Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
       "Incorreta: Qualquer autoridade administrativa pode criar crimes e tributos por instrução normativa. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
       "Correta: Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais.",
-      "Incorreta: os limites jurídicos importam. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos."
+      "Incorreta: Um regulamento de execução pode inovar livremente na ordem jurídica, mesmo sem fundamento legal. Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos."
     ],
     "explanation": "Poder regulamentar permite editar atos gerais para fiel execução da lei nos limites constitucionais. Há hipóteses constitucionais específicas de decretos autônomos, com limites expressos.",
     "concept": "Poder regulamentar e normativo",
@@ -10760,14 +10760,14 @@ export const QUESTIONS = [
       "Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese.",
       "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
       "Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal.",
-      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites."
+      "A polícia administrativa só pode atuar depois da ocorrência do dano, sendo vedadas medidas preventivas."
     ],
     "answer": 1,
     "optionComments": [
       "Incorreta: Toda medida de polícia administrativa exige prévia ordem judicial em qualquer hipótese. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
       "Correta: Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
       "Incorreta: Poder de polícia é idêntico à atividade de polícia judiciária de investigação criminal. Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos.",
-      "Incorreta: os limites jurídicos importam. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle."
+      "Incorreta: A polícia administrativa só pode atuar depois da ocorrência do dano, sendo vedadas medidas preventivas. Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle."
     ],
     "explanation": "Poder de polícia condiciona ou restringe atividades e direitos individuais em benefício de interesses coletivos juridicamente protegidos. Seu exercício está sujeito a legalidade, finalidade, proporcionalidade e controle.",
     "concept": "Poder de polícia",
@@ -10848,8 +10848,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correto: Excesso de poder ocorre quando agente extrapola limites de competência.",
-      "Errado seria marcar esta opção: Excesso de poder ocorre quando agente extrapola limites de competência."
+      "Correto. Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+      "Incorreto marcar ERRADO. Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei."
     ],
     "explanation": "Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
     "concept": "Abuso de poder: excesso e desvio de finalidade",
@@ -10868,14 +10868,14 @@ export const QUESTIONS = [
     "stem": "Assinale a alternativa CORRETA sobre abuso de poder: excesso e desvio de finalidade.",
     "options": [
       "Excesso de poder ocorre quando agente extrapola limites de competência.",
-      "A matéria dispensa qualquer verificação do regime jurídico e de seus limites.",
+      "O desvio de finalidade é válido sempre que o agente possua competência formal para praticar o ato.",
       "Se o agente é competente, qualquer finalidade pessoal torna o ato válido.",
       "Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência."
     ],
     "answer": 0,
     "optionComments": [
       "Correta: Excesso de poder ocorre quando agente extrapola limites de competência.",
-      "Incorreta: os limites jurídicos importam. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
+      "Incorreta: O desvio de finalidade é válido sempre que o agente possua competência formal para praticar o ato. Excesso de poder ocorre quando agente extrapola limites de competência. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
       "Incorreta: Se o agente é competente, qualquer finalidade pessoal torna o ato válido. Desvio de finalidade ocorre quando competência é exercida para fim diverso do previsto em lei.",
       "Incorreta: Desvio de finalidade significa exclusivamente ultrapassar o limite territorial da competência. Excesso de poder ocorre quando agente extrapola limites de competência."
     ],
@@ -10960,8 +10960,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado.",
-      "Incorreta: Todo ato praticado pela Administração é necessariamente ato administrativo em sentido estrito. O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.."
+      "Correto. O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado. A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
+      "Incorreto marcar ERRADO. O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado. A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material."
     ],
     "explanation": "O ato administrativo é manifestação unilateral da Administração, sob regime de direito público, destinada a produzir efeitos jurídicos; em formulação clássica, seus elementos são competência, finalidade, forma, motivo e objeto.. O ato administrativo deve ser distinguido de fatos administrativos e atos regidos predominantemente pelo direito privado. A análise de validade depende dos elementos e do regime aplicável; não confunda manifestação jurídica com sua execução material.",
     "concept": "Conceito e elementos do ato administrativo",
@@ -11182,8 +11182,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário.",
-      "Incorreta: Todos os atos administrativos possuem autoexecutoriedade e imperatividade sem exceção. Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos."
+      "Correto. Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
+      "Incorreto marcar ERRADO. Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos."
     ],
     "explanation": "Presunção de legitimidade e veracidade, imperatividade, autoexecutoriedade e tipicidade são atributos estudados pela doutrina, mas não se apresentam igualmente em todos os atos. A presunção de legitimidade é relativa e admite prova em contrário. A banca costuma confundir atributos gerais com características presentes apenas em determinadas espécies de atos.",
     "concept": "Atributos dos atos administrativos",
@@ -11514,8 +11514,8 @@ export const QUESTIONS = [
     ],
     "answer": 1,
     "optionComments": [
-      "Incorreta: Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade.",
-      "Correta: Cassação e caducidade são sempre sinônimos de revogação por conveniência. Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação."
+      "Incorreto marcar CERTO. Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
+      "Correto. Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento."
     ],
     "explanation": "Além de anulação e revogação, a doutrina identifica extinção por cumprimento de efeitos, advento de termo, desaparecimento de sujeito ou objeto e modalidades como cassação e caducidade, conforme a situação. A extinção pelo cumprimento integral dos efeitos não exige, por si, constatação de ilegalidade. Os nomes das formas de extinção variam conforme a doutrina; identifique o fato que motivou o encerramento.",
     "concept": "Outras formas de extinção dos atos",
@@ -12066,8 +12066,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso.",
-      "Incorreta: O usuário de serviço público não possui direito de receber informações ou apresentar manifestações. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos."
+      "Correto. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso. A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
+      "Incorreto marcar ERRADO. A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso. A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados."
     ],
     "explanation": "A Lei 13.460/2017 disciplina participação, proteção e defesa de direitos de usuários de serviços públicos. Serviço adequado envolve qualidade, segurança, continuidade nos termos legais e atendimento respeitoso. A satisfação individual não elimina critérios legais de atendimento, direitos de terceiros ou limites de proteção de dados.",
     "concept": "Direitos dos usuários e serviço adequado",
@@ -12178,8 +12178,8 @@ export const QUESTIONS = [
     ],
     "answer": 1,
     "optionComments": [
-      "Incorreta: A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021.",
-      "Correta: A Lei 14.133/2021 extinguiu os princípios de planejamento e julgamento objetivo nas contratações. A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas."
+      "Incorreto marcar CERTO. A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
+      "Correto. A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal."
     ],
     "explanation": "A Lei 14.133/2021 estabelece normas gerais de licitação e contratação para administrações diretas, autárquicas e fundacionais dos entes federativos, observadas hipóteses específicas. Planejamento e segregação de funções integram os princípios expressamente previstos na Lei 14.133/2021. Atenção ao âmbito subjetivo da lei e às exceções: não equipare automaticamente autarquia e empresa estatal.",
     "concept": "Fundamentos e princípios da Lei 14.133/2021",
@@ -12288,8 +12288,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021.",
-      "Incorreta: Convite e tomada de preços continuam sendo modalidades expressas da Lei 14.133/2021. A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação."
+      "Correto. A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021. Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
+      "Incorreto marcar ERRADO. A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021. Não confunda modalidade de licitação com critério de julgamento ou modo de disputa."
     ],
     "explanation": "A Lei 14.133/2021 prevê, em regra, fases preparatória, divulgação do edital, apresentação de propostas e lances quando cabíveis, julgamento, habilitação, recursal e homologação. O pregão e o diálogo competitivo são modalidades previstas na Lei 14.133/2021. Não confunda modalidade de licitação com critério de julgamento ou modo de disputa.",
     "concept": "Fases e modalidades da licitação",
@@ -12398,8 +12398,8 @@ export const QUESTIONS = [
     ],
     "answer": 1,
     "optionComments": [
-      "Incorreta: A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento.",
-      "Correta: Pregão e concorrência são critérios de julgamento previstos no art. 33 da Lei 14.133/2021. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico."
+      "Incorreto marcar CERTO. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento. A banca pode trocar modalidade por critério; compare a função de cada instituto.",
+      "Correto. A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento. A banca pode trocar modalidade por critério; compare a função de cada instituto."
     ],
     "explanation": "A Lei 14.133/2021 prevê critérios de menor preço, maior desconto, melhor técnica ou conteúdo artístico, técnica e preço, maior lance no leilão e maior retorno econômico. Maior desconto e maior retorno econômico integram os critérios legais de julgamento. A banca pode trocar modalidade por critério; compare a função de cada instituto.",
     "concept": "Critérios de julgamento",
@@ -12510,8 +12510,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual.",
-      "Incorreta: A inexigibilidade ocorre sempre que a autoridade prefere contratar sem licitação por conveniência pessoal. Contratação direta é exceção à licitação e exige processo instruído e justificativas legais."
+      "Correto. Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
+      "Incorreto marcar ERRADO. Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos."
     ],
     "explanation": "Contratação direta é exceção à licitação e exige processo instruído e justificativas legais. Dispensa e inexigibilidade possuem fundamentos jurídicos distintos e exigem instrução processual. Evite decorar valores monetários sem atualização: limites legais podem ser reajustados por atos normativos.",
     "concept": "Contratação direta: dispensa e inexigibilidade",
@@ -12620,8 +12620,8 @@ export const QUESTIONS = [
     ],
     "answer": 1,
     "optionComments": [
-      "Incorreta: Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes.",
-      "Correta: Após assinar o contrato, a Administração perde a competência de fiscalizar sua execução. Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais."
+      "Incorreto marcar CERTO. Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes. Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
+      "Correto. Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes. Distinga gestão do contrato, fiscalização e competência para aplicar sanções."
     ],
     "explanation": "Contratos regidos pela Lei 14.133/2021 exigem formalização e acompanhamento nos termos legais. A fiscalização contratual verifica cumprimento das obrigações e registra ocorrências pertinentes. Distinga gestão do contrato, fiscalização e competência para aplicar sanções.",
     "concept": "Contratos administrativos e fiscalização",
@@ -12842,8 +12842,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública.",
-      "Incorreta: A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública."
+      "Correto. A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
+      "Incorreto marcar ERRADO. A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado."
     ],
     "explanation": "A responsabilidade civil estatal busca reparar danos juridicamente imputáveis à atuação pública. Dano e nexo causal são elementos relevantes para atribuir responsabilidade ao Estado.",
     "concept": "Fundamentos da responsabilidade estatal",
@@ -12952,8 +12952,8 @@ export const QUESTIONS = [
     ],
     "answer": 1,
     "optionComments": [
-      "Incorreta: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade.",
-      "Correta: Responsabilidade objetiva significa indenização automática mesmo sem dano ou nexo causal. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade."
+      "Incorreto marcar CERTO. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
+      "Correto. O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal."
     ],
     "explanation": "O art. 37, § 6º, da Constituição prevê responsabilidade objetiva das pessoas jurídicas ali indicadas por danos causados por seus agentes nessa qualidade. A teoria do risco administrativo admite análise de causas que afastem ou reduzam o nexo causal.",
     "concept": "Responsabilidade objetiva e teoria do risco administrativo",
@@ -13064,8 +13064,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção.",
-      "Incorreta: Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção."
+      "Correto. Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
+      "Incorreto marcar ERRADO. Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias."
     ],
     "explanation": "Na omissão estatal, o regime de responsabilidade exige distinguir omissões genéricas de situações de dever específico de proteção. A jurisprudência admite responsabilidade objetiva em hipóteses de dever específico de proteção, a depender das circunstâncias.",
     "concept": "Responsabilidade por omissão e hipóteses de responsabilidade subjetiva",
@@ -13284,8 +13284,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa.",
-      "Incorreta: A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa."
+      "Correto. A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
+      "Incorreto marcar ERRADO. A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso."
     ],
     "explanation": "A Constituição assegura direito de regresso contra agente responsável em caso de dolo ou culpa. Responsabilidade objetiva do Estado perante a vítima não significa responsabilidade objetiva do agente no regresso.",
     "concept": "Ação regressiva",
@@ -13506,8 +13506,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos.",
-      "Incorreta: Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos."
+      "Correto. Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
+      "Incorreto marcar ERRADO. Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos."
     ],
     "explanation": "Autotutela permite à Administração anular atos ilegais e revogar atos válidos quando cabível, respeitando limites jurídicos. Anulação e revogação têm fundamentos distintos e não se aplicam indistintamente a todos os atos.",
     "concept": "Controle administrativo e autotutela",
@@ -13838,8 +13838,8 @@ export const QUESTIONS = [
     ],
     "answer": 1,
     "optionComments": [
-      "Incorreta: Todo recurso administrativo possui necessariamente efeito suspensivo automático. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável.",
-      "Correta: Todo recurso administrativo possui necessariamente efeito suspensivo automático. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável."
+      "Incorreto marcar CERTO. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
+      "Correto. Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social."
     ],
     "explanation": "Recursos administrativos permitem impugnar decisões dentro dos requisitos do regime processual aplicável. Direito de petição, representações e mecanismos de transparência podem favorecer o controle social.",
     "concept": "Recursos e instrumentos de controle",
@@ -14060,8 +14060,8 @@ export const QUESTIONS = [
     ],
     "answer": 1,
     "optionComments": [
-      "Incorreta: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos.",
-      "Correta: Qualquer dano ao patrimônio público, mesmo sem requisitos subjetivos legais, configura automaticamente improbidade. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos."
+      "Incorreto marcar CERTO. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
+      "Correto. A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal."
     ],
     "explanation": "A lei prevê categorias de atos de improbidade, como enriquecimento ilícito, dano ao erário e atentado a princípios, com requisitos específicos. A tipificação deve ser examinada à luz dos elementos exigidos para cada hipótese legal.",
     "concept": "Atos de improbidade e requisitos",
@@ -14170,8 +14170,8 @@ export const QUESTIONS = [
     ],
     "answer": 0,
     "optionComments": [
-      "Correta: Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais.",
-      "Incorreta: Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais."
+      "Correto. Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
+      "Incorreto marcar ERRADO. Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica."
     ],
     "explanation": "Após a Lei 14.230/2021, os atos de improbidade exigem dolo nos termos legais. O dolo envolve vontade livre e consciente de alcançar resultado ilícito tipificado, não bastando voluntariedade genérica.",
     "concept": "Dolo e responsabilização",
@@ -14280,8 +14280,8 @@ export const QUESTIONS = [
     ],
     "answer": 1,
     "optionComments": [
-      "Incorreta: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei.",
-      "Correta: A aplicação de sanção por improbidade dispensa processo e fundamentação por se tratar de interesse público. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei."
+      "Incorreto marcar CERTO. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
+      "Correto. Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração."
     ],
     "explanation": "Sanções por improbidade dependem de enquadramento legal, devido processo e individualização conforme a lei. A lei prevê sanções distintas conforme a modalidade e circunstâncias da infração.",
     "concept": "Sanções e procedimentos",
