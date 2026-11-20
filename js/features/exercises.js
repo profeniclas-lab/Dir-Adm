@@ -17,8 +17,24 @@ export function createExerciseSession(state,moduleId){
  const all=exercisePool(moduleId),base=all.filter(q=>q.difficulty==='media');
  const hard=all.filter(q=>q.difficulty==='dificil');
  if(!base.length||hard.length<6)return false;
- const shuffled=shuffle(hard).slice(0,6);
- const ids=[...base,...shuffled].map(q=>q.id);
+ // Distribui as seis questões difíceis por subtópico sempre que possível.
+ // Primeiro escolhe uma de cada subtópico; depois completa as vagas com
+ // questões restantes, sem repetir ID, embaralhando a cada tentativa.
+ const grouped=new Map();
+ for(const q of shuffle(hard)){
+  const key=q.subtopicId||'sem-subtopico';
+  if(!grouped.has(key))grouped.set(key,[]);
+  grouped.get(key).push(q);
+ }
+ const groups=shuffle([...grouped.values()]);
+ const chosen=[];
+ for(const group of groups){
+  if(chosen.length>=6)break;
+  chosen.push(group.shift());
+ }
+ const remaining=shuffle(groups.flat());
+ chosen.push(...remaining.slice(0,6-chosen.length));
+ const ids=[...base,...chosen].map(q=>q.id);
  // A permutação é criada uma única vez e persistida para toda a tentativa.
  // Cada número aponta para o índice ORIGINAL no banco de questões.
  const optionOrders=Object.fromEntries(ids.map(id=>{
