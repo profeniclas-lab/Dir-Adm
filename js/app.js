@@ -7,6 +7,7 @@ import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiag
 import { renderLesson, saveLessonProgress } from "./features/lessons.js";
 import { renderExercises, createExerciseSession, answerExercise, assessExercise, nextExercise } from "./features/exercises.js";
 import { validateCatalog } from "./data/modules.js";
+import { renderQuestionBank, updateBankFilter, startBankSession, answerBankQuestion, nextBankQuestion, closeBankSession } from "./features/banco-questoes.js";
 import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSimulado, closeSimulado, cancelSimulado } from "./features/simulados.js";
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
@@ -31,6 +32,7 @@ function renderCurrentPage() {
   }
   switch (state.navigation.currentRoute) {
     case "dashboard": renderDashboard(mainElement, state); break;
+    case "banco-questoes": renderQuestionBank(mainElement,state); break;
     case "simulados": renderSimulados(mainElement,state); break;
     case "revisao":
     case "erros":
@@ -58,7 +60,20 @@ function navigateTo(route) {
   commitAndRender();
 }
 
+document.addEventListener('change', event => {
+  if(state.navigation.currentRoute!=='banco-questoes')return;
+  const select=event.target.closest('[data-bank-filter]');
+  if(select&&updateBankFilter(state,select.dataset.bankFilter,select.value))commitAndRender();
+});
 document.addEventListener('click', event => {
+  if(state.navigation.currentRoute==='banco-questoes'){
+    const action=event.target.closest('[data-action]')?.dataset.action;
+    if(action==='bank-start'){if(startBankSession(state))commitAndRender();return;}
+    if(action==='bank-close'){if(window.confirm('Encerrar esta sessão de questões? As respostas desta sessão não serão mantidas.')&&closeBankSession(state))commitAndRender();return;}
+    if(action==='bank-next'){if(nextBankQuestion(state))commitAndRender();return;}
+    const choice=event.target.closest('[data-bank-choice]');
+    if(choice){const session=state.progress?.questionBank?.session;const id=session?.ids?.[session.cursor];if(id&&answerBankQuestion(state,id,Number(choice.dataset.bankChoice)))commitAndRender();return;}
+  }
   if(state.navigation.currentRoute==='simulados'){
     const start=event.target.closest('[data-sim-start]');
     if(start){const area=document.getElementById('sim-area')?.value||'todas';const count=document.getElementById('sim-count')?.value||'20';const result=startSimulado(state,area,count);if(result.ok)commitAndRender();else window.alert(result.message);return;}
