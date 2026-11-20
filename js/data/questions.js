@@ -6314,7 +6314,7 @@ export const QUESTIONS = [
     "explanation": "Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
     "concept": "Processos, atividades, tarefas e procedimentos",
     "trap": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Confundir procedimento com processo inteiro ou tarefa isolada com resultado final. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -6333,20 +6333,20 @@ export const QUESTIONS = [
     "options": [
       "Atividade e procedimento são termos sempre intercambiáveis, sem diferença de função.",
       "Processo reúne atividades articuladas para transformar entradas em resultados.",
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Um procedimento descreve necessariamente todas as atividades do processo, dispensando a identificação das tarefas.",
       "Uma tarefa isolada corresponde necessariamente a todo o processo organizacional."
     ],
     "answer": 1,
     "explanation": "Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
     "concept": "Processos, atividades, tarefas e procedimentos",
     "trap": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Confundir procedimento com processo inteiro ou tarefa isolada com resultado final. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
       "Incorreta: Atividade e procedimento são termos sempre intercambiáveis, sem diferença de função. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
       "Correta: Processo reúne atividades articuladas para transformar entradas em resultados. A visão de processos mostra como o trabalho se conecta para produzir valor. Uma atividade reúne ações relacionadas, enquanto tarefas detalham operações concretas. Procedi",
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
+      "Incorreta: Um procedimento descreve necessariamente todas as atividades do processo, dispensando a identificação das tarefas. A afirmação apresenta uma generalização indevida sobre Processos, atividades, tarefas e procedimentos. Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
       "Incorreta: Uma tarefa isolada corresponde necessariamente a todo o processo organizacional. Processo reúne atividades articuladas para transformar entradas em resultados."
     ]
   },
@@ -6369,7 +6369,7 @@ export const QUESTIONS = [
     "explanation": "Processo reúne atividades articuladas para transformar entradas em resultados. Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica.",
     "concept": "Processos, atividades, tarefas e procedimentos",
     "trap": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Confundir procedimento com processo inteiro ou tarefa isolada com resultado final. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
     "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
     "optionComments": [
@@ -6398,7 +6398,7 @@ export const QUESTIONS = [
     "explanation": "Procedimento descreve a forma de executar ações, enquanto tarefa é uma ação específica. Processo reúne atividades articuladas para transformar entradas em resultados.",
     "concept": "Processos, atividades, tarefas e procedimentos",
     "trap": "Confundir procedimento com processo inteiro ou tarefa isolada com resultado final.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Confundir procedimento com processo inteiro ou tarefa isolada com resultado final. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Na emissão de certidão, o processo inclui solicitação, análise e entrega; conferir documentos é atividade, consultar um campo é tarefa, e o roteiro de conferência é procedimento.",
     "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
     "optionComments": [
@@ -6424,7 +6424,7 @@ export const QUESTIONS = [
     "explanation": "Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
     "concept": "Processos finalísticos e de apoio",
     "trap": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -6441,7 +6441,7 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Sobre processos finalísticos e de apoio, assinale a alternativa CORRETA.",
     "options": [
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Processos de apoio sempre entregam diretamente o serviço final ao cidadão, independentemente da missão institucional.",
       "Processos finalísticos se relacionam diretamente à missão institucional.",
       "A classificação de um processo independe da missão da organização.",
       "Compras são necessariamente o processo finalístico principal de qualquer órgão."
@@ -6450,11 +6450,11 @@ export const QUESTIONS = [
     "explanation": "Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
     "concept": "Processos finalísticos e de apoio",
     "trap": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
+      "Incorreta: Processos de apoio sempre entregam diretamente o serviço final ao cidadão, independentemente da missão institucional. A afirmação apresenta uma generalização indevida sobre Processos finalísticos e de apoio. Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
       "Correta: Processos finalísticos se relacionam diretamente à missão institucional. O enquadramento depende da missão da organização. Em uma universidade, ensino e certificação podem integrar processos finalísticos, enquanto manutenção predial e compras ",
       "Incorreta: A classificação de um processo independe da missão da organização. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
       "Incorreta: Compras são necessariamente o processo finalístico principal de qualquer órgão. Processos finalísticos se relacionam diretamente à missão institucional."
@@ -6479,7 +6479,7 @@ export const QUESTIONS = [
     "explanation": "Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
     "concept": "Processos finalísticos e de apoio",
     "trap": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
     "challenge": "Qual condição distingue II das afirmações corretas?",
     "optionComments": [
@@ -6509,7 +6509,7 @@ export const QUESTIONS = [
     "explanation": "Processos finalísticos se relacionam diretamente à missão institucional. Processos de apoio fornecem condições e recursos para a execução dos finalísticos.",
     "concept": "Processos finalísticos e de apoio",
     "trap": "Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Classificar um processo apenas pelo nome do setor, sem considerar a missão, leva a erros. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "O suporte de TI de uma secretaria normalmente apoia o atendimento, mas a prestação de serviços digitais pode ser atividade finalística de um órgão especializado.",
     "challenge": "Que critério conceitual permite classificar II como falsa?",
     "optionComments": [
@@ -6536,7 +6536,7 @@ export const QUESTIONS = [
     "explanation": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
     "concept": "Gestão por processos",
     "trap": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Otimizar cada departamento separadamente não garante otimização do processo completo. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -6555,20 +6555,20 @@ export const QUESTIONS = [
     "options": [
       "O desempenho isolado de cada departamento garante o melhor resultado do processo completo.",
       "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos.",
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "O desempenho de um processo deve ser avaliado apenas dentro de cada departamento, sem observar suas interfaces.",
       "Adotar gestão por processos exige eliminar toda hierarquia funcional."
     ],
     "answer": 1,
     "explanation": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
     "concept": "Gestão por processos",
     "trap": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Otimizar cada departamento separadamente não garante otimização do processo completo. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
       "Incorreta: O desempenho isolado de cada departamento garante o melhor resultado do processo completo. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
       "Correta: Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. A abordagem identifica entradas, clientes ou usuários, responsáveis, interfaces, resultados e indicadores. Busca reduzir retrabalho e atrasos entre setores. Não exige eli",
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
+      "Incorreta: O desempenho de um processo deve ser avaliado apenas dentro de cada departamento, sem observar suas interfaces. A afirmação apresenta uma generalização indevida sobre Gestão por processos. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
       "Incorreta: Adotar gestão por processos exige eliminar toda hierarquia funcional. Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos."
     ]
   },
@@ -6591,7 +6591,7 @@ export const QUESTIONS = [
     "explanation": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
     "concept": "Gestão por processos",
     "trap": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Otimizar cada departamento separadamente não garante otimização do processo completo. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
     "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
     "optionComments": [
@@ -6620,7 +6620,7 @@ export const QUESTIONS = [
     "explanation": "Gestão por processos acompanha fluxos ponta a ponta, inclusive entre departamentos. Indicadores do resultado global podem revelar problemas nas interfaces entre setores.",
     "concept": "Gestão por processos",
     "trap": "Otimizar cada departamento separadamente não garante otimização do processo completo.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Otimizar cada departamento separadamente não garante otimização do processo completo. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Um requerimento passa por protocolo, análise e autorização; um gestor acompanha o prazo total e identifica transferências que provocam filas.",
     "challenge": "Como os dois conceitos se manifestam em outra rotina administrativa?",
     "optionComments": [
@@ -6646,7 +6646,7 @@ export const QUESTIONS = [
     "explanation": "Fluxogramas representam sequências de atividades e decisões de um processo. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
     "concept": "Mapeamento e fluxogramas",
     "trap": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -6665,20 +6665,20 @@ export const QUESTIONS = [
     "options": [
       "Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho.",
       "Um fluxograma visualmente organizado dispensa validação com quem executa as atividades.",
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "O mapeamento de processos pode ignorar decisões e pontos de espera, pois basta registrar o nome dos setores.",
       "Fluxogramas representam sequências de atividades e decisões de um processo."
     ],
     "answer": 3,
     "explanation": "Fluxogramas representam sequências de atividades e decisões de um processo. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
     "concept": "Mapeamento e fluxogramas",
     "trap": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
       "Incorreta: Organogramas são equivalentes a fluxogramas porque ambos mostram etapas de trabalho. Fluxogramas representam sequências de atividades e decisões de um processo.",
       "Incorreta: Um fluxograma visualmente organizado dispensa validação com quem executa as atividades. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
+      "Incorreta: O mapeamento de processos pode ignorar decisões e pontos de espera, pois basta registrar o nome dos setores. A afirmação apresenta uma generalização indevida sobre Mapeamento e fluxogramas. Fluxogramas representam sequências de atividades e decisões de um processo. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
       "Correta: Fluxogramas representam sequências de atividades e decisões de um processo. Um mapa permite visualizar início, entradas, atividades, decisões, esperas, saídas e pontos de controle. Símbolos devem seguir convenção consistente e ser compreensíveis "
     ]
   },
@@ -6701,7 +6701,7 @@ export const QUESTIONS = [
     "explanation": "Fluxogramas representam sequências de atividades e decisões de um processo. Mapear o processo real pode revelar retornos, esperas e retrabalho.",
     "concept": "Mapeamento e fluxogramas",
     "trap": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
     "challenge": "Qual condição distingue II das afirmações corretas?",
     "optionComments": [
@@ -6730,7 +6730,7 @@ export const QUESTIONS = [
     "explanation": "Mapear o processo real pode revelar retornos, esperas e retrabalho. Fluxogramas representam sequências de atividades e decisões de um processo.",
     "concept": "Mapeamento e fluxogramas",
     "trap": "Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Fluxograma não é organograma, e desenho bonito não substitui validação com quem executa as tarefas. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Ao mapear pedidos de material, uma secretaria identifica que solicitações incompletas retornam duas vezes ao setor de origem.",
     "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
     "optionComments": [
@@ -6756,7 +6756,7 @@ export const QUESTIONS = [
     "explanation": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
     "concept": "Gargalos e melhoria de processos",
     "trap": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -6773,7 +6773,7 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Sobre gargalos e melhoria de processos, assinale a alternativa CORRETA.",
     "options": [
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Para identificar um gargalo, basta localizar a atividade com maior custo, mesmo que ela não limite o fluxo.",
       "A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas.",
       "Depois de eliminar um gargalo, o processo deixa de exigir monitoramento.",
       "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo."
@@ -6782,11 +6782,11 @@ export const QUESTIONS = [
     "explanation": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
     "concept": "Gargalos e melhoria de processos",
     "trap": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
+      "Incorreta: Para identificar um gargalo, basta localizar a atividade com maior custo, mesmo que ela não limite o fluxo. A afirmação apresenta uma generalização indevida sobre Gargalos e melhoria de processos. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
       "Incorreta: A etapa com maior tempo individual é sempre o gargalo, mesmo sem formar filas. Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo.",
       "Incorreta: Depois de eliminar um gargalo, o processo deixa de exigir monitoramento. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
       "Correta: Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Para localizar gargalos, observam-se filas, tempos de espera, capacidade, retrabalho e variabilidade. Melhorar uma etapa sem restrição pode apenas aumentar o acúmulo adia"
@@ -6811,7 +6811,7 @@ export const QUESTIONS = [
     "explanation": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
     "concept": "Gargalos e melhoria de processos",
     "trap": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
     "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
     "optionComments": [
@@ -6841,7 +6841,7 @@ export const QUESTIONS = [
     "explanation": "Gargalo é restrição que limita o fluxo ou a capacidade do processo como um todo. Melhorar uma etapa que não é restrição pode apenas deslocar ou aumentar filas adiante.",
     "concept": "Gargalos e melhoria de processos",
     "trap": "A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: A etapa mais demorada nem sempre é o gargalo se sua capacidade ainda atende à demanda. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma equipe digitaliza 100 pedidos por dia, mas a análise conclui apenas 40; acelerar a digitalização isoladamente pode aumentar a fila de análise.",
     "challenge": "Que critério conceitual permite classificar II como falsa?",
     "optionComments": [
@@ -6868,7 +6868,7 @@ export const QUESTIONS = [
     "explanation": "Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
     "concept": "Qualidade e princípios do atendimento ao cidadão",
     "trap": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -6886,7 +6886,7 @@ export const QUESTIONS = [
     "stem": "Sobre qualidade e princípios do atendimento ao cidadão, assinale a alternativa CORRETA.",
     "options": [
       "Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais.",
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "A qualidade do atendimento público pode ser medida somente pela rapidez, mesmo quando a orientação é incorreta.",
       "Atendimento de qualidade inclui informação correta, respeito e orientação adequada.",
       "A satisfação imediata do usuário é o único critério para avaliar o atendimento público."
     ],
@@ -6894,12 +6894,12 @@ export const QUESTIONS = [
     "explanation": "Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
     "concept": "Qualidade e princípios do atendimento ao cidadão",
     "trap": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
       "Incorreta: Atender bem significa conceder todo pedido, ainda que contrarie requisitos legais. Atendimento de qualidade inclui informação correta, respeito e orientação adequada.",
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
+      "Incorreta: A qualidade do atendimento público pode ser medida somente pela rapidez, mesmo quando a orientação é incorreta. A afirmação apresenta uma generalização indevida sobre Qualidade e princípios do atendimento ao cidadão. Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
       "Correta: Atendimento de qualidade inclui informação correta, respeito e orientação adequada. A satisfação imediata não é o único critério: um pedido pode ser indeferido corretamente, desde que haja explicação clara e tratamento digno. O atendimento deve observar ",
       "Incorreta: A satisfação imediata do usuário é o único critério para avaliar o atendimento público. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade."
     ]
@@ -6923,7 +6923,7 @@ export const QUESTIONS = [
     "explanation": "Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
     "concept": "Qualidade e princípios do atendimento ao cidadão",
     "trap": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
     "challenge": "Qual condição distingue II das afirmações corretas?",
     "optionComments": [
@@ -6952,7 +6952,7 @@ export const QUESTIONS = [
     "explanation": "Atendimento de qualidade inclui informação correta, respeito e orientação adequada. Uma negativa fundamentada e comunicada claramente pode integrar um atendimento de qualidade.",
     "concept": "Qualidade e princípios do atendimento ao cidadão",
     "trap": "Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Qualidade não é conceder qualquer pedido nem tratar o usuário como obstáculo. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma servidora explica por que um documento é obrigatório e orienta o cidadão sobre como obtê-lo, sem prometer dispensa indevida.",
     "challenge": "Como os dois conceitos se manifestam em outra rotina administrativa?",
     "optionComments": [
@@ -6978,7 +6978,7 @@ export const QUESTIONS = [
     "explanation": "Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
     "concept": "Comunicação e postura profissional",
     "trap": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -6995,7 +6995,7 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Sobre comunicação e postura profissional, assinale a alternativa CORRETA.",
     "options": [
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "A comunicação profissional deve priorizar termos técnicos, mesmo quando o cidadão não os compreende.",
       "Empregar jargões técnicos desnecessários é sempre sinal de atendimento mais profissional.",
       "Linguagem clara adapta a comunicação ao público sem sacrificar precisão.",
       "Impessoalidade exige tratamento frio e impede qualquer acolhimento ao usuário."
@@ -7004,11 +7004,11 @@ export const QUESTIONS = [
     "explanation": "Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
     "concept": "Comunicação e postura profissional",
     "trap": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
+      "Incorreta: A comunicação profissional deve priorizar termos técnicos, mesmo quando o cidadão não os compreende. A afirmação apresenta uma generalização indevida sobre Comunicação e postura profissional. Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
       "Incorreta: Empregar jargões técnicos desnecessários é sempre sinal de atendimento mais profissional. Linguagem clara adapta a comunicação ao público sem sacrificar precisão.",
       "Correta: Linguagem clara adapta a comunicação ao público sem sacrificar precisão. O emissor deve ajustar vocabulário ao público sem alterar o conteúdo técnico. Escuta ativa envolve atenção, confirmação do entendimento e perguntas pertinentes. Tom agres",
       "Incorreta: Impessoalidade exige tratamento frio e impede qualquer acolhimento ao usuário. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes."
@@ -7033,7 +7033,7 @@ export const QUESTIONS = [
     "explanation": "Linguagem clara adapta a comunicação ao público sem sacrificar precisão. Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes.",
     "concept": "Comunicação e postura profissional",
     "trap": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
     "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
     "optionComments": [
@@ -7062,7 +7062,7 @@ export const QUESTIONS = [
     "explanation": "Escuta ativa inclui confirmar o entendimento e fazer perguntas pertinentes. Linguagem clara adapta a comunicação ao público sem sacrificar precisão.",
     "concept": "Comunicação e postura profissional",
     "trap": "Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Linguagem rebuscada não é sinal de maior precisão; cordialidade não autoriza exceções arbitrárias. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Em vez de dizer 'protocole o expediente no setor competente', o atendente explica onde enviar o pedido e quais documentos anexar.",
     "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
     "optionComments": [
@@ -7088,7 +7088,7 @@ export const QUESTIONS = [
     "explanation": "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
     "concept": "Atendimento presencial, telefônico e digital",
     "trap": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: A troca de canal não elimina obrigações de sigilo, clareza ou registro. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -7107,20 +7107,20 @@ export const QUESTIONS = [
     "options": [
       "Atendimento digital dispensa cuidado com dados pessoais porque não é presencial.",
       "O registro do atendimento só é relevante quando realizado presencialmente.",
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "No atendimento digital, a confirmação de recebimento e o registro da solicitação são sempre desnecessários.",
       "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis."
     ],
     "answer": 3,
     "explanation": "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
     "concept": "Atendimento presencial, telefônico e digital",
     "trap": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: A troca de canal não elimina obrigações de sigilo, clareza ou registro. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
       "Incorreta: Atendimento digital dispensa cuidado com dados pessoais porque não é presencial. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis.",
       "Incorreta: O registro do atendimento só é relevante quando realizado presencialmente. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
+      "Incorreta: No atendimento digital, a confirmação de recebimento e o registro da solicitação são sempre desnecessários. A afirmação apresenta uma generalização indevida sobre Atendimento presencial, telefônico e digital. Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
       "Correta: Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. No presencial, organização de filas, sinalização e acessibilidade são importantes; no telefone, confirmar dados e resumir orientações evita mal-entendidos; no digital, in"
     ]
   },
@@ -7143,7 +7143,7 @@ export const QUESTIONS = [
     "explanation": "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
     "concept": "Atendimento presencial, telefônico e digital",
     "trap": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: A troca de canal não elimina obrigações de sigilo, clareza ou registro. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
     "challenge": "Qual condição distingue II das afirmações corretas?",
     "optionComments": [
@@ -7173,7 +7173,7 @@ export const QUESTIONS = [
     "explanation": "Atendimento telefônico exige confirmar entendimento e fornecer orientações compreensíveis. Cada canal requer adaptações, mantendo deveres de clareza e proteção de dados.",
     "concept": "Atendimento presencial, telefônico e digital",
     "trap": "A troca de canal não elimina obrigações de sigilo, clareza ou registro.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: A troca de canal não elimina obrigações de sigilo, clareza ou registro. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Uma orientação por telefone é concluída com a repetição do prazo e do canal correto; no portal, a mesma informação aparece em passos simples.",
     "challenge": "Que critério conceitual permite classificar II como falsa?",
     "optionComments": [
@@ -7200,7 +7200,7 @@ export const QUESTIONS = [
     "explanation": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
     "concept": "Acessibilidade e atendimento inclusivo",
     "trap": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Tratar todos de forma idêntica pode manter barreiras preexistentes. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -7217,7 +7217,7 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Sobre acessibilidade e atendimento inclusivo, assinale a alternativa CORRETA.",
     "options": [
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Acessibilidade consiste apenas em permitir a entrada física no prédio, sem considerar barreiras de comunicação.",
       "Oferecer exatamente o mesmo meio de atendimento a todos elimina qualquer barreira.",
       "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas.",
       "Atendimento inclusivo significa dispensar indistintamente todas as regras do serviço."
@@ -7226,11 +7226,11 @@ export const QUESTIONS = [
     "explanation": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
     "concept": "Acessibilidade e atendimento inclusivo",
     "trap": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Tratar todos de forma idêntica pode manter barreiras preexistentes. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
+      "Incorreta: Acessibilidade consiste apenas em permitir a entrada física no prédio, sem considerar barreiras de comunicação. A afirmação apresenta uma generalização indevida sobre Acessibilidade e atendimento inclusivo. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
       "Incorreta: Oferecer exatamente o mesmo meio de atendimento a todos elimina qualquer barreira. Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas.",
       "Correta: Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Barreiras podem ser arquitetônicas, comunicacionais, tecnológicas ou atitudinais. Recursos acessíveis, linguagem compreensível, apoio adequado e adaptações razoáveis pode",
       "Incorreta: Atendimento inclusivo significa dispensar indistintamente todas as regras do serviço. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços."
@@ -7255,7 +7255,7 @@ export const QUESTIONS = [
     "explanation": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
     "concept": "Acessibilidade e atendimento inclusivo",
     "trap": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Tratar todos de forma idêntica pode manter barreiras preexistentes. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
     "challenge": "Qual afirmação falsa seria mais fácil confundir com a regra geral?",
     "optionComments": [
@@ -7284,7 +7284,7 @@ export const QUESTIONS = [
     "explanation": "Acessibilidade envolve enfrentar barreiras físicas, comunicacionais e tecnológicas. Adaptações adequadas podem ser necessárias para garantir acesso efetivo aos serviços.",
     "concept": "Acessibilidade e atendimento inclusivo",
     "trap": "Tratar todos de forma idêntica pode manter barreiras preexistentes.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Tratar todos de forma idêntica pode manter barreiras preexistentes. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Um órgão oferece informação em formato acessível e atendimento compatível com a necessidade de comunicação do usuário.",
     "challenge": "Como os dois conceitos se manifestam em outra rotina administrativa?",
     "optionComments": [
@@ -7310,7 +7310,7 @@ export const QUESTIONS = [
     "explanation": "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
     "concept": "Gestão de conflitos e relações interpessoais",
     "trap": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
     "challenge": "Como você verificaria a afirmação em um órgão público diferente?",
     "optionComments": [
@@ -7327,7 +7327,7 @@ export const QUESTIONS = [
     "difficulty": "media",
     "stem": "Sobre gestão de conflitos e relações interpessoais, assinale a alternativa CORRETA.",
     "options": [
-      "A aplicação do conceito dispensa considerar o contexto e os requisitos específicos do serviço.",
+      "Em situações de conflito, a escuta ativa deve ser evitada para impedir que o cidadão exponha sua demanda.",
       "Negociar no serviço público autoriza criar privilégios pessoais sem fundamento.",
       "Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente.",
       "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais."
@@ -7336,11 +7336,11 @@ export const QUESTIONS = [
     "explanation": "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
     "concept": "Gestão de conflitos e relações interpessoais",
     "trap": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
     "challenge": "Que detalhe faria a segunda alternativa parecer convincente?",
     "optionComments": [
-      "Incorreta: desconsiderar o contexto torna a regra absoluta indevidamente. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
+      "Incorreta: Em situações de conflito, a escuta ativa deve ser evitada para impedir que o cidadão exponha sua demanda. A afirmação apresenta uma generalização indevida sobre Gestão de conflitos e relações interpessoais. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
       "Incorreta: Negociar no serviço público autoriza criar privilégios pessoais sem fundamento. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
       "Incorreta: Em conflito, a equipe pode afastar qualquer regra para satisfazer o usuário mais insistente. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
       "Correta: Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. A gestão adequada distingue fatos de interpretações, esclarece regras e procura soluções dentro das competências institucionais. Escuta ativa, linguagem não acusatória, r"
@@ -7365,7 +7365,7 @@ export const QUESTIONS = [
     "explanation": "Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais. Explicar limites de competência e encaminhamentos evita promessas indevidas.",
     "concept": "Gestão de conflitos e relações interpessoais",
     "trap": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
     "challenge": "Qual condição distingue II das afirmações corretas?",
     "optionComments": [
@@ -7394,7 +7394,7 @@ export const QUESTIONS = [
     "explanation": "Explicar limites de competência e encaminhamentos evita promessas indevidas. Gerir conflitos exige ouvir as partes e esclarecer critérios institucionais.",
     "concept": "Gestão de conflitos e relações interpessoais",
     "trap": "Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto.",
-    "examTip": "Bancas podem explorar distinções entre conceito, aplicação e generalizações indevidas; leia as condições de cada afirmação.",
+    "examTip": "Atenção à distinção conceitual: Negociar não significa abrir mão de regras ou dar razão a quem reclama mais alto. Compare cada alternativa com o enunciado e identifique afirmações absolutas sem fundamento.",
     "newExample": "Dois cidadãos discordam da ordem de atendimento; a equipe esclarece o critério aplicável e verifica se há prioridade legal, sem prometer favorecimento.",
     "challenge": "Como você reformularia a alternativa incorreta para torná-la verdadeira?",
     "optionComments": [
