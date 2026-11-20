@@ -286,6 +286,87 @@ export const DIAGNOSTICS = Object.freeze({
     "front": "Como administrar conflitos sem prometer algo fora da competência do órgão?",
     "back": "Escutar, esclarecer critérios, explicar limites e encaminhamentos e registrar quando cabível, respeitando regras e evitando privilégios."
   }
+],
+"AP-13": [
+  {
+    "subtopicId": "AP-13-001",
+    "front": "Como você diferenciaria os conceitos centrais de administração pública: sentidos e conceitos em uma situação concreta?",
+    "back": "Em sentido subjetivo, Administração Pública designa os sujeitos que exercem atividade administrativa. O sentido objetivo diz respeito à atividade administrativa desempenhada. Exemplo: Uma autarquia é exemplo de sujeito administrativo; fiscalizar determinado serviço é exemplo de atividade administrativa."
+  },
+  {
+    "subtopicId": "AP-13-002",
+    "front": "Como você diferenciaria os conceitos centrais de administração direta e indireta: visão geral em uma situação concreta?",
+    "back": "Órgãos da administração direta integram a pessoa política e, em regra, não possuem personalidade jurídica própria. Entidades da administração indireta possuem personalidade jurídica própria. Exemplo: Uma secretaria municipal é órgão da administração direta; uma autarquia municipal é entidade da administração indireta."
+  },
+  {
+    "subtopicId": "AP-13-003",
+    "front": "Como você diferenciaria os conceitos centrais de interesse público e finalidade pública em uma situação concreta?",
+    "back": "O agente público deve orientar sua atuação à finalidade pública estabelecida pelo ordenamento. Interesse público não se confunde com vantagem pessoal do agente. Exemplo: Um gestor não pode direcionar atendimento prioritário a amigos alegando interesse público."
+  },
+  {
+    "subtopicId": "AP-13-004",
+    "front": "Como você diferenciaria os conceitos centrais de estado, governo e administração pública em uma situação concreta?",
+    "back": "Governo relaciona-se à direção política do Estado, enquanto Administração Pública executa atividades administrativas. O Estado possui continuidade institucional para além da alternância de governos. Exemplo: A troca de prefeito altera a direção política, mas não extingue a personalidade jurídica do município."
+  }
+],
+"AP-14": [
+  {
+    "subtopicId": "AP-14-001",
+    "front": "Como você diferenciaria os conceitos centrais de modelo patrimonialista em uma situação concreta?",
+    "back": "No patrimonialismo, a confusão entre interesses privados do governante e patrimônio público é característica central. Relações pessoais e favorecimentos são traços associados ao patrimonialismo. Exemplo: Um dirigente distribui cargos como recompensa a parentes e aliados, sem critérios impessoais."
+  },
+  {
+    "subtopicId": "AP-14-002",
+    "front": "Como você diferenciaria os conceitos centrais de modelo burocrático em uma situação concreta?",
+    "back": "A burocracia valoriza regras formais, impessoalidade e profissionalização. A previsibilidade e a hierarquia formal integram a lógica burocrática. Exemplo: Uma seleção por critérios impessoais e procedimentos documentados expressa traços burocráticos."
+  },
+  {
+    "subtopicId": "AP-14-003",
+    "front": "Como você diferenciaria os conceitos centrais de modelo gerencial em uma situação concreta?",
+    "back": "O modelo gerencial valoriza resultados e avaliação de desempenho na prestação de serviços. Indicadores e responsabilização podem apoiar o foco em resultados. Exemplo: Um órgão acompanha prazo e qualidade do atendimento e corrige processos com base nos indicadores."
+  },
+  {
+    "subtopicId": "AP-14-004",
+    "front": "Como você diferenciaria os conceitos centrais de comparação entre os modelos em uma situação concreta?",
+    "back": "O patrimonialismo se associa ao personalismo; a burocracia, à impessoalidade formal; o gerencialismo, a resultados. Traços de modelos distintos podem coexistir em uma mesma instituição. Exemplo: Um setor usa regras formais de seleção e indicadores de qualidade, combinando traços burocráticos e gerenciais."
+  },
+  {
+    "subtopicId": "AP-14-005",
+    "front": "Como você diferenciaria os conceitos centrais de reformas administrativas e gestão pública brasileira em uma situação concreta?",
+    "back": "O Plano Diretor de 1995 é associado à agenda de reforma gerencial do Estado brasileiro. O Decreto-Lei 200/1967 é marco relevante na organização administrativa federal. Exemplo: Um órgão moderniza a gestão por indicadores sem dispensar prestação de contas."
+  }
+],
+"DA-15": [
+  {
+    "subtopicId": "DA-15-001",
+    "front": "Como você diferenciaria os conceitos centrais de princípios expressos do art. 37 da constituição em uma situação concreta?",
+    "back": "Legalidade, impessoalidade, moralidade, publicidade e eficiência estão expressos no caput do art. 37 da Constituição. O caput do art. 37 alcança administração direta e indireta dos entes federativos. Exemplo: Uma autarquia estadual deve observar os princípios do caput do art. 37."
+  },
+  {
+    "subtopicId": "DA-15-002",
+    "front": "Como você diferenciaria os conceitos centrais de legalidade, impessoalidade e moralidade em uma situação concreta?",
+    "back": "A legalidade administrativa exige fundamento e conformidade com o ordenamento jurídico. A impessoalidade impede favorecimentos pessoais no exercício da função. Exemplo: Um servidor não pode antecipar atendimento de amigo sem critério legal de prioridade."
+  },
+  {
+    "subtopicId": "DA-15-003",
+    "front": "Como você diferenciaria os conceitos centrais de publicidade e eficiência em uma situação concreta?",
+    "back": "A publicidade administrativa admite limites jurídicos relacionados a sigilo e proteção de dados. Eficiência exige atenção à qualidade dos resultados e ao uso dos recursos. Exemplo: Um portal informa gastos públicos sem expor desnecessariamente dados pessoais protegidos."
+  },
+  {
+    "subtopicId": "DA-15-004",
+    "front": "Como você diferenciaria os conceitos centrais de supremacia e indisponibilidade do interesse público em uma situação concreta?",
+    "back": "A indisponibilidade impede que o gestor trate bens e interesses públicos como propriedade particular. Prerrogativas administrativas devem ser exercidas dentro dos limites jurídicos. Exemplo: Um gestor não pode perdoar dívida pública por amizade sem fundamento legal."
+  },
+  {
+    "subtopicId": "DA-15-005",
+    "front": "Como você diferenciaria os conceitos centrais de razoabilidade, proporcionalidade e motivação em uma situação concreta?",
+    "back": "A proporcionalidade envolve adequação, necessidade e ponderação da medida. Motivação permite compreender os fundamentos fáticos e jurídicos de uma decisão. Exemplo: Antes de restringir acesso a um serviço, o órgão avalia alternativas menos gravosas e justifica a decisão."
+  },
+  {
+    "subtopicId": "DA-15-006",
+    "front": "Como você diferenciaria os conceitos centrais de autotutela, segurança jurídica e continuidade em uma situação concreta?",
+    "back": "Autotutela permite à Administração revisar seus atos nos limites do ordenamento. Segurança jurídica valoriza estabilidade e proteção da confiança legítima. Exemplo: Uma administração identifica ilegalidade em ato anterior e examina sua anulação, respeitando garantias aplicáveis."
+  }
 ]
 });
 

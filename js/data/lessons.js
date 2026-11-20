@@ -736,6 +736,171 @@ export const LESSONS = {
   "summary": "Resolver conflitos exige respeito, critérios e limites institucionais.",
   "reviewQuestion": "Explique com suas palavras a distinção principal estudada em gestão de conflitos e relações interpessoais e apresente uma situação diferente do exemplo.",
   "reviewAnswer": "Uma boa resposta deve demonstrar: Resolver conflitos exige respeito, critérios e limites institucionais. Use uma situação realista e justifique a aplicação, não apenas repita a definição."
+},
+"AP-13-001": {
+  "id": "AP-13-001",
+  "objective": "Explicar administração pública: sentidos e conceitos, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "Em sentido subjetivo, Administração Pública designa os sujeitos que exercem atividade administrativa.",
+  "explanation": "Em sentido subjetivo, Administração Pública designa órgãos, agentes e entidades que desempenham função administrativa. Em sentido objetivo, designa a própria atividade administrativa, como prestação de serviços, polícia administrativa, fomento e intervenção. Os dois sentidos não devem ser confundidos: um identifica quem atua; o outro, o que é feito. A expressão também pode ter acepção ampla ou estrita conforme o contexto doutrinário.",
+  "example": "Uma autarquia é exemplo de sujeito administrativo; fiscalizar determinado serviço é exemplo de atividade administrativa.",
+  "examTip": "Atenção às generalizações absolutas: O sentido objetivo identifica exclusivamente os órgãos e agentes que compõem a estrutura estatal. Os sentidos subjetivo e objetivo são equivalentes e dispensam distinção.",
+  "summary": "Em sentido subjetivo, Administração Pública designa os sujeitos que exercem atividade administrativa. O sentido objetivo diz respeito à atividade administrativa desempenhada.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: O sentido objetivo identifica exclusivamente os órgãos e agentes que compõem a estrutura estatal.",
+  "reviewAnswer": "Em sentido subjetivo, Administração Pública designa os sujeitos que exercem atividade administrativa. O sentido objetivo diz respeito à atividade administrativa desempenhada. Uma autarquia é exemplo de sujeito administrativo; fiscalizar determinado serviço é exemplo de atividade administrativa."
+},
+"AP-13-002": {
+  "id": "AP-13-002",
+  "objective": "Explicar administração direta e indireta: visão geral, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "Órgãos da administração direta integram a pessoa política e, em regra, não possuem personalidade jurídica própria.",
+  "explanation": "A administração direta reúne órgãos integrados às pessoas políticas — União, estados, Distrito Federal e municípios — sem personalidade jurídica própria. A indireta é formada por entidades dotadas de personalidade jurídica própria, como autarquias, fundações públicas, empresas públicas e sociedades de economia mista, observadas as particularidades de cada categoria. Descentralização administrativa não equivale à mera distribuição interna de competências entre órgãos, denominada desconcentração.",
+  "example": "Uma secretaria municipal é órgão da administração direta; uma autarquia municipal é entidade da administração indireta.",
+  "examTip": "Atenção às generalizações absolutas: Autarquias são órgãos sem personalidade jurídica própria da administração direta. Desconcentração e descentralização são expressões rigorosamente sinônimas.",
+  "summary": "Órgãos da administração direta integram a pessoa política e, em regra, não possuem personalidade jurídica própria. Entidades da administração indireta possuem personalidade jurídica própria.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: Autarquias são órgãos sem personalidade jurídica própria da administração direta.",
+  "reviewAnswer": "Órgãos da administração direta integram a pessoa política e, em regra, não possuem personalidade jurídica própria. Entidades da administração indireta possuem personalidade jurídica própria. Uma secretaria municipal é órgão da administração direta; uma autarquia municipal é entidade da administração indireta."
+},
+"AP-13-003": {
+  "id": "AP-13-003",
+  "objective": "Explicar interesse público e finalidade pública, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "O agente público deve orientar sua atuação à finalidade pública estabelecida pelo ordenamento.",
+  "explanation": "A atividade administrativa deve buscar finalidades públicas previstas pelo ordenamento, respeitando direitos e limites jurídicos. A invocação genérica do interesse público não autoriza arbitrariedade nem afasta automaticamente direitos fundamentais. É importante distinguir interesse público da conveniência pessoal do agente ou de interesses exclusivamente arrecadatórios. A finalidade é elemento de controle da atuação administrativa.",
+  "example": "Um gestor não pode direcionar atendimento prioritário a amigos alegando interesse público.",
+  "examTip": "Atenção às generalizações absolutas: Invocar interesse público permite afastar qualquer direito individual sem justificativa legal. A vontade particular do gestor define livremente a finalidade de qualquer ato administrativo.",
+  "summary": "O agente público deve orientar sua atuação à finalidade pública estabelecida pelo ordenamento. Interesse público não se confunde com vantagem pessoal do agente.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: Invocar interesse público permite afastar qualquer direito individual sem justificativa legal.",
+  "reviewAnswer": "O agente público deve orientar sua atuação à finalidade pública estabelecida pelo ordenamento. Interesse público não se confunde com vantagem pessoal do agente. Um gestor não pode direcionar atendimento prioritário a amigos alegando interesse público."
+},
+"AP-13-004": {
+  "id": "AP-13-004",
+  "objective": "Explicar estado, governo e administração pública, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "Governo relaciona-se à direção política do Estado, enquanto Administração Pública executa atividades administrativas.",
+  "explanation": "Estado é a organização política soberana formada, em formulação clássica, por povo, território e poder soberano. Governo corresponde à direção política e às escolhas de orientação do Estado. Administração Pública realiza atividades administrativas e executa políticas dentro do marco jurídico. A distinção é conceitual: a atuação administrativa não se confunde com toda decisão política, embora haja relações entre elas.",
+  "example": "A troca de prefeito altera a direção política, mas não extingue a personalidade jurídica do município.",
+  "examTip": "Atenção às generalizações absolutas: Estado e governo são conceitos idênticos e mudam integralmente a cada eleição. A Administração Pública exerce apenas escolhas políticas, sem tarefas administrativas.",
+  "summary": "Governo relaciona-se à direção política do Estado, enquanto Administração Pública executa atividades administrativas. O Estado possui continuidade institucional para além da alternância de governos.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: Estado e governo são conceitos idênticos e mudam integralmente a cada eleição.",
+  "reviewAnswer": "Governo relaciona-se à direção política do Estado, enquanto Administração Pública executa atividades administrativas. O Estado possui continuidade institucional para além da alternância de governos. A troca de prefeito altera a direção política, mas não extingue a personalidade jurídica do município."
+},
+"AP-14-001": {
+  "id": "AP-14-001",
+  "objective": "Explicar modelo patrimonialista, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "No patrimonialismo, a confusão entre interesses privados do governante e patrimônio público é característica central.",
+  "explanation": "O patrimonialismo caracteriza-se pela confusão entre patrimônio público e privado do governante, pelo personalismo e por relações de favor. É um modelo histórico-analítico, não uma descrição de todos os órgãos em qualquer época. Sua crítica central é a ausência de separação efetiva entre interesses privados do dirigente e recursos públicos. A profissionalização e os controles impessoais surgem como contrapontos.",
+  "example": "Um dirigente distribui cargos como recompensa a parentes e aliados, sem critérios impessoais.",
+  "examTip": "Atenção às generalizações absolutas: O patrimonialismo caracteriza-se pela separação rigorosa entre recursos públicos e privados. A impessoalidade e o recrutamento estritamente meritocrático definem o patrimonialismo.",
+  "summary": "No patrimonialismo, a confusão entre interesses privados do governante e patrimônio público é característica central. Relações pessoais e favorecimentos são traços associados ao patrimonialismo.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: O patrimonialismo caracteriza-se pela separação rigorosa entre recursos públicos e privados.",
+  "reviewAnswer": "No patrimonialismo, a confusão entre interesses privados do governante e patrimônio público é característica central. Relações pessoais e favorecimentos são traços associados ao patrimonialismo. Um dirigente distribui cargos como recompensa a parentes e aliados, sem critérios impessoais."
+},
+"AP-14-002": {
+  "id": "AP-14-002",
+  "objective": "Explicar modelo burocrático, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "A burocracia valoriza regras formais, impessoalidade e profissionalização.",
+  "explanation": "A burocracia de inspiração weberiana valoriza legalidade, regras formais, impessoalidade, profissionalização, hierarquia e previsibilidade. Seu objetivo histórico inclui combater o arbítrio patrimonialista. Disfunções burocráticas podem surgir quando formalidades viram fins em si mesmas, com excesso de procedimentos e pouca atenção ao resultado; isso não significa que toda regra seja dispensável. A análise deve distinguir características ideais e patologias de funcionamento.",
+  "example": "Uma seleção por critérios impessoais e procedimentos documentados expressa traços burocráticos.",
+  "examTip": "Atenção às generalizações absolutas: O modelo burocrático tem como princípio a distribuição de cargos por laços familiares. Toda forma de controle documental é incompatível com a burocracia.",
+  "summary": "A burocracia valoriza regras formais, impessoalidade e profissionalização. A previsibilidade e a hierarquia formal integram a lógica burocrática.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: O modelo burocrático tem como princípio a distribuição de cargos por laços familiares.",
+  "reviewAnswer": "A burocracia valoriza regras formais, impessoalidade e profissionalização. A previsibilidade e a hierarquia formal integram a lógica burocrática. Uma seleção por critérios impessoais e procedimentos documentados expressa traços burocráticos."
+},
+"AP-14-003": {
+  "id": "AP-14-003",
+  "objective": "Explicar modelo gerencial, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "O modelo gerencial valoriza resultados e avaliação de desempenho na prestação de serviços.",
+  "explanation": "A administração pública gerencial enfatiza resultados, desempenho, qualidade dos serviços, avaliação e foco no cidadão, preservados legalidade e controles necessários. Autonomia gerencial pode ser acompanhada de responsabilização por metas e indicadores. O foco em resultados não equivale à liberdade para descumprir normas ou substituir o interesse público por lucro. Os modelos históricos podem coexistir na prática.",
+  "example": "Um órgão acompanha prazo e qualidade do atendimento e corrige processos com base nos indicadores.",
+  "examTip": "Atenção às generalizações absolutas: A gestão gerencial permite descumprir normas legais quando a meta é atingida. O modelo gerencial elimina necessariamente todos os controles administrativos.",
+  "summary": "O modelo gerencial valoriza resultados e avaliação de desempenho na prestação de serviços. Indicadores e responsabilização podem apoiar o foco em resultados.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: A gestão gerencial permite descumprir normas legais quando a meta é atingida.",
+  "reviewAnswer": "O modelo gerencial valoriza resultados e avaliação de desempenho na prestação de serviços. Indicadores e responsabilização podem apoiar o foco em resultados. Um órgão acompanha prazo e qualidade do atendimento e corrige processos com base nos indicadores."
+},
+"AP-14-004": {
+  "id": "AP-14-004",
+  "objective": "Explicar comparação entre os modelos, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "O patrimonialismo se associa ao personalismo; a burocracia, à impessoalidade formal; o gerencialismo, a resultados.",
+  "explanation": "Patrimonialismo enfatiza relações pessoais e confusão público-privado; burocracia, formalização e impessoalidade; gerencialismo, resultados e desempenho. Trata-se de tipos analíticos: na realidade, práticas de modelos distintos podem coexistir. A transição histórica não significa substituição completa nem desaparecimento da legalidade. Uma boa comparação considera problema enfrentado, instrumentos usados e riscos de disfunção.",
+  "example": "Um setor usa regras formais de seleção e indicadores de qualidade, combinando traços burocráticos e gerenciais.",
+  "examTip": "Atenção às generalizações absolutas: Os três modelos são idênticos quanto aos critérios de gestão e controle. O surgimento do gerencialismo extinguiu a exigência de legalidade na administração.",
+  "summary": "O patrimonialismo se associa ao personalismo; a burocracia, à impessoalidade formal; o gerencialismo, a resultados. Traços de modelos distintos podem coexistir em uma mesma instituição.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: Os três modelos são idênticos quanto aos critérios de gestão e controle.",
+  "reviewAnswer": "O patrimonialismo se associa ao personalismo; a burocracia, à impessoalidade formal; o gerencialismo, a resultados. Traços de modelos distintos podem coexistir em uma mesma instituição. Um setor usa regras formais de seleção e indicadores de qualidade, combinando traços burocráticos e gerenciais."
+},
+"AP-14-005": {
+  "id": "AP-14-005",
+  "objective": "Explicar reformas administrativas e gestão pública brasileira, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "O Plano Diretor de 1995 é associado à agenda de reforma gerencial do Estado brasileiro.",
+  "explanation": "A trajetória brasileira inclui esforços de profissionalização e racionalização administrativa, como a criação do DASP no Estado Novo, o Decreto-Lei 200/1967 e a reforma gerencial da década de 1990, associada ao Plano Diretor da Reforma do Aparelho do Estado de 1995. Cada iniciativa ocorreu em contexto político e jurídico específico. A reforma de 1995 buscou fortalecer orientação a resultados, sem abolir controles ou a Constituição.",
+  "example": "Um órgão moderniza a gestão por indicadores sem dispensar prestação de contas.",
+  "examTip": "Atenção às generalizações absolutas: O Decreto-Lei 200/1967 foi editado depois do Plano Diretor de 1995. A reforma gerencial de 1995 extinguiu a necessidade de observância constitucional.",
+  "summary": "O Plano Diretor de 1995 é associado à agenda de reforma gerencial do Estado brasileiro. O Decreto-Lei 200/1967 é marco relevante na organização administrativa federal.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: O Decreto-Lei 200/1967 foi editado depois do Plano Diretor de 1995.",
+  "reviewAnswer": "O Plano Diretor de 1995 é associado à agenda de reforma gerencial do Estado brasileiro. O Decreto-Lei 200/1967 é marco relevante na organização administrativa federal. Um órgão moderniza a gestão por indicadores sem dispensar prestação de contas."
+},
+"DA-15-001": {
+  "id": "DA-15-001",
+  "objective": "Explicar princípios expressos do art. 37 da constituição, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "Legalidade, impessoalidade, moralidade, publicidade e eficiência estão expressos no caput do art. 37 da Constituição.",
+  "explanation": "O caput do art. 37 da Constituição Federal estabelece expressamente legalidade, impessoalidade, moralidade, publicidade e eficiência para a administração pública direta e indireta de qualquer dos Poderes da União, estados, Distrito Federal e municípios. O mnemônico LIMPE ajuda a lembrar, mas não substitui a interpretação. Outros princípios podem decorrer do sistema constitucional e de leis, sem constarem literalmente desse rol do caput.",
+  "example": "Uma autarquia estadual deve observar os princípios do caput do art. 37.",
+  "examTip": "Atenção às generalizações absolutas: Supremacia do interesse público e autotutela estão literalmente listadas no caput do art. 37. O art. 37 restringe os cinco princípios expressos exclusivamente ao Poder Executivo federal.",
+  "summary": "Legalidade, impessoalidade, moralidade, publicidade e eficiência estão expressos no caput do art. 37 da Constituição. O caput do art. 37 alcança administração direta e indireta dos entes federativos.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: Supremacia do interesse público e autotutela estão literalmente listadas no caput do art. 37.",
+  "reviewAnswer": "Legalidade, impessoalidade, moralidade, publicidade e eficiência estão expressos no caput do art. 37 da Constituição. O caput do art. 37 alcança administração direta e indireta dos entes federativos. Uma autarquia estadual deve observar os princípios do caput do art. 37."
+},
+"DA-15-002": {
+  "id": "DA-15-002",
+  "objective": "Explicar legalidade, impessoalidade e moralidade, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "A legalidade administrativa exige fundamento e conformidade com o ordenamento jurídico.",
+  "explanation": "Legalidade administrativa significa atuação conforme o ordenamento jurídico, e não liberdade geral para fazer tudo que não esteja proibido. Impessoalidade proíbe favorecimento e perseguição pessoais e exige atuação orientada à finalidade pública. Moralidade administrativa exige padrões de probidade e boa-fé, não apenas ausência de crime. Esses princípios são relacionados, mas não sinônimos.",
+  "example": "Um servidor não pode antecipar atendimento de amigo sem critério legal de prioridade.",
+  "examTip": "Atenção às generalizações absolutas: O agente público pode agir livremente sempre que não houver proibição expressa, mesmo sem competência. A moralidade administrativa se limita a impedir condutas já tipificadas como crimes.",
+  "summary": "A legalidade administrativa exige fundamento e conformidade com o ordenamento jurídico. A impessoalidade impede favorecimentos pessoais no exercício da função.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: O agente público pode agir livremente sempre que não houver proibição expressa, mesmo sem competência.",
+  "reviewAnswer": "A legalidade administrativa exige fundamento e conformidade com o ordenamento jurídico. A impessoalidade impede favorecimentos pessoais no exercício da função. Um servidor não pode antecipar atendimento de amigo sem critério legal de prioridade."
+},
+"DA-15-003": {
+  "id": "DA-15-003",
+  "objective": "Explicar publicidade e eficiência, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "A publicidade administrativa admite limites jurídicos relacionados a sigilo e proteção de dados.",
+  "explanation": "Publicidade exige transparência e divulgação de atos e informações conforme o regime jurídico, com restrições legítimas para proteger dados e sigilos previstos em lei. Eficiência envolve boa utilização dos recursos e qualidade dos resultados, sem dispensar legalidade. Publicidade não significa exposição irrestrita de dados pessoais; eficiência não autoriza atropelar procedimentos obrigatórios.",
+  "example": "Um portal informa gastos públicos sem expor desnecessariamente dados pessoais protegidos.",
+  "examTip": "Atenção às generalizações absolutas: Publicidade obriga divulgar irrestritamente todo dado pessoal mantido pela administração. O princípio da eficiência permite afastar exigências legais sempre que o procedimento for mais rápido.",
+  "summary": "A publicidade administrativa admite limites jurídicos relacionados a sigilo e proteção de dados. Eficiência exige atenção à qualidade dos resultados e ao uso dos recursos.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: Publicidade obriga divulgar irrestritamente todo dado pessoal mantido pela administração.",
+  "reviewAnswer": "A publicidade administrativa admite limites jurídicos relacionados a sigilo e proteção de dados. Eficiência exige atenção à qualidade dos resultados e ao uso dos recursos. Um portal informa gastos públicos sem expor desnecessariamente dados pessoais protegidos."
+},
+"DA-15-004": {
+  "id": "DA-15-004",
+  "objective": "Explicar supremacia e indisponibilidade do interesse público, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "A indisponibilidade impede que o gestor trate bens e interesses públicos como propriedade particular.",
+  "explanation": "A supremacia do interesse público é tradicionalmente estudada como fundamento de prerrogativas públicas previstas no ordenamento, mas sua aplicação não é licença para violar direitos fundamentais. A indisponibilidade significa que o administrador não é proprietário dos interesses e bens públicos e não pode deles dispor arbitrariamente. Doutrina contemporânea debate o alcance e a formulação da supremacia; em prova, atenção ao contexto e às garantias jurídicas.",
+  "example": "Um gestor não pode perdoar dívida pública por amizade sem fundamento legal.",
+  "examTip": "Atenção às generalizações absolutas: A supremacia do interesse público autoriza qualquer restrição a direitos, sem lei ou proporcionalidade. Indisponibilidade significa que nenhum bem público pode ser alienado sob qualquer hipótese legal.",
+  "summary": "A indisponibilidade impede que o gestor trate bens e interesses públicos como propriedade particular. Prerrogativas administrativas devem ser exercidas dentro dos limites jurídicos.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: A supremacia do interesse público autoriza qualquer restrição a direitos, sem lei ou proporcionalidade.",
+  "reviewAnswer": "A indisponibilidade impede que o gestor trate bens e interesses públicos como propriedade particular. Prerrogativas administrativas devem ser exercidas dentro dos limites jurídicos. Um gestor não pode perdoar dívida pública por amizade sem fundamento legal."
+},
+"DA-15-005": {
+  "id": "DA-15-005",
+  "objective": "Explicar razoabilidade, proporcionalidade e motivação, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "A proporcionalidade envolve adequação, necessidade e ponderação da medida.",
+  "explanation": "Razoabilidade afasta decisões arbitrárias e incoerentes; proporcionalidade exige adequação, necessidade e equilíbrio da medida em face da finalidade legítima. Motivação explicita fundamentos de fato e de direito quando exigida, permitindo controle e compreensão. Não se trata de três nomes para a mesma coisa. A extensão do dever de motivar depende do ato e do regime jurídico aplicável.",
+  "example": "Antes de restringir acesso a um serviço, o órgão avalia alternativas menos gravosas e justifica a decisão.",
+  "examTip": "Atenção às generalizações absolutas: Uma medida administrativa desnecessariamente gravosa é sempre proporcional se for conveniente ao gestor. Razoabilidade autoriza escolhas arbitrárias quando o agente invoca eficiência.",
+  "summary": "A proporcionalidade envolve adequação, necessidade e ponderação da medida. Motivação permite compreender os fundamentos fáticos e jurídicos de uma decisão.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: Uma medida administrativa desnecessariamente gravosa é sempre proporcional se for conveniente ao gestor.",
+  "reviewAnswer": "A proporcionalidade envolve adequação, necessidade e ponderação da medida. Motivação permite compreender os fundamentos fáticos e jurídicos de uma decisão. Antes de restringir acesso a um serviço, o órgão avalia alternativas menos gravosas e justifica a decisão."
+},
+"DA-15-006": {
+  "id": "DA-15-006",
+  "objective": "Explicar autotutela, segurança jurídica e continuidade, distinguir conceitos próximos e resolver situações típicas de concursos.",
+  "concept": "Autotutela permite à Administração revisar seus atos nos limites do ordenamento.",
+  "explanation": "Autotutela é o poder-dever de a Administração controlar seus próprios atos, anulando os ilegais e revogando os válidos por conveniência e oportunidade, observadas limitações e direitos. Segurança jurídica protege estabilidade, confiança legítima e previsibilidade; continuidade busca evitar interrupções indevidas de serviços públicos. A revogação não se confunde com anulação, e nem todo ato admite revogação.",
+  "example": "Uma administração identifica ilegalidade em ato anterior e examina sua anulação, respeitando garantias aplicáveis.",
+  "examTip": "Atenção às generalizações absolutas: Revogação e anulação são idênticas quanto aos fundamentos e aos efeitos. Continuidade do serviço público autoriza ignorar direitos e controles legais.",
+  "summary": "Autotutela permite à Administração revisar seus atos nos limites do ordenamento. Segurança jurídica valoriza estabilidade e proteção da confiança legítima.",
+  "reviewQuestion": "Por que a seguinte afirmação está incorreta: Revogação e anulação são idênticas quanto aos fundamentos e aos efeitos.",
+  "reviewAnswer": "Autotutela permite à Administração revisar seus atos nos limites do ordenamento. Segurança jurídica valoriza estabilidade e proteção da confiança legítima. Uma administração identifica ilegalidade em ato anterior e examina sua anulação, respeitando garantias aplicáveis."
 }
 };
 export const getLesson = id => LESSONS[id] || null;
