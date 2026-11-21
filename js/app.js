@@ -1,5 +1,6 @@
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
+import { runPersistenceDiagnostics, formatPersistenceDiagnostics } from "./core/persistence-diagnostics.js";
 import { exportRecoveryCopy, releaseRecoveryCopy } from "./core/recovery-manager.js";
 import { inspectStoredProgress, showStorageSafetyWarning } from "./core/storage-safety.js";
 import { runBackupIntegrityChecks, formatBackupIntegrityReport } from "./core/backup-integrity-tests.js";
@@ -111,6 +112,11 @@ document.addEventListener('click', event => {
   window.alert(result.message);
   if (result.ok) renderCurrentPage();
   else if (status) status.textContent = result.message;
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('[data-persistence-diagnostics]')) return;
+  const report = runPersistenceDiagnostics();
+  window.alert(formatPersistenceDiagnostics(report));
 });
 document.addEventListener('click', event => {
   if (!event.target.closest('[data-backup-integrity]')) return;
