@@ -1,4 +1,5 @@
 import { MODULES, AREAS } from '../data/modules.js';
+import { renderLearningOverview } from '../core/learning-overview.js';
 import { moduleAchievement } from './module-achievement.js';
 import { getDiagnosticSummary } from './diagnostic.js';
 import { lessonStats } from './lessons.js';
@@ -62,7 +63,7 @@ export function renderStatistics(main,state){
  ${metric('Flashcards avaliados',s.flash.length,`${s.flashDue.length} com revisão vencida`)}
  ${metric('Exercícios concluídos',s.finishedExercises.length,`${s.exerciseSessions.length} sessões registradas`)}
  </div>
- <h2 class="section-title">Progresso por área</h2>
+ ${renderLearningOverview(state,s.modules)}<h2 class="section-title">Progresso por área</h2>
  <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th style="text-align:left;padding:8px">Área</th><th>Iniciados</th><th>Concluídos</th><th>Média</th></tr></thead><tbody>
  ${byArea.map(x=>`<tr><td style="padding:8px;border-top:1px solid #bbb">${e(x.name)}</td><td style="text-align:center">${x.started}/${x.total}</td><td style="text-align:center">${x.completed}</td><td style="text-align:center">${pct(x.avg)}</td></tr>`).join('')}</tbody></table></div>
  <h2 class="section-title">Módulos iniciados</h2>

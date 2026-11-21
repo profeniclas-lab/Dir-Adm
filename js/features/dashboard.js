@@ -1,4 +1,5 @@
 import { MODULES, AREAS } from '../data/modules.js';
+import { renderLearningOverview } from '../core/learning-overview.js';
 import { moduleAchievement } from './module-achievement.js';
 import { getDiagnosticSummary } from './diagnostic.js';
 import { lessonStats } from './lessons.js';
@@ -77,7 +78,7 @@ export function renderDashboard(mainElement,state){
     <article class="stat-card"><div class="stat-label">Aulas estudadas</div><div class="stat-value">${s.studiedLessons}</div><div class="stat-hint">Marcadas como concluídas</div></article>
     <article class="stat-card"><div class="stat-label">Respostas em exercícios</div><div class="stat-value">${s.answeredExercises}</div><div class="stat-hint">Tentativas atualmente registradas</div></article>
   </div>
-  <h2 class="section-title">O que estudar agora</h2>
+  ${renderLearningOverview(state,s.modules)}<h2 class="section-title">O que estudar agora</h2>
   ${nextModules.length?`<div class="module-list" style="display:grid;gap:12px">${nextModules.map(moduleCard).join('')}</div>`:
   `<div class="notice">${s.active.length?'Todos os módulos iniciados atingiram o critério de conclusão. Você pode continuar revisando ou escolher outro módulo.':'Nenhum módulo iniciado. Escolha um módulo para começar.'}</div>`}
   ${s.pending.length>6?`<p>Mais ${s.pending.length-6} módulo(s) em andamento. <button type="button" class="btn" data-nav="modulos">Ver todos os módulos</button></p>`:''}
