@@ -1,5 +1,6 @@
 import { MODULES, AREAS } from '../data/modules.js';
 import { questionsForModule } from '../data/questions.js';
+import { recordSimuladoMistakes, renderSimuladoHistoryComparison } from '../core/simulado-evolution.js';
 import { renderSimuladoCorrection } from '../core/simulado-correction.js';
 import { renderSimuladoNavigation } from '../core/simulado-navigation.js';
 import { simulationScope, simulationScopeLabel } from '../core/simulado-config.js';
@@ -23,7 +24,7 @@ export function renderSimulados(main,state){
  <label for="sim-count">Quantidade de questões</label><select id="sim-count" class="btn" style="margin:8px 0 16px"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20" selected>20</option><option value="30">30</option><option value="40">40</option></select>
  <p>Se houver menos questões do que o solicitado, o aplicativo avisará e não iniciará o simulado.</p>
  <button class="btn btn-primary" data-sim-start="1">Gerar simulado</button>
- <h2 class="section-title">Últimos resultados</h2>${history.length?`<ol>${history.map(x=>`<li>${esc(simulationScopeLabel(x.area,AREAS,MODULES))} — ${x.correct}/${x.total} (${x.score}%) — ${new Date(x.finishedAt).toLocaleDateString('pt-BR')}</li>`).join('')}</ol>`:'<p>Nenhum simulado finalizado ainda.</p>'}</section>`;
+ ${renderSimuladoHistoryComparison(data.history)}<h2 class="section-title">Últimos resultados</h2>${history.length?`<ol>${history.map(x=>`<li>${esc(simulationScopeLabel(x.area,AREAS,MODULES))} — ${x.correct}/${x.total} (${x.score}%) — ${new Date(x.finishedAt).toLocaleDateString('pt-BR')}</li>`).join('')}</ol>`:'<p>Nenhum simulado finalizado ainda.</p>'}</section>`;
 }
 export function startSimulado(state,area,count){
  const data=ensure(state),size=Number(count);if(data.active||!Number.isInteger(size)||size<1||size>40)return {ok:false,message:'Quantidade inválida ou já existe um simulado em andamento.'};
@@ -36,7 +37,7 @@ export function startSimulado(state,area,count){
 }
 export function answerSimulado(state,qid,choice){const s=ensure(state).active,q=byId().get(qid);if(!s||s.finishedAt||!s.ids.includes(qid)||!valid(q)||Number.isInteger(s.answers[qid])||!Number.isInteger(choice)||choice<0||choice>=q.options.length)return false;s.answers[qid]=choice;return true;}
 export function moveSimulado(state,delta){const s=ensure(state).active;if(!s||s.finishedAt)return false;s.cursor=Math.max(0,Math.min(s.ids.length-1,s.cursor+delta));return true;}
-export function finishSimulado(state){const data=ensure(state),s=data.active;if(!s||s.finishedAt||s.ids.some(id=>!Number.isInteger(s.answers[id])))return false;const lookup=byId();const correct=s.ids.filter(id=>lookup.get(id)?.answer===s.answers[id]).length;s.finishedAt=new Date().toISOString();s.correct=correct;s.score=Math.round(correct/s.ids.length*100);data.history??=[];data.history.push({id:s.id,area:s.area,total:s.ids.length,correct,score:s.score,finishedAt:s.finishedAt});data.history=data.history.slice(-30);return true;}
+export function finishSimulado(state){const data=ensure(state),s=data.active;if(!s||s.finishedAt||s.ids.some(id=>!Number.isInteger(s.answers[id])))return false;const lookup=byId();const correct=s.ids.filter(id=>lookup.get(id)?.answer===s.answers[id]).length;s.finishedAt=new Date().toISOString();s.correct=correct;s.score=Math.round(correct/s.ids.length*100);data.history??=[];data.history.push({id:s.id,area:s.area,total:s.ids.length,correct,score:s.score,finishedAt:s.finishedAt});data.history=data.history.slice(-30);recordSimuladoMistakes(state,s,lookup);return true;}
 export function closeSimulado(state){const data=ensure(state);if(!data.active?.finishedAt)return false;data.active=null;return true;}
 export function cancelSimulado(state){const data=ensure(state);if(!data.active||data.active.finishedAt)return false;data.active=null;return true;}
 function renderAttempt(main,state,s){
