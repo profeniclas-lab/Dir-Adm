@@ -5,6 +5,8 @@ import { getLesson } from '../data/lessons.js';
 import { exercisePool, exerciseSummary } from './exercises.js';
 import { lessonStats } from './lessons.js';
 import { isModuleCompleted } from '../core/progress.js';
+import { questionsForModule } from '../data/questions.js';
+import { questionPerformance, performanceRateColor } from '../core/question-performance.js';
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const format = n => Number(n).toLocaleString('pt-BR', { maximumFractionDigits: 2 });
@@ -47,6 +49,27 @@ function achievementMarkup(progress) {
   </section>`;
 }
 
+function performanceMarkup(state, moduleId) {
+  const summary = questionPerformance(questionsForModule(moduleId) || [], state);
+  const rateLabel = summary.rate === null ? '—' : `${format(summary.rate)}%`;
+  const color = performanceRateColor(summary.rate);
+  const rateStyle = color === 'green' ? 'color:#167341' : color === 'red' ? 'color:#ba1c1c' : '';
+  return `<section class="module-achievement" aria-labelledby="performanceTitle" style="margin-top:16px">
+    <h2 id="performanceTitle">Desempenho nas questões</h2>
+    <p><strong>${summary.correct} de ${summary.answered} respondidas</strong> · <strong style="${rateStyle}">${rateLabel} de acerto</strong></p>
+    <p>${summary.total} questões disponíveis no módulo · ${summary.unanswered} ainda não respondidas · ${summary.wrong} respostas incorretas.</p>
+    <dl class="module-info-list">
+      <div><dt>Acertos por chute</dt><dd>${summary.guessedCorrect}</dd></div>
+      <div><dt>Erros por desconhecimento</dt><dd>${summary.unknownWrong}</dd></div>
+      <div><dt>Acertos com segurança declarada</dt><dd>${summary.secureCorrect}</dd></div>
+      <div><dt>Acertos com dúvida</dt><dd>${summary.doubtCorrect}</dd></div>
+      <div><dt>Acertos sem classificação suficiente</dt><dd>${summary.unclassifiedCorrect}</dd></div>
+    </dl>
+    <p><strong>Conhecimento demonstrado (estimativa): ${summary.knowledgeRate === null ? '—' : `${format(summary.knowledgeRate)}%`}</strong> — acertos identificados como seguros, divididos pelo total de questões respondidas.</p>
+    <p class="page-subtitle">Taxa de acerto: verde a partir de 60%; vermelho abaixo de 60%. Os indicadores usam a última resposta registrada por questão, incluindo questões resolvidas fora do banco. Registros sem autoavaliação suficiente não são classificados como chute nem como domínio comprovado. Este indicador não altera o aproveitamento do módulo.</p>
+  </section>`;
+}
+
 export function renderModuleDetail(mainElement, moduleId, state) {
   const module = getModuleById(moduleId);
   if (!module) {
@@ -63,6 +86,7 @@ export function renderModuleDetail(mainElement, moduleId, state) {
       <h1 class="page-title" id="pageTitle" style="margin-top:18px">${escapeHtml(module.title)}</h1>
       <p class="page-subtitle">${escapeHtml(module.id)} · ${escapeHtml(AREAS[module.area])} · ${module.subtopics.length} subtópicos</p>
       ${achievementMarkup(progress)}
+      ${performanceMarkup(state, moduleId)}
       ${stages.map((stage, index) => {
         const available = stage.id === 'diagnostic' && diagnostic;
         const status = available ? (diagnostic.completed ? 'Concluído' : `${diagnostic.answered}/${diagnostic.total} respondidos`) : stage.id === 'exercises' && exercisePool(moduleId).length ? (exercise?.finished ? 'Concluído' : exercise ? `${exercise.answered}/${exercise.total} respondidas` : 'Disponível') : stage.id === 'lesson' && stats ? `${stats.completed}/${stats.total} estudadas` : 'Em preparação';
