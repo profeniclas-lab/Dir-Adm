@@ -2,6 +2,7 @@ import { MODULES, AREAS } from '../data/modules.js';
 import { renderPersistenceDiagnosticsButton } from '../core/persistence-diagnostics.js';
 import { renderRecoveryManager } from '../core/recovery-manager.js';
 import { renderBackupIntegrityButton } from '../core/backup-integrity-tests.js';
+import { renderRestoreConflictTestsButton } from '../core/restore-conflict-tests.js';
 import { renderDriveBackupGuide } from '../core/drive-backup-guide.js';
 import { renderDashboardConsistency } from '../core/dashboard-consistency.js';
 import { renderLearningTimeline } from '../core/learning-timeline.js';
@@ -82,6 +83,7 @@ export function renderDashboard(mainElement,state){
   ${renderDriveBackupGuide()}
   ${renderBackupIntegrityButton()}
   ${renderPersistenceDiagnosticsButton()}
+  ${renderRestoreConflictTestsButton()}
   <button type="button" class="btn" data-backup-inspect="1">Verificar arquivo de backup (.json)</button>
   <button type="button" class="btn" data-backup-restore="1">Restaurar progresso de arquivo (.json)</button>
   <input type="file" id="backup-restore-input" accept=".json,application/json" style="display:none">

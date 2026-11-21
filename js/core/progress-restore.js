@@ -1,5 +1,6 @@
 /** Fase 18 — Lote 3. Restauração integral, validada e confirmada. */
 import { STORAGE_KEY } from './storage.js';
+import { verifyProgressBaseline } from './progress-conflict-guard.js';
 import { BACKUP_MAX_BYTES, validateProgressBackup } from './progress-backup-validator.js';
 import { normalizeRecoveryInput, protectCurrentProgress, RECOVERY_KEY } from './progress-recovery-guard.js';
 
@@ -29,7 +30,11 @@ export function restoreProgressBackup(prepared, confirmed = false) {
   if (!confirmed || !prepared?.ok) return { ok: false, message: 'Restauração não autorizada.' };
   const validation = validateProgressBackup(prepared.backup);
   if (!validation.valid) return { ok: false, message: 'O arquivo deixou de ser válido. Nenhum dado foi alterado.' };
-  const previous = localStorage.getItem(STORAGE_KEY);
+  const initialConflict = verifyProgressBaseline();
+  if (!initialConflict.ok) return { ok:false, message:'Restauração bloqueada: '+initialConflict.message };
+  let previous;
+  try { previous = localStorage.getItem(STORAGE_KEY); }
+  catch (_) { return {ok:false,message:'Não foi possível consultar o progresso atual. Restauração bloqueada.'}; }
   let replacement;
   try { replacement = JSON.stringify(prepared.backup.state); }
   catch (_) { return { ok: false, message: 'Não foi possível preparar os dados.' }; }
@@ -40,6 +45,10 @@ export function restoreProgressBackup(prepared, confirmed = false) {
   }
   const protectedResult = protectCurrentProgress(previous, replacement);
   if (!protectedResult.ok) return { ok: false, message: protectedResult.message };
+  // Não sobrescreva alterações de outra aba ocorridas durante a preparação.
+  const finalConflict = verifyProgressBaseline();
+  if (!finalConflict.ok) return {ok:false,message:'Restauração bloqueada: '+finalConflict.message};
+  if (localStorage.getItem(STORAGE_KEY) !== previous) return {ok:false,message:'Progresso alterado durante a restauração. Nenhum dado foi substituído.'};
   try {
     localStorage.setItem(STORAGE_KEY, replacement);
     if (localStorage.getItem(STORAGE_KEY) !== replacement) throw Error('Falha na verificação de gravação');

@@ -1,5 +1,6 @@
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
+import { runRestoreConflictTests, formatRestoreConflictTests } from './core/restore-conflict-tests.js';
 import { isSaveBlocked, reportSaveFailure } from './core/save-failure-ui.js';
 import { runPersistenceDiagnostics, formatPersistenceDiagnostics } from "./core/persistence-diagnostics.js";
 import { exportRecoveryCopy, releaseRecoveryCopy } from "./core/recovery-manager.js";
@@ -120,6 +121,10 @@ document.addEventListener('click', event => {
   window.alert(result.message);
   if (result.ok) renderCurrentPage();
   else if (status) status.textContent = result.message;
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('[data-restore-conflict-tests]')) return;
+  window.alert(formatRestoreConflictTests(runRestoreConflictTests()));
 });
 document.addEventListener('click', event => {
   if (!event.target.closest('[data-persistence-diagnostics]')) return;
