@@ -1,20 +1,8 @@
-import { runIntegrationReport, formatIntegrationReport, downloadIntegrationReport } from './core/integration-report.js';
-import { runPedagogicalFlowTests, formatPedagogicalFlowTests } from './core/pedagogical-flow-tests.js';
-import { runStorageRoundtripTests, formatStorageRoundtripTests } from './core/storage-roundtrip-tests.js';
-import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
-import { runRestoreConflictTests, formatRestoreConflictTests } from './core/restore-conflict-tests.js';
-import { isSaveBlocked, reportSaveFailure } from './core/save-failure-ui.js';
-import { runPersistenceDiagnostics, formatPersistenceDiagnostics } from "./core/persistence-diagnostics.js";
-import { exportRecoveryCopy, releaseRecoveryCopy } from "./core/recovery-manager.js";
-import { inspectStoredProgress, showStorageSafetyWarning } from "./core/storage-safety.js";
-import { runBackupIntegrityChecks, formatBackupIntegrityReport } from "./core/backup-integrity-tests.js";
-import { exportProgressBackup } from "./core/progress-backup.js";
-import { inspectProgressBackupFile } from "./core/progress-backup-validator.js";
-import { prepareProgressRestore, restoreProgressBackup } from "./core/progress-restore.js";
 import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
+import { renderSettings } from "./features/settings.js";
 import { renderModules } from "./features/modules.js";
 import { renderModuleDetail } from "./features/module-detail.js";
 import { renderDiagnostic, renderDiagnosticEdit, saveDiagnosticAnswer, resetDiagnostic } from "./features/diagnostic.js";
@@ -25,13 +13,10 @@ import { renderStatistics } from "./features/estatisticas.js";
 import { renderFlashcards, changeFlashFilter, startFlashStudy, flipFlashStudy, rateFlashStudy, restartFlashStudy } from "./features/flashcards.js";
 import { renderQuestionBank, updateBankFilter, startBankSession, answerBankQuestion, nextBankQuestion, closeBankSession } from "./features/banco-questoes.js";
 import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSimulado, closeSimulado, cancelSimulado } from "./features/simulados.js";
-import { jumpSimulado, simuladoNavigationSummary } from "./core/simulado-navigation.js";
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
-const storageSafety = inspectStoredProgress();
 const state = loadState();
-if (storageSafety.ok) refreshUnifiedReviewQueue(state);
-else showStorageSafetyWarning(storageSafety);
+refreshUnifiedReviewQueue(state);
 const mainElement = document.getElementById("main");
 const catalogErrors = validateCatalog();
 if (catalogErrors.length) console.error("[ADM-ESTUDO] Catálogo inválido:", catalogErrors);
@@ -52,6 +37,7 @@ function renderCurrentPage() {
   }
   switch (state.navigation.currentRoute) {
     case "dashboard": renderDashboard(mainElement, state); break;
+    case "configuracoes": renderSettings(mainElement); break;
     case "estatisticas": renderStatistics(mainElement,state); break;
     case "flashcards": renderFlashcards(mainElement,state); break;
     case "banco-questoes": renderQuestionBank(mainElement,state); break;
@@ -59,7 +45,6 @@ function renderCurrentPage() {
     case "revisao":
     case "erros":
       if(reviewQuestionId)renderReviewQuestion(mainElement,state,state.navigation.currentRoute,reviewQuestionId);
-      else if(state.navigation.currentRoute==='revisao')renderUnifiedReviewList(mainElement,state);
       else renderReviewList(mainElement,state,state.navigation.currentRoute);
       break;
     case "modulos":
@@ -74,20 +59,7 @@ function renderCurrentPage() {
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;
   }
 }
-function commitAndRender() {
-  if (isSaveBlocked()) return;
-  if (!storageSafety.ok) {
-    reportSaveFailure({ message: storageSafety.message || 'Progresso protegido; gravação bloqueada.' }, state);
-    return;
-  }
-  refreshUnifiedReviewQueue(state);
-  const result = saveState(state);
-  if (!result.ok) {
-    reportSaveFailure(result, state);
-    return;
-  }
-  renderCurrentPage();
-}
+function commitAndRender() { refreshUnifiedReviewQueue(state); saveState(state); renderCurrentPage(); }
 function resetCardView() { editSubtopicId = null; cardFlipped = false; }
 function navigateTo(route) {
   state.navigation.currentRoute = route;
@@ -107,41 +79,6 @@ document.addEventListener('change', event => {
   if(control&&changeFlashFilter(state,control.dataset.flashFilter,control.value))commitAndRender();
 });
 document.addEventListener('click', event => {
-  const exportButton = event.target.closest('[data-recovery-export]');
-  const releaseButton = event.target.closest('[data-recovery-release]');
-  if (!exportButton && !releaseButton) return;
-  const status = document.getElementById('recovery-manager-result');
-  if (exportButton) {
-    const result = exportRecoveryCopy();
-    if (status) status.textContent = result.message;
-    return;
-  }
-  const first = window.confirm('Você já baixou a cópia de recuperação e confirmou que o arquivo JSON foi salvo em local externo? A próxima etapa remove a cópia local anterior, não o progresso atual.');
-  if (!first) return;
-  const second = window.confirm('CONFIRMAÇÃO FINAL: liberar a cópia local de recuperação? Esta ação não pode ser desfeita sem o arquivo externo.');
-  if (!second) return;
-  const result = releaseRecoveryCopy(true);
-  window.alert(result.message);
-  if (result.ok) renderCurrentPage();
-  else if (status) status.textContent = result.message;
-});
-document.addEventListener('click', event => {
-  if (!event.target.closest('[data-restore-conflict-tests]')) return;
-  window.alert(formatRestoreConflictTests(runRestoreConflictTests()));
-});
-document.addEventListener('click', event => {
-  if (!event.target.closest('[data-persistence-diagnostics]')) return;
-  const report = runPersistenceDiagnostics();
-  window.alert(formatPersistenceDiagnostics(report));
-});
-document.addEventListener('click', event => {
-  if (!event.target.closest('[data-backup-integrity]')) return;
-  const report = runBackupIntegrityChecks();
-  window.alert(formatBackupIntegrityReport(report));
-});
-document.addEventListener('click', event => {
-  if (event.target.closest('[data-backup-inspect]')) { document.getElementById('backup-file-input')?.click(); return; }
-  if (event.target.closest('[data-backup-export]')) { const result=exportProgressBackup(); window.alert(result.message); return; }
   if(state.navigation.currentRoute==='estatisticas'){
     const btn=event.target.closest('[data-stats-module]');
     if(btn){state.navigation.selectedModuleId=btn.dataset.statsModule;state.navigation.currentRoute='modulos';activeView='module';commitAndRender();return;}
@@ -167,23 +104,11 @@ document.addEventListener('click', event => {
     if(start){const area=document.getElementById('sim-area')?.value||'todas';const count=document.getElementById('sim-count')?.value||'20';const result=startSimulado(state,area,count);if(result.ok)commitAndRender();else window.alert(result.message);return;}
     const choice=event.target.closest('[data-sim-choice]');
     if(choice){const session=state.progress?.simulados?.active;const id=session?.ids?.[session.cursor];if(id&&answerSimulado(state,id,Number(choice.dataset.simChoice)))commitAndRender();return;}
-    const jump=event.target.closest('[data-sim-jump]');
-    if(jump){if(jumpSimulado(state,Number(jump.dataset.simJump)))commitAndRender();return;}
     const move=event.target.closest('[data-sim-move]');
     if(move){if(moveSimulado(state,Number(move.dataset.simMove)))commitAndRender();return;}
-    if(event.target.closest('[data-sim-finish]')){const summary=simuladoNavigationSummary(state.progress?.simulados?.active);if(!summary.complete){window.alert('Responda às '+summary.pending+' questão(ões) pendente(s) antes de finalizar.');return;}if(window.confirm('Finalizar este simulado e ver a correção? Após finalizar, não será possível alterar as respostas.')&&finishSimulado(state))commitAndRender();return;}
+    if(event.target.closest('[data-sim-finish]')){if(finishSimulado(state))commitAndRender();return;}
     if(event.target.closest('[data-sim-close]')){if(closeSimulado(state))commitAndRender();return;}
     if(event.target.closest('[data-sim-cancel]')){if(window.confirm('Cancelar este simulado? As respostas desta tentativa serão descartadas.')&&cancelSimulado(state))commitAndRender();return;}
-  }
-  if(state.navigation.currentRoute==='revisao'){
-    const flash=event.target.closest('[data-unified-flash-open]');
-    if(flash){
-      const id=flash.dataset.unifiedFlashOpen;
-      state.progress.flashcardStudy??={filters:{area:'todas',module:'todos',mode:'todos'},session:null};
-      if(state.progress.flashcardStudy.session){window.alert('Existe uma sessão de flashcards em andamento. Conclua-a antes de abrir uma revisão específica.');return;}
-      state.progress.flashcardStudy.session={ids:[id],cursor:0,flipped:false,startedAt:new Date().toISOString()};
-      state.navigation.currentRoute='flashcards';reviewQuestionId=null;commitAndRender();return;
-    }
   }
   if(state.navigation.currentRoute==='revisao'||state.navigation.currentRoute==='erros'){
     const open=event.target.closest('[data-review-open]');
@@ -248,56 +173,3 @@ document.addEventListener('click', event => {
 setupNavigation({ onNavigate: navigateTo });
 renderCurrentPage();
 console.info('[ADM-ESTUDO] Aplicação v2.0: flashcards diagnósticos habilitados apenas no ADM-01.');
-
-document.addEventListener('change', async event => {
-  if (event.target?.id !== 'backup-file-input') return;
-  const input = event.target;
-  const result = await inspectProgressBackupFile(input.files?.[0]);
-  const status = document.getElementById('backup-validation-result');
-  if (status) {
-    const lines = [result.valid ? 'Arquivo estruturalmente compatível para a próxima etapa.' : 'Arquivo não aprovado para restauração.', ...result.errors, ...result.warnings.map(x=>'Aviso: '+x)];
-    if (result.summary) lines.push('Resumo: '+result.summary.modules+' módulos registrados; '+result.summary.lessons+' registros de aulas; '+result.summary.errors+' erros; '+result.summary.simulations+' simulados.');
-    status.textContent = lines.join('\n');
-  }
-  input.value = '';
-});
-
-// Fase 18 — Lote 3: restauração explícita, sem importação automática.
-document.addEventListener('click', event => {
-  if (event.target.closest('[data-backup-restore]')) { document.getElementById('backup-restore-input')?.click(); }
-});
-document.addEventListener('change', async event => {
-  if (event.target?.id !== 'backup-restore-input') return;
-  const input=event.target, file=input.files?.[0]; input.value='';
-  const status=document.getElementById('backup-restore-result');
-  if (!status || !file) return;
-  status.textContent='Validando arquivo...';
-  const prepared=await prepareProgressRestore(file);
-  if (!prepared.ok) { status.textContent='Restauração bloqueada: '+prepared.message; return; }
-  const s=prepared.validation.summary;
-  status.textContent='Arquivo válido. Aguardando confirmação do usuário.';
-  const ok=window.confirm('ATENÇÃO: isto substituirá TODO o progresso atual deste navegador pelo conteúdo do arquivo '+file.name+'\n\nResumo: '+s.modules+' módulos, '+s.lessons+' aulas, '+s.errors+' erros e '+s.simulations+' simulados.\n\nAntes de continuar, salve seu backup atual em local seguro. O navegador também solicitará o download de uma cópia de recuperação.\n\nDeseja realmente substituir o progresso?');
-  if (!ok) { status.textContent='Restauração cancelada. Nada foi alterado.'; return; }
-  const result=restoreProgressBackup(prepared,true);
-  status.textContent=result.message;
-  if (result.ok) { window.alert('Restauração gravada. Verifique se o arquivo de recuperação foi baixado. A página será recarregada.'); window.location.reload(); }
-});
-
-document.addEventListener('click', event => {
-  if (!event.target.closest('[data-storage-roundtrip-tests]')) return;
-  window.alert(formatStorageRoundtripTests(runStorageRoundtripTests()));
-});
-
-document.addEventListener('click', event => {
-  if (!event.target.closest('[data-pedagogical-flow-tests]')) return;
-  const report = runPedagogicalFlowTests();
-  window.alert(formatPedagogicalFlowTests(report));
-});
-
-// Fase 20 — Lote 5: consolidação não destrutiva.
-document.addEventListener('click', event => {
-  if (!event.target.closest('[data-integration-report]')) return;
-  const report = runIntegrationReport();
-  window.alert(formatIntegrationReport(report));
-  downloadIntegrationReport(report);
-});
