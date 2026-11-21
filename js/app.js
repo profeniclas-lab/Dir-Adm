@@ -1,6 +1,7 @@
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
 import { exportProgressBackup } from "./core/progress-backup.js";
+import { inspectProgressBackupFile } from "./core/progress-backup-validator.js";
 import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
@@ -81,6 +82,7 @@ document.addEventListener('change', event => {
   if(control&&changeFlashFilter(state,control.dataset.flashFilter,control.value))commitAndRender();
 });
 document.addEventListener('click', event => {
+  if (event.target.closest('[data-backup-inspect]')) { document.getElementById('backup-file-input')?.click(); return; }
   if (event.target.closest('[data-backup-export]')) { const result=exportProgressBackup(); window.alert(result.message); return; }
   if(state.navigation.currentRoute==='estatisticas'){
     const btn=event.target.closest('[data-stats-module]');
@@ -188,3 +190,16 @@ document.addEventListener('click', event => {
 setupNavigation({ onNavigate: navigateTo });
 renderCurrentPage();
 console.info('[ADM-ESTUDO] Aplicação v2.0: flashcards diagnósticos habilitados apenas no ADM-01.');
+
+document.addEventListener('change', async event => {
+  if (event.target?.id !== 'backup-file-input') return;
+  const input = event.target;
+  const result = await inspectProgressBackupFile(input.files?.[0]);
+  const status = document.getElementById('backup-validation-result');
+  if (status) {
+    const lines = [result.valid ? 'Arquivo estruturalmente compatível para a próxima etapa.' : 'Arquivo não aprovado para restauração.', ...result.errors, ...result.warnings.map(x=>'Aviso: '+x)];
+    if (result.summary) lines.push('Resumo: '+result.summary.modules+' módulos registrados; '+result.summary.lessons+' registros de aulas; '+result.summary.errors+' erros; '+result.summary.simulations+' simulados.');
+    status.textContent = lines.join('\n');
+  }
+  input.value = '';
+});
