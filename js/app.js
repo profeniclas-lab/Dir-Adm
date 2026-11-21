@@ -1,5 +1,6 @@
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
+import { isSaveBlocked, reportSaveFailure } from './core/save-failure-ui.js';
 import { runPersistenceDiagnostics, formatPersistenceDiagnostics } from "./core/persistence-diagnostics.js";
 import { exportRecoveryCopy, releaseRecoveryCopy } from "./core/recovery-manager.js";
 import { inspectStoredProgress, showStorageSafetyWarning } from "./core/storage-safety.js";
@@ -70,10 +71,17 @@ function renderCurrentPage() {
   }
 }
 function commitAndRender() {
-  if (!storageSafety.ok) { showStorageSafetyWarning(storageSafety); return; }
+  if (isSaveBlocked()) return;
+  if (!storageSafety.ok) {
+    reportSaveFailure({ message: storageSafety.message || 'Progresso protegido; gravação bloqueada.' }, state);
+    return;
+  }
   refreshUnifiedReviewQueue(state);
   const result = saveState(state);
-  if (!result.ok) { showStorageSafetyWarning({ok:false,message:result.message || "Falha ao salvar progresso."}); return; }
+  if (!result.ok) {
+    reportSaveFailure(result, state);
+    return;
+  }
   renderCurrentPage();
 }
 function resetCardView() { editSubtopicId = null; cardFlipped = false; }
