@@ -1,5 +1,6 @@
 import { installResetUI } from '../core/reset-progress.js';
 import { installMaintenanceUI } from './maintenance.js';
+import { installPhase22AuditUI } from './phase22-audit.js';
 /** ADM-ESTUDO — Fase 22, Lote 2. Backups em Configurações. */
 import { renderRecoveryManager } from '../core/recovery-manager.js';
 import { renderDriveBackupGuide } from '../core/drive-backup-guide.js';
@@ -24,12 +25,12 @@ export function settingsPageChecks(root) {
   return {version:'F22-L05',generatedAt:new Date().toISOString(),checks:checks.map(([name,passed])=>({name,passed})),ok:checks.every(x=>x[1]),readOnly:true};
 }
 export function formatSettingsReport(r) {
-  return ['ADM-ESTUDO | FASE 22 — LOTE 5','Gerado em '+r.generatedAt,r.ok?'ESTRUTURA: APROVADA':'ESTRUTURA: FALHAS ENCONTRADAS','Somente leitura: sim',...r.checks.map(x=>(x.passed?'OK':'FALHA')+' — '+x.name),'','TESTES MANUAIS:','- Exportação JSON e conferência do download','- Validação de arquivo JSON','- Restauração somente em perfil de testes separado','- Cópia de recuperação visível após restauração','- Relatórios técnicos disponíveis no Dashboard','- Progresso atual permanece íntegro','- Reinício simplificado disponível em Configurações','','Este relatório não realiza operações de backup nem comprova que os testes manuais foram executados.'].join('\n');
+  return ['ADM-ESTUDO | FASE 22 — LOTE 5','Gerado em '+r.generatedAt,r.ok?'ESTRUTURA: APROVADA':'ESTRUTURA: FALHAS ENCONTRADAS','Somente leitura: sim',...r.checks.map(x=>(x.passed?'OK':'FALHA')+' — '+x.name),'','TESTES MANUAIS:','- Exportação JSON e conferência do download','- Validação de arquivo JSON','- Restauração somente em perfil de testes separado','- Cópia de recuperação visível após restauração','- Relatórios técnicos disponíveis em Configurações','- Progresso atual permanece íntegro','- Reinício simplificado disponível em Configurações','','Este relatório não realiza operações de backup nem comprova que os testes manuais foram executados.'].join('\n');
 }
 export function renderSettings(main) {
   main.innerHTML=`<section class="settings-page" aria-labelledby="settings-heading">
     <h1 class="page-title" id="settings-heading">Configurações</h1>
-    <p class="page-subtitle">Gerencie cópias de segurança do seu progresso. Reinicie o progresso somente após conferir um backup externo.</p>
+    <p class="page-subtitle">Gerencie cópias de segurança do seu progresso. Para reiniciar, a confirmação é obrigatória; o backup externo é recomendado, mas opcional.</p>
     <section id="settings-backup" class="settings-card" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:18px;margin:12px 0">
       <h2 style="font-size:17px;margin:0 0 8px">☁️ Backup e restauração</h2>
       <p>Seu progresso está salvo neste navegador. Exporte um JSON regularmente e confira se foi baixado antes de depender dele.</p>
@@ -59,6 +60,7 @@ export function renderSettings(main) {
   </section>`;
   installResetUI(main);
   installMaintenanceUI(main);
+  installPhase22AuditUI(main);
   let report='';const run=main.querySelector('[data-settings-audit]'),download=main.querySelector('[data-settings-download]');
   run?.addEventListener('click',()=>{const r=settingsPageChecks(main);report=formatSettingsReport(r);main.querySelector('#settings-audit-result').textContent=report;download.disabled=false;});
   download?.addEventListener('click',()=>{if(!report)return;const blob=new Blob([report],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='adm-estudo-fase22-lote05-configuracoes.txt';document.body.appendChild(a);try{a.click();}finally{a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}});
