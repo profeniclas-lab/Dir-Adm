@@ -17,11 +17,11 @@ import { getDiagnosticSummary } from './diagnostic.js';
 import { lessonStats } from './lessons.js';
 import { exerciseSummary } from './exercises.js';
 import { isModuleCompleted } from '../core/progress.js';
+import { moduleCardPresentation, displayModulePoints } from './module-card-presentation.js';
 
-const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&quot;',"'":'&#39;'}[c]));
+const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const validDate = value => typeof value === 'string' && Number.isFinite(Date.parse(value));
 const fmt = value => validDate(value) ? new Date(value).toLocaleDateString('pt-BR') : '—';
-const pct = value => Number.isFinite(value) ? `${value}%` : '—%';
 const getReviewEntries = state => Object.values(state.progress?.reviewSchedule || {}).filter(item => item && item.questionId && validDate(item.dueAt));
 
 export function dashboardSummary(state) {
@@ -52,19 +52,20 @@ export function dashboardSummary(state) {
 }
 
 function moduleCard(x){
- const {module,achievement,diagnostic,lessons,exercises}=x;
- const stage = !diagnostic?.completed?'Concluir diagnóstico':
-  (lessons?.completed||0)<module.subtopics.length?'Estudar aulas':
-  lessons?.rated!==module.subtopics.length?'Autoavaliar aulas':
-  !exercises?.finished?'Finalizar exercícios':'Reforçar pontos de dificuldade';
+ const {module}=x;
+ const presentation = moduleCardPresentation(x);
+ const percent = Math.max(0, Math.min(100, presentation.points));
  return `<article class="module-card" style="display:block;margin:0">
    <div style="display:flex;justify-content:space-between;gap:12px;align-items:start;flex-wrap:wrap">
      <div><strong>${escapeHtml(module.title)}</strong><div class="mod-area">${escapeHtml(module.id)} · ${escapeHtml(AREAS[module.area]||module.area)}</div></div>
-     <strong>${pct(achievement.percentage)}</strong>
+     <strong>${displayModulePoints(presentation.points)}</strong>
    </div>
-   <p style="margin:10px 0 6px">Próxima ação: ${escapeHtml(stage)}</p>
-   <p style="margin:0 0 12px;font-size:.9rem">Cobertura das etapas: ${achievement.coveragePercentage}%</p>
-   <button type="button" class="btn btn-primary" data-module-id="${escapeHtml(module.id)}">Continuar módulo</button>
+   <div role="progressbar" aria-label="Aproveitamento de ${escapeHtml(module.title)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${percent}" style="margin-top:10px;height:9px;background:#d5dce3;border-radius:6px;overflow:hidden">
+      <div style="width:${percent}%;height:100%;background:${presentation.completed?'#167341':'#2563eb'}"></div>
+   </div>
+   <p style="margin:10px 0 6px">Próxima ação: ${escapeHtml(presentation.next)}</p>
+   <p style="margin:0 0 12px;font-size:.9rem">Etapas concluídas: ${presentation.stagesDone} de ${presentation.totalStages}. ${presentation.completed ? 'Critério de conclusão atingido.' : 'Meta: 75% e três etapas concluídas.'}</p>
+   <button type="button" class="btn btn-primary" data-module-id="${escapeHtml(module.id)}">Abrir módulo</button>
  </article>`;
 }
 
