@@ -1,87 +1,59 @@
-/** ADM-ESTUDO — Fase 22, Lote 1.
- * Estrutura somente de leitura; não modifica progresso nem configurações.
- * Os controles sensíveis continuam no Dashboard até os próximos lotes.
- */
-const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-const sections = Object.freeze([
-  {id:'backup',icon:'☁️',title:'Backup e restauração',description:'Exportar e validar backups, restaurar progresso e guardar uma cópia no Google Drive.',detail:'As ações continuam disponíveis no Dashboard até a migração segura do Lote 2.',lot:'Lote 2'},
-  {id:'reset',icon:'↻',title:'Reiniciar progresso',description:'Recomeçar os estudos totalmente ou somente em um módulo, com confirmação e proteção de dados.',detail:'Nenhum botão de exclusão foi ativado. A implementação protegida ficará para o Lote 3.',lot:'Lote 3'},
-  {id:'dashboard',icon:'▦',title:'Preferências do Dashboard',description:'Controlar as informações exibidas no painel principal sem perder acesso às estatísticas.',detail:'Organização e simplificação previstas para os Lotes 4 e 5.',lot:'Lotes 4–5'},
-  {id:'maintenance',icon:'⚙',title:'Diagnóstico e manutenção',description:'Executar verificações de integridade e consultar informações técnicas do aplicativo.',detail:'A migração das ferramentas técnicas será feita no Lote 5.',lot:'Lote 5'}
-]);
+/** ADM-ESTUDO — Fase 22, Lote 2. Backups em Configurações. */
+import { renderRecoveryManager } from '../core/recovery-manager.js';
+import { renderDriveBackupGuide } from '../core/drive-backup-guide.js';
+const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const card = (id,title,description,lot) => `<section id="settings-${id}" class="settings-card" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:18px;margin:12px 0"><h2 style="font-size:17px;margin:0 0 8px">${esc(title)}</h2><p>${esc(description)}</p><p class="page-subtitle">Previsto: ${esc(lot)}</p></section>`;
 
-function card(s){
-  return `<section id="settings-${s.id}" class="settings-card" aria-labelledby="settings-title-${s.id}" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:18px;margin-bottom:12px">
-  <h2 id="settings-title-${s.id}" style="font-size:17px;margin:0 0 8px">${escapeHtml(s.icon)} ${escapeHtml(s.title)}</h2>
-  <p style="margin:0 0 8px">${escapeHtml(s.description)}</p>
-  <p class="page-subtitle" style="margin:0 0 7px">${escapeHtml(s.detail)}</p>
-  <small style="color:var(--text-muted,#64748b)">Previsto: ${escapeHtml(s.lot)}</small>
-  </section>`;
-}
-
+/** Verificação visual somente leitura: não exporta, não restaura e não altera localStorage. */
 export function settingsPageChecks(root) {
   const checks = [
-    {name:'Página de Configurações aberta',passed:!!root?.querySelector('#settings-heading')},
-    {name:'Quatro seções estruturais presentes',passed:sections.every(s => !!root?.querySelector(`#settings-${s.id}`))},
-    {name:'Navegação lateral contém Configurações',passed:!!document.querySelector('[data-nav="configuracoes"]')},
-    {name:'Sem controles de apagar/restaurar nesta tela',passed:!root?.querySelector('[data-backup-restore], [data-reset-progress], [data-recovery-release]')},
-    {name:'Aviso de migração segura visível',passed:!!root?.querySelector('#settings-migration-note')}
+    ['Configurações acessível',!!root?.querySelector('#settings-heading')],
+    ['Exportar backup presente',!!root?.querySelector('[data-backup-export]')],
+    ['Verificar backup presente',!!root?.querySelector('[data-backup-inspect]')],
+    ['Restaurar backup presente',!!root?.querySelector('[data-backup-restore]')],
+    ['Controles de recuperação presentes',!!root?.querySelector('[data-recovery-export]')],
+    ['Instruções de Google Drive presentes',!!root?.querySelector('a[href*="drive.google.com"]')],
+    ['Controladores de backup ativados',document.documentElement.dataset.f22BackupControls==='ready'],
+    ['Sem botão para zerar progresso',!root?.querySelector('[data-reset-progress]')],
+    ['Menu de Configurações presente',!!document.querySelector('[data-nav="configuracoes"]')]
   ];
-  return {version:'F22-L01',generatedAt:new Date().toISOString(),checks,ok:checks.every(c=>c.passed),readOnly:true};
+  return {version:'F22-L02',generatedAt:new Date().toISOString(),checks:checks.map(([name,passed])=>({name,passed})),ok:checks.every(x=>x[1]),readOnly:true};
 }
-
-export function formatSettingsReport(report) {
-  return [
-    'ADM-ESTUDO | FASE 22 — LOTE 1',
-    'Gerado em '+report.generatedAt,
-    report.ok ? 'VERIFICAÇÕES DE ESTRUTURA: APROVADAS' : 'VERIFICAÇÕES DE ESTRUTURA: EXISTEM FALHAS',
-    'Escopo: estrutura visual e DOM; não substitui testes de backup/restauração.',
-    'Somente leitura: '+(report.readOnly?'sim':'não'),
-    ...report.checks.map(c=>(c.passed?'OK':'FALHA')+' — '+c.name),
-    '',
-    'TESTES MANUAIS A REALIZAR:',
-    '1. Abrir Configurações pelo menu lateral.',
-    '2. Recarregar a página e verificar se Configurações permanece acessível.',
-    '3. Voltar ao Dashboard e conferir backup/restauração/testes existentes.',
-    '4. Conferir que o progresso anterior continua visível.',
-    '5. Conferir em outra aba se nada foi reiniciado.',
-    '',
-    'Nenhum progresso é modificado por estes testes de estrutura.'
-  ].join('\n');
+export function formatSettingsReport(r) {
+  return ['ADM-ESTUDO | FASE 22 — LOTE 2','Gerado em '+r.generatedAt,r.ok?'ESTRUTURA: APROVADA':'ESTRUTURA: FALHAS ENCONTRADAS','Somente leitura: sim',...r.checks.map(x=>(x.passed?'OK':'FALHA')+' — '+x.name),'','TESTES MANUAIS:','- Exportação JSON e conferência do download','- Validação de arquivo JSON','- Restauração somente em perfil de testes separado','- Cópia de recuperação visível após restauração','- Relatórios técnicos disponíveis no Dashboard','- Progresso atual permanece íntegro','- Nenhum botão de reinicialização nesta fase','','Este relatório não realiza operações de backup nem comprova que os testes manuais foram executados.'].join('\n');
 }
-
-export function renderSettings(mainElement) {
-  mainElement.innerHTML = `<section class="settings-page" aria-labelledby="settings-heading">
-    <h1 id="settings-heading" class="page-title">Configurações</h1>
-    <p class="page-subtitle">Organização do aplicativo e segurança do seu progresso.</p>
-    <div id="settings-migration-note" class="notice" style="margin-bottom:16px">
-      <strong>Fase 22 — Lote 1:</strong> estrutura preparada. Nesta etapa, nenhuma ação de backup ou reinicialização foi movida ou ativada. O Dashboard continua com todas as operações existentes.
-    </div>
-    ${sections.map(card).join('')}
-    <section class="settings-card" aria-labelledby="settings-audit-title" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:18px">
-      <h2 id="settings-audit-title" style="font-size:17px;margin:0 0 8px">Verificação no navegador — Lote 1</h2>
-      <p>Testa apenas a estrutura desta página. Não escreve no armazenamento nem modifica respostas.</p>
-      <button type="button" class="btn btn-primary" data-settings-audit="1">Verificar estrutura</button>
-      <button type="button" class="btn" data-settings-download="1" disabled>Baixar relatório TXT</button>
+export function renderSettings(main) {
+  main.innerHTML=`<section class="settings-page" aria-labelledby="settings-heading">
+    <h1 class="page-title" id="settings-heading">Configurações</h1>
+    <p class="page-subtitle">Gerencie cópias de segurança do seu progresso. A reinicialização ficará para o próximo lote.</p>
+    <section id="settings-backup" class="settings-card" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:18px;margin:12px 0">
+      <h2 style="font-size:17px;margin:0 0 8px">☁️ Backup e restauração</h2>
+      <p>Seu progresso está salvo neste navegador. Exporte um JSON regularmente e confira se foi baixado antes de depender dele.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0">
+        <button class="btn btn-primary" type="button" data-backup-export="1">Exportar backup do progresso (.json)</button>
+        <button class="btn" type="button" data-backup-inspect="1">Verificar arquivo de backup (.json)</button>
+        <button class="btn" type="button" data-backup-restore="1">Restaurar progresso de arquivo (.json)</button>
+      </div>
+      <input type="file" id="backup-file-input" accept=".json,application/json" style="display:none">
+      <pre id="backup-validation-result" role="status" aria-live="polite" style="white-space:pre-wrap"></pre>
+      <input type="file" id="backup-restore-input" accept=".json,application/json" style="display:none">
+      <pre id="backup-restore-result" role="status" aria-live="polite" style="white-space:pre-wrap"></pre>
+      <p class="page-subtitle">Restaurar substitui o progresso local. Faça backup antes de restaurar. Não teste restaurações com seu perfil principal.</p>
+    </section>
+    ${renderRecoveryManager()}
+    ${renderDriveBackupGuide()}
+    ${card('reset','↻ Reiniciar progresso','Ainda indisponível. O Lote 3 acrescentará confirmação dupla, backup e proteção contra conflitos.','Lote 3')}
+    ${card('dashboard','▦ Preferências do Dashboard','Personalização do painel principal sem eliminar estatísticas.','Lotes 4–5')}
+    ${card('maintenance','⚙ Diagnóstico e manutenção','Os testes técnicos permanecem no Dashboard até o Lote 5.','Lote 5')}
+    <section class="settings-card" style="background:var(--surface,#fff);border:1px solid var(--border,#e2e8f0);border-radius:10px;padding:18px;margin:12px 0">
+      <h2 style="font-size:17px">Verificação no navegador — Lote 2</h2>
+      <p>Verifica a estrutura dos controles. Não realiza operações nem escreve no progresso.</p>
+      <button class="btn btn-primary" type="button" data-settings-audit="1">Verificar estrutura</button>
+      <button class="btn" type="button" data-settings-download="1" disabled>Baixar relatório TXT</button>
       <pre id="settings-audit-result" role="status" aria-live="polite" style="white-space:pre-wrap;margin-top:12px"></pre>
     </section>
   </section>`;
-  const run = mainElement.querySelector('[data-settings-audit]');
-  const download = mainElement.querySelector('[data-settings-download]');
-  const display = mainElement.querySelector('#settings-audit-result');
-  let reportText = '';
-  run?.addEventListener('click', () => {
-    const result=settingsPageChecks(mainElement);
-    reportText=formatSettingsReport(result);
-    display.textContent=reportText;
-    download.disabled=false;
-  });
-  download?.addEventListener('click', () => {
-    if(!reportText)return;
-    const blob=new Blob([reportText],{type:'text/plain;charset=utf-8'});
-    const url=URL.createObjectURL(blob);
-    const a=document.createElement('a');a.href=url;a.download='adm-estudo-fase22-lote01-relatorio.txt';
-    document.body.appendChild(a);
-    try {a.click();} finally {a.remove();window.setTimeout(()=>URL.revokeObjectURL(url),30000);}
-  });
+  let report='';const run=main.querySelector('[data-settings-audit]'),download=main.querySelector('[data-settings-download]');
+  run?.addEventListener('click',()=>{const r=settingsPageChecks(main);report=formatSettingsReport(r);main.querySelector('#settings-audit-result').textContent=report;download.disabled=false;});
+  download?.addEventListener('click',()=>{if(!report)return;const blob=new Blob([report],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='adm-estudo-fase22-lote02-relatorio.txt';document.body.appendChild(a);try{a.click();}finally{a.remove();setTimeout(()=>URL.revokeObjectURL(url),30000);}});
 }

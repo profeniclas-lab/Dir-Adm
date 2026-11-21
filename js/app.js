@@ -1,4 +1,7 @@
 import { loadState, saveState } from "./core/storage.js";
+import { isSaveBlocked, reportSaveFailure } from "./core/save-failure-ui.js";
+import { inspectStoredProgress, showStorageSafetyWarning } from "./core/storage-safety.js";
+import { initBackupControls } from "./core/backup-controls.js";
 import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
@@ -15,8 +18,10 @@ import { renderQuestionBank, updateBankFilter, startBankSession, answerBankQuest
 import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSimulado, closeSimulado, cancelSimulado } from "./features/simulados.js";
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
+const storageSafety = inspectStoredProgress();
 const state = loadState();
-refreshUnifiedReviewQueue(state);
+if (storageSafety.ok) refreshUnifiedReviewQueue(state);
+else showStorageSafetyWarning(storageSafety);
 const mainElement = document.getElementById("main");
 const catalogErrors = validateCatalog();
 if (catalogErrors.length) console.error("[ADM-ESTUDO] Catálogo inválido:", catalogErrors);
@@ -59,7 +64,17 @@ function renderCurrentPage() {
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;
   }
 }
-function commitAndRender() { refreshUnifiedReviewQueue(state); saveState(state); renderCurrentPage(); }
+function commitAndRender() {
+  if (isSaveBlocked()) return;
+  if (!storageSafety.ok) {
+    reportSaveFailure({message:storageSafety.message || 'Progresso protegido; gravação bloqueada.'}, state);
+    return;
+  }
+  refreshUnifiedReviewQueue(state);
+  const result = saveState(state);
+  if (!result.ok) { reportSaveFailure(result,state); return; }
+  renderCurrentPage();
+}
 function resetCardView() { editSubtopicId = null; cardFlipped = false; }
 function navigateTo(route) {
   state.navigation.currentRoute = route;
@@ -171,5 +186,6 @@ document.addEventListener('click', event => {
   }
 });
 setupNavigation({ onNavigate: navigateTo });
+initBackupControls();
 renderCurrentPage();
 console.info('[ADM-ESTUDO] Aplicação v2.0: flashcards diagnósticos habilitados apenas no ADM-01.');
