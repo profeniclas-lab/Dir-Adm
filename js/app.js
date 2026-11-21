@@ -13,6 +13,7 @@ import { renderStatistics } from "./features/estatisticas.js";
 import { renderFlashcards, changeFlashFilter, startFlashStudy, flipFlashStudy, rateFlashStudy, restartFlashStudy } from "./features/flashcards.js";
 import { renderQuestionBank, updateBankFilter, startBankSession, answerBankQuestion, nextBankQuestion, closeBankSession } from "./features/banco-questoes.js";
 import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSimulado, closeSimulado, cancelSimulado } from "./features/simulados.js";
+import { jumpSimulado, simuladoNavigationSummary } from "./core/simulado-navigation.js";
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
 const state = loadState();
@@ -104,9 +105,11 @@ document.addEventListener('click', event => {
     if(start){const area=document.getElementById('sim-area')?.value||'todas';const count=document.getElementById('sim-count')?.value||'20';const result=startSimulado(state,area,count);if(result.ok)commitAndRender();else window.alert(result.message);return;}
     const choice=event.target.closest('[data-sim-choice]');
     if(choice){const session=state.progress?.simulados?.active;const id=session?.ids?.[session.cursor];if(id&&answerSimulado(state,id,Number(choice.dataset.simChoice)))commitAndRender();return;}
+    const jump=event.target.closest('[data-sim-jump]');
+    if(jump){if(jumpSimulado(state,Number(jump.dataset.simJump)))commitAndRender();return;}
     const move=event.target.closest('[data-sim-move]');
     if(move){if(moveSimulado(state,Number(move.dataset.simMove)))commitAndRender();return;}
-    if(event.target.closest('[data-sim-finish]')){if(finishSimulado(state))commitAndRender();return;}
+    if(event.target.closest('[data-sim-finish]')){const summary=simuladoNavigationSummary(state.progress?.simulados?.active);if(!summary.complete){window.alert('Responda às '+summary.pending+' questão(ões) pendente(s) antes de finalizar.');return;}if(window.confirm('Finalizar este simulado e ver a correção? Após finalizar, não será possível alterar as respostas.')&&finishSimulado(state))commitAndRender();return;}
     if(event.target.closest('[data-sim-close]')){if(closeSimulado(state))commitAndRender();return;}
     if(event.target.closest('[data-sim-cancel]')){if(window.confirm('Cancelar este simulado? As respostas desta tentativa serão descartadas.')&&cancelSimulado(state))commitAndRender();return;}
   }
