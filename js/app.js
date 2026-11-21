@@ -2,6 +2,7 @@ import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
 import { exportProgressBackup } from "./core/progress-backup.js";
 import { inspectProgressBackupFile } from "./core/progress-backup-validator.js";
+import { prepareProgressRestore, restoreProgressBackup } from "./core/progress-restore.js";
 import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
@@ -202,4 +203,25 @@ document.addEventListener('change', async event => {
     status.textContent = lines.join('\n');
   }
   input.value = '';
+});
+
+// Fase 18 — Lote 3: restauração explícita, sem importação automática.
+document.addEventListener('click', event => {
+  if (event.target.closest('[data-backup-restore]')) { document.getElementById('backup-restore-input')?.click(); }
+});
+document.addEventListener('change', async event => {
+  if (event.target?.id !== 'backup-restore-input') return;
+  const input=event.target, file=input.files?.[0]; input.value='';
+  const status=document.getElementById('backup-restore-result');
+  if (!status || !file) return;
+  status.textContent='Validando arquivo...';
+  const prepared=await prepareProgressRestore(file);
+  if (!prepared.ok) { status.textContent='Restauração bloqueada: '+prepared.message; return; }
+  const s=prepared.validation.summary;
+  status.textContent='Arquivo válido. Aguardando confirmação do usuário.';
+  const ok=window.confirm('ATENÇÃO: isto substituirá TODO o progresso atual deste navegador pelo conteúdo do arquivo '+file.name+'\n\nResumo: '+s.modules+' módulos, '+s.lessons+' aulas, '+s.errors+' erros e '+s.simulations+' simulados.\n\nAntes de continuar, salve seu backup atual em local seguro. O navegador também solicitará o download de uma cópia de recuperação.\n\nDeseja realmente substituir o progresso?');
+  if (!ok) { status.textContent='Restauração cancelada. Nada foi alterado.'; return; }
+  const result=restoreProgressBackup(prepared,true);
+  status.textContent=result.message;
+  if (result.ok) { window.alert('Restauração gravada. Verifique se o arquivo de recuperação foi baixado. A página será recarregada.'); window.location.reload(); }
 });
