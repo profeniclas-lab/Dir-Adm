@@ -1,3 +1,4 @@
+import { runIntegrationReport, formatIntegrationReport, downloadIntegrationReport } from './core/integration-report.js';
 import { runPedagogicalFlowTests, formatPedagogicalFlowTests } from './core/pedagogical-flow-tests.js';
 import { runStorageRoundtripTests, formatStorageRoundtripTests } from './core/storage-roundtrip-tests.js';
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
@@ -291,4 +292,12 @@ document.addEventListener('click', event => {
   if (!event.target.closest('[data-pedagogical-flow-tests]')) return;
   const report = runPedagogicalFlowTests();
   window.alert(formatPedagogicalFlowTests(report));
+});
+
+// Fase 20 — Lote 5: consolidação não destrutiva.
+document.addEventListener('click', event => {
+  if (!event.target.closest('[data-integration-report]')) return;
+  const report = runIntegrationReport();
+  window.alert(formatIntegrationReport(report));
+  downloadIntegrationReport(report);
 });
