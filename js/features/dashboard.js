@@ -1,4 +1,6 @@
 import { MODULES, AREAS } from '../data/modules.js';
+import { renderLearningTimeline } from '../core/learning-timeline.js';
+import { renderStudyRecommendations } from '../core/study-recommendations.js';
 import { renderLearningPriorities } from '../core/learning-priorities.js';
 import { renderLearningOverview } from '../core/learning-overview.js';
 import { moduleAchievement } from './module-achievement.js';
@@ -83,7 +85,7 @@ export function renderDashboard(mainElement,state){
   ${nextModules.length?`<div class="module-list" style="display:grid;gap:12px">${nextModules.map(moduleCard).join('')}</div>`:
   `<div class="notice">${s.active.length?'Todos os módulos iniciados atingiram o critério de conclusão. Você pode continuar revisando ou escolher outro módulo.':'Nenhum módulo iniciado. Escolha um módulo para começar.'}</div>`}
   ${s.pending.length>6?`<p>Mais ${s.pending.length-6} módulo(s) em andamento. <button type="button" class="btn" data-nav="modulos">Ver todos os módulos</button></p>`:''}
-  <h2 class="section-title">Revisão e reforço</h2>
+  ${renderStudyRecommendations(state,s.modules)}${renderLearningTimeline(state)}<h2 class="section-title">Revisão e reforço</h2>
   <div class="notice">
     <p><strong>${s.due.length}</strong> revisão(ões) vencida(s). ${nextDue?`Próxima revisão futura: ${fmt(nextDue.dueAt)}.`:'Nenhuma outra revisão futura agendada.'}</p>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
