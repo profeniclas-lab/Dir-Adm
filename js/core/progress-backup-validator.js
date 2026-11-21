@@ -1,4 +1,8 @@
-/** Fase 18 — Lote 2: inspeção de backups sem escrita no armazenamento. */
+/** ADM-ESTUDO — F22/L06, correção do resumo de backups.
+ * O aproveitamento desde a Fase 21 é derivado de diagnósticos, aulas e exercícios.
+ * progress.modules é um campo de compatibilidade e pode legitimamente estar vazio.
+ * Este módulo apenas verifica o arquivo; não altera os dados nem os restaura.
+ */
 import { STORAGE_KEY } from './storage.js';
 import { STATE_SCHEMA_VERSION } from './state.js';
 
@@ -6,6 +10,56 @@ export const BACKUP_MAX_BYTES = 20 * 1024 * 1024;
 const isObject = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const hasOwn = (obj, key) => Object.prototype.hasOwnProperty.call(obj, key);
 const isDate = value => typeof value === 'string' && Number.isFinite(Date.parse(value));
+
+/** Conta módulos com evidências de estudo, não apenas progress.modules.
+ * Esta é uma contagem informativa, não a regra do Dashboard nem uma nota.
+ */
+export function summarizeRecordedActivity(progress) {
+  const p = isObject(progress) ? progress : {};
+  const modules = new Set();
+  const isModuleId = id => typeof id === 'string' && /^[A-Z]+-\d+$/.test(id);
+  const include = id => { if (isModuleId(id)) modules.add(id); };
+  const fromTopic = id => {
+    if (typeof id !== 'string') return;
+    const match = /^([A-Z]+-\d+)-\d+$/.exec(id);
+    if (match) include(match[1]);
+  };
+  const fromQuestion = id => {
+    if (typeof id !== 'string') return;
+    const match = /^Q-([A-Z]+-\d+)-/.exec(id);
+    if (match) include(match[1]);
+  };
+  for (const id of Object.keys(isObject(p.modules) ? p.modules : {})) include(id);
+  for (const [id, diagnostic] of Object.entries(isObject(p.diagnostics) ? p.diagnostics : {})) {
+    if (Object.keys(isObject(diagnostic?.answers) ? diagnostic.answers : {}).length) include(id);
+  }
+  for (const [id, lesson] of Object.entries(isObject(p.lessons) ? p.lessons : {})) {
+    if (lesson && (lesson.completed === true || lesson.rating !== undefined)) fromTopic(id);
+  }
+  for (const [id, session] of Object.entries(isObject(p.exercises) ? p.exercises : {})) {
+    if (Object.keys(isObject(session?.answers) ? session.answers : {}).length ||
+        Object.keys(isObject(session?.assessments) ? session.assessments : {}).length || session?.finishedAt) include(id);
+  }
+  for (const id of Object.keys(isObject(p.questionHistory) ? p.questionHistory : {})) fromQuestion(id);
+  for (const id of Object.keys(isObject(p.flashcards) ? p.flashcards : {})) fromTopic(id);
+  for (const entry of Array.isArray(p.errors) ? p.errors : []) {
+    include(entry?.moduleId);fromQuestion(entry?.questionId);
+  }
+  for (const entry of Object.values(isObject(p.reviewSchedule) ? p.reviewSchedule : {})) {
+    include(entry?.moduleId);fromQuestion(entry?.questionId);
+  }
+  return {
+    modules: modules.size,
+    moduleIds: [...modules].sort(),
+    legacyModuleEntries: Object.keys(isObject(p.modules) ? p.modules : {}).length,
+    diagnostics: Object.values(isObject(p.diagnostics) ? p.diagnostics : {}).filter(v => Object.keys(isObject(v?.answers) ? v.answers : {}).length > 0).length,
+    lessons: Object.keys(isObject(p.lessons) ? p.lessons : {}).length,
+    exercises: Object.values(isObject(p.exercises) ? p.exercises : {}).filter(v => Object.keys(isObject(v?.answers) ? v.answers : {}).length > 0).length,
+    answeredQuestions: Object.keys(isObject(p.questionHistory) ? p.questionHistory : {}).length,
+    errors: Array.isArray(p.errors) ? p.errors.length : 0,
+    simulations: Array.isArray(p.simulados?.history) ? p.simulados.history.length : 0
+  };
+}
 
 export function validateProgressBackup(value) {
   const errors = [];
@@ -38,14 +92,20 @@ export function validateProgressBackup(value) {
   }
   if (isDate(value.createdAt) && Date.parse(value.createdAt) > Date.now() + 86400000) warnings.push('O backup informa uma data de criação no futuro.');
   if (isObject(state.metadata) && isDate(state.metadata.updatedAt) && Date.parse(state.metadata.updatedAt) > Date.now() + 86400000) warnings.push('O progresso informa uma data de atualização no futuro.');
-  if (isObject(progress.modules) && !Object.keys(progress.modules).length) warnings.push('Nenhum progresso de módulos foi encontrado; isso pode ser normal em uma instalação nova.');
+  const activity = summarizeRecordedActivity(progress);
+  if (activity.modules === 0) warnings.push('Não há atividades de módulos identificadas no backup; isso pode ser normal em uma instalação nova.');
   const summary = {
     createdAt: isDate(value.createdAt) ? value.createdAt : null,
     schemaVersion: state.schemaVersion ?? null,
-    modules: isObject(progress.modules) ? Object.keys(progress.modules).length : 0,
-    lessons: isObject(progress.lessons) ? Object.keys(progress.lessons).length : 0,
-    errors: Array.isArray(progress.errors) ? progress.errors.length : 0,
-    simulations: Array.isArray(progress.simulados?.history) ? progress.simulados.history.length : 0
+    modules: activity.modules,
+    moduleIds: activity.moduleIds,
+    legacyModuleEntries: activity.legacyModuleEntries,
+    diagnostics: activity.diagnostics,
+    lessons: activity.lessons,
+    exercises: activity.exercises,
+    answeredQuestions: activity.answeredQuestions,
+    errors: activity.errors,
+    simulations: activity.simulations
   };
   return { valid: errors.length === 0, errors, warnings, summary };
 }
