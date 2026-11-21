@@ -1,5 +1,6 @@
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
+import { exportRecoveryCopy, releaseRecoveryCopy } from "./core/recovery-manager.js";
 import { inspectStoredProgress, showStorageSafetyWarning } from "./core/storage-safety.js";
 import { runBackupIntegrityChecks, formatBackupIntegrityReport } from "./core/backup-integrity-tests.js";
 import { exportProgressBackup } from "./core/progress-backup.js";
@@ -91,6 +92,25 @@ document.addEventListener('change', event => {
   if(state.navigation.currentRoute!=='flashcards')return;
   const control=event.target.closest('[data-flash-filter]');
   if(control&&changeFlashFilter(state,control.dataset.flashFilter,control.value))commitAndRender();
+});
+document.addEventListener('click', event => {
+  const exportButton = event.target.closest('[data-recovery-export]');
+  const releaseButton = event.target.closest('[data-recovery-release]');
+  if (!exportButton && !releaseButton) return;
+  const status = document.getElementById('recovery-manager-result');
+  if (exportButton) {
+    const result = exportRecoveryCopy();
+    if (status) status.textContent = result.message;
+    return;
+  }
+  const first = window.confirm('Você já baixou a cópia de recuperação e confirmou que o arquivo JSON foi salvo em local externo? A próxima etapa remove a cópia local anterior, não o progresso atual.');
+  if (!first) return;
+  const second = window.confirm('CONFIRMAÇÃO FINAL: liberar a cópia local de recuperação? Esta ação não pode ser desfeita sem o arquivo externo.');
+  if (!second) return;
+  const result = releaseRecoveryCopy(true);
+  window.alert(result.message);
+  if (result.ok) renderCurrentPage();
+  else if (status) status.textContent = result.message;
 });
 document.addEventListener('click', event => {
   if (!event.target.closest('[data-backup-integrity]')) return;

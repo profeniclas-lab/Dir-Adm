@@ -1,4 +1,5 @@
 import { MODULES, AREAS } from '../data/modules.js';
+import { renderRecoveryManager } from '../core/recovery-manager.js';
 import { renderBackupIntegrityButton } from '../core/backup-integrity-tests.js';
 import { renderDriveBackupGuide } from '../core/drive-backup-guide.js';
 import { renderDashboardConsistency } from '../core/dashboard-consistency.js';
@@ -76,6 +77,7 @@ export function renderDashboard(mainElement,state){
  mainElement.innerHTML=`<section aria-labelledby="pageTitle">
   <h1 class="page-title" id="pageTitle">Seu painel de estudos</h1>
   <div style="margin:12px 0"><button type="button" class="btn btn-primary" data-backup-export="1">Exportar backup do progresso (.json)</button>
+  ${renderRecoveryManager()}
   ${renderDriveBackupGuide()}
   ${renderBackupIntegrityButton()}
   <button type="button" class="btn" data-backup-inspect="1">Verificar arquivo de backup (.json)</button>
