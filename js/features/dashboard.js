@@ -1,4 +1,5 @@
 import { MODULES, AREAS } from '../data/modules.js';
+import { renderDriveBackupGuide } from '../core/drive-backup-guide.js';
 import { renderDashboardConsistency } from '../core/dashboard-consistency.js';
 import { renderLearningTimeline } from '../core/learning-timeline.js';
 import { renderStudyRecommendations } from '../core/study-recommendations.js';
@@ -74,6 +75,7 @@ export function renderDashboard(mainElement,state){
  mainElement.innerHTML=`<section aria-labelledby="pageTitle">
   <h1 class="page-title" id="pageTitle">Seu painel de estudos</h1>
   <div style="margin:12px 0"><button type="button" class="btn btn-primary" data-backup-export="1">Exportar backup do progresso (.json)</button>
+  ${renderDriveBackupGuide()}
   <button type="button" class="btn" data-backup-inspect="1">Verificar arquivo de backup (.json)</button>
   <button type="button" class="btn" data-backup-restore="1">Restaurar progresso de arquivo (.json)</button>
   <input type="file" id="backup-restore-input" accept=".json,application/json" style="display:none">
