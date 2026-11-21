@@ -1,5 +1,6 @@
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
+import { exportProgressBackup } from "./core/progress-backup.js";
 import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
@@ -80,6 +81,7 @@ document.addEventListener('change', event => {
   if(control&&changeFlashFilter(state,control.dataset.flashFilter,control.value))commitAndRender();
 });
 document.addEventListener('click', event => {
+  if (event.target.closest('[data-backup-export]')) { const result=exportProgressBackup(); window.alert(result.message); return; }
   if(state.navigation.currentRoute==='estatisticas'){
     const btn=event.target.closest('[data-stats-module]');
     if(btn){state.navigation.selectedModuleId=btn.dataset.statsModule;state.navigation.currentRoute='modulos';activeView='module';commitAndRender();return;}
