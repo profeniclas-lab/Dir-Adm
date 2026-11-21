@@ -1,4 +1,5 @@
 import { MODULES, AREAS } from '../data/modules.js';
+import { renderDetailedLearningStats } from '../core/learning-detail.js';
 import { renderLearningTimeline } from '../core/learning-timeline.js';
 import { renderLearningOverview } from '../core/learning-overview.js';
 import { moduleAchievement } from './module-achievement.js';
@@ -67,7 +68,7 @@ export function renderStatistics(main,state){
  ${renderLearningOverview(state,s.modules)}<h2 class="section-title">Progresso por área</h2>
  <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse"><thead><tr><th style="text-align:left;padding:8px">Área</th><th>Iniciados</th><th>Concluídos</th><th>Média</th></tr></thead><tbody>
  ${byArea.map(x=>`<tr><td style="padding:8px;border-top:1px solid #bbb">${e(x.name)}</td><td style="text-align:center">${x.started}/${x.total}</td><td style="text-align:center">${x.completed}</td><td style="text-align:center">${pct(x.avg)}</td></tr>`).join('')}</tbody></table></div>
- <h2 class="section-title">Módulos iniciados</h2>
+ ${renderDetailedLearningStats(state,s.modules,AREAS)}<h2 class="section-title">Módulos iniciados</h2>
  ${progress.length?`<div style="display:grid;gap:10px">${progress.map(x=>`<article class="module-card" style="display:block"><div style="display:flex;justify-content:space-between;gap:8px"><strong>${e(x.module.id)} — ${e(x.module.title)}</strong><strong>${pct(x.achievement.percentage)}</strong></div><div style="height:9px;border-radius:8px;background:#ddd;margin:10px 0;overflow:hidden"><div style="height:100%;width:${Math.max(0,Math.min(100,x.achievement.percentage||0))}%;background:#327f70"></div></div><p style="margin:4px 0">Cobertura das etapas: ${pct(x.achievement.coveragePercentage)} · ${x.completed?'Critério de conclusão atingido':'Em andamento'}</p><button class="btn" data-stats-module="${e(x.module.id)}">Abrir módulo</button></article>`).join('')}</div>`:'<p>Nenhum módulo iniciado.</p>'}
  ${renderLearningTimeline(state)}<h2 class="section-title">Últimos simulados</h2>
  ${recent.length?`<ol>${recent.map(x=>`<li>${e(x.area==='todas'?'Todas as áreas':AREAS[x.area]||x.area)} — ${e(x.correct)}/${e(x.total)} (${pct(Number(x.score))}) · ${formatDate(x.finishedAt)}</li>`).join('')}</ol>`:'<p>Ainda não há simulados finalizados.</p>'}
