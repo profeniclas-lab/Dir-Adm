@@ -1,5 +1,6 @@
 /** Fase 16 Lote 4: correção pedagógica, sem alterar progresso. */
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+import { renderSimuladoPerformance } from './simulado-performance.js';
 const letters='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const block=(label,value)=>value?`<p><strong>${label}:</strong> ${esc(value)}</p>`:'';
 export function renderSimuladoCorrection(session,lookup){
@@ -34,5 +35,5 @@ export function renderSimuladoCorrection(session,lookup){
  ${missing?`<div class="notice">${missing} questão(ões) indisponível(is). O resultado histórico salvo não foi alterado.</div>`:''}
  <p>Os comentários e exemplos são provenientes do banco existente. Campos sem conteúdo não são inventados.</p>
  <button class="btn btn-primary" data-sim-close="1">Voltar à seleção de simulados</button>
- <h2 class="section-title">Correção de todas as questões</h2>${cards}</section>`;
+ ${renderSimuladoPerformance(session,lookup)}<h2 class="section-title">Correção de todas as questões</h2>${cards}</section>`;
 }
