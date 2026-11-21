@@ -1,3 +1,4 @@
+/** Fase 21 Lote 1 — cálculo exclusivamente derivado, sem modificar o estado salvo. */
 export const MODULE_PROGRESS_WEIGHTS = Object.freeze({
   diagnostic: 20,
   lessonCompletion: 15,
@@ -5,43 +6,35 @@ export const MODULE_PROGRESS_WEIGHTS = Object.freeze({
   exercises: 50
 });
 
-export function calculatePartialAchievement(scores = {}) {
-  const components = [
-    ["diagnostic", MODULE_PROGRESS_WEIGHTS.diagnostic],
-    ["lessonCompletion", MODULE_PROGRESS_WEIGHTS.lessonCompletion],
-    ["lessonSelfAssessment", MODULE_PROGRESS_WEIGHTS.lessonSelfAssessment],
-    ["exercises", MODULE_PROGRESS_WEIGHTS.exercises]
-  ];
+const COMPONENTS = Object.entries(MODULE_PROGRESS_WEIGHTS);
+const clamp = score => Number.isFinite(Number(score)) ? Math.max(0, Math.min(100, Number(score))) : 0;
+const round2 = n => Math.round(n * 100) / 100;
 
+export function calculatePartialAchievement(scores = {}) {
   let earned = 0;
   let availableWeight = 0;
-
-  for (const [key, weight] of components) {
+  const components = {};
+  for (const [key, weight] of COMPONENTS) {
     const component = scores[key];
-    if (!component || component.available !== true) continue;
-
-    const score = Number(component.score);
-    const safeScore = Number.isFinite(score)
-      ? Math.min(100, Math.max(0, score))
-      : 0;
-
-    earned += (safeScore / 100) * weight;
-    availableWeight += weight;
+    const available = component?.available === true;
+    const points = available ? (clamp(component.score) * weight / 100) : 0;
+    components[key] = { weight, points: round2(points), available };
+    earned += points;
+    if (available) availableWeight += weight;
   }
-
   return {
-    percentage: availableWeight
-      ? Math.round(earned)
-      : null,
-    earnedWeightedPoints: Math.round(earned * 100) / 100,
+    percentage: availableWeight ? Math.round(earned) : null,
+    earnedWeightedPoints: round2(earned),
     availableWeight,
-    coveragePercentage: Math.round(availableWeight),
-    hasData: availableWeight > 0
+    coveragePercentage: availableWeight,
+    hasData: availableWeight > 0,
+    components
   };
 }
 
+/** Somente a avaliação completa pode retirar o módulo das pendências. */
 export function isModuleCompleted(achievement, threshold = 75) {
   return Number.isFinite(achievement?.percentage) &&
     achievement.availableWeight === 100 &&
-    achievement.percentage >= threshold;
+    achievement.earnedWeightedPoints >= threshold;
 }
