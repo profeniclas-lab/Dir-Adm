@@ -1,14 +1,8 @@
 /** ADM-ESTUDO — Fase 22 / Lote 4: Dashboard focado, somente leitura.
- * Mantém export dashboardSummary e acesso aos testes técnicos até o Lote 5.
+ * Mantém export dashboardSummary; testes técnicos estão em Configurações.
  * Não grava, migra, apaga ou recalcula os registros persistidos.
  */
-import { renderIntegrationReportButton } from '../core/integration-report.js';
-import { renderPedagogicalFlowTestsButton } from '../core/pedagogical-flow-tests.js';
-import { renderStorageRoundtripTestsButton } from '../core/storage-roundtrip-tests.js';
 import { MODULES, AREAS } from '../data/modules.js';
-import { renderPersistenceDiagnosticsButton } from '../core/persistence-diagnostics.js';
-import { renderBackupIntegrityButton } from '../core/backup-integrity-tests.js';
-import { renderRestoreConflictTestsButton } from '../core/restore-conflict-tests.js';
 import { moduleAchievement } from './module-achievement.js';
 import { getDiagnosticSummary } from './diagnostic.js';
 import { lessonStats } from './lessons.js';
@@ -79,7 +73,7 @@ export function dashboardLayoutChecks(root) {
     ['Seção de módulos pendentes presente',!!root?.querySelector('#dashboard-pending')],
     ['Seção de revisão presente',!!root?.querySelector('#dashboard-reviews')],
     ['Controles de backup ausentes do Dashboard',!root?.querySelector('[data-backup-export],[data-backup-restore],[data-backup-inspect]')],
-    ['Ferramentas técnicas mantidas e recolhidas',!!root?.querySelector('#dashboard-technical-tools') && !root?.querySelector('#dashboard-technical-tools')?.open],
+    ['Ferramentas técnicas transferidas para Configurações',!root?.querySelector('#dashboard-technical-tools, [data-integration-report], [data-persistence-diagnostics]')],
     ['Navegação para estatísticas disponível',!!root?.querySelector('[data-nav="estatisticas"]')],
     ['Navegação para Configurações disponível',!!root?.querySelector('[data-nav="configuracoes"]')]
   ];
@@ -128,18 +122,6 @@ export function renderDashboard(mainElement,state) {
         </div>
       </div>
     </section>
-    <details id="dashboard-technical-tools" style="margin:28px 0;border-top:1px solid var(--border,#e2e8f0);padding-top:14px">
-      <summary style="cursor:pointer;font-weight:600">Ferramentas técnicas (temporariamente aqui até o Lote 5)</summary>
-      <div style="padding:12px 0;display:flex;flex-wrap:wrap;gap:8px">
-        ${renderBackupIntegrityButton()}
-        ${renderPersistenceDiagnosticsButton()}
-        ${renderPedagogicalFlowTestsButton()}
-        ${renderIntegrationReportButton()}
-        ${renderRestoreConflictTestsButton()}
-        ${renderStorageRoundtripTestsButton()}
-      </div>
-      <p class="page-subtitle">Backup, restauração e reinício de progresso ficam em Configurações.</p>
-    </details>
     <section style="margin:20px 0;border-top:1px solid var(--border,#e2e8f0);padding-top:14px" aria-label="Verificação estrutural do Dashboard">
       <details><summary style="cursor:pointer">Verificação do Dashboard — Lote 4</summary>
         <p>Teste estrutural de leitura, sem alterações no progresso.</p>
