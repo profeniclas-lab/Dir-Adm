@@ -1,5 +1,6 @@
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
+import { inspectStoredProgress, showStorageSafetyWarning } from "./core/storage-safety.js";
 import { runBackupIntegrityChecks, formatBackupIntegrityReport } from "./core/backup-integrity-tests.js";
 import { exportProgressBackup } from "./core/progress-backup.js";
 import { inspectProgressBackupFile } from "./core/progress-backup-validator.js";
@@ -20,8 +21,10 @@ import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSim
 import { jumpSimulado, simuladoNavigationSummary } from "./core/simulado-navigation.js";
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
+const storageSafety = inspectStoredProgress();
 const state = loadState();
-refreshUnifiedReviewQueue(state);
+if (storageSafety.ok) refreshUnifiedReviewQueue(state);
+else showStorageSafetyWarning(storageSafety);
 const mainElement = document.getElementById("main");
 const catalogErrors = validateCatalog();
 if (catalogErrors.length) console.error("[ADM-ESTUDO] Catálogo inválido:", catalogErrors);
@@ -64,7 +67,13 @@ function renderCurrentPage() {
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;
   }
 }
-function commitAndRender() { refreshUnifiedReviewQueue(state); saveState(state); renderCurrentPage(); }
+function commitAndRender() {
+  if (!storageSafety.ok) { showStorageSafetyWarning(storageSafety); return; }
+  refreshUnifiedReviewQueue(state);
+  const result = saveState(state);
+  if (!result.ok) { showStorageSafetyWarning({ok:false,message:result.message || "Falha ao salvar progresso."}); return; }
+  renderCurrentPage();
+}
 function resetCardView() { editSubtopicId = null; cardFlipped = false; }
 function navigateTo(route) {
   state.navigation.currentRoute = route;

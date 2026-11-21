@@ -1,11 +1,13 @@
 import { createInitialState, normalizeState } from "./state.js";
+import { inspectStoredProgress, validateStateForSaving } from "./storage-safety.js";
 
 export const STORAGE_KEY = "admEstudo.v2.state";
 
 export function loadState() {
   try {
-    const raw = window.localStorage.getItem(STORAGE_KEY);
-    return raw ? normalizeState(JSON.parse(raw)) : createInitialState();
+    const status = inspectStoredProgress();
+    if (!status.ok) { console.error("[ADM-ESTUDO] Progresso protegido:", status.message); return createInitialState(); }
+    return status.code === "empty" ? createInitialState() : normalizeState(status.state);
   } catch (error) {
     console.error("[ADM-ESTUDO] Falha ao carregar progresso:", error);
     return createInitialState();
@@ -14,6 +16,9 @@ export function loadState() {
 
 export function saveState(state) {
   try {
+    const status = inspectStoredProgress();
+    if (!status.ok) return { ok: false, blocked: true, message: status.message };
+    if (!validateStateForSaving(state)) return { ok: false, blocked: true, message: "Estado atual inválido. Gravação bloqueada." };
     const stateToSave = {
       ...state,
       metadata: {
