@@ -1,5 +1,6 @@
 import { MODULES, AREAS } from '../data/modules.js';
 import { questionsForModule } from '../data/questions.js';
+import { simulationScope, simulationScopeLabel } from '../core/simulado-config.js';
 import { selectBalancedQuestions, balancedSelectionSummary } from '../core/simulado-balance.js';
 
 const esc = x => String(x ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -16,15 +17,15 @@ export function renderSimulados(main,state){
  const history=(data.history||[]).slice(-8).reverse();
  main.innerHTML=`<section class="module-detail"><h1 class="page-title">Simulados</h1><p class="page-subtitle">Treine com questões autorais do banco de aprendizagem. Esta etapa não equivale a uma prova oficial.</p>
  <p><strong>${all.length}</strong> questões válidas e distintas disponíveis no banco atual.</p>
- <label for="sim-area">Área</label><select id="sim-area" class="btn" style="max-width:100%;margin:8px 0 16px"><option value="todas">Todas as áreas (${all.length})</option>${areas.map(a=>`<option value="${esc(a.id)}">${esc(a.name)} (${a.count})</option>`).join('')}</select>
- <label for="sim-count">Quantidade de questões</label><select id="sim-count" class="btn" style="margin:8px 0 16px"><option value="10">10</option><option value="20" selected>20</option><option value="30">30</option><option value="40">40</option></select>
+ <label for="sim-area">Área</label><select id="sim-area" class="btn" style="max-width:100%;margin:8px 0 16px"><option value="todas">Todas as áreas (${all.length})</option>${areas.map(a=>`<option value="${esc(a.id)}">${esc(a.name)} (${a.count})</option>`).join('')}<optgroup label="Módulos">${MODULES.map(m=>`<option value="modulo:${esc(m.id)}">${esc(m.title||m.name||m.nome||m.id)} (${all.filter(q=>q.moduleId===m.id).length})</option>`).join('')}</optgroup></select>
+ <label for="sim-count">Quantidade de questões</label><select id="sim-count" class="btn" style="margin:8px 0 16px"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="20" selected>20</option><option value="30">30</option><option value="40">40</option></select>
  <p>Se houver menos questões do que o solicitado, o aplicativo avisará e não iniciará o simulado.</p>
  <button class="btn btn-primary" data-sim-start="1">Gerar simulado</button>
- <h2 class="section-title">Últimos resultados</h2>${history.length?`<ol>${history.map(x=>`<li>${esc(x.area==='todas'?'Todas as áreas':AREAS[x.area]||x.area)} — ${x.correct}/${x.total} (${x.score}%) — ${new Date(x.finishedAt).toLocaleDateString('pt-BR')}</li>`).join('')}</ol>`:'<p>Nenhum simulado finalizado ainda.</p>'}</section>`;
+ <h2 class="section-title">Últimos resultados</h2>${history.length?`<ol>${history.map(x=>`<li>${esc(simulationScopeLabel(x.area,AREAS,MODULES))} — ${x.correct}/${x.total} (${x.score}%) — ${new Date(x.finishedAt).toLocaleDateString('pt-BR')}</li>`).join('')}</ol>`:'<p>Nenhum simulado finalizado ainda.</p>'}</section>`;
 }
 export function startSimulado(state,area,count){
  const data=ensure(state),size=Number(count);if(data.active||!Number.isInteger(size)||size<1||size>40)return {ok:false,message:'Quantidade inválida ou já existe um simulado em andamento.'};
- const pool=bank().filter(q=>area==='todas'||q.area===area);
+ const pool=simulationScope(bank(),area);
  if(pool.length<size)return {ok:false,message:`Existem somente ${pool.length} questões válidas para esta seleção. Escolha uma quantidade menor ou outra área.`};
  const selected=selectBalancedQuestions(pool,size);
  const distribution=balancedSelectionSummary(selected);
