@@ -1,3 +1,4 @@
+import { runStorageRoundtripTests, formatStorageRoundtripTests } from './core/storage-roundtrip-tests.js';
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
 import { runRestoreConflictTests, formatRestoreConflictTests } from './core/restore-conflict-tests.js';
@@ -278,4 +279,9 @@ document.addEventListener('change', async event => {
   const result=restoreProgressBackup(prepared,true);
   status.textContent=result.message;
   if (result.ok) { window.alert('Restauração gravada. Verifique se o arquivo de recuperação foi baixado. A página será recarregada.'); window.location.reload(); }
+});
+
+document.addEventListener('click', event => {
+  if (!event.target.closest('[data-storage-roundtrip-tests]')) return;
+  window.alert(formatStorageRoundtripTests(runStorageRoundtripTests()));
 });
