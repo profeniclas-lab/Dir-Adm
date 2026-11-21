@@ -73,7 +73,10 @@ export function renderDashboard(mainElement,state){
  'Seu estudo começa pelos módulos. Após responder ao diagnóstico, o painel mostrará o progresso e as próximas atividades.';
  mainElement.innerHTML=`<section aria-labelledby="pageTitle">
   <h1 class="page-title" id="pageTitle">Seu painel de estudos</h1>
-  <div style="margin:12px 0"><button type="button" class="btn btn-primary" data-backup-export="1">Exportar backup do progresso (.json)</button></div>
+  <div style="margin:12px 0"><button type="button" class="btn btn-primary" data-backup-export="1">Exportar backup do progresso (.json)</button>
+  <button type="button" class="btn" data-backup-inspect="1">Verificar arquivo de backup (.json)</button>
+  <input type="file" id="backup-file-input" accept=".json,application/json" style="display:none">
+  <pre id="backup-validation-result" role="status" aria-live="polite" style="white-space:pre-wrap"></pre></div>
   <p class="page-subtitle">${escapeHtml(intro)}</p>
   <div class="cards-grid">
     <article class="stat-card"><div class="stat-label">Módulos iniciados</div><div class="stat-value">${s.active.length}</div><div class="stat-hint">de ${MODULES.length} cadastrados</div></article>
