@@ -1,5 +1,6 @@
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
+import { runBackupIntegrityChecks, formatBackupIntegrityReport } from "./core/backup-integrity-tests.js";
 import { exportProgressBackup } from "./core/progress-backup.js";
 import { inspectProgressBackupFile } from "./core/progress-backup-validator.js";
 import { prepareProgressRestore, restoreProgressBackup } from "./core/progress-restore.js";
@@ -81,6 +82,11 @@ document.addEventListener('change', event => {
   if(state.navigation.currentRoute!=='flashcards')return;
   const control=event.target.closest('[data-flash-filter]');
   if(control&&changeFlashFilter(state,control.dataset.flashFilter,control.value))commitAndRender();
+});
+document.addEventListener('click', event => {
+  if (!event.target.closest('[data-backup-integrity]')) return;
+  const report = runBackupIntegrityChecks();
+  window.alert(formatBackupIntegrityReport(report));
 });
 document.addEventListener('click', event => {
   if (event.target.closest('[data-backup-inspect]')) { document.getElementById('backup-file-input')?.click(); return; }
