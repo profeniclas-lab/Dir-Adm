@@ -64,6 +64,7 @@ export function inspectResetReadOnly(storage=window.localStorage) {
 }
 
 /** Backup escolhido pelo usuário deve corresponder byte a byte ao estado lógico salvo. */
+/** Verifica backup do mesmo progresso pedagógico, ignorando apenas navegação e metadados transitórios. */
 export async function verifyResetBackup(file, storage=window.localStorage) {
   if(!file || !/\.json$/i.test(file.name) || file.size<=0 || file.size>20*1024*1024)
     return {ok:false,message:'Escolha um backup JSON de até 20 MB.'};
@@ -75,10 +76,26 @@ export async function verifyResetBackup(file, storage=window.localStorage) {
   let raw;
   try {raw=storage.getItem(STORAGE_KEY);}catch{return {ok:false,message:'Armazenamento inacessível.'};}
   if(raw===null)return {ok:false,message:'Não existe progresso atual para reiniciar.'};
-  try {
-    if(JSON.stringify(documentValue.state)!==JSON.stringify(JSON.parse(raw)))return {ok:false,message:'O backup não corresponde exatamente ao progresso atual. Exporte um backup novo e selecione-o novamente.'};
-  }catch{return {ok:false,message:'Progresso local ilegível.'};}
-  return {ok:true,raw,message:'Backup válido e idêntico ao progresso salvo.'};
+  let actual;
+  try {actual=JSON.parse(raw);}catch{return {ok:false,message:'Progresso local ilegível.'};}
+  if(!validateStateForSaving(actual))return {ok:false,message:'Progresso local incompatível. Reinício bloqueado.'};
+  // A navegação e metadata.updatedAt mudam a cada salvamento, sem alterar respostas.
+  // Compare os dados que precisam ser protegidos; nunca ignore alterações em progress.
+  const canonical=value=>{
+    if(Array.isArray(value))return value.map(canonical);
+    if(value && typeof value==='object')return Object.fromEntries(Object.keys(value).sort().map(k=>[k,canonical(value[k])]));
+    return value;
+  };
+  const equal=(left,right)=>JSON.stringify(canonical(left))===JSON.stringify(canonical(right));
+  if(!equal(documentValue.state.progress,actual.progress))
+    return {ok:false,message:'O progresso pedagógico mudou desde o backup. Exporte um JSON novo e selecione-o novamente.'};
+  if(!equal(documentValue.state.preferences,actual.preferences))
+    return {ok:false,message:'As preferências mudaram desde o backup. Exporte um JSON novo e selecione-o novamente.'};
+  if(documentValue.state.schemaVersion!==actual.schemaVersion)
+    return {ok:false,message:'Versão do esquema alterada; reinício bloqueado.'};
+  // O snapshot real atual segue sendo exigido literalmente na execução,
+  // além do bloqueio de conflitos entre abas e da cópia de recuperação.
+  return {ok:true,raw,message:'Backup validado: progresso e preferências coincidem. Navegação e metadados transitórios não interferem.'};
 }
 
 export function executeProgressReset({scope,moduleId,verifiedRaw,confirmed=false},storage=window.localStorage) {
