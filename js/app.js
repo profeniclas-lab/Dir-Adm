@@ -1,3 +1,4 @@
+import { runPedagogicalFlowTests, formatPedagogicalFlowTests } from './core/pedagogical-flow-tests.js';
 import { runStorageRoundtripTests, formatStorageRoundtripTests } from './core/storage-roundtrip-tests.js';
 import { renderUnifiedReviewList } from './features/unified-review-ui.js';
 import { loadState, saveState } from "./core/storage.js";
@@ -284,4 +285,10 @@ document.addEventListener('change', async event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('[data-storage-roundtrip-tests]')) return;
   window.alert(formatStorageRoundtripTests(runStorageRoundtripTests()));
+});
+
+document.addEventListener('click', event => {
+  if (!event.target.closest('[data-pedagogical-flow-tests]')) return;
+  const report = runPedagogicalFlowTests();
+  window.alert(formatPedagogicalFlowTests(report));
 });

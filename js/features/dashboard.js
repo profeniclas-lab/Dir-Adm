@@ -1,3 +1,4 @@
+import { renderPedagogicalFlowTestsButton } from '../core/pedagogical-flow-tests.js';
 import { renderStorageRoundtripTestsButton } from '../core/storage-roundtrip-tests.js';
 import { MODULES, AREAS } from '../data/modules.js';
 import { renderPersistenceDiagnosticsButton } from '../core/persistence-diagnostics.js';
@@ -84,6 +85,7 @@ export function renderDashboard(mainElement,state){
   ${renderDriveBackupGuide()}
   ${renderBackupIntegrityButton()}
   ${renderPersistenceDiagnosticsButton()}
+  ${renderPedagogicalFlowTestsButton()}
   ${renderRestoreConflictTestsButton()}
   ${renderStorageRoundtripTestsButton()}
   <button type="button" class="btn" data-backup-inspect="1">Verificar arquivo de backup (.json)</button>
