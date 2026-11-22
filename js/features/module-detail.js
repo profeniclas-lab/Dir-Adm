@@ -10,12 +10,13 @@ import { questionPerformance, performanceRateColor } from '../core/question-perf
 
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const format = n => Number(n).toLocaleString('pt-BR', { maximumFractionDigits: 2 });
+
+// Fase 22-A / Lote 7: Banco de Questões e Flashcards são acessados somente
+// pelo menu lateral, onde já existem filtros por módulo. Não os repetimos aqui.
 const stages = [
   { id: 'diagnostic', title: 'Diagnóstico', description: 'Avalie o que já sabe antes de estudar.' },
   { id: 'lesson', title: 'Aula', description: 'Estude cada subtópico em uma página própria.' },
-  { id: 'exercises', title: 'Exercícios de aprendizagem', description: 'Pratique o que aprendeu com correções explicadas.' },
-  { id: 'questions', title: 'Banco de questões do módulo', description: 'Resolva questões vinculadas aos conteúdos estudados.' },
-  { id: 'flashcards', title: 'Banco de flashcards do módulo', description: 'Reforce conceitos e identifique dúvidas.' }
+  { id: 'exercises', title: 'Exercícios de aprendizagem', description: 'Pratique o que aprendeu com correções explicadas.' }
 ];
 
 function achievementMarkup(progress) {
@@ -45,7 +46,7 @@ function achievementMarkup(progress) {
     ${rows}
     <p><strong>Total conquistado: ${format(progress.earnedWeightedPoints)}% / 100%</strong></p>
     <p>${complete ? 'Meta atingida: pelo menos 75% e todas as etapas avaliadas.' : `Meta: 75% com todas as etapas avaliadas. Cobertura atual dos critérios: ${progress.coveragePercentage}% / 100%.`}</p>
-    <p>O banco de questões e os flashcards são atividades complementares e não alteram este aproveitamento.</p>
+    <p>O Banco de Questões e os Flashcards continuam disponíveis no menu lateral e não alteram este aproveitamento.</p>
   </section>`;
 }
 
