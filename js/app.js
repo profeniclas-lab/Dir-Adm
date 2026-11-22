@@ -3,8 +3,9 @@ import { isSaveBlocked, reportSaveFailure } from "./core/save-failure-ui.js";
 import { inspectStoredProgress, showStorageSafetyWarning } from "./core/storage-safety.js";
 import { initBackupControls } from "./core/backup-controls.js";
 import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
-import { setupNavigation, setActiveNavigation, getRouteTitle } from "./core/navigation.js";
+import { setupNavigation, setActiveNavigation, getRouteTitle, normalizeRoute } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
+import { renderAbout } from "./features/about.js";
 import { renderSettings } from "./features/settings.js";
 import { renderModules } from "./features/modules.js";
 import { renderModuleDetail } from "./features/module-detail.js";
@@ -34,6 +35,8 @@ let reviewQuestionId = null;
 
 function renderCurrentPage() {
   if (!mainElement) return;
+  // Converte antigas rotas sem página e recupera rotas desconhecidas sem afetar o progresso.
+  state.navigation.currentRoute = normalizeRoute(state.navigation.currentRoute);
   document.title = `ADM-ESTUDO v2.0 — ${getRouteTitle(state.navigation.currentRoute)}`;
   setActiveNavigation(state.navigation.currentRoute);
   if (catalogErrors.length) {
@@ -43,6 +46,7 @@ function renderCurrentPage() {
   switch (state.navigation.currentRoute) {
     case "dashboard": renderDashboard(mainElement, state); break;
     case "configuracoes": renderSettings(mainElement); break;
+    case "sobre": renderAbout(mainElement); break;
     case "estatisticas": renderStatistics(mainElement,state); break;
     case "flashcards": renderFlashcards(mainElement,state); break;
     case "banco-questoes": renderQuestionBank(mainElement,state); break;
@@ -77,9 +81,9 @@ function commitAndRender() {
 }
 function resetCardView() { editSubtopicId = null; cardFlipped = false; }
 function navigateTo(route) {
-  state.navigation.currentRoute = route;
+  state.navigation.currentRoute = normalizeRoute(route);
   activeView = 'module'; lessonSubtopicId=null;lessonAnswerShown=false; resetCardView();reviewQuestionId=null;
-  if (route === 'modulos') state.navigation.selectedModuleId = null;
+  if (state.navigation.currentRoute === 'modulos') state.navigation.selectedModuleId = null;
   commitAndRender();
 }
 
