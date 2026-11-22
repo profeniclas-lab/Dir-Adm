@@ -15,7 +15,7 @@ import { renderExercises, createExerciseSession, answerExercise, assessExercise,
 import { validateCatalog } from "./data/modules.js";
 import { renderStatistics } from "./features/estatisticas.js";
 import { renderFlashcards, changeFlashFilter, startFlashStudy, flipFlashStudy, rateFlashStudy, restartFlashStudy } from "./features/flashcards.js";
-import { renderQuestionBank, updateBankFilter, startBankSession, answerBankQuestion, nextBankQuestion, closeBankSession } from "./features/banco-questoes.js";
+import { renderQuestionBank, updateBankFilter, resetBankFilters, startBankSession, answerBankQuestion, nextBankQuestion, closeBankSession } from "./features/banco-questoes.js";
 import { renderSimulados, startSimulado, answerSimulado, moveSimulado, finishSimulado, closeSimulado, cancelSimulado } from "./features/simulados.js";
 import { renderReviewList, renderReviewQuestion, beginReview, answerReview, assessReview, removeError } from "./features/review-errors.js";
 
@@ -111,9 +111,24 @@ document.addEventListener('click', event => {
     if(event.target.closest('[data-flash-restart]')){if(window.confirm('Recomeçar a seleção de cartões? As avaliações já salvas serão mantidas.')&&restartFlashStudy(state))commitAndRender();return;}
   }
   if(state.navigation.currentRoute==='banco-questoes'){
+    const quick=event.target.closest('[data-bank-quick]');
+    if(quick){
+      if(updateBankFilter(state,quick.dataset.bankQuick,quick.dataset.bankValue)){
+        const key=quick.dataset.bankQuick, value=quick.dataset.bankValue;
+        commitAndRender();
+        mainElement?.querySelectorAll('[data-bank-quick]').forEach(btn=>{
+          if(btn.dataset.bankQuick===key&&btn.dataset.bankValue===value)btn.focus({preventScroll:true});
+        });
+      }
+      return;
+    }
+    if(event.target.closest('[data-bank-reset]')){
+      if(resetBankFilters(state))commitAndRender();
+      return;
+    }
     const action=event.target.closest('[data-action]')?.dataset.action;
     if(action==='bank-start'){if(startBankSession(state))commitAndRender();return;}
-    if(action==='bank-close'){if(window.confirm('Encerrar esta sessão de questões? As respostas desta sessão não serão mantidas.')&&closeBankSession(state))commitAndRender();return;}
+    if(action==='bank-close'){const session=state.progress?.questionBank?.session;const finished=session?.ids?.length>0&&Object.keys(session.answers||{}).length===session.ids.length;if((finished||window.confirm('Encerrar esta sessão? As respostas já registradas permanecerão no histórico.'))&&closeBankSession(state))commitAndRender();return;}
     if(action==='bank-next'){if(nextBankQuestion(state))commitAndRender();return;}
     const choice=event.target.closest('[data-bank-choice]');
     if(choice){const session=state.progress?.questionBank?.session;const id=session?.ids?.[session.cursor];if(id&&answerBankQuestion(state,id,Number(choice.dataset.bankChoice)))commitAndRender();return;}
