@@ -9,6 +9,7 @@ const ROUTES = Object.freeze({
   revisao: 'Revisão',
   erros: 'Meus Erros',
   simulados: 'Simulados',
+  jornada: 'Minha Jornada',
   estatisticas: 'Estatísticas',
   configuracoes: 'Configurações',
   sobre: 'Sobre'

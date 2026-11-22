@@ -5,6 +5,8 @@ import { initBackupControls } from "./core/backup-controls.js";
 import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle, normalizeRoute } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
+import { recordJourneyEvent, setJourneyGoal } from "./core/study-journey.js";
+import { renderJourneyPage, renderJourneyDashboardSummary } from "./features/jornada.js";
 import { renderAbout } from "./features/about.js";
 import { renderSettings } from "./features/settings.js";
 import { renderModules } from "./features/modules.js";
@@ -44,7 +46,8 @@ function renderCurrentPage() {
     return;
   }
   switch (state.navigation.currentRoute) {
-    case "dashboard": renderDashboard(mainElement, state); break;
+    case "dashboard": renderDashboard(mainElement, state); renderJourneyDashboardSummary(mainElement, state); break;
+    case "jornada": renderJourneyPage(mainElement, state); break;
     case "configuracoes": renderSettings(mainElement); break;
     case "sobre": renderAbout(mainElement); break;
     case "estatisticas": renderStatistics(mainElement,state); break;
@@ -68,12 +71,15 @@ function renderCurrentPage() {
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;
   }
 }
-function commitAndRender() {
+function commitAndRender(journeyActivity = null) {
   if (isSaveBlocked()) return;
   if (!storageSafety.ok) {
     reportSaveFailure({message:storageSafety.message || 'Progresso protegido; gravação bloqueada.'}, state);
     return;
   }
+  // Evento inserido no mesmo estado pedagógico antes da gravação única.
+  // Cada ação tem ID estável; reabrir páginas ou clicar sem concluir não rende XP.
+  if (journeyActivity) recordJourneyEvent(state, journeyActivity);
   refreshUnifiedReviewQueue(state);
   const result = saveState(state);
   if (!result.ok) { reportSaveFailure(result,state); return; }
@@ -87,6 +93,11 @@ function navigateTo(route) {
   commitAndRender();
 }
 
+document.addEventListener('change', event => {
+  if(state.navigation.currentRoute!=='jornada')return;
+  const goal = event.target.closest('[data-journey-goal]');
+  if (goal && setJourneyGoal(state, goal.value)) commitAndRender();
+});
 document.addEventListener('change', event => {
   if(state.navigation.currentRoute!=='banco-questoes')return;
   const select=event.target.closest('[data-bank-filter]');
@@ -106,7 +117,7 @@ document.addEventListener('click', event => {
     if(event.target.closest('[data-flash-start]')){if(startFlashStudy(state))commitAndRender();return;}
     if(event.target.closest('[data-flash-flip]')){if(flipFlashStudy(state))commitAndRender();return;}
     const rating=event.target.closest('[data-flash-rate]');
-    if(rating){if(rateFlashStudy(state,rating.dataset.flashRate))commitAndRender();return;}
+    if(rating){const sess=state.progress?.flashcardStudy?.session;const id=sess?.ids?.[sess.cursor];if(rateFlashStudy(state,rating.dataset.flashRate))commitAndRender(id?{type:'flashcard',itemId:id}:null);return;}
     if(event.target.closest('[data-flash-close]')){navigateTo('modulos');return;}
     if(event.target.closest('[data-flash-restart]')){if(window.confirm('Recomeçar a seleção de cartões? As avaliações já salvas serão mantidas.')&&restartFlashStudy(state))commitAndRender();return;}
   }
@@ -131,7 +142,7 @@ document.addEventListener('click', event => {
     if(action==='bank-close'){const session=state.progress?.questionBank?.session;const finished=session?.ids?.length>0&&Object.keys(session.answers||{}).length===session.ids.length;if((finished||window.confirm('Encerrar esta sessão? As respostas já registradas permanecerão no histórico.'))&&closeBankSession(state))commitAndRender();return;}
     if(action==='bank-next'){if(nextBankQuestion(state))commitAndRender();return;}
     const choice=event.target.closest('[data-bank-choice]');
-    if(choice){const session=state.progress?.questionBank?.session;const id=session?.ids?.[session.cursor];if(id&&answerBankQuestion(state,id,Number(choice.dataset.bankChoice)))commitAndRender();return;}
+    if(choice){const session=state.progress?.questionBank?.session;const id=session?.ids?.[session.cursor];if(id&&answerBankQuestion(state,id,Number(choice.dataset.bankChoice)))commitAndRender({type:'question',itemId:id,source:'banco'});return;}
   }
   if(state.navigation.currentRoute==='simulados'){
     const start=event.target.closest('[data-sim-start]');
@@ -140,7 +151,7 @@ document.addEventListener('click', event => {
     if(choice){const session=state.progress?.simulados?.active;const id=session?.ids?.[session.cursor];if(id&&answerSimulado(state,id,Number(choice.dataset.simChoice)))commitAndRender();return;}
     const move=event.target.closest('[data-sim-move]');
     if(move){if(moveSimulado(state,Number(move.dataset.simMove)))commitAndRender();return;}
-    if(event.target.closest('[data-sim-finish]')){if(finishSimulado(state))commitAndRender();return;}
+    if(event.target.closest('[data-sim-finish]')){const simId=state.progress?.simulados?.active?.id;if(finishSimulado(state))commitAndRender(simId?{type:'simulado',itemId:simId}:null);return;}
     if(event.target.closest('[data-sim-close]')){if(closeSimulado(state))commitAndRender();return;}
     if(event.target.closest('[data-sim-cancel]')){if(window.confirm('Cancelar este simulado? As respostas desta tentativa serão descartadas.')&&cancelSimulado(state))commitAndRender();return;}
   }
@@ -152,7 +163,7 @@ document.addEventListener('click', event => {
     const choice=event.target.closest('[data-review-choice]');
     if(choice&&reviewQuestionId){if(answerReview(state,reviewQuestionId,Number(choice.dataset.reviewChoice)))commitAndRender();return;}
     const assess=event.target.closest('[data-review-assess]');
-    if(assess&&reviewQuestionId){if(assessReview(state,reviewQuestionId,assess.dataset.reviewAssess))commitAndRender();return;}
+    if(assess&&reviewQuestionId){if(assessReview(state,reviewQuestionId,assess.dataset.reviewAssess))commitAndRender({type:'review',itemId:reviewQuestionId});return;}
     const remove=event.target.closest('[data-review-remove]');
     if(remove){if(window.confirm('Remover esta questão do banco de erros? O histórico de respostas será mantido.')&&removeError(state,remove.dataset.reviewRemove))commitAndRender();return;}
   }
@@ -168,7 +179,7 @@ document.addEventListener('click', event => {
   const rating=event.target.closest('[data-lesson-rating]');
   if(rating && activeView==='lesson' && lessonSubtopicId){if(saveLessonProgress(state,lessonSubtopicId,'rating',rating.dataset.lessonRating))commitAndRender();return;}
   const exerciseChoice=event.target.closest('[data-exercise-choice]');
-  if(exerciseChoice && activeView==='exercises'){const session=state.progress.exercises?.[state.navigation.selectedModuleId];const id=session?.ids?.[session.cursor];if(id&&answerExercise(state,state.navigation.selectedModuleId,id,Number(exerciseChoice.dataset.exerciseChoice)))commitAndRender();return;}
+  if(exerciseChoice && activeView==='exercises'){const session=state.progress.exercises?.[state.navigation.selectedModuleId];const id=session?.ids?.[session.cursor];if(id&&answerExercise(state,state.navigation.selectedModuleId,id,Number(exerciseChoice.dataset.exerciseChoice)))commitAndRender({type:'question',itemId:id,source:'exercicios'});return;}
   const assess=event.target.closest('[data-exercise-assess]');
   if(assess && activeView==='exercises'){const mid=state.navigation.selectedModuleId;const session=state.progress.exercises?.[mid];const id=session?.ids?.[session.cursor];if(id&&assessExercise(state,mid,id,assess.dataset.exerciseAssess))commitAndRender();return;}
   const action = event.target.closest('[data-action]')?.dataset.action;
@@ -178,7 +189,7 @@ document.addEventListener('click', event => {
   if(action==='exercise-next'){if(nextExercise(state,state.navigation.selectedModuleId))commitAndRender();return;}
   if(action==='lesson-back'){activeView='module';lessonSubtopicId=null;lessonAnswerShown=false;renderCurrentPage();return;}
   if(action==='lesson-toggle-answer' && activeView==='lesson'){lessonAnswerShown=!lessonAnswerShown;renderCurrentPage();return;}
-  if(action==='lesson-complete' && activeView==='lesson' && lessonSubtopicId){if(saveLessonProgress(state,lessonSubtopicId,'complete'))commitAndRender();return;}
+  if(action==='lesson-complete' && activeView==='lesson' && lessonSubtopicId){const already=state.progress?.lessons?.[lessonSubtopicId]?.completed===true;if(saveLessonProgress(state,lessonSubtopicId,'complete'))commitAndRender(!already?{type:'lesson',itemId:lessonSubtopicId}:null);return;}
   if (action === 'modules-back') {
     state.navigation.selectedModuleId = null; activeView = 'module'; lessonSubtopicId=null;lessonAnswerShown=false; resetCardView(); commitAndRender(); return;
   }
@@ -191,7 +202,11 @@ document.addEventListener('click', event => {
   if (action === 'diag-flip' && activeView === 'diagnostic') { cardFlipped = !cardFlipped; renderCurrentPage(); return; }
   const choiceButton = event.target.closest('[data-diag-choice]');
   if (choiceButton && state.navigation.selectedModuleId && activeView === 'diagnostic') {
-    if (cardFlipped && saveDiagnosticAnswer(state, state.navigation.selectedModuleId, choiceButton.dataset.diagSubtopic, choiceButton.dataset.diagChoice)) { resetCardView(); commitAndRender(); }
+    const moduleId=state.navigation.selectedModuleId;
+    const topicId=choiceButton.dataset.diagSubtopic;
+    const prior=state.progress?.diagnostics?.[moduleId]?.answers;
+    const first=!!topicId && !Object.hasOwn(prior||{},topicId);
+    if (cardFlipped && saveDiagnosticAnswer(state, moduleId, topicId, choiceButton.dataset.diagChoice)) { resetCardView(); commitAndRender(first?{type:'diagnostic',itemId:moduleId+':'+topicId}:null); }
     return;
   }
   const editButton = event.target.closest('[data-diag-edit]');
