@@ -118,7 +118,15 @@ document.addEventListener('click', event => {
     if(event.target.closest('[data-flash-flip]')){if(flipFlashStudy(state))commitAndRender();return;}
     const rating=event.target.closest('[data-flash-rate]');
     if(rating){const sess=state.progress?.flashcardStudy?.session;const id=sess?.ids?.[sess.cursor];if(rateFlashStudy(state,rating.dataset.flashRate))commitAndRender(id?{type:'flashcard',itemId:id}:null);return;}
-    if(event.target.closest('[data-flash-close]')){navigateTo('modulos');return;}
+    // Fase 22-A / Lote 9: opção de encerrar a seleção e voltar aos filtros.
+    // Preserva todos os cartões já avaliados e seus agendamentos.
+    if(event.target.closest('[data-flash-close]')){
+      if(window.confirm('Encerrar esta seleção e voltar aos filtros de Flashcards?\n\nAs avaliações já registradas permanecerão salvas. Os cartões ainda não avaliados poderão ser selecionados novamente.')){
+        if(restartFlashStudy(state)) commitAndRender();
+        else renderCurrentPage();
+      }
+      return;
+    }
     if(event.target.closest('[data-flash-restart]')){if(window.confirm('Recomeçar a seleção de cartões? As avaliações já salvas serão mantidas.')&&restartFlashStudy(state))commitAndRender();return;}
   }
   if(state.navigation.currentRoute==='banco-questoes'){
@@ -222,4 +230,4 @@ document.addEventListener('click', event => {
 setupNavigation({ onNavigate: navigateTo });
 initBackupControls();
 renderCurrentPage();
-console.info('[ADM-ESTUDO] Aplicação v2.0: flashcards diagnósticos habilitados apenas no ADM-01.');
+console.info('[ADM-ESTUDO] Aplicação v2.0: navegação, flashcards, Jornada e backup em Configurações disponíveis.');
