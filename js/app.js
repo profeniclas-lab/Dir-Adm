@@ -1,3 +1,4 @@
+import "./data/questions-f23-lote02.js"; // F23/L02: revisões aplicadas antes da montagem da interface.
 import { loadState, saveState } from "./core/storage.js";
 import { isSaveBlocked, reportSaveFailure } from "./core/save-failure-ui.js";
 import { inspectStoredProgress, showStorageSafetyWarning } from "./core/storage-safety.js";
