@@ -1,3 +1,4 @@
-/** Fase 25 Lote 4 — garante inicialização do catálogo autoral antes do aplicativo. */
+/** Fase 25 Lotes 4 e 6. Preserva o arquivo de entrada existente. */
 import './data/questions-f25-lote04.js';
+import './data/questions-f25-lote06.js';
 import './app.js';
