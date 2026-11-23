@@ -180,7 +180,7 @@ export function renderStatistics(main, state) {
       <h2 id="stats-summary-title">Visão geral</h2>
       <div class="stats-primary-grid">
         ${statCard('Módulos iniciados', s.started.length, `De ${MODULES.length} cadastrados`)}
-        ${statCard('Módulos concluídos', s.completed.length, 'Meta: 75% com todas as etapas avaliadas')}
+        ${statCard('Módulos concluídos', s.completed.length, 'Meta: 75 pontos no percurso, mesmo com etapas pendentes')}
         ${statCard('Aproveitamento médio', pct(s.avgAchievement), 'Média dos módulos iniciados')}
         ${statCard('Revisões vencidas', s.due.length, `${s.review.length} revisões agendadas`)}
       </div>
@@ -221,13 +221,13 @@ export function renderStatistics(main, state) {
       <p class="stats-scroll-tip">Deslize a tabela para os lados para ver todas as colunas.</p>
       <div class="stats-table-wrap" role="region" aria-label="Tabela de desempenho por módulo" tabindex="0">
         <table class="stats-table stats-module-table"><thead><tr>
-          <th scope="col">Módulo</th><th scope="col">Aproveitamento</th><th scope="col">Cobertura</th>
+          <th scope="col">Módulo</th><th scope="col">Aproveitamento</th><th scope="col">Peso avaliado</th>
           <th scope="col">Exercícios</th><th scope="col">Erros</th><th scope="col">Revisões vencidas</th>
           <th scope="col">Ação</th></tr></thead>
           <tbody>${rows.map(renderModuleRow).join('')}</tbody></table>
       </div>
       <p class="stats-empty" data-stats-empty hidden>Nenhum módulo corresponde aos filtros.</p>
-      <p class="stats-footnote">A cobertura mostra a proporção das etapas avaliadas. Um aproveitamento parcial não equivale à conclusão do módulo.</p>
+      <p class="stats-footnote">Peso avaliado indica a soma dos pesos dos componentes com registro, não a cobertura do Banco de Questões. A cobertura e o domínio das questões aparecem na seção existente “Desempenho nas questões” de cada módulo.</p>
     </section>
 
     <section class="stats-panel stats-section" aria-labelledby="stats-timeline-title">

@@ -6,6 +6,10 @@ import { initBackupControls } from "./core/backup-controls.js";
 import { refreshUnifiedReviewQueue } from "./core/spaced-review.js";
 import { setupNavigation, setActiveNavigation, getRouteTitle, normalizeRoute } from "./core/navigation.js";
 import { renderDashboard } from "./features/dashboard.js";
+import { refreshAchievementCopy } from "./core/achievement-copy.js";
+import { recordQuestionAttempt, assessLatestQuestionAttempt } from "./core/question-attempts.js";
+import { MODULES } from "./data/modules.js";
+import { moduleAchievement } from "./features/module-achievement.js";
 import { recordJourneyEvent, setJourneyGoal } from "./core/study-journey.js";
 import { renderJourneyPage, renderJourneyDashboardSummary } from "./features/jornada.js";
 import { renderAbout } from "./features/about.js";
@@ -36,6 +40,17 @@ let editSubtopicId = null;
 let cardFlipped = false;
 let reviewQuestionId = null;
 
+/** Leitura compatível com respostas antigas do Banco, sem gravar novos registros. */
+function stateForProgressPanels(state) {
+  const extra={};
+  for(const m of MODULES) {
+    if(!state.progress?.modules?.[m.id] && moduleAchievement(state,m).bankStats.answered>0)
+      extra[m.id]={started:true};
+  }
+  if(!Object.keys(extra).length)return state;
+  return {...state,progress:{...state.progress,modules:{...state.progress.modules,...extra}}};
+}
+
 function renderCurrentPage() {
   if (!mainElement) return;
   // Converte antigas rotas sem página e recupera rotas desconhecidas sem afetar o progresso.
@@ -47,11 +62,11 @@ function renderCurrentPage() {
     return;
   }
   switch (state.navigation.currentRoute) {
-    case "dashboard": renderDashboard(mainElement, state); renderJourneyDashboardSummary(mainElement, state); break;
+    case "dashboard": renderDashboard(mainElement, stateForProgressPanels(state)); renderJourneyDashboardSummary(mainElement, state); break;
     case "jornada": renderJourneyPage(mainElement, state); break;
     case "configuracoes": renderSettings(mainElement); break;
     case "sobre": renderAbout(mainElement); break;
-    case "estatisticas": renderStatistics(mainElement,state); break;
+    case "estatisticas": renderStatistics(mainElement,stateForProgressPanels(state)); break;
     case "flashcards": renderFlashcards(mainElement,state); break;
     case "banco-questoes": renderQuestionBank(mainElement,state); break;
     case "simulados": renderSimulados(mainElement,state); break;
@@ -71,6 +86,7 @@ function renderCurrentPage() {
     default:
       mainElement.innerHTML = `<section><h1 class="page-title">${getRouteTitle(state.navigation.currentRoute)}</h1><p class="page-subtitle">Esta área será implementada nas próximas etapas.</p><div class="notice">A funcionalidade ainda não foi ativada na nova arquitetura.</div></section>`;
   }
+  refreshAchievementCopy(mainElement, state.navigation.currentRoute);
 }
 function commitAndRender(journeyActivity = null) {
   if (isSaveBlocked()) return;
@@ -151,7 +167,7 @@ document.addEventListener('click', event => {
     if(action==='bank-close'){const session=state.progress?.questionBank?.session;const finished=session?.ids?.length>0&&Object.keys(session.answers||{}).length===session.ids.length;if((finished||window.confirm('Encerrar esta sessão? As respostas já registradas permanecerão no histórico.'))&&closeBankSession(state))commitAndRender();return;}
     if(action==='bank-next'){if(nextBankQuestion(state))commitAndRender();return;}
     const choice=event.target.closest('[data-bank-choice]');
-    if(choice){const session=state.progress?.questionBank?.session;const id=session?.ids?.[session.cursor];if(id&&answerBankQuestion(state,id,Number(choice.dataset.bankChoice)))commitAndRender({type:'question',itemId:id,source:'banco'});return;}
+    if(choice){const session=state.progress?.questionBank?.session;const id=session?.ids?.[session.cursor];const answer=Number(choice.dataset.bankChoice);if(id&&answerBankQuestion(state,id,answer)){recordQuestionAttempt(state,id,answer,'banco');commitAndRender({type:'question',itemId:id,source:'banco'});}return;}
   }
   if(state.navigation.currentRoute==='simulados'){
     const start=event.target.closest('[data-sim-start]');
@@ -160,7 +176,15 @@ document.addEventListener('click', event => {
     if(choice){const session=state.progress?.simulados?.active;const id=session?.ids?.[session.cursor];if(id&&answerSimulado(state,id,Number(choice.dataset.simChoice)))commitAndRender();return;}
     const move=event.target.closest('[data-sim-move]');
     if(move){if(moveSimulado(state,Number(move.dataset.simMove)))commitAndRender();return;}
-    if(event.target.closest('[data-sim-finish]')){const simId=state.progress?.simulados?.active?.id;if(finishSimulado(state))commitAndRender(simId?{type:'simulado',itemId:simId}:null);return;}
+    if(event.target.closest('[data-sim-finish]')){
+      const sim=state.progress?.simulados?.active,simId=sim?.id;
+      if(finishSimulado(state)){
+        // Apenas simulados finalizados entram no histórico detalhado; não alteram o último resultado geral.
+        for (const [qid,answer] of Object.entries(sim.answers||{})) recordQuestionAttempt(state,qid,answer,'simulado',{simulationId:simId,at:sim.finishedAt});
+        commitAndRender(simId?{type:'simulado',itemId:simId}:null);
+      }
+      return;
+    }
     if(event.target.closest('[data-sim-close]')){if(closeSimulado(state))commitAndRender();return;}
     if(event.target.closest('[data-sim-cancel]')){if(window.confirm('Cancelar este simulado? As respostas desta tentativa serão descartadas.')&&cancelSimulado(state))commitAndRender();return;}
   }
@@ -172,7 +196,7 @@ document.addEventListener('click', event => {
     const choice=event.target.closest('[data-review-choice]');
     if(choice&&reviewQuestionId){if(answerReview(state,reviewQuestionId,Number(choice.dataset.reviewChoice)))commitAndRender();return;}
     const assess=event.target.closest('[data-review-assess]');
-    if(assess&&reviewQuestionId){if(assessReview(state,reviewQuestionId,assess.dataset.reviewAssess))commitAndRender({type:'review',itemId:reviewQuestionId});return;}
+    if(assess&&reviewQuestionId){if(assessReview(state,reviewQuestionId,assess.dataset.reviewAssess)){const answer=state.progress?.questionHistory?.[reviewQuestionId]?.lastAnswer;recordQuestionAttempt(state,reviewQuestionId,answer,'revisao',{assessment:assess.dataset.reviewAssess});commitAndRender({type:'review',itemId:reviewQuestionId});}return;}
     const remove=event.target.closest('[data-review-remove]');
     if(remove){if(window.confirm('Remover esta questão do banco de erros? O histórico de respostas será mantido.')&&removeError(state,remove.dataset.reviewRemove))commitAndRender();return;}
   }
@@ -188,9 +212,27 @@ document.addEventListener('click', event => {
   const rating=event.target.closest('[data-lesson-rating]');
   if(rating && activeView==='lesson' && lessonSubtopicId){if(saveLessonProgress(state,lessonSubtopicId,'rating',rating.dataset.lessonRating))commitAndRender();return;}
   const exerciseChoice=event.target.closest('[data-exercise-choice]');
-  if(exerciseChoice && activeView==='exercises'){const session=state.progress.exercises?.[state.navigation.selectedModuleId];const id=session?.ids?.[session.cursor];if(id&&answerExercise(state,state.navigation.selectedModuleId,id,Number(exerciseChoice.dataset.exerciseChoice)))commitAndRender({type:'question',itemId:id,source:'exercicios'});return;}
+  if(exerciseChoice && activeView==='exercises'){
+    const session=state.progress.exercises?.[state.navigation.selectedModuleId];
+    const id=session?.ids?.[session.cursor];
+    // O módulo de exercícios renova questionHistory[id]; preserva a marca de
+    // estudo do Banco quando a mesma questão for respondida nos dois lugares.
+    const oldRecord=id?state.progress?.questionHistory?.[id]:null;
+    const bankAttempt=oldRecord?.bankAttempt;
+    const attempts=Array.isArray(oldRecord?.attempts)?oldRecord.attempts:null;
+    const answer=Number(exerciseChoice.dataset.exerciseChoice);
+    if(id&&answerExercise(state,state.navigation.selectedModuleId,id,answer)){
+      const current=state.progress.questionHistory[id];
+      if(bankAttempt) current.bankAttempt=bankAttempt;
+      // Exercícios substituem o registro original, por isso restauramos os eventos anteriores.
+      if(attempts) current.attempts=attempts;
+      recordQuestionAttempt(state,id,answer,'exercicios');
+      commitAndRender({type:'question',itemId:id,source:'exercicios'});
+    }
+    return;
+  }
   const assess=event.target.closest('[data-exercise-assess]');
-  if(assess && activeView==='exercises'){const mid=state.navigation.selectedModuleId;const session=state.progress.exercises?.[mid];const id=session?.ids?.[session.cursor];if(id&&assessExercise(state,mid,id,assess.dataset.exerciseAssess))commitAndRender();return;}
+  if(assess && activeView==='exercises'){const mid=state.navigation.selectedModuleId;const session=state.progress.exercises?.[mid];const id=session?.ids?.[session.cursor];if(id&&assessExercise(state,mid,id,assess.dataset.exerciseAssess)){assessLatestQuestionAttempt(state,id,'exercicios',assess.dataset.exerciseAssess);commitAndRender();}return;}
   const action = event.target.closest('[data-action]')?.dataset.action;
   if(action==='exercise-open'){activeView='exercises';renderCurrentPage();return;}
   if(action==='exercise-back'){activeView='module';renderCurrentPage();return;}

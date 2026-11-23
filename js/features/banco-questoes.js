@@ -133,7 +133,13 @@ export function answerBankQuestion(state, id, answer) {
     || Object.hasOwn(session.answers, id) || !Number.isInteger(answer)
     || answer < 0 || answer >= q.options.length) return false;
   session.answers[id] = answer;
-  recordBankReview(state, q, answer);
+  if (!recordBankReview(state, q, answer)) return false;
+  // F23/L04: evidência específica do Banco, independente de revisões posteriores.
+  // Fica no mesmo registro que o reinício por módulo já remove, evitando crédito residual.
+  const history = state.progress?.questionHistory?.[id];
+  if (history) history.bankAttempt = {lastAnswer:answer,updatedAt:new Date().toISOString()};
+  state.progress.modules ??= {};
+  state.progress.modules[q.moduleId] ??= {started:true};
   return true;
 }
 export function nextBankQuestion(state) {

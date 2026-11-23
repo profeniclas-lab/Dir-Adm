@@ -22,31 +22,35 @@ const stages = [
 function achievementMarkup(progress) {
   const c = progress.components;
   const sections = [
-    { title: 'Diagnóstico', keys: ['diagnostic'], weight: 20 },
-    { title: 'Aulas', keys: ['lessonCompletion', 'lessonSelfAssessment'], weight: 30 },
-    { title: 'Exercícios de aprendizagem', keys: ['exercises'], weight: 50 }
+    {title:'Diagnóstico',keys:['diagnostic'],weight:20},
+    {title:'Aulas (estudo e autoavaliação)',keys:['lessonCompletion','lessonSelfAssessment'],weight:30},
+    {title:'Exercícios de aprendizagem',keys:['exercises'],weight:30},
+    {title:'Banco de Questões',keys:['bank'],weight:20}
   ];
-  const rows = sections.map(s => {
-    const points = s.keys.reduce((sum, key) => sum + c[key].points, 0);
-    const assessed = s.keys.every(key => c[key].available);
-    const pct = Math.max(0, Math.min(100, points / s.weight * 100));
+  const rows=sections.map(s=>{
+    const points=s.keys.reduce((n,key)=>n+(c[key]?.points||0),0);
+    const evidence=s.keys.reduce((n,key)=>n+(c[key]?.coverageWeight||0),0);
+    const bankEvidence = progress.bankStats || {answered:0,total:0};
+    const complete=s.keys.includes('bank') ? bankEvidence.total>0 && bankEvidence.answered===bankEvidence.total : evidence>=s.weight-0.01;
+    const width=Math.min(100,Math.max(0,points/s.weight*100));
     return `<div style="margin:12px 0">
       <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
-        <span>${escapeHtml(s.title)}${assessed ? '' : ' <small>(parcial ou pendente)</small>'}</span>
-        <strong>${format(points)}% / ${s.weight}%</strong>
+        <span>${escapeHtml(s.title)}${complete?'':' <small>(parcial ou pendente)</small>'}</span>
+        <strong>${format(points)} / ${s.weight} pontos</strong>
       </div>
-      <div role="progressbar" aria-label="${escapeHtml(s.title)}" aria-valuemin="0" aria-valuemax="${s.weight}" aria-valuenow="${points}" style="height:8px;background:#d5dce3;border-radius:6px;overflow:hidden;margin-top:6px">
-        <div style="background:#2563eb;height:100%;width:${pct}%"></div>
+      <div role="progressbar" aria-label="${escapeHtml(s.title)}" aria-valuemin="0" aria-valuemax="${s.weight}" aria-valuenow="${points}" style="height:8px;background:var(--border,#d5dce3);border-radius:6px;overflow:hidden;margin-top:6px">
+        <div style="background:var(--accent,#2563eb);height:100%;width:${width}%"></div>
       </div>
     </div>`;
   }).join('');
-  const complete = isModuleCompleted(progress, 75);
+  const done=isModuleCompleted(progress,75);
   return `<section class="module-achievement" aria-labelledby="achievementTitle">
     <h2 id="achievementTitle">Aproveitamento do módulo</h2>
     ${rows}
-    <p><strong>Total conquistado: ${format(progress.earnedWeightedPoints)}% / 100%</strong></p>
-    <p>${complete ? 'Meta atingida: pelo menos 75% e todas as etapas avaliadas.' : `Meta: 75% com todas as etapas avaliadas. Cobertura atual dos critérios: ${progress.coveragePercentage}% / 100%.`}</p>
-    <p>O Banco de Questões e os Flashcards continuam disponíveis no menu lateral e não alteram este aproveitamento.</p>
+    <p><strong>Total conquistado: ${format(progress.earnedWeightedPoints)} de 100 pontos</strong>${progress.hasData?'':' · Sem atividades avaliadas'}</p>
+    <p>${done?'Meta de 75 pontos atingida. Este módulo sai das pendências do Dashboard, mas permanece acessível.':`Faltam ${format(Math.max(0,75-progress.earnedWeightedPoints))} pontos para a meta de 75. Peso dos critérios com registro: ${format(progress.coveragePercentage)} de 100.`}</p>
+    <p class="page-subtitle">Banco de Questões: seus 20 pontos dependem da taxa de acerto entre questões distintas respondidas no Banco, sem quantidade mínima. Uma única resposta correta pode conceder 20/20 pontos; confira a cobertura e o domínio na seção abaixo.</p>
+    <p class="page-subtitle">Aproveitamento é uma medida ponderada de estudo, não uma prova definitiva de domínio. As etapas pendentes continuam disponíveis em Módulos e no menu lateral.</p>
   </section>`;
 }
 
@@ -57,8 +61,9 @@ function performanceMarkup(state, moduleId) {
   const rateStyle = color === 'green' ? 'color:#167341' : color === 'red' ? 'color:#ba1c1c' : '';
   return `<section class="module-achievement" aria-labelledby="performanceTitle" style="margin-top:16px">
     <h2 id="performanceTitle">Desempenho nas questões</h2>
-    <p><strong>${summary.correct} de ${summary.answered} respondidas</strong> · <strong style="${rateStyle}">${rateLabel} de acerto</strong></p>
+    <p><strong>${summary.correct} de ${summary.answered} respondidas</strong> · <strong style="${rateStyle}">Aproveitamento da prática: ${rateLabel}</strong></p>
     <p>${summary.total} questões disponíveis no módulo · ${summary.unanswered} ainda não respondidas · ${summary.wrong} respostas incorretas.</p>
+    <p><strong>Cobertura do Banco: ${summary.total ? `${format(100*summary.answered/summary.total)}%` : '—'}</strong> · <strong>Domínio estimado: ${summary.total ? `${format(100*summary.correct/summary.total)}%` : '—'}</strong></p>
     <dl class="module-info-list">
       <div><dt>Acertos por chute</dt><dd>${summary.guessedCorrect}</dd></div>
       <div><dt>Erros por desconhecimento</dt><dd>${summary.unknownWrong}</dd></div>
@@ -66,8 +71,8 @@ function performanceMarkup(state, moduleId) {
       <div><dt>Acertos com dúvida</dt><dd>${summary.doubtCorrect}</dd></div>
       <div><dt>Acertos sem classificação suficiente</dt><dd>${summary.unclassifiedCorrect}</dd></div>
     </dl>
-    <p><strong>Conhecimento demonstrado (estimativa): ${summary.knowledgeRate === null ? '—' : `${format(summary.knowledgeRate)}%`}</strong> — acertos identificados como seguros, divididos pelo total de questões respondidas.</p>
-    <p class="page-subtitle">Taxa de acerto: verde a partir de 60%; vermelho abaixo de 60%. Os indicadores usam a última resposta registrada por questão, incluindo questões resolvidas fora do banco. Registros sem autoavaliação suficiente não são classificados como chute nem como domínio comprovado. Este indicador não altera o aproveitamento do módulo.</p>
+    <p><strong>Acertos com segurança entre as respondidas: ${summary.knowledgeRate === null ? '—' : `${format(summary.knowledgeRate)}%`}</strong> — considera somente respostas identificadas como seguras.</p>
+    <p class="page-subtitle">Taxa de acerto: verde a partir de 60%; vermelho abaixo de 60%. Aproveitamento da prática, cobertura e domínio consideram a última resposta válida de cada questão na área de estudo, sem duplicar tentativas da mesma questão. Domínio estimado = acertos atuais / questões disponíveis; cobertura = questões distintas respondidas / questões disponíveis. Já os 20 pontos do percurso usam somente a última resposta de cada questão resolvida no Banco. Questões respondidas apenas em simulados não entram nos indicadores até serem praticadas nas outras atividades. Registros sem autoavaliação não demonstram conhecimento seguro.</p>
   </section>`;
 }
 
